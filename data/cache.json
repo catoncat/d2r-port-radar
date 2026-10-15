@@ -1,13 +1,13 @@
 {
  "TommyLau/botw-mobile": {
-  "pushed_at": "2026-10-15T19:08:23Z",
+  "pushed_at": "2026-10-15T23:10:11Z",
   "branches": [
    {
     "branch": "botw-host-boot",
-    "ahead": 96,
+    "ahead": 127,
     "behind": 3,
-    "files": 168,
-    "real_files": 163,
+    "files": 187,
+    "real_files": 182,
     "dirs": [
      "AGENTS.md",
      "CONTRIBUTING.md",
@@ -19,16 +19,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-15T19:08:19Z",
+    "last_commit": "2026-10-15T23:10:07Z",
     "subjects": [
-     "test(nvn): make read-only binding checks independent of game caches",
-     "fix(oe): keep desktop launches outside VR mode",
-     "docs: record depth clamp validation and first command submission",
-     "feat(nvn): route plain indexed draws through instanced replay",
-     "test(shaders): replace private reflection fixtures with synthetic data",
-     "feat(nvn): replay depth clamp state on Metal backends",
-     "docs: record color logic validation and depth-clamp boundary",
-     "feat(nvn): preserve color logic state and reject unsupported draws"
+     "docs: record BC4 block view bring-up and coverage",
+     "feat(nvn): render BC4 block views through integer attachments",
+     "docs: describe validated shader coverage as the current bring-up boundary",
+     "fix(shaders): observe draws before speculative pipeline lookups",
+     "feat(nvn): report no external ZCull storage on Metal",
+     "docs: record successful deferred binding bring-up",
+     "build(nvn): preserve the deferred binding prototype when regenerating headers",
+     "feat(shaders): select graphics observations by full shader digest"
     ]
    },
    {
@@ -45,6 +45,35 @@
     "subjects": [
      "Add bring-up tools for a new title and keep game files out of git",
      "Rewriter: handle ldrsw jump tables and blr x18 call sites"
+    ]
+   },
+   {
+    "branch": "botw-shader-observer",
+    "ahead": 119,
+    "behind": 3,
+    "files": 180,
+    "real_files": 175,
+    "dirs": [
+     "AGENTS.md",
+     "CONTRIBUTING.md",
+     "CONTRIBUTING.zh-CN.md",
+     "dm/.gitignore",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-10-15T21:54:28Z",
+    "subjects": [
+     "feat(shaders): select graphics observations by full shader digest",
+     "docs: update the deferred texture binding bring-up boundary",
+     "feat(nvn): retain fixed point size and guard point rasterization",
+     "feat(nvn): preserve line width and reject unsupported line draws",
+     "fix(nvn): replace complete texture layers after coherence invalidation",
+     "docs: record depth conversion fix and texture coherence stop",
+     "fix(shaders): convert negative-one depth range for Metal",
+     "feat(nvn): invalidate coherent mapped memory pool ranges"
     ]
    }
   ]
@@ -156,14 +185,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-15T13:35:10Z",
+  "pushed_at": "2026-10-15T20:42:31Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 19,
-    "behind": 6,
-    "files": 81,
-    "real_files": 76,
+    "ahead": 25,
+    "behind": 8,
+    "files": 86,
+    "real_files": 81,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -172,16 +201,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-15T13:34:59Z",
+    "last_commit": "2026-10-15T20:42:26Z",
     "subjects": [
+     "Link bootstrap profile into standalone filesystem regression tests",
+     "Add controlled nnMain startup probe with resource checkpoints and GPU stop boundary",
+     "Resolve allocator forwarding by guest export instead of a fixed SDK offset",
+     "Add staged module-constructor probe that stops before nnMain",
+     "Preserve absent ELF weak imports for optional SDK callbacks",
+     "Add bounded on-device P5R SDK initialization probe",
      "Expose synthetic GPU self-tests on iPhone and guard combined-slot fetch proofs",
-     "Specify the driver-bank index in synthetic texture reflection",
-     "Exercise reflected texture handles and sampling on Metal 3 and Metal 4",
-     "Generate shader cache headers in CI and normalize source line endings",
-     "Audit P5R translator query defaults and original texture instruction constraints",
-     "Document completed P5R host linking and experimental unsigned packaging",
-     "Complete iOS framework linkage and add verified local P5R packaging",
-     "Add a dedicated game-free P5R iOS host build and launcher"
+     "Specify the driver-bank index in synthetic texture reflection"
     ]
    }
   ]
@@ -279,14 +308,14 @@
   "branches": []
  },
  "Seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-15T18:18:00Z",
+  "pushed_at": "2026-10-15T21:08:19Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 70,
+    "ahead": 79,
     "behind": 2,
-    "files": 137,
-    "real_files": 136,
+    "files": 140,
+    "real_files": 139,
     "dirs": [
      "NOTICE.md",
      "PORTABLE.md",
@@ -295,16 +324,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-10-15T18:16:08Z",
+    "last_commit": "2026-10-15T21:01:31Z",
     "subjects": [
-     "fix(probe): 零成本实测②改用 MemAvailable 指标 —— 真机结论：4 GiB 客体堆分配即占满",
-     "fix(gfx): 3.4-D 合流真机通过 —— 「全黑」真相：销毁交换链后截图=拍黑，非显示问题",
-     "fix(compat): 并入上游后的两轮补齐 —— 垫片 + 单测收编边界（本地编译通过）",
-     "feat(ohos): 并入上游后的收编 —— 重新生成单测清单（27→31）+ 收编节拍单测 t_pace",
-     "merge: 并入上游 4 个提交（v1.0.15 / tvOS 目标 / README 与 Rift 修正）",
-     "fix(gfx): 补前两次漏提交的文件 —— nvn_vk.{c,h}（外部渲染目标那道缝 + pass_open 诊断日志）",
-     "feat(probe): 零成本实测两条的探针（代码就绪，**待真机跑**）",
-     "diag(gfx): 3.4-D \"上屏全黑\" 的三条诊断步（代码就绪，**待真机跑**）"
+     "docs(ohos): 分叉清单登记 dm.h（module_t 的 OHOS 字段 x0_end/img_end）",
+     "feat(ohos): 装载验证真机通过 —— 旷野之息 main 37MB 模块装载成立（判据全过）",
+     "feat(ohos): 装载验证就绪 —— 实验 G「真实模块装载」+ 旷野之息 main 内嵌（本地编译通过）",
+     "docs(ohos): 移除独立的通用方案结构图 —— 内容已并入 项目总览与继续指南 §3",
+     "docs(ohos): 结构图/待办 —— 改写器泛化收官（旷野之息 main 一次通过，未决 0）",
+     "feat(tools): 改写器泛化 —— 跳转表识别支持相对偏移表形态，未识别不中止改登记",
+     "docs(ohos): 通用方案·结构与地图 —— 定位改为「通用 Switch→鸿蒙移植框架」",
+     "feat(tools): xci_extract.py 加 --max-bytes（程序 NCA 的 ExeFS 在文件开头，只为解 ExeFS 时不必为 14 GB RomFS 陪跑；截断件不能当完整 NCA 用）"
     ]
    }
   ]
@@ -448,12 +477,12 @@
   "branches": []
  },
  "hubeiqiao/d2r-mobile": {
-  "pushed_at": "2026-10-15T03:09:19Z",
+  "pushed_at": "2026-10-15T20:58:59Z",
   "branches": [
    {
     "branch": "codex/ipad-map-portal-tooltip",
     "ahead": 1,
-    "behind": 2,
+    "behind": 5,
     "files": 5,
     "real_files": 3,
     "dirs": [
@@ -467,7 +496,7 @@
    {
     "branch": "codex/map-portal-diagnostics",
     "ahead": 1,
-    "behind": 2,
+    "behind": 5,
     "files": 9,
     "real_files": 7,
     "dirs": [
@@ -479,9 +508,23 @@
     ]
    },
    {
+    "branch": "codex/minimap-act-travel",
+    "ahead": 1,
+    "behind": 0,
+    "files": 7,
+    "real_files": 5,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-15T20:58:57Z",
+    "subjects": [
+     "fix(ui): reconcile hidden touch minimap after Act travel"
+    ]
+   },
+   {
     "branch": "codex/pet-life-diagnostics",
     "ahead": 1,
-    "behind": 15,
+    "behind": 18,
     "files": 5,
     "real_files": 3,
     "dirs": [
@@ -495,7 +538,7 @@
    {
     "branch": "codex/promo-video-readme",
     "ahead": 4,
-    "behind": 13,
+    "behind": 16,
     "files": 2,
     "real_files": 0,
     "dirs": [],
@@ -510,7 +553,7 @@
    {
     "branch": "codex/readable-idle-skills",
     "ahead": 1,
-    "behind": 35,
+    "behind": 38,
     "files": 1,
     "real_files": 1,
     "dirs": [
@@ -524,7 +567,7 @@
    {
     "branch": "codex/rift-encounter-profiles",
     "ahead": 2,
-    "behind": 15,
+    "behind": 18,
     "files": 10,
     "real_files": 6,
     "dirs": [
@@ -540,7 +583,7 @@
    {
     "branch": "codex/rift-endgame-integration",
     "ahead": 8,
-    "behind": 14,
+    "behind": 17,
     "files": 37,
     "real_files": 31,
     "dirs": [
@@ -563,7 +606,7 @@
    {
     "branch": "codex/rift-guardian-town",
     "ahead": 1,
-    "behind": 2,
+    "behind": 5,
     "files": 5,
     "real_files": 3,
     "dirs": [
@@ -577,7 +620,7 @@
    {
     "branch": "codex/rift-hud-tier-cap",
     "ahead": 1,
-    "behind": 15,
+    "behind": 18,
     "files": 5,
     "real_files": 5,
     "dirs": [
@@ -592,7 +635,7 @@
    {
     "branch": "codex/rift-overtime-ui",
     "ahead": 1,
-    "behind": 13,
+    "behind": 16,
     "files": 13,
     "real_files": 13,
     "dirs": [
@@ -608,7 +651,7 @@
    {
     "branch": "codex/rift-safe-completion",
     "ahead": 1,
-    "behind": 15,
+    "behind": 18,
     "files": 9,
     "real_files": 9,
     "dirs": [
@@ -624,7 +667,7 @@
    {
     "branch": "codex/rift-suspend-clock",
     "ahead": 1,
-    "behind": 35,
+    "behind": 38,
     "files": 3,
     "real_files": 3,
     "dirs": [
@@ -638,7 +681,7 @@
    {
     "branch": "codex/setup-bash32-braces",
     "ahead": 1,
-    "behind": 36,
+    "behind": 39,
     "files": 1,
     "real_files": 1,
     "dirs": [
@@ -701,14 +744,14 @@
   "branches": []
  },
  "dodola/d2r-mobile": {
-  "pushed_at": "2026-10-15T15:50:17Z",
+  "pushed_at": "2026-10-15T20:01:26Z",
   "branches": [
    {
-    "branch": "main",
-    "ahead": 6,
-    "behind": 41,
-    "files": 92,
-    "real_files": 90,
+    "branch": "codex/android-measured-optimizations",
+    "ahead": 10,
+    "behind": 1,
+    "files": 123,
+    "real_files": 113,
     "dirs": [
      "DESIGN.md",
      "dm/android",
@@ -716,14 +759,41 @@
      "dm/host",
      "dm/tools"
     ],
-    "last_commit": "2026-10-15T15:48:55Z",
+    "last_commit": "2026-10-15T19:58:25Z",
     "subjects": [
+     "Add Android Vulkan runtime controls and measured game A/B records",
+     "Optimize Vulkan attachment clears and proven dead stores on Android",
+     "Move Android NVN translation to an ordered worker with fence-safe waits",
+     "Merge upstream v1.0.17 while preserving Android host and Vulkan backend",
      "feat(android): add FPS display, aspect fit and optional 60 FPS pacing",
      "docs: describe experimental Android support in both READMEs",
      "fix(android): preserve submission context in Vulkan profiling",
-     "perf(android): per-mip image layouts, 2-way shader control cache, gated hot-path timers",
-     "perf(android): precise Vulkan sync, chunked + async submission, cached writeback",
-     "feat(android): add native game host and Vulkan renderer"
+     "perf(android): per-mip image layouts, 2-way shader control cache, gated hot-path timers"
+    ]
+   },
+   {
+    "branch": "main",
+    "ahead": 10,
+    "behind": 1,
+    "files": 123,
+    "real_files": 113,
+    "dirs": [
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-15T19:58:25Z",
+    "subjects": [
+     "Add Android Vulkan runtime controls and measured game A/B records",
+     "Optimize Vulkan attachment clears and proven dead stores on Android",
+     "Move Android NVN translation to an ordered worker with fence-safe waits",
+     "Merge upstream v1.0.17 while preserving Android host and Vulkan backend",
+     "feat(android): add FPS display, aspect fit and optional 60 FPS pacing",
+     "docs: describe experimental Android support in both READMEs",
+     "fix(android): preserve submission context in Vulkan profiling",
+     "perf(android): per-mip image layouts, 2-way shader control cache, gated hot-path timers"
     ]
    }
   ]
@@ -1095,12 +1165,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-15T17:13:12Z",
+  "pushed_at": "2026-10-15T21:35:07Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T17:13:11Z",
+    "last_commit": "2026-10-15T21:35:06Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1155,21 +1225,21 @@
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-15T17:25:33Z",
+  "pushed_at": "2026-10-15T23:39:08Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T17:25:30Z",
+    "last_commit": "2026-10-15T23:38:27Z",
     "subjects": [
-     "二分第二步：romfs_resolve.c 加入 App 目标（logbuf.c 单独加已验证可行）",
-     "applogic 自检补 <unistd.h>（rmdir 在 macOS 上要显式声明）",
-     "二分：只加 logbuf.c 进 App 目标（上次两个一起加失败）；applogic_selftest 进 macOS 单测列表",
-     "App 构建回退纯 ObjC：C 组件（logbuf/romfs）逻辑与自检保留在宿主侧，接进 xcodegen 目标那次 CI 失败（ScanDependencies 2 failures 且无 error: 行）——下一轮一次加一个源二分",
-     "App 构建排障：main.m 只留必需的两个头；CI 失败注解先 grep 错误行（tail 只给尾部，真错误常在中间）",
-     "M1 App 侧第一步：日志上屏 + RomFS 导入的**逻辑**落地（可测的那部分）",
-     "STATUS：M2 纹理往返与管线缓存完成",
-     "M2：管线缓存（同 prog 复用、异 prog 新建）+ 纯色/纹理两种程序"
+     "打包脚本：手机资源合并成一个文件夹一次复制；Info.plist 加文件共享键",
+     "首跑打包脚本：prepare_phone_package.py（Guest.framework + ExeFS tsv + 说明；RomFS 默认只写说明）",
+     "STATUS：首跑链路完整",
+     "修 loader_apple.c：getsectiondata 声明在 mach-o/getsect.h；TargetConditionals 要在 #if 前",
+     "首跑最后一块：guest dylib 壳模式 + 日志导出按钮",
+     "STATUS：宿主接进 App；vm_* 修复 iOS 构建",
+     "注释同步（vm_remap）",
+     "dm_embed_map 换 vm_allocate/vm_remap（旧 API，macOS/iOS 都有；mach_vm_* 在 iPhoneOS SDK 里不存在）"
     ]
    }
   ]
@@ -1255,12 +1325,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-15T16:59:44Z",
+  "pushed_at": "2026-10-15T21:22:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T16:59:43Z",
+    "last_commit": "2026-10-15T21:21:59Z",
     "subjects": [
      "chore: 自动同步 Star 地图（182 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
@@ -1283,13 +1353,14 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-15T14:13:38Z",
+  "pushed_at": "2026-10-15T19:13:40Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T14:13:36Z",
+    "last_commit": "2026-10-15T19:13:38Z",
     "subjects": [
+     "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache",
      "notes: hide the radar itself from search results",
@@ -1363,7 +1434,7 @@
   "branches": []
  },
  "zlinoliver/d2r-mobile": {
-  "pushed_at": "2026-10-15T12:11:35Z",
+  "pushed_at": "2026-10-15T23:40:00Z",
   "branches": []
  },
  "tenfar/d2r-mobile": {
@@ -1608,6 +1679,70 @@
     "last_commit": "2026-10-15T15:42:02Z",
     "subjects": [
      "Initial commit"
+    ]
+   }
+  ]
+ },
+ "biglawine/d2r-mobile": {
+  "pushed_at": "2026-10-15T22:59:15Z",
+  "branches": [
+   {
+    "branch": "codex/harmony-port",
+    "ahead": 1,
+    "behind": 0,
+    "files": 294,
+    "real_files": 294,
+    "dirs": [
+     "dm/harmony"
+    ],
+    "last_commit": "2026-10-15T22:59:12Z",
+    "subjects": [
+     "归集隔离的鸿蒙运行桥、图形后端与应用源码"
+    ]
+   }
+  ]
+ },
+ "williamwue/d2r-mobile": {
+  "pushed_at": "2026-10-15T22:55:35Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 6,
+    "behind": 0,
+    "files": 47,
+    "real_files": 46,
+    "dirs": [
+     "dm/android",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-15T22:48:48Z",
+    "subjects": [
+     "fix(tooling): normalize Windows paths in the literal verification gate",
+     "Merge latest upstream fixes into Android foundation",
+     "feat(android): add isolated synthetic ARM64 bridge verification",
+     "chore(android): align resource contract with upstream v1.0.16",
+     "Merge remote-tracking branch 'origin/main' into android/upstream-v1.0.16",
+     "feat(android): add emulator resource import foundation"
+    ]
+   }
+  ]
+ },
+ "lfkdsk/switch-appletv-port-skill": {
+  "pushed_at": "2026-10-15T20:38:09Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T20:38:07Z",
+    "subjects": [
+     "README: hero uses a 1080p capture from Apple TV hardware",
+     "README: drop AI-generated caption (hero now uses a real capture)",
+     "Scrub internal device name and genericize relay wording",
+     "README.md: rewrite in English with hero image, results showcase, and install guide",
+     "references/08-community.md: translate to English",
+     "references/07-agent-workflow.md: translate to English",
+     "references/06-audio.md: translate to English",
+     "references/05-perf.md: translate to English"
     ]
    }
   ]
