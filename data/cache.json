@@ -165,11 +165,11 @@
   ]
  },
  "gbcmikeblue/d2r-mobile": {
-  "pushed_at": "2026-10-15T08:01:14Z",
+  "pushed_at": "2026-10-15T08:14:01Z",
   "branches": [
    {
     "branch": "android",
-    "ahead": 82,
+    "ahead": 83,
     "behind": 22,
     "files": 80,
     "real_files": 69,
@@ -179,16 +179,16 @@
      "dm/host",
      "dm/tools"
     ],
-    "last_commit": "2026-10-15T07:59:18Z",
+    "last_commit": "2026-10-15T08:13:49Z",
     "subjects": [
+     "M3-2v：读回路径的锁账本把\"我们自己\"排除了，并把光标挪到宿主侧一次轮询式等待上。",
      "M3-2u：「停住」当场取到现场了 —— 它只在\"查看器 + 逐级扫描同时读回\"时出现（A/B/C 三臂），并加了按需转储触发口。",
      "M3-2t：任务图三张位图的时间序列 —— 「上膛 0 位」否掉、「完成后被清」成立，顺带改掉三条旧口径。",
      "docs：把「M3-2s」补进英文那两份，中英双份对齐",
      "M3-2s：「谁写 this+0x3328」有答案了 —— 三张位图、上膛点，以及一处说不通的地方。新仪器（dm/host/hle_thread.c，全部只读）：peek32；任务图的三张位图（+0x3320 依赖源 / +0x3324 待派发 / +0x3328 已完成）与两个\"在飞作业表\"长度；每条任务的 依赖A(+0x18)/依赖B(+0x1c)/标志(+0x58)；任务包装器帧捕获（[x29-8] = 该作业的图、[x29-0x18] = 序号）；每个线程\"最近一次 ArbitrateLock\"的期望持有人与实际锁字。反汇编结论：置位**只有一处**——任务包装器末尾 main+0x15f0e6c（ldxr/orr/stlxr 置 1<<序号）；\"上膛\"在 main+0x1636f50（str w9,[x8] 写低 count 位进 +0x3324，紧接 str wzr,[x8,#4] 清完成位图），随后 bl 0x15ee598 派发、bl 0x15ee898 轮询——这一串就是\"跑这张图\"的入口（游戏侧从 0x856f50 调进来）；派发器要求 +0x3324 的位 i、rec[i]+0x18 ⊆ +0x3328、rec[i]+0x1c ⊆ +0x3320，满足才原子清位并把作业挂进作业池（池对象 = [0x31143d0]）。真机三轮（.work/logs/r1/r2/r3.log）：三张位图**同时为 0**（22 任务那张图，出图 59/62 停住），而主线程栈上就有**活的包装器帧**（渲染码 → 跑图入口 → 轮询 → 泵 0xdf9794 → 包装器 → 派发器 → 解锁）⇒ M3-2r 那句\"22 个任务从未被派发\"**不成立**；工人 0x1005 确实在该图的某个任务里，等一把锁字为 0x40001001（持有人 0x1001 = 主线程）的锁，0x1004/0x1006/0x1007 的最近一次锁字都是 0（没卡在锁上），主线程自己也没卡在锁上。矛盾留档：①上膛写全 count 位 ②派发器只清被取走的位（依赖不满足的位会留着）③实测待派发=0 且已完成=0——三者不能同时成立，只剩\"上膛读到的 count 与轮询用的不是同一个值\"或\"完成后被清\"（+0x3328 另有清零点 main+0x15eef90，属另一条跑图路径 main+0x15ee9d8 的收尾；渲染码里 0x853b38 / 0x856f50 / 0x857270 是相邻的三次跑图调用）。下一步是把三张位图做成时间序列（主线程每次 SVC 采样、变化即打一行），之后是宿主侧锁账本与核\"图 == x26+0x2D40\"。文档：新增「M3-2s」并给「M3-2r」的定性加更正批注，重写「七、下一步」第 1 条；CROSS_MACHINE §7 同步（含本机新坑：cmd 是 936 代码页而仓库 .cmd 是 UTF-8 无 BOM，直接跑构建脚本会被中文注释拆行，先 chcp 65001 再 call）。",
      "M3-2r：里程碑 B（客体停住）的形状量出来了 —— 主线程在等一个**从未被派发**的任务图。新仪器（都在 dm/host/hle_thread.c，默认不影响行为）：SleepThread 时长/时刻、每线程最近 16 次 svc 环（号+参数+LR）、沿 regs[29]（x29 帧指针链）取落在 main 的调用链（安卓侧第一次能读到\"游戏在哪个函数\"）、每次等待\"已等 X 秒\"、锁移交历史（最近 16 次 ArbitrateUnlock）、任务图完成位图（从 [x29-8] 取任务图对象，读 +0x3328 位图与 +0x3100 掩码）。关键读数：位图**恒为 0**、等待掩码 0x16 ⇒ 任务图 22 个任务一个都没完成；同一时刻工人 0x1005 解码 Granny 段（svc #0x83/#0x84 门）后去等一把被主线程持有的锁（已等 15.1 秒，而该锁从未出现在任何一次锁移交里 ⇒ 排除\"锁字残留\"）；我们图形侧空闲，出图停是结果不是原因。两个假设被实测否掉：DM_GRANNY_PRE=0（关预解码）跑 3 轮照旧全部判死；锁语义开关 DM_LOCK_SEM 的 bit0（ArbitrateUnlock 改 Horizon 的\"清零+唤醒一个\"）3 轮全部启动早期 svcBreak/Panic、出图 0，bit1（放宽 ArbitrateLock 的阻塞条件）3 轮全部在\"阶段 启动\"判死、出图 0 ⇒ 现状锁实现与 SDK 自洽，锁不是根因（开关留在代码里、默认关）。另记一条反汇编路子（本机没有 Python）：用 NDK 的 llvm-objcopy 把 main.patched.bin 包成 ELF（--rename-section .data=.text,alloc,load,readonly,code）+ llvm-objdump -d --start-address/--stop-address；main.patched.bin 的文件偏移就等于 main+0x。文档：补上被代码注释引用的「M3-2r」一节，并修掉悬空的「M3-2g」编号（其真实内容是「M3 第 3 步」）。  M3-2r: the shape of milestone B (the guest stall) is measured -- the main thread waits on a task graph that was never dispatched. New instruments (all in dm/host/hle_thread.c, no behaviour change by default): SleepThread duration/time, a per-thread SVC ring of the last 16 calls (number + args + LR), a call chain collected along regs[29] (the x29 frame-pointer chain) keeping the return addresses that land in main (the first time Android can read \"which game function\"), a \"waiting X s\" reading per wait, a lock-handoff history (the last 16 ArbitrateUnlocks), and the task-graph completion bitmap (the task-graph object comes from [x29-8]; +0x3328 is the bitmap and +0x3100 this waiter's mask). Key readings: the bitmap is always 0 with wait mask 0x16 => none of the task graph's 22 tasks ever completes; at that moment worker 0x1005, after decoding Granny segments (the svc #0x83/#0x84 gates), waits on a lock held by the main thread (waiting 15.1 s, and that lock never appears in any handoff => a stale lock word is ruled out); our graphics side is idle, so the missing presents are a result rather than a cause. Two hypotheses were killed by measurement: DM_GRANNY_PRE=0 (pre-decode off) still declared dead in all 3 rounds; the DM_LOCK_SEM switch's bit0 (ArbitrateUnlock switched to Horizon's \"clear and wake one\") ended all 3 rounds in an early-startup svcBreak/panic with 0 presents, and bit1 (loosening ArbitrateLock's blocking condition) was declared dead in the startup stage in all 3 rounds with 0 presents => the current lock implementation is self-consistent with the SDK and the locks are not the root cause (the switch stays in the code, off by default). One more thing recorded: how to disassemble on a machine without Python (wrap main.patched.bin into an ELF with the NDK's llvm-objcopy, --rename-section .data=.text,alloc,load,readonly,code, then llvm-objdump -d --start-address/--stop-address; the file offset in main.patched.bin is exactly main+0x). Docs: the \"M3-2r\" section referenced by code comments now exists, and the dangling \"M3-2g\" label is fixed (its real content is \"M3 step 3\").",
      "M3-2q：「九」第 2 项（零拷贝内存优先 HOST_CACHED）取证并**否掉** —— 探针扩了 DM_FD_MEM_TYPE / DM_FD_FORCE / DM_FD_SIZE 与\"普通缓冲 vs 外部缓冲\"的类型位对照：类型 6 上分配、取 fd、mmap 到指定地址、双向全通（256 / 512 / 3968 MB 都过），但它不在缓冲声明的可用类型位里（外部缓冲 0x13，同尺寸普通缓冲 0x41 含类型 6），属规范外用法；同机 A/B（同一份二进制，只改 DM_ZC_CACHED，固定 10 秒采 utime+stime）CPU 时间没有可测差异（同峰配对 <3%、轮间波动 ±100%）⇒ 收益看不到、风险不付，维持类型 4。换轨处显式优先取带 HOST_CACHED 的零拷贝类型、取不到或分配失败回退类型 4，开关 DM_ZC_CACHED 默认关（缺省行为与改动前一致），日志标出\"越过缓冲声明的可用类型位\"。坑点两条：DM_WATCH_STALL=0 不是\"只记不杀\"（crash.c:347-354 里值 ≤ 0 回落到 15 秒，写 0 等于停住 15 秒判死退出，dm.conf 里的注释原先写错）；MIUI 上 adb install -r 被拦（INSTALL_FAILED_USER_RESTRICTED），改用设备端 pm install -r 即可。  M3-2q: item 2 of section nine (preferring HOST_CACHED for the zero-copy type) is measured and **ruled out** -- the probe gained DM_FD_MEM_TYPE / DM_FD_FORCE / DM_FD_SIZE plus a \"plain versus external buffer\" type-bit readout: on type 6 the allocation, the fd, mmap at a chosen address and both directions all pass (256 / 512 / 3968 MB alike), but type 6 is not among the buffer's declared allowed types (an external buffer reports 0x13, while a plain buffer of the same size reaches 0x41 and does include type 6), which is outside the spec; the same-device A/B (one binary, only DM_ZC_CACHED changes, utime+stime sampled at a fixed 10 seconds) shows no measurable CPU-time difference (under 3% within the same mode against a +-100% run-to-run spread), so there is no gain to be had and no reason to pay the risk -- type 4 stays. The overlay path now prefers the zero-copy type with HOST_CACHED explicitly and falls back to type 4 when it is missing or the allocation fails, with DM_ZC_CACHED defaulting to off (default behaviour identical to before) and the log naming the \"steps outside the buffer's declared allowed types\" case. Two traps recorded: DM_WATCH_STALL=0 is not \"log without killing\" (in crash.c:347-354 a value <= 0 falls back to 15 seconds, so writing 0 means a 15-second stall is declared dead and exits -- the comment in dm.conf was wrong), and MIUI refuses adb install -r (INSTALL_FAILED_USER_RESTRICTED) while a device-side pm install -r works.",
-     "文档：重排「下一步」（主卡点提前为里程碑 B、合并重复的两条\"设备丢失\"、把「九」中与卡点无关的项挪进列表，并补记本轮照出的两条约束：MIUI 退后台即 SIGKILL、keyevent 被拒）并把交接页基线更新到 06cc706  Docs: \"what is next\" is re-ordered (Milestone B promoted to the main blocker, the two duplicate device-loss entries merged, the blocker-independent items of \"section nine\" moved into the list, and the two constraints this round brought out recorded: MIUI SIGKILLs on backgrounding, keyevents refused) and the hand-over page's baseline moves to 06cc706",
-     "M3-2p + 构建脚本：管线缓存落盘（「九」第 1 项：图形与计算共用一个 VkPipelineCache，退出/切后台/前台每秒 tick 写回、下次启动载回；真机照出 MIUI 退后台即 SIGKILL，落盘主力是前台 tick）+ 工具链路径收进 toolchain.cmd 一处决定（换机器不再改文件，JAVA_HOME/ANDROID_HOME/DM_* 可覆盖） M3-2p + build scripts: the pipeline cache lands on disk (item 1 of section nine: one VkPipelineCache shared by graphics and compute, written on background/exit and by a per-second foreground tick, loaded back on the next start; the device showed MIUI SIGKILLs on backgrounding, so the foreground tick is the main path) and the toolchain paths collapse into one place, toolchain.cmd (no more per-machine edits; JAVA_HOME/ANDROID_HOME/DM_* override)"
+     "文档：重排「下一步」（主卡点提前为里程碑 B、合并重复的两条\"设备丢失\"、把「九」中与卡点无关的项挪进列表，并补记本轮照出的两条约束：MIUI 退后台即 SIGKILL、keyevent 被拒）并把交接页基线更新到 06cc706  Docs: \"what is next\" is re-ordered (Milestone B promoted to the main blocker, the two duplicate device-loss entries merged, the blocker-independent items of \"section nine\" moved into the list, and the two constraints this round brought out recorded: MIUI SIGKILLs on backgrounding, keyevents refused) and the hand-over page's baseline moves to 06cc706"
     ]
    }
   ]
@@ -832,21 +832,21 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-10-15T07:40:18Z",
+  "pushed_at": "2026-10-15T08:16:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T07:40:12Z",
+    "last_commit": "2026-10-15T08:16:06Z",
     "subjects": [
+     "Add on-demand iOS prepared input generation [skip ci]",
      "Clarify shared Data resource metadata",
      "Share prepared input configuration and document Mac installation",
      "Document verified Mac prepared input and build duration",
      "Add non-publishing remote Mac validation",
      "Simplify macOS prepared builds after input validation",
      "Reuse existing Data on Mac with included resource metadata",
-     "Preserve macOS build diagnostics on failure",
-     "Document macOS prepared builds and application usage"
+     "Preserve macOS build diagnostics on failure"
     ]
    }
   ]
@@ -1227,5 +1227,19 @@
  "qy2569/d2r-mobile-build": {
   "pushed_at": "2026-10-15T08:11:47Z",
   "branches": []
+ },
+ "catoncat/d2r-port-radar": {
+  "pushed_at": "2026-10-15T08:16:35Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T08:16:25Z",
+    "subjects": [
+     "README: point to the published page",
+     "Initial port radar: fork network + independent repos, interactive page, CI auto-update"
+    ]
+   }
+  ]
  }
 }
