@@ -1,0 +1,1231 @@
+{
+ "TommyLau/botw-mobile": {
+  "pushed_at": "2026-10-15T07:24:00Z",
+  "branches": [
+   {
+    "branch": "botw-host-boot",
+    "ahead": 4,
+    "behind": 0,
+    "files": 36,
+    "real_files": 31,
+    "dirs": [
+     "AGENTS.md",
+     "CONTRIBUTING.md",
+     "CONTRIBUTING.zh-CN.md",
+     "dm/.gitignore",
+     "dm/host",
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-10-15T07:23:55Z",
+    "subjects": [
+     "feat(host): boot BotW to its first unsupported service",
+     "docs: require conventional commit messages",
+     "Add bring-up tools for a new title and keep game files out of git",
+     "Rewriter: handle ldrsw jump tables and blr x18 call sites"
+    ]
+   },
+   {
+    "branch": "botw-rewriter",
+    "ahead": 2,
+    "behind": 0,
+    "files": 7,
+    "real_files": 6,
+    "dirs": [
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-10-15T06:29:29Z",
+    "subjects": [
+     "Add bring-up tools for a new title and keep game files out of git",
+     "Rewriter: handle ldrsw jump tables and blr x18 call sites"
+    ]
+   }
+  ]
+ },
+ "yinqingyan/d2r-mobile": {
+  "pushed_at": "2026-10-15T04:11:50Z",
+  "branches": [
+   {
+    "branch": "tvos/apple-tv-support",
+    "ahead": 1,
+    "behind": 2,
+    "files": 23,
+    "real_files": 23,
+    "dirs": [
+     "dm/host",
+     "dm/tvos"
+    ],
+    "last_commit": "2026-10-15T04:11:40Z",
+    "subjects": [
+     "Add experimental tvOS frontend and Apple TV bring-up notes"
+    ]
+   }
+  ]
+ },
+ "dormonbear/d2r-mobile": {
+  "pushed_at": "2026-10-15T03:28:18Z",
+  "branches": [
+   {
+    "branch": "fix/audio-release-notifier-qos",
+    "ahead": 1,
+    "behind": 2,
+    "files": 1,
+    "real_files": 1,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-15T03:27:29Z",
+    "subjects": [
+     "fix(audio): match release notifier QoS to guest mixer"
+    ]
+   }
+  ]
+ },
+ "n1zjqo/d2r-mobile": {
+  "pushed_at": "2026-10-15T03:21:06Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 1,
+    "behind": 2,
+    "files": 1,
+    "real_files": 0,
+    "dirs": [],
+    "last_commit": "2026-10-15T03:21:05Z",
+    "subjects": [
+     "ci: sync upstream main daily at 09:23 China time"
+    ]
+   }
+  ]
+ },
+ "n3crosis/d2r-mobile": {
+  "pushed_at": "2026-10-15T06:59:52Z",
+  "branches": [
+   {
+    "branch": "perf/patch-nso-prefilter",
+    "ahead": 1,
+    "behind": 0,
+    "files": 1,
+    "real_files": 1,
+    "dirs": [
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-15T06:59:43Z",
+    "subjects": [
+     "Speed up NSO x18 scan with register field prefilter"
+    ]
+   }
+  ]
+ },
+ "catoncat/d2r-mobile": {
+  "pushed_at": "2026-10-15T06:43:19Z",
+  "branches": []
+ },
+ "Frankisfrank/d2r-mobile": {
+  "pushed_at": "2026-10-15T07:23:32Z",
+  "branches": []
+ },
+ "ha7rock/d2r-mobile": {
+  "pushed_at": "2026-10-14T14:38:18Z",
+  "branches": []
+ },
+ "edwinwang/d2r-mobile": {
+  "pushed_at": "2026-10-14T14:01:45Z",
+  "branches": []
+ },
+ "GirlNet/d2r-mobile": {
+  "pushed_at": "2026-10-15T06:53:08Z",
+  "branches": [
+   {
+    "branch": "codex/p5r-runtime",
+    "ahead": 9,
+    "behind": 5,
+    "files": 51,
+    "real_files": 48,
+    "dirs": [
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-10-15T06:53:04Z",
+    "subjects": [
+     "Preserve P5R compute workgroups and fix storage buffer write reflection",
+     "Implement independent NVN combined texture and sampler bindings",
+     "Add reproducible P5R shader diagnostics and binding audits",
+     "Record P5R shader diagnostics and Metal component validation",
+     "Prepare P5R embedded shaders and support NVN 11 control spans",
+     "Document P5R cloud validation and remaining device work",
+     "Take over P5R audio playback sample queries",
+     "Handle Python 3.14 f-strings and compile iOS host components in CI"
+    ]
+   }
+  ]
+ },
+ "gbcmikeblue/d2r-mobile": {
+  "pushed_at": "2026-10-15T08:01:14Z",
+  "branches": [
+   {
+    "branch": "android",
+    "ahead": 82,
+    "behind": 22,
+    "files": 80,
+    "real_files": 69,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-15T07:59:18Z",
+    "subjects": [
+     "M3-2u：「停住」当场取到现场了 —— 它只在\"查看器 + 逐级扫描同时读回\"时出现（A/B/C 三臂），并加了按需转储触发口。",
+     "M3-2t：任务图三张位图的时间序列 —— 「上膛 0 位」否掉、「完成后被清」成立，顺带改掉三条旧口径。",
+     "docs：把「M3-2s」补进英文那两份，中英双份对齐",
+     "M3-2s：「谁写 this+0x3328」有答案了 —— 三张位图、上膛点，以及一处说不通的地方。新仪器（dm/host/hle_thread.c，全部只读）：peek32；任务图的三张位图（+0x3320 依赖源 / +0x3324 待派发 / +0x3328 已完成）与两个\"在飞作业表\"长度；每条任务的 依赖A(+0x18)/依赖B(+0x1c)/标志(+0x58)；任务包装器帧捕获（[x29-8] = 该作业的图、[x29-0x18] = 序号）；每个线程\"最近一次 ArbitrateLock\"的期望持有人与实际锁字。反汇编结论：置位**只有一处**——任务包装器末尾 main+0x15f0e6c（ldxr/orr/stlxr 置 1<<序号）；\"上膛\"在 main+0x1636f50（str w9,[x8] 写低 count 位进 +0x3324，紧接 str wzr,[x8,#4] 清完成位图），随后 bl 0x15ee598 派发、bl 0x15ee898 轮询——这一串就是\"跑这张图\"的入口（游戏侧从 0x856f50 调进来）；派发器要求 +0x3324 的位 i、rec[i]+0x18 ⊆ +0x3328、rec[i]+0x1c ⊆ +0x3320，满足才原子清位并把作业挂进作业池（池对象 = [0x31143d0]）。真机三轮（.work/logs/r1/r2/r3.log）：三张位图**同时为 0**（22 任务那张图，出图 59/62 停住），而主线程栈上就有**活的包装器帧**（渲染码 → 跑图入口 → 轮询 → 泵 0xdf9794 → 包装器 → 派发器 → 解锁）⇒ M3-2r 那句\"22 个任务从未被派发\"**不成立**；工人 0x1005 确实在该图的某个任务里，等一把锁字为 0x40001001（持有人 0x1001 = 主线程）的锁，0x1004/0x1006/0x1007 的最近一次锁字都是 0（没卡在锁上），主线程自己也没卡在锁上。矛盾留档：①上膛写全 count 位 ②派发器只清被取走的位（依赖不满足的位会留着）③实测待派发=0 且已完成=0——三者不能同时成立，只剩\"上膛读到的 count 与轮询用的不是同一个值\"或\"完成后被清\"（+0x3328 另有清零点 main+0x15eef90，属另一条跑图路径 main+0x15ee9d8 的收尾；渲染码里 0x853b38 / 0x856f50 / 0x857270 是相邻的三次跑图调用）。下一步是把三张位图做成时间序列（主线程每次 SVC 采样、变化即打一行），之后是宿主侧锁账本与核\"图 == x26+0x2D40\"。文档：新增「M3-2s」并给「M3-2r」的定性加更正批注，重写「七、下一步」第 1 条；CROSS_MACHINE §7 同步（含本机新坑：cmd 是 936 代码页而仓库 .cmd 是 UTF-8 无 BOM，直接跑构建脚本会被中文注释拆行，先 chcp 65001 再 call）。",
+     "M3-2r：里程碑 B（客体停住）的形状量出来了 —— 主线程在等一个**从未被派发**的任务图。新仪器（都在 dm/host/hle_thread.c，默认不影响行为）：SleepThread 时长/时刻、每线程最近 16 次 svc 环（号+参数+LR）、沿 regs[29]（x29 帧指针链）取落在 main 的调用链（安卓侧第一次能读到\"游戏在哪个函数\"）、每次等待\"已等 X 秒\"、锁移交历史（最近 16 次 ArbitrateUnlock）、任务图完成位图（从 [x29-8] 取任务图对象，读 +0x3328 位图与 +0x3100 掩码）。关键读数：位图**恒为 0**、等待掩码 0x16 ⇒ 任务图 22 个任务一个都没完成；同一时刻工人 0x1005 解码 Granny 段（svc #0x83/#0x84 门）后去等一把被主线程持有的锁（已等 15.1 秒，而该锁从未出现在任何一次锁移交里 ⇒ 排除\"锁字残留\"）；我们图形侧空闲，出图停是结果不是原因。两个假设被实测否掉：DM_GRANNY_PRE=0（关预解码）跑 3 轮照旧全部判死；锁语义开关 DM_LOCK_SEM 的 bit0（ArbitrateUnlock 改 Horizon 的\"清零+唤醒一个\"）3 轮全部启动早期 svcBreak/Panic、出图 0，bit1（放宽 ArbitrateLock 的阻塞条件）3 轮全部在\"阶段 启动\"判死、出图 0 ⇒ 现状锁实现与 SDK 自洽，锁不是根因（开关留在代码里、默认关）。另记一条反汇编路子（本机没有 Python）：用 NDK 的 llvm-objcopy 把 main.patched.bin 包成 ELF（--rename-section .data=.text,alloc,load,readonly,code）+ llvm-objdump -d --start-address/--stop-address；main.patched.bin 的文件偏移就等于 main+0x。文档：补上被代码注释引用的「M3-2r」一节，并修掉悬空的「M3-2g」编号（其真实内容是「M3 第 3 步」）。  M3-2r: the shape of milestone B (the guest stall) is measured -- the main thread waits on a task graph that was never dispatched. New instruments (all in dm/host/hle_thread.c, no behaviour change by default): SleepThread duration/time, a per-thread SVC ring of the last 16 calls (number + args + LR), a call chain collected along regs[29] (the x29 frame-pointer chain) keeping the return addresses that land in main (the first time Android can read \"which game function\"), a \"waiting X s\" reading per wait, a lock-handoff history (the last 16 ArbitrateUnlocks), and the task-graph completion bitmap (the task-graph object comes from [x29-8]; +0x3328 is the bitmap and +0x3100 this waiter's mask). Key readings: the bitmap is always 0 with wait mask 0x16 => none of the task graph's 22 tasks ever completes; at that moment worker 0x1005, after decoding Granny segments (the svc #0x83/#0x84 gates), waits on a lock held by the main thread (waiting 15.1 s, and that lock never appears in any handoff => a stale lock word is ruled out); our graphics side is idle, so the missing presents are a result rather than a cause. Two hypotheses were killed by measurement: DM_GRANNY_PRE=0 (pre-decode off) still declared dead in all 3 rounds; the DM_LOCK_SEM switch's bit0 (ArbitrateUnlock switched to Horizon's \"clear and wake one\") ended all 3 rounds in an early-startup svcBreak/panic with 0 presents, and bit1 (loosening ArbitrateLock's blocking condition) was declared dead in the startup stage in all 3 rounds with 0 presents => the current lock implementation is self-consistent with the SDK and the locks are not the root cause (the switch stays in the code, off by default). One more thing recorded: how to disassemble on a machine without Python (wrap main.patched.bin into an ELF with the NDK's llvm-objcopy, --rename-section .data=.text,alloc,load,readonly,code, then llvm-objdump -d --start-address/--stop-address; the file offset in main.patched.bin is exactly main+0x). Docs: the \"M3-2r\" section referenced by code comments now exists, and the dangling \"M3-2g\" label is fixed (its real content is \"M3 step 3\").",
+     "M3-2q：「九」第 2 项（零拷贝内存优先 HOST_CACHED）取证并**否掉** —— 探针扩了 DM_FD_MEM_TYPE / DM_FD_FORCE / DM_FD_SIZE 与\"普通缓冲 vs 外部缓冲\"的类型位对照：类型 6 上分配、取 fd、mmap 到指定地址、双向全通（256 / 512 / 3968 MB 都过），但它不在缓冲声明的可用类型位里（外部缓冲 0x13，同尺寸普通缓冲 0x41 含类型 6），属规范外用法；同机 A/B（同一份二进制，只改 DM_ZC_CACHED，固定 10 秒采 utime+stime）CPU 时间没有可测差异（同峰配对 <3%、轮间波动 ±100%）⇒ 收益看不到、风险不付，维持类型 4。换轨处显式优先取带 HOST_CACHED 的零拷贝类型、取不到或分配失败回退类型 4，开关 DM_ZC_CACHED 默认关（缺省行为与改动前一致），日志标出\"越过缓冲声明的可用类型位\"。坑点两条：DM_WATCH_STALL=0 不是\"只记不杀\"（crash.c:347-354 里值 ≤ 0 回落到 15 秒，写 0 等于停住 15 秒判死退出，dm.conf 里的注释原先写错）；MIUI 上 adb install -r 被拦（INSTALL_FAILED_USER_RESTRICTED），改用设备端 pm install -r 即可。  M3-2q: item 2 of section nine (preferring HOST_CACHED for the zero-copy type) is measured and **ruled out** -- the probe gained DM_FD_MEM_TYPE / DM_FD_FORCE / DM_FD_SIZE plus a \"plain versus external buffer\" type-bit readout: on type 6 the allocation, the fd, mmap at a chosen address and both directions all pass (256 / 512 / 3968 MB alike), but type 6 is not among the buffer's declared allowed types (an external buffer reports 0x13, while a plain buffer of the same size reaches 0x41 and does include type 6), which is outside the spec; the same-device A/B (one binary, only DM_ZC_CACHED changes, utime+stime sampled at a fixed 10 seconds) shows no measurable CPU-time difference (under 3% within the same mode against a +-100% run-to-run spread), so there is no gain to be had and no reason to pay the risk -- type 4 stays. The overlay path now prefers the zero-copy type with HOST_CACHED explicitly and falls back to type 4 when it is missing or the allocation fails, with DM_ZC_CACHED defaulting to off (default behaviour identical to before) and the log naming the \"steps outside the buffer's declared allowed types\" case. Two traps recorded: DM_WATCH_STALL=0 is not \"log without killing\" (in crash.c:347-354 a value <= 0 falls back to 15 seconds, so writing 0 means a 15-second stall is declared dead and exits -- the comment in dm.conf was wrong), and MIUI refuses adb install -r (INSTALL_FAILED_USER_RESTRICTED) while a device-side pm install -r works.",
+     "文档：重排「下一步」（主卡点提前为里程碑 B、合并重复的两条\"设备丢失\"、把「九」中与卡点无关的项挪进列表，并补记本轮照出的两条约束：MIUI 退后台即 SIGKILL、keyevent 被拒）并把交接页基线更新到 06cc706  Docs: \"what is next\" is re-ordered (Milestone B promoted to the main blocker, the two duplicate device-loss entries merged, the blocker-independent items of \"section nine\" moved into the list, and the two constraints this round brought out recorded: MIUI SIGKILLs on backgrounding, keyevents refused) and the hand-over page's baseline moves to 06cc706",
+     "M3-2p + 构建脚本：管线缓存落盘（「九」第 1 项：图形与计算共用一个 VkPipelineCache，退出/切后台/前台每秒 tick 写回、下次启动载回；真机照出 MIUI 退后台即 SIGKILL，落盘主力是前台 tick）+ 工具链路径收进 toolchain.cmd 一处决定（换机器不再改文件，JAVA_HOME/ANDROID_HOME/DM_* 可覆盖） M3-2p + build scripts: the pipeline cache lands on disk (item 1 of section nine: one VkPipelineCache shared by graphics and compute, written on background/exit and by a per-second foreground tick, loaded back on the next start; the device showed MIUI SIGKILLs on backgrounding, so the foreground tick is the main path) and the toolchain paths collapse into one place, toolchain.cmd (no more per-machine edits; JAVA_HOME/ANDROID_HOME/DM_* override)"
+    ]
+   }
+  ]
+ },
+ "leiyin321/d2r-mobile": {
+  "pushed_at": "2026-10-14T13:27:06Z",
+  "branches": []
+ },
+ "dontblameitonme/d2r-mobile": {
+  "pushed_at": "2026-10-14T08:00:55Z",
+  "branches": []
+ },
+ "dgltsp-cpu/d2r-mobile": {
+  "pushed_at": "2026-10-15T02:26:32Z",
+  "branches": []
+ },
+ "linjiacheng/d2r-mobile": {
+  "pushed_at": "2026-10-14T23:13:36Z",
+  "branches": []
+ },
+ "fengtong1109/d2r-mobile": {
+  "pushed_at": "2026-10-15T00:10:57Z",
+  "branches": []
+ },
+ "stonejing/d2r-mobile": {
+  "pushed_at": "2026-10-15T06:30:35Z",
+  "branches": []
+ },
+ "tkcoliver-glitch/d2r-mobile": {
+  "pushed_at": "2026-10-15T08:11:37Z",
+  "branches": [
+   {
+    "branch": "dev",
+    "ahead": 5,
+    "behind": 2,
+    "files": 13,
+    "real_files": 13,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-15T08:11:33Z",
+    "subjects": [
+     "fix(input): await confirmed off-hand weapon swap",
+     "fix(ui): restore minimap after first-clear act cinematics",
+     "chore(diagnostics): record automap visibility transitions",
+     "fix(input): recover charged skills with stale item bindings",
+     "test(audio): cover stereo rendering across guest buffers"
+    ]
+   }
+  ]
+ },
+ "ivanzhangwb/d2r-mobile": {
+  "pushed_at": "2026-10-15T04:20:30Z",
+  "branches": []
+ },
+ "jeoichu-rgb/switch-mobile": {
+  "pushed_at": "2026-10-15T07:56:28Z",
+  "branches": []
+ },
+ "zt199510/d2r-mobile": {
+  "pushed_at": "2026-10-14T14:46:34Z",
+  "branches": []
+ },
+ "niesj-n/d2r-mobile": {
+  "pushed_at": "2026-10-14T16:48:15Z",
+  "branches": []
+ },
+ "Seeyajack/d2r-mobile": {
+  "pushed_at": "2026-10-14T21:24:44Z",
+  "branches": [
+   {
+    "branch": "harmony",
+    "ahead": 50,
+    "behind": 3,
+    "files": 131,
+    "real_files": 130,
+    "dirs": [
+     "NOTICE.md",
+     "PORTABLE.md",
+     "dm/gfx",
+     "dm/host",
+     "dm/ohos",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-14T21:21:52Z",
+    "subjects": [
+     "feat(gfx): 3.3-A 出图 —— XComponent → VkSurfaceKHR → swapchain → present，真机通过",
+     "perf(gfx): 管线缓存落盘 —— 第一项\"鸿蒙特有优化\"，真机省 99%",
+     "fix(gfx): 3.2 增强 —— 补三类\"不报错的错\" + 落第一版测量骨架，真机通过",
+     "feat(gfx): 3.2 回放层最小闭环 —— 命令流 → 回放 → 出图，真机通过",
+     "feat(gfx): 3.1-C 池模块（nvn_vk.c）—— 回放层第一个文件，真机通过",
+     "feat(gfx): 3.1-B 客体堆预留 —— 共享 Vulkan 上下文 + 真机通过",
+     "feat(gfx): 阶段 3 前置 + 3.1-A —— 零拷贝前提已验，池零拷贝原型真机通过",
+     "fix(gfx): glslang-fetch.sh 修正路径与引号 —— 缺省指向项目根 tools/（仓库外），脚本实测通过"
+    ]
+   }
+  ]
+ },
+ "Zhangbu/d2r-mobile": {
+  "pushed_at": "2026-10-15T01:06:35Z",
+  "branches": []
+ },
+ "zcanic/d2r-mobile": {
+  "pushed_at": "2026-10-13T16:54:39Z",
+  "branches": []
+ },
+ "JCMB-ME/d2r-mobile": {
+  "pushed_at": "2026-10-13T07:17:48Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 1,
+    "behind": 25,
+    "files": 1,
+    "real_files": 0,
+    "dirs": [],
+    "last_commit": "2026-10-13T07:17:45Z",
+    "subjects": [
+     "Add GitHub Actions build and test workflow"
+    ]
+   }
+  ]
+ },
+ "sosufo009/d2r-mobile": {
+  "pushed_at": "2026-10-13T14:24:48Z",
+  "branches": []
+ },
+ "TwilitArc/d2r-mobile": {
+  "pushed_at": "2026-10-13T06:44:09Z",
+  "branches": [
+   {
+    "branch": "ios18-support",
+    "ahead": 10,
+    "behind": 37,
+    "files": 32,
+    "real_files": 26,
+    "dirs": [
+     "dm/PRODUCT",
+     "dm/gfx",
+     "dm/host",
+     "dm/ios",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-13T06:42:28Z",
+    "subjects": [
+     "Publish iOS 18 r2 shell and source; record confirmed iOS 18.4.1 device result",
+     "Fix device boot failure: include runtime shader maps in iOS 18 shell; build 2",
+     "Record successful full iOS 18 build and verified unsigned IPA [skip ci]",
+     "Exclude all locally supplied resources from CI shell to avoid duplicate archive entries",
+     "Keep shell manifest shader directory aligned with compiled chain",
+     "Build unsigned iOS 18 shell on macOS without game files; load brightness data at runtime",
+     "Document successful iOS 18 SDK checks and remaining full-build requirements [skip ci]",
+     "Compile modified iOS startup source against iOS 18 SDK"
+    ]
+   }
+  ]
+ },
+ "feiyunwill/d2r-mobile": {
+  "pushed_at": "2026-10-15T05:54:22Z",
+  "branches": []
+ },
+ "mrggbond/d2r-mobile": {
+  "pushed_at": "2026-10-14T19:46:53Z",
+  "branches": []
+ },
+ "klacee/d2r-mobile": {
+  "pushed_at": "2026-10-15T07:58:30Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 2,
+    "behind": 10,
+    "files": 1,
+    "real_files": 0,
+    "dirs": [],
+    "last_commit": "2026-10-14T05:18:20Z",
+    "subjects": [
+     "Merge branch 'jhaizhou-ops:main' into main",
+     "Update upstream repository in sync-release.yml"
+    ]
+   }
+  ]
+ },
+ "ffan97743-beep/d2r-mobile": {
+  "pushed_at": "2026-10-12T17:50:51Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 1,
+    "behind": 36,
+    "files": 1,
+    "real_files": 0,
+    "dirs": [],
+    "last_commit": "2026-10-12T17:50:50Z",
+    "subjects": [
+     "Create build-ios.yml"
+    ]
+   }
+  ]
+ },
+ "saymoon/d2r-mobile": {
+  "pushed_at": "2026-10-15T04:17:23Z",
+  "branches": []
+ },
+ "imink/hades-ios": {
+  "pushed_at": "2026-10-15T05:46:39Z",
+  "branches": [
+   {
+    "branch": "yuewang1-microsoft-hades-ios-port",
+    "ahead": 1,
+    "behind": 32,
+    "files": 89,
+    "real_files": 86,
+    "dirs": [
+     "dm/gfx",
+     "dm/host",
+     "dm/ios",
+     "dm/tools",
+     "dm/verify",
+     "hades/.gitignore",
+     "hades/LESSONS.zh-CN.md",
+     "hades/README.md",
+     "hades/README.zh-CN.md",
+     "hades/ios"
+    ],
+    "last_commit": "2026-10-14T12:53:31Z",
+    "subjects": [
+     "Add native Hades iOS target and verified v22 graphics baseline"
+    ]
+   }
+  ]
+ },
+ "linhay/d2r-mobile": {
+  "pushed_at": "2026-10-14T03:15:00Z",
+  "branches": []
+ },
+ "hubeiqiao/d2r-mobile": {
+  "pushed_at": "2026-10-15T03:09:19Z",
+  "branches": [
+   {
+    "branch": "codex/ipad-map-portal-tooltip",
+    "ahead": 1,
+    "behind": 2,
+    "files": 5,
+    "real_files": 3,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-15T03:04:21Z",
+    "subjects": [
+     "fix(ui): preserve native item tooltip anchors by default"
+    ]
+   },
+   {
+    "branch": "codex/map-portal-diagnostics",
+    "ahead": 1,
+    "behind": 2,
+    "files": 9,
+    "real_files": 7,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-15T03:09:17Z",
+    "subjects": [
+     "diag: trace minimap visibility and object warp requests"
+    ]
+   },
+   {
+    "branch": "codex/pet-life-diagnostics",
+    "ahead": 1,
+    "behind": 15,
+    "files": 5,
+    "real_files": 3,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-13T18:35:53Z",
+    "subjects": [
+     "Add bounded Rift pet life diagnostics and native verification handoff"
+    ]
+   },
+   {
+    "branch": "codex/promo-video-readme",
+    "ahead": 4,
+    "behind": 13,
+    "files": 2,
+    "real_files": 0,
+    "dirs": [],
+    "last_commit": "2026-10-14T18:16:34Z",
+    "subjects": [
+     "docs: point gameplay promotion to supplied YouTube and Bilibili videos",
+     "docs: use direct Pages media after iPhone release-download failure",
+     "docs: link playable GitHub Pages film instead of stripped video tags",
+     "docs: add bilingual gameplay video promotion"
+    ]
+   },
+   {
+    "branch": "codex/readable-idle-skills",
+    "ahead": 1,
+    "behind": 35,
+    "files": 1,
+    "real_files": 1,
+    "dirs": [
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-12T20:01:41Z",
+    "subjects": [
+     "Keep idle skill icons legible without changing depleted-charge styling"
+    ]
+   },
+   {
+    "branch": "codex/rift-encounter-profiles",
+    "ahead": 2,
+    "behind": 15,
+    "files": 10,
+    "real_files": 6,
+    "dirs": [
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-13T20:15:18Z",
+    "subjects": [
+     "feat: compose varied rift routes and document D3 design adaptation",
+     "feat: prototype randomized rift encounters and bounded observations"
+    ]
+   },
+   {
+    "branch": "codex/rift-endgame-integration",
+    "ahead": 8,
+    "behind": 14,
+    "files": 37,
+    "real_files": 31,
+    "dirs": [
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-13T21:28:35Z",
+    "subjects": [
+     "merge: retain v1.0.8 minion fixes and finalize native AI handoff",
+     "fix(rift): bound placement work and package reproducible validation",
+     "feat(rift): integrate bounded native same-map encounter groups",
+     "feat: integrate experimental rift reward targets and audited lifecycle safeguards",
+     "fix: share capped next rift tier with iOS HUD",
+     "Keep Rift loot return until explicit new-run confirmation",
+     "feat: compose varied rift routes and document D3 design adaptation",
+     "feat: prototype randomized rift encounters and bounded observations"
+    ]
+   },
+   {
+    "branch": "codex/rift-guardian-town",
+    "ahead": 1,
+    "behind": 2,
+    "files": 5,
+    "real_files": 3,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-14T21:19:01Z",
+    "subjects": [
+     "fix(rift): defer delayed guardian waves while outside rift maps"
+    ]
+   },
+   {
+    "branch": "codex/rift-hud-tier-cap",
+    "ahead": 1,
+    "behind": 15,
+    "files": 5,
+    "real_files": 5,
+    "dirs": [
+     "dm/host",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-13T20:11:42Z",
+    "subjects": [
+     "fix: share capped next rift tier with iOS HUD"
+    ]
+   },
+   {
+    "branch": "codex/rift-overtime-ui",
+    "ahead": 1,
+    "behind": 13,
+    "files": 13,
+    "real_files": 13,
+    "dirs": [
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-13T22:28:58Z",
+    "subjects": [
+     "fix(rift): persist overtime status and clarify existing choices"
+    ]
+   },
+   {
+    "branch": "codex/rift-safe-completion",
+    "ahead": 1,
+    "behind": 15,
+    "files": 9,
+    "real_files": 9,
+    "dirs": [
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-13T19:50:27Z",
+    "subjects": [
+     "Keep Rift loot return until explicit new-run confirmation"
+    ]
+   },
+   {
+    "branch": "codex/rift-suspend-clock",
+    "ahead": 1,
+    "behind": 35,
+    "files": 3,
+    "real_files": 3,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-12T21:25:18Z",
+    "subjects": [
+     "Use the paused guest clock for all rift challenge timing"
+    ]
+   },
+   {
+    "branch": "codex/setup-bash32-braces",
+    "ahead": 1,
+    "behind": 36,
+    "files": 1,
+    "real_files": 1,
+    "dirs": [
+     "setup.sh"
+    ],
+    "last_commit": "2026-10-12T16:44:54Z",
+    "subjects": [
+     "修复 setup 在 Bash 3.2 下的全角标点变量解析"
+    ]
+   }
+  ]
+ },
+ "1170393299/d2r-mobile": {
+  "pushed_at": "2026-10-12T13:59:31Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 1,
+    "behind": 36,
+    "files": 1,
+    "real_files": 0,
+    "dirs": [],
+    "last_commit": "2026-10-12T13:59:31Z",
+    "subjects": [
+     "Create main.yml"
+    ]
+   }
+  ]
+ },
+ "gjuoun/d2r-mobile": {
+  "pushed_at": "2026-10-13T02:53:40Z",
+  "branches": []
+ },
+ "anacn/d2r-mobile": {
+  "pushed_at": "2026-10-13T13:41:04Z",
+  "branches": []
+ },
+ "skycsky/d2r-mobile": {
+  "pushed_at": "2026-10-15T07:39:15Z",
+  "branches": []
+ },
+ "chenbincb/d2r-mobile": {
+  "pushed_at": "2026-10-13T23:58:59Z",
+  "branches": []
+ },
+ "1lifedo1thing/d2r-mobile": {
+  "pushed_at": "2026-10-14T08:49:21Z",
+  "branches": []
+ },
+ "lcr1017/d2r-mobile": {
+  "pushed_at": "2026-10-15T05:10:39Z",
+  "branches": []
+ },
+ "liimyauk/d2r-mobile": {
+  "pushed_at": "2026-10-14T12:24:40Z",
+  "branches": []
+ },
+ "adm1n007/d2r-mobile": {
+  "pushed_at": "2026-10-15T02:47:08Z",
+  "branches": []
+ },
+ "dodola/d2r-mobile": {
+  "pushed_at": "2026-10-13T03:44:51Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 1,
+    "behind": 38,
+    "files": 70,
+    "real_files": 70,
+    "dirs": [
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-13T03:43:06Z",
+    "subjects": [
+     "feat(android): add native game host and Vulkan renderer"
+    ]
+   }
+  ]
+ },
+ "ilderaj/d2r-mobile": {
+  "pushed_at": "2026-10-13T05:35:04Z",
+  "branches": []
+ },
+ "MichaelC001/d2r-mobile": {
+  "pushed_at": "2026-10-15T02:31:14Z",
+  "branches": []
+ },
+ "tinytub/d2r-mobile": {
+  "pushed_at": "2026-10-15T07:16:22Z",
+  "branches": []
+ },
+ "yzxh24/d2r-mobile": {
+  "pushed_at": "2026-10-15T05:33:51Z",
+  "branches": []
+ },
+ "gamerenzz/d2r-mobile": {
+  "pushed_at": "2026-10-14T13:41:58Z",
+  "branches": []
+ },
+ "zjwww/d2r-mobile": {
+  "pushed_at": "2026-10-15T05:24:25Z",
+  "branches": []
+ },
+ "zzren2020/d2r-mobile": {
+  "pushed_at": "2026-10-13T13:32:35Z",
+  "branches": []
+ },
+ "FuckTencent/d2r-mobile": {
+  "pushed_at": "2026-10-14T07:20:44Z",
+  "branches": []
+ },
+ "Navidiaa/d2r-mobile": {
+  "pushed_at": "2026-10-13T01:50:30Z",
+  "branches": []
+ },
+ "Kelvin-Link/ns-mobile": {
+  "pushed_at": "2026-10-15T02:18:06Z",
+  "branches": []
+ },
+ "TianZuo555/d2r-mobile": {
+  "pushed_at": "2026-10-14T14:23:00Z",
+  "branches": []
+ },
+ "deadfoxwang/d2r-mobile": {
+  "pushed_at": "2026-10-14T14:30:37Z",
+  "branches": []
+ },
+ "julycw/d2r-mobile": {
+  "pushed_at": "2026-10-14T01:19:00Z",
+  "branches": []
+ },
+ "wysl/-game-d2r-mobile": {
+  "pushed_at": "2026-10-14T07:10:04Z",
+  "branches": []
+ },
+ "XGBCCC/d2r-mobile": {
+  "pushed_at": "2026-10-14T13:55:08Z",
+  "branches": []
+ },
+ "wbcyclist/d2r-mobile": {
+  "pushed_at": "2026-10-14T14:14:08Z",
+  "branches": []
+ },
+ "shuangwei-Ye/d2r-mobile": {
+  "pushed_at": "2026-10-15T00:59:09Z",
+  "branches": []
+ },
+ "ringsaturn/d2r-mobile": {
+  "pushed_at": "2026-10-13T14:01:43Z",
+  "branches": []
+ },
+ "zelbloo/d2r-mobile": {
+  "pushed_at": "2026-10-14T16:51:38Z",
+  "branches": []
+ },
+ "tyrad/d2r-mobile": {
+  "pushed_at": "2026-10-13T13:38:52Z",
+  "branches": []
+ },
+ "zengbo/d2r-mobile": {
+  "pushed_at": "2026-10-15T06:11:47Z",
+  "branches": []
+ },
+ "a9rgeapB/d2r-mobile": {
+  "pushed_at": "2026-10-14T03:06:21Z",
+  "branches": []
+ },
+ "jiayx/d2r-mobile": {
+  "pushed_at": "2026-10-14T10:12:26Z",
+  "branches": [
+   {
+    "branch": "fix/six-channel-audio-downmix",
+    "ahead": 1,
+    "behind": 5,
+    "files": 5,
+    "real_files": 5,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-14T10:08:33Z",
+    "subjects": [
+     "Fix six-channel audio output with explicit stereo downmix"
+    ]
+   }
+  ]
+ },
+ "Kamisorara/d2r-mobile": {
+  "pushed_at": "2026-10-14T10:59:31Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 3,
+    "behind": 5,
+    "files": 4,
+    "real_files": 4,
+    "dirs": [
+     "dm/host",
+     "dm/ios",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-14T10:59:11Z",
+    "subjects": [
+     "Merge remote-tracking branch 'upstream/main'",
+     "Guest dylib: write an ad-hoc signature with room to re-sign (LiveContainer signs guests on device and fails on a never-signed binary)",
+     "Unrecognized gamepads default to the Nintendo (Switch) face-button layout; Xbox / PS / MFi keep the positional layout by explicit name match"
+    ]
+   }
+  ]
+ },
+ "jiayx/d2r-mobile-build": {
+  "pushed_at": "2026-10-15T07:40:18Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T07:40:12Z",
+    "subjects": [
+     "Clarify shared Data resource metadata",
+     "Share prepared input configuration and document Mac installation",
+     "Document verified Mac prepared input and build duration",
+     "Add non-publishing remote Mac validation",
+     "Simplify macOS prepared builds after input validation",
+     "Reuse existing Data on Mac with included resource metadata",
+     "Preserve macOS build diagnostics on failure",
+     "Document macOS prepared builds and application usage"
+    ]
+   }
+  ]
+ },
+ "d2r-mobile/d2r-mobile": {
+  "pushed_at": "2026-10-15T05:32:00Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": true,
+    "last_commit": "2026-10-15T05:31:46Z",
+    "subjects": [
+     "README: list Apple TV 4K (community port, developer preview) in the platforms line and intro",
+     "Apple TV (tvOS) community port as a separate DmTV target; Rift and Mac fixes",
+     "v1.0.15: shell is now build input (.zip), launch self-check for incomplete packages and devices without Metal 3, graphics translation on its own thread, save with the pause menu open, wide-iPhone item tooltip and Chronicle rewards fixes",
+     "README: acknowledgements",
+     "NPC speech restored (explicit 5.1 to stereo downmix); graphics memory pools made resident only on first GPU use (about 0.5 GB less held); render targets written through a format-changing view attached with that format, sRGB swapchain presented through a non-sRGB view (#36); bloom / FXAA texture-slot rewrites mark bindings dirty; Mac App plays sound and fills 16:10 screens",
+     "README: devices with 4 GB of RAM are not supported yet (memory work in progress); older chips with 6 GB or more listed separately",
+     "README: state that this project provides only tools and a content-free shell, and does not distribute, endorse or take responsibility for third-party distribution of game content",
+     "iCloud save sync: devices that played offline no longer block the shared stash (cloud copy current, local copy kept for merging), first sync waits for the cloud listing, same-name characters backed up; system notices dock above the life / mana numbers and at the panel bottom when a large panel is open; Greater Rift: no preset monsters from level 90, top bar between Guardian waves"
+    ]
+   }
+  ]
+ },
+ "d2r-mobile/.github": {
+  "pushed_at": "2026-10-12T12:26:03Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-12T12:24:19Z",
+    "subjects": [
+     "Add the organization profile pointing to d2r-mobile"
+    ]
+   }
+  ]
+ },
+ "jiayx/d2r-mobile-build-check": {
+  "pushed_at": "2026-10-15T07:37:23Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T07:37:23Z",
+    "subjects": [
+     "Describe shared prepared input configuration",
+     "Use shared prepared input for Mac builds",
+     "Describe cloud validation",
+     "Add cloud Mac packaging validation"
+    ]
+   }
+  ]
+ },
+ "doctorqueue/d2r-mobile": {
+  "pushed_at": "2026-10-12T12:40:32Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-12T11:29:53Z",
+    "subjects": [
+     "Add a build skill for Claude Code and Codex",
+     "Initial public release"
+    ]
+   }
+  ]
+ },
+ "lixiaolin94/d2r-mobile": {
+  "pushed_at": "2026-10-12T09:10:59Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": true,
+    "last_commit": "2026-10-12T09:10:56Z",
+    "subjects": [
+     "README: use the English Trove screenshot",
+     "State the required game edition: Reign of the Warlock expansion",
+     "Initial public release"
+    ]
+   }
+  ]
+ },
+ "wukongtime/d2r-mobile-build-backup": {
+  "pushed_at": "2026-10-15T03:28:55Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T02:27:16Z",
+    "subjects": [
+     "Speed up official-shell builds with Mac generation and verified payload reuse",
+     "Support v1.0.15 ZIP shell inputs and verify launch package metadata",
+     "Restore original main packaging workflow and build upstream v1.0.14",
+     "Build latest upstream release by default and derive output versions from source",
+     "Move maintained build version pins into config",
+     "Keep README focused on setup, building and installation",
+     "Document archive checksums as the standard setup",
+     "Accept one JSON archive secret with an optional SHA-256"
+    ]
+   }
+  ]
+ },
+ "Johnoooob/nx-port": {
+  "pushed_at": "2026-10-13T10:17:22Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-13T10:17:18Z",
+    "subjects": [
+     "Initial import: generic Switch-to-Apple porting toolkit"
+    ]
+   }
+  ]
+ },
+ "d2r-mobile/d2r-skills": {
+  "pushed_at": "2026-10-13T01:56:39Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-12T14:25:43Z",
+    "subjects": [
+     "Add runeword interaction preview to design skill README",
+     "Add high-fidelity design reference skill",
+     "Add D2R Mobile agent skill"
+    ]
+   }
+  ]
+ },
+ "MrCKR/d2r-android-adapter": {
+  "pushed_at": "2026-10-15T05:48:54Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T05:46:15Z",
+    "subjects": [
+     "docs: define Android runtime and D2R adapter plan"
+    ]
+   }
+  ]
+ },
+ "spvycf/d2r": {
+  "pushed_at": "2026-10-15T06:52:17Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T06:45:28Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "MrCKR/switch-android-runtime": {
+  "pushed_at": "2026-10-15T06:51:59Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T06:51:57Z",
+    "subjects": [
+     "feat: add Android Vulkan capability probe skeleton",
+     "feat: add Android Vulkan capability probe skeleton",
+     "feat: add Android Vulkan capability probe skeleton",
+     "feat: add Android Vulkan capability probe skeleton",
+     "docs: define Android runtime and D2R adapter plan"
+    ]
+   }
+  ]
+ },
+ "craftsail/awesome-early-radar": {
+  "pushed_at": "2026-10-15T04:13:53Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T04:13:52Z",
+    "subjects": [
+     "radar 2026-10-15",
+     "radar 2026-10-14",
+     "radar 2026-10-13",
+     "radar 2026-10-13",
+     "awesome-early-radar：二进制改名 early-radar，sync 带上状态文件和已写过名单",
+     "radar 2026-10-13",
+     "radar 2026-10-12",
+     "radar 2026-10-11"
+    ]
+   }
+  ]
+ },
+ "scarin-corporations/ports-lib": {
+  "pushed_at": "2026-10-15T04:54:29Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T04:54:28Z",
+    "subjects": [
+     "chore: refresh catalog",
+     "chore: refresh catalog",
+     "chore: refresh catalog",
+     "chore: refresh catalog",
+     "chore: refresh catalog",
+     "chore: refresh catalog",
+     "chore: refresh catalog",
+     "feat: broaden port discovery and add games review pages"
+    ]
+   }
+  ]
+ },
+ "hitsmaxft/nsp-dawrin": {
+  "pushed_at": "2026-10-15T05:14:40Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T03:12:59Z",
+    "subjects": [
+     "docs: move script launch and debugging to developer guide",
+     "docs: present cross-platform runtime and original fixture screenshots",
+     "fix(gui): align the library to the top of the desktop viewport",
+     "ui: simplify desktop views and collapse technical details",
+     "feat: add Flutter desktop library, controls and runtime launcher",
+     "feat: add structured desktop library and session service",
+     "docs: credit Flutter desktop dependencies and preserve notices",
+     "fix(content): provide binary positional reads on Windows"
+    ]
+   }
+  ]
+ },
+ "airt56/auto-green": {
+  "pushed_at": "2026-10-15T05:57:53Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T05:57:51Z",
+    "subjects": [
+     "docs(readme): refresh daily tech digest dashboard (2026-10-15)",
+     "docs(trending): sync GitHub hot repositories (2026-10-15)",
+     "docs(quote): add daily developer quote (2026-10-15)",
+     "chore(checkin): update daily check-in stats for 2026-10-15",
+     "docs(readme): refresh daily tech digest dashboard (2026-10-14)",
+     "docs(news): sync Hacker News top tech stories (2026-10-14)",
+     "docs(trending): sync GitHub hot repositories (2026-10-14)",
+     "docs(quote): add daily developer quote (2026-10-14)"
+    ]
+   }
+  ]
+ },
+ "hyc1743/super-mario-odyssey-ios": {
+  "pushed_at": "2026-10-15T00:41:09Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T00:41:04Z",
+    "subjects": [
+     "A3：纹理内容核对 —— 1235 张真实贴图 vs 两个独立实现，0 不一致",
+     "A2：纹理整链（块线性 BC 贴图 → 行优先像素）组合层 + 9 条断言",
+     "A1：bcdec 移植（BC 贴图 CPU 解码的薄封装）+ 12 条断言",
+     "STATUS：第二十二轮 —— CI runner 有可用 Metal（Apple Paravirtual），无 Mac 的约束对 Metal 层解除",
+     "CI：Metal 探测 —— runner 有没有可用 GPU，决定 Metal 层能不能在 CI 上验",
+     "README/STATUS：纹理层一行与致谢里 deko3d / BNTX-Extractor / bcdec 的出处",
+     "CI：C 单测清单单一来源化（10 个，走 Makefile）",
+     "纹理块线性布局：尺寸算法（deko3d 移植）+ GOB 解交错（BNTX-Extractor）+ 真实贴图核对"
+    ]
+   }
+  ]
+ },
+ "seedds/nxnative": {
+  "pushed_at": "2026-10-15T07:09:49Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T07:09:46Z",
+    "subjects": [
+     "Engage ships a recorded pipeline prewarm list; the log names each prewarm list it reads",
+     "Directory listing skips per-entry getxattr and .holes probes; Engage's first frame at 1.8 s on the Mac",
+     "App name and bundle ID come from the base NSP",
+     "Renamed nxnative; there is no default game",
+     "Game profiles are named after the base game's title ID",
+     "DLC NSPs in the folder are packed and unlocked (Engage Expansion Pass)",
+     "RomFS lookups use a per-directory name index; Engage boots in 6 s instead of 21",
+     "Engage: eShop and other system applet calls no longer crash"
+    ]
+   }
+  ]
+ },
+ "ForceMind/Game2Mobile": {
+  "pushed_at": "2026-10-15T01:58:57Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T01:58:57Z",
+    "subjects": [
+     "M1: validate all XcodeGen profiles with real tracked host sources",
+     "docs: record 10 ARM64 Mach-O objects and real macOS 15 legacy CI",
+     "ci: compile runtime loader/entry and exercise Metal M3 on macOS 15 runner",
+     "ci: generate ARM64 Mach-O objects from production Metal and UIKit source",
+     "docs: record real Apple Silicon Metal/UIKit/Swift checks and remaining M1 gates",
+     "fix(ios): align managed asset downloader minimum with iOS 26 app target",
+     "ci: typecheck Background Assets downloader against iOS 26 SDK",
+     "ci: cross-compile production graphics for iOS 26 and legacy iOS 18 targets"
+    ]
+   }
+  ]
+ },
+ "HachiMiku39/pjdv_mega39s_ios": {
+  "pushed_at": "2026-10-15T01:55:16Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T01:55:15Z",
+    "subjects": [
+     "docs: record measured loading optimization and REA render-profile research",
+     "Document higher-resolution MetalFX and M4 Ghost Rule verification",
+     "docs: record Ghost Rule M4 stress tests and verified RT stage probe",
+     "Document enlarged Switch virtual controls and unobstructed performance panel",
+     "Document Metal 4 shadow mip validation, rendering research and optional ray tracing plan",
+     "Document iPadOS/macOS scope, verified MetalFX startup and opening MV renderer research",
+     "docs: record shadow filter orientation fix and game regression",
+     "docs: record CoreAudio playback and song queue regression"
+    ]
+   }
+  ]
+ },
+ "Yi-Hu-Yueh/Tiger-You-VTT": {
+  "pushed_at": "2026-10-08T22:18:05Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-08T22:17:37Z",
+    "subjects": [
+     "feat: complete standalone and mobile subtitle workflows",
+     "feat: add low-latency live system audio captions",
+     "feat: add low-latency live system audio captions",
+     "feat: add native desktop caption overlay",
+     "feat: add optional speaker diarization",
+     "Revert \"fix: make system audio capture continuous\"",
+     "fix: make system audio capture continuous",
+     "feat: add reliable YouTube search and microphone workflows"
+    ]
+   }
+  ]
+ },
+ "changshiyu12138/github-stars-map": {
+  "pushed_at": "2026-10-15T04:36:49Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T04:36:48Z",
+    "subjects": [
+     "chore: 自动同步 Star 地图（182 个项目）",
+     "chore: 自动同步 Star 地图（182 个项目）",
+     "chore: 自动同步 Star 地图（182 个项目）",
+     "chore: 自动同步 Star 地图（182 个项目）",
+     "chore: 自动同步 Star 地图（182 个项目）",
+     "chore: 自动同步 Star 地图（182 个项目）",
+     "chore: 自动同步 Star 地图（181 个项目）",
+     "chore: 自动同步 Star 地图（181 个项目）"
+    ]
+   }
+  ]
+ },
+ "chenxiandong/d2r-mobile": {
+  "pushed_at": "2026-10-15T08:10:17Z",
+  "branches": []
+ },
+ "qy2569/d2r-mobile-build": {
+  "pushed_at": "2026-10-15T08:11:47Z",
+  "branches": []
+ }
+}

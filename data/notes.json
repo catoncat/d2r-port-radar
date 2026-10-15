@@ -1,0 +1,142 @@
+{
+ "imink/hades-ios": {
+  "game": "Hades",
+  "score": 90,
+  "status": "真机出图",
+  "summary": "新增独立 hades/ 目标，复用 dm/ 宿主。iPhone 15 Pro Max 上进入真实 nnMain、主菜单可操作、有音频；完整试玩未验证。（2026-10-15 核对 README）"
+ },
+ "Seeyajack/d2r-mobile": {
+  "game": "HarmonyOS",
+  "score": 80,
+  "status": "真机出图",
+  "summary": "鸿蒙移植（dm/ohos），走 XComponent → Vulkan swapchain，真机已出图；50 个提交，进展活跃。"
+ },
+ "gbcmikeblue/d2r-mobile": {
+  "game": "Android",
+  "score": 75,
+  "status": "调试卡死",
+  "summary": "安卓移植（dm/android），81 个提交；目前在排查游戏任务图卡死（出图 59/62 停住）。"
+ },
+ "dodola/d2r-mobile": {
+  "game": "Android",
+  "score": 60,
+  "status": "初版",
+  "summary": "安卓原生宿主 + Vulkan 渲染器，一个大提交（70 个文件），附 DESIGN.md。"
+ },
+ "GirlNet/d2r-mobile": {
+  "game": "Persona 5 Royal",
+  "score": 70,
+  "status": "图形调试",
+  "summary": "P5R 运行时（codex/p5r-runtime）：补 NVN 纹理/采样器绑定、compute 着色器，正在做着色器诊断。"
+ },
+ "TommyLau/botw-mobile": {
+  "game": "Zelda BotW",
+  "score": 65,
+  "status": "早期启动",
+  "summary": "已能启动 BotW，跑到第一个未实现的系统服务为止；附带“新游戏接入工具”，可作为移植新游戏的流程参考。"
+ },
+ "TwilitArc/d2r-mobile": {
+  "game": "iOS 18",
+  "score": 50,
+  "status": "真机可用",
+  "summary": "让 D2R 跑在 iOS 18 上，iOS 18.4.1 真机已验证。"
+ },
+ "yinqingyan/d2r-mobile": {
+  "game": "tvOS",
+  "score": 30,
+  "summary": "早期 tvOS 前端；上游现在已合入社区 Apple TV 移植。"
+ },
+ "hubeiqiao/d2r-mobile": {
+  "score": 40,
+  "summary": "D2R 玩法增强：Rift 终局模式、小地图/提示框修复，多个 codex/* 分支。"
+ },
+ "Johnoooob/nx-port": {
+  "game": "通用工具包",
+  "score": 35,
+  "summary": "把 Switch 游戏原程序原生跑在 Apple Silicon Mac / iPhone 上的通用移植工具包，目前只有一个初始导入提交。"
+ },
+ "jiayx/d2r-mobile-build": {
+  "hide": true,
+  "why": "Releases 分发游戏数据包，不收录"
+ },
+ "jiayx/d2r-mobile-build-check": {
+  "hide": true
+ },
+ "wukongtime/d2r-mobile-build-backup": {
+  "hide": true
+ },
+ "d2r-mobile/.github": {
+  "hide": true
+ },
+ "hyc1743/super-mario-odyssey-ios": {
+  "game": "Super Mario Odyssey",
+  "score": 55,
+  "status": "早期基础设施",
+  "summary": "完全照搬 d2r-mobile 路线的《超级马里奥 奥德赛》移植。已完成程序解析和指令改写；宿主、NVN→Metal、触屏还没开始做，不能玩。有 STATUS.md 记录每一步进度。"
+ },
+ "seedds/nxnative": {
+  "game": "通用 Switch → iOS",
+  "score": 70,
+  "status": "通用化",
+  "summary": "从 d2r-mobile 的通用部分演化出来的通用方案（最初叫 smbw-mobile）：NSP 目录直接变成未签名 IPA，包含 NSO 改写器、Horizon HLE 宿主、NVN→Metal，引入 Ryujinx 着色器翻译。《火焰纹章 Engage》已能在 Mac 上启动（首帧 1.8 秒），支持 DLC。（2026-10-15 核对提交记录）"
+ },
+ "hitsmaxft/nsp-dawrin": {
+  "game": "通用桌面运行时",
+  "score": 60,
+  "status": "通用化",
+  "summary": "NSP/XCI 跨平台运行时 + Flutter 桌面启动器；macOS 上原生 ARM64 + Metal，Windows/Linux 后端是模块化设计。"
+ },
+ "HachiMiku39/pjdv_mega39s_ios": {
+  "game": "Project DIVA MEGA39's",
+  "score": 40,
+  "status": "研究阶段",
+  "summary": "初音未来 Project DIVA MEGA39's 的 Switch → iOS 移植研究；目前只公开了研究 README。"
+ },
+ "MrCKR/switch-android-runtime": {
+  "game": "Android",
+  "score": 30,
+  "status": "方案验证",
+  "summary": "把安卓运行时拆成通用框架 + 游戏适配器（配套 MrCKR/d2r-android-adapter）；目前只有 Vulkan 能力探测骨架，没有 APK。"
+ },
+ "MrCKR/d2r-android-adapter": {
+  "game": "Android",
+  "score": 15,
+  "summary": "switch-android-runtime 的 D2R 适配器，目前只有方案文档。"
+ },
+ "ForceMind/Game2Mobile": {
+  "score": 15,
+  "summary": "导入 d2r-mobile 源码并换了品牌，目前仍然只支持 D2R，不是通用工具。"
+ },
+ "doctorqueue/d2r-mobile": {
+  "score": 5,
+  "summary": "上游源码的重新发布，加了一个面向 Claude Code / Codex 的构建 skill。"
+ },
+ "d2r-mobile/d2r-skills": {
+  "hide": true,
+  "why": "D2R 设计用的 AI skill，不是移植"
+ },
+ "scarin-corporations/ports-lib": {
+  "hide": true,
+  "why": "泛主机移植目录，属于同类站点而不是移植"
+ },
+ "craftsail/awesome-early-radar": {
+  "hide": true,
+  "why": "无关：涨星榜"
+ },
+ "airt56/auto-green": {
+  "hide": true,
+  "why": "无关：日报"
+ },
+ "changshiyu12138/github-stars-map": {
+  "hide": true,
+  "why": "无关：star 列表"
+ },
+ "Yi-Hu-Yueh/Tiger-You-VTT": {
+  "hide": true,
+  "why": "无关"
+ },
+ "spvycf/d2r": {
+  "hide": true,
+  "why": "空仓库"
+ }
+}

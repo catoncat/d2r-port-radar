@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>d2r-port-radar · 移植雷达</title>
+<style>
+:root{
+  --bg:#f6f7f9;--panel:#fff;--line:#e6e8ec;--text:#1b1f24;--muted:#6b7280;--soft:#f1f3f6;
+  --accent:#4f46e5;--accent-soft:#eef2ff;--green:#16a34a;--green-soft:#dcfce7;--amber:#d97706;--amber-soft:#fef3c7;
+  --slate:#475569;--slate-soft:#e2e8f0;--red:#e11d48;--shadow:0 1px 2px rgba(16,24,40,.04),0 4px 16px rgba(16,24,40,.06);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0d1014;--panel:#161a20;--line:#252b33;--text:#e6e9ee;--muted:#8b95a3;--soft:#1d232b;
+  --accent:#818cf8;--accent-soft:#1e1b4b;--green:#4ade80;--green-soft:#052e16;--amber:#fbbf24;--amber-soft:#3b2706;
+  --slate:#94a3b8;--slate-soft:#1e293b;--red:#fb7185;--shadow:0 1px 2px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.25);
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:28px 24px 64px}
+header{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+h1{margin:0;font-size:24px;letter-spacing:-.02em}
+.sub{color:var(--muted);margin-top:4px}
+.sub a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.stats{display:flex;gap:10px;flex-wrap:wrap}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:8px 14px;min-width:92px}
+.stat b{display:block;font-size:20px;font-variant-numeric:tabular-nums}
+.stat span{color:var(--muted);font-size:12px}
+.stat.hot b{color:var(--accent)}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);
+  margin:0 -24px 18px;padding:12px 24px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.search{flex:1;min-width:220px;position:relative}
+.search input{width:100%;padding:9px 12px 9px 34px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text);font:inherit;outline:none}
+.search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.search kbd{position:absolute;right:10px;top:50%;transform:translateY(-50%);font:11px ui-monospace,monospace;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:1px 5px}
+.seg{display:flex;background:var(--soft);border-radius:10px;padding:3px}
+.seg button{border:0;background:none;color:var(--muted);padding:6px 11px;border-radius:8px;font:inherit;cursor:pointer}
+.seg button.on{background:var(--panel);color:var(--text);box-shadow:var(--shadow)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;flex:1;min-width:0}
+.ctl{display:flex;gap:14px;align-items:center;white-space:nowrap}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:4px 11px;font:inherit;font-size:13px;cursor:pointer;transition:.15s}
+.chip:hover{border-color:var(--accent)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip i{font-style:normal;opacity:.6;margin-left:4px;font-variant-numeric:tabular-nums}
+.toggle{display:flex;align-items:center;gap:6px;color:var(--muted);cursor:pointer;user-select:none;font-size:13px}
+.toggle input{accent-color:var(--accent)}
+.btn{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:10px;padding:7px 12px;font:inherit;font-size:13px;cursor:pointer}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);cursor:pointer;
+  transition:transform .15s,border-color .15s;position:relative;display:flex;flex-direction:column;gap:10px}
+.card:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+.card.unread::before{content:"";position:absolute;left:-1px;top:16px;bottom:16px;width:3px;border-radius:3px;background:var(--accent)}
+.top{display:flex;gap:10px;align-items:center}
+.avatar{width:36px;height:36px;border-radius:9px;background:var(--soft);flex:none}
+.name{min-width:0;flex:1}
+.name .owner{color:var(--muted);font-size:12px}
+.name .repo{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.badge{font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.b-new{background:var(--accent);color:#fff}
+.b-upd{background:var(--accent-soft);color:var(--accent)}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:12px;padding:2px 8px;border-radius:6px;background:var(--soft);color:var(--text)}
+.tag.kind{background:none;border:1px solid var(--line);color:var(--muted)}
+.st{font-size:12px;padding:2px 8px;border-radius:6px;font-weight:600}
+.st.good{background:var(--green-soft);color:var(--green)}
+.st.mid{background:var(--amber-soft);color:var(--amber)}
+.st.early{background:var(--slate-soft);color:var(--slate)}
+.summary{color:var(--text);font-size:13.5px}
+.summary.dim{color:var(--muted)}
+.meter{height:6px;background:var(--soft);border-radius:6px;overflow:hidden}
+.meter div{height:100%;background:linear-gradient(90deg,var(--accent),color-mix(in srgb,var(--accent) 50%,var(--green)));border-radius:6px}
+.metrics{display:flex;gap:14px;color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums;align-items:center}
+.metrics b{color:var(--text);font-weight:600}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--muted);display:inline-block;margin-right:5px;vertical-align:1px}
+.dot.live{background:var(--green);box-shadow:0 0 0 0 var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--green) 60%,transparent)}70%{box-shadow:0 0 0 6px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.spacer{flex:1}
+.empty{text-align:center;color:var(--muted);padding:60px 0}
+/* drawer */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.35);opacity:0;pointer-events:none;transition:.2s;z-index:10}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(640px,100vw);background:var(--panel);border-left:1px solid var(--line);
+  transform:translateX(100%);transition:transform .25s cubic-bezier(.2,.8,.2,1);z-index:11;display:flex;flex-direction:column}
+.drawer.on{transform:none}
+.dh{padding:20px 22px 14px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:flex-start}
+.dh .avatar{width:44px;height:44px}
+.dh h2{margin:0;font-size:18px;word-break:break-all}
+.x{margin-left:auto;border:0;background:var(--soft);color:var(--text);width:30px;height:30px;border-radius:8px;cursor:pointer;font-size:16px;flex:none}
+.db{padding:18px 22px;overflow:auto;flex:1;display:flex;flex-direction:column;gap:16px}
+.sec h3{margin:0 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.tabs button{border:1px solid var(--line);background:none;color:var(--muted);border-radius:8px;padding:4px 10px;font:12px ui-monospace,monospace;cursor:pointer}
+.tabs button.on{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.bmeta{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin-bottom:10px}
+.bmeta b{color:var(--text)}
+.dirs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.dirs code{font:12px ui-monospace,monospace;background:var(--soft);padding:2px 7px;border-radius:5px}
+.commits{list-style:none;margin:0;padding:0;border-left:2px solid var(--line);margin-left:5px}
+.commits li{position:relative;padding:0 0 12px 16px;font-size:13px;word-break:break-word}
+.commits li::before{content:"";position:absolute;left:-6px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--panel);border:2px solid var(--accent)}
+.commits li.long span{display:block;max-height:4.5em;overflow:hidden;cursor:pointer;-webkit-mask-image:linear-gradient(#000 60%,transparent)}
+.commits li.long.open span{max-height:none;-webkit-mask-image:none}
+.links{display:flex;gap:8px;flex-wrap:wrap}
+.links a{border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:13px}
+.links a:hover{border-color:var(--accent);color:var(--accent)}
+@media (max-width:640px){.grid{grid-template-columns:1fr}.stats{width:100%}.stat{flex:1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>移植雷达 <span style="color:var(--muted);font-weight:500;font-size:16px">基于 d2r-mobile 的衍生移植</span></h1>
+      <div class="sub" id="sub"></div>
+    </div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="bar">
+    <div class="row">
+      <label class="search">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" placeholder="搜索仓库、游戏、提交信息…" autocomplete="off">
+        <kbd>/</kbd>
+      </label>
+      <div class="seg" id="sort">
+        <button data-k="score" class="on">综合</button>
+        <button data-k="pushed">最近推送</button>
+        <button data-k="real">代码量</button>
+        <button data-k="ahead">提交数</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="chips" id="chips"></div>
+      <div class="ctl">
+        <label class="toggle"><input type="checkbox" id="unreadOnly">只看有更新</label>
+        <label class="toggle"><input type="checkbox" id="showTrivial">含 CI/README</label>
+        <button class="btn" id="markAll">全部已读</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer"></aside>
+
+<script>
+const DATA = /*DATA*/null;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const SEEN_KEY = "d2r-radar-seen", UI_KEY = "d2r-radar-ui";
+const seen = JSON.parse(localStorage.getItem(SEEN_KEY) || "{}");
+const ui = Object.assign({q: "", sort: "score", tag: "全部", unreadOnly: false, showTrivial: false},
+                         JSON.parse(localStorage.getItem(UI_KEY) || "{}"));
+const saveUi = () => localStorage.setItem(UI_KEY, JSON.stringify(ui));
+const saveSeen = () => localStorage.setItem(SEEN_KEY, JSON.stringify(seen));
+const firstVisit = !localStorage.getItem(SEEN_KEY);
+
+function ago(iso) {
+  if (!iso) return "—";
+  const m = (Date.now() - new Date(iso)) / 6e4;
+  if (m < 60) return Math.max(1, Math.round(m)) + " 分钟前";
+  if (m < 1440) return Math.round(m / 60) + " 小时前";
+  return Math.round(m / 1440) + " 天前";
+}
+const owner = r => r.name.split("/")[0];
+const avatar = r => `https://github.com/${owner(r)}.png?size=88`;
+const state = r => firstVisit ? null : !seen[r.name] ? "new" : seen[r.name] !== r.pushed ? "upd" : null;
+const stClass = s => /真机|可用|可玩|通用/.test(s) ? "good" : /调试|卡|基础设施/.test(s) ? "mid" : "early";
+const live = r => Date.now() - new Date(r.pushed) < 864e5;
+const lastCommit = r => r.branches.map(b => b.last_commit || "").sort().pop() || r.pushed;
+
+// first visit: treat everything as already seen so badges only mark future changes
+if (firstVisit) { DATA.rows.forEach(r => seen[r.name] = r.pushed); saveSeen(); }
+
+function filtered() {
+  const q = ui.q.trim().toLowerCase();
+  let rows = DATA.rows.filter(r =>
+    (ui.showTrivial || !r.trivial) &&
+    (ui.tag === "全部" || (ui.tag === "未分类" ? !r.tags.length : r.tags.includes(ui.tag))) &&
+    (!ui.unreadOnly || state(r)) &&
+    (!q || JSON.stringify([r.name, r.desc, r.tags, r.note, r.branches]).toLowerCase().includes(q)));
+  const key = {
+    score: r => [r.trivial ? 0 : 1, r.note.score || 0, r.real],
+    pushed: r => [r.pushed],
+    real: r => [r.real],
+    ahead: r => [r.ahead],
+  }[ui.sort];
+  return rows.sort((a, b) => {
+    const ka = key(a), kb = key(b);
+    for (let i = 0; i < ka.length; i++) if (ka[i] !== kb[i]) return ka[i] < kb[i] ? 1 : -1;
+    return 0;
+  });
+}
+
+function renderHeader() {
+  const subst = DATA.rows.filter(r => !r.trivial);
+  const games = new Set(subst.flatMap(r => r.tags));
+  const updates = DATA.rows.filter(r => state(r)).length;
+  $("#sub").innerHTML = `上游 <a href="https://github.com/${DATA.upstream}" target="_blank">${DATA.upstream}</a> · 数据更新于 ${ago(DATA.generated)}（${new Date(DATA.generated).toLocaleString()}）`;
+  $("#stats").innerHTML = [
+    [DATA.forks, "fork 总数"], [DATA.repos, "独立仓库"], [subst.length, "有实质改动"],
+    [games.size, "游戏 / 平台"], [updates, "有更新", updates ? "hot" : ""],
+  ].map(([n, l, c]) => `<div class="stat ${c || ""}"><b>${n}</b><span>${l}</span></div>`).join("");
+}
+
+function renderChips() {
+  const pool = DATA.rows.filter(r => ui.showTrivial || !r.trivial);
+  const counts = {"全部": pool.length};
+  pool.forEach(r => r.tags.forEach(t => counts[t] = (counts[t] || 0) + 1));
+  const untagged = pool.filter(r => !r.tags.length).length;
+  const tags = ["全部", ...Object.keys(counts).filter(t => t !== "全部").sort((a, b) => counts[b] - counts[a])];
+  if (untagged) { tags.push("未分类"); counts["未分类"] = untagged; }
+  if (!tags.includes(ui.tag)) ui.tag = "全部";
+  $("#chips").innerHTML = tags.map(t =>
+    `<button class="chip ${t === ui.tag ? "on" : ""}" data-t="${esc(t)}">${esc(t)}<i>${counts[t]}</i></button>`).join("");
+}
+
+function card(r) {
+  const s = state(r), n = r.note;
+  const score = n.score ? `<div class="meter" title="完成度评估 ${n.score}/100"><div style="width:${n.score}%"></div></div>` : "";
+  return `<article class="card ${s ? "unread" : ""}" data-n="${esc(r.name)}">
+    <div class="top">
+      <img class="avatar" src="${avatar(r)}" loading="lazy" alt="">
+      <div class="name"><div class="owner">${esc(owner(r))}</div><div class="repo">${esc(r.name.split("/")[1])}</div></div>
+      ${s === "new" ? '<span class="badge b-new">新</span>' : s === "upd" ? '<span class="badge b-upd">有更新</span>' : ""}
+    </div>
+    <div class="tags">
+      ${r.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}
+      ${n.status ? `<span class="st ${stClass(n.status)}">${esc(n.status)}</span>` : ""}
+      <span class="tag kind">${r.kind === "repo" ? "独立仓库" : "Fork"}</span>
+      ${r.trivial ? `<span class="tag">${r.kind === "repo" ? "镜像" : "仅 CI / README"}</span>` : ""}
+    </div>
+    <div class="summary ${n.summary ? "" : "dim"}">${esc(n.summary || r.branches[0]?.subjects?.[0] || r.desc.slice(0, 120))}</div>
+    ${score}
+    <div class="metrics">
+      <span><span class="dot ${live(r) ? "live" : ""}"></span>${ago(r.pushed)}</span>
+      ${r.kind === "repo" ? `<span>创建于 <b>${r.created.slice(5, 10)}</b></span>` : `
+      <span><b>${r.real}</b> 代码文件</span>
+      <span><b>${r.ahead}</b> 提交</span>
+      <span><b>${r.branches.length}</b> 分支</span>`}
+      ${r.stars ? `<span>★ <b>${r.stars}</b></span>` : ""}
+    </div>
+  </article>`;
+}
+
+function renderGrid() {
+  const rows = filtered();
+  $("#grid").innerHTML = rows.length ? rows.map(card).join("") : `<div class="empty">没有匹配的 fork</div>`;
+}
+
+function render() { saveUi(); renderHeader(); renderChips(); renderGrid(); }
+
+function openDrawer(name) {
+  const r = DATA.rows.find(x => x.name === name);
+  if (!r) return;
+  seen[r.name] = r.pushed; saveSeen();
+  history.replaceState(null, "", "#" + encodeURIComponent(name));
+  const n = r.note;
+  const tabs = r.branches.map((b, i) => `<button data-i="${i}" class="${i ? "" : "on"}">${esc(b.branch)}</button>`).join("");
+  $("#drawer").innerHTML = `
+    <div class="dh">
+      <img class="avatar" src="${avatar(r)}" alt="">
+      <div><div class="sub" style="margin:0">${esc(owner(r))}</div><h2>${esc(r.name.split("/")[1])}</h2>
+        <div class="tags" style="margin-top:6px">${r.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}
+        ${n.status ? `<span class="st ${stClass(n.status)}">${esc(n.status)}</span>` : ""}</div></div>
+      <button class="x" id="close" title="关闭 (Esc)">✕</button>
+    </div>
+    <div class="db">
+      ${n.summary ? `<div class="sec"><h3>备注</h3><div class="summary">${esc(n.summary)}</div></div>` : ""}
+      <div class="sec"><h3>链接</h3><div class="links">
+        <a href="${esc(r.url)}" target="_blank">仓库主页 ↗</a>
+        <a href="${esc(r.url)}/branches" target="_blank">全部分支 ↗</a>
+        <a href="${esc(r.url)}/commits" target="_blank">提交历史 ↗</a>
+      </div></div>
+      <div class="sec"><h3>${r.kind === "repo" ? "最近提交" : "分支（相对上游 main）"}</h3><div class="tabs">${tabs}</div><div id="branch"></div></div>
+      ${r.desc ? `<div class="sec"><h3>仓库描述</h3><div class="summary dim">${esc(r.desc)}</div></div>` : ""}
+    </div>`;
+  const showBranch = i => {
+    const b = r.branches[i];
+    const list = `<ul class="commits">${(b.subjects || []).map(s => `<li class="${s.length > 160 ? "long" : ""}"><span>${esc(s)}</span></li>`).join("")}</ul>`;
+    $("#branch").innerHTML = r.kind === "repo" ? `
+      <div class="bmeta"><span>默认分支最近 ${b.subjects.length} 个提交</span><span>最后提交 <b>${ago(b.last_commit)}</b></span>
+        ${b.mirror ? "<span>提交与上游一致，判定为镜像</span>" : ""}</div>${list}`
+      : b.unrelated ? `<div class="summary dim">该分支与上游没有共同历史。</div>` : `
+      <div class="bmeta"><span>领先 <b>${b.ahead}</b></span><span>落后 <b>${b.behind}</b></span>
+        <span>代码文件 <b>${b.real_files}</b> / ${b.files}</span><span>最后提交 <b>${ago(b.last_commit)}</b></span>
+        <a href="https://github.com/${DATA.upstream}/compare/main...${esc(owner(r))}:${encodeURIComponent(b.branch)}" target="_blank" style="color:var(--accent)">查看 diff ↗</a></div>
+      ${b.dirs?.length ? `<div class="dirs">${b.dirs.map(d => `<code>${esc(d)}</code>`).join("")}</div>` : ""}
+      ${list}`;
+    document.querySelectorAll("#branch li.long").forEach(li => li.onclick = () => li.classList.toggle("open"));
+    document.querySelectorAll(".tabs button").forEach(t => t.classList.toggle("on", +t.dataset.i === i));
+  };
+  document.querySelectorAll(".tabs button").forEach(t => t.onclick = () => showBranch(+t.dataset.i));
+  showBranch(0);
+  $("#close").onclick = closeDrawer;
+  $("#drawer").classList.add("on"); $("#scrim").classList.add("on");
+  renderHeader(); renderGrid();
+}
+function closeDrawer() {
+  $("#drawer").classList.remove("on"); $("#scrim").classList.remove("on");
+  history.replaceState(null, "", location.pathname);
+}
+
+// wiring
+$("#q").value = ui.q;
+$("#unreadOnly").checked = ui.unreadOnly;
+$("#showTrivial").checked = ui.showTrivial;
+document.querySelectorAll("#sort button").forEach(b => b.classList.toggle("on", b.dataset.k === ui.sort));
+$("#q").oninput = e => { ui.q = e.target.value; render(); };
+$("#unreadOnly").onchange = e => { ui.unreadOnly = e.target.checked; render(); };
+$("#showTrivial").onchange = e => { ui.showTrivial = e.target.checked; render(); };
+$("#sort").onclick = e => {
+  const k = e.target.dataset.k; if (!k) return;
+  ui.sort = k; document.querySelectorAll("#sort button").forEach(b => b.classList.toggle("on", b === e.target)); render();
+};
+$("#chips").onclick = e => { const t = e.target.closest(".chip")?.dataset.t; if (t) { ui.tag = t; render(); } };
+$("#grid").onclick = e => { const c = e.target.closest(".card"); if (c) openDrawer(c.dataset.n); };
+$("#markAll").onclick = () => { DATA.rows.forEach(r => seen[r.name] = r.pushed); saveSeen(); render(); };
+$("#scrim").onclick = closeDrawer;
+document.addEventListener("keydown", e => {
+  if (e.key === "/" && document.activeElement !== $("#q")) { e.preventDefault(); $("#q").focus(); }
+  if (e.key === "Escape") { if ($("#drawer").classList.contains("on")) closeDrawer(); else { $("#q").value = ui.q = ""; $("#q").blur(); render(); } }
+});
+render();
+if (location.hash) openDrawer(decodeURIComponent(location.hash.slice(1)));
+</script>
+</body>
+</html>
