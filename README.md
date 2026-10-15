@@ -2,7 +2,7 @@
 
 [d2r-mobile](https://github.com/jhaizhou-ops/d2r-mobile) 证明了 Switch 游戏的原生代码可以直接跑在 iPhone / Mac 上。之后很快有人把同一套宿主和图形层拿去移植别的游戏、别的平台。这个页面把这些分散在 800 多个 fork 和各个独立仓库里的进展集中到一处。
 
-**看网页 →** `https://<owner>.github.io/d2r-port-radar/`  ·  **原始数据 →** `radar.json`
+**看网页 →** https://catoncat.github.io/d2r-port-radar/  ·  **原始数据 →** https://catoncat.github.io/d2r-port-radar/radar.json
 
 ## 收录什么
 
