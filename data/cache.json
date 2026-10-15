@@ -1,34 +1,40 @@
 {
  "TommyLau/botw-mobile": {
-  "pushed_at": "2026-10-15T07:24:00Z",
+  "pushed_at": "2026-10-15T14:11:03Z",
   "branches": [
    {
     "branch": "botw-host-boot",
-    "ahead": 4,
-    "behind": 0,
-    "files": 36,
-    "real_files": 31,
+    "ahead": 52,
+    "behind": 1,
+    "files": 135,
+    "real_files": 130,
     "dirs": [
      "AGENTS.md",
      "CONTRIBUTING.md",
      "CONTRIBUTING.zh-CN.md",
      "dm/.gitignore",
+     "dm/gfx",
      "dm/host",
+     "dm/i18n",
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-15T07:23:55Z",
+    "last_commit": "2026-10-15T14:10:59Z",
     "subjects": [
-     "feat(host): boot BotW to its first unsupported service",
-     "docs: require conventional commit messages",
-     "Add bring-up tools for a new title and keep game files out of git",
-     "Rewriter: handle ldrsw jump tables and blr x18 call sites"
+     "chore(nvn): report texture flush tracking boundaries",
+     "feat(nvn): record combined texture and sampler bindings",
+     "feat(shaders): translate explicit NVN origin and depth modes",
+     "feat(nvn): track current command memory segment usage",
+     "feat(nvn): report unused donated command-control memory",
+     "test(nvn): exercise a fragment stage in extended shader setup",
+     "feat(nvn): capture extended shader program descriptors safely",
+     "feat(nvn): accept optional graphics debug labels"
     ]
    },
    {
     "branch": "botw-rewriter",
     "ahead": 2,
-    "behind": 0,
+    "behind": 1,
     "files": 7,
     "real_files": 6,
     "dirs": [
@@ -44,21 +50,36 @@
   ]
  },
  "yinqingyan/d2r-mobile": {
-  "pushed_at": "2026-10-15T04:11:50Z",
+  "pushed_at": "2026-10-15T10:32:52Z",
   "branches": [
    {
     "branch": "tvos/apple-tv-support",
-    "ahead": 1,
-    "behind": 2,
-    "files": 23,
-    "real_files": 23,
+    "ahead": 2,
+    "behind": 3,
+    "files": 24,
+    "real_files": 24,
     "dirs": [
      "dm/host",
      "dm/tvos"
     ],
-    "last_commit": "2026-10-15T04:11:40Z",
+    "last_commit": "2026-10-15T10:25:24Z",
     "subjects": [
+     "Fix tvOS settings dividers and update device test notes",
      "Add experimental tvOS frontend and Apple TV bring-up notes"
+    ]
+   },
+   {
+    "branch": "tvos/settings-divider-fix",
+    "ahead": 1,
+    "behind": 0,
+    "files": 2,
+    "real_files": 2,
+    "dirs": [
+     "dm/tvos"
+    ],
+    "last_commit": "2026-10-15T10:32:49Z",
+    "subjects": [
+     "Fix TV settings divider geometry and update device test status"
     ]
    }
   ]
@@ -100,7 +121,7 @@
   ]
  },
  "n3crosis/d2r-mobile": {
-  "pushed_at": "2026-10-15T06:59:52Z",
+  "pushed_at": "2026-10-15T11:42:29Z",
   "branches": [
    {
     "branch": "perf/patch-nso-prefilter",
@@ -111,7 +132,7 @@
     "dirs": [
      "dm/tools"
     ],
-    "last_commit": "2026-10-15T06:59:43Z",
+    "last_commit": "2026-10-15T11:29:59Z",
     "subjects": [
      "Speed up NSO x18 scan with register field prefilter"
     ]
@@ -135,60 +156,61 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-15T06:53:08Z",
+  "pushed_at": "2026-10-15T13:35:10Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 9,
-    "behind": 5,
-    "files": 51,
-    "real_files": 48,
+    "ahead": 19,
+    "behind": 6,
+    "files": 81,
+    "real_files": 76,
     "dirs": [
      "dm/gfx",
      "dm/host",
      "dm/i18n",
+     "dm/ios",
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-15T06:53:04Z",
+    "last_commit": "2026-10-15T13:34:59Z",
     "subjects": [
-     "Preserve P5R compute workgroups and fix storage buffer write reflection",
-     "Implement independent NVN combined texture and sampler bindings",
-     "Add reproducible P5R shader diagnostics and binding audits",
-     "Record P5R shader diagnostics and Metal component validation",
-     "Prepare P5R embedded shaders and support NVN 11 control spans",
-     "Document P5R cloud validation and remaining device work",
-     "Take over P5R audio playback sample queries",
-     "Handle Python 3.14 f-strings and compile iOS host components in CI"
+     "Expose synthetic GPU self-tests on iPhone and guard combined-slot fetch proofs",
+     "Specify the driver-bank index in synthetic texture reflection",
+     "Exercise reflected texture handles and sampling on Metal 3 and Metal 4",
+     "Generate shader cache headers in CI and normalize source line endings",
+     "Audit P5R translator query defaults and original texture instruction constraints",
+     "Document completed P5R host linking and experimental unsigned packaging",
+     "Complete iOS framework linkage and add verified local P5R packaging",
+     "Add a dedicated game-free P5R iOS host build and launcher"
     ]
    }
   ]
  },
  "gbcmikeblue/d2r-mobile": {
-  "pushed_at": "2026-10-15T08:14:01Z",
+  "pushed_at": "2026-10-15T13:51:01Z",
   "branches": [
    {
     "branch": "android",
-    "ahead": 83,
-    "behind": 22,
-    "files": 80,
-    "real_files": 69,
+    "ahead": 91,
+    "behind": 23,
+    "files": 82,
+    "real_files": 71,
     "dirs": [
      "dm/android",
      "dm/gfx",
      "dm/host",
      "dm/tools"
     ],
-    "last_commit": "2026-10-15T08:13:49Z",
+    "last_commit": "2026-10-15T13:50:39Z",
     "subjects": [
-     "M3-2v：读回路径的锁账本把\"我们自己\"排除了，并把光标挪到宿主侧一次轮询式等待上。",
-     "M3-2u：「停住」当场取到现场了 —— 它只在\"查看器 + 逐级扫描同时读回\"时出现（A/B/C 三臂），并加了按需转储触发口。",
-     "M3-2t：任务图三张位图的时间序列 —— 「上膛 0 位」否掉、「完成后被清」成立，顺带改掉三条旧口径。",
-     "docs：把「M3-2s」补进英文那两份，中英双份对齐",
-     "M3-2s：「谁写 this+0x3328」有答案了 —— 三张位图、上膛点，以及一处说不通的地方。新仪器（dm/host/hle_thread.c，全部只读）：peek32；任务图的三张位图（+0x3320 依赖源 / +0x3324 待派发 / +0x3328 已完成）与两个\"在飞作业表\"长度；每条任务的 依赖A(+0x18)/依赖B(+0x1c)/标志(+0x58)；任务包装器帧捕获（[x29-8] = 该作业的图、[x29-0x18] = 序号）；每个线程\"最近一次 ArbitrateLock\"的期望持有人与实际锁字。反汇编结论：置位**只有一处**——任务包装器末尾 main+0x15f0e6c（ldxr/orr/stlxr 置 1<<序号）；\"上膛\"在 main+0x1636f50（str w9,[x8] 写低 count 位进 +0x3324，紧接 str wzr,[x8,#4] 清完成位图），随后 bl 0x15ee598 派发、bl 0x15ee898 轮询——这一串就是\"跑这张图\"的入口（游戏侧从 0x856f50 调进来）；派发器要求 +0x3324 的位 i、rec[i]+0x18 ⊆ +0x3328、rec[i]+0x1c ⊆ +0x3320，满足才原子清位并把作业挂进作业池（池对象 = [0x31143d0]）。真机三轮（.work/logs/r1/r2/r3.log）：三张位图**同时为 0**（22 任务那张图，出图 59/62 停住），而主线程栈上就有**活的包装器帧**（渲染码 → 跑图入口 → 轮询 → 泵 0xdf9794 → 包装器 → 派发器 → 解锁）⇒ M3-2r 那句\"22 个任务从未被派发\"**不成立**；工人 0x1005 确实在该图的某个任务里，等一把锁字为 0x40001001（持有人 0x1001 = 主线程）的锁，0x1004/0x1006/0x1007 的最近一次锁字都是 0（没卡在锁上），主线程自己也没卡在锁上。矛盾留档：①上膛写全 count 位 ②派发器只清被取走的位（依赖不满足的位会留着）③实测待派发=0 且已完成=0——三者不能同时成立，只剩\"上膛读到的 count 与轮询用的不是同一个值\"或\"完成后被清\"（+0x3328 另有清零点 main+0x15eef90，属另一条跑图路径 main+0x15ee9d8 的收尾；渲染码里 0x853b38 / 0x856f50 / 0x857270 是相邻的三次跑图调用）。下一步是把三张位图做成时间序列（主线程每次 SVC 采样、变化即打一行），之后是宿主侧锁账本与核\"图 == x26+0x2D40\"。文档：新增「M3-2s」并给「M3-2r」的定性加更正批注，重写「七、下一步」第 1 条；CROSS_MACHINE §7 同步（含本机新坑：cmd 是 936 代码页而仓库 .cmd 是 UTF-8 无 BOM，直接跑构建脚本会被中文注释拆行，先 chcp 65001 再 call）。",
-     "M3-2r：里程碑 B（客体停住）的形状量出来了 —— 主线程在等一个**从未被派发**的任务图。新仪器（都在 dm/host/hle_thread.c，默认不影响行为）：SleepThread 时长/时刻、每线程最近 16 次 svc 环（号+参数+LR）、沿 regs[29]（x29 帧指针链）取落在 main 的调用链（安卓侧第一次能读到\"游戏在哪个函数\"）、每次等待\"已等 X 秒\"、锁移交历史（最近 16 次 ArbitrateUnlock）、任务图完成位图（从 [x29-8] 取任务图对象，读 +0x3328 位图与 +0x3100 掩码）。关键读数：位图**恒为 0**、等待掩码 0x16 ⇒ 任务图 22 个任务一个都没完成；同一时刻工人 0x1005 解码 Granny 段（svc #0x83/#0x84 门）后去等一把被主线程持有的锁（已等 15.1 秒，而该锁从未出现在任何一次锁移交里 ⇒ 排除\"锁字残留\"）；我们图形侧空闲，出图停是结果不是原因。两个假设被实测否掉：DM_GRANNY_PRE=0（关预解码）跑 3 轮照旧全部判死；锁语义开关 DM_LOCK_SEM 的 bit0（ArbitrateUnlock 改 Horizon 的\"清零+唤醒一个\"）3 轮全部启动早期 svcBreak/Panic、出图 0，bit1（放宽 ArbitrateLock 的阻塞条件）3 轮全部在\"阶段 启动\"判死、出图 0 ⇒ 现状锁实现与 SDK 自洽，锁不是根因（开关留在代码里、默认关）。另记一条反汇编路子（本机没有 Python）：用 NDK 的 llvm-objcopy 把 main.patched.bin 包成 ELF（--rename-section .data=.text,alloc,load,readonly,code）+ llvm-objdump -d --start-address/--stop-address；main.patched.bin 的文件偏移就等于 main+0x。文档：补上被代码注释引用的「M3-2r」一节，并修掉悬空的「M3-2g」编号（其真实内容是「M3 第 3 步」）。  M3-2r: the shape of milestone B (the guest stall) is measured -- the main thread waits on a task graph that was never dispatched. New instruments (all in dm/host/hle_thread.c, no behaviour change by default): SleepThread duration/time, a per-thread SVC ring of the last 16 calls (number + args + LR), a call chain collected along regs[29] (the x29 frame-pointer chain) keeping the return addresses that land in main (the first time Android can read \"which game function\"), a \"waiting X s\" reading per wait, a lock-handoff history (the last 16 ArbitrateUnlocks), and the task-graph completion bitmap (the task-graph object comes from [x29-8]; +0x3328 is the bitmap and +0x3100 this waiter's mask). Key readings: the bitmap is always 0 with wait mask 0x16 => none of the task graph's 22 tasks ever completes; at that moment worker 0x1005, after decoding Granny segments (the svc #0x83/#0x84 gates), waits on a lock held by the main thread (waiting 15.1 s, and that lock never appears in any handoff => a stale lock word is ruled out); our graphics side is idle, so the missing presents are a result rather than a cause. Two hypotheses were killed by measurement: DM_GRANNY_PRE=0 (pre-decode off) still declared dead in all 3 rounds; the DM_LOCK_SEM switch's bit0 (ArbitrateUnlock switched to Horizon's \"clear and wake one\") ended all 3 rounds in an early-startup svcBreak/panic with 0 presents, and bit1 (loosening ArbitrateLock's blocking condition) was declared dead in the startup stage in all 3 rounds with 0 presents => the current lock implementation is self-consistent with the SDK and the locks are not the root cause (the switch stays in the code, off by default). One more thing recorded: how to disassemble on a machine without Python (wrap main.patched.bin into an ELF with the NDK's llvm-objcopy, --rename-section .data=.text,alloc,load,readonly,code, then llvm-objdump -d --start-address/--stop-address; the file offset in main.patched.bin is exactly main+0x). Docs: the \"M3-2r\" section referenced by code comments now exists, and the dangling \"M3-2g\" label is fixed (its real content is \"M3 step 3\").",
-     "M3-2q：「九」第 2 项（零拷贝内存优先 HOST_CACHED）取证并**否掉** —— 探针扩了 DM_FD_MEM_TYPE / DM_FD_FORCE / DM_FD_SIZE 与\"普通缓冲 vs 外部缓冲\"的类型位对照：类型 6 上分配、取 fd、mmap 到指定地址、双向全通（256 / 512 / 3968 MB 都过），但它不在缓冲声明的可用类型位里（外部缓冲 0x13，同尺寸普通缓冲 0x41 含类型 6），属规范外用法；同机 A/B（同一份二进制，只改 DM_ZC_CACHED，固定 10 秒采 utime+stime）CPU 时间没有可测差异（同峰配对 <3%、轮间波动 ±100%）⇒ 收益看不到、风险不付，维持类型 4。换轨处显式优先取带 HOST_CACHED 的零拷贝类型、取不到或分配失败回退类型 4，开关 DM_ZC_CACHED 默认关（缺省行为与改动前一致），日志标出\"越过缓冲声明的可用类型位\"。坑点两条：DM_WATCH_STALL=0 不是\"只记不杀\"（crash.c:347-354 里值 ≤ 0 回落到 15 秒，写 0 等于停住 15 秒判死退出，dm.conf 里的注释原先写错）；MIUI 上 adb install -r 被拦（INSTALL_FAILED_USER_RESTRICTED），改用设备端 pm install -r 即可。  M3-2q: item 2 of section nine (preferring HOST_CACHED for the zero-copy type) is measured and **ruled out** -- the probe gained DM_FD_MEM_TYPE / DM_FD_FORCE / DM_FD_SIZE plus a \"plain versus external buffer\" type-bit readout: on type 6 the allocation, the fd, mmap at a chosen address and both directions all pass (256 / 512 / 3968 MB alike), but type 6 is not among the buffer's declared allowed types (an external buffer reports 0x13, while a plain buffer of the same size reaches 0x41 and does include type 6), which is outside the spec; the same-device A/B (one binary, only DM_ZC_CACHED changes, utime+stime sampled at a fixed 10 seconds) shows no measurable CPU-time difference (under 3% within the same mode against a +-100% run-to-run spread), so there is no gain to be had and no reason to pay the risk -- type 4 stays. The overlay path now prefers the zero-copy type with HOST_CACHED explicitly and falls back to type 4 when it is missing or the allocation fails, with DM_ZC_CACHED defaulting to off (default behaviour identical to before) and the log naming the \"steps outside the buffer's declared allowed types\" case. Two traps recorded: DM_WATCH_STALL=0 is not \"log without killing\" (in crash.c:347-354 a value <= 0 falls back to 15 seconds, so writing 0 means a 15-second stall is declared dead and exits -- the comment in dm.conf was wrong), and MIUI refuses adb install -r (INSTALL_FAILED_USER_RESTRICTED) while a device-side pm install -r works.",
-     "文档：重排「下一步」（主卡点提前为里程碑 B、合并重复的两条\"设备丢失\"、把「九」中与卡点无关的项挪进列表，并补记本轮照出的两条约束：MIUI 退后台即 SIGKILL、keyevent 被拒）并把交接页基线更新到 06cc706  Docs: \"what is next\" is re-ordered (Milestone B promoted to the main blocker, the two duplicate device-loss entries merged, the blocker-independent items of \"section nine\" moved into the list, and the two constraints this round brought out recorded: MIUI SIGKILLs on backgrounding, keyevents refused) and the hand-over page's baseline moves to 06cc706"
+     "M3-2z 收尾：交接文档基线提交号改到 ac240c6",
+     "M3-2z：把\"两种状态\"追到系统级 —— 那 ~10 秒停摆是**我们引起的**（SystemUI 卡 10 秒 + composer 9.5 秒 + kgsl 栅栏 waitForever）；收回一条中途的错误读法",
+     "M3-2y 收尾：交接文档基线提交号改到 7fe39c6",
+     "M3-2y：A/B/C/D 四臂复量 —— 那 ~10 秒停顿与诊断开关无关；\"每次启动落在两种状态之一\"；设备丢失\"先丢的是谁\"第一次有答案",
+     "M3-2x 文档勘误：usleep 那次采样来自修正前那一轮（w_c1），账本引文同属该轮",
+     "M3-2x 收尾：交接文档补两条本机踩过的坑，并把基线提交号改到 7c63a14",
+     "M3-2x：点名做完了 —— 「停住」是驱动约 10 秒不回答，不是我们的 usleep；先修掉栈扫描那个 64 槽的假阴性",
+     "M3-2w：宿主侧等待全部记账并复现六轮；作废 M3-2v 那条帧链，改用栈扫描点名；顺带两个给用户用的屏上口子"
     ]
    }
   ]
@@ -214,7 +236,7 @@
   "branches": []
  },
  "stonejing/d2r-mobile": {
-  "pushed_at": "2026-10-15T06:30:35Z",
+  "pushed_at": "2026-10-15T11:17:16Z",
   "branches": []
  },
  "tkcoliver-glitch/d2r-mobile": {
@@ -241,7 +263,7 @@
   ]
  },
  "ivanzhangwb/d2r-mobile": {
-  "pushed_at": "2026-10-15T04:20:30Z",
+  "pushed_at": "2026-10-15T09:05:12Z",
   "branches": []
  },
  "jeoichu-rgb/switch-mobile": {
@@ -257,14 +279,14 @@
   "branches": []
  },
  "Seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-14T21:24:44Z",
+  "pushed_at": "2026-10-15T10:22:13Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 50,
-    "behind": 3,
-    "files": 131,
-    "real_files": 130,
+    "ahead": 60,
+    "behind": 4,
+    "files": 137,
+    "real_files": 136,
     "dirs": [
      "NOTICE.md",
      "PORTABLE.md",
@@ -273,16 +295,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-10-14T21:21:52Z",
+    "last_commit": "2026-10-15T10:14:58Z",
     "subjects": [
-     "feat(gfx): 3.3-A 出图 —— XComponent → VkSurfaceKHR → swapchain → present，真机通过",
-     "perf(gfx): 管线缓存落盘 —— 第一项\"鸿蒙特有优化\"，真机省 99%",
-     "fix(gfx): 3.2 增强 —— 补三类\"不报错的错\" + 落第一版测量骨架，真机通过",
-     "feat(gfx): 3.2 回放层最小闭环 —— 命令流 → 回放 → 出图，真机通过",
-     "feat(gfx): 3.1-C 池模块（nvn_vk.c）—— 回放层第一个文件，真机通过",
-     "feat(gfx): 3.1-B 客体堆预留 —— 共享 Vulkan 上下文 + 真机通过",
-     "feat(gfx): 阶段 3 前置 + 3.1-A —— 零拷贝前提已验，池零拷贝原型真机通过",
-     "fix(gfx): glslang-fetch.sh 修正路径与引号 —— 缺省指向项目根 tools/（仓库外），脚本实测通过"
+     "feat(gfx): 3.4-B 块线性解排布 —— 收编上游单测 t_tex，真机 0 败（A/B/E 全过）",
+     "feat(gfx): 3.4-A 贴图通道最小闭环 —— 真机通过（0 败 112ms，最大通道差 0）",
+     "docs(gfx): 3.4 贴图三步拆法做实（勘测上游 tex/ 后修订）",
+     "docs(gfx): 把鸿蒙游戏机制的接入点表按调研结果做实",
+     "feat(gfx): 3.3-C 帧率接入口对照 —— 接入口定为 DisplaySoloist（真机 0 败）",
+     "feat(probe): 探针页改成「当前测试置顶 + 历史探针折叠」",
+     "fix(gfx): 3.3-B 报告游标按指针传 —— 修掉\"只丢内容不报错\"的覆盖 bug",
+     "fix(ohos): napi_init.c 补 <stdio.h> —— snprintf 此前是隐式声明"
     ]
    }
   ]
@@ -663,7 +685,7 @@
   "branches": []
  },
  "1lifedo1thing/d2r-mobile": {
-  "pushed_at": "2026-10-14T08:49:21Z",
+  "pushed_at": "2026-10-15T08:24:20Z",
   "branches": []
  },
  "lcr1017/d2r-mobile": {
@@ -675,18 +697,18 @@
   "branches": []
  },
  "adm1n007/d2r-mobile": {
-  "pushed_at": "2026-10-15T02:47:08Z",
+  "pushed_at": "2026-10-15T11:15:38Z",
   "branches": []
  },
  "dodola/d2r-mobile": {
-  "pushed_at": "2026-10-13T03:44:51Z",
+  "pushed_at": "2026-10-15T09:25:26Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 1,
-    "behind": 38,
-    "files": 70,
-    "real_files": 70,
+    "ahead": 5,
+    "behind": 39,
+    "files": 87,
+    "real_files": 85,
     "dirs": [
      "DESIGN.md",
      "dm/android",
@@ -694,8 +716,12 @@
      "dm/host",
      "dm/tools"
     ],
-    "last_commit": "2026-10-13T03:43:06Z",
+    "last_commit": "2026-10-15T09:24:27Z",
     "subjects": [
+     "docs: describe experimental Android support in both READMEs",
+     "fix(android): preserve submission context in Vulkan profiling",
+     "perf(android): per-mip image layouts, 2-way shader control cache, gated hot-path timers",
+     "perf(android): precise Vulkan sync, chunked + async submission, cached writeback",
      "feat(android): add native game host and Vulkan renderer"
     ]
    }
@@ -722,7 +748,7 @@
   "branches": []
  },
  "zjwww/d2r-mobile": {
-  "pushed_at": "2026-10-15T05:24:25Z",
+  "pushed_at": "2026-10-15T13:21:57Z",
   "branches": []
  },
  "zzren2020/d2r-mobile": {
@@ -742,7 +768,7 @@
   "branches": []
  },
  "TianZuo555/d2r-mobile": {
-  "pushed_at": "2026-10-14T14:23:00Z",
+  "pushed_at": "2026-10-15T11:45:21Z",
   "branches": []
  },
  "deadfoxwang/d2r-mobile": {
@@ -782,7 +808,7 @@
   "branches": []
  },
  "zengbo/d2r-mobile": {
-  "pushed_at": "2026-10-15T06:11:47Z",
+  "pushed_at": "2026-10-15T11:34:43Z",
   "branches": []
  },
  "a9rgeapB/d2r-mobile": {
@@ -809,12 +835,12 @@
   ]
  },
  "Kamisorara/d2r-mobile": {
-  "pushed_at": "2026-10-14T10:59:31Z",
+  "pushed_at": "2026-10-15T11:03:53Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 3,
-    "behind": 5,
+    "ahead": 4,
+    "behind": 0,
     "files": 4,
     "real_files": 4,
     "dirs": [
@@ -822,8 +848,9 @@
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-10-14T10:59:11Z",
+    "last_commit": "2026-10-15T11:03:49Z",
     "subjects": [
+     "Merge remote-tracking branch 'upstream/main'",
      "Merge remote-tracking branch 'upstream/main'",
      "Guest dylib: write an ad-hoc signature with room to re-sign (LiveContainer signs guests on device and fails on a never-signed binary)",
      "Unrecognized gamepads default to the Nintendo (Switch) face-button layout; Xbox / PS / MFi keep the positional layout by explicit name match"
@@ -832,21 +859,21 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-10-15T08:16:16Z",
+  "pushed_at": "2026-10-15T13:38:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T08:16:06Z",
+    "last_commit": "2026-10-15T13:38:40Z",
     "subjects": [
-     "Add on-demand iOS prepared input generation [skip ci]",
-     "Clarify shared Data resource metadata",
-     "Share prepared input configuration and document Mac installation",
-     "Document verified Mac prepared input and build duration",
-     "Add non-publishing remote Mac validation",
-     "Simplify macOS prepared builds after input validation",
-     "Reuse existing Data on Mac with included resource metadata",
-     "Preserve macOS build diagnostics on failure"
+     "Document measured iOS and macOS standard build times",
+     "Use IPNS package and checksum URLs in build configuration",
+     "Use consistent titles for iOS and macOS prepared package guides",
+     "Publish refreshed prepared input configuration and remove temporary validation jobs",
+     "Upload validated refreshed prepared packages to separate objects",
+     "Cache interface outputs by their source inputs and validate native-source reuse",
+     "Include binary game tables and reuse unchanged generated headers",
+     "Use upstream-compatible PNG compression for Linux asset generation"
     ]
    }
   ]
@@ -1004,18 +1031,21 @@
   ]
  },
  "MrCKR/switch-android-runtime": {
-  "pushed_at": "2026-10-15T06:51:59Z",
+  "pushed_at": "2026-10-15T12:44:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T06:51:57Z",
+    "last_commit": "2026-10-15T12:44:53Z",
     "subjects": [
+     "feat: integrate Android compatibility layer into runtime APK",
+     "docs: restore README as the project charter",
+     "ci: drop GitHub Actions workflow",
+     "feat: Vulkan device bring-up with swapchain and present loop",
+     "build: keep ABI policy extensible",
      "feat: add Android Vulkan capability probe skeleton",
      "feat: add Android Vulkan capability probe skeleton",
-     "feat: add Android Vulkan capability probe skeleton",
-     "feat: add Android Vulkan capability probe skeleton",
-     "docs: define Android runtime and D2R adapter plan"
+     "feat: add Android Vulkan capability probe skeleton"
     ]
    }
   ]
@@ -1041,12 +1071,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-15T04:54:29Z",
+  "pushed_at": "2026-10-15T11:44:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T04:54:28Z",
+    "last_commit": "2026-10-15T11:44:45Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1055,7 +1085,7 @@
      "chore: refresh catalog",
      "chore: refresh catalog",
      "chore: refresh catalog",
-     "feat: broaden port discovery and add games review pages"
+     "chore: refresh catalog"
     ]
    }
   ]
@@ -1101,61 +1131,61 @@
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-15T00:41:09Z",
+  "pushed_at": "2026-10-15T13:58:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T00:41:04Z",
+    "last_commit": "2026-10-15T13:58:23Z",
     "subjects": [
-     "A3：纹理内容核对 —— 1235 张真实贴图 vs 两个独立实现，0 不一致",
-     "A2：纹理整链（块线性 BC 贴图 → 行优先像素）组合层 + 9 条断言",
-     "A1：bcdec 移植（BC 贴图 CPU 解码的薄封装）+ 12 条断言",
-     "STATUS：第二十二轮 —— CI runner 有可用 Metal（Apple Paravirtual），无 Mac 的约束对 Metal 层解除",
-     "CI：Metal 探测 —— runner 有没有可用 GPU，决定 Metal 层能不能在 CI 上验",
-     "README/STATUS：纹理层一行与致谢里 deko3d / BNTX-Extractor / bcdec 的出处",
-     "CI：C 单测清单单一来源化（10 个，走 Makefile）",
-     "纹理块线性布局：尺寸算法（deko3d 移植）+ GOB 解交错（BNTX-Extractor）+ 真实贴图核对"
+     "STATUS：M2 第一片完成（Metal 最小闭环，CI 离屏可验）",
+     "修 MTL 第一片：ARC 下不能显式 release；CI 编译错误也进注解",
+     "M2 第一片：Metal 重放层的最小闭环（设备/队列/离屏纹理/清屏/回读）",
+     "STATUS：第二十四轮 —— M1 内嵌装载落地（CI 可验）与两个真机必崩 bug 的记录",
+     "内嵌表改显式宏开关 SMO_EMBED（Mach-O 的弱导入对函数也不可靠，ld64 仍报 undefined）",
+     "内嵌表改访问器函数（Mach-O 弱导入只对函数可靠；数据符号的 weak_import 不生效）",
+     "修内嵌三段的边界页：代码尾与「TEXT_END 到页边界的缝隙」同页，必须 RWX",
+     "embed 自检支持分段执行（step 1..6），CI 逐段跑一轮把 SIGBUS 定位到节"
     ]
    }
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-15T07:09:49Z",
+  "pushed_at": "2026-10-15T13:30:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T07:09:46Z",
+    "last_commit": "2026-10-15T13:30:44Z",
     "subjects": [
+     "Metroid Dread (2.1.0) reaches gameplay on the Mac at 60 fps, cutscenes at 30",
      "Engage ships a recorded pipeline prewarm list; the log names each prewarm list it reads",
      "Directory listing skips per-entry getxattr and .holes probes; Engage's first frame at 1.8 s on the Mac",
      "App name and bundle ID come from the base NSP",
      "Renamed nxnative; there is no default game",
      "Game profiles are named after the base game's title ID",
      "DLC NSPs in the folder are packed and unlocked (Engage Expansion Pass)",
-     "RomFS lookups use a per-directory name index; Engage boots in 6 s instead of 21",
-     "Engage: eShop and other system applet calls no longer crash"
+     "RomFS lookups use a per-directory name index; Engage boots in 6 s instead of 21"
     ]
    }
   ]
  },
  "ForceMind/Game2Mobile": {
-  "pushed_at": "2026-10-15T01:58:57Z",
+  "pushed_at": "2026-10-15T13:43:01Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T01:58:57Z",
+    "last_commit": "2026-10-15T13:43:01Z",
     "subjects": [
+     "M1: verify 176 ARM64 production objects across iOS 26 and 18",
+     "M1: compile asset-free iOS diagnostics app on Apple Silicon",
      "M1: validate all XcodeGen profiles with real tracked host sources",
      "docs: record 10 ARM64 Mach-O objects and real macOS 15 legacy CI",
      "ci: compile runtime loader/entry and exercise Metal M3 on macOS 15 runner",
      "ci: generate ARM64 Mach-O objects from production Metal and UIKit source",
      "docs: record real Apple Silicon Metal/UIKit/Swift checks and remaining M1 gates",
-     "fix(ios): align managed asset downloader minimum with iOS 26 app target",
-     "ci: typecheck Background Assets downloader against iOS 26 SDK",
-     "ci: cross-compile production graphics for iOS 26 and legacy iOS 18 targets"
+     "fix(ios): align managed asset downloader minimum with iOS 26 app target"
     ]
    }
   ]
@@ -1201,12 +1231,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-15T04:36:49Z",
+  "pushed_at": "2026-10-15T11:27:12Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T04:36:48Z",
+    "last_commit": "2026-10-15T11:27:11Z",
     "subjects": [
      "chore: 自动同步 Star 地图（182 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
@@ -1214,7 +1244,7 @@
      "chore: 自动同步 Star 地图（182 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
-     "chore: 自动同步 Star 地图（181 个项目）",
+     "chore: 自动同步 Star 地图（182 个项目）",
      "chore: 自动同步 Star 地图（181 个项目）"
     ]
    }
@@ -1229,13 +1259,14 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-15T08:18:33Z",
+  "pushed_at": "2026-10-15T08:18:51Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T08:18:30Z",
+    "last_commit": "2026-10-15T08:18:50Z",
     "subjects": [
+     "data: refresh cache",
      "notes: hide the radar itself from search results",
      "data: refresh cache",
      "README: point to the published page",
@@ -1245,7 +1276,7 @@
   ]
  },
  "goldeye0351/diablo": {
-  "pushed_at": "2026-10-15T08:17:56Z",
+  "pushed_at": "2026-10-15T08:30:22Z",
   "branches": [
    {
     "branch": "main",
@@ -1253,6 +1284,207 @@
     "last_commit": "2026-10-15T08:17:56Z",
     "subjects": [
      "Initial commit"
+    ]
+   }
+  ]
+ },
+ "qianxun102-ship-it/d2r-mobile": {
+  "pushed_at": "2026-10-15T11:32:06Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 1,
+    "behind": 0,
+    "files": 10,
+    "real_files": 10,
+    "dirs": [
+     "dm/gfx",
+     "dm/host",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-15T11:32:04Z",
+    "subjects": [
+     "Keep 4 GB devices inside physical RAM"
+    ]
+   }
+  ]
+ },
+ "fly2kwcw/d2r-mobile": {
+  "pushed_at": "2026-10-15T12:46:39Z",
+  "branches": []
+ },
+ "Bayer141/d2r-mobile": {
+  "pushed_at": "2026-10-15T09:49:42Z",
+  "branches": []
+ },
+ "QuteZSY001/d2r-mobile": {
+  "pushed_at": "2026-10-15T09:11:11Z",
+  "branches": []
+ },
+ "nknkol/d2r-mobile": {
+  "pushed_at": "2026-10-15T12:17:32Z",
+  "branches": []
+ },
+ "luzzy/d2r-mobile": {
+  "pushed_at": "2026-10-15T12:34:48Z",
+  "branches": []
+ },
+ "TouhouGO/d2r-mobile": {
+  "pushed_at": "2026-10-15T12:40:08Z",
+  "branches": []
+ },
+ "humfz2000-ai/d2r-mobile": {
+  "pushed_at": "2026-10-15T12:13:37Z",
+  "branches": []
+ },
+ "zlinoliver/d2r-mobile": {
+  "pushed_at": "2026-10-15T12:11:35Z",
+  "branches": []
+ },
+ "tenfar/d2r-mobile": {
+  "pushed_at": "2026-10-15T10:07:56Z",
+  "branches": []
+ },
+ "hyhou/d2r-mobile": {
+  "pushed_at": "2026-10-15T09:26:30Z",
+  "branches": []
+ },
+ "austery/d2r-mobile": {
+  "pushed_at": "2026-10-15T09:37:58Z",
+  "branches": []
+ },
+ "LiebeLee/d2r-mobile": {
+  "pushed_at": "2026-10-15T11:09:43Z",
+  "branches": []
+ },
+ "BluePadge/d2r-mobile": {
+  "pushed_at": "2026-10-15T13:01:29Z",
+  "branches": []
+ },
+ "imHui77/d2r-mobile": {
+  "pushed_at": "2026-10-15T08:50:47Z",
+  "branches": []
+ },
+ "YunoMikku/dd2ios": {
+  "pushed_at": "2026-10-15T12:41:15Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T12:41:15Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "ppptv/D2RMobile": {
+  "pushed_at": "2026-10-15T11:11:59Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T11:11:58Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "qianxun102-ship-it/d2jar": {
+  "pushed_at": "2026-10-15T10:38:48Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T10:33:16Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "JAM-SEVEN/d2r_deploy": {
+  "pushed_at": "2026-10-15T12:57:57Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T12:57:56Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "victorzuo8831/d2r": {
+  "pushed_at": "2026-10-15T09:54:33Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T09:48:42Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "hejunliang/Leo1": {
+  "pushed_at": "2026-10-15T13:55:49Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T13:47:05Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "Zijing95/9527": {
+  "pushed_at": "2026-10-15T14:09:57Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T13:55:57Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "hejunliang/Leo": {
+  "pushed_at": "2026-10-15T13:45:44Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T13:45:43Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "designmakc/TopRepos": {
+  "pushed_at": "2026-10-15T09:42:45Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T09:42:44Z",
+    "subjects": [
+     "digest 2026-10-15",
+     "digest 2026-10-14",
+     "digest 2026-10-13",
+     "digest 2026-10-11",
+     "digest 2026-10-10",
+     "digest 2026-10-09",
+     "digest 2026-10-08",
+     "digest 2026-10-07"
     ]
    }
   ]
