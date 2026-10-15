@@ -1229,15 +1229,30 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-15T08:16:35Z",
+  "pushed_at": "2026-10-15T08:18:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T08:16:25Z",
+    "last_commit": "2026-10-15T08:18:30Z",
     "subjects": [
+     "notes: hide the radar itself from search results",
+     "data: refresh cache",
      "README: point to the published page",
      "Initial port radar: fork network + independent repos, interactive page, CI auto-update"
+    ]
+   }
+  ]
+ },
+ "goldeye0351/diablo": {
+  "pushed_at": "2026-10-15T08:17:56Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-15T08:17:56Z",
+    "subjects": [
+     "Initial commit"
     ]
    }
   ]
