@@ -138,5 +138,9 @@
  "spvycf/d2r": {
   "hide": true,
   "why": "空仓库"
+ },
+ "catoncat/d2r-port-radar": {
+  "hide": true,
+  "why": "本站自己"
  }
 }
