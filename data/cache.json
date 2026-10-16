@@ -346,14 +346,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-16T14:29:16Z",
+  "pushed_at": "2026-10-16T20:05:36Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 35,
-    "behind": 8,
-    "files": 98,
-    "real_files": 93,
+    "ahead": 42,
+    "behind": 13,
+    "files": 110,
+    "real_files": 105,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -362,16 +362,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-16T14:29:07Z",
+    "last_commit": "2026-10-16T20:05:27Z",
     "subjects": [
-     "Implement bounded NVN buffer views for P5R CPU resource setup",
-     "Continue CPU resource probes while guarding all backend GPU commits",
-     "Retain Metal 3 encoder residency when residency sets are unavailable",
-     "Add bounded graphics backend setup probe with exclusive ownership",
-     "Implement bounded per-device clear registration metadata",
-     "Link bootstrap profile in standalone graphics tests",
-     "Report unavailable fast-clear registration and preserve named P5R NVN stops",
-     "Fix optional filesystem read overloads using host handles"
+     "Fix standalone texture-view GPU test compilation and linkage",
+     "Implement texture swizzle and depth-stencil sampling state with GPU coverage",
+     "Complete sampler startup state and guard Metal reduction capabilities",
+     "Isolate P5R capture handlers from legacy no-op registration",
+     "Capture startup NVN diagnostics as a bounded pre-submit batch",
+     "Batch 108 NVN startup interfaces with typed coverage and source audit",
+     "Expose retained NVN memory-pool properties and shared mapping",
+     "Implement bounded NVN buffer views for P5R CPU resource setup"
     ]
    }
   ]
@@ -470,14 +470,14 @@
   "branches": []
  },
  "Seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-16T14:51:04Z",
+  "pushed_at": "2026-10-16T18:44:23Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 94,
-    "behind": 0,
-    "files": 141,
-    "real_files": 140,
+    "ahead": 118,
+    "behind": 5,
+    "files": 144,
+    "real_files": 143,
     "dirs": [
      "NOTICE.md",
      "PORTABLE.md",
@@ -486,16 +486,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-10-16T14:49:49Z",
+    "last_commit": "2026-10-16T18:41:56Z",
     "subjects": [
-     "⭐ feat(ohos): 门回路收官 —— 93 个真实门块全部走完整回路（真机实锤）",
-     "feat(ohos): Break 判别实验 —— 通知位判定正确（⚠ 行未现），死点在 return 之后的返回路径",
-     "feat(ohos): Break 处理器内诊断夹点 —— 死点收敛到通知位判定的返回路径",
-     "feat(ohos): 返回路径夹点日志（hle.c svc_dispatch 返回点 + hle_svc.c Break 处理器内部）—— 待真机",
-     "feat(ohos): 门回路诊断突破 —— 分派链验证到 Break 处理器返回 0，死点收敛到恢复路径",
-     "feat(ohos): mem_init 预留大小旋钮（DM_GUEST_AS_MB）—— 门回路崩溃的头号嫌疑修复",
-     "fix(ohos): 实验 H 二分 B 前置日志 + 修正二分补丁时序（seal 后不可写）",
-     "feat(ohos): 实验 H 二分 B/C —— 定位收敛到 gate_dispatch 内部"
+     "feat(ohos): 替换式插桩落地 —— 三个分配器由宿主真给内存（2720/256 字节均有记录）",
+     "feat(ohos): 挂第三个分配器 0x9f33f0 入口 + 定位到注入被改写",
+     "feat(ohos): 洞扩容 64KB + 桩加站点号 + 全量挂点（一轮定位 174 候选中的真凶）",
+     "feat(ohos): 服务批量升级（真时基 + 纯虚兜底）+ 跑测再收窄（每轮 ~98 秒）",
+     "feat(ohos): 装机通道修复 + 修复真机确认 + 崩点前移（三件事同时成立）",
+     "feat(ohos): 运行日志加「探针构建时间戳」—— 装机他判基建（当场证明装机未生效）",
+     "fix(ohos): AllocateMemoryBlock 输出参数写回「地址」（证据驱动）+ 插桩桩改帧指针传参",
+     "fix(ohos): AllocateMemoryBlock 改 calloc（清零）+ 插桩桩捎带调用者返回地址"
     ]
    }
   ]
@@ -1373,12 +1373,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-16T11:38:37Z",
+  "pushed_at": "2026-10-16T16:50:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T11:38:36Z",
+    "last_commit": "2026-10-16T16:50:56Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1433,21 +1433,21 @@
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-16T16:42:09Z",
+  "pushed_at": "2026-10-16T18:17:58Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T16:42:05Z",
+    "last_commit": "2026-10-16T18:17:54Z",
     "subjects": [
-     "Report missing startup dependencies and include effect database in private smoke fixtures",
-     "Correct HID single-touch buffer size and multi-state function ABIs",
-     "Exercise startup resource loading with a small verified private RomFS fixture",
-     "Compute actual NVN texture storage sizes to unblock primitive texture initialization",
-     "Implement CPU buffer mapping with pool-relative offsets and capture guest crash bases",
-     "Fix 4K guest stack mappings on 16K hosts and gate IPA builds on real ARM64 boot",
-     "Fix NVN startup success semantics, device limits, display outputs and iOS resource paths (v0.6.10)",
-     "Implement physical memory mapping and reference SDK startup takeover (v0.6.9)"
+     "Document verified GPU fence blocker after crash fixes [skip ci]",
+     "Correct NVN fence waits and expose missing queue completion bridge",
+     "Grow NVN state index without moving entries during particle loading",
+     "Route SDK cache operations through host coherent memory boundaries",
+     "Initialize audio device notification event and stereo route queries",
+     "Batch private startup object resources and preserve traced fs errors",
+     "Include verified world map resource in native startup fixture",
+     "Fix fortified CRC diagnostics and trace missing boot resources"
     ]
    }
   ]
@@ -1533,17 +1533,17 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-16T16:38:10Z",
+  "pushed_at": "2026-10-16T21:06:55Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T16:38:08Z",
+    "last_commit": "2026-10-16T21:06:54Z",
     "subjects": [
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
-     "chore: 自动同步 Star 地图（182 个项目）",
+     "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
@@ -1561,18 +1561,18 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-16T11:32:50Z",
+  "pushed_at": "2026-10-16T16:45:10Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T11:32:49Z",
+    "last_commit": "2026-10-16T16:45:09Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache",
-     "Port knowledge base: SPEC v0.1, atlas.py (validate/build), agent API + llms.txt + MCP, Triangle Strategy as first dataset",
      "data: refresh cache",
+     "Port knowledge base: SPEC v0.1, atlas.py (validate/build), agent API + llms.txt + MCP, Triangle Strategy as first dataset",
      "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache"
@@ -1795,14 +1795,14 @@
   ]
  },
  "vickwv/d2r-mobile": {
-  "pushed_at": "2026-10-16T16:13:17Z",
+  "pushed_at": "2026-10-16T20:02:25Z",
   "branches": [
    {
     "branch": "android-integration",
-    "ahead": 36,
-    "behind": 0,
-    "files": 98,
-    "real_files": 93,
+    "ahead": 53,
+    "behind": 5,
+    "files": 101,
+    "real_files": 94,
     "dirs": [
      "DESIGN.md",
      "dm/android",
@@ -1810,16 +1810,16 @@
      "dm/host",
      "dm/tools"
     ],
-    "last_commit": "2026-10-16T16:13:13Z",
+    "last_commit": "2026-10-16T20:02:21Z",
     "subjects": [
-     "perf(android): 绑定计划精确校验杠杆（planstate.txt 运行时 A/B）",
-     "feat(android): 画质档机制（quality.txt 一行切档）+ 默认档固化 2624-075，预置 1080-080",
-     "docs: 世界档验收记录（设备回归）——启动态修复实锤、同档 UI 几何 1.000、跨档 = 2168 档横拉伸 ×1.21 而非 UI 变化",
-     "docs: 会话交接补记——Android 模块重出（4 条分辨率链补丁）与回设备第一步（世界档矩阵）",
-     "android: ui_geom 选行判据加固（长连续段≥2 条）——已用 2026-10-16 历史截图对标：world75 vs C2 测出缩放 0.591 与人工标定一致",
-     "android: 世界档分辨率链修复——四条尺寸补丁升级为双端生效、原生表面档位、几何检查工具",
-     "android: force-add the bright-levels placeholder (gitignored generated table; the Android build needs it)",
-     "android: 3D picture brightening (palette-table rewrite, iOS parity)"
+     "docs: Android 前端体验对齐 iOS——差距分析 + 本轮动作 + 后续大项（大白话）；含隔离审计与本地预演数值自检",
+     "chore: .gitignore 逐字节还原为上游版本（上次还原漏了 2 行）",
+     "chore: 还原 .gitignore 到上游内容（遵守隔离硬规矩：动上游文件数只许降）——IDE 生成物忽略改放本机 .git/info/exclude",
+     "feat(android): 触摸层视觉对齐 iOS——深色圆底+古铜双环、闲时淡出(DM_SKILL_IDLE_ALPHA)、星纹摇杆帽+±30°转向弧、腰带格改数字 1-4；外壳按钮统一暗底铜边；DESIGN.md 同步",
+     "chore: .gitignore 忽略 IDE 生成物（.idea/、*.iml）",
+     "isolation: 删改行专项审计完结（141 行上游删改逐行核对）——全部为①/③守卫形态或已合流；登记 2 个上游 PR 候选（patch_nso 4 条分辨率补丁、nvn_dirty 统计功能）",
+     "docs: 函数级改动决策表（平台机制差异=fork；同功能异写法=合流；Android 独有=小钩子）——回答'要不要给 Android 做专属函数'；§0 同步记录补 resolve_import 合流",
+     "isolation: resolve_import 族与上游 #66 合流（消除该冲突源）"
     ]
    }
   ]
@@ -1978,31 +1978,32 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-16T16:25:05Z",
+  "pushed_at": "2026-10-16T19:35:36Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 25,
-    "behind": 1,
-    "files": 15,
-    "real_files": 15,
+    "ahead": 40,
+    "behind": 6,
+    "files": 22,
+    "real_files": 22,
     "dirs": [
      "dm/gfx",
      "dm/host",
      "dm/i18n",
      "dm/ios",
-     "dm/tools"
+     "dm/tools",
+     "dm/verify"
     ],
-    "last_commit": "2026-10-16T16:25:03Z",
+    "last_commit": "2026-10-16T19:33:40Z",
     "subjects": [
-     "Zoom cut v2: spare key-page slot 100, registers saved and restored, no-op when the slot is zero",
-     "Revert \"Zoom done in the rewriter plus the host parameter slot\"",
-     "Zoom done in the rewriter plus the host parameter slot",
-     "Mercenary page: switch there directly (and really revert the fast walk); tooltip hook moved to the real cursor path",
-     "Fix the mercenary page landing, undo the tab widening (shorten that name instead), add a zoom diagnostic",
-     "Widen the skill tree tab labels at run time, inside an existing pump (no new top-level function)",
-     "Hoist the hs table above the sticky hover branch: it was declared below it, so hs was undeclared there",
-     "Keep the tooltip after a single tap"
+     "Zoom: scale orthographic extents in static guest text",
+     "Revert host-side runtime zoom patch",
+     "Mercenary page: stop after the direct switch instead of also pressing R (it flipped the page back off)",
+     "Zoom: use vm_protect (the SDK declares vm_protect, not mach_vm_protect)",
+     "Zoom: open the write window with VM_PROT_COPY so the page becomes private before it is written (main only)",
+     "Reapply \"Zoom: flush the instruction cache with sys_icache_invalidate (__builtin___clear_cache has no symbol on arm64)\"",
+     "Reapply \"Fix: the adrp x9 target in the host stub must be relative to the mapped image base\"",
+     "Reapply \"Zoom: install the patch at load time from the host (no prepared-package change needed)\""
     ]
    }
   ]
@@ -2070,21 +2071,21 @@
   ]
  },
  "alanyangcn/smbwonder-ios": {
-  "pushed_at": "2026-10-16T15:14:29Z",
+  "pushed_at": "2026-10-16T18:31:47Z",
   "branches": [
    {
     "branch": "first-game-frame",
     "mirror": false,
-    "last_commit": "2026-10-16T15:06:24Z",
+    "last_commit": "2026-10-16T18:09:48Z",
     "subjects": [
-     "Shader build: slots empty (handle 0) in the census take the instruction's texture type; every present advances the diagnostic frame number",
-     "Texture handle 0 samples as an empty slot (round151 stop after loading a save: fragment slot 12 bound to handle 0)",
-     "Present and replay threads declared time-constraint threads (computation from each thread's per-frame CPU p90)",
-     "Render passes: queued clears fold into the next pass's Clear load; attachments the next queued op overwrites store DontCare",
-     "Depth clamp executes as MTLDepthClipModeClamp (round150 stop: the game enables nvnCommandBufferSetDepthClamp)",
-     "Texture views with their own target become Metal views of that type (round149 stop: 2D RGBA8_SRGB viewed as a 2D array); WONDER_FRAME_DUMP_EVERY diagnostic",
-     "Alias region takes the address space left after stacks and a 2 GiB heap region (was 1792 MiB); exact strip draws without restart",
-     "Diagnostic WONDER_POOL_MIB: report a larger application pool (round146: DV models fail to allocate in the 1034 MiB resource heap)"
+     "Texture dump also saves each level's alpha as grey (<name>-alpha.png)",
+     "Diagnostic WONDER_DEPTH_EQUAL_LEQUAL: depth EQUAL without writes tested as LEQUAL",
+     "Samplers past 15 go through an argument buffer (round163: course ground fs 5fdc2502 left out, its draws skipped, ground showed the clear colour)",
+     "Vertex positions are [[invariant]] with preserveInvariance (round161: course hedges showed the blue clear colour)",
+     "Texture dump also writes the draw's uniform buffers and first vertex words (<fs>-data.txt)",
+     "LINEAR_RENDER_TARGET (0x40) textures are pitch layout (round158: far terrain blue)",
+     "Diagnostic WONDER_GPU_GATE=0: submissions never wait (round159: background termination A/B)",
+     "CPU boost keeps a thread's time-constraint policy (round157: home-screen launch died, QoS refused with EPERM on the real-time present thread); rounds write their WONDER_ENVS to Documents/launch-env.txt for home-screen launches"
     ]
    }
   ]
@@ -2152,12 +2153,28 @@
   ]
  },
  "BossaMelon/d2r-mobile": {
-  "pushed_at": "2026-10-16T09:30:23Z",
+  "pushed_at": "2026-10-16T17:33:07Z",
   "branches": [
+   {
+    "branch": "codex/iphone-native-fullscreen",
+    "ahead": 2,
+    "behind": 2,
+    "files": 4,
+    "real_files": 4,
+    "dirs": [
+     "dm/host",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-16T17:32:49Z",
+    "subjects": [
+     "Revert unused legacy save hook that aborts supported game startup",
+     "Declare an iOS launch screen to avoid legacy iPhone sizing"
+    ]
+   },
    {
     "branch": "codex/mac-mouse-latency",
     "ahead": 1,
-    "behind": 0,
+    "behind": 5,
     "files": 6,
     "real_files": 6,
     "dirs": [
@@ -2843,34 +2860,68 @@
   ]
  },
  "qoopoke1-creator/za-port": {
-  "pushed_at": "2026-10-16T15:29:08Z",
+  "pushed_at": "2026-10-16T18:57:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T15:29:06Z",
+    "last_commit": "2026-10-16T18:57:27Z",
     "subjects": [
-     "docs: HANDOFF 更新到最新执行状态（rtld 真入口/引导/卡点 x8=0x1b9c）",
-     "host: 故障寄存器 dump（x8=0x1b9c 裸VA，非RELA来源）；回归 STATUS 口径（rtld 只做符号导入）",
-     "host: 定 svc#6=QueryMemory（实证）→ rtld 进入模块内存扫描阶段；新故障 裸VA(0x1b9c)",
-     "host: 统一 za-port 约定（门加base/rtld跳过相对重定位/键页线程块）→ rtld 跑通引导并调用 svc",
-     "host: 用 za-port 重排产物推进 rtld（越采 bss/重定位进补丁块）；发现键页约定冲突",
-     "host: rtld 真入口=base+0（x0=0,x1=thread_handle）；定论卡点=16KB 小模块重排(W^X 同页)",
-     "docs: 新增交接文档 HANDOFF.md；README 纳入 host/ 与执行进展",
-     "docs: 确认 MOD0 module_object_off（rtld 0x2038→0x4048=首崩写对象处）"
+     "docs: HANDOFF 补充当前卡点(main+0x279de78)的完整线索与 LLDB 实测(返回链断裂)",
+     "host: 新增 hle_hid.c（手柄状态返『已连接、无按键』：GetNpadState(s) 5×2 重载 / 样式 / 颜色 / 六轴；含触屏与保持模式接口）",
+     "docs: HANDOFF 更新到真实进度（已到 nnMain，卡在 main+0x279de78）+ 本会话对齐 D2R 的全部修复清单",
+     "host: 宿主门支持改写器实际发出的 mrs_cntpct 种类（此前只认 cntpct/cntvct → 落未处理、计数没写回）",
+     "host: 移植 D2R 的 hle_fs.c（精简核心：挂载 rom/save/temp + 文件/目录基本操作）与 hle_vi.c / hle_nv.c（显示与显卡驱动胶水）",
+     "host: 照 D2R 补跑各模块 init_array（全局构造函数）+ 移除 nn::lmem 误接管",
+     "host: 新增 hle_oe.c（移植 D2R hle_oe.c 通用部分）——运行模式/性能模式/语言/伪设备号/焦点/通知/截图录像/调频等按固定值接管；TLR[0x1f8] 放每线程线程对象",
+     "host: 别名栈随机地址分配由宿主 mmap 代做（AddressSpaceAllocatorBase::AllocateSpace/CheckGuardSpace）"
     ]
    }
   ]
  },
  "StandonJoyner/awesome-rea": {
-  "pushed_at": "2026-10-16T16:39:03Z",
+  "pushed_at": "2026-10-16T16:45:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T16:38:37Z",
+    "last_commit": "2026-10-16T16:45:20Z",
     "subjects": [
+     "Record the topics requirement the structure gate depends on",
      "Initial commit: a curated list of finished reverse-engineering results"
+    ]
+   }
+  ]
+ },
+ "DanielZhangyc/smbw-mobile": {
+  "pushed_at": "2026-10-16T18:02:42Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T18:02:40Z",
+    "subjects": [
+     "Publish macOS port with memory lifetime fixes and performance documentation"
+    ]
+   }
+  ]
+ },
+ "kuosuko/tomodachi-native": {
+  "pushed_at": "2026-10-16T17:23:06Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T17:23:00Z",
+    "subjects": [
+     "fix(audio): generate SDK 20 commands under the renderer's update lock",
+     "chore: carry only the Tomodachi Life profile",
+     "fix(mac): keep embedded game data outside the app bundle",
+     "fix(audio): create the CoreAudio output in the background",
+     "perf(gfx): hand a submission to the GPU every 64 draws",
+     "feat(mac): MetalFX upscaling and a 60 FPS option",
+     "fix(shaders): compile Mac shaders in relaxed math mode",
+     "fix(gfx): popup black screen, sky colours and Mii jaw edges"
     ]
    }
   ]
