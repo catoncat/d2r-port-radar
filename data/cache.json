@@ -1225,21 +1225,21 @@
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-16T00:22:28Z",
+  "pushed_at": "2026-10-16T00:26:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T00:22:24Z",
+    "last_commit": "2026-10-16T00:26:53Z",
     "subjects": [
+     "取消复制到 NAS 的工作流：make_installable.py 只在本地产 IPA（--smb-root 与路径记忆移除）",
      "guest_dylib：加空 LC_CODE_SIGNATURE 槽（全能签等工具在签前准备阶段会拒无签名槽的 dylib）",
      "make_installable.py 加 --smb-root：出完 IPA 自动复制到网络共享（ipa/ 每次更新，gamedata/ 只在缺失时拷，路径记住在 out/smb_root.cfg）",
      "make_installable.py：一条命令（下载公共仓最新壳 + 注入本机 Guest.framework）出可自签 IPA；docs 更新为推荐流程",
      "docs：自签用户的更新流程（私有 fork + GUEST_URL/SHA256 注入，release IPA 直接可用）",
      "更新流程对齐 d2r-mobile-build：CI 可选注入 Guest.framework（GUEST_URL+GUEST_SHA256 变量）；打包脚本可产出 guest.zip+sha256",
      "打包脚本：手机资源合并成一个文件夹一次复制；Info.plist 加文件共享键",
-     "首跑打包脚本：prepare_phone_package.py（Guest.framework + ExeFS tsv + 说明；RomFS 默认只写说明）",
-     "STATUS：首跑链路完整"
+     "首跑打包脚本：prepare_phone_package.py（Guest.framework + ExeFS tsv + 说明；RomFS 默认只写说明）"
     ]
    }
   ]
@@ -1353,21 +1353,21 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-15T23:42:35Z",
+  "pushed_at": "2026-10-16T00:26:45Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T23:42:34Z",
+    "last_commit": "2026-10-16T00:26:37Z",
     "subjects": [
+     "Port knowledge base: SPEC v0.1, atlas.py (validate/build), agent API + llms.txt + MCP, Triangle Strategy as first dataset",
      "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache",
      "notes: hide the radar itself from search results",
      "data: refresh cache",
-     "README: point to the published page",
-     "Initial port radar: fork network + independent repos, interactive page, CI auto-update"
+     "README: point to the published page"
     ]
    }
   ]
