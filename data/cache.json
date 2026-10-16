@@ -346,14 +346,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-16T07:54:05Z",
+  "pushed_at": "2026-10-16T14:29:16Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 31,
+    "ahead": 35,
     "behind": 8,
-    "files": 95,
-    "real_files": 90,
+    "files": 98,
+    "real_files": 93,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -362,29 +362,29 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-16T07:53:56Z",
+    "last_commit": "2026-10-16T14:29:07Z",
     "subjects": [
+     "Implement bounded NVN buffer views for P5R CPU resource setup",
+     "Continue CPU resource probes while guarding all backend GPU commits",
+     "Retain Metal 3 encoder residency when residency sets are unavailable",
+     "Add bounded graphics backend setup probe with exclusive ownership",
      "Implement bounded per-device clear registration metadata",
      "Link bootstrap profile in standalone graphics tests",
      "Report unavailable fast-clear registration and preserve named P5R NVN stops",
-     "Fix optional filesystem read overloads using host handles",
-     "Require the local RomFS directory before the controlled startup probe",
-     "Handle nested application exit-request sections without Horizon service objects",
-     "Link bootstrap profile into standalone filesystem regression tests",
-     "Add controlled nnMain startup probe with resource checkpoints and GPU stop boundary"
+     "Fix optional filesystem read overloads using host handles"
     ]
    }
   ]
  },
  "gbcmikeblue/d2r-mobile": {
-  "pushed_at": "2026-10-16T11:27:10Z",
+  "pushed_at": "2026-10-16T16:04:29Z",
   "branches": [
    {
     "branch": "android",
-    "ahead": 135,
+    "ahead": 151,
     "behind": 25,
-    "files": 105,
-    "real_files": 88,
+    "files": 112,
+    "real_files": 93,
     "dirs": [
      ".codebuddy/rules",
      "dm/android",
@@ -392,16 +392,16 @@
      "dm/host",
      "dm/tools"
     ],
-    "last_commit": "2026-10-16T11:16:35Z",
+    "last_commit": "2026-10-16T16:03:57Z",
     "subjects": [
-     "docs 收尾：交接口径指到 e01c0ed（N4-c 已完成 —— 接提交侧 + GPU→池的回读；下一步 = N4-d）",
-     "N4-c：接提交侧 + 补 GPU→池的回读 —— 提交侧与新地基一致、往返型回读做实（每帧 ≈17 KB），但画面仍没变",
-     "docs：续接提示词更新到 N4-c 版（N4-b 已完成；本轮目标是接提交侧 + 补 GPU→池的回读）",
-     "docs 收尾：交接口径指到 86e1631（N4-b 已完成 —— GPU 侧内存接管；下一步 = N4-c）",
-     "N4-b：把 GPU 侧的内存接管下来 —— `mtl_addr` 回后备资源 + 帧开头上传（机制全过；画面仍是那条红带）",
-     "docs 收尾：交接口径指到 2109af4（N4-a 已完成，下一步 = N4-b）",
-     "N4-a：接管回放层的第一步 —— 选路点 + 真机池账（no_region = 0；GPU 侧仍走旧路）",
-     "docs 收尾：交接口径指到 22ee122（N3 已完成，下一步 = N4）"
+     "docs 收尾：交接口径指到 49f5041（N4-h = 把\"我们自己的三角形\"画进游戏的通道里 ⇒ 落屏）",
+     "N4-h：把\"我们自己的三角形\"画进**游戏的通道里** —— 答案是**落屏**（序号 28 第 0/1 级从整片 152 变成整片 85；对照臂只差 conf 一行）",
+     "docs 收尾：交接口径指到 ff82ba9（N4-g = 带层的 B 臂把 15 种 VUID 逐名对上、能力问到、我们自己的三角形把\"顶点输出\"那一层两刀排掉）",
+     "N4-g：把\"顶点输出\"这一层两刀排掉 —— 带层的 B 臂把 15 种 VUID 逐名对上、能力问到（TF 在，但要改产物所以没走）、我们自己的三角形证明\"声明 9 个裁剪/剔除距离却从不写\"不足以致命",
+     "docs：把\"A1 之后推荐的下一步\"写进提示词文档（先跑带层 B 臂分堆，再决定排误用还是抓 gl_Position）",
+     "docs 收尾：交接口径指到 ab52812（A1 = 真机装上 Vulkan 校验层，有帮助；draw 层面已被排除）",
+     "A1：真机装上 Vulkan 校验层 —— 它当场点了一条真误用，并给出一条决定性的负结果",
+     "docs 收尾：交接口径指到 de08e13（N4-f 前半已完成 —— \"顶点数据本身\"与\"常量缓冲\"都是正常的；下一步 = N4-g 顶点着色器输出）"
     ]
    }
   ]
@@ -454,7 +454,7 @@
   ]
  },
  "ivanzhangwb/d2r-mobile": {
-  "pushed_at": "2026-10-15T09:05:12Z",
+  "pushed_at": "2026-10-16T14:09:06Z",
   "branches": []
  },
  "jeoichu-rgb/switch-mobile": {
@@ -470,11 +470,11 @@
   "branches": []
  },
  "Seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-16T09:47:55Z",
+  "pushed_at": "2026-10-16T14:51:04Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 88,
+    "ahead": 94,
     "behind": 0,
     "files": 141,
     "real_files": 140,
@@ -486,16 +486,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-10-16T09:46:03Z",
+    "last_commit": "2026-10-16T14:49:49Z",
     "subjects": [
+     "⭐ feat(ohos): 门回路收官 —— 93 个真实门块全部走完整回路（真机实锤）",
+     "feat(ohos): Break 判别实验 —— 通知位判定正确（⚠ 行未现），死点在 return 之后的返回路径",
+     "feat(ohos): Break 处理器内诊断夹点 —— 死点收敛到通知位判定的返回路径",
+     "feat(ohos): 返回路径夹点日志（hle.c svc_dispatch 返回点 + hle_svc.c Break 处理器内部）—— 待真机",
+     "feat(ohos): 门回路诊断突破 —— 分派链验证到 Break 处理器返回 0，死点收敛到恢复路径",
+     "feat(ohos): mem_init 预留大小旋钮（DM_GUEST_AS_MB）—— 门回路崩溃的头号嫌疑修复",
      "fix(ohos): 实验 H 二分 B 前置日志 + 修正二分补丁时序（seal 后不可写）",
-     "feat(ohos): 实验 H 二分 B/C —— 定位收敛到 gate_dispatch 内部",
-     "feat(ohos): 实验 H 可观测性 —— 逐门结果增量落盘（崩溃也保得住）",
-     "feat(ohos): 实验 H 二分定位 + 线程槽直写 —— 锁定 setspecific 与门块槽公式不一致",
-     "fix(nvn_vk): 补提交 3.4-D 合流的信号量 API（frame_wait/frame_signal）",
-     "Merge remote-tracking branch 'upstream/main' into harmony",
-     "feat(ohos): 实验 H 门回路 v2 —— 仅通知位过门 + 四信号兜底 + 逐门打点（待真机）",
-     "feat(ohos): 实验 H「门回路」—— 门机制三件套进鸿蒙构建 + 段名冲突修复 + 信号兜底"
+     "feat(ohos): 实验 H 二分 B/C —— 定位收敛到 gate_dispatch 内部"
     ]
    }
   ]
@@ -1029,7 +1029,7 @@
   "branches": []
  },
  "TianZuo555/d2r-mobile": {
-  "pushed_at": "2026-10-15T11:45:21Z",
+  "pushed_at": "2026-10-16T14:48:50Z",
   "branches": []
  },
  "deadfoxwang/d2r-mobile": {
@@ -1373,12 +1373,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-16T04:45:29Z",
+  "pushed_at": "2026-10-16T11:38:37Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T04:45:28Z",
+    "last_commit": "2026-10-16T11:38:36Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1433,41 +1433,41 @@
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-16T11:15:49Z",
+  "pushed_at": "2026-10-16T16:42:09Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T11:15:41Z",
+    "last_commit": "2026-10-16T16:42:05Z",
     "subjects": [
-     "真机第四崩：rtld 链接器符号被绑成宿主桩地址，SDK 运行时初始化等于没做（v0.5.5）",
-     "真机第三崩：客体线程环境（TLS/TLR）没建就跑模块构造函数（v0.5.4）",
-     "真机第三轮：崩溃现场补 ESR/FAR + 寄存器 + 指令字；容器失败带原因（v0.5.3）",
-     "展开判据放宽 + RomFS 顶层条目列表（v0.5.2）",
-     "修 iOS 构建：崩溃处理挪进 crashlog.c（iOS 的 <ucontext.h> 要求先定义 _XOPEN_SOURCE）",
-     "真机第二崩：引导顺序写了两份，App 那份是错的（v0.5.1）",
-     "版本号口径：tag 版本进私有仓同名 release；顺带把真机首跑的修复写进 STATUS",
-     "真机首跑两个根因：容器从没展开 + 日志从没落盘"
+     "Report missing startup dependencies and include effect database in private smoke fixtures",
+     "Correct HID single-touch buffer size and multi-state function ABIs",
+     "Exercise startup resource loading with a small verified private RomFS fixture",
+     "Compute actual NVN texture storage sizes to unblock primitive texture initialization",
+     "Implement CPU buffer mapping with pool-relative offsets and capture guest crash bases",
+     "Fix 4K guest stack mappings on 16K hosts and gate IPA builds on real ARM64 boot",
+     "Fix NVN startup success semantics, device limits, display outputs and iOS resource paths (v0.6.10)",
+     "Implement physical memory mapping and reference SDK startup takeover (v0.6.9)"
     ]
    }
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-16T10:59:42Z",
+  "pushed_at": "2026-10-16T16:41:13Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T10:59:40Z",
+    "last_commit": "2026-10-16T16:41:10Z",
     "subjects": [
+     "SM3DW magenta blocks fixed (same-pass feedback snapshot); English default language; English-only comments, bilingual README",
+     "README: the notes column names only the 60 fps upgrades",
+     "README: acknowledgements come right after the intro; the games table gets a notes column (60 fps upgrades, DLC, touch layout)",
+     "README becomes a player-facing page: tested games, packing in four steps, playing; developer material moves to docs/development.md",
+     "Touch gamepad gets a 3D layout (D-pad, right stick, L3 / R3) and an in-game 2D / 3D layout button; pad_layout picks each game's default",
+     "DM_NVN_KEYDUMP logs every input of one fragment shader's draws on a device; PASSDUMP shows sampler LOD clamps and texture swizzles",
      "Breath of the Wild holds 60 fps docked on the Mac: the replay hands its command buffer to the GPU every 64 draws; SDK 20 audio rendering goes through the host's locked path",
-     "The Legend of Zelda: Breath of the Wild (1.9.0) reaches the Shrine of Resurrection on the Mac, with a 60 fps cut; deferred texture binds read at execution",
-     "Super Mario 3D World + Bowser's Fury (1.2.2) reaches World 1-1 and Lake Lapcat on the Mac; textures sampled with another type get compatible views",
-     "13 Sentinels: Aegis Rim (1.10) reaches its first battle on the Mac; Mario holds interval-2 frames for two display ticks",
-     "Metroid Dread (2.1.0) reaches gameplay on the Mac at 60 fps, cutscenes at 30",
-     "Engage ships a recorded pipeline prewarm list; the log names each prewarm list it reads",
-     "Directory listing skips per-entry getxattr and .holes probes; Engage's first frame at 1.8 s on the Mac",
-     "App name and bundle ID come from the base NSP"
+     "The Legend of Zelda: Breath of the Wild (1.9.0) reaches the Shrine of Resurrection on the Mac, with a 60 fps cut; deferred texture binds read at execution"
     ]
    }
   ]
@@ -1533,16 +1533,16 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-16T11:22:05Z",
+  "pushed_at": "2026-10-16T16:38:10Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T11:22:04Z",
+    "last_commit": "2026-10-16T16:38:08Z",
     "subjects": [
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
-     "chore: 自动同步 Star 地图（182 个项目）",
+     "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
@@ -1561,21 +1561,21 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-16T04:39:28Z",
+  "pushed_at": "2026-10-16T11:32:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T04:39:27Z",
+    "last_commit": "2026-10-16T11:32:49Z",
     "subjects": [
+     "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache",
      "Port knowledge base: SPEC v0.1, atlas.py (validate/build), agent API + llms.txt + MCP, Triangle Strategy as first dataset",
      "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache",
-     "data: refresh cache",
-     "notes: hide the radar itself from search results"
+     "data: refresh cache"
     ]
    }
   ]
@@ -1647,7 +1647,7 @@
   "branches": []
  },
  "tenfar/d2r-mobile": {
-  "pushed_at": "2026-10-15T10:07:56Z",
+  "pushed_at": "2026-10-16T12:47:46Z",
   "branches": []
  },
  "hyhou/d2r-mobile": {
@@ -1659,7 +1659,7 @@
   "branches": []
  },
  "LiebeLee/d2r-mobile": {
-  "pushed_at": "2026-10-15T11:09:43Z",
+  "pushed_at": "2026-10-16T13:14:34Z",
   "branches": []
  },
  "BluePadge/d2r-mobile": {
@@ -1795,11 +1795,11 @@
   ]
  },
  "vickwv/d2r-mobile": {
-  "pushed_at": "2026-10-16T10:18:16Z",
+  "pushed_at": "2026-10-16T16:13:17Z",
   "branches": [
    {
     "branch": "android-integration",
-    "ahead": 33,
+    "ahead": 36,
     "behind": 0,
     "files": 98,
     "real_files": 93,
@@ -1810,16 +1810,16 @@
      "dm/host",
      "dm/tools"
     ],
-    "last_commit": "2026-10-16T10:17:43Z",
+    "last_commit": "2026-10-16T16:13:13Z",
     "subjects": [
+     "perf(android): 绑定计划精确校验杠杆（planstate.txt 运行时 A/B）",
+     "feat(android): 画质档机制（quality.txt 一行切档）+ 默认档固化 2624-075，预置 1080-080",
+     "docs: 世界档验收记录（设备回归）——启动态修复实锤、同档 UI 几何 1.000、跨档 = 2168 档横拉伸 ×1.21 而非 UI 变化",
      "docs: 会话交接补记——Android 模块重出（4 条分辨率链补丁）与回设备第一步（世界档矩阵）",
      "android: ui_geom 选行判据加固（长连续段≥2 条）——已用 2026-10-16 历史截图对标：world75 vs C2 测出缩放 0.591 与人工标定一致",
      "android: 世界档分辨率链修复——四条尺寸补丁升级为双端生效、原生表面档位、几何检查工具",
      "android: force-add the bright-levels placeholder (gitignored generated table; the Android build needs it)",
-     "android: 3D picture brightening (palette-table rewrite, iOS parity)",
-     "android: frame-loop instrumentation, hot-path fix, runtime toggles, lessons doc",
-     "android: dynamic 3D scale, measurement switches, and pipeline/perf instrumentation",
-     "docs: bring the upstream-experience perf checklist into the integration tree"
+     "android: 3D picture brightening (palette-table rewrite, iOS parity)"
     ]
    }
   ]
@@ -1978,30 +1978,31 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-16T05:04:40Z",
+  "pushed_at": "2026-10-16T16:25:05Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 20,
+    "ahead": 25,
     "behind": 1,
-    "files": 13,
-    "real_files": 13,
+    "files": 15,
+    "real_files": 15,
     "dirs": [
      "dm/gfx",
      "dm/host",
      "dm/i18n",
-     "dm/ios"
+     "dm/ios",
+     "dm/tools"
     ],
-    "last_commit": "2026-10-16T05:04:38Z",
+    "last_commit": "2026-10-16T16:25:03Z",
     "subjects": [
+     "Zoom cut v2: spare key-page slot 100, registers saved and restored, no-op when the slot is zero",
+     "Revert \"Zoom done in the rewriter plus the host parameter slot\"",
+     "Zoom done in the rewriter plus the host parameter slot",
+     "Mercenary page: switch there directly (and really revert the fast walk); tooltip hook moved to the real cursor path",
+     "Fix the mercenary page landing, undo the tab widening (shorten that name instead), add a zoom diagnostic",
      "Widen the skill tree tab labels at run time, inside an existing pump (no new top-level function)",
      "Hoist the hs table above the sticky hover branch: it was declared below it, so hs was undeclared there",
-     "Keep the tooltip after a single tap",
-     "Play the cutscenes: open the movie, read its real duration, and show it in a WKWebView",
-     "Revert the run-time skill tree tab widening: it broke the host compile with an unrelated-looking error",
-     "Widen the skill tree tab labels at run time so six-character names fit",
-     "Skill tree tabs widened so six-character names fit",
-     "Mercenary portraits scale, the name text keeps its original size"
+     "Keep the tooltip after a single tap"
     ]
    }
   ]
@@ -2069,27 +2070,27 @@
   ]
  },
  "alanyangcn/smbwonder-ios": {
-  "pushed_at": "2026-10-16T04:38:35Z",
+  "pushed_at": "2026-10-16T15:14:29Z",
   "branches": [
    {
     "branch": "first-game-frame",
     "mirror": false,
-    "last_commit": "2026-10-16T04:34:15Z",
+    "last_commit": "2026-10-16T15:06:24Z",
     "subjects": [
-     "Reproducible setup on a new Mac: toolchain, game import, private shader state",
-     "STATUS/ledger: rounds 59-108 (title key art on device, flicker root cause)",
-     "CallCommands captures the called handles' command segments at record time",
-     "NVN_CALL_RECORD / NVN_CALL_REPLAY diagnostics: CallCommands handle bytes at record and replay",
-     "WONDER_DRAW_LOG: per-draw targets and textures by storage for a present range (diagnostic)",
-     "PROBE_ENV: log the WONDER_* diagnostics the app received",
-     "WONDER_SUBMIT_SYNC: diagnostic GPU wait after every queue submit",
-     "GPU textures identified by storage (pool, offset, layout), not by texture object"
+     "Shader build: slots empty (handle 0) in the census take the instruction's texture type; every present advances the diagnostic frame number",
+     "Texture handle 0 samples as an empty slot (round151 stop after loading a save: fragment slot 12 bound to handle 0)",
+     "Present and replay threads declared time-constraint threads (computation from each thread's per-frame CPU p90)",
+     "Render passes: queued clears fold into the next pass's Clear load; attachments the next queued op overwrites store DontCare",
+     "Depth clamp executes as MTLDepthClipModeClamp (round150 stop: the game enables nvnCommandBufferSetDepthClamp)",
+     "Texture views with their own target become Metal views of that type (round149 stop: 2D RGBA8_SRGB viewed as a 2D array); WONDER_FRAME_DUMP_EVERY diagnostic",
+     "Alias region takes the address space left after stacks and a 2 GiB heap region (was 1792 MiB); exact strip draws without restart",
+     "Diagnostic WONDER_POOL_MIB: report a larger application pool (round146: DV models fail to allocate in the 1034 MiB resource heap)"
     ]
    }
   ]
  },
  "Tiaoge-tou/d2r-mobile": {
-  "pushed_at": "2026-10-16T11:26:37Z",
+  "pushed_at": "2026-10-16T15:55:26Z",
   "branches": [
    {
     "branch": "hdr-debug-slice",
@@ -2113,31 +2114,38 @@
    },
    {
     "branch": "hdr-debug-v15",
-    "ahead": 2,
+    "ahead": 7,
     "behind": 5,
-    "files": 2,
-    "real_files": 2,
+    "files": 4,
+    "real_files": 4,
     "dirs": [
      "dm/gfx",
      "dm/ios"
     ],
-    "last_commit": "2026-10-16T11:26:37Z",
+    "last_commit": "2026-10-16T15:55:25Z",
     "subjects": [
+     "Add files via upload",
+     "Add files via upload",
+     "Add files via upload",
+     "Add files via upload",
+     "hdr-debug: backport nvn_pace_hz from v1.0.17 (fixes build with v1.0.17 nvn_mtl.m on v1.0.15 base)",
      "Add files via upload",
      "Add files via upload"
     ]
    },
    {
     "branch": "main",
-    "ahead": 1,
+    "ahead": 2,
     "behind": 0,
-    "files": 1,
-    "real_files": 1,
+    "files": 2,
+    "real_files": 2,
     "dirs": [
+     "dm/gfx",
      "front_ios.m"
     ],
-    "last_commit": "2026-10-16T10:29:18Z",
+    "last_commit": "2026-10-16T14:08:12Z",
     "subjects": [
+     "Add files via upload",
      "Add files via upload"
     ]
    }
@@ -2167,7 +2175,7 @@
   "branches": []
  },
  "SepheTT/d2r-mobile": {
-  "pushed_at": "2026-10-16T11:02:46Z",
+  "pushed_at": "2026-10-16T12:04:56Z",
   "branches": [
    {
     "branch": "feat/registered-addon-mounts",
@@ -2224,6 +2232,35 @@
     "last_commit": "2026-10-16T10:59:38Z",
     "subjects": [
      "fix(nvn): record image stride and validate buffer texture copy pitches"
+    ]
+   },
+   {
+    "branch": "fix/nvn-descriptor-pool-isolation",
+    "ahead": 1,
+    "behind": 0,
+    "files": 11,
+    "real_files": 11,
+    "dirs": [
+     "dm/gfx"
+    ],
+    "last_commit": "2026-10-16T12:04:53Z",
+    "subjects": [
+     "fix(nvn): isolate descriptor storage and recorded bindings by pool"
+    ]
+   },
+   {
+    "branch": "fix/nvn-stage-masked-bindings",
+    "ahead": 2,
+    "behind": 0,
+    "files": 8,
+    "real_files": 8,
+    "dirs": [
+     "dm/gfx"
+    ],
+    "last_commit": "2026-10-16T11:59:08Z",
+    "subjects": [
+     "test(nvn): preserve serial-only synthetic program fixtures",
+     "fix(nvn): apply program stage masks consistently during replay and prescans"
     ]
    }
   ]
@@ -2571,7 +2608,7 @@
   ]
  },
  "Tiaoge-tou/-d2r-mobile-build": {
-  "pushed_at": "2026-10-16T10:57:04Z",
+  "pushed_at": "2026-10-16T15:59:30Z",
   "branches": [
    {
     "branch": "main",
@@ -2619,7 +2656,7 @@
   ]
  },
  "635052583-lab/-": {
-  "pushed_at": "2026-10-16T11:18:28Z",
+  "pushed_at": "2026-10-16T15:17:39Z",
   "branches": [
    {
     "branch": "main",
@@ -2727,6 +2764,113 @@
      "v1.0.15: shell is now build input (.zip), launch self-check for incomplete packages and devices without Metal 3, graphics translation on its own thread, save with the pause menu open, wide-iPhone item tooltip and Chronicle rewards fixes",
      "README: acknowledgements",
      "NPC speech restored (explicit 5.1 to stereo downmix); graphics memory pools made resident only on first GPU use (about 0.5 GB less held); render targets written through a format-changing view attached with that format, sRGB swapchain presented through a non-sRGB view (#36); bloom / FXAA texture-slot rewrites mark bindings dirty; Mac App plays sound and fills 16:10 screens"
+    ]
+   }
+  ]
+ },
+ "yzxdd123/d2r-mobile": {
+  "pushed_at": "2026-10-16T15:23:01Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 2,
+    "behind": 0,
+    "files": 1,
+    "real_files": 0,
+    "dirs": [],
+    "last_commit": "2026-10-16T15:22:32Z",
+    "subjects": [
+     "Merge branch 'jhaizhou-ops:main' into main",
+     "docs(notes): 《脑部锻炼》Switch 版移植 iPad 思路笔记（参考小红书 西门良）"
+    ]
+   }
+  ]
+ },
+ "alwaysmy/d2r-mobile": {
+  "pushed_at": "2026-10-16T16:11:13Z",
+  "branches": []
+ },
+ "Bestar777/d2r-mobile": {
+  "pushed_at": "2026-10-16T13:33:40Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T13:25:11Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "kynoo605-hash/kino": {
+  "pushed_at": "2026-10-16T14:17:11Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T14:17:10Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "jy8787630/Private-": {
+  "pushed_at": "2026-10-16T13:01:28Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T13:01:28Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "748784yuan-droid/d2r1": {
+  "pushed_at": "2026-10-16T14:02:00Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T13:55:10Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "qoopoke1-creator/za-port": {
+  "pushed_at": "2026-10-16T15:29:08Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T15:29:06Z",
+    "subjects": [
+     "docs: HANDOFF 更新到最新执行状态（rtld 真入口/引导/卡点 x8=0x1b9c）",
+     "host: 故障寄存器 dump（x8=0x1b9c 裸VA，非RELA来源）；回归 STATUS 口径（rtld 只做符号导入）",
+     "host: 定 svc#6=QueryMemory（实证）→ rtld 进入模块内存扫描阶段；新故障 裸VA(0x1b9c)",
+     "host: 统一 za-port 约定（门加base/rtld跳过相对重定位/键页线程块）→ rtld 跑通引导并调用 svc",
+     "host: 用 za-port 重排产物推进 rtld（越采 bss/重定位进补丁块）；发现键页约定冲突",
+     "host: rtld 真入口=base+0（x0=0,x1=thread_handle）；定论卡点=16KB 小模块重排(W^X 同页)",
+     "docs: 新增交接文档 HANDOFF.md；README 纳入 host/ 与执行进展",
+     "docs: 确认 MOD0 module_object_off（rtld 0x2038→0x4048=首崩写对象处）"
+    ]
+   }
+  ]
+ },
+ "StandonJoyner/awesome-rea": {
+  "pushed_at": "2026-10-16T16:39:03Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T16:38:37Z",
+    "subjects": [
+     "Initial commit: a curated list of finished reverse-engineering results"
     ]
    }
   ]
