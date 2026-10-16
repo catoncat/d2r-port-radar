@@ -1,19 +1,43 @@
 # d2r-port-radar：项目说明（给 AI 助手）
 
-追踪基于 [jhaizhou-ops/d2r-mobile](https://github.com/jhaizhou-ops/d2r-mobile) 的衍生移植：其他 Switch 游戏（BotW、Hades、P5R、马里奥奥德赛……）、其他平台（Android、鸿蒙、tvOS），以及通用化工具链。产出一个静态网页 + 一份公开的 JSON 数据。
+基于 [jhaizhou-ops/d2r-mobile](https://github.com/jhaizhou-ops/d2r-mobile) 路线的 Switch 原生移植，本站做两件事：
 
-**最高原则：保持简单。** 一个脚本、一个模板、一份人工备注。不要引入框架、数据库、构建工具或第三方 Python 依赖（只用标准库 + `gh` CLI）。加功能前先问：能不能用 notes.json 解决？
+1. **移植雷达**（`track.py`）：谁在移植什么，数据从 GitHub 自动抓取。
+2. **移植知识库**（`atlas.py`）：可复现的移植知识。**Agent 是第一用户**，所以产出静态 JSON 接口、`llms.txt` 和 MCP 服务器，网页只是给人看的视图。规范见 `SPEC.md`，那是知识格式的唯一权威。
+
+**最高原则：保持简单。** git 仓库就是数据库，PR 就是审核流程。不引入框架、数据库或服务器。Python 只用标准库，唯一例外是 `atlas.py` 用到的 PyYAML。加功能前先问：能不能用现有文件格式解决？
 
 ## 结构
 
 ```
-track.py             抓数据 → dist/index.html + dist/radar.json（唯一的脚本）
-site/template.html   页面模板；所有 UI 和交互都在这里，数据通过 /*DATA*/null 注入
-data/notes.json      人工备注 + 手动关注列表 + 屏蔽列表（唯一需要人维护的文件）
-data/cache.json      增量缓存（按 pushed_at 判断），会提交到仓库供 CI 复用；删掉就全量重扫
+SPEC.md              知识格式规范（对象模型、证据规则、内容边界、接口、任务协议）
+knowledge/           知识本体：games/<titleId>.md、components/<id>.md、findings/<id>.md
+templates/           三种对象的模板
+atlas.py             validate（JSON 报错）/ build（→ dist/api/*、llms.txt、atlas.html）/ titles（刷新游戏列表）
+mcp/atlas_mcp.py     MCP 服务器，只用标准库，读线上的静态接口
+site/atlas.html      知识库网页；site/llms.txt 是 Agent 入口模板
+track.py             雷达抓取 → dist/index.html + dist/radar.json
+site/template.html   雷达页面
+data/notes.json      雷达的人工备注、手动关注、屏蔽列表
+data/cache.json      雷达增量缓存（提交到仓库供 CI 复用）
+data/titles.json     Switch 游戏列表（来自 blawar/titledb，只取白名单文字字段）
 dist/                生成物，不提交；CI 部署到 GitHub Pages
-.github/workflows/   每 3 小时自动更新并部署
+.github/workflows/   每 3 小时：track.py → atlas.py build → 部署
 ```
+
+## 知识库：写结论的规矩
+
+- 先读 `SPEC.md`。写完必须让 `python3 atlas.py validate` 通过，报错是 JSON，按 `hint` 改。
+- **以代码和运行证据为准，不以报告为准。** 报告会过时，比如三角战略的 SUMMARY.md 写于跑通之前。
+- 知识按组件组织：先看能不能挂到已有组件上，确实没有再新建组件。
+- 错的结论不删，标成 `contradicted`。
+- 修复代码没公开时，`fix.where.public: false`，并在正文里说清楚。
+
+## 三角战略（第一份 dogfood 数据）
+
+- 移植代码在本机 `~/d2r-mobile` 的 `ts-port` 分支，主要是 `dm/host/ts/`，**另一个 Claude 会话正在改它**：只读，不写，不切分支。
+- 工作区 `~/ts-work`：`reports/`（移植前普查）、`scripts/`（只输出名字和计数的扫描脚本）、`run/log/`（运行日志）。
+- 更新知识时：先读 `dm/host/ts/*.c` 的头注释（作者用【核】标注反汇编核实过的内容）和最新运行日志，再改 `knowledge/`。
 
 ## 数据源
 
@@ -29,7 +53,7 @@ dist/                生成物，不提交；CI 部署到 GitHub Pages
 
 GitHub 代码搜索不会索引新仓库和 fork，按代码特征找副本的办法基本失效，不要在这上面花时间。
 
-## “更新一下”的标准流程
+## 雷达：“更新一下”的标准流程
 
 1. `python3 track.py`：增量运行，只重查有新推送的仓库，约 10–30 秒。
 2. 在 `dist/radar.json` 里找出这两类：①没有 note 的非 trivial 仓库；②note 写的日期早于它最后一次推送的仓库。

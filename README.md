@@ -2,7 +2,18 @@
 
 [d2r-mobile](https://github.com/jhaizhou-ops/d2r-mobile) 证明了 Switch 游戏的原生代码可以直接跑在 iPhone / Mac 上。之后很快有人把同一套宿主和图形层拿去移植别的游戏、别的平台。这个页面把这些分散在 800 多个 fork 和各个独立仓库里的进展集中到一处。
 
-**看网页 →** https://catoncat.github.io/d2r-port-radar/  ·  **原始数据 →** https://catoncat.github.io/d2r-port-radar/radar.json
+- **移植雷达**：https://catoncat.github.io/d2r-port-radar/ ，谁在移植什么
+- **移植知识库**：https://catoncat.github.io/d2r-port-radar/atlas.html ，可复现的移植知识，按组件组织
+- **给 AI Agent**：https://catoncat.github.io/d2r-port-radar/llms.txt ，静态 JSON 接口和 MCP，格式见 [SPEC.md](SPEC.md)
+
+### 让你的 Agent 接入
+
+```sh
+curl -O https://raw.githubusercontent.com/catoncat/d2r-port-radar/main/mcp/atlas_mcp.py
+claude mcp add port-atlas -- python3 "$PWD/atlas_mcp.py"
+```
+
+工具：`search`、`get_game`、`get_component`、`get_finding`、`list_tasks`、`get_task_bundle`。不用 MCP 的话，直接用 curl 读 `api/*.json` 也一样。
 
 ## 收录什么
 
@@ -16,7 +27,11 @@
 
 只收录源码仓库。**不链接、不收录**任何分发游戏数据、密钥、固件或成品安装包的仓库或链接。本站不托管任何游戏内容。
 
-## 参与
+## 贡献知识
+
+按 [`templates/`](templates/) 写 `knowledge/findings/<id>.md`，运行 `python3 atlas.py validate`，然后提 PR。每条结论都要附证据；没有直接证据的，要写清楚怎么在自己的游戏副本上复现。校验器会自动拒绝游戏字节、密钥、安装包链接和盗版站链接。
+
+## 参与雷达
 
 发现了没收录的移植，或者备注过时了？直接提 PR 修改 `data/notes.json`：
 

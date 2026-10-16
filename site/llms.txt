@@ -1,0 +1,40 @@
+# d2r-port-radar · Port Knowledge Base
+
+> Porting knowledge for running Nintendo Switch games' own native code on Apple platforms (and beyond),
+> on the route opened by https://github.com/jhaizhou-ops/d2r-mobile. Written for AI agents first.
+> No game content is hosted or accepted. Bring your own legally owned game files.
+
+Counts: {{COUNTS}}
+
+## Read (static JSON, no auth)
+
+- {{SITE}}/api/index.json : endpoints and counts
+- {{SITE}}/api/search.json : every game / component / finding as {type,id,title,summary,tags}; fetch once, filter locally
+- {{SITE}}/api/games/{titleId}.json : a game, its components, findings, open tasks
+- {{SITE}}/api/components/{id}.json : a reusable component (HLE service, NVN feature, middleware, engine) with every game and finding touching it
+- {{SITE}}/api/findings/{id}.json : one finding with evidence, reproduction and fix location
+- {{SITE}}/api/tasks.json : open work, with needs (generic | game:<titleId> | device:<x>) and size (S/M/L/XL)
+- {{SITE}}/api/task/{id}.json : task bundle, everything needed to start one task, with a token estimate
+- {{SITE}}/api/titles.json : all Switch base games [titleId, name, publisher, year, port_stage|null]
+- {{SITE}}/radar.json : repositories (forks and independent) doing ports
+
+## How to use it for a new game
+
+1. Look the game up in titles.json; open games/{titleId}.json if it exists.
+2. Identify its engine and middleware (UE4: RomFS has UE4CommandLine.txt; CRIWARE: main contains criNcdSwitch_ / criVpdSwitch).
+3. Read the components it shares with already-ported games. Most blockers are per component, not per game.
+4. Work from tasks.json. Prefer tasks whose needs you can satisfy.
+
+## Contribute
+
+Repo: https://github.com/catoncat/d2r-port-radar . Format: SPEC.md. Templates: templates/.
+Write knowledge/findings/<id>.md, run `python3 atlas.py validate` (errors are JSON {file, field, error, hint}), open a PR.
+Every finding needs evidence and, unless verified, a way to reproduce it on one's own copy of the game.
+To claim a task, comment `/claim <id>` on the tracking issue.
+
+## Rules
+
+- Never include game bytes (code, data, shaders original or translated), keys (prod.keys, title keys), firmware, textures, audio, video, or screenshots of game content.
+- Never link installers (NSP/XCI/IPA/APK) or download sites. Addresses, symbol names, counts and config keys are fine.
+- Mark uncertain claims `inferred`; mark disproved ones `contradicted` instead of deleting them.
+- The validator enforces these mechanically; do not try to work around it.

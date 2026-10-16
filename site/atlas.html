@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>移植知识库</title>
+<link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt">
+<style>
+:root{--bg:#f6f7f9;--panel:#fff;--line:#e6e8ec;--text:#1b1f24;--muted:#6b7280;--soft:#f1f3f6;--accent:#4f46e5;--accent-soft:#eef2ff;
+  --green:#16a34a;--green-soft:#dcfce7;--amber:#d97706;--amber-soft:#fef3c7;--red:#e11d48;--red-soft:#ffe4e6;--slate:#475569;--slate-soft:#e2e8f0;
+  --shadow:0 1px 2px rgba(16,24,40,.04),0 4px 16px rgba(16,24,40,.06)}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1014;--panel:#161a20;--line:#252b33;--text:#e6e9ee;--muted:#8b95a3;--soft:#1d232b;--accent:#818cf8;--accent-soft:#1e1b4b;
+  --green:#4ade80;--green-soft:#052e16;--amber:#fbbf24;--amber-soft:#3b2706;--red:#fb7185;--red-soft:#3b0a16;--slate:#94a3b8;--slate-soft:#1e293b;--shadow:0 1px 2px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.25)}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 24px 64px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+h1{margin:0;font-size:24px;letter-spacing:-.02em}.sub{color:var(--muted)}
+nav a{margin-left:14px;font-size:13px}
+.agent{background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 25%,transparent);border-radius:12px;padding:12px 16px;margin-bottom:18px;font-size:13px}
+.agent code{background:var(--panel);padding:1px 6px;border-radius:5px;font:12px ui-monospace,monospace}
+.search{width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text);font:inherit;margin-bottom:16px}
+.search:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.cols{display:grid;grid-template-columns:320px 1fr;gap:18px;align-items:start}
+@media (max-width:860px){.cols{grid-template-columns:1fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.panel h2{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0;padding:12px 16px;border-bottom:1px solid var(--line)}
+.list{max-height:70vh;overflow:auto}
+.item{display:block;padding:10px 16px;border-bottom:1px solid var(--line);color:var(--text);cursor:pointer}
+.item:hover,.item.on{background:var(--soft);text-decoration:none}
+.item small{display:block;color:var(--muted)}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:1px 7px;border-radius:999px;margin-left:6px;vertical-align:1px}
+.p-good{background:var(--green-soft);color:var(--green)}.p-mid{background:var(--amber-soft);color:var(--amber)}.p-early{background:var(--slate-soft);color:var(--slate)}
+.p-blocker{background:var(--red-soft);color:var(--red)}.p-pitfall{background:var(--amber-soft);color:var(--amber)}.p-technique{background:var(--green-soft);color:var(--green)}.p-fact{background:var(--slate-soft);color:var(--slate)}
+.p-open{background:var(--accent);color:#fff}
+.main{padding:20px 22px}
+.main h3{margin:0 0 4px;font-size:20px}.main h4{margin:22px 0 8px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;font-size:13px}.kv b{color:var(--muted);font-weight:500}
+.chips a{display:inline-block;background:var(--soft);color:var(--text);border-radius:6px;padding:2px 8px;margin:0 6px 6px 0;font-size:12px}
+.find{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px}
+.find .t{font-weight:600}.find .s{color:var(--muted);font-size:13px;margin-top:2px}
+.find details{margin-top:8px;font-size:13px}.find summary{cursor:pointer;color:var(--accent)}
+.find pre{white-space:pre-wrap;background:var(--soft);padding:10px;border-radius:8px;font:12px/1.5 ui-monospace,monospace;margin:8px 0 0}
+.empty{color:var(--muted);padding:40px 0;text-align:center}
+.note{color:var(--muted);font-size:12px;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div><h1>移植知识库</h1><div class="sub" id="sub">加载中…</div></div>
+    <nav><a href="./">移植雷达</a><a href="llms.txt">llms.txt</a><a href="api/index.json">API</a><a href="https://github.com/catoncat/d2r-port-radar/blob/main/SPEC.md">规范</a></nav>
+  </header>
+  <div class="agent">给 AI Agent：从 <code>llms.txt</code> 开始，全部数据是静态 JSON（<code>api/search.json</code>、<code>api/tasks.json</code>、<code>api/task/&lt;id&gt;.json</code>…）。贡献：按 <code>SPEC.md</code> 写 Markdown，跑 <code>python3 atlas.py validate</code>，提 PR。本站不收任何游戏内容。</div>
+  <input class="search" id="q" placeholder="搜索游戏（全部 Switch 游戏）、组件、结论…   例：CRI、UE4、0100CC80140F8000">
+  <div class="cols">
+    <div class="panel"><h2 id="lh">有知识的游戏 · 组件 · 待办</h2><div class="list" id="list"></div></div>
+    <div class="panel main" id="main"><div class="empty">左边选一项</div></div>
+  </div>
+</div>
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const J = p => fetch(p).then(r => r.ok ? r.json() : Promise.reject(p));
+const STAGE = {none:"未开始",analysed:"已分析",rewritten:"已改写",boots:"能启动","first-frame":"出第一帧","title-screen":"标题画面","in-game":"进入游戏",playable:"可玩",complete:"完整"};
+const stCls = s => ["playable","complete"].includes(s) ? "p-good" : ["in-game","title-screen","first-frame"].includes(s) ? "p-mid" : "p-early";
+const KIND = {blocker:"阻塞",pitfall:"坑",technique:"做法",fact:"事实"};
+let IDX, SEARCH, TASKS, TITLES = null;
+
+async function init() {
+  [IDX, SEARCH, TASKS] = await Promise.all([J("api/index.json"), J("api/search.json"), J("api/tasks.json")]);
+  const c = IDX.counts;
+  $("#sub").textContent = `${c.games} 个游戏有知识 · ${c.components} 个组件 · ${c.findings} 条结论 · ${c.open_tasks} 个待办 · 收录 ${c.titles} 个 Switch 游戏`;
+  renderList(""); route();
+}
+function row(type, id, title, extra) { return `<a class="item" href="#${type}/${encodeURIComponent(id)}">${esc(title)}${extra || ""}<small>${esc(id)}</small></a>`; }
+function renderList(q) {
+  q = q.trim().toLowerCase();
+  if (!q) {
+    $("#lh").textContent = "有知识的游戏 · 组件 · 待办";
+    $("#list").innerHTML =
+      SEARCH.filter(x => x.type === "game").map(x => row("game", x.id, x.title)).join("") +
+      TASKS.map(t => row("finding", t.id, t.title, ` <span class="pill p-open">待办 ${esc(t.size || "")}</span>`)).join("") +
+      SEARCH.filter(x => x.type === "component").map(x => row("component", x.id, x.title)).join("");
+    return;
+  }
+  const hits = SEARCH.filter(x => (x.id + x.title + x.summary + x.tags.join(" ")).toLowerCase().includes(q)).slice(0, 60);
+  const known = new Set(SEARCH.filter(x => x.type === "game").map(x => x.id));
+  const finish = () => {
+    const t = (TITLES || []).filter(r => !known.has(r[0]) && (r[0] + r[1] + r[2]).toLowerCase().includes(q)).slice(0, 80);
+    $("#lh").textContent = `搜索结果`;
+    $("#list").innerHTML = hits.map(x => row(x.type, x.id, x.title, x.type === "finding" ? "" : ` <span class="pill p-early">${x.type === "game" ? "游戏" : "组件"}</span>`)).join("")
+      + t.map(r => row("title", r[0], r[1], ` <span class="pill p-early">暂无知识</span>`)).join("")
+      || `<div class="empty">没有匹配</div>`;
+  };
+  if (TITLES) finish(); else { finish(); J("api/titles.json").then(t => { TITLES = t; if ($("#q").value.trim().toLowerCase() === q) finish(); }); }
+}
+function findingCard(x, full) {
+  const fix = x.fix && (typeof x.fix === "string" ? x.fix : x.fix.state);
+  return `<div class="find"><div class="t"><a href="#finding/${esc(x.id)}">${esc(x.id)}</a> ${esc(x.title)}
+    <span class="pill p-${esc(x.kind)}">${KIND[x.kind] || esc(x.kind)}</span>${fix === "open" ? '<span class="pill p-open">待办</span>' : ""}</div>
+    <div class="s">${esc(x.summary)}</div></div>`;
+}
+async function show(type, id) {
+  document.querySelectorAll(".item").forEach(a => a.classList.toggle("on", a.getAttribute("href") === `#${type}/${encodeURIComponent(id)}`));
+  const M = $("#main");
+  try {
+    if (type === "game") {
+      const g = await J(`api/games/${id}.json`);
+      M.innerHTML = `<h3>${esc(g.name)}</h3><div class="sub">${esc(g.id)} · ${esc(g.summary)}</div>
+        <h4>进度</h4>${g.status.map(s => `<div>${esc(s.platform)} <span class="pill ${stCls(s.stage)}">${STAGE[s.stage] || esc(s.stage)}</span> <span class="sub">${esc(s.device || "")} · ${esc(s.date)} · ${esc(s.evidence)}</span></div>`).join("")}
+        ${g.profile ? `<h4>技术画像</h4><div class="kv">${Object.entries(g.profile).map(([k, v]) => `<b>${esc(k)}</b><span>${esc(v)}</span>`).join("")}</div>` : ""}
+        <h4>用到的组件</h4><div class="chips">${g.components.map(c => `<a href="#component/${esc(c.id)}">${esc(c.title)}</a>`).join("")}</div>
+        <h4>结论（${g.findings.length}）</h4>${g.findings.map(x => findingCard(x)).join("") || '<div class="sub">暂无</div>'}
+        ${(g.ports || []).length ? `<h4>代码在哪</h4>${g.ports.map(p => `<div>${p.public ? `<a href="https://github.com/${esc(p.repo)}">${esc(p.repo)}</a>` : esc(p.repo)} ${p.branch ? "· " + esc(p.branch) : ""} ${p.public ? "" : '<span class="pill p-early">未公开</span>'}</div>`).join("")}` : ""}`;
+    } else if (type === "component") {
+      const c = await J(`api/components/${id}.json`);
+      M.innerHTML = `<h3>${esc(c.name)}</h3><div class="sub">${esc(c.id)} · ${esc(c.summary)}</div>
+        ${c.body && c.body !== c.summary ? `<h4>说明</h4><div style="white-space:pre-wrap">${esc(c.body)}</div>` : ""}
+        <h4>用到它的游戏</h4><div class="chips">${c.games.map(g => `<a href="#game/${esc(g)}">${esc((SEARCH.find(x => x.id === g) || {}).title || g)}</a>`).join("") || '<span class="sub">暂无</span>'}</div>
+        ${(c.host_files || []).length ? `<h4>宿主源码</h4><div class="chips">${c.host_files.map(p => `<a href="https://github.com/jhaizhou-ops/d2r-mobile/blob/main/${esc(p)}">${esc(p)}</a>`).join("")}</div><div class="note">链接指向上游；dm/host/ts/ 下的文件只在未公开的 ts-port 分支里。</div>` : ""}
+        <h4>结论（${c.findings.length}）</h4>${c.findings.map(x => findingCard(x)).join("")}`;
+    } else if (type === "finding") {
+      const x = await J(`api/findings/${id}.json`); const fx = x.fix || {};
+      M.innerHTML = `<h3>${esc(x.title)}</h3><div class="sub">${esc(x.id)} <span class="pill p-${esc(x.kind)}">${KIND[x.kind]}</span> <span class="pill ${x.status === "verified" || x.status === "replicated" ? "p-good" : x.status === "contradicted" ? "p-blocker" : "p-early"}">${esc(x.status)}</span>${fx.state === "open" ? '<span class="pill p-open">待办</span>' : ""}</div>
+        <p>${esc(x.summary)}</p>
+        <div class="chips">${(x.games || []).map(g => `<a href="#game/${esc(g)}">${esc((SEARCH.find(s => s.id === g) || {}).title || g)}</a>`).join("")}${x.components.map(c => `<a href="#component/${esc(c)}">${esc(c)}</a>`).join("")}</div>
+        <h4>证据</h4>${x.evidence.map(e => `<div><span class="pill p-early">${esc(e.type)}</span> ${esc(e.ref)}</div>`).join("")}
+        ${x.reproduce ? `<h4>怎么复现</h4><pre>${esc(x.reproduce)}</pre>` : ""}
+        ${fx.state ? `<h4>修复 · ${esc(fx.state)}${fx.size ? " · " + esc(fx.size) : ""}</h4>${fx.approach ? `<div>${esc(fx.approach)}</div>` : ""}${fx.where ? `<div class="note">${esc(fx.where.repo)} ${esc(fx.where.branch || "")} ${esc(fx.where.path || "")} ${fx.where.public ? "" : "（未公开）"}</div>` : ""}` : ""}
+        ${x.body && x.body !== x.summary ? `<h4>正文</h4><div style="white-space:pre-wrap">${esc(x.body)}</div>` : ""}
+        ${fx.state === "open" ? `<h4>给 Agent</h4><pre>curl ${location.origin}${location.pathname.replace(/atlas\.html$/, "")}api/task/${esc(x.id)}.json</pre>` : ""}
+        <div class="note">更新于 ${esc(x.updated)} · ${esc(Object.values(x.by || {}).join(" / "))}</div>`;
+    } else if (type === "title") {
+      const t = (TITLES || []).find(r => r[0] === id) || [id, id, "", ""];
+      M.innerHTML = `<h3>${esc(t[1])}</h3><div class="sub">${esc(t[0])} · ${esc(t[2])} · ${esc(t[3])}</div>
+        <p>这个游戏还没有任何移植知识。</p>
+        <p>想开始？先判断它用的引擎和中间件，然后看同组件的已有结论，比如 <a href="#component/engine-ue4">UE4</a>、<a href="#component/mw-criware">CRIWARE</a>。新建 <code>knowledge/games/${esc(t[0])}.md</code>（模板见仓库 templates/game.md）。</p>`;
+    }
+  } catch (e) { M.innerHTML = `<div class="empty">没找到 ${esc(type)}/${esc(id)}</div>`; }
+}
+function route() { const [t, id] = decodeURIComponent(location.hash.slice(1)).split("/"); if (t && id) show(t, id); }
+$("#q").oninput = e => renderList(e.target.value);
+addEventListener("hashchange", route);
+init().catch(e => $("#sub").textContent = "数据加载失败：" + e);
+</script>
+</body>
+</html>

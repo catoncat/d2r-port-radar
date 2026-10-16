@@ -245,7 +245,7 @@
   ]
  },
  "leiyin321/d2r-mobile": {
-  "pushed_at": "2026-10-14T13:27:06Z",
+  "pushed_at": "2026-10-15T23:48:40Z",
   "branches": []
  },
  "dontblameitonme/d2r-mobile": {
@@ -1048,21 +1048,21 @@
   ]
  },
  "wukongtime/d2r-mobile-build-backup": {
-  "pushed_at": "2026-10-15T03:28:55Z",
+  "pushed_at": "2026-10-16T00:08:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T02:27:16Z",
+    "last_commit": "2026-10-15T17:29:59Z",
     "subjects": [
-     "Speed up official-shell builds with Mac generation and verified payload reuse",
-     "Support v1.0.15 ZIP shell inputs and verify launch package metadata",
-     "Restore original main packaging workflow and build upstream v1.0.14",
-     "Build latest upstream release by default and derive output versions from source",
-     "Move maintained build version pins into config",
-     "Keep README focused on setup, building and installation",
-     "Document archive checksums as the standard setup",
-     "Accept one JSON archive secret with an optional SHA-256"
+     "Refresh Mac build duration from the completed prepared-input build",
+     "Point Mac build inputs to the repaired prepared directory",
+     "Fix missing Mac shader reflections and validate final app resources",
+     "Shorten generated release titles",
+     "Ad-hoc sign Guest before IPA packaging for zsign compatibility",
+     "Reuse interface caches across unrelated source changes",
+     "Simplify prepared package generation and schema validation",
+     "Document measured iOS and macOS standard build times"
     ]
    }
   ]
@@ -1225,21 +1225,21 @@
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-15T23:39:08Z",
+  "pushed_at": "2026-10-16T00:22:28Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T23:38:27Z",
+    "last_commit": "2026-10-16T00:22:24Z",
     "subjects": [
+     "guest_dylib：加空 LC_CODE_SIGNATURE 槽（全能签等工具在签前准备阶段会拒无签名槽的 dylib）",
+     "make_installable.py 加 --smb-root：出完 IPA 自动复制到网络共享（ipa/ 每次更新，gamedata/ 只在缺失时拷，路径记住在 out/smb_root.cfg）",
+     "make_installable.py：一条命令（下载公共仓最新壳 + 注入本机 Guest.framework）出可自签 IPA；docs 更新为推荐流程",
+     "docs：自签用户的更新流程（私有 fork + GUEST_URL/SHA256 注入，release IPA 直接可用）",
+     "更新流程对齐 d2r-mobile-build：CI 可选注入 Guest.framework（GUEST_URL+GUEST_SHA256 变量）；打包脚本可产出 guest.zip+sha256",
      "打包脚本：手机资源合并成一个文件夹一次复制；Info.plist 加文件共享键",
      "首跑打包脚本：prepare_phone_package.py（Guest.framework + ExeFS tsv + 说明；RomFS 默认只写说明）",
-     "STATUS：首跑链路完整",
-     "修 loader_apple.c：getsectiondata 声明在 mach-o/getsect.h；TargetConditionals 要在 #if 前",
-     "首跑最后一块：guest dylib 壳模式 + 日志导出按钮",
-     "STATUS：宿主接进 App；vm_* 修复 iOS 构建",
-     "注释同步（vm_remap）",
-     "dm_embed_map 换 vm_allocate/vm_remap（旧 API，macOS/iOS 都有；mach_vm_* 在 iPhoneOS SDK 里不存在）"
+     "STATUS：首跑链路完整"
     ]
    }
   ]
@@ -1353,13 +1353,14 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-15T19:13:40Z",
+  "pushed_at": "2026-10-15T23:42:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T19:13:38Z",
+    "last_commit": "2026-10-15T23:42:34Z",
     "subjects": [
+     "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache",
@@ -1743,6 +1744,27 @@
      "references/07-agent-workflow.md: translate to English",
      "references/06-audio.md: translate to English",
      "references/05-perf.md: translate to English"
+    ]
+   }
+  ]
+ },
+ "yamoroc/d2r-mobile": {
+  "pushed_at": "2026-10-15T23:58:33Z",
+  "branches": []
+ },
+ "x-omen-x/d2r-mobile": {
+  "pushed_at": "2026-10-15T23:45:03Z",
+  "branches": []
+ },
+ "cipango97/hamakaner": {
+  "pushed_at": "2026-10-16T00:19:31Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T00:19:30Z",
+    "subjects": [
+     "Initial commit"
     ]
    }
   ]
