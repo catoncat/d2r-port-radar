@@ -1,6 +1,6 @@
 {
  "TommyLau/botw-mobile": {
-  "pushed_at": "2026-10-15T23:10:11Z",
+  "pushed_at": "2026-10-16T04:34:56Z",
   "branches": [
    {
     "branch": "botw-host-boot",
@@ -29,6 +29,35 @@
      "docs: record successful deferred binding bring-up",
      "build(nvn): preserve the deferred binding prototype when regenerating headers",
      "feat(shaders): select graphics observations by full shader digest"
+    ]
+   },
+   {
+    "branch": "botw-offline-shaders",
+    "ahead": 143,
+    "behind": 3,
+    "files": 196,
+    "real_files": 191,
+    "dirs": [
+     "AGENTS.md",
+     "CONTRIBUTING.md",
+     "CONTRIBUTING.zh-CN.md",
+     "dm/.gitignore",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-10-16T03:14:16Z",
+    "subjects": [
+     "docs: record the full-library shader bundle and first title frames",
+     "feat(nvn): replay instanced non-indexed draws",
+     "feat(nvn): accept disabling rasterizer discard",
+     "fix(nvn): feed integer shader inputs with integer vertex formats",
+     "docs(gfx): describe the BotW offline shader build",
+     "refactor(shaders): move fact derivation into its own tool and merge rebuilds",
+     "feat(nvn): accept tiled cache tile sizes as binning hints",
+     "feat(nvn): accept tiled cache actions as rendering-neutral hints"
     ]
    },
    {
@@ -74,6 +103,64 @@
      "docs: record depth conversion fix and texture coherence stop",
      "fix(shaders): convert negative-one depth range for Metal",
      "feat(nvn): invalidate coherent mapped memory pool ranges"
+    ]
+   },
+   {
+    "branch": "botw-title-bringup",
+    "ahead": 156,
+    "behind": 3,
+    "files": 202,
+    "real_files": 197,
+    "dirs": [
+     "AGENTS.md",
+     "CONTRIBUTING.md",
+     "CONTRIBUTING.zh-CN.md",
+     "dm/.gitignore",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-10-16T04:34:51Z",
+    "subjects": [
+     "docs: record player control in the Shrine of Resurrection",
+     "fix(nvn): report out-of-pool invalidations instead of stopping",
+     "feat(nvn): draw wide lines one pixel wide",
+     "fix(shaders): keep the translated type for queried texture dimensions",
+     "feat(hid): add DM_KEYS scripted controller input",
+     "fix(nvn): tie texture ownership claims to shared storage",
+     "feat(shaders): resolve driver bank reads, compute uniform pointers and images",
+     "fix(nvn): share ordinary textures by storage and stop leaking per-frame targets"
+    ]
+   },
+   {
+    "branch": "main",
+    "ahead": 143,
+    "behind": 3,
+    "files": 196,
+    "real_files": 191,
+    "dirs": [
+     "AGENTS.md",
+     "CONTRIBUTING.md",
+     "CONTRIBUTING.zh-CN.md",
+     "dm/.gitignore",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-10-16T03:14:16Z",
+    "subjects": [
+     "docs: record the full-library shader bundle and first title frames",
+     "feat(nvn): replay instanced non-indexed draws",
+     "feat(nvn): accept disabling rasterizer discard",
+     "fix(nvn): feed integer shader inputs with integer vertex formats",
+     "docs(gfx): describe the BotW offline shader build",
+     "refactor(shaders): move fact derivation into its own tool and merge rebuilds",
+     "feat(nvn): accept tiled cache tile sizes as binning hints",
+     "feat(nvn): accept tiled cache actions as rendering-neutral hints"
     ]
    }
   ]
@@ -216,30 +303,31 @@
   ]
  },
  "gbcmikeblue/d2r-mobile": {
-  "pushed_at": "2026-10-15T15:16:36Z",
+  "pushed_at": "2026-10-16T04:20:56Z",
   "branches": [
    {
     "branch": "android",
-    "ahead": 97,
+    "ahead": 121,
     "behind": 25,
-    "files": 82,
-    "real_files": 71,
+    "files": 93,
+    "real_files": 76,
     "dirs": [
+     ".codebuddy/rules",
      "dm/android",
      "dm/gfx",
      "dm/host",
      "dm/tools"
     ],
-    "last_commit": "2026-10-15T14:59:53Z",
+    "last_commit": "2026-10-16T04:20:16Z",
     "subjects": [
-     "M3-3c 收尾：交接文档基线提交号改到 ed900fb",
-     "M3-3c：把前端那条上屏路整个摘掉（DM_WIN_NOSUB），那 ~10 秒照旧 —— 触发点在客体侧或驱动 / GMU 自己；顺带记两条\"到头了\"的负面读数（无 root/su；原文挖到底）",
-     "M3-3b 收尾：交接文档基线提交号改到 1378cde",
-     "M3-3b：常驻上传环（DM_UP_RING，缺省关）落地并量掉 —— \"每趟上传新建对象\"**不是**那 ~10 秒的原因；顺带量到驱动级电源 / 总线投票少约 3 倍（但停摆照旧）",
-     "M3-3a 收尾：交接文档基线提交号改到 dd63be5",
-     "M3-3a：把\"读回 / 上传\"的归属钉死，并在停顿窗口抓到 ftrace —— 那 ~10 秒是**整条 GPU/显示通路一起睡、一起被 GMU 中断放出来**；perfetto 在这台机上拿不到 kgsl 的原子（如实记下来）",
-     "M3-2z 收尾：交接文档基线提交号改到 ac240c6",
-     "M3-2z：把\"两种状态\"追到系统级 —— 那 ~10 秒停摆是**我们引起的**（SystemUI 卡 10 秒 + composer 9.5 秒 + kgsl 栅栏 waitForever）；收回一条中途的错误读法"
+     "docs 收尾：交接口径指到 f7d5f24（第二台不使用 / 续接提示词 = N1）",
+     "口径变更：第二台设备不使用（只用第一台，N5 暂缓 / G5 留档）—— 顺带把续接提示词写成 N1 版",
+     "docs 收尾：交接口径指到 945f7d7（N0 已完成），并在「现在停在哪」里记下 N0 的四条读数",
+     "N0：常数标定 —— §9.9 四个常数各拿到真机读数（vk2_probe 只问不接管，第一台四轮）",
+     "docs 收尾：交接口径指到 4780b9a，并写清\"新路径的入口\"三份文档",
+     "docs：新路径文档独立成 docs/rewrite/（正本移入 + 索引 + 工具清单 + 新会话提示词）",
+     "docs 收尾：交接口径指到 3113763（README 口径更正后的最新提交）",
+     "README + ANDROID.zh-CN：改口径 —— 宿主可复用、图形层不可照搬；索引加入 ANDROID_REWRITE"
     ]
    }
   ]
@@ -257,7 +345,7 @@
   "branches": []
  },
  "linjiacheng/d2r-mobile": {
-  "pushed_at": "2026-10-15T14:57:24Z",
+  "pushed_at": "2026-10-16T01:14:56Z",
   "branches": []
  },
  "fengtong1109/d2r-mobile": {
@@ -339,7 +427,7 @@
   ]
  },
  "Zhangbu/d2r-mobile": {
-  "pushed_at": "2026-10-15T01:06:35Z",
+  "pushed_at": "2026-10-16T01:52:54Z",
   "branches": []
  },
  "zcanic/d2r-mobile": {
@@ -398,7 +486,7 @@
   ]
  },
  "feiyunwill/d2r-mobile": {
-  "pushed_at": "2026-10-15T05:54:22Z",
+  "pushed_at": "2026-10-16T02:47:10Z",
   "branches": []
  },
  "mrggbond/d2r-mobile": {
@@ -441,7 +529,7 @@
   ]
  },
  "saymoon/d2r-mobile": {
-  "pushed_at": "2026-10-15T04:17:23Z",
+  "pushed_at": "2026-10-16T02:29:33Z",
   "branches": []
  },
  "imink/hades-ios": {
@@ -803,7 +891,7 @@
   "branches": []
  },
  "MichaelC001/d2r-mobile": {
-  "pushed_at": "2026-10-15T02:31:14Z",
+  "pushed_at": "2026-10-16T02:31:15Z",
   "branches": []
  },
  "tinytub/d2r-mobile": {
@@ -950,21 +1038,21 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-10-15T18:00:09Z",
+  "pushed_at": "2026-10-16T02:00:31Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T17:29:59Z",
+    "last_commit": "2026-10-16T02:00:26Z",
     "subjects": [
+     "Package Mac apps without separate resource metadata",
+     "Simplify Mac setup with the complete Data resource archive",
      "Refresh Mac build duration from the completed prepared-input build",
      "Point Mac build inputs to the repaired prepared directory",
      "Fix missing Mac shader reflections and validate final app resources",
      "Shorten generated release titles",
      "Ad-hoc sign Guest before IPA packaging for zsign compatibility",
-     "Reuse interface caches across unrelated source changes",
-     "Simplify prepared package generation and schema validation",
-     "Document measured iOS and macOS standard build times"
+     "Reuse interface caches across unrelated source changes"
     ]
    }
   ]
@@ -1048,21 +1136,21 @@
   ]
  },
  "wukongtime/d2r-mobile-build-backup": {
-  "pushed_at": "2026-10-16T00:08:49Z",
+  "pushed_at": "2026-10-16T01:58:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T17:29:59Z",
+    "last_commit": "2026-10-16T01:49:16Z",
     "subjects": [
+     "Simplify Mac setup with the complete Data resource archive",
      "Refresh Mac build duration from the completed prepared-input build",
      "Point Mac build inputs to the repaired prepared directory",
      "Fix missing Mac shader reflections and validate final app resources",
      "Shorten generated release titles",
      "Ad-hoc sign Guest before IPA packaging for zsign compatibility",
      "Reuse interface caches across unrelated source changes",
-     "Simplify prepared package generation and schema validation",
-     "Document measured iOS and macOS standard build times"
+     "Simplify prepared package generation and schema validation"
     ]
    }
   ]
@@ -1125,41 +1213,41 @@
   ]
  },
  "MrCKR/switch-android-runtime": {
-  "pushed_at": "2026-10-15T18:35:06Z",
+  "pushed_at": "2026-10-16T01:07:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T18:35:05Z",
+    "last_commit": "2026-10-16T01:07:04Z",
     "subjects": [
+     "feat: integrate Android guest loader into APK",
+     "feat: add Android host layer and real D2R module load smoke test",
      "docs: close two Phase 2 unknowns with measurements, before building on them",
      "test: measure the guest address-space model on Android",
      "feat: add Android guest TLS instruction rewrite",
      "feat: synthetic loader test and Android guest TLS bridge",
      "feat: integrate Android compatibility layer into runtime APK",
-     "docs: restore README as the project charter",
-     "ci: drop GitHub Actions workflow",
-     "feat: Vulkan device bring-up with swapchain and present loop"
+     "docs: restore README as the project charter"
     ]
    }
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-10-15T04:13:53Z",
+  "pushed_at": "2026-10-16T04:09:30Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T04:13:52Z",
+    "last_commit": "2026-10-16T04:09:29Z",
     "subjects": [
+     "radar 2026-10-16",
      "radar 2026-10-15",
      "radar 2026-10-14",
      "radar 2026-10-13",
      "radar 2026-10-13",
      "awesome-early-radar：二进制改名 early-radar，sync 带上状态文件和已写过名单",
      "radar 2026-10-13",
-     "radar 2026-10-12",
-     "radar 2026-10-11"
+     "radar 2026-10-12"
     ]
    }
   ]
@@ -1225,21 +1313,21 @@
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-16T00:26:57Z",
+  "pushed_at": "2026-10-16T04:22:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T00:26:53Z",
+    "last_commit": "2026-10-16T04:16:47Z",
     "subjects": [
+     "三段切分改成「x0 向上取整」（用户的设计改动）：iOS 没有 RWX 页，边界页只能二选一",
+     "更新进度：进度总表刷新（Metal 离屏各片/内嵌装载/壳模式/App/资源容器/出包链路）+ 第二十五轮记录",
+     "资源文件夹改名 SMO Resource（整个文件夹拷进手机）；展开钩子支持一层包装目录；IPA 名带版本号",
+     "修 smoarc.c：macOS/iOS 上 mkdir 需要 sys/stat.h 与 unistd.h",
+     "资源容器（参考项目 .data 同款思路）：RomFS 打包成 2 卷 + App 首次运行自动展开",
      "取消复制到 NAS 的工作流：make_installable.py 只在本地产 IPA（--smb-root 与路径记忆移除）",
      "guest_dylib：加空 LC_CODE_SIGNATURE 槽（全能签等工具在签前准备阶段会拒无签名槽的 dylib）",
-     "make_installable.py 加 --smb-root：出完 IPA 自动复制到网络共享（ipa/ 每次更新，gamedata/ 只在缺失时拷，路径记住在 out/smb_root.cfg）",
-     "make_installable.py：一条命令（下载公共仓最新壳 + 注入本机 Guest.framework）出可自签 IPA；docs 更新为推荐流程",
-     "docs：自签用户的更新流程（私有 fork + GUEST_URL/SHA256 注入，release IPA 直接可用）",
-     "更新流程对齐 d2r-mobile-build：CI 可选注入 Guest.framework（GUEST_URL+GUEST_SHA256 变量）；打包脚本可产出 guest.zip+sha256",
-     "打包脚本：手机资源合并成一个文件夹一次复制；Info.plist 加文件共享键",
-     "首跑打包脚本：prepare_phone_package.py（Guest.framework + ExeFS tsv + 说明；RomFS 默认只写说明）"
+     "make_installable.py 加 --smb-root：出完 IPA 自动复制到网络共享（ipa/ 每次更新，gamedata/ 只在缺失时拷，路径记住在 out/smb_root.cfg）"
     ]
    }
   ]
@@ -1325,14 +1413,14 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-15T21:22:04Z",
+  "pushed_at": "2026-10-16T04:30:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T21:21:59Z",
+    "last_commit": "2026-10-16T04:30:43Z",
     "subjects": [
-     "chore: 自动同步 Star 地图（182 个项目）",
+     "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
@@ -1353,21 +1441,21 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-16T00:26:45Z",
+  "pushed_at": "2026-10-16T00:27:08Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T00:26:37Z",
+    "last_commit": "2026-10-16T00:27:07Z",
     "subjects": [
+     "data: refresh cache",
      "Port knowledge base: SPEC v0.1, atlas.py (validate/build), agent API + llms.txt + MCP, Triangle Strategy as first dataset",
      "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache",
      "notes: hide the radar itself from search results",
-     "data: refresh cache",
-     "README: point to the published page"
+     "data: refresh cache"
     ]
    }
   ]
@@ -1423,7 +1511,7 @@
   "branches": []
  },
  "luzzy/d2r-mobile": {
-  "pushed_at": "2026-10-15T12:34:48Z",
+  "pushed_at": "2026-10-16T04:04:47Z",
   "branches": []
  },
  "TouhouGO/d2r-mobile": {
@@ -1587,11 +1675,11 @@
   ]
  },
  "vickwv/d2r-mobile": {
-  "pushed_at": "2026-10-15T18:34:31Z",
+  "pushed_at": "2026-10-16T04:04:24Z",
   "branches": [
    {
     "branch": "android-integration",
-    "ahead": 13,
+    "ahead": 21,
     "behind": 2,
     "files": 86,
     "real_files": 85,
@@ -1602,16 +1690,16 @@
      "dm/host",
      "dm/tools"
     ],
-    "last_commit": "2026-10-15T18:34:04Z",
+    "last_commit": "2026-10-16T04:04:21Z",
     "subjects": [
-     "android: per-draw occlusion queries by default; perf notes",
-     "nvn_vk: dynamic offsets for kind-2 uniform bindings",
-     "hle_oe: extend the Android 3D-scale experiment to the build94012 map",
-     "nvn_dirty: batch adjacent-page mprotect in writeback prepare",
-     "thread: keep the Android three-block TLS scheme (context destructor owns the frees); non-guest abort diagnostics",
-     "device test adapters: external data dir, readable diagnostics, env.txt import",
-     "android merge seams: platform-split sync fence, dirty clock, renameat2 swap shim, UI-gen guard",
-     "merge dodola/main: Android host and Vulkan replay merged onto mainline (mainline logic kept; Android parts spliced)"
+     "nvn_vk: one-entry memo in pool_read_resolved",
+     "nvn_vk: pass-attachment cache, finer draw-path CPU probes",
+     "android: request 60 Hz for the game surface",
+     "nvn_vk: stage multi-layer texture uploads in one buffer and one copy batch",
+     "nvn_vk: log slow texture uploads/refreshes with size, format and milliseconds",
+     "nvn_vk: upload compressed (BC) textures as-is on devices that support them",
+     "nvn_vk: persist the pipeline cache across sessions",
+     "android: present-pacing diagnostics and DM_PRESENT_HZ test flags"
     ]
    }
   ]
@@ -1729,21 +1817,21 @@
   ]
  },
  "lfkdsk/switch-appletv-port-skill": {
-  "pushed_at": "2026-10-15T20:38:09Z",
+  "pushed_at": "2026-10-16T02:50:18Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T20:38:07Z",
+    "last_commit": "2026-10-16T02:50:15Z",
     "subjects": [
+     "07-agent-workflow: time-offset notes match the implementation",
+     "05-perf: describe the 30 Hz hold and hysteresis as implemented",
+     "references: fold in later port learnings (encoder dedup, 30 Hz pacing, tvOS memory, HLE ABI, time travel, long-run leak)",
      "README: hero uses a 1080p capture from Apple TV hardware",
      "README: drop AI-generated caption (hero now uses a real capture)",
      "Scrub internal device name and genericize relay wording",
      "README.md: rewrite in English with hero image, results showcase, and install guide",
-     "references/08-community.md: translate to English",
-     "references/07-agent-workflow.md: translate to English",
-     "references/06-audio.md: translate to English",
-     "references/05-perf.md: translate to English"
+     "references/08-community.md: translate to English"
     ]
    }
   ]
@@ -1765,6 +1853,117 @@
     "last_commit": "2026-10-16T00:19:30Z",
     "subjects": [
      "Initial commit"
+    ]
+   }
+  ]
+ },
+ "TIMYW2K/d2r-mobile": {
+  "pushed_at": "2026-10-16T04:36:42Z",
+  "branches": [
+   {
+    "branch": "lang-voice",
+    "ahead": 16,
+    "behind": 1,
+    "files": 11,
+    "real_files": 11,
+    "dirs": [
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-16T04:36:40Z",
+    "subjects": [
+     "Revert the run-time skill tree tab widening: it broke the host compile with an unrelated-looking error",
+     "Widen the skill tree tab labels at run time so six-character names fit",
+     "Skill tree tabs widened so six-character names fit",
+     "Mercenary portraits scale, the name text keeps its original size",
+     "Fix round 8's broken line: the trailing comment swallowed the closing brace of the enclosing if",
+     "Stop overwriting the voice language, fix the tab highlight order, and make page flips direct-ish",
+     "Register the modified mercenary layout as touch-only (fixes the overlay consistency check)",
+     "Fix HDR shader defines, the cached-projection zoom, and the mercenary health bar"
+    ]
+   }
+  ]
+ },
+ "4ppp44/d2r-mobile-ios17": {
+  "pushed_at": "2026-10-16T02:42:21Z",
+  "branches": [
+   {
+    "branch": "codex/ios17-a16-v1.0.17",
+    "ahead": 2,
+    "behind": 0,
+    "files": 38,
+    "real_files": 29,
+    "dirs": [
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-16T02:42:07Z",
+    "subjects": [
+     "Add iOS17 host-only shell build input and matching guest packer",
+     "Add experimental iOS 17 / A16 Metal 3 compatibility"
+    ]
+   }
+  ]
+ },
+ "fancyfx/d2r-mobile": {
+  "pushed_at": "2026-10-16T01:35:24Z",
+  "branches": []
+ },
+ "RexhuangTW/d2r-mobile": {
+  "pushed_at": "2026-10-16T03:11:22Z",
+  "branches": []
+ },
+ "lpyedge/d2r-mobile": {
+  "pushed_at": "2026-10-16T01:19:06Z",
+  "branches": []
+ },
+ "HadaeTien/anhei": {
+  "pushed_at": "2026-10-16T03:28:53Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T03:22:12Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "yq1036137177-sys/d2r-bulid": {
+  "pushed_at": "2026-10-16T02:03:43Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T01:54:13Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "alanyangcn/smbwonder-ios": {
+  "pushed_at": "2026-10-16T04:38:35Z",
+  "branches": [
+   {
+    "branch": "first-game-frame",
+    "mirror": false,
+    "last_commit": "2026-10-16T04:34:15Z",
+    "subjects": [
+     "Reproducible setup on a new Mac: toolchain, game import, private shader state",
+     "STATUS/ledger: rounds 59-108 (title key art on device, flicker root cause)",
+     "CallCommands captures the called handles' command segments at record time",
+     "NVN_CALL_RECORD / NVN_CALL_REPLAY diagnostics: CallCommands handle bytes at record and replay",
+     "WONDER_DRAW_LOG: per-draw targets and textures by storage for a present range (diagnostic)",
+     "PROBE_ENV: log the WONDER_* diagnostics the app received",
+     "WONDER_SUBMIT_SYNC: diagnostic GPU wait after every queue submit",
+     "GPU textures identified by storage (pool, offset, layout), not by texture object"
     ]
    }
   ]
