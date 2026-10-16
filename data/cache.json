@@ -1,6 +1,6 @@
 {
  "TommyLau/botw-mobile": {
-  "pushed_at": "2026-10-16T04:34:56Z",
+  "pushed_at": "2026-10-16T10:57:59Z",
   "branches": [
    {
     "branch": "botw-host-boot",
@@ -32,6 +32,35 @@
     ]
    },
    {
+    "branch": "botw-leave-shrine",
+    "ahead": 182,
+    "behind": 3,
+    "files": 206,
+    "real_files": 201,
+    "dirs": [
+     "AGENTS.md",
+     "CONTRIBUTING.md",
+     "CONTRIBUTING.zh-CN.md",
+     "dm/.gitignore",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-10-16T10:57:54Z",
+    "subjects": [
+     "fix(nvn): publish a pool flush only for CPU-cached pools, as the driver does",
+     "fix(nvn): keep command records on the host and account game memory natively",
+     "docs: make the original SDK and driver the authority for interface fixes",
+     "fix(nvn): accept every buffer storage the SDK accepts",
+     "fix(nvn): upload textures the CPU wrote and flushed after creating them",
+     "fix(nvn): run a saved copy of a command list the game recorded over",
+     "fix(nvn): report game-segment usage after a host overflow",
+     "feat(nvn): report audit provenance when deferred binding capture fails"
+    ]
+   },
+   {
     "branch": "botw-offline-shaders",
     "ahead": 143,
     "behind": 3,
@@ -58,6 +87,35 @@
      "refactor(shaders): move fact derivation into its own tool and merge rebuilds",
      "feat(nvn): accept tiled cache tile sizes as binning hints",
      "feat(nvn): accept tiled cache actions as rendering-neutral hints"
+    ]
+   },
+   {
+    "branch": "botw-render-correctness",
+    "ahead": 163,
+    "behind": 3,
+    "files": 205,
+    "real_files": 200,
+    "dirs": [
+     "AGENTS.md",
+     "CONTRIBUTING.md",
+     "CONTRIBUTING.zh-CN.md",
+     "dm/.gitignore",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-10-16T06:34:22Z",
+    "subjects": [
+     "feat(nvn): dump layered textures per slice and extra serials in texdump",
+     "fix(nvn): keep the duplicated colour slot that draws actually write",
+     "fix(nvn): give cube and cube array textures compatible views",
+     "fix(nvn): detach colour attachments that duplicate an earlier slot",
+     "test(nvn): seed mip extent textures through the production command path",
+     "fix(nvn): zero-fill new colour textures and log texture aliasing",
+     "feat(nvn): port compatible texture views and unwritten-output masks from nxnative",
+     "docs: record player control in the Shrine of Resurrection"
     ]
    },
    {
@@ -136,10 +194,10 @@
    },
    {
     "branch": "main",
-    "ahead": 143,
+    "ahead": 163,
     "behind": 3,
-    "files": 196,
-    "real_files": 191,
+    "files": 205,
+    "real_files": 200,
     "dirs": [
      "AGENTS.md",
      "CONTRIBUTING.md",
@@ -151,16 +209,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-16T03:14:16Z",
+    "last_commit": "2026-10-16T06:34:22Z",
     "subjects": [
-     "docs: record the full-library shader bundle and first title frames",
-     "feat(nvn): replay instanced non-indexed draws",
-     "feat(nvn): accept disabling rasterizer discard",
-     "fix(nvn): feed integer shader inputs with integer vertex formats",
-     "docs(gfx): describe the BotW offline shader build",
-     "refactor(shaders): move fact derivation into its own tool and merge rebuilds",
-     "feat(nvn): accept tiled cache tile sizes as binning hints",
-     "feat(nvn): accept tiled cache actions as rendering-neutral hints"
+     "feat(nvn): dump layered textures per slice and extra serials in texdump",
+     "fix(nvn): keep the duplicated colour slot that draws actually write",
+     "fix(nvn): give cube and cube array textures compatible views",
+     "fix(nvn): detach colour attachments that duplicate an earlier slot",
+     "test(nvn): seed mip extent textures through the production command path",
+     "fix(nvn): zero-fill new colour textures and log texture aliasing",
+     "feat(nvn): port compatible texture views and unwritten-output masks from nxnative",
+     "docs: record player control in the Shrine of Resurrection"
     ]
    }
   ]
@@ -201,12 +259,12 @@
   ]
  },
  "dormonbear/d2r-mobile": {
-  "pushed_at": "2026-10-15T03:28:18Z",
+  "pushed_at": "2026-10-16T06:16:55Z",
   "branches": [
    {
     "branch": "fix/audio-release-notifier-qos",
     "ahead": 1,
-    "behind": 2,
+    "behind": 5,
     "files": 1,
     "real_files": 1,
     "dirs": [
@@ -216,21 +274,37 @@
     "subjects": [
      "fix(audio): match release notifier QoS to guest mixer"
     ]
+   },
+   {
+    "branch": "fix/minimap-layout-rebuild",
+    "ahead": 2,
+    "behind": 0,
+    "files": 3,
+    "real_files": 3,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-16T04:05:08Z",
+    "subjects": [
+     "fix(ui): preserve immediate loading-screen lift reconciliation",
+     "Fix minimap lift accumulation during layout rebuilds"
+    ]
    }
   ]
  },
  "n1zjqo/d2r-mobile": {
-  "pushed_at": "2026-10-15T03:21:06Z",
+  "pushed_at": "2026-10-16T05:58:53Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 1,
-    "behind": 2,
+    "ahead": 2,
+    "behind": 0,
     "files": 1,
     "real_files": 0,
     "dirs": [],
-    "last_commit": "2026-10-15T03:21:05Z",
+    "last_commit": "2026-10-16T05:58:53Z",
     "subjects": [
+     "Merge branch 'jhaizhou-ops:main' into main",
      "ci: sync upstream main daily at 09:23 China time"
     ]
    }
@@ -272,14 +346,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-15T20:42:31Z",
+  "pushed_at": "2026-10-16T07:54:05Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 25,
+    "ahead": 31,
     "behind": 8,
-    "files": 86,
-    "real_files": 81,
+    "files": 95,
+    "real_files": 90,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -288,29 +362,29 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-15T20:42:26Z",
+    "last_commit": "2026-10-16T07:53:56Z",
     "subjects": [
+     "Implement bounded per-device clear registration metadata",
+     "Link bootstrap profile in standalone graphics tests",
+     "Report unavailable fast-clear registration and preserve named P5R NVN stops",
+     "Fix optional filesystem read overloads using host handles",
+     "Require the local RomFS directory before the controlled startup probe",
+     "Handle nested application exit-request sections without Horizon service objects",
      "Link bootstrap profile into standalone filesystem regression tests",
-     "Add controlled nnMain startup probe with resource checkpoints and GPU stop boundary",
-     "Resolve allocator forwarding by guest export instead of a fixed SDK offset",
-     "Add staged module-constructor probe that stops before nnMain",
-     "Preserve absent ELF weak imports for optional SDK callbacks",
-     "Add bounded on-device P5R SDK initialization probe",
-     "Expose synthetic GPU self-tests on iPhone and guard combined-slot fetch proofs",
-     "Specify the driver-bank index in synthetic texture reflection"
+     "Add controlled nnMain startup probe with resource checkpoints and GPU stop boundary"
     ]
    }
   ]
  },
  "gbcmikeblue/d2r-mobile": {
-  "pushed_at": "2026-10-16T04:20:56Z",
+  "pushed_at": "2026-10-16T11:27:10Z",
   "branches": [
    {
     "branch": "android",
-    "ahead": 121,
+    "ahead": 135,
     "behind": 25,
-    "files": 93,
-    "real_files": 76,
+    "files": 105,
+    "real_files": 88,
     "dirs": [
      ".codebuddy/rules",
      "dm/android",
@@ -318,16 +392,16 @@
      "dm/host",
      "dm/tools"
     ],
-    "last_commit": "2026-10-16T04:20:16Z",
+    "last_commit": "2026-10-16T11:16:35Z",
     "subjects": [
-     "docs 收尾：交接口径指到 f7d5f24（第二台不使用 / 续接提示词 = N1）",
-     "口径变更：第二台设备不使用（只用第一台，N5 暂缓 / G5 留档）—— 顺带把续接提示词写成 N1 版",
-     "docs 收尾：交接口径指到 945f7d7（N0 已完成），并在「现在停在哪」里记下 N0 的四条读数",
-     "N0：常数标定 —— §9.9 四个常数各拿到真机读数（vk2_probe 只问不接管，第一台四轮）",
-     "docs 收尾：交接口径指到 4780b9a，并写清\"新路径的入口\"三份文档",
-     "docs：新路径文档独立成 docs/rewrite/（正本移入 + 索引 + 工具清单 + 新会话提示词）",
-     "docs 收尾：交接口径指到 3113763（README 口径更正后的最新提交）",
-     "README + ANDROID.zh-CN：改口径 —— 宿主可复用、图形层不可照搬；索引加入 ANDROID_REWRITE"
+     "docs 收尾：交接口径指到 e01c0ed（N4-c 已完成 —— 接提交侧 + GPU→池的回读；下一步 = N4-d）",
+     "N4-c：接提交侧 + 补 GPU→池的回读 —— 提交侧与新地基一致、往返型回读做实（每帧 ≈17 KB），但画面仍没变",
+     "docs：续接提示词更新到 N4-c 版（N4-b 已完成；本轮目标是接提交侧 + 补 GPU→池的回读）",
+     "docs 收尾：交接口径指到 86e1631（N4-b 已完成 —— GPU 侧内存接管；下一步 = N4-c）",
+     "N4-b：把 GPU 侧的内存接管下来 —— `mtl_addr` 回后备资源 + 帧开头上传（机制全过；画面仍是那条红带）",
+     "docs 收尾：交接口径指到 2109af4（N4-a 已完成，下一步 = N4-b）",
+     "N4-a：接管回放层的第一步 —— 选路点 + 真机池账（no_region = 0；GPU 侧仍走旧路）",
+     "docs 收尾：交接口径指到 22ee122（N3 已完成，下一步 = N4）"
     ]
    }
   ]
@@ -396,14 +470,14 @@
   "branches": []
  },
  "Seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-15T21:08:19Z",
+  "pushed_at": "2026-10-16T09:47:55Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 79,
-    "behind": 2,
-    "files": 140,
-    "real_files": 139,
+    "ahead": 88,
+    "behind": 0,
+    "files": 141,
+    "real_files": 140,
     "dirs": [
      "NOTICE.md",
      "PORTABLE.md",
@@ -412,16 +486,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-10-15T21:01:31Z",
+    "last_commit": "2026-10-16T09:46:03Z",
     "subjects": [
-     "docs(ohos): 分叉清单登记 dm.h（module_t 的 OHOS 字段 x0_end/img_end）",
-     "feat(ohos): 装载验证真机通过 —— 旷野之息 main 37MB 模块装载成立（判据全过）",
-     "feat(ohos): 装载验证就绪 —— 实验 G「真实模块装载」+ 旷野之息 main 内嵌（本地编译通过）",
-     "docs(ohos): 移除独立的通用方案结构图 —— 内容已并入 项目总览与继续指南 §3",
-     "docs(ohos): 结构图/待办 —— 改写器泛化收官（旷野之息 main 一次通过，未决 0）",
-     "feat(tools): 改写器泛化 —— 跳转表识别支持相对偏移表形态，未识别不中止改登记",
-     "docs(ohos): 通用方案·结构与地图 —— 定位改为「通用 Switch→鸿蒙移植框架」",
-     "feat(tools): xci_extract.py 加 --max-bytes（程序 NCA 的 ExeFS 在文件开头，只为解 ExeFS 时不必为 14 GB RomFS 陪跑；截断件不能当完整 NCA 用）"
+     "fix(ohos): 实验 H 二分 B 前置日志 + 修正二分补丁时序（seal 后不可写）",
+     "feat(ohos): 实验 H 二分 B/C —— 定位收敛到 gate_dispatch 内部",
+     "feat(ohos): 实验 H 可观测性 —— 逐门结果增量落盘（崩溃也保得住）",
+     "feat(ohos): 实验 H 二分定位 + 线程槽直写 —— 锁定 setspecific 与门块槽公式不一致",
+     "fix(nvn_vk): 补提交 3.4-D 合流的信号量 API（frame_wait/frame_signal）",
+     "Merge remote-tracking branch 'upstream/main' into harmony",
+     "feat(ohos): 实验 H 门回路 v2 —— 仅通知位过门 + 四信号兜底 + 逐门打点（待真机）",
+     "feat(ohos): 实验 H「门回路」—— 门机制三件套进鸿蒙构建 + 段名冲突修复 + 信号兜底"
     ]
    }
   ]
@@ -494,12 +568,12 @@
   "branches": []
  },
  "klacee/d2r-mobile": {
-  "pushed_at": "2026-10-15T07:58:30Z",
+  "pushed_at": "2026-10-16T07:52:15Z",
   "branches": [
    {
     "branch": "main",
     "ahead": 2,
-    "behind": 10,
+    "behind": 13,
     "files": 1,
     "real_files": 0,
     "dirs": [],
@@ -533,12 +607,39 @@
   "branches": []
  },
  "imink/hades-ios": {
-  "pushed_at": "2026-10-15T05:46:39Z",
+  "pushed_at": "2026-10-16T08:24:53Z",
   "branches": [
+   {
+    "branch": "main",
+    "ahead": 5,
+    "behind": 3,
+    "files": 111,
+    "real_files": 107,
+    "dirs": [
+     "dm/gfx",
+     "dm/host",
+     "dm/ios",
+     "dm/tools",
+     "dm/verify",
+     "hades/.gitignore",
+     "hades/LESSONS.zh-CN.md",
+     "hades/README.md",
+     "hades/README.zh-CN.md",
+     "hades/ios"
+    ],
+    "last_commit": "2026-10-16T08:24:50Z",
+    "subjects": [
+     "Merge imink/hades-ios main while retaining Hades README structure",
+     "Adapt original README structure to Hades iOS in English and Chinese",
+     "Complete Hades v37 lifecycle, startup and app branding",
+     "Save v31 controls, widescreen and haptics baseline",
+     "Add native Hades iOS target and verified v22 graphics baseline"
+    ]
+   },
    {
     "branch": "yuewang1-microsoft-hades-ios-port",
     "ahead": 1,
-    "behind": 32,
+    "behind": 35,
     "files": 89,
     "real_files": 86,
     "dirs": [
@@ -816,7 +917,7 @@
   "branches": []
  },
  "1lifedo1thing/d2r-mobile": {
-  "pushed_at": "2026-10-15T08:24:20Z",
+  "pushed_at": "2026-10-16T08:17:00Z",
   "branches": []
  },
  "lcr1017/d2r-mobile": {
@@ -832,7 +933,7 @@
   "branches": []
  },
  "dodola/d2r-mobile": {
-  "pushed_at": "2026-10-15T20:01:26Z",
+  "pushed_at": "2026-10-16T09:17:15Z",
   "branches": [
    {
     "branch": "codex/android-measured-optimizations",
@@ -861,27 +962,28 @@
    },
    {
     "branch": "main",
-    "ahead": 10,
+    "ahead": 13,
     "behind": 1,
-    "files": 123,
-    "real_files": 113,
+    "files": 137,
+    "real_files": 126,
     "dirs": [
      "DESIGN.md",
      "dm/android",
      "dm/gfx",
      "dm/host",
-     "dm/tools"
+     "dm/tools",
+     "tools/android"
     ],
-    "last_commit": "2026-10-15T19:58:25Z",
+    "last_commit": "2026-10-16T09:13:12Z",
     "subjects": [
+     "refactor(android): centralize Vulkan compatibility policy",
+     "fix(android): lower Qualcomm skin UBO component loads",
+     "fix(android): lower divergent compute ballots for Qualcomm system driver",
      "Add Android Vulkan runtime controls and measured game A/B records",
      "Optimize Vulkan attachment clears and proven dead stores on Android",
      "Move Android NVN translation to an ordered worker with fence-safe waits",
      "Merge upstream v1.0.17 while preserving Android host and Vulkan backend",
-     "feat(android): add FPS display, aspect fit and optional 60 FPS pacing",
-     "docs: describe experimental Android support in both READMEs",
-     "fix(android): preserve submission context in Vulkan profiling",
-     "perf(android): per-mip image layouts, 2-way shader control cache, gated hot-path timers"
+     "feat(android): add FPS display, aspect fit and optional 60 FPS pacing"
     ]
    }
   ]
@@ -899,7 +1001,7 @@
   "branches": []
  },
  "yzxh24/d2r-mobile": {
-  "pushed_at": "2026-10-15T05:33:51Z",
+  "pushed_at": "2026-10-16T09:05:19Z",
   "branches": []
  },
  "gamerenzz/d2r-mobile": {
@@ -943,8 +1045,25 @@
   "branches": []
  },
  "XGBCCC/d2r-mobile": {
-  "pushed_at": "2026-10-14T13:55:08Z",
-  "branches": []
+  "pushed_at": "2026-10-16T05:36:03Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 1,
+    "behind": 0,
+    "files": 17,
+    "real_files": 15,
+    "dirs": [
+     "FORK_CHANGES.md",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-16T05:35:06Z",
+    "subjects": [
+     "Elysium drop rates and touch QoL: higher uniques, belt refill, vendor autosell"
+    ]
+   }
+  ]
  },
  "wbcyclist/d2r-mobile": {
   "pushed_at": "2026-10-14T14:14:08Z",
@@ -1038,41 +1157,41 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-10-16T02:00:31Z",
+  "pushed_at": "2026-10-16T10:45:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T02:00:26Z",
+    "last_commit": "2026-10-16T10:45:16Z",
     "subjects": [
+     "Show the iOS resource and Legacy folder layout",
      "Package Mac apps without separate resource metadata",
      "Simplify Mac setup with the complete Data resource archive",
      "Refresh Mac build duration from the completed prepared-input build",
      "Point Mac build inputs to the repaired prepared directory",
      "Fix missing Mac shader reflections and validate final app resources",
      "Shorten generated release titles",
-     "Ad-hoc sign Guest before IPA packaging for zsign compatibility",
-     "Reuse interface caches across unrelated source changes"
+     "Ad-hoc sign Guest before IPA packaging for zsign compatibility"
     ]
    }
   ]
  },
  "d2r-mobile/d2r-mobile": {
-  "pushed_at": "2026-10-15T17:49:08Z",
+  "pushed_at": "2026-10-16T08:34:24Z",
   "branches": [
    {
-    "branch": "main",
+    "branch": "dev",
     "mirror": false,
-    "last_commit": "2026-10-15T17:48:56Z",
+    "last_commit": "2026-10-16T08:32:49Z",
     "subjects": [
+     "Polish project introduction",
      "Mac shader retarget: copy reflection JSON by directory and verify every library has one (fixes solid pink-purple screen in CI-built Mac apps, #60)",
      "v1.0.17: personal stash and iCloud merge hotfix (no loss or duplication when killed at any moment)",
      "Remove trailing whitespace from imported test",
      "Rift density halved, audio-gap and volume-key fixes, Mac and renderer fixes",
      "README: list Apple TV 4K (community port, developer preview) in the platforms line and intro",
      "Apple TV (tvOS) community port as a separate DmTV target; Rift and Mac fixes",
-     "v1.0.15: shell is now build input (.zip), launch self-check for incomplete packages and devices without Metal 3, graphics translation on its own thread, save with the pause menu open, wide-iPhone item tooltip and Chronicle rewards fixes",
-     "README: acknowledgements"
+     "v1.0.15: shell is now build input (.zip), launch self-check for incomplete packages and devices without Metal 3, graphics translation on its own thread, save with the pause menu open, wide-iPhone item tooltip and Chronicle rewards fixes"
     ]
    }
   ]
@@ -1184,13 +1303,14 @@
   ]
  },
  "MrCKR/d2r-android-adapter": {
-  "pushed_at": "2026-10-15T17:27:34Z",
+  "pushed_at": "2026-10-16T10:56:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T17:27:31Z",
+    "last_commit": "2026-10-16T10:56:12Z",
     "subjects": [
+     "docs: adapter-side handoff, pointing at the runtime's HANDOFF.md",
      "Verify the runtime contract instead of asserting it",
      "Make the build script path-portable",
      "Migrate the D2R-specific layer from upstream d2r-mobile",
@@ -1213,21 +1333,21 @@
   ]
  },
  "MrCKR/switch-android-runtime": {
-  "pushed_at": "2026-10-16T01:07:06Z",
+  "pushed_at": "2026-10-16T10:58:52Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T01:07:04Z",
+    "last_commit": "2026-10-16T10:58:51Z",
     "subjects": [
-     "feat: integrate Android guest loader into APK",
-     "feat: add Android host layer and real D2R module load smoke test",
-     "docs: close two Phase 2 unknowns with measurements, before building on them",
-     "test: measure the guest address-space model on Android",
-     "feat: add Android guest TLS instruction rewrite",
-     "feat: synthetic loader test and Android guest TLS bridge",
-     "feat: integrate Android compatibility layer into runtime APK",
-     "docs: restore README as the project charter"
+     "tools: push through the GitHub API when github.com:443 is unreachable",
+     "docs: handoff for the Android port",
+     "Merge remote main, keeping this side's tree",
+     "chore(android): log guest thread entry so a worker's life is traceable",
+     "feat(android): trace the last host call per thread, and log thread exits",
+     "fix(android): link the adapter and resolve the host symbols it needs",
+     "refactor(android): adapter seats are weak; runtime never compiles adapter sources",
+     "feat(android): point the runtime at device-side romfs / save / temp mounts"
     ]
    }
   ]
@@ -1253,12 +1373,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-15T21:35:07Z",
+  "pushed_at": "2026-10-16T04:45:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T21:35:06Z",
+    "last_commit": "2026-10-16T04:45:28Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1293,81 +1413,81 @@
   ]
  },
  "airt56/auto-green": {
-  "pushed_at": "2026-10-15T05:57:53Z",
+  "pushed_at": "2026-10-16T05:56:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T05:57:51Z",
+    "last_commit": "2026-10-16T05:56:28Z",
     "subjects": [
+     "docs(readme): refresh daily tech digest dashboard (2026-10-16)",
+     "docs(trending): sync GitHub hot repositories (2026-10-16)",
+     "docs(quote): add daily developer quote (2026-10-16)",
+     "chore(checkin): update daily check-in stats for 2026-10-16",
      "docs(readme): refresh daily tech digest dashboard (2026-10-15)",
      "docs(trending): sync GitHub hot repositories (2026-10-15)",
      "docs(quote): add daily developer quote (2026-10-15)",
-     "chore(checkin): update daily check-in stats for 2026-10-15",
-     "docs(readme): refresh daily tech digest dashboard (2026-10-14)",
-     "docs(news): sync Hacker News top tech stories (2026-10-14)",
-     "docs(trending): sync GitHub hot repositories (2026-10-14)",
-     "docs(quote): add daily developer quote (2026-10-14)"
+     "chore(checkin): update daily check-in stats for 2026-10-15"
     ]
    }
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-16T04:22:11Z",
+  "pushed_at": "2026-10-16T11:15:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T04:16:47Z",
+    "last_commit": "2026-10-16T11:15:41Z",
     "subjects": [
-     "三段切分改成「x0 向上取整」（用户的设计改动）：iOS 没有 RWX 页，边界页只能二选一",
-     "更新进度：进度总表刷新（Metal 离屏各片/内嵌装载/壳模式/App/资源容器/出包链路）+ 第二十五轮记录",
-     "资源文件夹改名 SMO Resource（整个文件夹拷进手机）；展开钩子支持一层包装目录；IPA 名带版本号",
-     "修 smoarc.c：macOS/iOS 上 mkdir 需要 sys/stat.h 与 unistd.h",
-     "资源容器（参考项目 .data 同款思路）：RomFS 打包成 2 卷 + App 首次运行自动展开",
-     "取消复制到 NAS 的工作流：make_installable.py 只在本地产 IPA（--smb-root 与路径记忆移除）",
-     "guest_dylib：加空 LC_CODE_SIGNATURE 槽（全能签等工具在签前准备阶段会拒无签名槽的 dylib）",
-     "make_installable.py 加 --smb-root：出完 IPA 自动复制到网络共享（ipa/ 每次更新，gamedata/ 只在缺失时拷，路径记住在 out/smb_root.cfg）"
+     "真机第四崩：rtld 链接器符号被绑成宿主桩地址，SDK 运行时初始化等于没做（v0.5.5）",
+     "真机第三崩：客体线程环境（TLS/TLR）没建就跑模块构造函数（v0.5.4）",
+     "真机第三轮：崩溃现场补 ESR/FAR + 寄存器 + 指令字；容器失败带原因（v0.5.3）",
+     "展开判据放宽 + RomFS 顶层条目列表（v0.5.2）",
+     "修 iOS 构建：崩溃处理挪进 crashlog.c（iOS 的 <ucontext.h> 要求先定义 _XOPEN_SOURCE）",
+     "真机第二崩：引导顺序写了两份，App 那份是错的（v0.5.1）",
+     "版本号口径：tag 版本进私有仓同名 release；顺带把真机首跑的修复写进 STATUS",
+     "真机首跑两个根因：容器从没展开 + 日志从没落盘"
     ]
    }
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-15T15:41:13Z",
+  "pushed_at": "2026-10-16T10:59:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T15:41:10Z",
+    "last_commit": "2026-10-16T10:59:40Z",
     "subjects": [
+     "Breath of the Wild holds 60 fps docked on the Mac: the replay hands its command buffer to the GPU every 64 draws; SDK 20 audio rendering goes through the host's locked path",
+     "The Legend of Zelda: Breath of the Wild (1.9.0) reaches the Shrine of Resurrection on the Mac, with a 60 fps cut; deferred texture binds read at execution",
+     "Super Mario 3D World + Bowser's Fury (1.2.2) reaches World 1-1 and Lake Lapcat on the Mac; textures sampled with another type get compatible views",
      "13 Sentinels: Aegis Rim (1.10) reaches its first battle on the Mac; Mario holds interval-2 frames for two display ticks",
      "Metroid Dread (2.1.0) reaches gameplay on the Mac at 60 fps, cutscenes at 30",
      "Engage ships a recorded pipeline prewarm list; the log names each prewarm list it reads",
      "Directory listing skips per-entry getxattr and .holes probes; Engage's first frame at 1.8 s on the Mac",
-     "App name and bundle ID come from the base NSP",
-     "Renamed nxnative; there is no default game",
-     "Game profiles are named after the base game's title ID",
-     "DLC NSPs in the folder are packed and unlocked (Engage Expansion Pass)"
+     "App name and bundle ID come from the base NSP"
     ]
    }
   ]
  },
  "ForceMind/Game2Mobile": {
-  "pushed_at": "2026-10-15T17:21:53Z",
+  "pushed_at": "2026-10-16T05:00:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T17:21:53Z",
+    "last_commit": "2026-10-16T05:00:44Z",
     "subjects": [
+     "M1: validate authentic signed Game2Mobile game bundles and Metal profiles",
      "M1: require fresh private Xcode builds and safe per-run evidence",
      "M1: add secure owner-only 91/91 compile and full DmIOS build workflow",
      "M1: verify 176 ARM64 production objects across iOS 26 and 18",
      "M1: compile asset-free iOS diagnostics app on Apple Silicon",
      "M1: validate all XcodeGen profiles with real tracked host sources",
      "docs: record 10 ARM64 Mach-O objects and real macOS 15 legacy CI",
-     "ci: compile runtime loader/entry and exercise Metal M3 on macOS 15 runner",
-     "ci: generate ARM64 Mach-O objects from production Metal and UIKit source"
+     "ci: compile runtime loader/entry and exercise Metal M3 on macOS 15 runner"
     ]
    }
   ]
@@ -1413,15 +1533,15 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-16T04:30:44Z",
+  "pushed_at": "2026-10-16T11:22:05Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T04:30:43Z",
+    "last_commit": "2026-10-16T11:22:04Z",
     "subjects": [
      "chore: 自动同步 Star 地图（184 个项目）",
-     "chore: 自动同步 Star 地图（182 个项目）",
+     "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）",
@@ -1441,21 +1561,21 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-16T00:27:08Z",
+  "pushed_at": "2026-10-16T04:39:28Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T00:27:07Z",
+    "last_commit": "2026-10-16T04:39:27Z",
     "subjects": [
+     "data: refresh cache",
      "data: refresh cache",
      "Port knowledge base: SPEC v0.1, atlas.py (validate/build), agent API + llms.txt + MCP, Triangle Strategy as first dataset",
      "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache",
-     "notes: hide the radar itself from search results",
-     "data: refresh cache"
+     "notes: hide the radar itself from search results"
     ]
    }
   ]
@@ -1655,34 +1775,34 @@
   ]
  },
  "designmakc/TopRepos": {
-  "pushed_at": "2026-10-15T09:42:45Z",
+  "pushed_at": "2026-10-16T09:36:22Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-15T09:42:44Z",
+    "last_commit": "2026-10-16T09:36:21Z",
     "subjects": [
+     "digest 2026-10-16",
      "digest 2026-10-15",
      "digest 2026-10-14",
      "digest 2026-10-13",
      "digest 2026-10-11",
      "digest 2026-10-10",
      "digest 2026-10-09",
-     "digest 2026-10-08",
-     "digest 2026-10-07"
+     "digest 2026-10-08"
     ]
    }
   ]
  },
  "vickwv/d2r-mobile": {
-  "pushed_at": "2026-10-16T04:04:24Z",
+  "pushed_at": "2026-10-16T10:18:16Z",
   "branches": [
    {
     "branch": "android-integration",
-    "ahead": 21,
-    "behind": 2,
-    "files": 86,
-    "real_files": 85,
+    "ahead": 33,
+    "behind": 0,
+    "files": 98,
+    "real_files": 93,
     "dirs": [
      "DESIGN.md",
      "dm/android",
@@ -1690,16 +1810,16 @@
      "dm/host",
      "dm/tools"
     ],
-    "last_commit": "2026-10-16T04:04:21Z",
+    "last_commit": "2026-10-16T10:17:43Z",
     "subjects": [
-     "nvn_vk: one-entry memo in pool_read_resolved",
-     "nvn_vk: pass-attachment cache, finer draw-path CPU probes",
-     "android: request 60 Hz for the game surface",
-     "nvn_vk: stage multi-layer texture uploads in one buffer and one copy batch",
-     "nvn_vk: log slow texture uploads/refreshes with size, format and milliseconds",
-     "nvn_vk: upload compressed (BC) textures as-is on devices that support them",
-     "nvn_vk: persist the pipeline cache across sessions",
-     "android: present-pacing diagnostics and DM_PRESENT_HZ test flags"
+     "docs: 会话交接补记——Android 模块重出（4 条分辨率链补丁）与回设备第一步（世界档矩阵）",
+     "android: ui_geom 选行判据加固（长连续段≥2 条）——已用 2026-10-16 历史截图对标：world75 vs C2 测出缩放 0.591 与人工标定一致",
+     "android: 世界档分辨率链修复——四条尺寸补丁升级为双端生效、原生表面档位、几何检查工具",
+     "android: force-add the bright-levels placeholder (gitignored generated table; the Android build needs it)",
+     "android: 3D picture brightening (palette-table rewrite, iOS parity)",
+     "android: frame-loop instrumentation, hot-path fix, runtime toggles, lessons doc",
+     "android: dynamic 3D scale, measurement switches, and pipeline/perf instrumentation",
+     "docs: bring the upstream-experience perf checklist into the integration tree"
     ]
    }
   ]
@@ -1717,7 +1837,7 @@
   "branches": []
  },
  "localhost-copilot/d2r-mobile": {
-  "pushed_at": "2026-10-15T16:15:12Z",
+  "pushed_at": "2026-10-16T06:42:28Z",
   "branches": []
  },
  "ppptv/d2r-mobile-maios": {
@@ -1817,21 +1937,21 @@
   ]
  },
  "lfkdsk/switch-appletv-port-skill": {
-  "pushed_at": "2026-10-16T02:50:18Z",
+  "pushed_at": "2026-10-16T08:04:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T02:50:15Z",
+    "last_commit": "2026-10-16T08:04:20Z",
     "subjects": [
+     "04-apple-tv: device evidence for the tvOS memory cap; release the AOT archive after warmup",
      "07-agent-workflow: time-offset notes match the implementation",
      "05-perf: describe the 30 Hz hold and hysteresis as implemented",
      "references: fold in later port learnings (encoder dedup, 30 Hz pacing, tvOS memory, HLE ABI, time travel, long-run leak)",
      "README: hero uses a 1080p capture from Apple TV hardware",
      "README: drop AI-generated caption (hero now uses a real capture)",
      "Scrub internal device name and genericize relay wording",
-     "README.md: rewrite in English with hero image, results showcase, and install guide",
-     "references/08-community.md: translate to English"
+     "README.md: rewrite in English with hero image, results showcase, and install guide"
     ]
    }
   ]
@@ -1858,30 +1978,30 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-16T04:36:42Z",
+  "pushed_at": "2026-10-16T05:04:40Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 16,
+    "ahead": 20,
     "behind": 1,
-    "files": 11,
-    "real_files": 11,
+    "files": 13,
+    "real_files": 13,
     "dirs": [
      "dm/gfx",
      "dm/host",
      "dm/i18n",
      "dm/ios"
     ],
-    "last_commit": "2026-10-16T04:36:40Z",
+    "last_commit": "2026-10-16T05:04:38Z",
     "subjects": [
+     "Widen the skill tree tab labels at run time, inside an existing pump (no new top-level function)",
+     "Hoist the hs table above the sticky hover branch: it was declared below it, so hs was undeclared there",
+     "Keep the tooltip after a single tap",
+     "Play the cutscenes: open the movie, read its real duration, and show it in a WKWebView",
      "Revert the run-time skill tree tab widening: it broke the host compile with an unrelated-looking error",
      "Widen the skill tree tab labels at run time so six-character names fit",
      "Skill tree tabs widened so six-character names fit",
-     "Mercenary portraits scale, the name text keeps its original size",
-     "Fix round 8's broken line: the trailing comment swallowed the closing brace of the enclosing if",
-     "Stop overwriting the voice language, fix the tab highlight order, and make page flips direct-ish",
-     "Register the modified mercenary layout as touch-only (fixes the overlay consistency check)",
-     "Fix HDR shader defines, the cached-projection zoom, and the mercenary health bar"
+     "Mercenary portraits scale, the name text keeps its original size"
     ]
    }
   ]
@@ -1964,6 +2084,649 @@
      "PROBE_ENV: log the WONDER_* diagnostics the app received",
      "WONDER_SUBMIT_SYNC: diagnostic GPU wait after every queue submit",
      "GPU textures identified by storage (pool, offset, layout), not by texture object"
+    ]
+   }
+  ]
+ },
+ "Tiaoge-tou/d2r-mobile": {
+  "pushed_at": "2026-10-16T11:26:37Z",
+  "branches": [
+   {
+    "branch": "hdr-debug-slice",
+    "ahead": 5,
+    "behind": 0,
+    "files": 4,
+    "real_files": 4,
+    "dirs": [
+     "dm/gfx",
+     "dm/ios",
+     "hdr-debug-slice.patch"
+    ],
+    "last_commit": "2026-10-16T10:48:50Z",
+    "subjects": [
+     "Revert msl_retarget.sh to v1.0.17 to match prepared package generation inputs (HDR debug slice)",
+     "Add files via upload",
+     "Add files via upload",
+     "Update HDR debug patch to 2-file version (file-based toggle)",
+     "Add HDR debug vertical slice patch file"
+    ]
+   },
+   {
+    "branch": "hdr-debug-v15",
+    "ahead": 2,
+    "behind": 5,
+    "files": 2,
+    "real_files": 2,
+    "dirs": [
+     "dm/gfx",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-16T11:26:37Z",
+    "subjects": [
+     "Add files via upload",
+     "Add files via upload"
+    ]
+   },
+   {
+    "branch": "main",
+    "ahead": 1,
+    "behind": 0,
+    "files": 1,
+    "real_files": 1,
+    "dirs": [
+     "front_ios.m"
+    ],
+    "last_commit": "2026-10-16T10:29:18Z",
+    "subjects": [
+     "Add files via upload"
+    ]
+   }
+  ]
+ },
+ "BossaMelon/d2r-mobile": {
+  "pushed_at": "2026-10-16T09:30:23Z",
+  "branches": [
+   {
+    "branch": "codex/mac-mouse-latency",
+    "ahead": 1,
+    "behind": 0,
+    "files": 6,
+    "real_files": 6,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-16T09:29:44Z",
+    "subjects": [
+     "Make Mac world mouse clicks respond on press and smooth held movement"
+    ]
+   }
+  ]
+ },
+ "leixinggong/d2r-mobile": {
+  "pushed_at": "2026-10-16T06:50:20Z",
+  "branches": []
+ },
+ "SepheTT/d2r-mobile": {
+  "pushed_at": "2026-10-16T11:02:46Z",
+  "branches": [
+   {
+    "branch": "feat/registered-addon-mounts",
+    "ahead": 1,
+    "behind": 0,
+    "files": 6,
+    "real_files": 6,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-16T11:02:43Z",
+    "subjects": [
+     "feat(host): support explicitly registered read-only add-on mounts"
+    ]
+   },
+   {
+    "branch": "fix/elf-undefined-weak-imports",
+    "ahead": 2,
+    "behind": 0,
+    "files": 4,
+    "real_files": 4,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-16T10:54:17Z",
+    "subjects": [
+     "test(loader): document synthetic cases in both languages",
+     "fix(loader): preserve null unresolved weak imports"
+    ]
+   },
+   {
+    "branch": "fix/legacy-save-commit",
+    "ahead": 1,
+    "behind": 0,
+    "files": 3,
+    "real_files": 3,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-16T10:57:37Z",
+    "subjects": [
+     "fix(fs): route legacy CommitSaveData through transactional commit"
+    ]
+   },
+   {
+    "branch": "fix/nvn-copy-image-stride",
+    "ahead": 1,
+    "behind": 0,
+    "files": 6,
+    "real_files": 6,
+    "dirs": [
+     "dm/gfx"
+    ],
+    "last_commit": "2026-10-16T10:59:38Z",
+    "subjects": [
+     "fix(nvn): record image stride and validate buffer texture copy pitches"
+    ]
+   }
+  ]
+ },
+ "fyn1320068837-source/d2r-mobile": {
+  "pushed_at": "2026-10-16T08:44:05Z",
+  "branches": [
+   {
+    "branch": "codex/ios18-save-sync",
+    "ahead": 1,
+    "behind": 33,
+    "files": 166,
+    "real_files": 146,
+    "dirs": [
+     ".agents/skills",
+     ".claude/skills",
+     "dm/.gitignore",
+     "dm/PRODUCT",
+     "dm/README.md",
+     "dm/README.zh-CN.md",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-16T08:43:49Z",
+    "subjects": [
+     "Sync upstream iOS 18 and save fixes with existing distribution profile"
+    ]
+   }
+  ]
+ },
+ "g60452/d2r-mobile": {
+  "pushed_at": "2026-10-16T08:50:38Z",
+  "branches": []
+ },
+ "RaibowSky/d2r-mobile": {
+  "pushed_at": "2026-10-16T09:48:43Z",
+  "branches": [
+   {
+    "branch": "android-port",
+    "ahead": 26,
+    "behind": 1,
+    "files": 300,
+    "real_files": 287,
+    "dirs": [
+     ".gitattributes",
+     ".githooks/pre-push",
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/third_party",
+     "dm/tools",
+     "ports/rhythm-android"
+    ],
+    "last_commit": "2026-10-16T09:09:51Z",
+    "subjects": [
+     "Merge pull request #5 from RaibowSky/cursor/neutral-android-labels-d653",
+     "Use a neutral Android launcher label.",
+     "Default Android packages to non-debuggable Rhythm Heaven shells",
+     "Batch staged blob inspection for publication checks",
+     "Merge branch 'main' into android-port",
+     "Harden publication checks and sanitize workstation metadata",
+     "Credit upstream iOS and Android compatibility authors",
+     "Credit upstream iOS and Android compatibility authors"
+    ]
+   },
+   {
+    "branch": "codex/android-measured-optimizations",
+    "ahead": 10,
+    "behind": 1,
+    "files": 123,
+    "real_files": 113,
+    "dirs": [
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-15T19:58:25Z",
+    "subjects": [
+     "Add Android Vulkan runtime controls and measured game A/B records",
+     "Optimize Vulkan attachment clears and proven dead stores on Android",
+     "Move Android NVN translation to an ordered worker with fence-safe waits",
+     "Merge upstream v1.0.17 while preserving Android host and Vulkan backend",
+     "feat(android): add FPS display, aspect fit and optional 60 FPS pacing",
+     "docs: describe experimental Android support in both READMEs",
+     "fix(android): preserve submission context in Vulkan profiling",
+     "perf(android): per-mip image layouts, 2-way shader control cache, gated hot-path timers"
+    ]
+   },
+   {
+    "branch": "cursor/neutral-android-labels-d653",
+    "ahead": 25,
+    "behind": 1,
+    "files": 300,
+    "real_files": 287,
+    "dirs": [
+     ".gitattributes",
+     ".githooks/pre-push",
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/third_party",
+     "dm/tools",
+     "ports/rhythm-android"
+    ],
+    "last_commit": "2026-10-16T09:00:47Z",
+    "subjects": [
+     "Use a neutral Android launcher label.",
+     "Default Android packages to non-debuggable Rhythm Heaven shells",
+     "Batch staged blob inspection for publication checks",
+     "Merge branch 'main' into android-port",
+     "Harden publication checks and sanitize workstation metadata",
+     "Credit upstream iOS and Android compatibility authors",
+     "Credit upstream iOS and Android compatibility authors",
+     "Remove workstation paths from Android port documentation"
+    ]
+   },
+   {
+    "branch": "cursor/neutral-ipad-labels-d653",
+    "ahead": 26,
+    "behind": 1,
+    "files": 247,
+    "real_files": 234,
+    "dirs": [
+     ".gitattributes",
+     ".githooks/pre-push",
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/third_party",
+     "dm/tools",
+     "ports/rhythm-ipad",
+     "tools/audit_public_source.py"
+    ],
+    "last_commit": "2026-10-16T09:01:25Z",
+    "subjects": [
+     "Use a neutral iPad display name.",
+     "Fix iPad frame pacing deadlines to use the host clock",
+     "Exclude local iPad game, signing and build outputs",
+     "Merge branch 'main' into ipad-port",
+     "Batch staged blob inspection for publication checks",
+     "Harden publication checks and sanitize workstation metadata",
+     "Handle guest RELRO boundaries on iPad host pages",
+     "Fix iPad startup with directly linked MoltenVK"
+    ]
+   },
+   {
+    "branch": "cursor/neutral-project-readme-d653",
+    "ahead": 15,
+    "behind": 1,
+    "files": 132,
+    "real_files": 120,
+    "dirs": [
+     ".gitattributes",
+     ".githooks/pre-push",
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/third_party",
+     "dm/tools",
+     "tools/audit_public_source.py",
+     "tools/install_audit_hook.py"
+    ],
+    "last_commit": "2026-10-16T08:59:46Z",
+    "subjects": [
+     "Use neutral titles in the project READMEs.",
+     "Batch staged blob inspection for publication checks",
+     "Harden publication checks and sanitize workstation metadata",
+     "Credit upstream iOS and Android compatibility authors",
+     "Present Rhythm Heaven ports and add publication safeguards",
+     "Add Android Vulkan runtime controls and measured game A/B records",
+     "Optimize Vulkan attachment clears and proven dead stores on Android",
+     "Move Android NVN translation to an ordered worker with fence-safe waits"
+    ]
+   },
+   {
+    "branch": "cursor/update-android-display-name-5ee8",
+    "ahead": 25,
+    "behind": 1,
+    "files": 300,
+    "real_files": 287,
+    "dirs": [
+     ".gitattributes",
+     ".githooks/pre-push",
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/third_party",
+     "dm/tools",
+     "ports/rhythm-android"
+    ],
+    "last_commit": "2026-10-16T09:01:32Z",
+    "subjects": [
+     "Update app display name",
+     "Default Android packages to non-debuggable Rhythm Heaven shells",
+     "Batch staged blob inspection for publication checks",
+     "Merge branch 'main' into android-port",
+     "Harden publication checks and sanitize workstation metadata",
+     "Credit upstream iOS and Android compatibility authors",
+     "Credit upstream iOS and Android compatibility authors",
+     "Remove workstation paths from Android port documentation"
+    ]
+   },
+   {
+    "branch": "cursor/update-ipad-display-name-5ee8",
+    "ahead": 26,
+    "behind": 1,
+    "files": 247,
+    "real_files": 234,
+    "dirs": [
+     ".gitattributes",
+     ".githooks/pre-push",
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/third_party",
+     "dm/tools",
+     "ports/rhythm-ipad",
+     "tools/audit_public_source.py"
+    ],
+    "last_commit": "2026-10-16T09:01:32Z",
+    "subjects": [
+     "Update app display name",
+     "Fix iPad frame pacing deadlines to use the host clock",
+     "Exclude local iPad game, signing and build outputs",
+     "Merge branch 'main' into ipad-port",
+     "Batch staged blob inspection for publication checks",
+     "Harden publication checks and sanitize workstation metadata",
+     "Handle guest RELRO boundaries on iPad host pages",
+     "Fix iPad startup with directly linked MoltenVK"
+    ]
+   },
+   {
+    "branch": "cursor/update-readme-wording-5ee8",
+    "ahead": 15,
+    "behind": 1,
+    "files": 132,
+    "real_files": 120,
+    "dirs": [
+     ".gitattributes",
+     ".githooks/pre-push",
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/third_party",
+     "dm/tools",
+     "tools/audit_public_source.py",
+     "tools/install_audit_hook.py"
+    ],
+    "last_commit": "2026-10-16T08:58:27Z",
+    "subjects": [
+     "Update README wording",
+     "Batch staged blob inspection for publication checks",
+     "Harden publication checks and sanitize workstation metadata",
+     "Credit upstream iOS and Android compatibility authors",
+     "Present Rhythm Heaven ports and add publication safeguards",
+     "Add Android Vulkan runtime controls and measured game A/B records",
+     "Optimize Vulkan attachment clears and proven dead stores on Android",
+     "Move Android NVN translation to an ordered worker with fence-safe waits"
+    ]
+   },
+   {
+    "branch": "ipad-port",
+    "ahead": 30,
+    "behind": 1,
+    "files": 250,
+    "real_files": 237,
+    "dirs": [
+     ".gitattributes",
+     ".githooks/pre-push",
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/third_party",
+     "dm/tools",
+     "ports/rhythm-ipad",
+     "tools/audit_public_source.py"
+    ],
+    "last_commit": "2026-10-16T09:21:51Z",
+    "subjects": [
+     "Grow iPad Vulkan pool bookkeeping beyond scene transition limits",
+     "Merge pull request #4 from RaibowSky/cursor/neutral-ipad-labels-d653",
+     "Use a physical Darwin temporary path for save regression fixtures",
+     "Use a neutral iPad display name.",
+     "Handle Darwin missing save attributes without readonly fallback",
+     "Fix iPad frame pacing deadlines to use the host clock",
+     "Exclude local iPad game, signing and build outputs",
+     "Merge branch 'main' into ipad-port"
+    ]
+   },
+   {
+    "branch": "main",
+    "ahead": 16,
+    "behind": 1,
+    "files": 132,
+    "real_files": 120,
+    "dirs": [
+     ".gitattributes",
+     ".githooks/pre-push",
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/third_party",
+     "dm/tools",
+     "tools/audit_public_source.py",
+     "tools/install_audit_hook.py"
+    ],
+    "last_commit": "2026-10-16T09:10:00Z",
+    "subjects": [
+     "Merge pull request #6 from RaibowSky/cursor/neutral-project-readme-d653",
+     "Use neutral titles in the project READMEs.",
+     "Batch staged blob inspection for publication checks",
+     "Harden publication checks and sanitize workstation metadata",
+     "Credit upstream iOS and Android compatibility authors",
+     "Present Rhythm Heaven ports and add publication safeguards",
+     "Add Android Vulkan runtime controls and measured game A/B records",
+     "Optimize Vulkan attachment clears and proven dead stores on Android"
+    ]
+   }
+  ]
+ },
+ "t520tx/-d2r-mobile": {
+  "pushed_at": "2026-10-16T11:10:26Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T11:02:39Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "Tiaoge-tou/-d2r-mobile-build": {
+  "pushed_at": "2026-10-16T10:57:04Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T10:57:03Z",
+    "subjects": [
+     "Ignore pure file-mode changes in generation-input check (web UI uploads strip +x)",
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "wdjwxh/D2R-Mobile-Android": {
+  "pushed_at": "2026-10-16T11:30:07Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T11:30:04Z",
+    "subjects": [
+     "Add device Vulkan preparation and installable Android preview",
+     "Initial Android Vulkan port with source-only build and resource documentation"
+    ]
+   }
+  ]
+ },
+ "ha7rock/blade2-mobile": {
+  "pushed_at": "2026-10-16T08:24:56Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T07:59:29Z",
+    "subjects": [
+     "Publishing hygiene: LICENSE (MIT, d2r-mobile notice retained), README copyright and acknowledgements section (bring your own game; no keys / assets / shaders / rewrite outputs published), .gitignore for every game-derived artifact class, stray merge leftover removed",
+     "Present pacing follows the refresh rate of the screen the window is on (integer-fraction tier, ported from upstream d2r-mobile 44a6770): the game window was on a 30 Hz TV, where fixed-60 pacing shows each frame half a refresh and the system rounds to two → 33 ms frames, every frame counted dropped, perceived as flicker; front_mac.m reports the screen and re-reads on screen change",
+     "shaders: iterate with the movie YUV->RGB conversion shaders (vs 85f721d0fe44a1e9, ps 2bf5fc9ac9cc0814 / b0aa1e941f09982a); chain ea9c3b90985d",
+     "patch_nso: revert the three Blade movie cuts (player Tick ret, Stop nop in close, close track walk) now that the movie protocol is implemented",
+     "hle_movie: real movie:: playback for the generic host (Blade / UE4 SwitchMediaPlayer): Extractor = AVFoundation sample cursor (time-interleaved tokens, SeekTo for loops), Decoder = token -> NV12 / PCM16 via a guest worker thread with hardware-like back pressure, MediaData = host dictionary; protocol reversed into the file header; D2R empty playback kept under !DM_GENERIC_HOST; hle_blade.c MediaData placeholders removed",
+     "movie_av: AVFoundation demux / decode for cutscene mp4 (sample table scan, NV12 / PCM16 output); dm_fs_host_path for host-side opens of rom: paths",
+     "Mac app: present via the self-driven drawable path by default (DM_PRESENT_LINK=0); the display-link callback stalls for whole seconds under other system load and the stall fallbacks are the flicker the player saw — same build, same session A/B: near zero flicker on the self-driven path",
+     "mac_app_blade.sh: brace ${APP} before the full-width parenthesis (a C-locale shell parsed the UTF-8 bytes into the variable name and failed under set -u)"
+    ]
+   }
+  ]
+ },
+ "635052583-lab/-": {
+  "pushed_at": "2026-10-16T11:18:28Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T11:18:27Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "j9jwd562cr-sudo/jhaizhou-ops": {
+  "pushed_at": "2026-10-16T10:45:37Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T10:45:37Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "Ti800/d2r": {
+  "pushed_at": "2026-10-16T10:45:38Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T10:38:15Z",
+    "subjects": [
+     "Build new upstream releases automatically and publish an AltStore source",
+     "Pre-sign Guest.framework so zsign-based signers can sign the IPA",
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "stcliq/d2r-sean": {
+  "pushed_at": "2026-10-16T09:41:40Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T09:41:38Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "xiaoyu0906/swh-ios": {
+  "pushed_at": "2026-10-16T06:46:12Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T06:46:10Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "Gordon0923/D2r": {
+  "pushed_at": "2026-10-16T05:47:26Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T05:37:53Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "humfz2000-ai/-2": {
+  "pushed_at": "2026-10-16T07:33:59Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-16T07:33:59Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "adrian-chia/nsw2mobile": {
+  "pushed_at": "2026-10-16T05:52:51Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": true,
+    "last_commit": "2026-10-15T17:43:56Z",
+    "subjects": [
+     "Mac shader retarget: copy reflection JSON by directory and verify every library has one (fixes solid pink-purple screen in CI-built Mac apps, #60)",
+     "v1.0.17: personal stash and iCloud merge hotfix (no loss or duplication when killed at any moment)",
+     "Rift density halved, audio-gap and volume-key fixes, Mac and renderer fixes",
+     "README: list Apple TV 4K (community port, developer preview) in the platforms line and intro",
+     "Apple TV (tvOS) community port as a separate DmTV target; Rift and Mac fixes",
+     "v1.0.15: shell is now build input (.zip), launch self-check for incomplete packages and devices without Metal 3, graphics translation on its own thread, save with the pause menu open, wide-iPhone item tooltip and Chronicle rewards fixes",
+     "README: acknowledgements",
+     "NPC speech restored (explicit 5.1 to stereo downmix); graphics memory pools made resident only on first GPU use (about 0.5 GB less held); render targets written through a format-changing view attached with that format, sRGB swapchain presented through a non-sRGB view (#36); bloom / FXAA texture-slot rewrites mark bindings dirty; Mac App plays sound and fills 16:10 screens"
     ]
    }
   ]
