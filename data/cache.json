@@ -497,14 +497,14 @@
   "branches": []
  },
  "Seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-17T19:29:23Z",
+  "pushed_at": "2026-10-17T21:32:00Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 133,
+    "ahead": 139,
     "behind": 5,
-    "files": 144,
-    "real_files": 143,
+    "files": 146,
+    "real_files": 145,
     "dirs": [
      "NOTICE.md",
      "PORTABLE.md",
@@ -513,16 +513,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-10-17T19:17:40Z",
+    "last_commit": "2026-10-17T21:22:31Z",
     "subjects": [
+     "fix(ohos): 影子堆两个虚表槽语义修正 —— 分配成功，GameConfig 不再失败",
+     "feat(ohos): 影子「当前堆」——解锁真实初始化路径，卡点推进到「没有资源」",
+     "probe(ohos): 对照钩子确认 x22==0；查明 x22 是「当前堆」上下文",
+     "feat(ohos): 启动链全量追踪 + 定位「跳过后半段初始化」的 cbz x22",
+     "feat(ohos): 任务创建链探针（CreateTaskImmediate / 建后回填 / mgr[0x50]）——真凶是描述符全零",
+     "feat(ohos): NVN 按名字记账桩（523 个）——真机结论：NVN 不是瓶颈，卡在任务准备链",
      "fix(ohos): 互斥量改递归 + TLS 每线程影子 —— 图形初始化全线跑通，进主循环帧等待",
-     "feat(ohos): NVN 最小空设备 —— 图形设备初始化成功（nvnDeviceInitialize → 1）",
-     "fix(ohos): klog 换递归锁 —— 之前'日志停住'其实是故障处理器自锁；游戏已冲到图形初始化",
-     "feat(ohos): 真消息队列 —— Prepare Thread 不再忙等/读脏消息",
-     "docs(ohos): 探针页提示文案刷新 —— 反映当前主探针与历史探针的分工",
-     "fix(ohos): 回退 TLS 真槽 —— 保住 sead 分配器助手链路（真机 si_addr=0xb1）",
-     "feat(ohos): 真实线程落地（pthread）+ TLS 按线程 + 真互斥 + 探针按钮改名",
-     "feat(ohos): 钉子 #8 续修 —— flags 补 6 放行 runner + 销毁链探针（任务生命周期跑通）"
+     "feat(ohos): NVN 最小空设备 —— 图形设备初始化成功（nvnDeviceInitialize → 1）"
     ]
    }
   ]
@@ -1445,12 +1445,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-17T15:47:19Z",
+  "pushed_at": "2026-10-17T20:47:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T15:47:18Z",
+    "last_commit": "2026-10-17T20:46:59Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1505,21 +1505,21 @@
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-17T16:37:40Z",
+  "pushed_at": "2026-10-17T23:03:51Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T16:21:22Z",
+    "last_commit": "2026-10-17T23:03:47Z",
     "subjects": [
+     "Start 后黑屏 + 声音卡顿（v0.6.16）",
      "Start 后黑屏 + 无声：单条不支持的绘制不再丢整帧；混音不再被 /65536 归零（v0.6.15）",
      "撤掉退休表：CI 捕获闸门显示它把 macOS 渲染弄成全黑（v0.6.14）",
      "修 v0.6.12 的 iOS 检查：main.m 漏了 #include \"logsum.h\"（前一个脚本在写入前断言失败丢了这一行）",
      "黑屏定位（用日志摘要）：深度视图判失败 → 每遍渲染跳过；退休表 + 视图退回 + 音频诊断（v0.6.12）",
      "按 Start 后闪退：渲染附件缺失导致整帧提交失败 → 改为降级；音频加 DSP 后诊断（v0.6.6）",
      "Skip known NVN state gaps and trace audio input peaks",
-     "Handle texture zcull queries and stale render resources",
-     "Add host audio WAV validation before device testing"
+     "Handle texture zcull queries and stale render resources"
     ]
    }
   ]
@@ -1633,12 +1633,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-17T15:41:38Z",
+  "pushed_at": "2026-10-17T20:41:38Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T15:41:37Z",
+    "last_commit": "2026-10-17T20:41:37Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -3591,6 +3591,26 @@
      "Make the paused Taiko work reproducible for the next constructor",
      "Keep required original fatal exits bound through publication and loading",
      "Keep original atomic schedules moving through unchanged entry protections"
+    ]
+   }
+  ]
+ },
+ "ly05010419/MacNativeGames": {
+  "pushed_at": "2026-10-17T23:03:58Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-17T23:02:58Z",
+    "subjects": [
+     "Add collected TOTK shader prewarm manifest",
+     "feat: package TOTK 1.1.2 with a single Mac app entry",
+     "docs: announce upcoming iPhone and iPad support",
+     "docs: recommend AI assistants for Mac app builds",
+     "feat: support NSP input for macOS app builds",
+     "chore: keep runtime/frontend_ios.m in step with the development tree (iPad drawable size)",
+     "feat: build without .NET and cmake; the shader translator ships as a native program",
+     "feat: package Tears of the Kingdom into a native Mac app from the player's own card image and keys"
     ]
    }
   ]
