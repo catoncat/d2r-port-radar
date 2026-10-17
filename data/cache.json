@@ -347,14 +347,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-17T13:35:12Z",
+  "pushed_at": "2026-10-17T19:46:28Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 78,
+    "ahead": 88,
     "behind": 18,
-    "files": 157,
-    "real_files": 152,
+    "files": 162,
+    "real_files": 157,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -363,16 +363,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-17T13:34:55Z",
+    "last_commit": "2026-10-17T19:46:18Z",
     "subjects": [
-     "Route P5R display and layer lifetimes through host VI handles",
-     "Default the P5R shell to the cloud-executed Metal 3 draw backend",
-     "Support locally installed Windows Metal tools with verified diagnostic artifacts",
-     "Resolve P5R multisample color targets and synchronize remaining probe coverage",
-     "Preserve vertex effects in void-returning rasterizer discard variants",
-     "Exercise P5R production draw contracts through the Metal 4 backend",
-     "Map depth bounds to native Apple10 testing and fix synthetic vertex outputs",
-     "Execute rasterizer discard while preserving vertex shader work"
+     "Implement synchronized conditional rendering and preserve query totals",
+     "Validate NVN scratch reservations with Metal-managed shader private storage",
+     "Refresh capture-gate regression and bound copy failure diagnostics",
+     "Replay checked P5R default raster states without diagnostic capture",
+     "Enable bounded P5R multisample state setters on normal paths",
+     "Record complete local iOS Metal diagnostic compilation",
+     "Keep Metal compiler module cache inside diagnostic outputs",
+     "Cover same-format mirror dispatch and document selective nxnative reuse"
     ]
    },
    {
@@ -497,11 +497,11 @@
   "branches": []
  },
  "Seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-17T13:43:52Z",
+  "pushed_at": "2026-10-17T19:29:23Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 125,
+    "ahead": 133,
     "behind": 5,
     "files": 144,
     "real_files": 143,
@@ -513,16 +513,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-10-17T12:49:16Z",
+    "last_commit": "2026-10-17T19:17:40Z",
     "subjects": [
-     "feat(ohos): 数据导入补值 + #184 放行 —— 拆 GLOB_DAT 空槽地雷",
-     "feat(ohos): 钉子 #8 续修 —— G 激活前补推任务状态 1→2 + 日志治理",
-     "feat(ohos): 钉子 #8 影子补丁 + 同轮探针 —— 记录全零时补 {标签2, ControllerMgr 工厂}",
-     "Merge upstream/main：并入 5 条提交（含 weak imports 保留 NULL 修复）",
-     "feat(ohos): 钉子 #8 探针五钩子 —— 一轮真机定性类型分发崩链",
-     "feat(ohos): 模块静态初始化 + sead/外部运行时全局影子 —— nnMain 首次真正跑起来",
-     "fix(ohos): 替换式桩改 ret 修\"双执行\"，补 sead 查找链所需的服务与虚表槽",
-     "feat(ohos): 替换式插桩落地 —— 三个分配器由宿主真给内存（2720/256 字节均有记录）"
+     "fix(ohos): 互斥量改递归 + TLS 每线程影子 —— 图形初始化全线跑通，进主循环帧等待",
+     "feat(ohos): NVN 最小空设备 —— 图形设备初始化成功（nvnDeviceInitialize → 1）",
+     "fix(ohos): klog 换递归锁 —— 之前'日志停住'其实是故障处理器自锁；游戏已冲到图形初始化",
+     "feat(ohos): 真消息队列 —— Prepare Thread 不再忙等/读脏消息",
+     "docs(ohos): 探针页提示文案刷新 —— 反映当前主探针与历史探针的分工",
+     "fix(ohos): 回退 TLS 真槽 —— 保住 sead 分配器助手链路（真机 si_addr=0xb1）",
+     "feat(ohos): 真实线程落地（pthread）+ TLS 按线程 + 真互斥 + 探针按钮改名",
+     "feat(ohos): 钉子 #8 续修 —— flags 补 6 放行 runner + 销毁链探针（任务生命周期跑通）"
     ]
    }
   ]
@@ -693,26 +693,28 @@
   "branches": []
  },
  "hubeiqiao/d2r-mobile": {
-  "pushed_at": "2026-10-15T20:58:59Z",
+  "pushed_at": "2026-10-17T17:42:05Z",
   "branches": [
    {
     "branch": "codex/ipad-map-portal-tooltip",
-    "ahead": 1,
-    "behind": 5,
+    "ahead": 3,
+    "behind": 0,
     "files": 5,
     "real_files": 3,
     "dirs": [
      "dm/host"
     ],
-    "last_commit": "2026-10-15T03:04:21Z",
+    "last_commit": "2026-10-17T17:42:04Z",
     "subjects": [
+     "test(ui): cover tooltip panel and input-mode exclusions",
+     "fix(ui): dock previews beside the item and preserve vertical anchors",
      "fix(ui): preserve native item tooltip anchors by default"
     ]
    },
    {
     "branch": "codex/map-portal-diagnostics",
     "ahead": 1,
-    "behind": 5,
+    "behind": 15,
     "files": 9,
     "real_files": 7,
     "dirs": [
@@ -726,7 +728,7 @@
    {
     "branch": "codex/minimap-act-travel",
     "ahead": 1,
-    "behind": 0,
+    "behind": 10,
     "files": 7,
     "real_files": 5,
     "dirs": [
@@ -740,7 +742,7 @@
    {
     "branch": "codex/pet-life-diagnostics",
     "ahead": 1,
-    "behind": 18,
+    "behind": 28,
     "files": 5,
     "real_files": 3,
     "dirs": [
@@ -752,9 +754,23 @@
     ]
    },
    {
+    "branch": "codex/potion-code-allowlist",
+    "ahead": 1,
+    "behind": 0,
+    "files": 5,
+    "real_files": 3,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-17T17:40:10Z",
+    "subjects": [
+     "fix(pickup): explicitly allow only healing mana and rejuvenation potion codes"
+    ]
+   },
+   {
     "branch": "codex/promo-video-readme",
     "ahead": 4,
-    "behind": 16,
+    "behind": 26,
     "files": 2,
     "real_files": 0,
     "dirs": [],
@@ -769,7 +785,7 @@
    {
     "branch": "codex/readable-idle-skills",
     "ahead": 1,
-    "behind": 38,
+    "behind": 48,
     "files": 1,
     "real_files": 1,
     "dirs": [
@@ -783,7 +799,7 @@
    {
     "branch": "codex/rift-encounter-profiles",
     "ahead": 2,
-    "behind": 18,
+    "behind": 28,
     "files": 10,
     "real_files": 6,
     "dirs": [
@@ -799,7 +815,7 @@
    {
     "branch": "codex/rift-endgame-integration",
     "ahead": 8,
-    "behind": 17,
+    "behind": 27,
     "files": 37,
     "real_files": 31,
     "dirs": [
@@ -822,7 +838,7 @@
    {
     "branch": "codex/rift-guardian-town",
     "ahead": 1,
-    "behind": 5,
+    "behind": 15,
     "files": 5,
     "real_files": 3,
     "dirs": [
@@ -836,7 +852,7 @@
    {
     "branch": "codex/rift-hud-tier-cap",
     "ahead": 1,
-    "behind": 18,
+    "behind": 28,
     "files": 5,
     "real_files": 5,
     "dirs": [
@@ -851,7 +867,7 @@
    {
     "branch": "codex/rift-overtime-ui",
     "ahead": 1,
-    "behind": 16,
+    "behind": 26,
     "files": 13,
     "real_files": 13,
     "dirs": [
@@ -867,7 +883,7 @@
    {
     "branch": "codex/rift-safe-completion",
     "ahead": 1,
-    "behind": 18,
+    "behind": 28,
     "files": 9,
     "real_files": 9,
     "dirs": [
@@ -883,7 +899,7 @@
    {
     "branch": "codex/rift-suspend-clock",
     "ahead": 1,
-    "behind": 38,
+    "behind": 48,
     "files": 3,
     "real_files": 3,
     "dirs": [
@@ -897,7 +913,7 @@
    {
     "branch": "codex/setup-bash32-braces",
     "ahead": 1,
-    "behind": 39,
+    "behind": 49,
     "files": 1,
     "real_files": 1,
     "dirs": [
@@ -906,6 +922,36 @@
     "last_commit": "2026-10-12T16:44:54Z",
     "subjects": [
      "修复 setup 在 Bash 3.2 下的全角标点变量解析"
+    ]
+   },
+   {
+    "branch": "codex/touch-close-pickup",
+    "ahead": 1,
+    "behind": 0,
+    "files": 5,
+    "real_files": 3,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-17T17:38:21Z",
+    "subjects": [
+     "fix(touch): extend close X snap targets without enlarging other controls"
+    ]
+   },
+   {
+    "branch": "codex/update-service-failure",
+    "ahead": 1,
+    "behind": 0,
+    "files": 11,
+    "real_files": 9,
+    "dirs": [
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-17T16:39:23Z",
+    "subjects": [
+     "fix(update): classify service outages and reject failed render directives"
     ]
    }
   ]
@@ -1399,12 +1445,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-17T10:58:20Z",
+  "pushed_at": "2026-10-17T15:47:19Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T10:58:19Z",
+    "last_commit": "2026-10-17T15:47:18Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1459,41 +1505,41 @@
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-17T13:38:43Z",
+  "pushed_at": "2026-10-17T16:37:40Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T13:38:34Z",
+    "last_commit": "2026-10-17T16:21:22Z",
     "subjects": [
+     "Start 后黑屏 + 无声：单条不支持的绘制不再丢整帧；混音不再被 /65536 归零（v0.6.15）",
      "撤掉退休表：CI 捕获闸门显示它把 macOS 渲染弄成全黑（v0.6.14）",
      "修 v0.6.12 的 iOS 检查：main.m 漏了 #include \"logsum.h\"（前一个脚本在写入前断言失败丢了这一行）",
      "黑屏定位（用日志摘要）：深度视图判失败 → 每遍渲染跳过；退休表 + 视图退回 + 音频诊断（v0.6.12）",
      "按 Start 后闪退：渲染附件缺失导致整帧提交失败 → 改为降级；音频加 DSP 后诊断（v0.6.6）",
      "Skip known NVN state gaps and trace audio input peaks",
      "Handle texture zcull queries and stale render resources",
-     "Add host audio WAV validation before device testing",
-     "Automate render capture validation before packaging"
+     "Add host audio WAV validation before device testing"
     ]
    }
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-17T15:27:35Z",
+  "pushed_at": "2026-10-17T18:45:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T15:27:32Z",
+    "last_commit": "2026-10-17T18:45:47Z",
     "subjects": [
+     "No-BC GPUs: Breath of the Wild no longer aborts at start (GitHub issue #4)",
+     "README: touch-layout diagram removed (both languages)",
+     "Link's Awakening playable on iPhone; Super Mario Odyssey port started (boots to its frame loop on the Mac)",
+     "Vertex outputs start at the hardware's (0, 0, 0, 1): Link's Awakening's outdoor sunlight fixed; IPA version is the game's display version",
+     "Depth mode per game at run time: Link's Awakening's outdoor blur fixed; README screenshots of Engage, 13 Sentinels and Link's Awakening",
      "Link's Awakening: physics crash at the switch to 30 fps fixed; README screenshots recaptured on the Mac",
      "README screenshots of every game; NSP script packs unknown games with a provisional profile; Link's Awakening stencil copy and outdoor shaders",
-     "Link's Awakening: game sound, doorway lighting tiles and missing foliage fixed",
-     "BotW: cream cloud boxes behind HUD prompts fixed (layout captures read alpha from red in all 26 layout shaders); work folders move to the NSP folder",
-     "Zelda Link's Awakening runs on the Mac (profile 01006BB00C6F0000, 1.1.0, SDK 8); BotW HUD prompt boxes fixed",
-     "SM3DW magenta blocks fixed (same-pass feedback snapshot); English default language; English-only comments, bilingual README",
-     "README: the notes column names only the 60 fps upgrades",
-     "README: acknowledgements come right after the intro; the games table gets a notes column (60 fps upgrades, DLC, touch layout)"
+     "Link's Awakening: game sound, doorway lighting tiles and missing foliage fixed"
     ]
    }
   ]
@@ -1559,12 +1605,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-17T15:33:09Z",
+  "pushed_at": "2026-10-17T20:35:39Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T15:33:08Z",
+    "last_commit": "2026-10-17T20:35:38Z",
     "subjects": [
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
@@ -1573,7 +1619,7 @@
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
-     "chore: 自动同步 Star 地图（182 个项目）"
+     "chore: 自动同步 Star 地图（184 个项目）"
     ]
    }
   ]
@@ -1587,12 +1633,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-17T10:52:42Z",
+  "pushed_at": "2026-10-17T15:41:38Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T10:52:41Z",
+    "last_commit": "2026-10-17T15:41:37Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -1601,7 +1647,7 @@
      "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache",
-     "Port knowledge base: SPEC v0.1, atlas.py (validate/build), agent API + llms.txt + MCP, Triangle Strategy as first dataset"
+     "data: refresh cache"
     ]
    }
   ]
@@ -1821,11 +1867,11 @@
   ]
  },
  "vickwv/d2r-mobile": {
-  "pushed_at": "2026-10-17T15:20:08Z",
+  "pushed_at": "2026-10-17T16:13:36Z",
   "branches": [
    {
     "branch": "android-integration",
-    "ahead": 77,
+    "ahead": 78,
     "behind": 10,
     "files": 124,
     "real_files": 116,
@@ -1838,16 +1884,16 @@
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-10-17T15:20:04Z",
+    "last_commit": "2026-10-17T16:13:32Z",
     "subjects": [
+     "建角流程走通 + 地图默认显示 + 技能绑定/加点接到操作界面",
      "触屏：设置读数落盘（diagnostics/settings_automap.txt）+ 掩码注释更新",
      "触屏：回城钮（技能弧上方圆钮，宿主免费回城）、地图块按玩家档位切、小地图默认开（AutomapAutoOpen）",
      "docs(android): §6 记 P8 逐页验收——每拍入口接线（hud_tick 尾部那批挪进 hud_read_android）与已验的页面（个人仓库翻页/编年史整页），珍宝匣页签位置、秘境需终局角色、符文之语/积分牌入口待查",
      "feat(android): P8 每拍入口接线——diag.c 的 hud_tick 尾部那批 P8 模块的服务端拍入口在安卓没人调（diag.c 整体不编），挪进 hud_read_android.c：免费回城 server_step / 极乐世界 stash_step / dm_townwp_tick（新增编入，进局落城镇小站旁）/ 首领连战 tick / 秘境 tick / 个人仓库 dm_pages_tick（翻页请求在这一拍消费）/ 编年史 dm_vault_tick / 自动增益 srv_tick / 百宝囊 srv_tick / 当前武器组 publish（换组角标 Ⅱ）。真机验证：储物箱 PERSON/SHARED/VAULT 三页签 + PAGE 1/5，右箭头翻页 '第 1 → 2 页…请游戏存盘' 且页码写成 2/5、连翻被「等落盘」正确挡住；点 VAULT 页签 'BankTabs 第 0 → 第 5 个' 进第六页，编年史界面整页出来（UNIQUE/SETS + 部位分类 + 38 格筛选 + PAGE 1/4），空仓库按「侧文件还没有」处理",
      "docs(android): §6 遗留 1（确认框点不到）标记已修，记三处根因与修法",
      "fix(android): 三处真机死锁/点不动——① 宿主替按的键没并进取手柄的值：iOS 在 hle_hid.c fill() 里每读一次并 dm_ui_auto_buttons()/减 dm_ui_auto_release()，安卓分支没有，input_backend.c 取手柄处照同一口径补（设置页点 X 后 dm_cursor 按的返回键到不了游戏 → 确认框不出、面板关不掉）；② 模态框判定必须在「设置页盖着的暂停菜单按钮（不点）」之前：确认框的 Apply/Discard 正好落在暂停菜单按钮位置上，先判盖着会把这两颗按成不点（真机：Apply/Discard 没反应）——改共享文件 dm_cursor.c 的 ui_classify 顺序（modal_in 标记），冲突面 +1 的原因见本条；③ 瞄准泵自锁死（ANR 实锤栈：dm_android_input_read_npad 持 input_lock → dm_aim_cone_pump → dm_input_sampled_right 再拿同一把非递归锁）：右摇杆采样值改无锁原子快照。真机验证：Options→改设置→X→确认框弹出→Discard 关掉并丢弃；暂停菜单 X 关面板；瞄准拖动不再 ANR",
-     "docs(android): 对齐方案文档 §6 续记 P2 尾/P3/P4/P5/P7/P8 两批的实测结果与遗留清单（确认框命中顺序、前端建角入口、P8 各页逐个验收、面板滚动拖、面板栈收敛）",
-     "feat(android): P8 第二批——个人仓库多页(dm_pages) 编年史仓库(dm_vault+dm_vault_ui) 符文之语清单(dm_runeword+rwlv_core) 百宝囊(dm_pouch) 文字框颜色码(dm_textbox+textbox_core) 编入；新增 tools/gen_headers.sh 从玩家游戏文件生成 dm_hud_exp.h / dm_vault_tab.h（build/generated，build_modules.sh 自动跑）。真机：无 FATAL，设置页 Audio/Gameplay/Settings/Custom 四页与 Apply/Default/Discard 正常，确认框能开能关"
+     "docs(android): 对齐方案文档 §6 续记 P2 尾/P3/P4/P5/P7/P8 两批的实测结果与遗留清单（确认框命中顺序、前端建角入口、P8 各页逐个验收、面板滚动拖、面板栈收敛）"
     ]
    }
   ]
@@ -2782,7 +2828,7 @@
   ]
  },
  "Ti800/d2r": {
-  "pushed_at": "2026-10-16T10:45:38Z",
+  "pushed_at": "2026-10-17T15:49:23Z",
   "branches": [
    {
     "branch": "main",
@@ -3291,14 +3337,14 @@
   ]
  },
  "tizee/d2r-mobile": {
-  "pushed_at": "2026-10-17T12:06:47Z",
+  "pushed_at": "2026-10-17T17:27:33Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 2,
-    "behind": 2,
-    "files": 33,
-    "real_files": 33,
+    "ahead": 6,
+    "behind": 0,
+    "files": 36,
+    "real_files": 36,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -3310,8 +3356,12 @@
      "plan_stash_sort.md",
      "plan_virtual_pad.md"
     ],
-    "last_commit": "2026-10-17T12:06:04Z",
+    "last_commit": "2026-10-17T17:27:28Z",
     "subjects": [
+     "Shader chain: commit this machine's tool lock, fail fast in dev_ipa.sh",
+     "Touch controls: panel A/B keys and adjust panel use the new socket art",
+     "Merge remote-tracking branch 'upstream/main'",
+     "Merge tag 'v1.0.18'",
      "Add design plans for the current work",
      "Panel keys, graphics presets, faster dev builds, drop rates"
     ]
@@ -3404,6 +3454,143 @@
     "subjects": [
      "Make regression fixtures portable to native Windows locale and environment",
      "Initial local-only Windows preparation assistant"
+    ]
+   }
+  ]
+ },
+ "pericn/d2r-mobile": {
+  "pushed_at": "2026-10-17T17:16:27Z",
+  "branches": [
+   {
+    "branch": "fix/ios-global-quick-actions",
+    "ahead": 1,
+    "behind": 0,
+    "files": 3,
+    "real_files": 3,
+    "dirs": [
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-17T17:16:05Z",
+    "subjects": [
+     "fix(ios): preserve global actions in touch skill bindings"
+    ]
+   }
+  ]
+ },
+ "1050076/d2r-mobile": {
+  "pushed_at": "2026-10-17T17:06:04Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 1,
+    "behind": 0,
+    "files": 4,
+    "real_files": 1,
+    "dirs": [
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-17T17:05:56Z",
+    "subjects": [
+     "Add TestFlight release pipeline (official scripts, big-disk runner)"
+    ]
+   }
+  ]
+ },
+ "small-coder-2026/d2r-mobile": {
+  "pushed_at": "2026-10-17T16:34:59Z",
+  "branches": []
+ },
+ "akari-sora/d2r-mobile": {
+  "pushed_at": "2026-10-17T18:16:00Z",
+  "branches": [
+   {
+    "branch": "android/phase0-diagnostics",
+    "mirror": false,
+    "last_commit": "2026-10-17T18:06:49Z",
+    "subjects": [
+     "feat(android): adopt 0x1536e8 live checkpoint and remove github workflows",
+     "Make the paused Android port directly resumable by the next owner",
+     "Preserve real instruction regressions before changing the loader again",
+     "Preserve the guarded Android importer at the handoff checkpoint",
+     "Preserve the verified Android source identity foundation for handoff",
+     "Establish measured Android execution gates before porting the game runtime",
+     "README: use the English Trove screenshot",
+     "State the required game edition: Reign of the Warlock expansion"
+    ]
+   }
+  ]
+ },
+ "ashappyasdog/d2r-mobile-res": {
+  "pushed_at": "2026-10-17T16:10:48Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-17T16:09:05Z",
+    "subjects": [
+     "Create mirror-legacy.yml",
+     "Create mirror-release.yml"
+    ]
+   }
+  ]
+ },
+ "ashappyasdog/d2r-mobile-build": {
+  "pushed_at": "2026-10-17T13:54:53Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-17T13:46:45Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "goldeye0351/d-d-2": {
+  "pushed_at": "2026-10-17T17:34:00Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-17T17:13:30Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "enginefuture/dr3-mobile": {
+  "pushed_at": "2026-10-17T20:11:57Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-17T20:11:52Z",
+    "subjects": [
+     "Reconstruct pinned headers before Linux graphics guard tests",
+     "Document Python 3.12 minimum required by pinned NumPy",
+     "Publish DR3 Mobile source preview with bring-your-own-game policy"
+    ]
+   }
+  ]
+ },
+ "akari-sora/taiko-android": {
+  "pushed_at": "2026-10-17T20:26:39Z",
+  "branches": [
+   {
+    "branch": "codex/taiko-android",
+    "mirror": false,
+    "last_commit": "2026-10-17T20:26:35Z",
+    "subjects": [
+     "android: enforce TaikoBuildPins schema 2 and DMAMOD03 guest contract verification",
+     "fix(android): use combined relocation_index coordinate space and allow empty v3 modules in v3 graphs",
+     "feat(android): implement Taiko DMAMOD03 selector/emitter and live runtime dispatch",
+     "feat(verify): add standalone Android AArch64 synthetic loader harness",
+     "feat(android): adopt DMAMOD03 v3 guest contract foundation and remove github workflows",
+     "Make the paused Taiko work reproducible for the next constructor",
+     "Keep required original fatal exits bound through publication and loading",
+     "Keep original atomic schedules moving through unchanged entry protections"
     ]
    }
   ]
