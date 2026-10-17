@@ -347,14 +347,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-17T07:20:18Z",
+  "pushed_at": "2026-10-17T13:35:12Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 55,
-    "behind": 15,
-    "files": 137,
-    "real_files": 132,
+    "ahead": 78,
+    "behind": 18,
+    "files": 157,
+    "real_files": 152,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -363,22 +363,22 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-17T07:20:13Z",
+    "last_commit": "2026-10-17T13:34:55Z",
     "subjects": [
-     "Corroborate scalar-gather texture shapes across preset shader caches",
-     "Add direct P5R touch gamepad with dual sticks and focus-safe input release",
-     "Preserve P5R NaN and signed-zero semantics during Metal source compilation",
-     "Execute independent image pitches for array and 3D texture copies",
-     "Retry diagnostic checkpoint replacement on transient Windows sharing locks",
-     "Scale shader validation with bounded workers and batched checkpoints",
-     "Extract local preset shader caches with bounded CPK and CRILAYLA readers",
-     "Corroborate shader texture shapes from original Maxwell instructions"
+     "Route P5R display and layer lifetimes through host VI handles",
+     "Default the P5R shell to the cloud-executed Metal 3 draw backend",
+     "Support locally installed Windows Metal tools with verified diagnostic artifacts",
+     "Resolve P5R multisample color targets and synchronize remaining probe coverage",
+     "Preserve vertex effects in void-returning rasterizer discard variants",
+     "Exercise P5R production draw contracts through the Metal 4 backend",
+     "Map depth bounds to native Apple10 testing and fix synthetic vertex outputs",
+     "Execute rasterizer discard while preserving vertex shader work"
     ]
    },
    {
     "branch": "codex/p5r-shaders-verified",
     "ahead": 44,
-    "behind": 15,
+    "behind": 18,
     "files": 118,
     "real_files": 113,
     "dirs": [
@@ -497,12 +497,12 @@
   "branches": []
  },
  "Seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-17T06:37:49Z",
+  "pushed_at": "2026-10-17T13:43:52Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 120,
-    "behind": 7,
+    "ahead": 125,
+    "behind": 5,
     "files": 144,
     "real_files": 143,
     "dirs": [
@@ -513,16 +513,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-10-17T06:37:09Z",
+    "last_commit": "2026-10-17T12:49:16Z",
     "subjects": [
+     "feat(ohos): 数据导入补值 + #184 放行 —— 拆 GLOB_DAT 空槽地雷",
+     "feat(ohos): 钉子 #8 续修 —— G 激活前补推任务状态 1→2 + 日志治理",
+     "feat(ohos): 钉子 #8 影子补丁 + 同轮探针 —— 记录全零时补 {标签2, ControllerMgr 工厂}",
+     "Merge upstream/main：并入 5 条提交（含 weak imports 保留 NULL 修复）",
+     "feat(ohos): 钉子 #8 探针五钩子 —— 一轮真机定性类型分发崩链",
      "feat(ohos): 模块静态初始化 + sead/外部运行时全局影子 —— nnMain 首次真正跑起来",
      "fix(ohos): 替换式桩改 ret 修\"双执行\"，补 sead 查找链所需的服务与虚表槽",
-     "feat(ohos): 替换式插桩落地 —— 三个分配器由宿主真给内存（2720/256 字节均有记录）",
-     "feat(ohos): 挂第三个分配器 0x9f33f0 入口 + 定位到注入被改写",
-     "feat(ohos): 洞扩容 64KB + 桩加站点号 + 全量挂点（一轮定位 174 候选中的真凶）",
-     "feat(ohos): 服务批量升级（真时基 + 纯虚兜底）+ 跑测再收窄（每轮 ~98 秒）",
-     "feat(ohos): 装机通道修复 + 修复真机确认 + 崩点前移（三件事同时成立）",
-     "feat(ohos): 运行日志加「探针构建时间戳」—— 装机他判基建（当场证明装机未生效）"
+     "feat(ohos): 替换式插桩落地 —— 三个分配器由宿主真给内存（2720/256 字节均有记录）"
     ]
    }
   ]
@@ -960,12 +960,12 @@
   "branches": []
  },
  "dodola/d2r-mobile": {
-  "pushed_at": "2026-10-17T10:25:51Z",
+  "pushed_at": "2026-10-17T11:27:43Z",
   "branches": [
    {
     "branch": "codex/android-measured-optimizations",
     "ahead": 10,
-    "behind": 8,
+    "behind": 11,
     "files": 123,
     "real_files": 113,
     "dirs": [
@@ -989,28 +989,29 @@
    },
    {
     "branch": "main",
-    "ahead": 28,
-    "behind": 0,
-    "files": 193,
-    "real_files": 166,
+    "ahead": 35,
+    "behind": 3,
+    "files": 234,
+    "real_files": 206,
     "dirs": [
      "DESIGN.md",
      "dm/android",
      "dm/gfx",
      "dm/host",
      "dm/tools",
-     "tools/android"
+     "tools/android",
+     "tools/d2r-mobile-port"
     ],
-    "last_commit": "2026-10-17T10:23:08Z",
+    "last_commit": "2026-10-17T11:21:14Z",
     "subjects": [
+     "Merge codex/d2r-offline-installer into main",
+     "fix(vulkan): replay polygon offset and preserve previous crash log",
+     "fix(android): retain installer entry points in rebuilt APKs",
      "fix(android): route controller B and Back to guest input",
      "Merge upstream/main and adapt Android copy pitches and touch scaling",
      "feat(android): add optional native-resolution UI performance mode",
      "docs(android): record readonly shader performance probe",
-     "perf(android): profile GPU-owned pool reads safely",
-     "perf(android): declare Vulkan image usages and promote storage lazily",
-     "perf(android): retain immutable Vulkan attachment objects across submissions",
-     "fix(android): enable full 32-bit Vulkan draw indices"
+     "perf(android): profile GPU-owned pool reads safely"
     ]
    }
   ]
@@ -1028,7 +1029,7 @@
   "branches": []
  },
  "yzxh24/d2r-mobile": {
-  "pushed_at": "2026-10-17T03:30:13Z",
+  "pushed_at": "2026-10-17T11:10:03Z",
   "branches": []
  },
  "gamerenzz/d2r-mobile": {
@@ -1060,7 +1061,7 @@
   "branches": []
  },
  "deadfoxwang/d2r-mobile": {
-  "pushed_at": "2026-10-17T08:33:33Z",
+  "pushed_at": "2026-10-17T14:51:05Z",
   "branches": []
  },
  "julycw/d2r-mobile": {
@@ -1140,21 +1141,19 @@
   ]
  },
  "Kamisorara/d2r-mobile": {
-  "pushed_at": "2026-10-15T14:43:57Z",
+  "pushed_at": "2026-10-17T14:10:08Z",
   "branches": [
    {
     "branch": "face-buttons-by-printed-glyph",
-    "ahead": 5,
-    "behind": 2,
-    "files": 4,
-    "real_files": 4,
-    "dirs": [
-     "dm/host",
-     "dm/ios",
-     "dm/tools"
-    ],
-    "last_commit": "2026-10-15T14:43:49Z",
+    "ahead": 7,
+    "behind": 1,
+    "files": 0,
+    "real_files": 0,
+    "dirs": [],
+    "last_commit": "2026-10-17T14:08:46Z",
     "subjects": [
+     "Merge remote-tracking branch 'upstream/main' into face-buttons-by-printed-glyph",
+     "Merge remote-tracking branch 'upstream/main' into face-buttons-by-printed-glyph",
      "Face buttons follow the printed glyph: Switch pads had A/B and X/Y swapped",
      "Merge remote-tracking branch 'upstream/main'",
      "Merge remote-tracking branch 'upstream/main'",
@@ -1165,7 +1164,7 @@
    {
     "branch": "main",
     "ahead": 4,
-    "behind": 2,
+    "behind": 12,
     "files": 4,
     "real_files": 4,
     "dirs": [
@@ -1184,21 +1183,21 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-10-16T10:45:20Z",
+  "pushed_at": "2026-10-17T14:23:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T10:45:16Z",
+    "last_commit": "2026-10-17T14:17:51Z",
     "subjects": [
+     "Reuse verified prepared inputs with compatible upstream generator updates",
      "Show the iOS resource and Legacy folder layout",
      "Package Mac apps without separate resource metadata",
      "Simplify Mac setup with the complete Data resource archive",
      "Refresh Mac build duration from the completed prepared-input build",
      "Point Mac build inputs to the repaired prepared directory",
      "Fix missing Mac shader reflections and validate final app resources",
-     "Shorten generated release titles",
-     "Ad-hoc sign Guest before IPA packaging for zsign compatibility"
+     "Shorten generated release titles"
     ]
    }
   ]
@@ -1400,12 +1399,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-17T04:42:21Z",
+  "pushed_at": "2026-10-17T10:58:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T04:42:20Z",
+    "last_commit": "2026-10-17T10:58:19Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1460,41 +1459,41 @@
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-17T10:18:41Z",
+  "pushed_at": "2026-10-17T13:38:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T10:18:37Z",
+    "last_commit": "2026-10-17T13:38:34Z",
     "subjects": [
-     "Exercise Start confirmation in ARM64 startup verification",
-     "Preserve command overflow storage through scene transitions",
-     "Set sustained audio boot floor to 30 Hz",
-     "Pace renderer config updates to prevent a busy loop",
-     "Make audio worker test scheduler tolerant",
-     "Run audio service work with guest thread context",
-     "Wake only waiters for the signaled sync object",
-     "Keep SDK audio processing on guest threads"
+     "撤掉退休表：CI 捕获闸门显示它把 macOS 渲染弄成全黑（v0.6.14）",
+     "修 v0.6.12 的 iOS 检查：main.m 漏了 #include \"logsum.h\"（前一个脚本在写入前断言失败丢了这一行）",
+     "黑屏定位（用日志摘要）：深度视图判失败 → 每遍渲染跳过；退休表 + 视图退回 + 音频诊断（v0.6.12）",
+     "按 Start 后闪退：渲染附件缺失导致整帧提交失败 → 改为降级；音频加 DSP 后诊断（v0.6.6）",
+     "Skip known NVN state gaps and trace audio input peaks",
+     "Handle texture zcull queries and stale render resources",
+     "Add host audio WAV validation before device testing",
+     "Automate render capture validation before packaging"
     ]
    }
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-17T07:34:04Z",
+  "pushed_at": "2026-10-17T15:27:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T07:34:02Z",
+    "last_commit": "2026-10-17T15:27:32Z",
     "subjects": [
+     "Link's Awakening: physics crash at the switch to 30 fps fixed; README screenshots recaptured on the Mac",
+     "README screenshots of every game; NSP script packs unknown games with a provisional profile; Link's Awakening stencil copy and outdoor shaders",
      "Link's Awakening: game sound, doorway lighting tiles and missing foliage fixed",
      "BotW: cream cloud boxes behind HUD prompts fixed (layout captures read alpha from red in all 26 layout shaders); work folders move to the NSP folder",
      "Zelda Link's Awakening runs on the Mac (profile 01006BB00C6F0000, 1.1.0, SDK 8); BotW HUD prompt boxes fixed",
      "SM3DW magenta blocks fixed (same-pass feedback snapshot); English default language; English-only comments, bilingual README",
      "README: the notes column names only the 60 fps upgrades",
-     "README: acknowledgements come right after the intro; the games table gets a notes column (60 fps upgrades, DLC, touch layout)",
-     "README becomes a player-facing page: tested games, packing in four steps, playing; developer material moves to docs/development.md",
-     "Touch gamepad gets a 3D layout (D-pad, right stick, L3 / R3) and an in-game 2D / 3D layout button; pad_layout picks each game's default"
+     "README: acknowledgements come right after the intro; the games table gets a notes column (60 fps upgrades, DLC, touch layout)"
     ]
    }
   ]
@@ -1560,12 +1559,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-17T10:42:15Z",
+  "pushed_at": "2026-10-17T15:33:09Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T10:42:14Z",
+    "last_commit": "2026-10-17T15:33:08Z",
     "subjects": [
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
@@ -1573,7 +1572,7 @@
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
-     "chore: 自动同步 Star 地图（182 个项目）",
+     "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（182 个项目）"
     ]
    }
@@ -1588,12 +1587,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-17T04:36:47Z",
+  "pushed_at": "2026-10-17T10:52:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T04:36:46Z",
+    "last_commit": "2026-10-17T10:52:41Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -1601,8 +1600,8 @@
      "data: refresh cache",
      "data: refresh cache",
      "data: refresh cache",
-     "Port knowledge base: SPEC v0.1, atlas.py (validate/build), agent API + llms.txt + MCP, Triangle Strategy as first dataset",
-     "data: refresh cache"
+     "data: refresh cache",
+     "Port knowledge base: SPEC v0.1, atlas.py (validate/build), agent API + llms.txt + MCP, Triangle Strategy as first dataset"
     ]
    }
   ]
@@ -1822,32 +1821,33 @@
   ]
  },
  "vickwv/d2r-mobile": {
-  "pushed_at": "2026-10-17T06:11:42Z",
+  "pushed_at": "2026-10-17T15:20:08Z",
   "branches": [
    {
     "branch": "android-integration",
-    "ahead": 71,
-    "behind": 7,
-    "files": 120,
-    "real_files": 112,
+    "ahead": 77,
+    "behind": 10,
+    "files": 124,
+    "real_files": 116,
     "dirs": [
      "DESIGN.md",
      "dm/android",
      "dm/gfx",
      "dm/host",
+     "dm/i18n",
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-10-17T06:11:38Z",
+    "last_commit": "2026-10-17T15:20:04Z",
     "subjects": [
+     "触屏：设置读数落盘（diagnostics/settings_automap.txt）+ 掩码注释更新",
+     "触屏：回城钮（技能弧上方圆钮，宿主免费回城）、地图块按玩家档位切、小地图默认开（AutomapAutoOpen）",
+     "docs(android): §6 记 P8 逐页验收——每拍入口接线（hud_tick 尾部那批挪进 hud_read_android）与已验的页面（个人仓库翻页/编年史整页），珍宝匣页签位置、秘境需终局角色、符文之语/积分牌入口待查",
+     "feat(android): P8 每拍入口接线——diag.c 的 hud_tick 尾部那批 P8 模块的服务端拍入口在安卓没人调（diag.c 整体不编），挪进 hud_read_android.c：免费回城 server_step / 极乐世界 stash_step / dm_townwp_tick（新增编入，进局落城镇小站旁）/ 首领连战 tick / 秘境 tick / 个人仓库 dm_pages_tick（翻页请求在这一拍消费）/ 编年史 dm_vault_tick / 自动增益 srv_tick / 百宝囊 srv_tick / 当前武器组 publish（换组角标 Ⅱ）。真机验证：储物箱 PERSON/SHARED/VAULT 三页签 + PAGE 1/5，右箭头翻页 '第 1 → 2 页…请游戏存盘' 且页码写成 2/5、连翻被「等落盘」正确挡住；点 VAULT 页签 'BankTabs 第 0 → 第 5 个' 进第六页，编年史界面整页出来（UNIQUE/SETS + 部位分类 + 38 格筛选 + PAGE 1/4），空仓库按「侧文件还没有」处理",
+     "docs(android): §6 遗留 1（确认框点不到）标记已修，记三处根因与修法",
+     "fix(android): 三处真机死锁/点不动——① 宿主替按的键没并进取手柄的值：iOS 在 hle_hid.c fill() 里每读一次并 dm_ui_auto_buttons()/减 dm_ui_auto_release()，安卓分支没有，input_backend.c 取手柄处照同一口径补（设置页点 X 后 dm_cursor 按的返回键到不了游戏 → 确认框不出、面板关不掉）；② 模态框判定必须在「设置页盖着的暂停菜单按钮（不点）」之前：确认框的 Apply/Discard 正好落在暂停菜单按钮位置上，先判盖着会把这两颗按成不点（真机：Apply/Discard 没反应）——改共享文件 dm_cursor.c 的 ui_classify 顺序（modal_in 标记），冲突面 +1 的原因见本条；③ 瞄准泵自锁死（ANR 实锤栈：dm_android_input_read_npad 持 input_lock → dm_aim_cone_pump → dm_input_sampled_right 再拿同一把非递归锁）：右摇杆采样值改无锁原子快照。真机验证：Options→改设置→X→确认框弹出→Discard 关掉并丢弃；暂停菜单 X 关面板；瞄准拖动不再 ANR",
      "docs(android): 对齐方案文档 §6 续记 P2 尾/P3/P4/P5/P7/P8 两批的实测结果与遗留清单（确认框命中顺序、前端建角入口、P8 各页逐个验收、面板滚动拖、面板栈收敛）",
-     "feat(android): P8 第二批——个人仓库多页(dm_pages) 编年史仓库(dm_vault+dm_vault_ui) 符文之语清单(dm_runeword+rwlv_core) 百宝囊(dm_pouch) 文字框颜色码(dm_textbox+textbox_core) 编入；新增 tools/gen_headers.sh 从玩家游戏文件生成 dm_hud_exp.h / dm_vault_tab.h（build/generated，build_modules.sh 自动跑）。真机：无 FATAL，设置页 Audio/Gameplay/Settings/Custom 四页与 Apply/Default/Discard 正常，确认框能开能关",
-     "feat(android): P8 第一批——i18n 层编真实现（dm_i18n.c：dm_ui/dm_str 走原版取串，语言跟原版设置）、便利与玩法模块成批编入：免费回城(dm_freetp) 药水自动拾取(dm_potpick) 腰带自动补充(dm_beltauto) 自动增益(dm_autobuff) 掉落过滤(dm_lootfilter) 自定义页(dm_custom) 刷怪积分牌(dm_kills) 极乐世界(dm_elysium) 秘境(dm_rift+dm_rift_ui) 首领连战(dm_bossrush)；新增 apple_time_android.h（clock_gettime_nsec_np / st_mtimespec 的安卓等价）与 diag_android.c（请游戏存盘 / 秘境拦难度提示·事件门15 / dm_prof 中性实现 / L 键按下计数）；删掉对应中和桩。真机验证：设置页出现 Custom 页签与 Apply/Default/Discard，自定义开关全部按缺省读入，极乐世界初始化表校验过，无 FATAL",
-     "fix(android): 面板内非物品区点按要走界面鼠标点击——补 mouse_click_mode=1（front_ios.m:145 同一句，模型才产 mouse_click_seq）与 mouse_click_seq 派发（dm_ui_touch 0/2，front_ios.m:649）；之前删旧 ui_up 路径时漏了这条，暂停菜单按钮只认鼠标，点不动。真机验证：Options→Save and Exit 退出到选角页",
-     "feat(android): P7 技能钮图标——绑定桥编入（dm_touch_game_bridge/state/identity/native_art）：dm_tg_vm_read 补安卓 process_vm_readv 读法；app_jni 在 load_modules 之后装桥（之前挂在装模块前，g_nmod 还是 0）；ui_state 按 front_ios.m:807-815 维护场景/世界代号喂桥（布局重建也换世界）；原生 HUD 6 格外层改由桥的 hide_own_glyph 判定（带完整身份核对）；JNI 报每钮 14 个数（常态/按住帧矩形 + 换武器组位/充能），Java 画原版剪影图集（有图标不写字、充能用完画灰、Ⅱ 标记与角标余量与 iOS 同一处）；技能图集进 assets。真机验证：绑定诊断 成功 3954 次，主技能钮出图标，空位照旧",
-     "feat(android): P5 设置——hle_fs.c 的设置缺省/大字体兜底/语言开关在安卓同样生效（DM_ANDROID_SETTINGS_SEED 守卫，安卓构建定义；缺省开、可用 DM_TOUCH_DEFAULTS=0 关）；新增 i18n_android.c（dm_sys_lang：DM_LANG → 系统 locale tag → 简中；语言开关未移植 = -1 不动设置文件）；app_jni 把系统 locale tag 交给宿主。真机验证：首次挂档补 4 个键（显示物品=开关式 / 说明条热键=关 / 小地图放右+进局自动开）",
-     "feat(android): P2 尾段——完整挂起抬起：落下问分类、答案一回来就喂模型（front_ios.m:426，前端手指抬起点上报给拖放落点判定）、松手挂起到答案回（或 0.25s 兜底）再喂 dm_tc_pointer_item 并按真正松手时刻结束；拖放落点按松手位置重问（dm_ui_drop_query）+ dm_tc_pointer_release[_at]（落点 5 放下 / 0 放回原位 / 7 卖 / 货架拖买 / 成叠取件·进魔盒）；面板滚动/滑块手势接 dm_ui_drag_begin/move/end（起拖抬升量按 iOS 口径）；nativeEvent 增加抬起点参数。真机验证：单击=光标+说明框不点、双击=使用（药水喝掉）、长按=补充到腰带、拖放=腰带↔背包、面板外点=关面板、世界点按派发",
-     "feat(android): P3 底栏 v4 + 菜单模式退场——HUD 抬数（OBS_TICK 门移植 hud_tick：等级/经验‰/腰带/回城/生命法力/点数/死亡/难度）→ dm_hud；TouchControlsView 按 iOS drawV4 一比一画底栏（底图直贴、十字两态+点金光晕、经验条 20 刻度、生命/法力/Lv 字形拼、角标、难度数字）；腰带四格+十字由底栏接管（不再画圆钮标签，与 iOS 口径一致）；dm_touch_game_hide_own_glyph 强实现（触屏模式藏原版底栏 6 格外层）；菜单模式整个删掉（无模式钮、无方向/确认/返回钮，局内恒战斗覆盖层、局外自动隐藏）；真机验证：进局即战斗操控，底栏数值/经验条/难度/角标/十字全对"
+     "feat(android): P8 第二批——个人仓库多页(dm_pages) 编年史仓库(dm_vault+dm_vault_ui) 符文之语清单(dm_runeword+rwlv_core) 百宝囊(dm_pouch) 文字框颜色码(dm_textbox+textbox_core) 编入；新增 tools/gen_headers.sh 从玩家游戏文件生成 dm_hud_exp.h / dm_vault_tab.h（build/generated，build_modules.sh 自动跑）。真机：无 FATAL，设置页 Audio/Gameplay/Settings/Custom 四页与 Apply/Default/Discard 正常，确认框能开能关"
     ]
    }
   ]
@@ -1865,7 +1865,7 @@
   "branches": []
  },
  "localhost-copilot/d2r-mobile": {
-  "pushed_at": "2026-10-16T06:42:28Z",
+  "pushed_at": "2026-10-17T15:30:32Z",
   "branches": []
  },
  "ppptv/d2r-mobile-maios": {
@@ -2006,12 +2006,12 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-17T03:53:39Z",
+  "pushed_at": "2026-10-17T13:42:33Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 49,
-    "behind": 6,
+    "ahead": 51,
+    "behind": 1,
     "files": 25,
     "real_files": 25,
     "dirs": [
@@ -2022,16 +2022,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-17T03:53:29Z",
+    "last_commit": "2026-10-17T13:42:19Z",
     "subjects": [
+     "Fix merge: restore the NK macro dropped by the conflict resolution",
+     "Merge upstream jhaizhou-ops main (10 commits). Conflicts resolved: keep upstream touch_swap_above at slot 15, keep our hdr and zoom rows after it; keep upstream touch row builder without the language row; keep both the HDR setup and the colour-readback line.",
      "Pinch gate: DmMetalView is the view itself (self), fix compile error",
      "Pinch zoom: only inside the middle third of the screen, only in the game world, never with a panel open",
      "Zoom: continuous pinch (in and out), option only gates the gesture, 3D scale follows the extent",
      "3D scale when zoomed in: 0.95 -> 1.00 (full native, sharp close-up)",
      "Zoom: force the far view only when the option is off, keep the pinch value otherwise",
-     "Zoom: follow the zoom option every call so unchecking it returns to the far view",
-     "Restore patch_nso.py to the version the prepared package was generated from (keep the host-side resolution change)",
-     "Zoom: 3D render scale follows the camera zoom (0.80 not zoomed in, 0.95 zoomed in)"
+     "Zoom: follow the zoom option every call so unchecking it returns to the far view"
     ]
    }
   ]
@@ -2101,21 +2101,21 @@
   ]
  },
  "alanyangcn/smbwonder-ios": {
-  "pushed_at": "2026-10-17T09:53:52Z",
+  "pushed_at": "2026-10-17T15:26:16Z",
   "branches": [
    {
     "branch": "first-game-frame",
     "mirror": false,
-    "last_commit": "2026-10-17T09:51:40Z",
+    "last_commit": "2026-10-17T15:25:55Z",
     "subjects": [
-     "Replay CPU per draw: C-keyed pipeline/depth-state/shader lookups, descriptors built only on a miss, debug groups opt-in, diagnostic getenv read once, copy windows sized to the read extent",
-     "Periodic commits at pass boundaries (WONDER_COMMIT_DRAWS, default 128); bindless handles read from the recorded uniform update instead of finishing the GPU",
-     "HOST_FRAME_TIME: finishes by origin and the game thread's acquire/sync/submit time",
-     "STATUS: freed-pool revive confirmed on device (round224)",
-     "ledger: round224 freed-pool revive",
-     "A read of a freed pool whose kept view went makes the view again (round223: the world map drew with that buffer 8164 presents and 66 finalizes later)",
-     "STATUS/ledger: world-map frame rate rounds 217-223",
-     "Finalized pools stay readable until 64 newer pools were finalized, not for 600 presents (round222: read 7943 presents later)"
+     "Docs: remove the Metal 2 plan and baseline (A11 retired); METAL2-STATUS.md -> STATUS.md, METAL2-RENDER-PLAN.md -> RENDER-PLAN.md with every reference updated",
+     "Docs: drop save-edit side effects and offline-host differences (network, friends, DLC, substitute fonts, drawn icons) at the player's request",
+     "STATUS/ledger: missing particle shader b60a2a91 located (W5 Course048_Sub2, c[0]+0x610 = max point size), recorded only",
+     "STATUS/ledger: background resume verified (rounds 228-229)",
+     "Background: CPU-uploaded texture copies are released when the scene enters the background; replay jobs wait for the app to be active",
+     "STATUS/ledger: TBDR planning on (round228, 44-48 fps on the heavy world-map view)",
+     "STATUS/ledger: rounds 225-227 frame rate",
+     "Replay CPU per draw: C-keyed pipeline/depth-state/shader lookups, descriptors built only on a miss, debug groups opt-in, diagnostic getenv read once, copy windows sized to the read extent"
     ]
    }
   ]
@@ -2241,7 +2241,7 @@
   ]
  },
  "leixinggong/d2r-mobile": {
-  "pushed_at": "2026-10-16T06:50:20Z",
+  "pushed_at": "2026-10-17T14:15:37Z",
   "branches": []
  },
  "SepheTT/d2r-mobile": {
@@ -2364,7 +2364,7 @@
   ]
  },
  "g60452/d2r-mobile": {
-  "pushed_at": "2026-10-16T08:50:38Z",
+  "pushed_at": "2026-10-17T13:24:11Z",
   "branches": []
  },
  "RaibowSky/d2r-mobile": {
@@ -2963,21 +2963,21 @@
   ]
  },
  "StandonJoyner/awesome-rea": {
-  "pushed_at": "2026-10-17T10:50:40Z",
+  "pushed_at": "2026-10-17T14:48:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T09:16:14Z",
+    "last_commit": "2026-10-17T14:47:52Z",
     "subjects": [
+     "Open a Sega level for the Genesis disassemblies, and shrink every line to ★",
+     "File entries by name, and let a line end at its star count",
+     "Record that Space Station 14 remakes a game whose source is published",
+     "Put the tree and the side-docs on the same screen as the README",
      "Close the Retro Engine family, and record that a decompiler is the instrument",
      "Enter five read from the pack, and re-measure every number the list prints",
      "Route the refresh through the corpus and gate the render in CI",
-     "Enter storytold/gridcraft, soundcraft and cadcraft under Applications",
-     "Print the whole evidence pack in one call and write stage 3 out literally",
-     "Enter the eleven accepted candidates and render the list from the corpus",
-     "Build the three-stage intake pipeline and split its spec into INTAKE.md",
-     "Restore the Sourcing ledger heading my Removal insert swallowed"
+     "Enter storytold/gridcraft, soundcraft and cadcraft under Applications"
     ]
    }
   ]
@@ -2996,46 +2996,50 @@
   ]
  },
  "kuosuko/tomodachi-native": {
-  "pushed_at": "2026-10-17T01:47:32Z",
+  "pushed_at": "2026-10-17T15:32:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T01:43:17Z",
+    "last_commit": "2026-10-17T15:32:41Z",
     "subjects": [
-     "Merge the wide-screen and Duo-shape work",
-     "feat(gfx): let markers over Miis show in the side strips",
-     "docs: upstream sync report",
-     "fix(host): let t_fs and t_fs_case link after the big-stack change",
-     "feat(tools): shader containers, RELR slots and NSP script fixes",
-     "docs: mirror the new profile keys and the shader key rule",
-     "docs(agents): lessons from upstream's recent bring-ups",
-     "feat(ios): 3D touch gamepad layout and a layout button"
+     "docs: iPhone Duo support is untested on a device",
+     "fix(ios): logo from the first frame, no upside-down turn on the Duo's outer display",
+     "feat(ios): settings in the game's own style",
+     "docs: iPhone and iPad builds, signed installs and the settings",
+     "feat(ios): Duo shell with settings, save backups and quick actions",
+     "build(ios): signed builds for your own device, shell pictures from the game files",
+     "feat(host): snapshot the committed save under the commit lock",
+     "feat(ios): pick optional code cuts such as 60 FPS at boot"
     ]
    }
   ]
  },
  "albionlee/d2r-mobile": {
-  "pushed_at": "2026-10-17T02:59:24Z",
+  "pushed_at": "2026-10-17T13:22:53Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 1,
-    "behind": 0,
-    "files": 1,
-    "real_files": 1,
+    "ahead": 4,
+    "behind": 1,
+    "files": 2,
+    "real_files": 2,
     "dirs": [
-     "dm/host"
+     "dm/host",
+     "dm/ios"
     ],
-    "last_commit": "2026-10-17T02:59:19Z",
+    "last_commit": "2026-10-17T13:22:47Z",
     "subjects": [
+     "手柄模式下佣兵页保持默认状态",
+     "测试原版布局是否会造成佣兵页崩溃",
+     "Merge branch 'jhaizhou-ops:main' into main",
      "尝试修复佣兵页崩溃的问题"
     ]
    }
   ]
  },
  "donutnomad/d2r-mobile": {
-  "pushed_at": "2026-10-17T00:55:08Z",
+  "pushed_at": "2026-10-17T12:55:59Z",
   "branches": []
  },
  "funkhua/d2r-mobile": {
@@ -3069,13 +3073,14 @@
   ]
  },
  "enginefuture/bayonetta3-mobile": {
-  "pushed_at": "2026-10-17T04:58:23Z",
+  "pushed_at": "2026-10-17T10:58:10Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T04:58:18Z",
+    "last_commit": "2026-10-17T10:57:17Z",
     "subjects": [
+     "Add verified iPhone support and configurable launch settings",
      "Improve Mac combat performance and unify shader interfaces",
      "Run Mach-O service ABI checks on a macOS runner",
      "Publish experimental Bayonetta 3 compatibility layer and bilingual guides"
@@ -3232,13 +3237,15 @@
   ]
  },
  "gamedirty/pal2-mobile": {
-  "pushed_at": "2026-10-17T08:55:56Z",
+  "pushed_at": "2026-10-17T14:32:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T08:51:30Z",
+    "last_commit": "2026-10-17T14:29:57Z",
     "subjects": [
+     "perf: 1280x960 desktop (2x integer) — measured 24fps vs 12fps at 1920x1440, bandwidth-bound pipeline",
+     "fix: skip half-created orphan containers that NPE the loader",
      "ui: circular action buttons (Esc/确认/空格/快进/翻页/取消)",
      "CI: grant contents write to GITHUB_TOKEN",
      "CI: use absolute sdkmanager path",
@@ -3279,6 +3286,124 @@
      "README becomes a player-facing page: tested games, packing in four steps, playing; developer material moves to docs/development.md",
      "Touch gamepad gets a 3D layout (D-pad, right stick, L3 / R3) and an in-game 2D / 3D layout button; pad_layout picks each game's default",
      "DM_NVN_KEYDUMP logs every input of one fragment shader's draws on a device; PASSDUMP shows sampler LOD clamps and texture swizzles"
+    ]
+   }
+  ]
+ },
+ "tizee/d2r-mobile": {
+  "pushed_at": "2026-10-17T12:06:47Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 2,
+    "behind": 2,
+    "files": 33,
+    "real_files": 33,
+    "dirs": [
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "plan_build_speed.md",
+     "plan_drop_rate.md",
+     "plan_perf_quality.md",
+     "plan_stash_sort.md",
+     "plan_virtual_pad.md"
+    ],
+    "last_commit": "2026-10-17T12:06:04Z",
+    "subjects": [
+     "Add design plans for the current work",
+     "Panel keys, graphics presets, faster dev builds, drop rates"
+    ]
+   }
+  ]
+ },
+ "kaitopic/d2r-mobile": {
+  "pushed_at": "2026-10-17T15:37:21Z",
+  "branches": []
+ },
+ "YuXilong/d2r-mobile": {
+  "pushed_at": "2026-10-17T13:35:54Z",
+  "branches": []
+ },
+ "alinnb/d2r-mobile-build": {
+  "pushed_at": "2026-10-17T14:51:03Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-17T14:43:04Z",
+    "subjects": [
+     "Add default prepared_input for macOS build workflow",
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "yokeyhh/switch-port-to-apple": {
+  "pushed_at": "2026-10-17T15:17:22Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-17T15:17:14Z",
+    "subjects": [
+     "Fix GitHub account in install URLs (yokeyhh)",
+     "Add Chinese README (README.zh-CN.md)",
+     "Add switch-port-to-apple skill: Switch (Horizon/aarch64) -> Apple silicon native port playbook"
+    ]
+   }
+  ]
+ },
+ "wjw3416/d2r": {
+  "pushed_at": "2026-10-17T11:21:09Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-17T11:21:09Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "Amengbox/DR2": {
+  "pushed_at": "2026-10-17T12:53:10Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-17T12:43:29Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "Yzhen01/D2": {
+  "pushed_at": "2026-10-17T14:51:14Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-17T14:42:06Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "0xdcc/d2r-prep-assistant": {
+  "pushed_at": "2026-10-17T14:27:59Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-17T14:27:43Z",
+    "subjects": [
+     "Make regression fixtures portable to native Windows locale and environment",
+     "Initial local-only Windows preparation assistant"
     ]
    }
   ]
