@@ -373,14 +373,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-18T10:39:19Z",
+  "pushed_at": "2026-10-18T15:37:09Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 91,
+    "ahead": 96,
     "behind": 18,
-    "files": 171,
-    "real_files": 166,
+    "files": 176,
+    "real_files": 171,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -389,16 +389,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-18T10:39:05Z",
+    "last_commit": "2026-10-18T15:36:55Z",
     "subjects": [
+     "Report rejected texture copy layouts and guest callers",
+     "Resolve host language queries without Horizon settings IPC",
+     "Keep registration uniqueness labels distinct within source files",
+     "Reject duplicate forced HLE registrations before packaging",
+     "Allow P5R installation packages to omit offline diagnostics",
      "Connect P5R guarded shader candidates to experimental game launch",
      "Stage native P5R shader caches with provenance-checked packaging",
-     "Validate P5R resource views during production argument encoding",
-     "Implement synchronized conditional rendering and preserve query totals",
-     "Validate NVN scratch reservations with Metal-managed shader private storage",
-     "Refresh capture-gate regression and bound copy failure diagnostics",
-     "Replay checked P5R default raster states without diagnostic capture",
-     "Enable bounded P5R multisample state setters on normal paths"
+     "Validate P5R resource views during production argument encoding"
     ]
    },
    {
@@ -472,7 +472,7 @@
   "branches": []
  },
  "linjiacheng/d2r-mobile": {
-  "pushed_at": "2026-10-16T22:52:03Z",
+  "pushed_at": "2026-10-18T11:37:38Z",
   "branches": []
  },
  "fengtong1109/d2r-mobile": {
@@ -1020,7 +1020,7 @@
   "branches": []
  },
  "lcr1017/d2r-mobile": {
-  "pushed_at": "2026-10-15T05:10:39Z",
+  "pushed_at": "2026-10-18T15:31:28Z",
   "branches": []
  },
  "liimyauk/d2r-mobile": {
@@ -1145,11 +1145,11 @@
   "branches": []
  },
  "XGBCCC/d2r-mobile": {
-  "pushed_at": "2026-10-18T07:10:23Z",
+  "pushed_at": "2026-10-18T15:16:41Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 6,
+    "ahead": 7,
     "behind": 0,
     "files": 26,
     "real_files": 24,
@@ -1158,8 +1158,9 @@
      "dm/host",
      "dm/i18n"
     ],
-    "last_commit": "2026-10-18T07:10:06Z",
+    "last_commit": "2026-10-18T15:16:24Z",
     "subjects": [
+     "Add omitted weapons and armor to the Elysium gamble shelf",
      "Merge remote-tracking branch 'origin/main'",
      "Hold life and mana in Elysium and stop gold and durability loss",
      "Stop belt potions vanishing, drink below 90%, and raise gamble odds",
@@ -1479,12 +1480,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-18T04:48:11Z",
+  "pushed_at": "2026-10-18T11:23:39Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T04:48:10Z",
+    "last_commit": "2026-10-18T11:23:38Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1539,41 +1540,41 @@
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-18T09:55:26Z",
+  "pushed_at": "2026-10-18T14:32:19Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T09:55:20Z",
+    "last_commit": "2026-10-18T14:27:06Z",
     "subjects": [
-     "计算着色器离线链路：定位 compute 代码 + 修 Ryujinx 翻译器把表达式传进 Call 实参的 bug",
-     "私有诊断上传：不带 frame-recent-*（只给本地捕获闸门用），避免超出 3 帧上限",
-     "着色器匹配：合并内容相同的着色器条目；计算程序绑定不再清空图形着色器（v0.6.17）",
-     "捕获闸门：除最后一帧外再看最近 6 次定期捕获，任一张有真实画面即通过",
-     "audio_selftest：自动渲染帧数上限按实际经过时间算（迟到的周期现在会补渲染）",
-     "selftest：纹理对象缓冲按 sizeof(NVNtexture)=0xC0 分配（v0.6.16 起 stamp 会写满描述字）",
-     "Start 后黑屏 + 声音卡顿（v0.6.16）",
-     "Start 后黑屏 + 无声：单条不支持的绘制不再丢整帧；混音不再被 /65536 归零（v0.6.15）"
+     "metal_resources_selftest：3D 贴图的单层视图允许是整体 3D 视图（不要求与基础纹理同一对象）",
+     "Start 后黑屏 + 闪退：支持 3D 贴图；纹理视图不再触发 Metal 断言（v0.6.19）",
+     "audio_selftest：自动渲染上限再放宽到补帧上限（8 个周期）——CI 偶发",
+     "计算派发：驱动段（含间接组数的 blit）在开计算编码器之前准备好",
+     "间接计算派发：传 NULL 走 GPU 读组数（之前传了未初始化数组 → 垃圾组数 → GPU 不返回）；单测限时",
+     "compute README：离线链路、绑定约定、现状",
+     "metal_compute_selftest：补 nvn_render_state.h（NVN 类型）并把 MSL 源改为宏字面量",
+     "计算着色器接入随包：CI 启动检查与出包合并私有计算 fixture；修 selftest 字面量"
     ]
    }
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-18T09:57:18Z",
+  "pushed_at": "2026-10-18T15:55:22Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T08:36:03Z",
+    "last_commit": "2026-10-18T15:55:19Z",
     "subjects": [
+     "Shader chain: translator fixes for 39 shaders; compiled shaders cached by their Metal source",
+     "AGENTS.md: drop the multi-session coordination bullet (findings board, coordinator-only smoke test and push)",
+     "TOTK's 3D scene renders; BotW issue #9 memory and 30 fps fixes; in-pass clears; GLSLC capture in the NSP script",
+     "Age of Calamity and Three Houses play on the Mac; indirect NVN draws; Dread GPU leak fixed",
      "NSP script: one progress line per stage, with a bar and ETA",
      "AGENTS.md: port sessions share cross-game findings",
      "Tears of the Kingdom reaches gameplay on the Mac (3D scene still black)",
-     "patch_nso: retry blocks into exclusive windows, adr-relative jump tables (Tears of the Kingdom)",
-     "README: Super Mario Odyssey plays on the iPhone",
-     "c1_full.tsv for the last three rebuilt shader chains",
-     "Super Mario Odyssey: the Cap Kingdom fog parts around Mario again",
-     "c1_full.tsv for five rebuilt shader chains"
+     "patch_nso: retry blocks into exclusive windows, adr-relative jump tables (Tears of the Kingdom)"
     ]
    }
   ]
@@ -1639,12 +1640,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-18T11:02:44Z",
+  "pushed_at": "2026-10-18T15:51:13Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T11:02:43Z",
+    "last_commit": "2026-10-18T15:51:12Z",
     "subjects": [
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
@@ -1667,12 +1668,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-18T04:41:54Z",
+  "pushed_at": "2026-10-18T11:17:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T04:41:53Z",
+    "last_commit": "2026-10-18T11:17:46Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -1753,7 +1754,7 @@
   "branches": []
  },
  "tenfar/d2r-mobile": {
-  "pushed_at": "2026-10-16T12:47:46Z",
+  "pushed_at": "2026-10-18T14:21:49Z",
   "branches": []
  },
  "hyhou/d2r-mobile": {
@@ -1933,7 +1934,7 @@
   ]
  },
  "XiongDax1a/d2r-mobile": {
-  "pushed_at": "2026-10-15T16:03:44Z",
+  "pushed_at": "2026-10-18T14:23:06Z",
   "branches": []
  },
  "pinemilk/d2r-mobile": {
@@ -2816,21 +2817,21 @@
   ]
  },
  "ha7rock/blade2-mobile": {
-  "pushed_at": "2026-10-18T11:02:56Z",
+  "pushed_at": "2026-10-18T13:16:15Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T11:02:54Z",
+    "last_commit": "2026-10-18T13:16:13Z",
     "subjects": [
+     "虚拟手柄图层第 4 稿：右手 8 键直接叠在游戏 HUD 的 7 格菱形上",
+     "虚拟手柄图层第 3 稿：按真机确认的用法改成手游扇形布局",
      "虚拟手柄图层第 2 稿：整体缩小（r = 0.058H，面键 46 点、技能键帽 34 点），键帽改用系统 SF Symbols 的 Switch 手柄图标（a.circle / zl.button.roundedtop.horizontal / dpad / l.joystick…，按下换 .fill），十字键合成一个图标，摇杆空闲只留一个淡图标",
      "iOS 触摸虚拟手柄图层设计：pad_layout.h（几何 + 绘制，纯 C，iOS 壳与 Mac 效果图工具共用）、front_blade.m 改用并加空闲淡出 / 震感 / DM_PAD_SCALE、tools/pad_mockup.m 出效果图、docs/ios_pad.md 设计说明",
      "README：加 6 张 Mac 宿主实机对局截图（docs/screenshots，960×540）、更新状态行到 2026-10-18、加版本标签表（v0.1.0）",
      "iOS 壳 run.sh：收尾提示里的 $APP（ 写成 ${APP}（，避免 bash 把全角括号首字节并入变量名（C 区域下报 unbound variable）",
      "着色器全量离线抽取：tools/pak_shaders.py 从 pak 抽出全部 10 220 个 NVN 着色器并从 NV 汇编推出贴图 / 属性事实",
-     "着色器事实合并：玩家通关 1–3 关自录的 11 个新着色器 + 65 条贴图事实，链 b-be1360e1bdee",
-     "NVN diagnostics: residency-set add/remove/commit counters on the allocation ledger line; the re-upload ranking names the shaders (stage:key) that sample each of the top re-uploaded textures",
-     "NVN diagnostics: picture trigger fires only on darkening A-B-A (brightening = one-frame hit effects, counted only); DM_NVN_REUP_CPU=1/2 forces the CPU snapshot upload path for re-uploads / all pool-source textures; re-upload ranking shows depth and target"
+     "着色器事实合并：玩家通关 1–3 关自录的 11 个新着色器 + 65 条贴图事实，链 b-be1360e1bdee"
     ]
    }
   ]
@@ -3080,21 +3081,21 @@
   ]
  },
  "kuosuko/tomodachi-native": {
-  "pushed_at": "2026-10-17T15:32:42Z",
+  "pushed_at": "2026-10-18T12:44:24Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T15:32:41Z",
+    "last_commit": "2026-10-18T12:44:18Z",
     "subjects": [
+     "docs: say the game runs on iPad, not only the Mac",
      "docs: iPhone Duo support is untested on a device",
      "fix(ios): logo from the first frame, no upside-down turn on the Duo's outer display",
      "feat(ios): settings in the game's own style",
      "docs: iPhone and iPad builds, signed installs and the settings",
      "feat(ios): Duo shell with settings, save backups and quick actions",
      "build(ios): signed builds for your own device, shell pictures from the game files",
-     "feat(host): snapshot the committed save under the commit lock",
-     "feat(ios): pick optional code cuts such as 60 FPS at boot"
+     "feat(host): snapshot the committed save under the commit lock"
     ]
    }
   ]
@@ -3664,7 +3665,7 @@
   ]
  },
  "atrl/d2r-mobile": {
-  "pushed_at": "2026-10-18T09:14:33Z",
+  "pushed_at": "2026-10-18T15:31:46Z",
   "branches": [
    {
     "branch": "docs/preview10-runtime",
@@ -3693,6 +3694,64 @@
      "perf(android): use four data connections and show observed transfer rate",
      "feat(android): download data parts with two resumable connections",
      "Merge pull request #2 from atrl/fix/android-menu-touch"
+    ]
+   },
+   {
+    "branch": "feat/draggable-touch-layout",
+    "ahead": 47,
+    "behind": 0,
+    "files": 273,
+    "real_files": 234,
+    "dirs": [
+     ".claude/skills",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools",
+     "tools/__pycache__",
+     "tools/sync_upstream.py"
+    ],
+    "last_commit": "2026-10-18T15:27:15Z",
+    "subjects": [
+     "feat(android): add draggable touch layouts for foldable displays",
+     "Merge pull request #9 from atrl/fix/touch-size-persistence",
+     "Keep touch controls open across scenes and add saved button size",
+     "Merge pull request #8 from atrl/feat/fold-display-auto-diagnostics",
+     "Add direct Android touch, fold-aware controls and opt-in diagnostics",
+     "Merge pull request #7 from atrl/fix/turnip64-crash-evidence",
+     "fix(android): enable Turnip64 with installed variant and retain crash evidence",
+     "Merge pull request #6 from atrl/fix/system-subgroup64"
+    ]
+   },
+   {
+    "branch": "feat/fold-display-auto-diagnostics",
+    "ahead": 43,
+    "behind": 0,
+    "files": 273,
+    "real_files": 234,
+    "dirs": [
+     ".claude/skills",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools",
+     "tools/__pycache__",
+     "tools/sync_upstream.py"
+    ],
+    "last_commit": "2026-10-18T11:46:14Z",
+    "subjects": [
+     "Add direct Android touch, fold-aware controls and opt-in diagnostics",
+     "Merge pull request #7 from atrl/fix/turnip64-crash-evidence",
+     "fix(android): enable Turnip64 with installed variant and retain crash evidence",
+     "Merge pull request #6 from atrl/fix/system-subgroup64",
+     "fix(android): install and select subgroup64 shaders for system Adreno drivers",
+     "Merge pull request #5 from atrl/docs/preview10-runtime",
+     "docs: verify published preview10 loads existing Android save",
+     "Merge pull request #4 from atrl/fix/startup-diagnostics"
     ]
    },
    {
@@ -3826,6 +3885,35 @@
     ]
    },
    {
+    "branch": "fix/touch-size-persistence",
+    "ahead": 45,
+    "behind": 0,
+    "files": 273,
+    "real_files": 234,
+    "dirs": [
+     ".claude/skills",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools",
+     "tools/__pycache__",
+     "tools/sync_upstream.py"
+    ],
+    "last_commit": "2026-10-18T13:13:38Z",
+    "subjects": [
+     "Keep touch controls open across scenes and add saved button size",
+     "Merge pull request #8 from atrl/feat/fold-display-auto-diagnostics",
+     "Add direct Android touch, fold-aware controls and opt-in diagnostics",
+     "Merge pull request #7 from atrl/fix/turnip64-crash-evidence",
+     "fix(android): enable Turnip64 with installed variant and retain crash evidence",
+     "Merge pull request #6 from atrl/fix/system-subgroup64",
+     "fix(android): install and select subgroup64 shaders for system Adreno drivers",
+     "Merge pull request #5 from atrl/docs/preview10-runtime"
+    ]
+   },
+   {
     "branch": "fix/turnip64-crash-evidence",
     "ahead": 41,
     "behind": 0,
@@ -3856,10 +3944,10 @@
    },
    {
     "branch": "main",
-    "ahead": 42,
+    "ahead": 48,
     "behind": 0,
-    "files": 262,
-    "real_files": 224,
+    "files": 273,
+    "real_files": 234,
     "dirs": [
      ".claude/skills",
      "dm/android",
@@ -3871,16 +3959,16 @@
      "tools/__pycache__",
      "tools/sync_upstream.py"
     ],
-    "last_commit": "2026-10-18T09:14:33Z",
+    "last_commit": "2026-10-18T15:30:21Z",
     "subjects": [
+     "Merge pull request #10 from atrl/feat/draggable-touch-layout",
+     "feat(android): add draggable touch layouts for foldable displays",
+     "Merge pull request #9 from atrl/fix/touch-size-persistence",
+     "Keep touch controls open across scenes and add saved button size",
+     "Merge pull request #8 from atrl/feat/fold-display-auto-diagnostics",
+     "Add direct Android touch, fold-aware controls and opt-in diagnostics",
      "Merge pull request #7 from atrl/fix/turnip64-crash-evidence",
-     "fix(android): enable Turnip64 with installed variant and retain crash evidence",
-     "Merge pull request #6 from atrl/fix/system-subgroup64",
-     "fix(android): install and select subgroup64 shaders for system Adreno drivers",
-     "Merge pull request #5 from atrl/docs/preview10-runtime",
-     "docs: verify published preview10 loads existing Android save",
-     "Merge pull request #4 from atrl/fix/startup-diagnostics",
-     "docs: record Android diagnostic export verification"
+     "fix(android): enable Turnip64 with installed variant and retain crash evidence"
     ]
    },
    {
@@ -3961,13 +4049,18 @@
   ]
  },
  "rootrd/dontstarve-harmony": {
-  "pushed_at": "2026-10-18T05:56:33Z",
+  "pushed_at": "2026-10-18T13:29:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T05:40:55Z",
+    "last_commit": "2026-10-18T13:27:10Z",
     "subjects": [
+     "Host: take over the SDK entry points the second title reaches and Don't Starve does not",
+     "P3 forensics: version-stamped artifacts, an offline join, one boundary per round",
+     "Add the host fault-injection test for the upload path and correct the statistics documentation",
+     "Host: widen the guest address layout on HarmonyOS, fix IPC handle registration",
+     "Upload path: keep refused requests alive, identify queued tickets, grade ring pressure",
      "Merge the device build with the published tree, absorb the texture-diagnostics patch",
      "HarmonyOS HLE port of Don't Starve Together (Switch)"
     ]
@@ -4016,7 +4109,7 @@
   ]
  },
  "n2ray/d2r-mobile": {
-  "pushed_at": "2026-10-18T11:01:51Z",
+  "pushed_at": "2026-10-18T15:44:57Z",
   "branches": [
    {
     "branch": "android-snapdragon-elite",
@@ -4032,6 +4125,58 @@
     "last_commit": "2026-10-18T06:13:49Z",
     "subjects": [
      "Add Android ARM64 development baseline for Snapdragon 8 Elite"
+    ]
+   },
+   {
+    "branch": "claude/issue-3-runtime-contract",
+    "ahead": 57,
+    "behind": 5,
+    "files": 203,
+    "real_files": 195,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T13:58:30Z",
+    "subjects": [
+     "docs(android): qualify non-Result SVC envelope rule and status opener (#3)",
+     "docs(android): coherent TLR state machine and current-vs-obligation split (#3)",
+     "docs(android): runtime contract for async events, TLR preemption state and SVC 0x36 (#3)",
+     "Merge pull request #60 from n2ray/hermes/issue-12-vulkan-consumer",
+     "fix(vk): bound every scanner operand read and prove it under ASAN (#12)",
+     "fix(vk): bind execution to validated bytes and pre-check device limits (#12)",
+     "Merge pull request #59 from n2ray/hermes/issue-32-native-events",
+     "feat(vk): reflection-driven consumer for owned compute fixtures (#12)"
+    ]
+   },
+   {
+    "branch": "codex/ci63-66-validation",
+    "ahead": 78,
+    "behind": 5,
+    "files": 226,
+    "real_files": 216,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T14:33:54Z",
+    "subjects": [
+     "Merge commit '27348c1' into codex/ci63-66-validation",
+     "test: complete generated-entry sanitizer ABI boundaries",
+     "Merge remote-tracking branch 'origin/main' into codex/ci63-66-validation",
+     "Merge commit '83325fb06a36b1056da6d23cc0b202024cdc418c' into codex/ci63-66-validation",
+     "test: use x86 LowMem hints for HIPC wire fixture",
+     "Merge pull request #65 from n2ray/claude/issue-3-runtime-contract",
+     "Merge pull request #68 from n2ray/hermes/issue-13-mip-proof",
+     "fix(vk): align mip-prefix contract, add mid-pipeline cleanup proof (#13)"
     ]
    },
    {
@@ -4059,6 +4204,30 @@
     ]
    },
    {
+    "branch": "hermes/issue-4-sync-contract",
+    "ahead": 75,
+    "behind": 5,
+    "files": 220,
+    "real_files": 210,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T14:42:18Z",
+    "subjects": [
+     "fix(sync): ARM-guard the sink, skip 77 off AArch64, narrow grep claim (#4)",
+     "docs(sync): pin helper boundary evidence and add RET reservation counterexample (#4)",
+     "Merge pull request #69 from n2ray/hermes/issue-56-owned-boundary",
+     "test(nvn): assert all five owned objects and harden stderr capture (#56)",
+     "Merge pull request #61 from n2ray/hermes/issue-33-scene-bridge",
+     "fix(android): release inner gestures on panel-bit transitions",
+     "test(nvn): phase-A boundary for DownsampleTextureView diagnostic (#56)",
+     "Merge pull request #65 from n2ray/claude/issue-3-runtime-contract"
+    ]
+   },
+   {
     "branch": "hermes/issue-6-sm-lm",
     "ahead": 4,
     "behind": 5,
@@ -4075,6 +4244,30 @@
      "test(android): cover SM to lm discovery and reject foreign sm endpoint",
      "Merge pull request #25 from n2ray/android-snapdragon-elite",
      "Add Android ARM64 development baseline for Snapdragon 8 Elite"
+    ]
+   },
+   {
+    "branch": "hermes/issue-7-init-inventory",
+    "ahead": 72,
+    "behind": 5,
+    "files": 218,
+    "real_files": 208,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T14:38:09Z",
+    "subjects": [
+     "docs(android): split startup order and link bounded gap children",
+     "docs(android): inventory required startup services and imports",
+     "Merge pull request #61 from n2ray/hermes/issue-33-scene-bridge",
+     "fix(android): release inner gestures on panel-bit transitions",
+     "Merge pull request #65 from n2ray/claude/issue-3-runtime-contract",
+     "Merge pull request #68 from n2ray/hermes/issue-13-mip-proof",
+     "fix(vk): align mip-prefix contract, add mid-pipeline cleanup proof (#13)",
+     "docs(android): qualify non-Result SVC envelope rule and status opener (#3)"
     ]
    },
    {
@@ -4190,7 +4383,7 @@
    },
    {
     "branch": "hermes/issue-12-vulkan-consumer",
-    "ahead": 49,
+    "ahead": 50,
     "behind": 5,
     "files": 193,
     "real_files": 186,
@@ -4200,16 +4393,16 @@
      "dm/host",
      "dm/i18n"
     ],
-    "last_commit": "2026-10-18T11:01:49Z",
+    "last_commit": "2026-10-18T11:29:01Z",
     "subjects": [
+     "fix(vk): bound every scanner operand read and prove it under ASAN (#12)",
      "fix(vk): bind execution to validated bytes and pre-check device limits (#12)",
      "feat(vk): reflection-driven consumer for owned compute fixtures (#12)",
      "Merge pull request #58 from n2ray/hermes/issue-42-validation",
      "fix(vk): race-free validation diagnostics and layer-present boundary tests (#42)",
      "feat(vk): opt-in validation layer diagnostics with honest absence (#42)",
      "Merge pull request #57 from n2ray/hermes/issue-41-nvn-boundaries",
-     "docs(nvn): use Vulkan worst-case indirect bounds, not min(count, max) (#41)",
-     "Merge pull request #50 from n2ray/hermes/issue-14-app-lifecycle"
+     "docs(nvn): use Vulkan worst-case indirect bounds, not min(count, max) (#41)"
     ]
    },
    {
@@ -4234,6 +4427,54 @@
      "Merge pull request #28 from n2ray/hermes/issue-8-lifecycle",
      "feat(vk): row-stride RGBA8 region update/readback with owned fixture (#13)",
      "fix(android): keep accounting leases alive across host destroy"
+    ]
+   },
+   {
+    "branch": "hermes/issue-13-mip-proof",
+    "ahead": 61,
+    "behind": 5,
+    "files": 212,
+    "real_files": 204,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T13:59:47Z",
+    "subjects": [
+     "fix(vk): align mip-prefix contract, add mid-pipeline cleanup proof (#13)",
+     "feat(vk): owned multi-mip RGBA8 upload with LOD pixel evidence (#13)",
+     "Merge pull request #62 from n2ray/hermes/issue-13-samplers",
+     "Merge origin/main into hermes/issue-13-samplers",
+     "fix(vk): restore minf 4/5 mipmap linear and reject malformed NVN LOD (#13)",
+     "fix(vk): exhaustive sampler enums, checked sampler2D input, defined non-mip LOD (#13)",
+     "feat(vk): bounded NVN sampler to Vulkan conversion and sampled-draw fixture (#13)",
+     "Merge pull request #60 from n2ray/hermes/issue-12-vulkan-consumer"
+    ]
+   },
+   {
+    "branch": "hermes/issue-13-samplers",
+    "ahead": 58,
+    "behind": 5,
+    "files": 208,
+    "real_files": 201,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T13:28:21Z",
+    "subjects": [
+     "Merge origin/main into hermes/issue-13-samplers",
+     "fix(vk): restore minf 4/5 mipmap linear and reject malformed NVN LOD (#13)",
+     "fix(vk): exhaustive sampler enums, checked sampler2D input, defined non-mip LOD (#13)",
+     "feat(vk): bounded NVN sampler to Vulkan conversion and sampled-draw fixture (#13)",
+     "Merge pull request #60 from n2ray/hermes/issue-12-vulkan-consumer",
+     "fix(vk): bound every scanner operand read and prove it under ASAN (#12)",
+     "fix(vk): bind execution to validated bytes and pre-check device limits (#12)",
+     "Merge pull request #59 from n2ray/hermes/issue-32-native-events"
     ]
    },
    {
@@ -4285,6 +4526,34 @@
     ]
    },
    {
+    "branch": "hermes/issue-17-ci",
+    "ahead": 52,
+    "behind": 5,
+    "files": 206,
+    "real_files": 198,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T12:46:32Z",
+    "subjects": [
+     "ci: harden manifest, ndk stdout, and elf checks",
+     "ci: add game-free reproducible build and trace manifest",
+     "Merge pull request #59 from n2ray/hermes/issue-32-native-events",
+     "fix(android): gate touch input on native view and timer readiness",
+     "Merge pull request #58 from n2ray/hermes/issue-42-validation",
+     "fix(vk): race-free validation diagnostics and layer-present boundary tests (#42)",
+     "feat(android): deliver NativeActivity touch events to r2d core",
+     "feat(vk): opt-in validation layer diagnostics with honest absence (#42)"
+    ]
+   },
+   {
     "branch": "hermes/issue-31-touch-parity",
     "ahead": 18,
     "behind": 5,
@@ -4306,6 +4575,90 @@
      "fix(vk): require TRANSFER_SRC for readback images, cover row-op failures (#13)",
      "docs(android): publish lifecycle pairing and repeat-exit regression",
      "Merge pull request #28 from n2ray/hermes/issue-8-lifecycle"
+    ]
+   },
+   {
+    "branch": "hermes/issue-32-belt-action",
+    "ahead": 108,
+    "behind": 5,
+    "files": 237,
+    "real_files": 223,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T15:14:44Z",
+    "subjects": [
+     "feat(android): expose one-shot belt action through outer touch bridge (#84)",
+     "Merge pull request #83 from n2ray/hermes/issue-32-belt-bridge",
+     "Merge pull request #80 from n2ray/hermes/issue-72-owned-policy",
+     "feat(android): add belt context boundary to outer touch bridge (#82)",
+     "fix(android): freeze virtual core policy on attachment",
+     "Merge pull request #79 from n2ray/hermes/issue-32-belt-context",
+     "test: cover non-ARM configured GetInfo expectation",
+     "Merge pull request #76 from n2ray/hermes/issue-73-service-contract"
+    ]
+   },
+   {
+    "branch": "hermes/issue-32-belt-bridge",
+    "ahead": 102,
+    "behind": 5,
+    "files": 236,
+    "real_files": 222,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T15:05:55Z",
+    "subjects": [
+     "feat(android): add belt context boundary to outer touch bridge (#82)",
+     "Merge pull request #79 from n2ray/hermes/issue-32-belt-context",
+     "Merge pull request #76 from n2ray/hermes/issue-73-service-contract",
+     "feat(android): add host-fed belt context to touch adapter (#78)",
+     "docs: correct relocation evidence and static analysis limits",
+     "Merge pull request #77 from n2ray/hermes/issue-32-parity-next",
+     "Merge pull request #75 from n2ray/hermes/issue-72-virtual-core-contract",
+     "docs(services): resolve the nine init edges and account for the tail call (#73)"
+    ]
+   },
+   {
+    "branch": "hermes/issue-32-belt-context",
+    "ahead": 96,
+    "behind": 5,
+    "files": 235,
+    "real_files": 222,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T14:58:20Z",
+    "subjects": [
+     "feat(android): add host-fed belt context to touch adapter (#78)",
+     "Merge pull request #77 from n2ray/hermes/issue-32-parity-next",
+     "Merge pull request #75 from n2ray/hermes/issue-72-virtual-core-contract",
+     "test(android): port belt tap and second-set belt parity cases (#32)",
+     "docs(android): separate virtual core ABI layers and failure semantics",
+     "Merge pull request #74 from n2ray/hermes/issue-32-touch-parity",
+     "Merge pull request #71 from n2ray/hermes/issue-4-sync-contract",
+     "docs(android): define virtual core mask contract"
     ]
    },
    {
@@ -4333,6 +4686,62 @@
     ]
    },
    {
+    "branch": "hermes/issue-32-parity-next",
+    "ahead": 91,
+    "behind": 5,
+    "files": 234,
+    "real_files": 222,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T14:50:39Z",
+    "subjects": [
+     "test(android): port belt tap and second-set belt parity cases (#32)",
+     "Merge pull request #74 from n2ray/hermes/issue-32-touch-parity",
+     "Merge pull request #71 from n2ray/hermes/issue-4-sync-contract",
+     "Merge pull request #70 from n2ray/hermes/issue-7-init-inventory",
+     "fix(android): use ACTION_CANCEL time for stick resume (#32)",
+     "fix(sync): ARM-guard the sink, skip 77 off AArch64, narrow grep claim (#4)",
+     "docs(android): split startup order and link bounded gap children",
+     "Merge pull request #63 from n2ray/hermes/issue-17-ci"
+    ]
+   },
+   {
+    "branch": "hermes/issue-32-provider-actions",
+    "ahead": 118,
+    "behind": 5,
+    "files": 238,
+    "real_files": 223,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T15:24:23Z",
+    "subjects": [
+     "fix(android): drop stale core actions at provider boundaries (#88)",
+     "Merge pull request #86 from n2ray/hermes/issue-72-thread-mask",
+     "Merge pull request #85 from n2ray/hermes/issue-32-belt-action",
+     "Merge pull request #81 from n2ray/hermes/issue-73-apm-trace",
+     "docs(services): bound provenance and rescan all selected functions",
+     "test: guard ARM-only virtual core state check",
+     "android: store bounded owned thread core-mask state",
+     "feat(android): expose one-shot belt action through outer touch bridge (#84)"
+    ]
+   },
+   {
     "branch": "hermes/issue-32-touch-adapter",
     "ahead": 23,
     "behind": 5,
@@ -4354,6 +4763,58 @@
      "docs(android): add r2d touch parity matrix and checker",
      "Merge pull request #43 from n2ray/hermes/issue-13-formats",
      "feat(vk): support NVN RGBA8_SRGB (0x38) with sampled-vs-raw regression (#13)"
+    ]
+   },
+   {
+    "branch": "hermes/issue-32-touch-parity",
+    "ahead": 83,
+    "behind": 5,
+    "files": 231,
+    "real_files": 221,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T14:42:24Z",
+    "subjects": [
+     "fix(android): use ACTION_CANCEL time for stick resume (#32)",
+     "Merge pull request #63 from n2ray/hermes/issue-17-ci",
+     "Merge pull request #66 from n2ray/hermes/issue-64-linux-ci",
+     "Merge pull request #69 from n2ray/hermes/issue-56-owned-boundary",
+     "test: complete generated-entry sanitizer ABI boundaries",
+     "test(nvn): assert all five owned objects and harden stderr capture (#56)",
+     "Merge pull request #61 from n2ray/hermes/issue-33-scene-bridge",
+     "fix(android): release inner gestures on panel-bit transitions"
+    ]
+   },
+   {
+    "branch": "hermes/issue-33-scene-bridge",
+    "ahead": 53,
+    "behind": 5,
+    "files": 199,
+    "real_files": 192,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T14:27:07Z",
+    "subjects": [
+     "fix(android): release inner gestures on panel-bit transitions",
+     "fix(android): invalidate outer touch ownership on game context changes",
+     "feat(android): add bounded game scene identity and hit bridge",
+     "Merge pull request #59 from n2ray/hermes/issue-32-native-events",
+     "fix(android): gate touch input on native view and timer readiness",
+     "Merge pull request #58 from n2ray/hermes/issue-42-validation",
+     "fix(vk): race-free validation diagnostics and layer-present boundary tests (#42)",
+     "feat(android): deliver NativeActivity touch events to r2d core"
     ]
    },
    {
@@ -4405,6 +4866,334 @@
     ]
    },
    {
+    "branch": "hermes/issue-56-owned-boundary",
+    "ahead": 68,
+    "behind": 5,
+    "files": 214,
+    "real_files": 205,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T14:31:01Z",
+    "subjects": [
+     "test(nvn): assert all five owned objects and harden stderr capture (#56)",
+     "test(nvn): phase-A boundary for DownsampleTextureView diagnostic (#56)",
+     "Merge pull request #65 from n2ray/claude/issue-3-runtime-contract",
+     "Merge pull request #68 from n2ray/hermes/issue-13-mip-proof",
+     "fix(vk): align mip-prefix contract, add mid-pipeline cleanup proof (#13)",
+     "docs(android): qualify non-Result SVC envelope rule and status opener (#3)",
+     "docs(android): coherent TLR state machine and current-vs-obligation split (#3)",
+     "feat(vk): owned multi-mip RGBA8 upload with LOD pixel evidence (#13)"
+    ]
+   },
+   {
+    "branch": "hermes/issue-64-linux-ci",
+    "ahead": 59,
+    "behind": 5,
+    "files": 204,
+    "real_files": 197,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T14:33:43Z",
+    "subjects": [
+     "test: complete generated-entry sanitizer ABI boundaries",
+     "test: use x86 LowMem hints for HIPC wire fixture",
+     "test: keep HIPC log fixture inside wire address range",
+     "test: fix Linux ASAN fixtures and generated-entry UBSAN metadata",
+     "fix(ci): address Linux baseline compile and sanitizer failures",
+     "Merge pull request #60 from n2ray/hermes/issue-12-vulkan-consumer",
+     "fix(vk): bound every scanner operand read and prove it under ASAN (#12)",
+     "fix(vk): bind execution to validated bytes and pre-check device limits (#12)"
+    ]
+   },
+   {
+    "branch": "hermes/issue-72-dontcare-contract",
+    "ahead": 128,
+    "behind": 5,
+    "files": 241,
+    "real_files": 223,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T15:44:56Z",
+    "subjects": [
+     "docs: clarify DontCare guest physical state",
+     "docs: correct DontCare guest-core model scope",
+     "docs: document pinned DontCare reference semantics",
+     "Merge pull request #90 from n2ray/hermes/issue-72-sdk-arguments",
+     "Merge pull request #89 from n2ray/hermes/issue-32-provider-actions",
+     "docs: record bounded nnMain virtual-core callsite arguments",
+     "Merge pull request #87 from n2ray/hermes/issue-73-apm-provenance",
+     "docs(services): retain raw reloc index and qualify apm Release mapping (#73)"
+    ]
+   },
+   {
+    "branch": "hermes/issue-72-owned-policy",
+    "ahead": 98,
+    "behind": 5,
+    "files": 236,
+    "real_files": 223,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T15:03:37Z",
+    "subjects": [
+     "fix(android): freeze virtual core policy on attachment",
+     "test: cover non-ARM configured GetInfo expectation",
+     "feat(android): add opt-in virtual core policy",
+     "Merge pull request #77 from n2ray/hermes/issue-32-parity-next",
+     "Merge pull request #75 from n2ray/hermes/issue-72-virtual-core-contract",
+     "test(android): port belt tap and second-set belt parity cases (#32)",
+     "docs(android): separate virtual core ABI layers and failure semantics",
+     "Merge pull request #74 from n2ray/hermes/issue-32-touch-parity"
+    ]
+   },
+   {
+    "branch": "hermes/issue-72-sdk-arguments",
+    "ahead": 118,
+    "behind": 5,
+    "files": 239,
+    "real_files": 223,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T15:28:11Z",
+    "subjects": [
+     "docs: record bounded nnMain virtual-core callsite arguments",
+     "Merge pull request #86 from n2ray/hermes/issue-72-thread-mask",
+     "Merge pull request #85 from n2ray/hermes/issue-32-belt-action",
+     "Merge pull request #81 from n2ray/hermes/issue-73-apm-trace",
+     "docs(services): bound provenance and rescan all selected functions",
+     "test: guard ARM-only virtual core state check",
+     "android: store bounded owned thread core-mask state",
+     "feat(android): expose one-shot belt action through outer touch bridge (#84)"
+    ]
+   },
+   {
+    "branch": "hermes/issue-72-thread-mask",
+    "ahead": 107,
+    "behind": 5,
+    "files": 237,
+    "real_files": 223,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T15:15:58Z",
+    "subjects": [
+     "test: guard ARM-only virtual core state check",
+     "android: store bounded owned thread core-mask state",
+     "Merge pull request #80 from n2ray/hermes/issue-72-owned-policy",
+     "fix(android): freeze virtual core policy on attachment",
+     "Merge pull request #79 from n2ray/hermes/issue-32-belt-context",
+     "test: cover non-ARM configured GetInfo expectation",
+     "Merge pull request #76 from n2ray/hermes/issue-73-service-contract",
+     "feat(android): add opt-in virtual core policy"
+    ]
+   },
+   {
+    "branch": "hermes/issue-72-virtual-core-contract",
+    "ahead": 87,
+    "behind": 5,
+    "files": 233,
+    "real_files": 221,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T14:49:54Z",
+    "subjects": [
+     "docs(android): separate virtual core ABI layers and failure semantics",
+     "docs(android): define virtual core mask contract",
+     "Merge pull request #70 from n2ray/hermes/issue-7-init-inventory",
+     "docs(android): split startup order and link bounded gap children",
+     "Merge pull request #63 from n2ray/hermes/issue-17-ci",
+     "Merge pull request #66 from n2ray/hermes/issue-64-linux-ci",
+     "docs(android): inventory required startup services and imports",
+     "Merge pull request #69 from n2ray/hermes/issue-56-owned-boundary"
+    ]
+   },
+   {
+    "branch": "hermes/issue-73-apm-outparam",
+    "ahead": 123,
+    "behind": 5,
+    "files": 240,
+    "real_files": 223,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T15:36:00Z",
+    "subjects": [
+     "docs(services): narrow apm out-param note to observed store presence (#73)",
+     "docs(services): prove apm shim helper stack out-param write (#73)",
+     "Merge pull request #87 from n2ray/hermes/issue-73-apm-provenance",
+     "docs(services): retain raw reloc index and qualify apm Release mapping (#73)",
+     "Merge remote-tracking branch 'origin/main' into hermes/issue-73-apm-provenance",
+     "docs(services): bound apm BLR x8 receiver/vtable provenance (#73)",
+     "Merge pull request #86 from n2ray/hermes/issue-72-thread-mask",
+     "Merge pull request #85 from n2ray/hermes/issue-32-belt-action"
+    ]
+   },
+   {
+    "branch": "hermes/issue-73-apm-provenance",
+    "ahead": 120,
+    "behind": 5,
+    "files": 239,
+    "real_files": 223,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T15:24:57Z",
+    "subjects": [
+     "docs(services): retain raw reloc index and qualify apm Release mapping (#73)",
+     "Merge remote-tracking branch 'origin/main' into hermes/issue-73-apm-provenance",
+     "docs(services): bound apm BLR x8 receiver/vtable provenance (#73)",
+     "Merge pull request #86 from n2ray/hermes/issue-72-thread-mask",
+     "Merge pull request #85 from n2ray/hermes/issue-32-belt-action",
+     "Merge pull request #81 from n2ray/hermes/issue-73-apm-trace",
+     "docs(services): bound provenance and rescan all selected functions",
+     "test: guard ARM-only virtual core state check"
+    ]
+   },
+   {
+    "branch": "hermes/issue-73-apm-trace",
+    "ahead": 103,
+    "behind": 5,
+    "files": 237,
+    "real_files": 222,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T15:16:43Z",
+    "subjects": [
+     "docs(services): bound provenance and rescan all selected functions",
+     "docs(services): fix ADD fields, write-kill and visited counts (#73)",
+     "docs(services): correct tracer, reach the indirect/vtable frontier (#73)",
+     "docs(services): trace oe→apm/applet to the first unsupported indirection (#73)",
+     "Merge pull request #76 from n2ray/hermes/issue-73-service-contract",
+     "docs: correct relocation evidence and static analysis limits",
+     "Merge pull request #77 from n2ray/hermes/issue-32-parity-next",
+     "Merge pull request #75 from n2ray/hermes/issue-72-virtual-core-contract"
+    ]
+   },
+   {
+    "branch": "hermes/issue-73-service-contract",
+    "ahead": 93,
+    "behind": 5,
+    "files": 235,
+    "real_files": 222,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T14:57:54Z",
+    "subjects": [
+     "docs: correct relocation evidence and static analysis limits",
+     "docs(services): resolve the nine init edges and account for the tail call (#73)",
+     "docs(services): phase-1 SDK module-init service contract evidence (#73)",
+     "Merge pull request #74 from n2ray/hermes/issue-32-touch-parity",
+     "Merge pull request #71 from n2ray/hermes/issue-4-sync-contract",
+     "Merge pull request #70 from n2ray/hermes/issue-7-init-inventory",
+     "fix(android): use ACTION_CANCEL time for stick resume (#32)",
+     "fix(sync): ARM-guard the sink, skip 77 off AArch64, narrow grep claim (#4)"
+    ]
+   },
+   {
+    "branch": "hermes/issue-91-portal-adapter",
+    "ahead": 125,
+    "behind": 5,
+    "files": 239,
+    "real_files": 223,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T15:43:48Z",
+    "subjects": [
+     "fix(android): release canceled portal pointer ids (#91)",
+     "feat(android): add portal context/request/ack to touch adapter (#91)",
+     "Merge pull request #89 from n2ray/hermes/issue-32-provider-actions",
+     "Merge pull request #87 from n2ray/hermes/issue-73-apm-provenance",
+     "docs(services): retain raw reloc index and qualify apm Release mapping (#73)",
+     "fix(android): drop stale core actions at provider boundaries (#88)",
+     "Merge remote-tracking branch 'origin/main' into hermes/issue-73-apm-provenance",
+     "docs(services): bound apm BLR x8 receiver/vtable provenance (#73)"
+    ]
+   },
+   {
     "branch": "hermes/shader-test-isolation",
     "ahead": 32,
     "behind": 5,
@@ -4430,26 +5219,30 @@
    },
    {
     "branch": "main",
-    "ahead": 50,
+    "ahead": 128,
     "behind": 5,
-    "files": 195,
-    "real_files": 188,
+    "files": 241,
+    "real_files": 223,
     "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
      "dm/android",
      "dm/gfx",
      "dm/host",
      "dm/i18n"
     ],
-    "last_commit": "2026-10-18T10:56:51Z",
+    "last_commit": "2026-10-18T15:37:56Z",
     "subjects": [
-     "Merge pull request #59 from n2ray/hermes/issue-32-native-events",
-     "fix(android): gate touch input on native view and timer readiness",
-     "Merge pull request #58 from n2ray/hermes/issue-42-validation",
-     "fix(vk): race-free validation diagnostics and layer-present boundary tests (#42)",
-     "feat(android): deliver NativeActivity touch events to r2d core",
-     "feat(vk): opt-in validation layer diagnostics with honest absence (#42)",
-     "Merge pull request #57 from n2ray/hermes/issue-41-nvn-boundaries",
-     "docs(nvn): use Vulkan worst-case indirect bounds, not min(count, max) (#41)"
+     "Merge pull request #92 from n2ray/hermes/issue-73-apm-outparam",
+     "docs(services): narrow apm out-param note to observed store presence (#73)",
+     "Merge pull request #90 from n2ray/hermes/issue-72-sdk-arguments",
+     "docs(services): prove apm shim helper stack out-param write (#73)",
+     "Merge pull request #89 from n2ray/hermes/issue-32-provider-actions",
+     "docs: record bounded nnMain virtual-core callsite arguments",
+     "Merge pull request #87 from n2ray/hermes/issue-73-apm-provenance",
+     "docs(services): retain raw reloc index and qualify apm Release mapping (#73)"
     ]
    }
   ]
@@ -4472,7 +5265,7 @@
   ]
  },
  "CODPHISH/ns2app": {
-  "pushed_at": "2026-10-18T10:41:41Z",
+  "pushed_at": "2026-10-18T13:39:42Z",
   "branches": [
    {
     "branch": "main",
@@ -4501,21 +5294,86 @@
   ]
  },
  "atone/nxnative": {
-  "pushed_at": "2026-10-18T06:08:31Z",
+  "pushed_at": "2026-10-18T13:26:34Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T05:48:07Z",
+    "last_commit": "2026-10-18T13:24:32Z",
     "subjects": [
-     "Depth clamp replayed: BotW's tree shadows reach Link, the cabin roof shades the floor",
-     "Merge upstream main (16 commits: Odyssey, Hades / Vulkan, LA physics fix, depth entry points, ...)",
-     "BotW: give scene captures into RGB10A2 targets alpha 1",
-     "c1_full.tsv for five rebuilt shader chains",
-     "Docs: Odyssey and Hades play on the Mac; Hades game notes",
-     "README: English only; iPhone 15 Pro or newer; Hades being ported",
-     "Only GPUs with BC textures are supported: no-BC decompression paths removed",
-     "Hades runs on the Mac through a new Vulkan-on-Metal layer"
+     "BotW cutscene flashes: GPU-written textures are not taken for CPU-written",
+     "Movie native-texture frames: uploads no longer catch a frame half written",
+     "BotW at 60 fps: pre-rendered cutscenes paced by timestamp; sead controller repeat follows the frame rate",
+     "BotW: back to 60 fps by default",
+     "Merge branch botw-ui2f: *_UI2F / *_I2F vertex formats (BotW's tall grass)",
+     "BotW: native 30 fps by default; the 60 fps cut becomes opt-in (DM_BOTW_60FPS=1)",
+     "Switch Pro Controller motion and HD rumble on the Mac",
+     "*_UI2F / *_I2F vertex formats: BotW's tall meadow grass is back"
+    ]
+   }
+  ]
+ },
+ "oneincase/d2r-mobile": {
+  "pushed_at": "2026-10-18T13:52:04Z",
+  "branches": []
+ },
+ "zJiaJun/d2r-mobile": {
+  "pushed_at": "2026-10-18T13:22:55Z",
+  "branches": []
+ },
+ "dotfile-ai/d2r-mobile": {
+  "pushed_at": "2026-10-18T14:53:45Z",
+  "branches": []
+ },
+ "Deng187/d2r-mobile-": {
+  "pushed_at": "2026-10-18T12:47:42Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-18T12:23:33Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "armyja/nxnative-aa-port": {
+  "pushed_at": "2026-10-18T15:12:52Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-18T15:12:49Z",
+    "subjects": [
+     "docs: add Ace Attorney 456 bring-up notes; link from FORK-NOTES",
+     "去掉注释中的游戏 UI 文案与本地绝对路径；补充 fork 说明（存档修复、XCI 支持）",
+     "本地：456(Apollo Justice Trilogy) 临时档案 + nx_extract 的 XCI 支持",
+     "本地：AA 存档日期注入改用本机时区（localtime tm_gmtoff），不再显示 UTC",
+     "本地：AA 存档日期注入尝试（门桩回写 DateTime，宿主真实时间）；nn::time 真实初始化实验（默认关闭）",
+     "本地：修好 CUTS 表结构并保留 AA 存档修复说明",
+     "本地修复：AA 存档/读档 —— DateTime.Now 强制走时区差重算分支（绕开空缓存空引用）；宿主兜底默认关闭",
+     "本地：AA get_Now 时间值观测门（定位到 guest 当前时间返回 0 导致时区缓存空引用）"
+    ]
+   }
+  ]
+ },
+ "Nishikori-Yui/nxnative": {
+  "pushed_at": "2026-10-18T07:05:27Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-18T05:03:04Z",
+    "subjects": [
+     "Preserve occlusion counts across visibility buffer reuse",
+     "Fix sampler pool descriptor scoping",
+     "Add macOS DualSense controller input",
+     "Improve Dark Souls Mac keyboard focus",
+     "Fix Dark Souls Mac frame presentation fallback",
+     "Document windowed water trace launcher requirement",
+     "Identify bindless handles and offsets in targeted draw traces",
+     "Preserve NVN sampler minimum and maximum reduction modes"
     ]
    }
   ]
