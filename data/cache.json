@@ -259,12 +259,37 @@
   ]
  },
  "dormonbear/d2r-mobile": {
-  "pushed_at": "2026-10-16T06:16:55Z",
+  "pushed_at": "2026-10-18T09:40:10Z",
   "branches": [
+   {
+    "branch": "feat/webdav-save-sync",
+    "ahead": 12,
+    "behind": 0,
+    "files": 34,
+    "real_files": 34,
+    "dirs": [
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "postman/mocks",
+     "postman/simulations"
+    ],
+    "last_commit": "2026-10-18T09:40:04Z",
+    "subjects": [
+     "feat(sync): resolve conflicts with progress and in-app save reload",
+     "Merge latest main into WebDAV worktree",
+     "fix(sync): verify exclusive locks and remove temporary UI hook",
+     "fix(sync): coordinate fnOS writes with verified WebDAV collection locks",
+     "fix(sync): keep diagnostics in cache and classify network errors safely",
+     "fix(sync): report redacted WebDAV connection failures",
+     "fix(sync): recover missing startup saves without publishing deletions",
+     "fix(sync): preserve deletions and mirror resolved WebDAV versions"
+    ]
+   },
    {
     "branch": "fix/audio-release-notifier-qos",
     "ahead": 1,
-    "behind": 5,
+    "behind": 15,
     "files": 1,
     "real_files": 1,
     "dirs": [
@@ -278,7 +303,7 @@
    {
     "branch": "fix/minimap-layout-rebuild",
     "ahead": 2,
-    "behind": 0,
+    "behind": 10,
     "files": 3,
     "real_files": 3,
     "dirs": [
@@ -293,17 +318,18 @@
   ]
  },
  "n1zjqo/d2r-mobile": {
-  "pushed_at": "2026-10-17T05:45:14Z",
+  "pushed_at": "2026-10-18T06:07:41Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 3,
-    "behind": 2,
+    "ahead": 4,
+    "behind": 0,
     "files": 1,
     "real_files": 0,
     "dirs": [],
-    "last_commit": "2026-10-17T05:45:13Z",
+    "last_commit": "2026-10-18T06:07:41Z",
     "subjects": [
+     "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
      "ci: sync upstream main daily at 09:23 China time"
@@ -347,14 +373,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-17T19:46:28Z",
+  "pushed_at": "2026-10-18T10:39:19Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 88,
+    "ahead": 91,
     "behind": 18,
-    "files": 162,
-    "real_files": 157,
+    "files": 171,
+    "real_files": 166,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -363,16 +389,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-17T19:46:18Z",
+    "last_commit": "2026-10-18T10:39:05Z",
     "subjects": [
+     "Connect P5R guarded shader candidates to experimental game launch",
+     "Stage native P5R shader caches with provenance-checked packaging",
+     "Validate P5R resource views during production argument encoding",
      "Implement synchronized conditional rendering and preserve query totals",
      "Validate NVN scratch reservations with Metal-managed shader private storage",
      "Refresh capture-gate regression and bound copy failure diagnostics",
      "Replay checked P5R default raster states without diagnostic capture",
-     "Enable bounded P5R multisample state setters on normal paths",
-     "Record complete local iOS Metal diagnostic compilation",
-     "Keep Metal compiler module cache inside diagnostic outputs",
-     "Cover same-format mirror dispatch and document selective nxnative reuse"
+     "Enable bounded P5R multisample state setters on normal paths"
     ]
    },
    {
@@ -497,11 +523,11 @@
   "branches": []
  },
  "Seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-17T21:32:00Z",
+  "pushed_at": "2026-10-18T06:42:31Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 139,
+    "ahead": 143,
     "behind": 5,
     "files": 146,
     "real_files": 145,
@@ -513,16 +539,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-10-17T21:22:31Z",
+    "last_commit": "2026-10-18T06:37:01Z",
     "subjects": [
+     "fix(ohos): 键解析替身（影子对象越过\"解析失败\"）＋ .bss 污染防御 ＋ 探针无条件化",
+     "probe(ohos): 崩点完整溯源（x2 来自\"按字符串键查找\"返回 0）",
+     "feat(ohos): NVN 池/缓冲 size 兜底 —— 缓冲地址问题解决，崩点前移",
+     "feat(ohos): NVN MemoryPool + Buffer 真实现（UMA 直通）——发现游戏传入 size=0",
      "fix(ohos): 影子堆两个虚表槽语义修正 —— 分配成功，GameConfig 不再失败",
      "feat(ohos): 影子「当前堆」——解锁真实初始化路径，卡点推进到「没有资源」",
      "probe(ohos): 对照钩子确认 x22==0；查明 x22 是「当前堆」上下文",
-     "feat(ohos): 启动链全量追踪 + 定位「跳过后半段初始化」的 cbz x22",
-     "feat(ohos): 任务创建链探针（CreateTaskImmediate / 建后回填 / mgr[0x50]）——真凶是描述符全零",
-     "feat(ohos): NVN 按名字记账桩（523 个）——真机结论：NVN 不是瓶颈，卡在任务准备链",
-     "fix(ohos): 互斥量改递归 + TLS 每线程影子 —— 图形初始化全线跑通，进主循环帧等待",
-     "feat(ohos): NVN 最小空设备 —— 图形设备初始化成功（nvnDeviceInitialize → 1）"
+     "feat(ohos): 启动链全量追踪 + 定位「跳过后半段初始化」的 cbz x22"
     ]
    }
   ]
@@ -595,12 +621,12 @@
   "branches": []
  },
  "klacee/d2r-mobile": {
-  "pushed_at": "2026-10-16T07:52:15Z",
+  "pushed_at": "2026-10-18T07:45:10Z",
   "branches": [
    {
     "branch": "main",
     "ahead": 2,
-    "behind": 13,
+    "behind": 23,
     "files": 1,
     "real_files": 0,
     "dirs": [],
@@ -1075,7 +1101,7 @@
   "branches": []
  },
  "yzxh24/d2r-mobile": {
-  "pushed_at": "2026-10-17T11:10:03Z",
+  "pushed_at": "2026-10-18T06:49:04Z",
   "branches": []
  },
  "gamerenzz/d2r-mobile": {
@@ -1083,7 +1109,7 @@
   "branches": []
  },
  "zjwww/d2r-mobile": {
-  "pushed_at": "2026-10-15T13:21:57Z",
+  "pushed_at": "2026-10-18T04:56:12Z",
   "branches": []
  },
  "zzren2020/d2r-mobile": {
@@ -1119,21 +1145,25 @@
   "branches": []
  },
  "XGBCCC/d2r-mobile": {
-  "pushed_at": "2026-10-18T01:17:23Z",
+  "pushed_at": "2026-10-18T07:10:23Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 2,
+    "ahead": 6,
     "behind": 0,
-    "files": 17,
-    "real_files": 15,
+    "files": 26,
+    "real_files": 24,
     "dirs": [
      "FORK_CHANGES.md",
      "dm/host",
      "dm/i18n"
     ],
-    "last_commit": "2026-10-18T01:17:23Z",
+    "last_commit": "2026-10-18T07:10:06Z",
     "subjects": [
+     "Merge remote-tracking branch 'origin/main'",
+     "Hold life and mana in Elysium and stop gold and durability loss",
+     "Stop belt potions vanishing, drink below 90%, and raise gamble odds",
+     "Merge remote-tracking branch 'upstream/main'",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Elysium drop rates and touch QoL: higher uniques, belt refill, vendor autosell"
     ]
@@ -1230,21 +1260,21 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-10-17T14:23:50Z",
+  "pushed_at": "2026-10-18T08:19:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T14:17:51Z",
+    "last_commit": "2026-10-18T08:19:37Z",
     "subjects": [
+     "Clarify the complete Mac resource folder required at startup",
      "Reuse verified prepared inputs with compatible upstream generator updates",
      "Show the iOS resource and Legacy folder layout",
      "Package Mac apps without separate resource metadata",
      "Simplify Mac setup with the complete Data resource archive",
      "Refresh Mac build duration from the completed prepared-input build",
      "Point Mac build inputs to the repaired prepared directory",
-     "Fix missing Mac shader reflections and validate final app resources",
-     "Shorten generated release titles"
+     "Fix missing Mac shader reflections and validate final app resources"
     ]
    }
   ]
@@ -1449,12 +1479,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-17T20:47:00Z",
+  "pushed_at": "2026-10-18T04:48:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T20:46:59Z",
+    "last_commit": "2026-10-18T04:48:10Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1489,61 +1519,61 @@
   ]
  },
  "airt56/auto-green": {
-  "pushed_at": "2026-10-17T05:41:26Z",
+  "pushed_at": "2026-10-18T06:03:22Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T05:41:25Z",
+    "last_commit": "2026-10-18T06:03:21Z",
     "subjects": [
+     "docs(readme): refresh daily tech digest dashboard (2026-10-18)",
+     "docs(trending): sync GitHub hot repositories (2026-10-18)",
+     "docs(quote): add daily developer quote (2026-10-18)",
+     "chore(checkin): update daily check-in stats for 2026-10-18",
      "docs(readme): refresh daily tech digest dashboard (2026-10-17)",
      "chore(checkin): update daily check-in stats for 2026-10-17",
      "docs(readme): refresh daily tech digest dashboard (2026-10-16)",
-     "docs(trending): sync GitHub hot repositories (2026-10-16)",
-     "docs(quote): add daily developer quote (2026-10-16)",
-     "chore(checkin): update daily check-in stats for 2026-10-16",
-     "docs(readme): refresh daily tech digest dashboard (2026-10-15)",
-     "docs(trending): sync GitHub hot repositories (2026-10-15)"
+     "docs(trending): sync GitHub hot repositories (2026-10-16)"
     ]
    }
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-18T00:31:34Z",
+  "pushed_at": "2026-10-18T09:55:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T00:31:30Z",
+    "last_commit": "2026-10-18T09:55:20Z",
     "subjects": [
+     "计算着色器离线链路：定位 compute 代码 + 修 Ryujinx 翻译器把表达式传进 Call 实参的 bug",
+     "私有诊断上传：不带 frame-recent-*（只给本地捕获闸门用），避免超出 3 帧上限",
+     "着色器匹配：合并内容相同的着色器条目；计算程序绑定不再清空图形着色器（v0.6.17）",
      "捕获闸门：除最后一帧外再看最近 6 次定期捕获，任一张有真实画面即通过",
      "audio_selftest：自动渲染帧数上限按实际经过时间算（迟到的周期现在会补渲染）",
      "selftest：纹理对象缓冲按 sizeof(NVNtexture)=0xC0 分配（v0.6.16 起 stamp 会写满描述字）",
      "Start 后黑屏 + 声音卡顿（v0.6.16）",
-     "Start 后黑屏 + 无声：单条不支持的绘制不再丢整帧；混音不再被 /65536 归零（v0.6.15）",
-     "撤掉退休表：CI 捕获闸门显示它把 macOS 渲染弄成全黑（v0.6.14）",
-     "修 v0.6.12 的 iOS 检查：main.m 漏了 #include \"logsum.h\"（前一个脚本在写入前断言失败丢了这一行）",
-     "黑屏定位（用日志摘要）：深度视图判失败 → 每遍渲染跳过；退休表 + 视图退回 + 音频诊断（v0.6.12）"
+     "Start 后黑屏 + 无声：单条不支持的绘制不再丢整帧；混音不再被 /65536 归零（v0.6.15）"
     ]
    }
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-18T02:36:35Z",
+  "pushed_at": "2026-10-18T09:57:18Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T02:36:32Z",
+    "last_commit": "2026-10-18T08:36:03Z",
     "subjects": [
-     "c1_full.tsv for five rebuilt shader chains",
-     "Docs: Odyssey and Hades play on the Mac; Hades game notes",
-     "README: English only; iPhone 15 Pro or newer; Hades being ported",
-     "Only GPUs with BC textures are supported: no-BC decompression paths removed",
-     "Hades runs on the Mac through a new Vulkan-on-Metal layer",
-     "Unity: read the pre-2019.3 serialized and Shader formats (Cuphead, Unity 2017.4)",
-     "patch_nso: offset-table jumps whose entry is loaded into another register",
-     "Super Mario Odyssey playable on the Mac: H.264 movies, sticks, HUD; all shaders compiled with preserved invariance"
+     "NSP script: one progress line per stage, with a bar and ETA",
+     "AGENTS.md: port sessions share cross-game findings",
+     "Tears of the Kingdom reaches gameplay on the Mac (3D scene still black)",
+     "patch_nso: retry blocks into exclusive windows, adr-relative jump tables (Tears of the Kingdom)",
+     "README: Super Mario Odyssey plays on the iPhone",
+     "c1_full.tsv for the last three rebuilt shader chains",
+     "Super Mario Odyssey: the Cap Kingdom fog parts around Mario again",
+     "c1_full.tsv for five rebuilt shader chains"
     ]
    }
   ]
@@ -1609,12 +1639,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-18T04:31:24Z",
+  "pushed_at": "2026-10-18T11:02:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T04:31:23Z",
+    "last_commit": "2026-10-18T11:02:43Z",
     "subjects": [
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
@@ -1637,12 +1667,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-17T23:11:07Z",
+  "pushed_at": "2026-10-18T04:41:54Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T23:11:06Z",
+    "last_commit": "2026-10-18T04:41:53Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -1871,14 +1901,14 @@
   ]
  },
  "vickwv/d2r-mobile": {
-  "pushed_at": "2026-10-18T03:07:13Z",
+  "pushed_at": "2026-10-18T10:09:21Z",
   "branches": [
    {
     "branch": "android-integration",
-    "ahead": 80,
-    "behind": 10,
-    "files": 124,
-    "real_files": 116,
+    "ahead": 99,
+    "behind": 0,
+    "files": 135,
+    "real_files": 123,
     "dirs": [
      "DESIGN.md",
      "dm/android",
@@ -1888,16 +1918,16 @@
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-10-18T03:07:10Z",
+    "last_commit": "2026-10-18T10:08:30Z",
     "subjects": [
-     "建角：没选职业点「创建」给提示不进门；模式页只留标准/专家两块方块；中文名放行真的编进去了",
-     "建角：点标准 / 专家牌 = 接受并弹输入框；模式页「返回」可用；中文名放行",
-     "建角流程走通 + 地图默认显示 + 技能绑定/加点接到操作界面",
-     "触屏：设置读数落盘（diagnostics/settings_automap.txt）+ 掩码注释更新",
-     "触屏：回城钮（技能弧上方圆钮，宿主免费回城）、地图块按玩家档位切、小地图默认开（AutomapAutoOpen）",
-     "docs(android): §6 记 P8 逐页验收——每拍入口接线（hud_tick 尾部那批挪进 hud_read_android）与已验的页面（个人仓库翻页/编年史整页），珍宝匣页签位置、秘境需终局角色、符文之语/积分牌入口待查",
-     "feat(android): P8 每拍入口接线——diag.c 的 hud_tick 尾部那批 P8 模块的服务端拍入口在安卓没人调（diag.c 整体不编），挪进 hud_read_android.c：免费回城 server_step / 极乐世界 stash_step / dm_townwp_tick（新增编入，进局落城镇小站旁）/ 首领连战 tick / 秘境 tick / 个人仓库 dm_pages_tick（翻页请求在这一拍消费）/ 编年史 dm_vault_tick / 自动增益 srv_tick / 百宝囊 srv_tick / 当前武器组 publish（换组角标 Ⅱ）。真机验证：储物箱 PERSON/SHARED/VAULT 三页签 + PAGE 1/5，右箭头翻页 '第 1 → 2 页…请游戏存盘' 且页码写成 2/5、连翻被「等落盘」正确挡住；点 VAULT 页签 'BankTabs 第 0 → 第 5 个' 进第六页，编年史界面整页出来（UNIQUE/SETS + 部位分类 + 38 格筛选 + PAGE 1/4），空仓库按「侧文件还没有」处理",
-     "docs(android): §6 遗留 1（确认框点不到）标记已修，记三处根因与修法"
+     "docs(android): 分辨率方案 v2.1——落地状态、分辨率放自定义页的决定、旧档名删除",
+     "feat(android): 自定义页加分辨率档（省电/标准/高清），出图与世界预算按屏幕派生",
+     "docs(android): 分辨率方案 v2——按真机实测下调三档预算、high 改比例制、纠正 SurfaceView 尺寸误判",
+     "分辨率适配方案：把\"不许写死分辨率\"写成第 0 条硬规矩，并清掉最后一处写死兜底",
+     "记录「分辨率与画质档」适配方案（交给执行进程）",
+     "docs(android): 计划文档补 §9 指针，指向 5a1bd91 收编的《教训与规矩》",
+     "收编「安卓 ↔ iOS 对齐：教训与规矩」，并补一条排查教训（§9）",
+     "新触摸外观照 iOS 一比一移植（Android 独占）+ 覆盖层推送必须 chmod"
     ]
    }
   ]
@@ -2786,21 +2816,21 @@
   ]
  },
  "ha7rock/blade2-mobile": {
-  "pushed_at": "2026-10-16T08:24:56Z",
+  "pushed_at": "2026-10-18T11:02:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T07:59:29Z",
+    "last_commit": "2026-10-18T11:02:54Z",
     "subjects": [
-     "Publishing hygiene: LICENSE (MIT, d2r-mobile notice retained), README copyright and acknowledgements section (bring your own game; no keys / assets / shaders / rewrite outputs published), .gitignore for every game-derived artifact class, stray merge leftover removed",
-     "Present pacing follows the refresh rate of the screen the window is on (integer-fraction tier, ported from upstream d2r-mobile 44a6770): the game window was on a 30 Hz TV, where fixed-60 pacing shows each frame half a refresh and the system rounds to two → 33 ms frames, every frame counted dropped, perceived as flicker; front_mac.m reports the screen and re-reads on screen change",
-     "shaders: iterate with the movie YUV->RGB conversion shaders (vs 85f721d0fe44a1e9, ps 2bf5fc9ac9cc0814 / b0aa1e941f09982a); chain ea9c3b90985d",
-     "patch_nso: revert the three Blade movie cuts (player Tick ret, Stop nop in close, close track walk) now that the movie protocol is implemented",
-     "hle_movie: real movie:: playback for the generic host (Blade / UE4 SwitchMediaPlayer): Extractor = AVFoundation sample cursor (time-interleaved tokens, SeekTo for loops), Decoder = token -> NV12 / PCM16 via a guest worker thread with hardware-like back pressure, MediaData = host dictionary; protocol reversed into the file header; D2R empty playback kept under !DM_GENERIC_HOST; hle_blade.c MediaData placeholders removed",
-     "movie_av: AVFoundation demux / decode for cutscene mp4 (sample table scan, NV12 / PCM16 output); dm_fs_host_path for host-side opens of rom: paths",
-     "Mac app: present via the self-driven drawable path by default (DM_PRESENT_LINK=0); the display-link callback stalls for whole seconds under other system load and the stall fallbacks are the flicker the player saw — same build, same session A/B: near zero flicker on the self-driven path",
-     "mac_app_blade.sh: brace ${APP} before the full-width parenthesis (a C-locale shell parsed the UTF-8 bytes into the variable name and failed under set -u)"
+     "虚拟手柄图层第 2 稿：整体缩小（r = 0.058H，面键 46 点、技能键帽 34 点），键帽改用系统 SF Symbols 的 Switch 手柄图标（a.circle / zl.button.roundedtop.horizontal / dpad / l.joystick…，按下换 .fill），十字键合成一个图标，摇杆空闲只留一个淡图标",
+     "iOS 触摸虚拟手柄图层设计：pad_layout.h（几何 + 绘制，纯 C，iOS 壳与 Mac 效果图工具共用）、front_blade.m 改用并加空闲淡出 / 震感 / DM_PAD_SCALE、tools/pad_mockup.m 出效果图、docs/ios_pad.md 设计说明",
+     "README：加 6 张 Mac 宿主实机对局截图（docs/screenshots，960×540）、更新状态行到 2026-10-18、加版本标签表（v0.1.0）",
+     "iOS 壳 run.sh：收尾提示里的 $APP（ 写成 ${APP}（，避免 bash 把全角括号首字节并入变量名（C 区域下报 unbound variable）",
+     "着色器全量离线抽取：tools/pak_shaders.py 从 pak 抽出全部 10 220 个 NVN 着色器并从 NV 汇编推出贴图 / 属性事实",
+     "着色器事实合并：玩家通关 1–3 关自录的 11 个新着色器 + 65 条贴图事实，链 b-be1360e1bdee",
+     "NVN diagnostics: residency-set add/remove/commit counters on the allocation ledger line; the re-upload ranking names the shaders (stage:key) that sample each of the top re-uploaded textures",
+     "NVN diagnostics: picture trigger fires only on darkening A-B-A (brightening = one-frame hit effects, counted only); DM_NVN_REUP_CPU=1/2 forces the CPU snapshot upload path for re-uploads / all pool-source textures; re-upload ranking shows depth and target"
     ]
    }
   ]
@@ -3013,33 +3043,37 @@
   ]
  },
  "StandonJoyner/awesome-rea": {
-  "pushed_at": "2026-10-18T03:55:14Z",
+  "pushed_at": "2026-10-18T11:12:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T03:55:11Z",
+    "last_commit": "2026-10-18T10:04:34Z",
     "subjects": [
+     "Refresh the corpus from the 2026-10-18 snapshot, which read all 167 linked repositories",
+     "Retitle the list to Awesome Reverse-Engineering Results for the awesome submission",
+     "Replace the LICENSE summary with the canonical CC0-1.0 text so GitHub detects the license",
      "Rewrite the ops specs in Simplified Technical English, and resolve the Census pointers 4c76b93 left dangling",
      "Bound MPL in the licence guard, which was reading \"reimplemented\" as a licence",
      "Enter the seven repositories that REA-cases page actually links",
      "Cut the corpus-state counts from the intake spec, and point at instruments instead",
-     "Cut the naming and provenance paragraphs, and read the refreshed date from the snapshot",
-     "Make a passing read a commitment to enter, and narrow discretion to the batch",
-     "Enter storytold/photocraft, the entry no rule ever blocked",
-     "Delete the lead queue, and let the word lead outlive the file"
+     "Cut the naming and provenance paragraphs, and read the refreshed date from the snapshot"
     ]
    }
   ]
  },
  "DanielZhangyc/smbw-mobile": {
-  "pushed_at": "2026-10-16T18:02:42Z",
+  "pushed_at": "2026-10-18T11:08:05Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-16T18:02:40Z",
+    "last_commit": "2026-10-18T11:07:51Z",
     "subjects": [
+     "docs: record NS2 Pro measurements and remaining calibration limits",
+     "feat(mac): connect NS2 Pro directly with calibrated input and dual-band output",
+     "feat(input): encode measured NS2 Pro dual-band rumble",
+     "fix(mac): handle native quit through host shutdown",
      "Publish macOS port with memory lifetime fixes and performance documentation"
     ]
    }
@@ -3066,20 +3100,22 @@
   ]
  },
  "albionlee/d2r-mobile": {
-  "pushed_at": "2026-10-18T00:48:03Z",
+  "pushed_at": "2026-10-18T10:11:46Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 5,
+    "ahead": 7,
     "behind": 0,
-    "files": 2,
-    "real_files": 2,
+    "files": 8,
+    "real_files": 8,
     "dirs": [
      "dm/host",
      "dm/ios"
     ],
-    "last_commit": "2026-10-18T00:48:03Z",
+    "last_commit": "2026-10-18T10:11:34Z",
     "subjects": [
+     "Merge branch 'main' of https://github.com/albionlee/d2r-mobile",
+     "增加崩溃日志，继续尝试修复手柄操作时佣兵界面崩溃问题",
      "Merge branch 'jhaizhou-ops:main' into main",
      "手柄模式下佣兵页保持默认状态",
      "测试原版布局是否会造成佣兵页崩溃",
@@ -3401,13 +3437,15 @@
   ]
  },
  "yokeyhh/switch-port-to-apple": {
-  "pushed_at": "2026-10-17T15:17:22Z",
+  "pushed_at": "2026-10-18T05:41:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T15:17:14Z",
+    "last_commit": "2026-10-18T05:41:21Z",
     "subjects": [
+     "Add runnable scripts/ toolkit; correct c1 semantics",
+     "Add shader-banks reference: BNSH containers and the c1 BRX jump table",
      "Fix GitHub account in install URLs (yokeyhh)",
      "Add Chinese README (README.zh-CN.md)",
      "Add switch-port-to-apple skill: Switch (Horizon/aarch64) -> Apple silicon native port playbook"
@@ -3606,28 +3644,115 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-17T23:03:58Z",
+  "pushed_at": "2026-10-18T09:21:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T23:02:58Z",
+    "last_commit": "2026-10-18T09:21:08Z",
     "subjects": [
-     "Add collected TOTK shader prewarm manifest",
-     "feat: package TOTK 1.1.2 with a single Mac app entry",
-     "docs: announce upcoming iPhone and iPad support",
-     "docs: recommend AI assistants for Mac app builds",
-     "feat: support NSP input for macOS app builds",
-     "chore: keep runtime/frontend_ios.m in step with the development tree (iPad drawable size)",
-     "feat: build without .NET and cmake; the shader translator ships as a native program",
-     "feat: package Tears of the Kingdom into a native Mac app from the player's own card image and keys"
+     "Show detailed game and graphics startup stages",
+     "Fix upstream README wording after audio contribution merge",
+     "Merge remote-tracking branch 'origin/main'",
+     "Update bilingual README for 1.4.3 shader prewarming",
+     "Keep game apps and all generated data outside the source project",
+     "Archive raw test records outside the project directory",
+     "Document project scope and external temporary workspace rule",
+     "Record removal of duplicate build and test artifacts"
     ]
    }
   ]
  },
  "atrl/d2r-mobile": {
-  "pushed_at": "2026-10-18T04:01:52Z",
+  "pushed_at": "2026-10-18T09:14:33Z",
   "branches": [
+   {
+    "branch": "docs/preview10-runtime",
+    "ahead": 37,
+    "behind": 0,
+    "files": 255,
+    "real_files": 218,
+    "dirs": [
+     ".claude/skills",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools",
+     "tools/__pycache__",
+     "tools/sync_upstream.py"
+    ],
+    "last_commit": "2026-10-18T08:52:14Z",
+    "subjects": [
+     "docs: verify published preview10 loads existing Android save",
+     "Merge pull request #4 from atrl/fix/startup-diagnostics",
+     "docs: record Android diagnostic export verification",
+     "feat(android): expose local startup diagnostics and report export",
+     "Merge pull request #3 from atrl/fix/parallel-data-download",
+     "perf(android): use four data connections and show observed transfer rate",
+     "feat(android): download data parts with two resumable connections",
+     "Merge pull request #2 from atrl/fix/android-menu-touch"
+    ]
+   },
+   {
+    "branch": "fix/android-menu-touch",
+    "ahead": 29,
+    "behind": 0,
+    "files": 252,
+    "real_files": 217,
+    "dirs": [
+     ".claude/skills",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools",
+     "tools/__pycache__",
+     "tools/sync_upstream.py"
+    ],
+    "last_commit": "2026-10-18T07:48:13Z",
+    "subjects": [
+     "docs: record menu and download runtime validation",
+     "fix(android): show downloaded bytes and connection phases below one percent",
+     "fix(android): route frontend taps through guest UI click handling",
+     "release: provide versioned APK download and installation guidance",
+     "Merge pull request #1 from atrl/research/apple-guest-input",
+     "Retry transient data transfer failures while preserving partial downloads",
+     "Add verified resumable GitHub data installation and fix translated Android startup",
+     "docs: record full candidate import and file integrity validation"
+    ]
+   },
+   {
+    "branch": "fix/parallel-data-download",
+    "ahead": 32,
+    "behind": 0,
+    "files": 253,
+    "real_files": 217,
+    "dirs": [
+     ".claude/skills",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools",
+     "tools/__pycache__",
+     "tools/sync_upstream.py"
+    ],
+    "last_commit": "2026-10-18T08:03:33Z",
+    "subjects": [
+     "perf(android): use four data connections and show observed transfer rate",
+     "feat(android): download data parts with two resumable connections",
+     "Merge pull request #2 from atrl/fix/android-menu-touch",
+     "docs: record menu and download runtime validation",
+     "fix(android): show downloaded bytes and connection phases below one percent",
+     "fix(android): route frontend taps through guest UI click handling",
+     "release: provide versioned APK download and installation guidance",
+     "Merge pull request #1 from atrl/research/apple-guest-input"
+    ]
+   },
    {
     "branch": "fix/slowframe-invalid-samples",
     "ahead": 1,
@@ -3643,11 +3768,11 @@
     ]
    },
    {
-    "branch": "main",
-    "ahead": 9,
+    "branch": "fix/startup-diagnostics",
+    "ahead": 34,
     "behind": 0,
-    "files": 232,
-    "real_files": 202,
+    "files": 255,
+    "real_files": 218,
     "dirs": [
      ".claude/skills",
      "dm/android",
@@ -3659,16 +3784,132 @@
      "tools/__pycache__",
      "tools/sync_upstream.py"
     ],
-    "last_commit": "2026-10-18T04:01:51Z",
+    "last_commit": "2026-10-18T08:46:07Z",
     "subjects": [
-     "fix(perf): exclude invalid slow-frame samples and preserve presentation criterion",
-     "fix(android): explain missing game data when tapping start",
-     "Pin current official Actions releases with Node 24 support",
-     "Document verified build evidence and remaining device acceptance",
-     "Verify release certificate and APK contents before publishing",
-     "Adapt current upstream APIs and recover Vulkan presentation after resize",
-     "Add foldable window handling, persistent release signing and upstream review CI",
-     "Merge Android compatibility layer while preserving current upstream changes"
+     "docs: record Android diagnostic export verification",
+     "feat(android): expose local startup diagnostics and report export",
+     "perf(android): use four data connections and show observed transfer rate",
+     "feat(android): download data parts with two resumable connections",
+     "Merge pull request #2 from atrl/fix/android-menu-touch",
+     "docs: record menu and download runtime validation",
+     "fix(android): show downloaded bytes and connection phases below one percent",
+     "fix(android): route frontend taps through guest UI click handling"
+    ]
+   },
+   {
+    "branch": "fix/system-subgroup64",
+    "ahead": 39,
+    "behind": 0,
+    "files": 259,
+    "real_files": 221,
+    "dirs": [
+     ".claude/skills",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools",
+     "tools/__pycache__",
+     "tools/sync_upstream.py"
+    ],
+    "last_commit": "2026-10-18T08:58:31Z",
+    "subjects": [
+     "fix(android): install and select subgroup64 shaders for system Adreno drivers",
+     "Merge pull request #5 from atrl/docs/preview10-runtime",
+     "docs: verify published preview10 loads existing Android save",
+     "Merge pull request #4 from atrl/fix/startup-diagnostics",
+     "docs: record Android diagnostic export verification",
+     "feat(android): expose local startup diagnostics and report export",
+     "Merge pull request #3 from atrl/fix/parallel-data-download",
+     "perf(android): use four data connections and show observed transfer rate"
+    ]
+   },
+   {
+    "branch": "fix/turnip64-crash-evidence",
+    "ahead": 41,
+    "behind": 0,
+    "files": 262,
+    "real_files": 224,
+    "dirs": [
+     ".claude/skills",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools",
+     "tools/__pycache__",
+     "tools/sync_upstream.py"
+    ],
+    "last_commit": "2026-10-18T09:12:07Z",
+    "subjects": [
+     "fix(android): enable Turnip64 with installed variant and retain crash evidence",
+     "Merge pull request #6 from atrl/fix/system-subgroup64",
+     "fix(android): install and select subgroup64 shaders for system Adreno drivers",
+     "Merge pull request #5 from atrl/docs/preview10-runtime",
+     "docs: verify published preview10 loads existing Android save",
+     "Merge pull request #4 from atrl/fix/startup-diagnostics",
+     "docs: record Android diagnostic export verification",
+     "feat(android): expose local startup diagnostics and report export"
+    ]
+   },
+   {
+    "branch": "main",
+    "ahead": 42,
+    "behind": 0,
+    "files": 262,
+    "real_files": 224,
+    "dirs": [
+     ".claude/skills",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools",
+     "tools/__pycache__",
+     "tools/sync_upstream.py"
+    ],
+    "last_commit": "2026-10-18T09:14:33Z",
+    "subjects": [
+     "Merge pull request #7 from atrl/fix/turnip64-crash-evidence",
+     "fix(android): enable Turnip64 with installed variant and retain crash evidence",
+     "Merge pull request #6 from atrl/fix/system-subgroup64",
+     "fix(android): install and select subgroup64 shaders for system Adreno drivers",
+     "Merge pull request #5 from atrl/docs/preview10-runtime",
+     "docs: verify published preview10 loads existing Android save",
+     "Merge pull request #4 from atrl/fix/startup-diagnostics",
+     "docs: record Android diagnostic export verification"
+    ]
+   },
+   {
+    "branch": "research/apple-guest-input",
+    "ahead": 24,
+    "behind": 0,
+    "files": 251,
+    "real_files": 217,
+    "dirs": [
+     ".claude/skills",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools",
+     "tools/__pycache__",
+     "tools/sync_upstream.py"
+    ],
+    "last_commit": "2026-10-18T07:11:32Z",
+    "subjects": [
+     "Retry transient data transfer failures while preserving partial downloads",
+     "Add verified resumable GitHub data installation and fix translated Android startup",
+     "docs: record full candidate import and file integrity validation",
+     "conversion: reproduce omitted config recovery and record candidate validation",
+     "conversion: report omitted resources and preserve manifest namespaces",
+     "docs: record full shader conversion for 32 and 64 lane hosts",
+     "android: preserve and activate converted touch overlay sidecars",
+     "ci: cover guest conversion and resource recovery with synthetic inputs"
     ]
    }
   ]
@@ -3720,13 +3961,14 @@
   ]
  },
  "rootrd/dontstarve-harmony": {
-  "pushed_at": "2026-10-18T01:17:37Z",
+  "pushed_at": "2026-10-18T05:56:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T01:16:52Z",
+    "last_commit": "2026-10-18T05:40:55Z",
     "subjects": [
+     "Merge the device build with the published tree, absorb the texture-diagnostics patch",
      "HarmonyOS HLE port of Don't Starve Together (Switch)"
     ]
    }
@@ -3743,6 +3985,537 @@
      "README: state what the port does not remove, Unity terms, contact",
      "Fix push-data deleting saves; align docs with a clean-clone run",
      "Initial release: Disco Elysium iPadOS port toolchain"
+    ]
+   }
+  ]
+ },
+ "SwonDev/d2r-mobile": {
+  "pushed_at": "2026-10-18T05:12:26Z",
+  "branches": [
+   {
+    "branch": "feat/mac-pc-spanish-integration",
+    "ahead": 1,
+    "behind": 0,
+    "files": 165,
+    "real_files": 163,
+    "dirs": [
+     "dm/PRODUCT",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools",
+     "dm/verify",
+     "setup.sh"
+    ],
+    "last_commit": "2026-10-18T05:12:00Z",
+    "subjects": [
+     "feat(mac): proponer perfil PC, español y empaquetado nativo"
+    ]
+   }
+  ]
+ },
+ "n2ray/d2r-mobile": {
+  "pushed_at": "2026-10-18T11:01:51Z",
+  "branches": [
+   {
+    "branch": "android-snapdragon-elite",
+    "ahead": 1,
+    "behind": 5,
+    "files": 154,
+    "real_files": 152,
+    "dirs": [
+     "dm/android",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T06:13:49Z",
+    "subjects": [
+     "Add Android ARM64 development baseline for Snapdragon 8 Elite"
+    ]
+   },
+   {
+    "branch": "docs/android-project-readme",
+    "ahead": 32,
+    "behind": 5,
+    "files": 177,
+    "real_files": 171,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T09:26:56Z",
+    "subjects": [
+     "docs(android): align fork readmes with project goals and evidence",
+     "Merge pull request #47 from n2ray/hermes/issue-12-contract-gate",
+     "Merge pull request #46 from n2ray/hermes/issue-32-touch-adapter",
+     "test(android): cover pulse arrival during touch release",
+     "fix(gfx): stage finish() outputs per key and commit only when all stages pass (#12)",
+     "fix(android): hold touch pulse release across ticks",
+     "fix(android): preserve ordered pending touch pulses",
+     "fix(gfx): make the build gate fail honestly, restore only after validation (#12)"
+    ]
+   },
+   {
+    "branch": "hermes/issue-6-sm-lm",
+    "ahead": 4,
+    "behind": 5,
+    "files": 156,
+    "real_files": 154,
+    "dirs": [
+     "dm/android",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T07:00:31Z",
+    "subjects": [
+     "test(android): cover SM move-handle publication rollback",
+     "test(android): cover SM to lm discovery and reject foreign sm endpoint",
+     "Merge pull request #25 from n2ray/android-snapdragon-elite",
+     "Add Android ARM64 development baseline for Snapdragon 8 Elite"
+    ]
+   },
+   {
+    "branch": "hermes/issue-8-init-exit",
+    "ahead": 11,
+    "behind": 5,
+    "files": 163,
+    "real_files": 159,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T07:27:44Z",
+    "subjects": [
+     "docs(android): publish lifecycle pairing and repeat-exit regression",
+     "Merge pull request #28 from n2ray/hermes/issue-8-lifecycle",
+     "fix(android): keep accounting leases alive across host destroy",
+     "Merge pull request #27 from n2ray/hermes/issue-11-nvn-fixtures",
+     "Merge pull request #26 from n2ray/hermes/issue-6-sm-lm",
+     "test(android): cover SM move-handle publication rollback",
+     "test(nvn): second present frame and ordered teardown in acceptance scene (#11)",
+     "test(nvn): add entry inventory and self-owned acceptance scenes (#11)"
+    ]
+   },
+   {
+    "branch": "hermes/issue-8-lifecycle",
+    "ahead": 9,
+    "behind": 5,
+    "files": 162,
+    "real_files": 158,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T07:14:45Z",
+    "subjects": [
+     "fix(android): keep accounting leases alive across host destroy",
+     "Merge pull request #27 from n2ray/hermes/issue-11-nvn-fixtures",
+     "Merge pull request #26 from n2ray/hermes/issue-6-sm-lm",
+     "test(android): cover SM move-handle publication rollback",
+     "test(nvn): second present frame and ordered teardown in acceptance scene (#11)",
+     "test(nvn): add entry inventory and self-owned acceptance scenes (#11)",
+     "test(android): cover SM to lm discovery and reject foreign sm endpoint",
+     "Merge pull request #25 from n2ray/android-snapdragon-elite"
+    ]
+   },
+   {
+    "branch": "hermes/issue-11-nvn-fixtures",
+    "ahead": 2,
+    "behind": 5,
+    "files": 6,
+    "real_files": 4,
+    "dirs": [
+     "dm/gfx"
+    ],
+    "last_commit": "2026-10-18T06:58:01Z",
+    "subjects": [
+     "test(nvn): second present frame and ordered teardown in acceptance scene (#11)",
+     "test(nvn): add entry inventory and self-owned acceptance scenes (#11)"
+    ]
+   },
+   {
+    "branch": "hermes/issue-12-contract-gate",
+    "ahead": 25,
+    "behind": 5,
+    "files": 174,
+    "real_files": 168,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T08:59:22Z",
+    "subjects": [
+     "fix(gfx): stage finish() outputs per key and commit only when all stages pass (#12)",
+     "fix(gfx): make the build gate fail honestly, restore only after validation (#12)",
+     "feat(gfx): gate dmsh_build artifacts on the SPIR-V contract (#12)",
+     "Merge pull request #45 from n2ray/hermes/issue-12-shader-contract",
+     "fix(gfx): bind LocalSize to the entry function and state the preflight is opt-in (#12)",
+     "Merge pull request #44 from n2ray/hermes/issue-31-touch-parity",
+     "feat(gfx): check translator SPIR-V against its reflection before use (#12)",
+     "docs(android): add r2d touch parity matrix and checker"
+    ]
+   },
+   {
+    "branch": "hermes/issue-12-shader-contract",
+    "ahead": 19,
+    "behind": 5,
+    "files": 167,
+    "real_files": 163,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T08:13:22Z",
+    "subjects": [
+     "fix(gfx): bind LocalSize to the entry function and state the preflight is opt-in (#12)",
+     "feat(gfx): check translator SPIR-V against its reflection before use (#12)",
+     "Merge pull request #43 from n2ray/hermes/issue-13-formats",
+     "feat(vk): support NVN RGBA8_SRGB (0x38) with sampled-vs-raw regression (#13)",
+     "Merge pull request #29 from n2ray/hermes/issue-13-vulkan-resources",
+     "Merge pull request #30 from n2ray/hermes/issue-8-init-exit",
+     "fix(vk): require TRANSFER_SRC for readback images, cover row-op failures (#13)",
+     "docs(android): publish lifecycle pairing and repeat-exit regression"
+    ]
+   },
+   {
+    "branch": "hermes/issue-12-vulkan-consumer",
+    "ahead": 49,
+    "behind": 5,
+    "files": 193,
+    "real_files": 186,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T11:01:49Z",
+    "subjects": [
+     "fix(vk): bind execution to validated bytes and pre-check device limits (#12)",
+     "feat(vk): reflection-driven consumer for owned compute fixtures (#12)",
+     "Merge pull request #58 from n2ray/hermes/issue-42-validation",
+     "fix(vk): race-free validation diagnostics and layer-present boundary tests (#42)",
+     "feat(vk): opt-in validation layer diagnostics with honest absence (#42)",
+     "Merge pull request #57 from n2ray/hermes/issue-41-nvn-boundaries",
+     "docs(nvn): use Vulkan worst-case indirect bounds, not min(count, max) (#41)",
+     "Merge pull request #50 from n2ray/hermes/issue-14-app-lifecycle"
+    ]
+   },
+   {
+    "branch": "hermes/issue-13-formats",
+    "ahead": 16,
+    "behind": 5,
+    "files": 165,
+    "real_files": 161,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T07:46:21Z",
+    "subjects": [
+     "feat(vk): support NVN RGBA8_SRGB (0x38) with sampled-vs-raw regression (#13)",
+     "Merge pull request #29 from n2ray/hermes/issue-13-vulkan-resources",
+     "Merge pull request #30 from n2ray/hermes/issue-8-init-exit",
+     "fix(vk): require TRANSFER_SRC for readback images, cover row-op failures (#13)",
+     "docs(android): publish lifecycle pairing and repeat-exit regression",
+     "Merge pull request #28 from n2ray/hermes/issue-8-lifecycle",
+     "feat(vk): row-stride RGBA8 region update/readback with owned fixture (#13)",
+     "fix(android): keep accounting leases alive across host destroy"
+    ]
+   },
+   {
+    "branch": "hermes/issue-13-vulkan-resources",
+    "ahead": 10,
+    "behind": 5,
+    "files": 163,
+    "real_files": 159,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T07:29:17Z",
+    "subjects": [
+     "fix(vk): require TRANSFER_SRC for readback images, cover row-op failures (#13)",
+     "feat(vk): row-stride RGBA8 region update/readback with owned fixture (#13)",
+     "Merge pull request #27 from n2ray/hermes/issue-11-nvn-fixtures",
+     "Merge pull request #26 from n2ray/hermes/issue-6-sm-lm",
+     "test(android): cover SM move-handle publication rollback",
+     "test(nvn): second present frame and ordered teardown in acceptance scene (#11)",
+     "test(nvn): add entry inventory and self-owned acceptance scenes (#11)",
+     "test(android): cover SM to lm discovery and reject foreign sm endpoint"
+    ]
+   },
+   {
+    "branch": "hermes/issue-14-app-lifecycle",
+    "ahead": 35,
+    "behind": 5,
+    "files": 180,
+    "real_files": 174,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T09:45:17Z",
+    "subjects": [
+     "fix(android): retain touch surfaces while work is pending",
+     "fix(android): keep failed cleanup state accurate",
+     "fix(android): drain failed lifecycle cleanup safely",
+     "feat(android): add ordered app lifecycle controller",
+     "Merge pull request #47 from n2ray/hermes/issue-12-contract-gate",
+     "Merge pull request #46 from n2ray/hermes/issue-32-touch-adapter",
+     "test(android): cover pulse arrival during touch release",
+     "fix(gfx): stage finish() outputs per key and commit only when all stages pass (#12)"
+    ]
+   },
+   {
+    "branch": "hermes/issue-31-touch-parity",
+    "ahead": 18,
+    "behind": 5,
+    "files": 167,
+    "real_files": 161,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T07:58:29Z",
+    "subjects": [
+     "docs(android): add r2d touch parity matrix and checker",
+     "Merge pull request #43 from n2ray/hermes/issue-13-formats",
+     "feat(vk): support NVN RGBA8_SRGB (0x38) with sampled-vs-raw regression (#13)",
+     "Merge pull request #29 from n2ray/hermes/issue-13-vulkan-resources",
+     "Merge pull request #30 from n2ray/hermes/issue-8-init-exit",
+     "fix(vk): require TRANSFER_SRC for readback images, cover row-op failures (#13)",
+     "docs(android): publish lifecycle pairing and repeat-exit regression",
+     "Merge pull request #28 from n2ray/hermes/issue-8-lifecycle"
+    ]
+   },
+   {
+    "branch": "hermes/issue-32-native-events",
+    "ahead": 42,
+    "behind": 5,
+    "files": 191,
+    "real_files": 185,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T10:44:36Z",
+    "subjects": [
+     "fix(android): gate touch input on native view and timer readiness",
+     "feat(android): deliver NativeActivity touch events to r2d core",
+     "Merge pull request #50 from n2ray/hermes/issue-14-app-lifecycle",
+     "fix(android): retain touch surfaces while work is pending",
+     "Merge pull request #52 from n2ray/docs/android-project-readme",
+     "fix(android): keep failed cleanup state accurate",
+     "fix(android): drain failed lifecycle cleanup safely",
+     "docs(android): align fork readmes with project goals and evidence"
+    ]
+   },
+   {
+    "branch": "hermes/issue-32-touch-adapter",
+    "ahead": 23,
+    "behind": 5,
+    "files": 170,
+    "real_files": 164,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T09:01:31Z",
+    "subjects": [
+     "test(android): cover pulse arrival during touch release",
+     "fix(android): hold touch pulse release across ticks",
+     "fix(android): preserve ordered pending touch pulses",
+     "feat(android): add pointer-id touch adapter over r2d core",
+     "Merge pull request #44 from n2ray/hermes/issue-31-touch-parity",
+     "docs(android): add r2d touch parity matrix and checker",
+     "Merge pull request #43 from n2ray/hermes/issue-13-formats",
+     "feat(vk): support NVN RGBA8_SRGB (0x38) with sampled-vs-raw regression (#13)"
+    ]
+   },
+   {
+    "branch": "hermes/issue-41-nvn-boundaries",
+    "ahead": 36,
+    "behind": 5,
+    "files": 180,
+    "real_files": 173,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T09:58:39Z",
+    "subjects": [
+     "docs(nvn): use Vulkan worst-case indirect bounds, not min(count, max) (#41)",
+     "docs(nvn): correct stub behaviour, lifetimes and indexed bounds (#41)",
+     "docs(nvn): specify boundaries for the four static-called red stubs (#41)",
+     "Merge pull request #49 from n2ray/hermes/shader-test-isolation",
+     "test(gfx): isolate build-test sandboxes across in-process suites (#48)",
+     "Merge pull request #47 from n2ray/hermes/issue-12-contract-gate",
+     "Merge pull request #46 from n2ray/hermes/issue-32-touch-adapter",
+     "test(android): cover pulse arrival during touch release"
+    ]
+   },
+   {
+    "branch": "hermes/issue-42-validation",
+    "ahead": 46,
+    "behind": 5,
+    "files": 186,
+    "real_files": 179,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T10:31:05Z",
+    "subjects": [
+     "fix(vk): race-free validation diagnostics and layer-present boundary tests (#42)",
+     "feat(vk): opt-in validation layer diagnostics with honest absence (#42)",
+     "Merge pull request #57 from n2ray/hermes/issue-41-nvn-boundaries",
+     "docs(nvn): use Vulkan worst-case indirect bounds, not min(count, max) (#41)",
+     "Merge pull request #50 from n2ray/hermes/issue-14-app-lifecycle",
+     "fix(android): retain touch surfaces while work is pending",
+     "docs(nvn): correct stub behaviour, lifetimes and indexed bounds (#41)",
+     "Merge pull request #52 from n2ray/docs/android-project-readme"
+    ]
+   },
+   {
+    "branch": "hermes/shader-test-isolation",
+    "ahead": 32,
+    "behind": 5,
+    "files": 179,
+    "real_files": 173,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T09:14:29Z",
+    "subjects": [
+     "test(gfx): isolate build-test sandboxes across in-process suites (#48)",
+     "Merge pull request #47 from n2ray/hermes/issue-12-contract-gate",
+     "Merge pull request #46 from n2ray/hermes/issue-32-touch-adapter",
+     "test(android): cover pulse arrival during touch release",
+     "fix(gfx): stage finish() outputs per key and commit only when all stages pass (#12)",
+     "fix(android): hold touch pulse release across ticks",
+     "fix(android): preserve ordered pending touch pulses",
+     "fix(gfx): make the build gate fail honestly, restore only after validation (#12)"
+    ]
+   },
+   {
+    "branch": "main",
+    "ahead": 50,
+    "behind": 5,
+    "files": 195,
+    "real_files": 188,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-18T10:56:51Z",
+    "subjects": [
+     "Merge pull request #59 from n2ray/hermes/issue-32-native-events",
+     "fix(android): gate touch input on native view and timer readiness",
+     "Merge pull request #58 from n2ray/hermes/issue-42-validation",
+     "fix(vk): race-free validation diagnostics and layer-present boundary tests (#42)",
+     "feat(android): deliver NativeActivity touch events to r2d core",
+     "feat(vk): opt-in validation layer diagnostics with honest absence (#42)",
+     "Merge pull request #57 from n2ray/hermes/issue-41-nvn-boundaries",
+     "docs(nvn): use Vulkan worst-case indirect bounds, not min(count, max) (#41)"
+    ]
+   }
+  ]
+ },
+ "vbarter/d2r-mobile": {
+  "pushed_at": "2026-10-18T11:04:20Z",
+  "branches": []
+ },
+ "BigBadRock/d2r": {
+  "pushed_at": "2026-10-18T10:06:32Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-18T09:56:41Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "CODPHISH/ns2app": {
+  "pushed_at": "2026-10-18T10:41:41Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-18T10:41:33Z",
+    "subjects": [
+     "Build Silksong iOS host with GitHub Actions"
+    ]
+   }
+  ]
+ },
+ "tyf707/NS-Octopath-Traveler-II-translate": {
+  "pushed_at": "2026-10-18T05:23:25Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-18T05:23:22Z",
+    "subjects": [
+     "Add porting notes, build script, env template and standalone patch",
+     "OT2 playable build: single-core report, uinput gamepad ignore, HUD auto-hide, NACP icon, debug instrumentation",
+     "Support Triangle Strategy with native movie decoding and NVN texture writes",
+     "Initial release of Switch2Android"
+    ]
+   }
+  ]
+ },
+ "atone/nxnative": {
+  "pushed_at": "2026-10-18T06:08:31Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-18T05:48:07Z",
+    "subjects": [
+     "Depth clamp replayed: BotW's tree shadows reach Link, the cabin roof shades the floor",
+     "Merge upstream main (16 commits: Odyssey, Hades / Vulkan, LA physics fix, depth entry points, ...)",
+     "BotW: give scene captures into RGB10A2 targets alpha 1",
+     "c1_full.tsv for five rebuilt shader chains",
+     "Docs: Odyssey and Hades play on the Mac; Hades game notes",
+     "README: English only; iPhone 15 Pro or newer; Hades being ported",
+     "Only GPUs with BC textures are supported: no-BC decompression paths removed",
+     "Hades runs on the Mac through a new Vulkan-on-Metal layer"
     ]
    }
   ]
