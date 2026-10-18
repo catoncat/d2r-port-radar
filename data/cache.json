@@ -373,14 +373,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-18T17:03:50Z",
+  "pushed_at": "2026-10-18T23:13:52Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 100,
+    "ahead": 104,
     "behind": 18,
-    "files": 181,
-    "real_files": 176,
+    "files": 183,
+    "real_files": 178,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -389,16 +389,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-18T17:03:37Z",
+    "last_commit": "2026-10-18T23:13:47Z",
     "subjects": [
+     "Exercise indexed and instanced draws under queue contention",
+     "Serialize concurrent NVN queues and preserve replay state",
+     "Complete color state setters and publish acquire fences safely",
+     "Fix builder query ABI and guard original object bounds",
      "Implement startup command families and test continuous GPU sequences",
      "Check residency-set GPU support before calling the Metal API",
      "Record uniform scissor and depth-range batches for viewport zero",
-     "Keep texture views within the 16-byte guest ABI",
-     "Report rejected texture copy layouts and guest callers",
-     "Resolve host language queries without Horizon settings IPC",
-     "Keep registration uniqueness labels distinct within source files",
-     "Reject duplicate forced HLE registrations before packaging"
+     "Keep texture views within the 16-byte guest ABI"
     ]
    },
    {
@@ -1480,12 +1480,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-18T16:01:50Z",
+  "pushed_at": "2026-10-18T20:57:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T16:01:49Z",
+    "last_commit": "2026-10-18T20:56:59Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1668,12 +1668,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-18T15:57:50Z",
+  "pushed_at": "2026-10-18T20:52:58Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T15:57:49Z",
+    "last_commit": "2026-10-18T20:52:57Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4139,7 +4139,7 @@
   ]
  },
  "n2ray/d2r-mobile": {
-  "pushed_at": "2026-10-18T20:49:56Z",
+  "pushed_at": "2026-10-18T23:14:59Z",
   "branches": [
    {
     "branch": "android-snapdragon-elite",
@@ -4234,6 +4234,57 @@
     ]
    },
    {
+    "branch": "hermes/audio-focus-policy",
+    "ahead": 227,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx"
+    ],
+    "last_commit": "2026-10-18T22:15:41Z",
+    "subjects": [
+     "fix(android): apply target gain to every replacement stream (#153)",
+     "chore(android): place the audio-focus CMake block clear of the merged input-source hunk (#153)",
+     "fix(android): retain backend ownership until one successful stop (#153)",
+     "feat(android): serialized audio-focus and desired-play policy (#153)",
+     "Merge pull request #146 from n2ray/hermes/native-callback-ci",
+     "test(android): exercise active timer and actual callback routes (#145)",
+     "test(android): cover actual native callback dispatch (#145)",
+     "Merge pull request #144 from n2ray/hermes/native-wsi-diagnostic"
+    ]
+   },
+   {
+    "branch": "hermes/audio-output-integration",
+    "ahead": 254,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-18T22:40:38Z",
+    "subjects": [
+     "fix(android): retire a disconnected AAudio stream on explicit replay (#163)",
+     "fix(android): keep the PCM composition test host-only (#163)",
+     "feat(android): compose real AAudio output with focus policy and PCM gain (#163)",
+     "Merge pull request #158 from n2ray/hermes/custom-preferences",
+     "Merge pull request #155 from n2ray/hermes/audio-focus-policy",
+     "Merge pull request #156 from n2ray/hermes/gamepad-events",
+     "fix(android): apply target gain to every replacement stream (#153)",
+     "Merge remote-tracking branch 'origin/main' into hermes/gamepad-events"
+    ]
+   },
+   {
     "branch": "hermes/clean-apk-provenance",
     "ahead": 198,
     "behind": 5,
@@ -4259,6 +4310,57 @@
      "fix(android): enforce provenance sidecar identity schema (#131)",
      "fix(vulkan): validate entry definition and bounds (#125)",
      "feat(android): add diagnostic APK provenance sidecar (#131)"
+    ]
+   },
+   {
+    "branch": "hermes/custom-preferences",
+    "ahead": 231,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx"
+    ],
+    "last_commit": "2026-10-18T22:12:12Z",
+    "subjects": [
+     "chore(android): place the custom-preferences CMake blocks clear of merged hunks (#157)",
+     "fix(android): upstream merc migration order and no-op apply semantics (#157)",
+     "feat(android): standalone custom-preferences transaction module (#157)",
+     "Merge pull request #148 from n2ray/hermes/wsi-evidence-report",
+     "fix(android): retain distinct terminal failures and reset recovered retries",
+     "fix(android): single failure episode and real-open attempt accounting (#147)",
+     "fix(android): faithful WSI failure evidence and single-count lifecycle transitions (#147)",
+     "feat(android): bounded WSI evidence reports for the explicit diagnostic (#147)"
+    ]
+   },
+   {
+    "branch": "hermes/custom-preferences-store",
+    "ahead": 270,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-18T22:46:53Z",
+    "subjects": [
+     "Merge remote-tracking branch 'origin/main' into hermes/custom-preferences-store",
+     "fix(android): make preferences store nonblocking and symlink-safe (#167)",
+     "Merge pull request #164 from n2ray/hermes/audio-output-integration",
+     "test(android): clean private store fixture directory (#167)",
+     "fix(android): retire a disconnected AAudio stream on explicit replay (#163)",
+     "Merge remote-tracking branch 'origin/main' into hermes/custom-preferences-store",
+     "feat(android): add private custom-preferences file adapter (#167)",
+     "Merge pull request #166 from n2ray/hermes/input-source-view"
     ]
    },
    {
@@ -4318,6 +4420,31 @@
     ]
    },
    {
+    "branch": "hermes/gamepad-events",
+    "ahead": 241,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-18T22:14:25Z",
+    "subjects": [
+     "Merge remote-tracking branch 'origin/main' into hermes/gamepad-events",
+     "Merge pull request #151 from n2ray/hermes/owned-aaudio",
+     "ci: trigger exact-head check after missed pull_request event",
+     "fix(android): retain AAudio callback owner on failed rollback close (#149)",
+     "fix(android): preserve digital/analog gamepad contributions (#154)",
+     "Merge pull request #152 from n2ray/hermes/input-source",
+     "fix(android): make AAudio teardown retryable and validate setters (#149)",
+     "fix(android): reject touch takeover atomically (#150)"
+    ]
+   },
+   {
     "branch": "hermes/graphics-interface",
     "ahead": 188,
     "behind": 5,
@@ -4343,6 +4470,81 @@
      "Merge pull request #122 from n2ray/hermes/live-touch-hud",
      "fix(android): retain external HUD redraw before fallible work",
      "fix(android): compose HUD on external redraw and ack after post (#121)"
+    ]
+   },
+   {
+    "branch": "hermes/ime-boundary",
+    "ahead": 282,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-18T23:06:50Z",
+    "subjects": [
+     "Merge remote-tracking branch 'origin/main' into hermes/ime-boundary",
+     "fix(android): preserve composing during surrounding deletion (#173)",
+     "Merge pull request #171 from n2ray/hermes/platform-audio-focus",
+     "fix(android): preserve UTF-16 boundaries in IME edits (#173)",
+     "fix(android): enforce main-looper focus ownership, drop staging queue (#170)",
+     "Merge remote-tracking branch 'origin/main' into hermes/ime-boundary",
+     "feat(android): add real InputConnection text boundary (#173)",
+     "Merge pull request #172 from n2ray/hermes/native-arbiter"
+    ]
+   },
+   {
+    "branch": "hermes/ime-required-ci",
+    "ahead": 287,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-18T23:13:50Z",
+    "subjects": [
+     "ci: run accepted IME logic tests and mutations in the required Java gate (#180)",
+     "Merge pull request #177 from n2ray/hermes/required-java-ci",
+     "Merge pull request #175 from n2ray/hermes/ime-boundary",
+     "fix(ci): install Android platform without a SIGPIPE-prone yes pipeline (#176)",
+     "Merge remote-tracking branch 'origin/main' into hermes/ime-boundary",
+     "fix(android): preserve composing during surrounding deletion (#173)",
+     "ci: mandatory real-android.jar Java compile and focus host controls (#176)",
+     "Merge pull request #171 from n2ray/hermes/platform-audio-focus"
+    ]
+   },
+   {
+    "branch": "hermes/ime-view",
+    "ahead": 289,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-18T23:13:23Z",
+    "subjects": [
+     "fix(android): retire text session before terminal callbacks (#179)",
+     "Merge remote-tracking branch 'origin/main' into hermes/ime-view",
+     "feat(android): add explicit text editor view session (#179)",
+     "Merge pull request #177 from n2ray/hermes/required-java-ci",
+     "Merge pull request #175 from n2ray/hermes/ime-boundary",
+     "fix(ci): install Android platform without a SIGPIPE-prone yes pipeline (#176)",
+     "Merge remote-tracking branch 'origin/main' into hermes/ime-boundary",
+     "fix(android): preserve composing during surrounding deletion (#173)"
     ]
    },
    {
@@ -4399,6 +4601,82 @@
      "Merge pull request #110 from n2ray/hermes/reflected-uniform",
      "Merge pull request #108 from n2ray/hermes/item-use-identity",
      "fix(vulkan): reject malformed OpTypeInt and truncated sidecar counts (#109)"
+    ]
+   },
+   {
+    "branch": "hermes/input-request-retirement",
+    "ahead": 254,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-18T22:24:48Z",
+    "subjects": [
+     "Merge remote-tracking branch 'origin/main' into hermes/input-request-retirement",
+     "fix(input): reject provider-attached request retirement before mutation (#159)",
+     "Merge pull request #158 from n2ray/hermes/custom-preferences",
+     "Merge pull request #155 from n2ray/hermes/audio-focus-policy",
+     "Merge pull request #156 from n2ray/hermes/gamepad-events",
+     "feat(input): retire unconsumed touch requests on source invalidation (#159)",
+     "fix(android): apply target gain to every replacement stream (#153)",
+     "Merge remote-tracking branch 'origin/main' into hermes/gamepad-events"
+    ]
+   },
+   {
+    "branch": "hermes/input-source",
+    "ahead": 225,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx"
+    ],
+    "last_commit": "2026-10-18T22:00:00Z",
+    "subjects": [
+     "fix(android): reject touch takeover atomically (#150)",
+     "feat(android): add touch/gamepad input source arbitration (#150)",
+     "Merge pull request #146 from n2ray/hermes/native-callback-ci",
+     "test(android): exercise active timer and actual callback routes (#145)",
+     "test(android): cover actual native callback dispatch (#145)",
+     "Merge pull request #144 from n2ray/hermes/native-wsi-diagnostic",
+     "fix(android): synchronize cached window after failed WSI replacement",
+     "fix(android): identity-safe stale callbacks and error-exact WSI dispatch (#143)"
+    ]
+   },
+   {
+    "branch": "hermes/input-source-view",
+    "ahead": 256,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-18T22:33:57Z",
+    "subjects": [
+     "feat(input): add arbiter view and atomic geometry (#165)",
+     "Merge pull request #160 from n2ray/hermes/input-request-retirement",
+     "Merge remote-tracking branch 'origin/main' into hermes/input-request-retirement",
+     "fix(input): reject provider-attached request retirement before mutation (#159)",
+     "Merge pull request #158 from n2ray/hermes/custom-preferences",
+     "Merge pull request #155 from n2ray/hermes/audio-focus-policy",
+     "Merge pull request #156 from n2ray/hermes/gamepad-events",
+     "feat(input): retire unconsumed touch requests on source invalidation (#159)"
     ]
    },
    {
@@ -5532,6 +5810,107 @@
     ]
    },
    {
+    "branch": "hermes/native-arbiter",
+    "ahead": 262,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-18T22:49:49Z",
+    "subjects": [
+     "feat(android): wire NativeActivity input to arbiter (#168)",
+     "Merge pull request #166 from n2ray/hermes/input-source-view",
+     "Merge pull request #162 from n2ray/hermes/native-input-source",
+     "feat(input): add arbiter view and atomic geometry (#165)",
+     "fix(android): use source-bit membership for touch dispatch (#161)",
+     "Merge remote-tracking branch 'origin/main' into hermes/native-input-source",
+     "Merge pull request #160 from n2ray/hermes/input-request-retirement",
+     "Merge remote-tracking branch 'origin/main' into hermes/input-request-retirement"
+    ]
+   },
+   {
+    "branch": "hermes/native-callback-ci",
+    "ahead": 222,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx"
+    ],
+    "last_commit": "2026-10-18T21:13:43Z",
+    "subjects": [
+     "test(android): exercise active timer and actual callback routes (#145)",
+     "test(android): cover actual native callback dispatch (#145)",
+     "Merge pull request #144 from n2ray/hermes/native-wsi-diagnostic",
+     "fix(android): synchronize cached window after failed WSI replacement",
+     "fix(android): identity-safe stale callbacks and error-exact WSI dispatch (#143)",
+     "fix(android): wire the WSI mode through the real lifecycle and frame path (#143)",
+     "feat(android): explicit owned WSI diagnostic mode with a real swapchain (#143)",
+     "Merge pull request #142 from n2ray/hermes/owned-swapchain"
+    ]
+   },
+   {
+    "branch": "hermes/native-gamepad",
+    "ahead": 275,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-18T23:11:25Z",
+    "subjects": [
+     "fix(android): retire gamepad state on touch takeover (#174)",
+     "feat(android): route physical gamepads through arbiter (#174)",
+     "Merge pull request #172 from n2ray/hermes/native-arbiter",
+     "Merge pull request #169 from n2ray/hermes/custom-preferences-store",
+     "feat(android): wire NativeActivity input to arbiter (#168)",
+     "Merge remote-tracking branch 'origin/main' into hermes/custom-preferences-store",
+     "fix(android): make preferences store nonblocking and symlink-safe (#167)",
+     "Merge pull request #164 from n2ray/hermes/audio-output-integration"
+    ]
+   },
+   {
+    "branch": "hermes/native-input-source",
+    "ahead": 258,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-18T22:30:00Z",
+    "subjects": [
+     "fix(android): use source-bit membership for touch dispatch (#161)",
+     "Merge remote-tracking branch 'origin/main' into hermes/native-input-source",
+     "Merge pull request #160 from n2ray/hermes/input-request-retirement",
+     "Merge remote-tracking branch 'origin/main' into hermes/input-request-retirement",
+     "fix(input): reject provider-attached request retirement before mutation (#159)",
+     "Merge pull request #158 from n2ray/hermes/custom-preferences",
+     "Merge pull request #155 from n2ray/hermes/audio-focus-policy",
+     "fix(android): gate NativeActivity touch entry by input source (#161)"
+    ]
+   },
+   {
     "branch": "hermes/native-textured-diagnostic",
     "ahead": 169,
     "behind": 5,
@@ -5561,7 +5940,7 @@
    },
    {
     "branch": "hermes/native-wsi-diagnostic",
-    "ahead": 217,
+    "ahead": 219,
     "behind": 5,
     "files": 300,
     "real_files": 297,
@@ -5573,16 +5952,42 @@
      "dm/android",
      "dm/gfx"
     ],
-    "last_commit": "2026-10-18T20:49:54Z",
+    "last_commit": "2026-10-18T20:59:27Z",
     "subjects": [
+     "fix(android): synchronize cached window after failed WSI replacement",
+     "fix(android): identity-safe stale callbacks and error-exact WSI dispatch (#143)",
      "fix(android): wire the WSI mode through the real lifecycle and frame path (#143)",
      "feat(android): explicit owned WSI diagnostic mode with a real swapchain (#143)",
      "Merge pull request #142 from n2ray/hermes/owned-swapchain",
      "fix(android): retire enqueued out-of-date presents before recreation",
      "fix(vulkan): complete maintenance capability and acquire proof (#141)",
-     "fix(vulkan): prove presentation completion in swapchain reuse (#141)",
-     "test(vulkan): cover extent clamping in owned swapchain (#141)",
-     "feat(vulkan): add bounded owned swapchain frames (#141)"
+     "fix(vulkan): prove presentation completion in swapchain reuse (#141)"
+    ]
+   },
+   {
+    "branch": "hermes/owned-aaudio",
+    "ahead": 228,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx"
+    ],
+    "last_commit": "2026-10-18T22:07:49Z",
+    "subjects": [
+     "fix(android): retain AAudio callback owner on failed rollback close (#149)",
+     "fix(android): make AAudio teardown retryable and validate setters (#149)",
+     "fix(android): clear closed AAudio stream before retained failure return (#149)",
+     "fix(android): retire AAudio callback before close and fix host leak (#149)",
+     "feat(android): add owned AAudio PCM16 output boundary (#149)",
+     "Merge pull request #146 from n2ray/hermes/native-callback-ci",
+     "test(android): exercise active timer and actual callback routes (#145)",
+     "test(android): cover actual native callback dispatch (#145)"
     ]
    },
    {
@@ -5639,6 +6044,31 @@
      "feat(vulkan): validate textured UV and sampler plan (#133)",
      "Merge pull request #130 from n2ray/hermes/graphics-interface",
      "Merge pull request #132 from n2ray/hermes/diagnostic-provenance"
+    ]
+   },
+   {
+    "branch": "hermes/platform-audio-focus",
+    "ahead": 268,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-18T22:58:23Z",
+    "subjects": [
+     "fix(android): enforce main-looper focus ownership, drop staging queue (#170)",
+     "fix(android): real delayed-focus opt-in and enforced focus ownership publication (#170)",
+     "feat(android): real AudioManager focus boundary packaged in the APK (#170)",
+     "Merge pull request #164 from n2ray/hermes/audio-output-integration",
+     "fix(android): retire a disconnected AAudio stream on explicit replay (#163)",
+     "Merge pull request #166 from n2ray/hermes/input-source-view",
+     "Merge pull request #162 from n2ray/hermes/native-input-source",
+     "feat(input): add arbiter view and atomic geometry (#165)"
     ]
    },
    {
@@ -5751,6 +6181,31 @@
      "feat(vulkan): reflected sampled-2D compute consumer (#105)",
      "Merge pull request #102 from n2ray/hermes/inventory-adapter-tests",
      "fix(android): let observed timed hold expire in a full queue (#101)"
+    ]
+   },
+   {
+    "branch": "hermes/required-java-ci",
+    "ahead": 279,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-18T23:08:57Z",
+    "subjects": [
+     "fix(ci): install Android platform without a SIGPIPE-prone yes pipeline (#176)",
+     "ci: mandatory real-android.jar Java compile and focus host controls (#176)",
+     "Merge pull request #171 from n2ray/hermes/platform-audio-focus",
+     "fix(android): enforce main-looper focus ownership, drop staging queue (#170)",
+     "Merge pull request #172 from n2ray/hermes/native-arbiter",
+     "fix(android): real delayed-focus opt-in and enforced focus ownership publication (#170)",
+     "Merge pull request #169 from n2ray/hermes/custom-preferences-store",
+     "feat(android): wire NativeActivity input to arbiter (#168)"
     ]
    },
    {
@@ -5918,6 +6373,32 @@
     ]
    },
    {
+    "branch": "hermes/wsi-evidence-report",
+    "ahead": 227,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android",
+     "dm/gfx"
+    ],
+    "last_commit": "2026-10-18T21:49:33Z",
+    "subjects": [
+     "fix(android): retain distinct terminal failures and reset recovered retries",
+     "fix(android): single failure episode and real-open attempt accounting (#147)",
+     "fix(android): faithful WSI failure evidence and single-count lifecycle transitions (#147)",
+     "feat(android): bounded WSI evidence reports for the explicit diagnostic (#147)",
+     "Merge pull request #146 from n2ray/hermes/native-callback-ci",
+     "test(android): exercise active timer and actual callback routes (#145)",
+     "test(android): cover actual native callback dispatch (#145)",
+     "Merge pull request #144 from n2ray/hermes/native-wsi-diagnostic"
+    ]
+   },
+   {
     "branch": "hermes/xiaomi-window-format",
     "ahead": 184,
     "behind": 5,
@@ -5947,30 +6428,27 @@
    },
    {
     "branch": "main",
-    "ahead": 215,
+    "ahead": 289,
     "behind": 5,
     "files": 300,
-    "real_files": 292,
+    "real_files": 297,
     "dirs": [
      "ci/README.md",
      "ci/actions.lock",
      "ci/scripts",
      "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
+     "dm/android"
     ],
-    "last_commit": "2026-10-18T20:37:28Z",
+    "last_commit": "2026-10-18T23:14:59Z",
     "subjects": [
-     "Merge pull request #142 from n2ray/hermes/owned-swapchain",
-     "fix(android): retire enqueued out-of-date presents before recreation",
-     "fix(vulkan): complete maintenance capability and acquire proof (#141)",
-     "fix(vulkan): prove presentation completion in swapchain reuse (#141)",
-     "test(vulkan): cover extent clamping in owned swapchain (#141)",
-     "feat(vulkan): add bounded owned swapchain frames (#141)",
-     "Merge pull request #140 from n2ray/hermes/present-init",
-     "fix(vulkan): enable advertised portability subset for present init (#139)"
+     "Merge pull request #178 from n2ray/hermes/native-gamepad",
+     "Merge pull request #177 from n2ray/hermes/required-java-ci",
+     "fix(android): retire gamepad state on touch takeover (#174)",
+     "Merge pull request #175 from n2ray/hermes/ime-boundary",
+     "fix(ci): install Android platform without a SIGPIPE-prone yes pipeline (#176)",
+     "Merge remote-tracking branch 'origin/main' into hermes/ime-boundary",
+     "fix(android): preserve composing during surrounding deletion (#173)",
+     "feat(android): route physical gamepads through arbiter (#174)"
     ]
    }
   ]
@@ -6126,21 +6604,21 @@
   ]
  },
  "vecStardo/VA-11_ns2ios": {
-  "pushed_at": "2026-10-18T20:47:59Z",
+  "pushed_at": "2026-10-18T21:28:54Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T20:51:44Z",
+    "last_commit": "2026-10-18T21:28:51Z",
     "subjects": [
+     "fix(tools): 台词补丁脚本的 UndertaleModCli 默认路径跟随 work/ 新布局",
+     "docs(agents): 工程约定里的路径同步到新目录结构",
+     "chore: 重建目录结构（d2r-mobile / work / 仓库 三个同级目录），路径默认值跟随新布局",
+     "docs: 说明工作目录放在仓库外的原因；脚本支持 VA11_WORK；密钥移出仓库根目录",
      "docs: 补齐标准 README（英文 + 中文）、LICENSE，并重组移植文档",
      "docs: README 顶部加 v1.0.0 Release 链接",
      "chore(release): 规整版本号，定为 v1.0.0（首个正式版本）",
-     "docs: 仓库改为公开并更名 VA-11_ns2ios；补发布边界说明",
-     "docs(iosapp): 明确 game.win 是完整游戏数据包；新增不含台词的干净出包方式并修复旧台词残留",
-     "docs: 修正帧率说法——游戏本身锁 30 FPS，不需要追 60",
-     "docs: 整理项目交付状态、语言版本说明、经验教训与操作 Skill",
-     "docs(verify): 音频爆音修复经用户听感确认正常"
+     "docs: 仓库改为公开并更名 VA-11_ns2ios；补发布边界说明"
     ]
    }
   ]
@@ -6229,6 +6707,26 @@
      "Compile the startup shaders into the app when the Metal toolchain is present",
      "Merge pull request #3 from huahuahuahuahuahuahuahua/fix/totk-rendering-textures",
      "Add Command-Q to quit TOTK through save-aware window close"
+    ]
+   }
+  ]
+ },
+ "Nishikori-Yui/lordran-native": {
+  "pushed_at": "2026-10-18T23:07:16Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-18T23:07:10Z",
+    "subjects": [
+     "docs: add GitHub issue and pull request templates (#3)",
+     "feat: bring Lordran Native Dark Souls port to Apple platforms",
+     "Preserve occlusion counts across visibility buffer reuse",
+     "Fix sampler pool descriptor scoping",
+     "Add macOS DualSense controller input",
+     "Improve Dark Souls Mac keyboard focus",
+     "Fix Dark Souls Mac frame presentation fallback",
+     "Document windowed water trace launcher requirement"
     ]
    }
   ]
