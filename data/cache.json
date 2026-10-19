@@ -373,11 +373,11 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-18T23:13:52Z",
+  "pushed_at": "2026-10-18T23:57:12Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 104,
+    "ahead": 105,
     "behind": 18,
     "files": 183,
     "real_files": 178,
@@ -389,16 +389,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-18T23:13:47Z",
+    "last_commit": "2026-10-18T23:56:20Z",
     "subjects": [
+     "Preserve zero-size NVN buffer address views used by P5R",
      "Exercise indexed and instanced draws under queue contention",
      "Serialize concurrent NVN queues and preserve replay state",
      "Complete color state setters and publish acquire fences safely",
      "Fix builder query ABI and guard original object bounds",
      "Implement startup command families and test continuous GPU sequences",
      "Check residency-set GPU support before calling the Metal API",
-     "Record uniform scissor and depth-range batches for viewport zero",
-     "Keep texture views within the 16-byte guest ABI"
+     "Record uniform scissor and depth-range batches for viewport zero"
     ]
    },
    {
@@ -1196,7 +1196,7 @@
   "branches": []
  },
  "a9rgeapB/d2r-mobile": {
-  "pushed_at": "2026-10-14T03:06:21Z",
+  "pushed_at": "2026-10-19T02:37:40Z",
   "branches": []
  },
  "jiayx/d2r-mobile": {
@@ -1281,21 +1281,21 @@
   ]
  },
  "d2r-mobile/d2r-mobile": {
-  "pushed_at": "2026-10-17T04:45:06Z",
+  "pushed_at": "2026-10-19T01:56:34Z",
   "branches": [
    {
     "branch": "dev",
-    "mirror": false,
-    "last_commit": "2026-10-17T04:42:58Z",
+    "mirror": true,
+    "last_commit": "2026-10-19T01:53:30Z",
     "subjects": [
+     "iOS audio: mix with other apps instead of interrupting them (#77)",
+     "README: 4 GB devices now start and run, with very tight memory (player test on iPad mini 6)",
+     "Packaging: reserve a code-signature area in Guest so LiveContainer can sign it (#76)",
+     "Touch controls: brighter rim on empty skill slots (#74 follow-up)",
+     "New touch controls look and layout, adopted community fixes, diagnostics",
      "Fix native iPhone fullscreen and supported-game startup (#73)",
      "fix(loader): preserve null unresolved weak imports (#66)",
-     "Fix Mac mouse press latency and held movement (#65)",
-     "fix(nvn): honor image stride in buffer texture copies (#68)",
-     "fix(fs): route legacy CommitSaveData through transactional commit (#67)",
-     "Polish project introduction",
-     "Mac shader retarget: copy reflection JSON by directory and verify every library has one (fixes solid pink-purple screen in CI-built Mac apps, #60)",
-     "v1.0.17: personal stash and iCloud merge hotfix (no loss or duplication when killed at any moment)"
+     "Fix Mac mouse press latency and held movement (#65)"
     ]
    }
   ]
@@ -1359,21 +1359,21 @@
   ]
  },
  "wukongtime/d2r-mobile-build-backup": {
-  "pushed_at": "2026-10-18T01:59:16Z",
+  "pushed_at": "2026-10-19T02:01:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-17T14:17:51Z",
+    "last_commit": "2026-10-18T08:19:37Z",
     "subjects": [
+     "Clarify the complete Mac resource folder required at startup",
      "Reuse verified prepared inputs with compatible upstream generator updates",
      "Show the iOS resource and Legacy folder layout",
      "Package Mac apps without separate resource metadata",
      "Simplify Mac setup with the complete Data resource archive",
      "Refresh Mac build duration from the completed prepared-input build",
      "Point Mac build inputs to the repaired prepared directory",
-     "Fix missing Mac shader reflections and validate final app resources",
-     "Shorten generated release titles"
+     "Fix missing Mac shader reflections and validate final app resources"
     ]
    }
   ]
@@ -1460,21 +1460,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-10-18T04:06:56Z",
+  "pushed_at": "2026-10-19T04:16:12Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T04:06:55Z",
+    "last_commit": "2026-10-19T04:16:11Z",
     "subjects": [
+     "radar 2026-10-19",
      "radar 2026-10-18",
      "radar 2026-10-17",
      "radar 2026-10-16",
      "radar 2026-10-15",
      "radar 2026-10-14",
      "radar 2026-10-13",
-     "radar 2026-10-13",
-     "awesome-early-radar：二进制改名 early-radar，sync 带上状态文件和已写过名单"
+     "radar 2026-10-13"
     ]
    }
   ]
@@ -1540,41 +1540,41 @@
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-18T14:32:19Z",
+  "pushed_at": "2026-10-19T01:00:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T14:27:06Z",
+    "last_commit": "2026-10-19T01:00:24Z",
     "subjects": [
-     "metal_resources_selftest：3D 贴图的单层视图允许是整体 3D 视图（不要求与基础纹理同一对象）",
-     "Start 后黑屏 + 闪退：支持 3D 贴图；纹理视图不再触发 Metal 断言（v0.6.19）",
-     "audio_selftest：自动渲染上限再放宽到补帧上限（8 个周期）——CI 偶发",
-     "计算派发：驱动段（含间接组数的 blit）在开计算编码器之前准备好",
-     "间接计算派发：传 NULL 走 GPU 读组数（之前传了未初始化数组 → 垃圾组数 → GPU 不返回）；单测限时",
-     "compute README：离线链路、绑定约定、现状",
-     "metal_compute_selftest：补 nvn_render_state.h（NVN 类型）并把 MSL 源改为宏字面量",
-     "计算着色器接入随包：CI 启动检查与出包合并私有计算 fixture；修 selftest 字面量"
+     "D24S8/X24_Stencil8 在 iOS 上不可用：depth/stencil 格式守卫用 __IPHONE_OS_VERSION_MIN_REQUIRED 隔开（CI iOS 编译错误）",
+     "pipeline_skip 返回 id：ARC 禁止 int→id<MTLRenderPipelineState> 隐式转换（CI 编译错误）",
+     "metal_render_selftest：c1 读取用指针下标（(*a.c1)[1] 是向量分量下标，非法的 .x）",
+     "缓冲绑定诊断注释与 STATUS 补充（第三波取证工具）",
+     "真机诊断捕获接进 App + 缓冲绑定诊断不再被标题画面淹没",
+     "黑屏第二波：support_buffer 与 c1 是翻译器合成缓冲，宿主按参考实现填默认值",
+     "真机 v0.6.19 游戏世界黑屏后闪退：RG11B10F 深度附件守卫 + 管线早退取证",
+     "metal_resources_selftest：3D 贴图的单层视图允许是整体 3D 视图（不要求与基础纹理同一对象）"
     ]
    }
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-18T17:28:36Z",
+  "pushed_at": "2026-10-19T03:13:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T17:28:33Z",
+    "last_commit": "2026-10-19T03:13:33Z",
     "subjects": [
-     "README: Hades, Age of Calamity and Three Houses playable on the iPhone; NSP script packs Vulkan games",
-     "nvnQueueFinish waits for the GPU only, not for queued presents: Three Houses' first load 78 s -> 6 s",
-     "Display-link pacing follows the present interval: BotW no longer runs at double speed while sprinting",
-     "c1_full.tsv for the last six profiles after the chain rebuild (Link's Awakening, Engage, 3D World, BotW, Odyssey, Age of Calamity; only the chain line changes)",
-     "Texture compare: one channel-mapping helper; docs for the layout-capture fix",
-     "Merge pull request #6 from huahuahuahuahuahuahuahua/fix/botw-capture-texture-compare",
-     "Shader chain: translator fixes for 39 shaders; compiled shaders cached by their Metal source",
-     "AGENTS.md: drop the multi-session coordination bullet (findings board, coordinator-only smoke test and push)"
+     "TOTK notes: the opening cave's stone blocks get no torch light; what is ruled out, and the layout bug MacNativeGames found",
+     "docs: keep game names and IPA sizes from wrapping",
+     "docs: restore notes column with compact wrapped text",
+     "docs: move game notes below the table",
+     "docs: remove NSP requirements column from games table",
+     "Yield back-off starts after 2 ms of yields: Tears of the Kingdom holds 30 fps again",
+     "Power lines show render-target traffic and guest CPU by Switch priority; DM_QOS_MAP maps priority to QoS (off by default)",
+     "c1 guard proves the whole index against the shader's real c1 span, and checks every stage"
     ]
    }
   ]
@@ -1640,12 +1640,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-18T20:41:16Z",
+  "pushed_at": "2026-10-19T04:38:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T20:41:15Z",
+    "last_commit": "2026-10-19T04:38:43Z",
     "subjects": [
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
@@ -1668,12 +1668,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-18T20:52:58Z",
+  "pushed_at": "2026-10-18T23:21:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T20:52:57Z",
+    "last_commit": "2026-10-18T23:21:43Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2066,7 +2066,7 @@
   ]
  },
  "yamoroc/d2r-mobile": {
-  "pushed_at": "2026-10-15T23:58:33Z",
+  "pushed_at": "2026-10-19T01:02:08Z",
   "branches": []
  },
  "x-omen-x/d2r-mobile": {
@@ -3045,21 +3045,21 @@
   ]
  },
  "StandonJoyner/awesome-rea": {
-  "pushed_at": "2026-10-18T11:12:43Z",
+  "pushed_at": "2026-10-18T23:45:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T10:04:34Z",
+    "last_commit": "2026-10-18T23:41:20Z",
     "subjects": [
+     "Re-measure every linked repository into the 2026-10-19 snapshot",
      "Refresh the corpus from the 2026-10-18 snapshot, which read all 167 linked repositories",
      "Retitle the list to Awesome Reverse-Engineering Results for the awesome submission",
      "Replace the LICENSE summary with the canonical CC0-1.0 text so GitHub detects the license",
      "Rewrite the ops specs in Simplified Technical English, and resolve the Census pointers 4c76b93 left dangling",
      "Bound MPL in the licence guard, which was reading \"reimplemented\" as a licence",
      "Enter the seven repositories that REA-cases page actually links",
-     "Cut the corpus-state counts from the intake spec, and point at instruments instead",
-     "Cut the naming and provenance paragraphs, and read the refreshed date from the snapshot"
+     "Cut the corpus-state counts from the intake spec, and point at instruments instead"
     ]
    }
   ]
@@ -4139,7 +4139,7 @@
   ]
  },
  "n2ray/d2r-mobile": {
-  "pushed_at": "2026-10-18T23:14:59Z",
+  "pushed_at": "2026-10-19T04:48:03Z",
   "branches": [
    {
     "branch": "android-snapdragon-elite",
@@ -4234,6 +4234,31 @@
     ]
    },
    {
+    "branch": "hermes/audio-focus-jni",
+    "ahead": 307,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T04:46:03Z",
+    "subjects": [
+     "Merge remote-tracking branch 'origin/main' into hermes/audio-focus-jni",
+     "Merge pull request #186 from n2ray/hermes/controller-hotplug",
+     "docs: record the 46-check harness and root 41-check cross (#184)",
+     "fix(android): keep release retryable and clear JNI exceptions on failed create (#184)",
+     "fix(android): use activity classloader in hotplug JNI (#183)",
+     "Merge pull request #181 from n2ray/hermes/ime-view",
+     "fix(ci): build the JVM-loaded JNI plugin without sanitizer runtime (#184)",
+     "fix(android): enforce hotplug owner and retry release (#183)"
+    ]
+   },
+   {
     "branch": "hermes/audio-focus-policy",
     "ahead": 227,
     "behind": 5,
@@ -4310,6 +4335,31 @@
      "fix(android): enforce provenance sidecar identity schema (#131)",
      "fix(vulkan): validate entry definition and bounds (#125)",
      "feat(android): add diagnostic APK provenance sidecar (#131)"
+    ]
+   },
+   {
+    "branch": "hermes/controller-hotplug",
+    "ahead": 292,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T04:41:14Z",
+    "subjects": [
+     "fix(android): use activity classloader in hotplug JNI (#183)",
+     "fix(android): enforce hotplug owner and retry release (#183)",
+     "feat(android): retire controllers on InputManager removal (#183)",
+     "Merge pull request #178 from n2ray/hermes/native-gamepad",
+     "Merge pull request #177 from n2ray/hermes/required-java-ci",
+     "fix(android): retire gamepad state on touch takeover (#174)",
+     "Merge pull request #175 from n2ray/hermes/ime-boundary",
+     "fix(ci): install Android platform without a SIGPIPE-prone yes pipeline (#176)"
     ]
    },
    {
@@ -4473,6 +4523,56 @@
     ]
    },
    {
+    "branch": "hermes/hotplug-required-ci",
+    "ahead": 304,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T04:50:12Z",
+    "subjects": [
+     "test(android): link libm in callback fixture for Linux CI (#189)",
+     "ci: require hotplug regressions in Java gate (#189)",
+     "Merge pull request #186 from n2ray/hermes/controller-hotplug",
+     "fix(android): use activity classloader in hotplug JNI (#183)",
+     "Merge pull request #181 from n2ray/hermes/ime-view",
+     "fix(android): enforce hotplug owner and retry release (#183)",
+     "docs(android): correct text editor cursor contract (#179)",
+     "Merge remote-tracking branch 'origin/main' into hermes/ime-view"
+    ]
+   },
+   {
+    "branch": "hermes/ime-activity-host",
+    "ahead": 300,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T04:44:27Z",
+    "subjects": [
+     "fix(android): roll back focus refusal and hide failures (#187)",
+     "feat(android): host accepted text editor in Activity content (#187)",
+     "Merge pull request #181 from n2ray/hermes/ime-view",
+     "docs(android): correct text editor cursor contract (#179)",
+     "Merge remote-tracking branch 'origin/main' into hermes/ime-view",
+     "fix(android): keep IME session document and consume back pair (#179)",
+     "Merge pull request #182 from n2ray/hermes/ime-required-ci",
+     "Merge pull request #178 from n2ray/hermes/native-gamepad"
+    ]
+   },
+   {
     "branch": "hermes/ime-boundary",
     "ahead": 282,
     "behind": 5,
@@ -4524,7 +4624,7 @@
    },
    {
     "branch": "hermes/ime-view",
-    "ahead": 289,
+    "ahead": 297,
     "behind": 5,
     "files": 300,
     "real_files": 297,
@@ -4535,16 +4635,16 @@
      "ci/tests",
      "dm/android"
     ],
-    "last_commit": "2026-10-18T23:13:23Z",
+    "last_commit": "2026-10-19T04:31:43Z",
     "subjects": [
-     "fix(android): retire text session before terminal callbacks (#179)",
+     "docs(android): correct text editor cursor contract (#179)",
      "Merge remote-tracking branch 'origin/main' into hermes/ime-view",
-     "feat(android): add explicit text editor view session (#179)",
-     "Merge pull request #177 from n2ray/hermes/required-java-ci",
-     "Merge pull request #175 from n2ray/hermes/ime-boundary",
-     "fix(ci): install Android platform without a SIGPIPE-prone yes pipeline (#176)",
-     "Merge remote-tracking branch 'origin/main' into hermes/ime-boundary",
-     "fix(android): preserve composing during surrounding deletion (#173)"
+     "fix(android): keep IME session document and consume back pair (#179)",
+     "Merge pull request #182 from n2ray/hermes/ime-required-ci",
+     "Merge pull request #178 from n2ray/hermes/native-gamepad",
+     "ci: run accepted IME logic tests and mutations in the required Java gate (#180)",
+     "fix(android): retire text session before terminal callbacks (#179)",
+     "Merge remote-tracking branch 'origin/main' into hermes/ime-view"
     ]
    },
    {
@@ -6428,7 +6528,7 @@
    },
    {
     "branch": "main",
-    "ahead": 289,
+    "ahead": 305,
     "behind": 5,
     "files": 300,
     "real_files": 297,
@@ -6439,16 +6539,16 @@
      "ci/tests",
      "dm/android"
     ],
-    "last_commit": "2026-10-18T23:14:59Z",
+    "last_commit": "2026-10-19T04:48:03Z",
     "subjects": [
-     "Merge pull request #178 from n2ray/hermes/native-gamepad",
-     "Merge pull request #177 from n2ray/hermes/required-java-ci",
-     "fix(android): retire gamepad state on touch takeover (#174)",
-     "Merge pull request #175 from n2ray/hermes/ime-boundary",
-     "fix(ci): install Android platform without a SIGPIPE-prone yes pipeline (#176)",
-     "Merge remote-tracking branch 'origin/main' into hermes/ime-boundary",
-     "fix(android): preserve composing during surrounding deletion (#173)",
-     "feat(android): route physical gamepads through arbiter (#174)"
+     "Merge pull request #188 from n2ray/hermes/ime-activity-host",
+     "Merge pull request #186 from n2ray/hermes/controller-hotplug",
+     "fix(android): roll back focus refusal and hide failures (#187)",
+     "fix(android): use activity classloader in hotplug JNI (#183)",
+     "feat(android): host accepted text editor in Activity content (#187)",
+     "Merge pull request #181 from n2ray/hermes/ime-view",
+     "fix(android): enforce hotplug owner and retry release (#183)",
+     "docs(android): correct text editor cursor contract (#179)"
     ]
    }
   ]
@@ -6604,21 +6704,21 @@
   ]
  },
  "vecStardo/VA-11_ns2ios": {
-  "pushed_at": "2026-10-18T21:28:54Z",
+  "pushed_at": "2026-10-19T00:05:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T21:28:51Z",
+    "last_commit": "2026-10-19T00:05:02Z",
     "subjects": [
+     "chore(release): 版本号升到 v1.1.0（HD 震动）",
+     "feat(dm): 接通 HD 震动（设置页 HD 振动）到 iOS 触感",
      "fix(tools): 台词补丁脚本的 UndertaleModCli 默认路径跟随 work/ 新布局",
      "docs(agents): 工程约定里的路径同步到新目录结构",
      "chore: 重建目录结构（d2r-mobile / work / 仓库 三个同级目录），路径默认值跟随新布局",
      "docs: 说明工作目录放在仓库外的原因；脚本支持 VA11_WORK；密钥移出仓库根目录",
      "docs: 补齐标准 README（英文 + 中文）、LICENSE，并重组移植文档",
-     "docs: README 顶部加 v1.0.0 Release 链接",
-     "chore(release): 规整版本号，定为 v1.0.0（首个正式版本）",
-     "docs: 仓库改为公开并更名 VA-11_ns2ios；补发布边界说明"
+     "docs: README 顶部加 v1.0.0 Release 链接"
     ]
    }
   ]
@@ -6727,6 +6827,130 @@
      "Improve Dark Souls Mac keyboard focus",
      "Fix Dark Souls Mac frame presentation fallback",
      "Document windowed water trace launcher requirement"
+    ]
+   }
+  ]
+ },
+ "kxn/d2r-mobile": {
+  "pushed_at": "2026-10-19T04:44:16Z",
+  "branches": [
+   {
+    "branch": "codex/android-native-backup-20261019",
+    "ahead": 23,
+    "behind": 12,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/runtime",
+     "dm/third_party"
+    ],
+    "last_commit": "2026-10-19T04:43:26Z",
+    "subjects": [
+     "Abandon unexecuted shader requests when retrying attachment consumers",
+     "Share source loads between direct GPU uploads and CPU shadows",
+     "Preserve local ordering across proved attachment subpasses",
+     "Link standalone Vulkan tests with the embedded oracle hooks",
+     "Keep cold launch tools from stopping an existing user game",
+     "Verify empty pixel-local fallbacks without redundant shader analysis",
+     "Copy only initialized pool pages during backing migration",
+     "Add guarded pixel-local Vulkan subpass rendering"
+    ]
+   }
+  ]
+ },
+ "lixing0016/d2r-mobile": {
+  "pushed_at": "2026-10-19T02:39:21Z",
+  "branches": []
+ },
+ "CNyezi/d2r-mobile": {
+  "pushed_at": "2026-10-19T03:10:02Z",
+  "branches": []
+ },
+ "ericchiu-ca/vanillaware-ios": {
+  "pushed_at": "2026-10-19T01:51:48Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-19T01:51:47Z",
+    "subjects": [
+     "Keep tests independent of the host's free disk space",
+     "Port 13 Sentinels and Unicorn Overlord to Mac and iPad on nxnative"
+    ]
+   }
+  ]
+ },
+ "iceorange-dev/manosaba-ios": {
+  "pushed_at": "2026-10-19T04:21:43Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-19T04:16:08Z",
+    "subjects": [
+     "Plan batch 4: tooling and diagnostics items 28-35 of the wider review",
+     "Plan batch 3: iOS and Mac items 19-27 of the wider review",
+     "Plan batch 2: performance items 13-18 of the wider review",
+     "Plan batch 1: correctness items 1-12 of the wider review",
+     "Docs: the wider review of the references, and a plan for all of it, simple to complex",
+     "LICENSE: copyright line for this fork's own work, next to d2r-mobile's",
+     "Docs: links for every acknowledgement, Tears of the Kingdom's status, SDK wording paraphrased",
+     "Docs: the 2026-10-19 review and what was ported from it"
+    ]
+   }
+  ]
+ },
+ "Neo0807/dr2": {
+  "pushed_at": "2026-10-19T03:18:24Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-19T03:10:39Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "WangTingYeYe/rtg-mobile": {
+  "pushed_at": "2026-10-19T02:44:53Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-19T02:44:07Z",
+    "subjects": [
+     "Work around menu compositing corruption on the tested Adreno 630 driver",
+     "Restore Android controller bindings and fix presentation synchronization",
+     "Use original game title and icon for local APKs",
+     "Initial public source release"
+    ]
+   }
+  ]
+ },
+ "zecaro/mntg": {
+  "pushed_at": "2026-10-18T20:23:13Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-18T20:23:13Z",
+    "subjects": [
+     "Merge pull request #16 from RVZO6/fix/totk-precompiled-shaders",
+     "Merge pull request #14 from RVZO6/fix/totk-command-q",
+     "Merge pull request #12 from joevans/english-ui",
+     "Merge pull request #11 from joevans/macos-27-address-space",
+     "Draw overlay lines with missing pixel glyphs through CoreText",
+     "Compile the startup shaders into the app when the Metal toolchain is present",
+     "Merge pull request #3 from huahuahuahuahuahuahuahua/fix/totk-rendering-textures",
+     "Add Command-Q to quit TOTK through save-aware window close"
     ]
    }
   ]
