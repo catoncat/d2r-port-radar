@@ -373,14 +373,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-19T12:51:55Z",
+  "pushed_at": "2026-10-19T20:33:34Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 112,
-    "behind": 18,
-    "files": 190,
-    "real_files": 185,
+    "ahead": 133,
+    "behind": 21,
+    "files": 201,
+    "real_files": 196,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -389,22 +389,22 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-19T12:51:51Z",
+    "last_commit": "2026-10-19T20:33:27Z",
     "subjects": [
-     "Restore render state after pipeline prediction",
-     "Run view-upgrade pixel checks early with readback diagnostics",
-     "Prepare texture views before opening encoders",
-     "Preserve register bits when sampling stencil views",
-     "Update optional render-range checker for per-stage bindings",
-     "Preserve independently bound NVN shader stages",
-     "Accept covering NVN depth bounds in the normalized Metal domain",
-     "Preserve zero-size NVN buffer address views used by P5R"
+     "View BC atlas textures over guest memory",
+     "Log font atlas candidates and dialogue UI texture bindings",
+     "View linear R8/RG8/BC4/BC5 textures over guest memory",
+     "Bind decoded movie frames directly to the movie shader",
+     "View linear render-target video textures over guest memory",
+     "View linear video-decode textures over guest memory",
+     "Guard partial clear to Metal 3 encoder API",
+     "Implement partial-channel texture clears and movie binding trace"
     ]
    },
    {
     "branch": "codex/p5r-shaders-verified",
     "ahead": 44,
-    "behind": 18,
+    "behind": 21,
     "files": 118,
     "real_files": 113,
     "dirs": [
@@ -523,14 +523,14 @@
   "branches": []
  },
  "Seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-19T09:48:58Z",
+  "pushed_at": "2026-10-19T20:02:36Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 163,
-    "behind": 5,
-    "files": 156,
-    "real_files": 155,
+    "ahead": 180,
+    "behind": 8,
+    "files": 163,
+    "real_files": 162,
     "dirs": [
      "NOTICE.md",
      "PORTABLE.md",
@@ -539,16 +539,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-10-19T09:41:08Z",
+    "last_commit": "2026-10-19T20:00:46Z",
     "subjects": [
-     "probe(ohos): ctor#206 定位为'内容没加载'的症状（表计数为 0 ⇒ 查表拿空指针）",
-     "refactor(ohos): NVN 内存池/缓冲真实现搬进通用模块 dm_nvn_vk.c（G2 架构收尾）",
-     "probe(ohos): 消息链三跳读取（不挂钩子）——Prepare 线程收到消息后到底调到哪里",
-     "fix(ohos): ⭐ SDK 分派器丢第 4 个参数（x3）——VSNPrintf 的 va_list 从未送达 + 实现 nn::util::VSNPrintf",
-     "probe(ohos): 键解析替身加\"键名/串对象布局\"打点；撤掉重复挂载（np88-np91）",
-     "fix(probe): 撤掉\"消息处理\"钩子 + 修掉崩溃倒流成环的控制流缺陷（np86/np87）",
-     "probe(ohos): 消息处理钩子改为延后安装——绕开\"安装期多一个洞就死在 ctor #385\"",
-     "probe(ohos): 越障扩展到任务注册竞态崩点（x9=0 的空遍历）——本轮零崩溃"
+     "docs(ohos): 固化 svc 同步原语规范（A' 的前置资料）+ 修正 B' 结论：calc 确实在跑",
+     "fix(os): 补 TryPeekMessageQueue——日志尾部几千行 Peek 空转消失，线程改为正常阻塞等消息",
+     "feat(ohos): M1 第一步——把 sdk 模块嵌进包（+8 MB），行为零回归；补 NOTICE 同源分支致谢",
+     "feat(tools): 模块普查器 mod_survey.py + 验证「sdk 自带 340 个 nn::os」+ sdk 改写成功",
+     "feat(os): 补 nn::os 事件/轻量事件/信号量（地基缺口）——卡点从 ResourceMgrTask 推进到 JPEG 模块",
+     "feat(tools): ④ 期望值反推扫描器（离线一次扫 392 个导入）+ ⑤ lldb 可行性结论",
+     "fix(sdk): 补 nn::settings::eq + 互斥量表 64→2048（表满会自死锁）+ 轨迹定时落盘",
+     "perf(probe): 流程提速三件套——宽帧钩子 + 调用轨迹环缓冲 + 一键跑测脚本"
     ]
    }
   ]
@@ -1032,12 +1032,12 @@
   "branches": []
  },
  "dodola/d2r-mobile": {
-  "pushed_at": "2026-10-19T10:25:46Z",
+  "pushed_at": "2026-10-19T15:28:32Z",
   "branches": [
    {
     "branch": "codex/android-measured-optimizations",
     "ahead": 10,
-    "behind": 11,
+    "behind": 14,
     "files": 123,
     "real_files": 113,
     "dirs": [
@@ -1062,7 +1062,7 @@
    {
     "branch": "codex/zelda-echoes-of-wisdom-android",
     "ahead": 8,
-    "behind": 0,
+    "behind": 3,
     "files": 291,
     "real_files": 287,
     "dirs": [
@@ -1088,8 +1088,8 @@
    },
    {
     "branch": "main",
-    "ahead": 40,
-    "behind": 0,
+    "ahead": 45,
+    "behind": 3,
     "files": 300,
     "real_files": 298,
     "dirs": [
@@ -1098,16 +1098,16 @@
      "dm/gfx",
      "dm/host"
     ],
-    "last_commit": "2026-10-19T10:24:23Z",
+    "last_commit": "2026-10-19T15:27:13Z",
     "subjects": [
+     "diag(turnip): allow controlled TU_DEBUG option files",
+     "docs(android): point manual testing at Turnip v10",
+     "perf(android): seed Turnip pipeline cache and enable command reuse",
+     "feat(android): add adaptive render quality modes",
+     "feat(android): add update checks and strict APK capability guard",
      "feat(android): stop Zelda port and omit cloud sync",
      "feat(android): consolidate D2R parity work on main",
-     "Merge Android pipeline persistence and prewarming",
-     "Merge upstream v1.0.18 fixes into Android integration",
-     "Merge codex/d2r-offline-installer into main",
-     "fix(vulkan): replay polygon offset and preserve previous crash log",
-     "fix(android): retain installer entry points in rebuilt APKs",
-     "fix(android): route controller B and Back to guest input"
+     "Merge Android pipeline persistence and prewarming"
     ]
    }
   ]
@@ -1505,12 +1505,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-19T04:56:13Z",
+  "pushed_at": "2026-10-19T13:36:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-19T04:56:13Z",
+    "last_commit": "2026-10-19T13:36:41Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1565,7 +1565,7 @@
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-19T13:15:11Z",
+  "pushed_at": "2026-10-19T14:46:39Z",
   "branches": [
    {
     "branch": "main",
@@ -1605,21 +1605,21 @@
   ]
  },
  "ForceMind/Game2Mobile": {
-  "pushed_at": "2026-10-18T18:30:54Z",
+  "pushed_at": "2026-10-19T14:21:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T18:30:54Z",
+    "last_commit": "2026-10-19T14:21:48Z",
     "subjects": [
+     "Merge pull request #11 from ForceMind/fix/m1-input-provenance-20261019",
+     "fix(m1): preserve selected inputs and verify source provenance across stages",
      "M1: compile all 17 iOS frontends on both Apple targets and repair iOS18 APIs",
      "M1: verify complete iPhoneOS shader cache before setup and Xcode game build",
      "M1: enforce full iOS shader-map coverage and correct guest Mach-O sections",
      "M1: validate authentic signed Game2Mobile game bundles and Metal profiles",
      "M1: require fresh private Xcode builds and safe per-run evidence",
-     "M1: add secure owner-only 91/91 compile and full DmIOS build workflow",
-     "M1: verify 176 ARM64 production objects across iOS 26 and 18",
-     "M1: compile asset-free iOS diagnostics app on Apple Silicon"
+     "M1: add secure owner-only 91/91 compile and full DmIOS build workflow"
     ]
    }
   ]
@@ -1693,12 +1693,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-19T04:52:19Z",
+  "pushed_at": "2026-10-19T13:32:45Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-19T04:52:18Z",
+    "last_commit": "2026-10-19T13:32:45Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -3070,21 +3070,21 @@
   ]
  },
  "StandonJoyner/awesome-rea": {
-  "pushed_at": "2026-10-19T13:24:59Z",
+  "pushed_at": "2026-10-19T13:45:22Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T23:41:20Z",
+    "last_commit": "2026-10-19T13:45:22Z",
     "subjects": [
+     "Merge pull request #1 from StandonJoyner/data/refresh",
+     "[create-pull-request] automated change",
      "Re-measure every linked repository into the 2026-10-19 snapshot",
      "Refresh the corpus from the 2026-10-18 snapshot, which read all 167 linked repositories",
      "Retitle the list to Awesome Reverse-Engineering Results for the awesome submission",
      "Replace the LICENSE summary with the canonical CC0-1.0 text so GitHub detects the license",
      "Rewrite the ops specs in Simplified Technical English, and resolve the Census pointers 4c76b93 left dangling",
-     "Bound MPL in the licence guard, which was reading \"reimplemented\" as a licence",
-     "Enter the seven repositories that REA-cases page actually links",
-     "Cut the corpus-state counts from the intake spec, and point at instruments instead"
+     "Bound MPL in the licence guard, which was reading \"reimplemented\" as a licence"
     ]
    }
   ]
@@ -3127,11 +3127,11 @@
   ]
  },
  "albionlee/d2r-mobile": {
-  "pushed_at": "2026-10-18T10:11:46Z",
+  "pushed_at": "2026-10-19T18:25:06Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 7,
+    "ahead": 8,
     "behind": 0,
     "files": 8,
     "real_files": 8,
@@ -3139,8 +3139,9 @@
      "dm/host",
      "dm/ios"
     ],
-    "last_commit": "2026-10-18T10:11:34Z",
+    "last_commit": "2026-10-19T18:25:06Z",
     "subjects": [
+     "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'main' of https://github.com/albionlee/d2r-mobile",
      "增加崩溃日志，继续尝试修复手柄操作时佣兵界面崩溃问题",
      "Merge branch 'jhaizhou-ops:main' into main",
@@ -3464,13 +3465,14 @@
   ]
  },
  "yokeyhh/switch-port-to-apple": {
-  "pushed_at": "2026-10-19T12:40:06Z",
+  "pushed_at": "2026-10-19T15:49:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-19T12:40:03Z",
+    "last_commit": "2026-10-19T15:49:46Z",
     "subjects": [
+     "v6: NVN texture-view STENCIL mode (sampling a stencil plane) - Metal can't, mirror it; the depth-LSB stripes it causes",
      "v5: layer-range bug (renderTargetArrayLength) that blackens whole scenes; how to diagnose a black scene",
      "v4: runtime-constructed shaders + HLE/input pitfalls",
      "Add runnable scripts/ toolkit; correct c1 semantics",
@@ -3625,21 +3627,21 @@
   "branches": []
  },
  "akari-sora/d2r-mobile": {
-  "pushed_at": "2026-10-17T18:16:00Z",
+  "pushed_at": "2026-10-19T15:52:57Z",
   "branches": [
    {
-    "branch": "android/phase0-diagnostics",
+    "branch": "release/android-v0.7",
     "mirror": false,
-    "last_commit": "2026-10-17T18:06:49Z",
+    "last_commit": "2026-10-19T15:50:28Z",
     "subjects": [
-     "feat(android): adopt 0x1536e8 live checkpoint and remove github workflows",
-     "Make the paused Android port directly resumable by the next owner",
-     "Preserve real instruction regressions before changing the loader again",
-     "Preserve the guarded Android importer at the handoff checkpoint",
-     "Preserve the verified Android source identity foundation for handoff",
-     "Establish measured Android execution gates before porting the game runtime",
-     "README: use the English Trove screenshot",
-     "State the required game edition: Reign of the Warlock expansion"
+     "docs: release notes match the release branch; Flip, skill-set and reinstall known issues; scan allows the donation link",
+     "docs: Galaxy Z Fold7 verified in all postures; support section",
+     "Android port v0.7.0 (based on jhaizhou-ops/d2r-mobile 9393b00 and sydeEvans/d2r-android v0.6.1)",
+     "iOS audio: mix with other apps instead of interrupting them (#77)",
+     "README: 4 GB devices now start and run, with very tight memory (player test on iPad mini 6)",
+     "Packaging: reserve a code-signature area in Guest so LiveContainer can sign it (#76)",
+     "Touch controls: brighter rim on empty skill slots (#74 follow-up)",
+     "New touch controls look and layout, adopted community fixes, diagnostics"
     ]
    }
   ]
@@ -3720,21 +3722,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-19T13:15:11Z",
+  "pushed_at": "2026-10-19T17:20:54Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-19T13:15:02Z",
+    "last_commit": "2026-10-19T17:16:48Z",
     "subjects": [
-     "data: 585 new 1.4.3 variants in the shared shader list from a player's contribution (#38)",
-     "feat: key 4 ultrawide keeps the HUD's shape in the middle 16:9",
-     "feat: key 4 switches a true 21:9 ultrawide view on the Mac (1.2.1, 1.4.3)",
-     "perf: the guest yield back-off is off by default (TOTK_YIELD_BACKOFF=on)",
-     "fix: pipeline prediction skips untranslated programs and depth-less guesses for depth export; limits, statistics and negative controls",
-     "Merge PR #29: pipeline prediction resolves no future program on the submit thread, is bounded and frees stale guesses",
-     "feat: TOTK_PCHTXT loads an emulator ExeFS patch, TOTK_STRETCH=1 fills the window",
-     "perf: a long run of guest yields backs off instead of spinning (after nxnative)"
+     "feat: RomFS mods can add files the game does not have (#48)",
+     "Merge PR #51: the shortcut help shows the current interpolation and picture modes",
+     "Merge PR #47: another genuine retail dump of the same version is accepted (Nintendo-signed main.npdm, fonts of another firmware)",
+     "fix: build_app.py checks that clang++ finds the C++ standard library before it starts (#41)",
+     "data: 711 new variants in the shared shader list from a player's contribution (#43, 1.0.0 on a Mac)",
+     "Merge PR #50: 32 locally discovered shader variants",
+     "Merge PR #46: a merged update is accepted when hactool's unverifiable signature checks print (FAIL)",
+     "data: include the shader variant discovered during the final scan"
     ]
    }
   ]
@@ -4187,12 +4189,66 @@
   ]
  },
  "SwonDev/d2r-mobile": {
-  "pushed_at": "2026-10-18T05:12:26Z",
+  "pushed_at": "2026-10-19T17:00:54Z",
   "branches": [
+   {
+    "branch": "feat/mac-bundle-slice",
+    "ahead": 2,
+    "behind": 1,
+    "files": 4,
+    "real_files": 4,
+    "dirs": [
+     "dm/host",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-19T17:00:46Z",
+    "subjects": [
+     "Merge current upstream main and retain native Mac integration",
+     "Package native Mac resources and linked dylibs independently"
+    ]
+   },
+   {
+    "branch": "feat/mac-pc-input-slice",
+    "ahead": 3,
+    "behind": 1,
+    "files": 66,
+    "real_files": 62,
+    "dirs": [
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-10-19T16:59:45Z",
+    "subjects": [
+     "Merge current upstream main and preserve adopted hover behavior",
+     "test(pc-input): keep standalone fixtures composable with item module",
+     "Add gated Mac PC mouse and keyboard profile with native bindings"
+    ]
+   },
+   {
+    "branch": "feat/mac-pc-inventory-slice",
+    "ahead": 2,
+    "behind": 1,
+    "files": 28,
+    "real_files": 24,
+    "dirs": [
+     "dm/host",
+     "dm/ios",
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-10-19T17:00:46Z",
+    "subjects": [
+     "Merge current upstream main and retain native Mac integration",
+     "PC items: separate native inventory, NPC and stash interactions"
+    ]
+   },
    {
     "branch": "feat/mac-pc-spanish-integration",
     "ahead": 1,
-    "behind": 0,
+    "behind": 3,
     "files": 165,
     "real_files": 163,
     "dirs": [
@@ -4209,16 +4265,31 @@
     "subjects": [
      "feat(mac): proponer perfil PC, español y empaquetado nativo"
     ]
+   },
+   {
+    "branch": "feat/mac-vp8-slice",
+    "ahead": 2,
+    "behind": 1,
+    "files": 11,
+    "real_files": 11,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T17:00:46Z",
+    "subjects": [
+     "Merge current upstream main and retain native Mac integration",
+     "feat(mac): add opt-in VP8 movie decoding with synthetic tests"
+    ]
    }
   ]
  },
  "n2ray/d2r-mobile": {
-  "pushed_at": "2026-10-19T13:22:52Z",
+  "pushed_at": "2026-10-19T20:30:51Z",
   "branches": [
    {
     "branch": "android-snapdragon-elite",
     "ahead": 1,
-    "behind": 5,
+    "behind": 8,
     "files": 154,
     "real_files": 152,
     "dirs": [
@@ -4232,9 +4303,59 @@
     ]
    },
    {
+    "branch": "claude/black-material-fable",
+    "ahead": 481,
+    "behind": 8,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T15:10:14Z",
+    "subjects": [
+     "fix(android): sample depth compares on R16/R32F through a depth-format alias (Refs #259)",
+     "feat(android): default-off one-frame production render trace (Refs #259)",
+     "Merge pull request #271 from n2ray/hermes/snapshot-conservative-default",
+     "fix(nvn): default snapshots to conservative COW",
+     "Merge pull request #270 from n2ray/hermes/material-black-rendering",
+     "fix(android): bound and narrow the material visual probe (#259)",
+     "Merge pull request #269 from n2ray/hermes/snapshot-inplace-isolation",
+     "feat(android): add bounded texture-vs-shader material experiment (#259)"
+    ]
+   },
+   {
+    "branch": "claude/display-metal-parity-round2",
+    "ahead": 491,
+    "behind": 8,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T15:51:03Z",
+    "subjects": [
+     "fix(android): match Metal polygon-offset semantics in Vulkan (Refs #259)",
+     "Merge pull request #276 from n2ray/hermes/live-touch-skill-binding",
+     "fix(android): expose GNU process_vm_readv for snapshot reader",
+     "feat(android): port shared guest skill snapshot bridge",
+     "Merge pull request #273 from n2ray/claude/black-material-fable",
+     "fix(android): sample depth compares on R16/R32F through a depth-format alias (Refs #259)",
+     "Merge pull request #275 from n2ray/hermes/live-touch-visibility-refresh",
+     "fix(android): do not re-arm live readiness after input teardown (#274)"
+    ]
+   },
+   {
     "branch": "claude/issue-3-runtime-contract",
     "ahead": 57,
-    "behind": 5,
+    "behind": 8,
     "files": 203,
     "real_files": 195,
     "dirs": [
@@ -4258,7 +4379,7 @@
    {
     "branch": "codex/android-guest-elf-map",
     "ahead": 424,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4283,7 +4404,7 @@
    {
     "branch": "codex/ci63-66-validation",
     "ahead": 78,
-    "behind": 5,
+    "behind": 8,
     "files": 226,
     "real_files": 216,
     "dirs": [
@@ -4309,9 +4430,59 @@
     ]
    },
    {
+    "branch": "codex/frontend-output-geometry",
+    "ahead": 522,
+    "behind": 8,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T20:22:42Z",
+    "subjects": [
+     "fix(android): map frontend touch to actual output aspect",
+     "diag(android): test frontend generation rearm source (#34)",
+     "fix(android): avoid stale snap-name attribution in FE trace (#34)",
+     "diag(android): rearm FE trace by generation (#34)",
+     "Merge commit '29515baa7b5b4fb1c56d8b7d00971e9703b94d4a' into hermes/live-touch-visual-overlay",
+     "Merge pull request #283 from n2ray/hermes/live-touch-visual-overlay",
+     "fix(android): bound and stage front-end touch trace (#34)",
+     "Merge pull request #284 from n2ray/codex/nvn-command-packet-diagnostic"
+    ]
+   },
+   {
+    "branch": "codex/nvn-command-packet-diagnostic",
+    "ahead": 511,
+    "behind": 8,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T19:19:18Z",
+    "subjects": [
+     "fix(android): wait on actual Vulkan submission fences",
+     "fix(android): hide combat HUD on front-end pages (#34)",
+     "Merge commit '2ea56b61c7efed9a612b75f1309237d0b33df0d0' into hermes/live-touch-visual-overlay",
+     "Merge pull request #281 from n2ray/hermes/live-touch-skill-binding",
+     "fix(android): preserve known item class 0 in bind route",
+     "fix(android): keep skill-tree taps in navigation while binding",
+     "feat(android): confirm bind skill tap through original core",
+     "Merge pull request #277 from n2ray/hermes/live-touch-visual-overlay"
+    ]
+   },
+   {
     "branch": "docs/android-project-readme",
     "ahead": 32,
-    "behind": 5,
+    "behind": 8,
     "files": 177,
     "real_files": 171,
     "dirs": [
@@ -4335,7 +4506,7 @@
    {
     "branch": "hermes/android-target-guard",
     "ahead": 400,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4360,7 +4531,7 @@
    {
     "branch": "hermes/audio-focus-jni",
     "ahead": 308,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4385,7 +4556,7 @@
    {
     "branch": "hermes/audio-focus-policy",
     "ahead": 227,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4411,7 +4582,7 @@
    {
     "branch": "hermes/audio-native-app",
     "ahead": 334,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4436,7 +4607,7 @@
    {
     "branch": "hermes/audio-output-integration",
     "ahead": 254,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4461,7 +4632,7 @@
    {
     "branch": "hermes/audio-pcm-pacing",
     "ahead": 341,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4486,7 +4657,7 @@
    {
     "branch": "hermes/audio-session",
     "ahead": 317,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4511,7 +4682,7 @@
    {
     "branch": "hermes/audio-touch-entry",
     "ahead": 362,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4536,7 +4707,7 @@
    {
     "branch": "hermes/character-rendering",
     "ahead": 435,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4561,7 +4732,7 @@
    {
     "branch": "hermes/clean-apk-provenance",
     "ahead": 198,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 278,
     "dirs": [
@@ -4589,7 +4760,7 @@
    {
     "branch": "hermes/controller-hotplug",
     "ahead": 292,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4614,7 +4785,7 @@
    {
     "branch": "hermes/custom-preferences",
     "ahead": 231,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4640,7 +4811,7 @@
    {
     "branch": "hermes/custom-preferences-store",
     "ahead": 270,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4665,7 +4836,7 @@
    {
     "branch": "hermes/diagnostic-landscape",
     "ahead": 186,
-    "behind": 5,
+    "behind": 8,
     "files": 290,
     "real_files": 267,
     "dirs": [
@@ -4693,7 +4864,7 @@
    {
     "branch": "hermes/diagnostic-provenance",
     "ahead": 191,
-    "behind": 5,
+    "behind": 8,
     "files": 292,
     "real_files": 269,
     "dirs": [
@@ -4721,7 +4892,7 @@
    {
     "branch": "hermes/dirty-snapshot-transaction",
     "ahead": 437,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4746,7 +4917,7 @@
    {
     "branch": "hermes/embedded-target-copy",
     "ahead": 411,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4771,7 +4942,7 @@
    {
     "branch": "hermes/game-host-link",
     "ahead": 408,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4796,7 +4967,7 @@
    {
     "branch": "hermes/gamepad-events",
     "ahead": 241,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4821,7 +4992,7 @@
    {
     "branch": "hermes/graphics-interface",
     "ahead": 188,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 276,
     "dirs": [
@@ -4849,7 +5020,7 @@
    {
     "branch": "hermes/heap-snapshot-perf",
     "ahead": 428,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4874,7 +5045,7 @@
    {
     "branch": "hermes/host-snapshot-guard",
     "ahead": 434,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4899,7 +5070,7 @@
    {
     "branch": "hermes/hotplug-required-ci",
     "ahead": 304,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4924,7 +5095,7 @@
    {
     "branch": "hermes/hud-native-app",
     "ahead": 354,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4949,7 +5120,7 @@
    {
     "branch": "hermes/hud-swapchain",
     "ahead": 334,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4974,7 +5145,7 @@
    {
     "branch": "hermes/ime-activity-host",
     "ahead": 300,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4999,7 +5170,7 @@
    {
     "branch": "hermes/ime-boundary",
     "ahead": 282,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5024,7 +5195,7 @@
    {
     "branch": "hermes/ime-host-required-ci",
     "ahead": 309,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5049,7 +5220,7 @@
    {
     "branch": "hermes/ime-insets",
     "ahead": 319,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5074,7 +5245,7 @@
    {
     "branch": "hermes/ime-native-app",
     "ahead": 324,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5099,7 +5270,7 @@
    {
     "branch": "hermes/ime-native-insets",
     "ahead": 367,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5124,7 +5295,7 @@
    {
     "branch": "hermes/ime-required-ci",
     "ahead": 287,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5149,7 +5320,7 @@
    {
     "branch": "hermes/ime-touch-entry",
     "ahead": 345,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5174,7 +5345,7 @@
    {
     "branch": "hermes/ime-utf16-payload",
     "ahead": 364,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5199,7 +5370,7 @@
    {
     "branch": "hermes/ime-view",
     "ahead": 297,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5224,7 +5395,7 @@
    {
     "branch": "hermes/import-build",
     "ahead": 381,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5249,7 +5420,7 @@
    {
     "branch": "hermes/import-graphics",
     "ahead": 373,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5274,7 +5445,7 @@
    {
     "branch": "hermes/import-runtime",
     "ahead": 378,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5299,7 +5470,7 @@
    {
     "branch": "hermes/indexed-offscreen",
     "ahead": 163,
-    "behind": 5,
+    "behind": 8,
     "files": 266,
     "real_files": 244,
     "dirs": [
@@ -5327,7 +5498,7 @@
    {
     "branch": "hermes/indexed-textured",
     "ahead": 167,
-    "behind": 5,
+    "behind": 8,
     "files": 273,
     "real_files": 250,
     "dirs": [
@@ -5355,7 +5526,7 @@
    {
     "branch": "hermes/input-request-retirement",
     "ahead": 254,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5380,7 +5551,7 @@
    {
     "branch": "hermes/input-source",
     "ahead": 225,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5406,7 +5577,7 @@
    {
     "branch": "hermes/input-source-view",
     "ahead": 256,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -5431,7 +5602,7 @@
    {
     "branch": "hermes/inventory-adapter-tests",
     "ahead": 143,
-    "behind": 5,
+    "behind": 8,
     "files": 243,
     "real_files": 224,
     "dirs": [
@@ -5459,7 +5630,7 @@
    {
     "branch": "hermes/issue-4-sync-contract",
     "ahead": 75,
-    "behind": 5,
+    "behind": 8,
     "files": 220,
     "real_files": 210,
     "dirs": [
@@ -5483,7 +5654,7 @@
    {
     "branch": "hermes/issue-6-sm-lm",
     "ahead": 4,
-    "behind": 5,
+    "behind": 8,
     "files": 156,
     "real_files": 154,
     "dirs": [
@@ -5502,7 +5673,7 @@
    {
     "branch": "hermes/issue-7-init-inventory",
     "ahead": 72,
-    "behind": 5,
+    "behind": 8,
     "files": 218,
     "real_files": 208,
     "dirs": [
@@ -5526,7 +5697,7 @@
    {
     "branch": "hermes/issue-8-init-exit",
     "ahead": 11,
-    "behind": 5,
+    "behind": 8,
     "files": 163,
     "real_files": 159,
     "dirs": [
@@ -5550,7 +5721,7 @@
    {
     "branch": "hermes/issue-8-lifecycle",
     "ahead": 9,
-    "behind": 5,
+    "behind": 8,
     "files": 162,
     "real_files": 158,
     "dirs": [
@@ -5574,7 +5745,7 @@
    {
     "branch": "hermes/issue-11-nvn-fixtures",
     "ahead": 2,
-    "behind": 5,
+    "behind": 8,
     "files": 6,
     "real_files": 4,
     "dirs": [
@@ -5589,7 +5760,7 @@
    {
     "branch": "hermes/issue-12-contract-gate",
     "ahead": 25,
-    "behind": 5,
+    "behind": 8,
     "files": 174,
     "real_files": 168,
     "dirs": [
@@ -5613,7 +5784,7 @@
    {
     "branch": "hermes/issue-12-shader-contract",
     "ahead": 19,
-    "behind": 5,
+    "behind": 8,
     "files": 167,
     "real_files": 163,
     "dirs": [
@@ -5637,7 +5808,7 @@
    {
     "branch": "hermes/issue-12-vulkan-consumer",
     "ahead": 50,
-    "behind": 5,
+    "behind": 8,
     "files": 193,
     "real_files": 186,
     "dirs": [
@@ -5661,7 +5832,7 @@
    {
     "branch": "hermes/issue-13-formats",
     "ahead": 16,
-    "behind": 5,
+    "behind": 8,
     "files": 165,
     "real_files": 161,
     "dirs": [
@@ -5685,7 +5856,7 @@
    {
     "branch": "hermes/issue-13-mip-proof",
     "ahead": 61,
-    "behind": 5,
+    "behind": 8,
     "files": 212,
     "real_files": 204,
     "dirs": [
@@ -5709,7 +5880,7 @@
    {
     "branch": "hermes/issue-13-samplers",
     "ahead": 58,
-    "behind": 5,
+    "behind": 8,
     "files": 208,
     "real_files": 201,
     "dirs": [
@@ -5733,7 +5904,7 @@
    {
     "branch": "hermes/issue-13-vulkan-resources",
     "ahead": 10,
-    "behind": 5,
+    "behind": 8,
     "files": 163,
     "real_files": 159,
     "dirs": [
@@ -5757,7 +5928,7 @@
    {
     "branch": "hermes/issue-14-app-lifecycle",
     "ahead": 35,
-    "behind": 5,
+    "behind": 8,
     "files": 180,
     "real_files": 174,
     "dirs": [
@@ -5781,7 +5952,7 @@
    {
     "branch": "hermes/issue-17-ci",
     "ahead": 52,
-    "behind": 5,
+    "behind": 8,
     "files": 206,
     "real_files": 198,
     "dirs": [
@@ -5809,7 +5980,7 @@
    {
     "branch": "hermes/issue-31-touch-parity",
     "ahead": 18,
-    "behind": 5,
+    "behind": 8,
     "files": 167,
     "real_files": 161,
     "dirs": [
@@ -5833,7 +6004,7 @@
    {
     "branch": "hermes/issue-32-belt-action",
     "ahead": 108,
-    "behind": 5,
+    "behind": 8,
     "files": 237,
     "real_files": 223,
     "dirs": [
@@ -5861,7 +6032,7 @@
    {
     "branch": "hermes/issue-32-belt-bridge",
     "ahead": 102,
-    "behind": 5,
+    "behind": 8,
     "files": 236,
     "real_files": 222,
     "dirs": [
@@ -5889,7 +6060,7 @@
    {
     "branch": "hermes/issue-32-belt-context",
     "ahead": 96,
-    "behind": 5,
+    "behind": 8,
     "files": 235,
     "real_files": 222,
     "dirs": [
@@ -5917,7 +6088,7 @@
    {
     "branch": "hermes/issue-32-native-events",
     "ahead": 42,
-    "behind": 5,
+    "behind": 8,
     "files": 191,
     "real_files": 185,
     "dirs": [
@@ -5941,7 +6112,7 @@
    {
     "branch": "hermes/issue-32-parity-next",
     "ahead": 91,
-    "behind": 5,
+    "behind": 8,
     "files": 234,
     "real_files": 222,
     "dirs": [
@@ -5969,7 +6140,7 @@
    {
     "branch": "hermes/issue-32-provider-actions",
     "ahead": 118,
-    "behind": 5,
+    "behind": 8,
     "files": 238,
     "real_files": 223,
     "dirs": [
@@ -5997,7 +6168,7 @@
    {
     "branch": "hermes/issue-32-touch-adapter",
     "ahead": 23,
-    "behind": 5,
+    "behind": 8,
     "files": 170,
     "real_files": 164,
     "dirs": [
@@ -6021,7 +6192,7 @@
    {
     "branch": "hermes/issue-32-touch-parity",
     "ahead": 83,
-    "behind": 5,
+    "behind": 8,
     "files": 231,
     "real_files": 221,
     "dirs": [
@@ -6049,7 +6220,7 @@
    {
     "branch": "hermes/issue-33-scene-bridge",
     "ahead": 53,
-    "behind": 5,
+    "behind": 8,
     "files": 199,
     "real_files": 192,
     "dirs": [
@@ -6073,7 +6244,7 @@
    {
     "branch": "hermes/issue-41-nvn-boundaries",
     "ahead": 36,
-    "behind": 5,
+    "behind": 8,
     "files": 180,
     "real_files": 173,
     "dirs": [
@@ -6097,7 +6268,7 @@
    {
     "branch": "hermes/issue-42-validation",
     "ahead": 46,
-    "behind": 5,
+    "behind": 8,
     "files": 186,
     "real_files": 179,
     "dirs": [
@@ -6121,7 +6292,7 @@
    {
     "branch": "hermes/issue-56-owned-boundary",
     "ahead": 68,
-    "behind": 5,
+    "behind": 8,
     "files": 214,
     "real_files": 205,
     "dirs": [
@@ -6145,7 +6316,7 @@
    {
     "branch": "hermes/issue-64-linux-ci",
     "ahead": 59,
-    "behind": 5,
+    "behind": 8,
     "files": 204,
     "real_files": 197,
     "dirs": [
@@ -6169,7 +6340,7 @@
    {
     "branch": "hermes/issue-72-dontcare-contract",
     "ahead": 128,
-    "behind": 5,
+    "behind": 8,
     "files": 241,
     "real_files": 223,
     "dirs": [
@@ -6197,7 +6368,7 @@
    {
     "branch": "hermes/issue-72-owned-policy",
     "ahead": 98,
-    "behind": 5,
+    "behind": 8,
     "files": 236,
     "real_files": 223,
     "dirs": [
@@ -6225,7 +6396,7 @@
    {
     "branch": "hermes/issue-72-sdk-arguments",
     "ahead": 118,
-    "behind": 5,
+    "behind": 8,
     "files": 239,
     "real_files": 223,
     "dirs": [
@@ -6253,7 +6424,7 @@
    {
     "branch": "hermes/issue-72-thread-mask",
     "ahead": 107,
-    "behind": 5,
+    "behind": 8,
     "files": 237,
     "real_files": 223,
     "dirs": [
@@ -6281,7 +6452,7 @@
    {
     "branch": "hermes/issue-72-virtual-core-contract",
     "ahead": 87,
-    "behind": 5,
+    "behind": 8,
     "files": 233,
     "real_files": 221,
     "dirs": [
@@ -6309,7 +6480,7 @@
    {
     "branch": "hermes/issue-73-apm-outparam",
     "ahead": 123,
-    "behind": 5,
+    "behind": 8,
     "files": 240,
     "real_files": 223,
     "dirs": [
@@ -6337,7 +6508,7 @@
    {
     "branch": "hermes/issue-73-apm-provenance",
     "ahead": 120,
-    "behind": 5,
+    "behind": 8,
     "files": 239,
     "real_files": 223,
     "dirs": [
@@ -6365,7 +6536,7 @@
    {
     "branch": "hermes/issue-73-apm-trace",
     "ahead": 103,
-    "behind": 5,
+    "behind": 8,
     "files": 237,
     "real_files": 222,
     "dirs": [
@@ -6393,7 +6564,7 @@
    {
     "branch": "hermes/issue-73-service-contract",
     "ahead": 93,
-    "behind": 5,
+    "behind": 8,
     "files": 235,
     "real_files": 222,
     "dirs": [
@@ -6421,7 +6592,7 @@
    {
     "branch": "hermes/issue-91-portal-adapter",
     "ahead": 125,
-    "behind": 5,
+    "behind": 8,
     "files": 239,
     "real_files": 223,
     "dirs": [
@@ -6449,7 +6620,7 @@
    {
     "branch": "hermes/item-use-identity",
     "ahead": 154,
-    "behind": 5,
+    "behind": 8,
     "files": 244,
     "real_files": 225,
     "dirs": [
@@ -6477,7 +6648,7 @@
    {
     "branch": "hermes/java-package-targets",
     "ahead": 415,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -6502,7 +6673,7 @@
    {
     "branch": "hermes/live-d2r-touch",
     "ahead": 440,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -6527,7 +6698,7 @@
    {
     "branch": "hermes/live-touch-belt-actions",
     "ahead": 463,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -6550,9 +6721,34 @@
     ]
    },
    {
+    "branch": "hermes/live-touch-difficulty-actions",
+    "ahead": 471,
+    "behind": 8,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T13:39:18Z",
+    "subjects": [
+     "touch: route difficulty selection to host players request",
+     "Merge pull request #267 from n2ray/hermes/live-touch-belt-actions",
+     "touch: quarantine belt gestures across unknown host state",
+     "touch: disable stale belt gestures on invalid host state",
+     "Merge pull request #266 from n2ray/hermes/snapshot-render-consistency",
+     "test: use repo-relative touch core include",
+     "touch: route core belt requests through Android host actions",
+     "diag(nvn): add Android property control for snapshot reuse"
+    ]
+   },
+   {
     "branch": "hermes/live-touch-hud",
     "ahead": 182,
-    "behind": 5,
+    "behind": 8,
     "files": 290,
     "real_files": 267,
     "dirs": [
@@ -6578,9 +6774,34 @@
     ]
    },
    {
+    "branch": "hermes/live-touch-item-interactions",
+    "ahead": 498,
+    "behind": 8,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T16:23:46Z",
+    "subjects": [
+     "Merge integration/android-reference into live item routing",
+     "Merge pull request #279 from n2ray/hermes/live-touch-skill-binding",
+     "Merge pull request #280 from n2ray/claude/display-metal-parity-round2",
+     "fix(android): order live cursor before item actions",
+     "fix(android): keep empty-slot group consistent through tap",
+     "fix(android): match Metal polygon-offset semantics in Vulkan (Refs #259)",
+     "feat(android): route empty skill slot taps to bind begin",
+     "Merge pull request #276 from n2ray/hermes/live-touch-skill-binding"
+    ]
+   },
+   {
     "branch": "hermes/live-touch-module-identity",
     "ahead": 458,
-    "behind": 5,
+    "behind": 8,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -6600,163 +6821,6 @@
      "test(android): exercise provider through existing game bridge (#33)",
      "feat(android): feed live touch scene identity from host state (#33)",
      "Merge pull request #261 from n2ray/hermes/character-rendering"
-    ]
-   },
-   {
-    "branch": "hermes/live-touch-provider",
-    "ahead": 448,
-    "behind": 5,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T12:49:01Z",
-    "subjects": [
-     "fix(android): make scene observation identity-only and fail closed (#33)",
-     "fix(android): keep object cohort unavailable in scene provider (#33)",
-     "test(android): exercise provider through existing game bridge (#33)",
-     "feat(android): feed live touch scene identity from host state (#33)",
-     "Merge pull request #258 from n2ray/hermes/live-d2r-touch",
-     "fix(android): resume queued pointer pulses in owner step (#255)",
-     "Merge pull request #260 from n2ray/hermes/host-snapshot-guard",
-     "fix(android): keep owner scheduler alive for deferred core work (#255)"
-    ]
-   },
-   {
-    "branch": "hermes/lm-consumer-h2",
-    "ahead": 139,
-    "behind": 5,
-    "files": 243,
-    "real_files": 224,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T16:28:10Z",
-    "subjects": [
-     "fix(lm): hold consumer lifetime guard and reject competing take (#96)",
-     "feat(lm): bounded host consumer with retained retry and backpressure (#96)",
-     "Merge pull request #97 from n2ray/hermes/mip-failure-coverage",
-     "Merge pull request #93 from n2ray/hermes/issue-91-portal-adapter",
-     "test(vulkan): cover multi-level mip upload per-stage failures (#95)",
-     "Merge pull request #94 from n2ray/hermes/issue-72-dontcare-contract",
-     "docs: clarify DontCare guest physical state",
-     "fix(android): release canceled portal pointer ids (#91)"
-    ]
-   },
-   {
-    "branch": "hermes/loader-key-layout",
-    "ahead": 423,
-    "behind": 5,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T10:51:20Z",
-    "subjects": [
-     "test(loader): use actual 0..7 producer key indices (#249)",
-     "fix(loader): validate layout key slots before key-page writes (#249)",
-     "Merge pull request #247 from n2ray/hermes/java-package-targets",
-     "fix(android): gate installed-package readiness on module targets (#245)",
-     "Merge pull request #248 from n2ray/hermes/optional-module-create",
-     "Merge pull request #244 from n2ray/hermes/embedded-target-copy",
-     "fix(android): honor optional failure when creating shader modules",
-     "fix(android): require per-module target markers in Java package import (#245)"
-    ]
-   },
-   {
-    "branch": "hermes/mip-failure-coverage",
-    "ahead": 129,
-    "behind": 5,
-    "files": 242,
-    "real_files": 224,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T16:14:28Z",
-    "subjects": [
-     "test(vulkan): cover multi-level mip upload per-stage failures (#95)",
-     "Merge pull request #92 from n2ray/hermes/issue-73-apm-outparam",
-     "docs(services): narrow apm out-param note to observed store presence (#73)",
-     "Merge pull request #90 from n2ray/hermes/issue-72-sdk-arguments",
-     "docs(services): prove apm shim helper stack out-param write (#73)",
-     "Merge pull request #89 from n2ray/hermes/issue-32-provider-actions",
-     "docs: record bounded nnMain virtual-core callsite arguments",
-     "Merge pull request #87 from n2ray/hermes/issue-73-apm-provenance"
-    ]
-   },
-   {
-    "branch": "hermes/native-arbiter",
-    "ahead": 262,
-    "behind": 5,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-18T22:49:49Z",
-    "subjects": [
-     "feat(android): wire NativeActivity input to arbiter (#168)",
-     "Merge pull request #166 from n2ray/hermes/input-source-view",
-     "Merge pull request #162 from n2ray/hermes/native-input-source",
-     "feat(input): add arbiter view and atomic geometry (#165)",
-     "fix(android): use source-bit membership for touch dispatch (#161)",
-     "Merge remote-tracking branch 'origin/main' into hermes/native-input-source",
-     "Merge pull request #160 from n2ray/hermes/input-request-retirement",
-     "Merge remote-tracking branch 'origin/main' into hermes/input-request-retirement"
-    ]
-   },
-   {
-    "branch": "hermes/native-callback-ci",
-    "ahead": 222,
-    "behind": 5,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx"
-    ],
-    "last_commit": "2026-10-18T21:13:43Z",
-    "subjects": [
-     "test(android): exercise active timer and actual callback routes (#145)",
-     "test(android): cover actual native callback dispatch (#145)",
-     "Merge pull request #144 from n2ray/hermes/native-wsi-diagnostic",
-     "fix(android): synchronize cached window after failed WSI replacement",
-     "fix(android): identity-safe stale callbacks and error-exact WSI dispatch (#143)",
-     "fix(android): wire the WSI mode through the real lifecycle and frame path (#143)",
-     "feat(android): explicit owned WSI diagnostic mode with a real swapchain (#143)",
-     "Merge pull request #142 from n2ray/hermes/owned-swapchain"
     ]
    }
   ]
@@ -6853,21 +6917,21 @@
   ]
  },
  "armyja/nxnative-aa-port": {
-  "pushed_at": "2026-10-19T13:03:36Z",
+  "pushed_at": "2026-10-19T20:11:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-19T13:03:33Z",
+    "last_commit": "2026-10-19T20:11:06Z",
     "subjects": [
-     "NVN: bind device-pointer buffers larger than one 4 MB mapping as one flat run",
-     "NVN: resolve pointer-style uniform bindings from the staging copy; frame tag on indirect draws",
-     "Mac window: fullscreen (green button, Command-F, menu) and no phantom focus loss",
-     "AGENTS.md: commit as the repository owner (armyja), not the upstream identity",
-     "gitignore: stray diagnostic output redirected into the repository root",
-     "NVN: staged uniform updates fix the picture (argument tables are re-encoded when a staged update lands)",
-     "NVN: CPU-side uniform readers prefer the staged copy (still behind DM_UB_STAGE)",
-     "NVN (experimental, off by default): DM_UB_STAGE binds the staged uniform copy"
+     "Investigations: refresh the in-game and save-slot screenshots",
+     "Docs: Investigations 1&2 as the third supported title",
+     "Right-click presses A; regression runs for AA123 and AA456",
+     "AAI: save timestamps use the host's local time; in-game save/load verified by scripted input",
+     "AAI: the game now runs its startup flow - process heap, SDK random/time, save-data overloads",
+     "AAI: managed file API bridged to the host mounts - the game renders its first screen",
+     "AAI: symbolise the guest and find the crash - master data load returns null",
+     "AAI: Unity 2022 shaders extracted with UnityPy - 4951 programs, chain built, first frames presented"
     ]
    }
   ]
@@ -6945,21 +7009,21 @@
   ]
  },
  "reacher-z/Awesome-REA": {
-  "pushed_at": "2026-10-19T13:29:42Z",
+  "pushed_at": "2026-10-19T20:37:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-19T13:32:24Z",
+    "last_commit": "2026-10-19T20:38:19Z",
     "subjects": [
-     "Distinguish official from community REA tags and add a README tag legend (#939)",
-     "Show targets outside an entry's section on README metadata lines (#933)",
-     "Resolve the batch 25 post-only case leads as insufficient evidence (#931)",
-     "Resolve the r/recomps AI workflow discussion lead as insufficient evidence (#927)",
-     "Resolve the batch 17 post-only case leads (#923)",
-     "Resolve the batch 23 post-only case leads as insufficient evidence (#918)",
-     "Record the current release version and date in CITATION.cff (#914)",
-     "Curate the decomp-compat-kit verification tool (#912)"
+     "Curate the GDA Android decompiler (#1114)",
+     "Pin wiki and repository-root evidence to the reviewed revisions (#1420)",
+     "Curate the Simplify Android deobfuscator (#1123)",
+     "Curate the DeepExtract IDA plugin for agent-readable PE exports (#1419)",
+     "Offer a compact list layout on the paper directory (#1143)",
+     "Curate the ME Analyzer Intel engine firmware analysis tool (#1146)",
+     "Curate the ddc Rust Android DEX decompiler (#1411)",
+     "Curate the reFlutter Flutter analysis framework (#1157)"
     ]
    }
   ]
@@ -7020,7 +7084,7 @@
   ]
  },
  "Nishikori-Yui/lordran-native": {
-  "pushed_at": "2026-10-19T12:05:29Z",
+  "pushed_at": "2026-10-19T19:02:40Z",
   "branches": [
    {
     "branch": "main",
@@ -7040,12 +7104,12 @@
   ]
  },
  "kxn/d2r-mobile": {
-  "pushed_at": "2026-10-19T13:26:29Z",
+  "pushed_at": "2026-10-19T20:32:26Z",
   "branches": [
    {
     "branch": "codex/android-native-backup-20261019",
-    "ahead": 46,
-    "behind": 12,
+    "ahead": 69,
+    "behind": 15,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7054,22 +7118,622 @@
      "dm/gfx",
      "dm/host"
     ],
-    "last_commit": "2026-10-19T13:20:41Z",
+    "last_commit": "2026-10-19T20:27:51Z",
     "subjects": [
+     "Separate texture upload contents from frequent dirty-proof checks",
+     "Fingerprint built-in zlib through its Python runtime libraries",
+     "Verify completed ASTC6 batches and compose through original CASC tools",
+     "Preserve immutable texture recipes across unchanged submissions",
+     "Preserve additional normal texture aliases in ASTC bulk selection",
+     "Add resumable bounded ASTC6 batches over the full4 baseline",
+     "Match CASC archive names to decimal chunk and hexadecimal archive",
+     "Reuse retired pool access bitmaps within recording contexts"
+    ]
+   },
+   {
+    "branch": "codex/astc6-compose-v1",
+    "ahead": 66,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T20:15:34Z",
+    "subjects": [
+     "Fingerprint built-in zlib through its Python runtime libraries",
+     "Verify completed ASTC6 batches and compose through original CASC tools",
+     "Add resumable bounded ASTC6 batches over the full4 baseline",
+     "Match CASC archive names to decimal chunk and hexadecimal archive",
+     "Reuse retired pool access bitmaps within recording contexts",
+     "Add bounded ASTC6x6 mip repack samples using original NVN layout",
+     "Release completed descriptor contexts under idle memory pressure",
+     "Combine ARM64 upload change bits before horizontal reduction"
+    ]
+   },
+   {
+    "branch": "codex/astc-6x6-bulk-v1",
+    "ahead": 64,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T19:46:01Z",
+    "subjects": [
+     "Add resumable bounded ASTC6 batches over the full4 baseline",
+     "Match CASC archive names to decimal chunk and hexadecimal archive",
+     "Reuse retired pool access bitmaps within recording contexts",
+     "Add bounded ASTC6x6 mip repack samples using original NVN layout",
+     "Release completed descriptor contexts under idle memory pressure",
+     "Combine ARM64 upload change bits before horizontal reduction",
+     "Recycle aged idle Vulkan temporary buffers above soft budget",
+     "Skip deferred mip no-op on cached texture preflight"
+    ]
+   },
+   {
+    "branch": "codex/astc-6x6-samples-v1",
+    "ahead": 61,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T19:23:36Z",
+    "subjects": [
+     "Add bounded ASTC6x6 mip repack samples using original NVN layout",
+     "Release completed descriptor contexts under idle memory pressure",
+     "Combine ARM64 upload change bits before horizontal reduction",
+     "Recycle aged idle Vulkan temporary buffers above soft budget",
+     "Skip deferred mip no-op on cached texture preflight",
+     "Compact attachment dependency event records",
+     "Borrow cached texture topology when preflight cannot drain",
+     "Precompute immutable physical image layout traits"
+    ]
+   },
+   {
+    "branch": "codex/bloom-proof-state-cursor-v1",
+    "ahead": 50,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T16:08:13Z",
+    "subjects": [
+     "Avoid repeated state copies in bloom lookahead",
+     "Reclaim cold CPU-backed images on memory pressure",
+     "Process only live dynamic Uniform offsets",
+     "Add bounded fragment quad transfer path for compute-only subgroup devices",
      "Preclassify immutable shader pool bindings before draw admission",
+     "Reclaim completed idle GPU buffers on Android memory pressure",
+     "Avoid CPU-source helper work when deferred publication is disabled",
+     "Add a cold experiment for demand-driven GPU pool publication"
+    ]
+   },
+   {
+    "branch": "codex/casc-archive-hex-v1",
+    "ahead": 61,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T19:34:57Z",
+    "subjects": [
+     "Match CASC archive names to decimal chunk and hexadecimal archive",
+     "Release completed descriptor contexts under idle memory pressure",
+     "Combine ARM64 upload change bits before horizontal reduction",
+     "Recycle aged idle Vulkan temporary buffers above soft budget",
+     "Skip deferred mip no-op on cached texture preflight",
+     "Compact attachment dependency event records",
+     "Borrow cached texture topology when preflight cannot drain",
+     "Precompute immutable physical image layout traits"
+    ]
+   },
+   {
+    "branch": "codex/cpu-image-pressure-trim-v1",
+    "ahead": 49,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T15:36:24Z",
+    "subjects": [
+     "Reclaim cold CPU-backed images on memory pressure",
+     "Process only live dynamic Uniform offsets",
+     "Add bounded fragment quad transfer path for compute-only subgroup devices",
+     "Preclassify immutable shader pool bindings before draw admission",
+     "Reclaim completed idle GPU buffers on Android memory pressure",
+     "Avoid CPU-source helper work when deferred publication is disabled",
+     "Add a cold experiment for demand-driven GPU pool publication",
+     "Share loop bookkeeping across paired dirty-page blocks"
+    ]
+   },
+   {
+    "branch": "codex/descriptor-pool-adaptive-v1",
+    "ahead": 60,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T19:12:40Z",
+    "subjects": [
+     "Add opt-in schema-sized progressive descriptor pools",
+     "Release completed descriptor contexts under idle memory pressure",
+     "Recycle aged idle Vulkan temporary buffers above soft budget",
+     "Skip deferred mip no-op on cached texture preflight",
+     "Compact attachment dependency event records",
+     "Borrow cached texture topology when preflight cannot drain",
+     "Precompute immutable physical image layout traits",
+     "Reuse operation-local pinned pool owners"
+    ]
+   },
+   {
+    "branch": "codex/guest-as-shared-slice-v1",
+    "ahead": 47,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T14:18:47Z",
+    "subjects": [
+     "Stage experimental mapped-slice reservation without enabling game adoption",
+     "Add bounded mapped guest memory owner and borrowed buffer API",
      "Reclaim completed idle GPU buffers on Android memory pressure",
      "Avoid CPU-source helper work when deferred publication is disabled",
      "Add a cold experiment for demand-driven GPU pool publication",
      "Share loop bookkeeping across paired dirty-page blocks",
      "Reuse texture dirty proofs across unrelated pool writes",
-     "Reuse exact backing mapping for sparse CPU page uploads",
-     "Avoid shader stage setup on PSO cache hits and retain NVN pool intent"
+     "Reuse exact backing mapping for sparse CPU page uploads"
+    ]
+   },
+   {
+    "branch": "codex/host-import-vulkan-oracle-v1",
+    "ahead": 60,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T17:50:07Z",
+    "subjects": [
+     "Support PanVK host-import opt-in and report validation setup failures",
+     "Order host import oracle transfer reuse explicitly",
+     "Append both fixture output streams after a single truncation",
+     "Add isolated standard Vulkan host import byte oracle",
+     "Make fixture validation an explicit developer option",
+     "Add explicit app-local PanVK ICD selection",
+     "Precompute immutable physical image layout traits",
+     "Reuse operation-local pinned pool owners"
+    ]
+   },
+   {
+    "branch": "codex/idle-descriptor-context-trim-v1",
+    "ahead": 59,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T18:56:35Z",
+    "subjects": [
+     "Release completed descriptor contexts under idle memory pressure",
+     "Recycle aged idle Vulkan temporary buffers above soft budget",
+     "Skip deferred mip no-op on cached texture preflight",
+     "Compact attachment dependency event records",
+     "Borrow cached texture topology when preflight cannot drain",
+     "Precompute immutable physical image layout traits",
+     "Reuse operation-local pinned pool owners",
+     "Enable source-proved pixel-local subpasses on Android"
+    ]
+   },
+   {
+    "branch": "codex/nvn-readonly-host-import-v1",
+    "ahead": 66,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T18:29:06Z",
+    "subjects": [
+     "Verify successful host pin across original dirty protection and rewrites",
+     "Apply owned fixture window size through the existing cold setter",
+     "Count actual shared pool copies and cover protected owned-page fallback",
+     "Add bounded readonly host import pool experiment with mirror handoff",
+     "Support PanVK host-import opt-in and report validation setup failures",
+     "Order host import oracle transfer reuse explicitly",
+     "Append both fixture output streams after a single truncation",
+     "Add isolated standard Vulkan host import byte oracle"
+    ]
+   },
+   {
+    "branch": "codex/nvn-readonly-host-prebind-v1",
+    "ahead": 67,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T18:43:10Z",
+    "subjects": [
+     "Preregister bounded readonly buffers during Vulkan command translation",
+     "Verify successful host pin across original dirty protection and rewrites",
+     "Apply owned fixture window size through the existing cold setter",
+     "Count actual shared pool copies and cover protected owned-page fallback",
+     "Add bounded readonly host import pool experiment with mirror handoff",
+     "Support PanVK host-import opt-in and report validation setup failures",
+     "Order host import oracle transfer reuse explicitly",
+     "Append both fixture output streams after a single truncation"
+    ]
+   },
+   {
+    "branch": "codex/panvk-app-local-loader-v1",
+    "ahead": 58,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T17:39:18Z",
+    "subjects": [
+     "Set a private Mesa cache directory before loading PanVK",
+     "Append both fixture output streams after a single truncation",
+     "Make fixture validation an explicit developer option",
+     "Add explicit app-local PanVK ICD selection",
+     "Precompute immutable physical image layout traits",
+     "Reuse operation-local pinned pool owners",
+     "Enable source-proved pixel-local subpasses on Android",
+     "Reduce pixel-local plans to consumer render targets"
+    ]
+   },
+   {
+    "branch": "codex/panvk-host-import-ext-v1",
+    "ahead": 59,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T18:06:02Z",
+    "subjects": [
+     "Add experimental coherent PanVK host import source package",
+     "Set a private Mesa cache directory before loading PanVK",
+     "Append both fixture output streams after a single truncation",
+     "Make fixture validation an explicit developer option",
+     "Add explicit app-local PanVK ICD selection",
+     "Precompute immutable physical image layout traits",
+     "Reuse operation-local pinned pool owners",
+     "Enable source-proved pixel-local subpasses on Android"
+    ]
+   },
+   {
+    "branch": "codex/panvk-host-import-implicit-oracle-v1",
+    "ahead": 69,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T18:53:29Z",
+    "subjects": [
+     "Add explicit implicit-host publication contrast to owned byte fixtures",
+     "Record failed Mali readonly noncoherent dirty rewrite result",
+     "Add opt-in noncoherent publication for readonly imported pool windows",
+     "Verify successful host pin across original dirty protection and rewrites",
+     "Apply owned fixture window size through the existing cold setter",
+     "Count actual shared pool copies and cover protected owned-page fallback",
+     "Add bounded readonly host import pool experiment with mirror handoff",
+     "Support PanVK host-import opt-in and report validation setup failures"
+    ]
+   },
+   {
+    "branch": "codex/panvk-host-import-noncoherent-v2",
+    "ahead": 64,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T18:31:24Z",
+    "subjects": [
+     "Record bounded Mali noncoherent import byte validation",
+     "Add experimental noncoherent PanVK host import and range oracle",
+     "Support PanVK host-import opt-in and report validation setup failures",
+     "Order host import oracle transfer reuse explicitly",
+     "Add isolated standard Vulkan host import byte oracle",
+     "Add experimental coherent PanVK host import source package",
+     "Set a private Mesa cache directory before loading PanVK",
+     "Append both fixture output streams after a single truncation"
+    ]
+   },
+   {
+    "branch": "codex/panvk-host-import-owned-dirty-v1",
+    "ahead": 71,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T19:16:30Z",
+    "subjects": [
+     "docs: record PanVK dirty import failure and kernel COW boundary",
+     "Isolate original dirty protection and raw GPU bytes in owned host fixtures",
+     "Add explicit implicit-host publication contrast to owned byte fixtures",
+     "Record failed Mali readonly noncoherent dirty rewrite result",
+     "Add opt-in noncoherent publication for readonly imported pool windows",
+     "Verify successful host pin across original dirty protection and rewrites",
+     "Apply owned fixture window size through the existing cold setter",
+     "Count actual shared pool copies and cover protected owned-page fallback"
+    ]
+   },
+   {
+    "branch": "codex/panvk-owned-page-exclusion-v1",
+    "ahead": 65,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T20:17:48Z",
+    "subjects": [
+     "Add experimental owned-page dirty exclusion contract and negative tests",
+     "Add resumable bounded ASTC6 batches over the full4 baseline",
+     "Match CASC archive names to decimal chunk and hexadecimal archive",
+     "Reuse retired pool access bitmaps within recording contexts",
+     "Add bounded ASTC6x6 mip repack samples using original NVN layout",
+     "Release completed descriptor contexts under idle memory pressure",
+     "Combine ARM64 upload change bits before horizontal reduction",
+     "Recycle aged idle Vulkan temporary buffers above soft budget"
+    ]
+   },
+   {
+    "branch": "codex/panvk-owned-readonly-combined-v1",
+    "ahead": 73,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T20:32:24Z",
+    "subjects": [
+     "Record isolated Mali owned-readonly import correctness acceptance",
+     "Package owned import fixture with a separate Android application ID",
+     "Test owned readonly host import without dirty-page reprotection",
+     "Isolate original dirty protection and raw GPU bytes in owned host fixtures",
+     "Add explicit implicit-host publication contrast to owned byte fixtures",
+     "Record failed Mali readonly noncoherent dirty rewrite result",
+     "Add opt-in noncoherent publication for readonly imported pool windows",
+     "Verify successful host pin across original dirty protection and rewrites"
+    ]
+   },
+   {
+    "branch": "codex/panvk-readonly-noncoherent-v1",
+    "ahead": 68,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T18:50:27Z",
+    "subjects": [
+     "Record failed Mali readonly noncoherent dirty rewrite result",
+     "Add opt-in noncoherent publication for readonly imported pool windows",
+     "Verify successful host pin across original dirty protection and rewrites",
+     "Apply owned fixture window size through the existing cold setter",
+     "Count actual shared pool copies and cover protected owned-page fallback",
+     "Add bounded readonly host import pool experiment with mirror handoff",
+     "Support PanVK host-import opt-in and report validation setup failures",
+     "Order host import oracle transfer reuse explicitly"
+    ]
+   },
+   {
+    "branch": "codex/panvk-surface-wsi-fixture-v1",
+    "ahead": 59,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T18:22:40Z",
+    "subjects": [
+     "Add bounded Android Surface presentation fixture",
+     "Set a private Mesa cache directory before loading PanVK",
+     "Append both fixture output streams after a single truncation",
+     "Make fixture validation an explicit developer option",
+     "Add explicit app-local PanVK ICD selection",
+     "Precompute immutable physical image layout traits",
+     "Reuse operation-local pinned pool owners",
+     "Enable source-proved pixel-local subpasses on Android"
+    ]
+   },
+   {
+    "branch": "codex/physical-image-layout-traits-v1",
+    "ahead": 54,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T17:11:09Z",
+    "subjects": [
+     "Precompute immutable physical image layout traits",
+     "Reuse operation-local pinned pool owners",
+     "Enable source-proved pixel-local subpasses on Android",
+     "Reduce pixel-local plans to consumer render targets",
+     "Avoid repeated state copies in bloom lookahead",
+     "Reclaim cold CPU-backed images on memory pressure",
+     "Process only live dynamic Uniform offsets",
+     "Add bounded fragment quad transfer path for compute-only subgroup devices"
+    ]
+   },
+   {
+    "branch": "codex/pixel-local-second-targets-v1",
+    "ahead": 50,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T16:18:48Z",
+    "subjects": [
+     "Reduce pixel-local plans to consumer render targets",
+     "Reclaim cold CPU-backed images on memory pressure",
+     "Process only live dynamic Uniform offsets",
+     "Add bounded fragment quad transfer path for compute-only subgroup devices",
+     "Preclassify immutable shader pool bindings before draw admission",
+     "Reclaim completed idle GPU buffers on Android memory pressure",
+     "Avoid CPU-source helper work when deferred publication is disabled",
+     "Add a cold experiment for demand-driven GPU pool publication"
+    ]
+   },
+   {
+    "branch": "codex/pool-access-bitmap-cache-v1",
+    "ahead": 61,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T19:33:46Z",
+    "subjects": [
+     "Reuse retired pool access bitmaps within recording contexts",
+     "Release completed descriptor contexts under idle memory pressure",
+     "Combine ARM64 upload change bits before horizontal reduction",
+     "Recycle aged idle Vulkan temporary buffers above soft budget",
+     "Skip deferred mip no-op on cached texture preflight",
+     "Compact attachment dependency event records",
+     "Borrow cached texture topology when preflight cannot drain",
+     "Precompute immutable physical image layout traits"
+    ]
+   },
+   {
+    "branch": "codex/pool-operation-pin-owner-v1",
+    "ahead": 53,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T16:48:08Z",
+    "subjects": [
+     "Reuse operation-local pinned pool owners",
+     "Enable source-proved pixel-local subpasses on Android",
+     "Reduce pixel-local plans to consumer render targets",
+     "Avoid repeated state copies in bloom lookahead",
+     "Reclaim cold CPU-backed images on memory pressure",
+     "Process only live dynamic Uniform offsets",
+     "Add bounded fragment quad transfer path for compute-only subgroup devices",
+     "Preclassify immutable shader pool bindings before draw admission"
     ]
    },
    {
     "branch": "codex/shared-guest-allocation-v1",
     "ahead": 46,
-    "behind": 12,
+    "behind": 15,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7088,6 +7752,222 @@
      "Reuse texture dirty proofs across unrelated pool writes",
      "Reuse exact backing mapping for sparse CPU page uploads",
      "Avoid shader stage setup on PSO cache hits and retain NVN pool intent"
+    ]
+   },
+   {
+    "branch": "codex/temporary-cache-age-v1",
+    "ahead": 58,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T18:26:13Z",
+    "subjects": [
+     "Recycle aged idle Vulkan temporary buffers above soft budget",
+     "Skip deferred mip no-op on cached texture preflight",
+     "Compact attachment dependency event records",
+     "Borrow cached texture topology when preflight cannot drain",
+     "Precompute immutable physical image layout traits",
+     "Reuse operation-local pinned pool owners",
+     "Enable source-proved pixel-local subpasses on Android",
+     "Reduce pixel-local plans to consumer render targets"
+    ]
+   },
+   {
+    "branch": "codex/texture-preflight-borrow-v1",
+    "ahead": 55,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T17:46:22Z",
+    "subjects": [
+     "Borrow cached texture topology when preflight cannot drain",
+     "Precompute immutable physical image layout traits",
+     "Reuse operation-local pinned pool owners",
+     "Enable source-proved pixel-local subpasses on Android",
+     "Reduce pixel-local plans to consumer render targets",
+     "Avoid repeated state copies in bloom lookahead",
+     "Reclaim cold CPU-backed images on memory pressure",
+     "Process only live dynamic Uniform offsets"
+    ]
+   },
+   {
+    "branch": "codex/texture-preflight-noop-v1",
+    "ahead": 57,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T17:56:59Z",
+    "subjects": [
+     "Skip deferred mip no-op on cached texture preflight",
+     "Compact attachment dependency event records",
+     "Borrow cached texture topology when preflight cannot drain",
+     "Precompute immutable physical image layout traits",
+     "Reuse operation-local pinned pool owners",
+     "Enable source-proved pixel-local subpasses on Android",
+     "Reduce pixel-local plans to consumer render targets",
+     "Avoid repeated state copies in bloom lookahead"
+    ]
+   },
+   {
+    "branch": "codex/texture-recipe-serial-free-v1",
+    "ahead": 64,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T20:14:25Z",
+    "subjects": [
+     "Preserve immutable texture recipes across unchanged submissions",
+     "Match CASC archive names to decimal chunk and hexadecimal archive",
+     "Reuse retired pool access bitmaps within recording contexts",
+     "Add bounded ASTC6x6 mip repack samples using original NVN layout",
+     "Release completed descriptor contexts under idle memory pressure",
+     "Combine ARM64 upload change bits before horizontal reduction",
+     "Recycle aged idle Vulkan temporary buffers above soft budget",
+     "Skip deferred mip no-op on cached texture preflight"
+    ]
+   },
+   {
+    "branch": "codex/texture-upload-cold-body-v1",
+    "ahead": 69,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T20:27:51Z",
+    "subjects": [
+     "Separate texture upload contents from frequent dirty-proof checks",
+     "Fingerprint built-in zlib through its Python runtime libraries",
+     "Verify completed ASTC6 batches and compose through original CASC tools",
+     "Preserve immutable texture recipes across unchanged submissions",
+     "Preserve additional normal texture aliases in ASTC bulk selection",
+     "Add resumable bounded ASTC6 batches over the full4 baseline",
+     "Match CASC archive names to decimal chunk and hexadecimal archive",
+     "Reuse retired pool access bitmaps within recording contexts"
+    ]
+   },
+   {
+    "branch": "codex/turnip-host-import-ext-v2",
+    "ahead": 55,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T17:26:27Z",
+    "subjects": [
+     "Add experimental app-local Turnip host import source package",
+     "Precompute immutable physical image layout traits",
+     "Reuse operation-local pinned pool owners",
+     "Enable source-proved pixel-local subpasses on Android",
+     "Reduce pixel-local plans to consumer render targets",
+     "Avoid repeated state copies in bloom lookahead",
+     "Reclaim cold CPU-backed images on memory pressure",
+     "Process only live dynamic Uniform offsets"
+    ]
+   },
+   {
+    "branch": "codex/turnip-surface-wsi-v1",
+    "ahead": 68,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T18:57:59Z",
+    "subjects": [
+     "Reuse bounded Surface WSI fixture with existing host import test ABI",
+     "Preregister bounded readonly buffers during Vulkan command translation",
+     "Verify successful host pin across original dirty protection and rewrites",
+     "Apply owned fixture window size through the existing cold setter",
+     "Count actual shared pool copies and cover protected owned-page fallback",
+     "Add bounded readonly host import pool experiment with mirror handoff",
+     "Support PanVK host-import opt-in and report validation setup failures",
+     "Order host import oracle transfer reuse explicitly"
+    ]
+   },
+   {
+    "branch": "codex/uniform-offset-live-prefix-v1",
+    "ahead": 48,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T14:52:13Z",
+    "subjects": [
+     "Process only live dynamic Uniform offsets",
+     "Add bounded fragment quad transfer path for compute-only subgroup devices",
+     "Preclassify immutable shader pool bindings before draw admission",
+     "Reclaim completed idle GPU buffers on Android memory pressure",
+     "Avoid CPU-source helper work when deferred publication is disabled",
+     "Add a cold experiment for demand-driven GPU pool publication",
+     "Share loop bookkeeping across paired dirty-page blocks",
+     "Reuse texture dirty proofs across unrelated pool writes"
+    ]
+   },
+   {
+    "branch": "codex/upload-mask-reduction-v1",
+    "ahead": 59,
+    "behind": 15,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T18:52:39Z",
+    "subjects": [
+     "Combine ARM64 upload change bits before horizontal reduction",
+     "Recycle aged idle Vulkan temporary buffers above soft budget",
+     "Skip deferred mip no-op on cached texture preflight",
+     "Compact attachment dependency event records",
+     "Borrow cached texture topology when preflight cannot drain",
+     "Precompute immutable physical image layout traits",
+     "Reuse operation-local pinned pool owners",
+     "Enable source-proved pixel-local subpasses on Android"
     ]
    }
   ]
@@ -7115,21 +7995,21 @@
   ]
  },
  "iceorange-dev/manosaba-ios": {
-  "pushed_at": "2026-10-19T04:53:05Z",
+  "pushed_at": "2026-10-19T19:09:17Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-19T04:27:55Z",
+    "last_commit": "2026-10-19T19:09:15Z",
     "subjects": [
-     "Plan: nxnative after 2b31dbd as items 73-77, before Tier 2",
-     "t_sleep: precision bounds unchecked on a machine with coarse timers",
-     "Plan batch 4: tooling and diagnostics items 28-35 of the wider review",
-     "Plan batch 3: iOS and Mac items 19-27 of the wider review",
-     "Plan batch 2: performance items 13-18 of the wider review",
-     "Plan batch 1: correctness items 1-12 of the wider review",
-     "Docs: the wider review of the references, and a plan for all of it, simple to complex",
-     "LICENSE: copyright line for this fork's own work, next to d2r-mobile's"
+     "Plan batch 21: item 60 measured, no game calls an indirect draw yet",
+     "t_threadcpu against the thread's real CPU; items 59 and 71 dropped",
+     "Plan batch 20: item 58, on-screen controls with drag-to-look (touch \"pad\")",
+     "Plan batch 19: item 57, code options chosen at load (DM_OPTIONS)",
+     "Plan batch 18: item 56, cold uploaded textures measured",
+     "Plan batch 17: item 55, the CoreAudio open measured",
+     "Plan batch 16: item 54, user mod folders (DM_MODS)",
+     "Plan batch 15: item 53, uncapped pacing between 30 and 60 fps"
     ]
    }
   ]
@@ -7280,54 +8160,139 @@
   ]
  },
  "OJZen/totk-mobile": {
-  "pushed_at": "2026-10-19T09:56:13Z",
+  "pushed_at": "2026-10-19T16:40:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-19T09:55:54Z",
+    "last_commit": "2026-10-19T16:40:41Z",
     "subjects": [
+     "Smooth the Mac startup shader screen and update platform docs",
+     "Fix packed terrain textures and reuse offline shader libraries on iOS",
      "Initial commit"
     ]
    }
   ]
  },
  "mdhskiy/test": {
-  "pushed_at": "2026-10-19T12:42:13Z",
+  "pushed_at": "2026-10-19T16:40:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-19T12:41:08Z",
+    "last_commit": "2026-10-19T16:40:15Z",
     "subjects": [
-     "nvn: implement nvnTextureGetStride / nvnTextureBuilderGetStride (D3 asks on every texture; the red stub answered 0)",
-     "pctl: answer CheckFreeCommunicationPermission (D3 asks at startup; no pctl service -> ipc assert + Break#1)",
-     "d3rm_pack: dedupe manifest entries, write dm/pack_info.txt",
-     "shell_build: braces around variables followed by full-width punctuation (set -u + C locale broke on $OUT（); CI: tee the script output for the failure summary",
-     "CI: macos-26 image + newest Xcode (iOS 26 SDK; macos-15 defaults to Xcode 16.4)",
-     "shell build on CI: fontTools in a venv (PEP 668), xcodegen retry, font fallback, failure diagnostics in the run summary",
-     "D3: CPK shader source, Windows portability fixes, shell build + Windows packer",
-     "Super Mario Galaxy: profile 010099C022B96000 (1.3.1, SDK 18); plays on the Mac"
+     "fix: LF line endings (the API commit carried CRLF, which broke the shell script on macOS)",
+     "app identity: DIABLO3 display name + the game icon (from the NSP control data); profile app_name",
+     "D3: render_cond on + implement SetStencilCullCriteria (DM_NVN_CULLCRIT=1)",
+     "CI: queue macos-26 and macos-15 together",
+     "profile: trigger the shell build with tex_flush_upload on",
+     "D3 profile: tex_flush_upload / tex_dirty_upload on -- the CPU-streamed textures were never uploaded (zeroed MTL textures -> whole screen black)",
+     "audio: answer ListAudioIns with 0 devices (D3 enumerates microphones; no audin service -> hipc assert)",
+     "nvn: implement nvnTextureGetStride / nvnTextureBuilderGetStride (D3 asks on every texture; the red stub answered 0)"
     ]
    }
   ]
  },
  "JackyTTT0306/acnh-ios2": {
-  "pushed_at": "2026-10-19T13:22:05Z",
+  "pushed_at": "2026-10-19T15:27:20Z",
   "branches": [
    {
     "branch": "acnh",
     "mirror": false,
-    "last_commit": "2026-10-19T13:31:29Z",
+    "last_commit": "2026-10-19T15:27:18Z",
     "subjects": [
+     "acnh rewriter: fourth probe at main+0x1979b70 (the function that actually reads the singleton)",
+     "acnh: probe at nnMain 0x1c71618 (x21 use point), trace prints x19/x21",
+     "acnh rewriter: third OBS_TRACE probe at nnMain 0x1c704a0 ([x0+0x278] field load)",
      "acnh rewriter: second OBS_TRACE probe at main+0x197bb20 (object factory entry)",
      "acnh host: trace_cb walks the x29 chain (regs[30] is the gate return point, not guest lr)",
      "acnh host: add OBS_TRACE probe (rewriter observation gate at init-chain entry)",
      "acnh host: take over the 9 remaining nn::account imports (offline semantics)",
-     "acnh host: log every svc under DM_SVC (find the call right before the crash)",
-     "run workflow: fetch romfs_start.zip and set DM_ROMFS",
-     "acnh host: drop duplicate oe::Initialize (hle_sdkinit.c owns it)",
-     "acnh host: implement nn::oe (19 imports) and nn::settings LanguageCode with offline defaults"
+     "acnh host: log every svc under DM_SVC (find the call right before the crash)"
+    ]
+   }
+  ]
+ },
+ "XpycT/d2r-mobile": {
+  "pushed_at": "2026-10-19T20:05:44Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 2,
+    "behind": 1,
+    "files": 29,
+    "real_files": 24,
+    "dirs": [
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-19T19:10:55Z",
+    "subjects": [
+     "gfx: regenerate the B shader chain state (02ef63626fe3)",
+     "i18n: add Russian to our own UI text, and let the game's selector pick it"
+    ]
+   },
+   {
+    "branch": "ru-locale",
+    "ahead": 2,
+    "behind": 0,
+    "files": 24,
+    "real_files": 19,
+    "dirs": [
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-19T20:05:37Z",
+    "subjects": [
+     "Russian: fix the language row wrapping and the Russian voice-over",
+     "Russian: our UI text, the language switch, touch wordings and name plates"
+    ]
+   }
+  ]
+ },
+ "aerolithink/d2r-mobile-ipad-2020": {
+  "pushed_at": "2026-10-19T18:52:41Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 14,
+    "behind": 3,
+    "files": 16,
+    "real_files": 15,
+    "dirs": [
+     "dm/gfx",
+     "dm/host",
+     "dm/ios",
+     "dm/third_party",
+     "rebuild_for_a12z.py"
+    ],
+    "last_commit": "2026-10-19T18:52:38Z",
+    "subjects": [
+     "Implement discrete binding for b3e7e0042d1f on A12Z and tune memory pool",
+     "Allow Apple Family 5 GPU argument buffer alignment padding in layout check",
+     "Switch DMSH_CHAIN to c974829dda39 matching argument buffer pipeline",
+     "Fix black screen: match DMSH_CHAIN b3e7e0042d1f and tolerant zlib decoding",
+     "Provide fallback implementation for BAAssetPackManager to satisfy linker",
+     "Include TargetConditionals.h for TARGET_OS_IPHONE in hle_fs",
+     "Add BAAssetPack compatibility declarations for iOS 18 SDK",
+     "Stream xcodebuild output and guard GPU check with DM_NVN_M3"
+    ]
+   }
+  ]
+ },
+ "MZhao-ouo/Touchable": {
+  "pushed_at": "2026-10-19T18:44:56Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-19T18:34:16Z",
+    "subjects": [
+     "Initial public release of Touchable"
     ]
    }
   ]
