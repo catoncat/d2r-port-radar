@@ -373,14 +373,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-18T23:57:12Z",
+  "pushed_at": "2026-10-19T12:51:55Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 105,
+    "ahead": 112,
     "behind": 18,
-    "files": 183,
-    "real_files": 178,
+    "files": 190,
+    "real_files": 185,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -389,16 +389,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-18T23:56:20Z",
+    "last_commit": "2026-10-19T12:51:51Z",
     "subjects": [
-     "Preserve zero-size NVN buffer address views used by P5R",
-     "Exercise indexed and instanced draws under queue contention",
-     "Serialize concurrent NVN queues and preserve replay state",
-     "Complete color state setters and publish acquire fences safely",
-     "Fix builder query ABI and guard original object bounds",
-     "Implement startup command families and test continuous GPU sequences",
-     "Check residency-set GPU support before calling the Metal API",
-     "Record uniform scissor and depth-range batches for viewport zero"
+     "Restore render state after pipeline prediction",
+     "Run view-upgrade pixel checks early with readback diagnostics",
+     "Prepare texture views before opening encoders",
+     "Preserve register bits when sampling stencil views",
+     "Update optional render-range checker for per-stage bindings",
+     "Preserve independently bound NVN shader stages",
+     "Accept covering NVN depth bounds in the normalized Metal domain",
+     "Preserve zero-size NVN buffer address views used by P5R"
     ]
    },
    {
@@ -523,14 +523,14 @@
   "branches": []
  },
  "Seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-18T20:38:29Z",
+  "pushed_at": "2026-10-19T09:48:58Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 153,
+    "ahead": 163,
     "behind": 5,
-    "files": 154,
-    "real_files": 153,
+    "files": 156,
+    "real_files": 155,
     "dirs": [
      "NOTICE.md",
      "PORTABLE.md",
@@ -539,22 +539,22 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-10-18T20:35:29Z",
+    "last_commit": "2026-10-19T09:41:08Z",
     "subjects": [
-     "probe(ohos): 队列发送方打点——确认主循环稳定空转（18578 帧零崩溃，任务查询 545 万次）",
-     "probe(ohos): 阻塞原语打点（锁等待/队列空/睡眠时长）——帧循环停住根因定位为任务注册竞态",
-     "feat(ohos): 通用 NVN 胶水层（设备族真实现）——真机首次跑通帧循环（118 帧零崩溃）",
-     "fix(ohos): ⭐ 框架级 bug——钩子桩把 PC 相对指令搬进洞里执行，会悄悄改坏寄存器",
-     "refactor(ohos): 目标复核后的架构修正——SDK 胶水层独立成通用模块（L1）",
-     "probe(ohos): 槽周边 dump（np70）——坐实'槽正确 vs x8=0'的矛盾；§38.8 记录下轮打法",
-     "probe(ohos): 槽体检三站 + 崩点偏移更正（+0xA246A4）+ 设值替身探到 ctor #385",
-     "feat(ohos): 方案 B 开工——nn::vi 输出指针影子 + SDK 需求清单"
+     "probe(ohos): ctor#206 定位为'内容没加载'的症状（表计数为 0 ⇒ 查表拿空指针）",
+     "refactor(ohos): NVN 内存池/缓冲真实现搬进通用模块 dm_nvn_vk.c（G2 架构收尾）",
+     "probe(ohos): 消息链三跳读取（不挂钩子）——Prepare 线程收到消息后到底调到哪里",
+     "fix(ohos): ⭐ SDK 分派器丢第 4 个参数（x3）——VSNPrintf 的 va_list 从未送达 + 实现 nn::util::VSNPrintf",
+     "probe(ohos): 键解析替身加\"键名/串对象布局\"打点；撤掉重复挂载（np88-np91）",
+     "fix(probe): 撤掉\"消息处理\"钩子 + 修掉崩溃倒流成环的控制流缺陷（np86/np87）",
+     "probe(ohos): 消息处理钩子改为延后安装——绕开\"安装期多一个洞就死在 ctor #385\"",
+     "probe(ohos): 越障扩展到任务注册竞态崩点（x9=0 的空遍历）——本轮零崩溃"
     ]
    }
   ]
  },
  "Zhangbu/d2r-mobile": {
-  "pushed_at": "2026-10-16T01:52:54Z",
+  "pushed_at": "2026-10-19T06:16:09Z",
   "branches": []
  },
  "zcanic/d2r-mobile": {
@@ -1032,7 +1032,7 @@
   "branches": []
  },
  "dodola/d2r-mobile": {
-  "pushed_at": "2026-10-17T11:27:43Z",
+  "pushed_at": "2026-10-19T10:25:46Z",
   "branches": [
    {
     "branch": "codex/android-measured-optimizations",
@@ -1060,30 +1060,54 @@
     ]
    },
    {
-    "branch": "main",
-    "ahead": 35,
-    "behind": 3,
-    "files": 234,
-    "real_files": 206,
+    "branch": "codex/zelda-echoes-of-wisdom-android",
+    "ahead": 8,
+    "behind": 0,
+    "files": 291,
+    "real_files": 287,
     "dirs": [
      "DESIGN.md",
      "dm/android",
      "dm/gfx",
      "dm/host",
+     "dm/ios",
      "dm/tools",
-     "tools/android",
-     "tools/d2r-mobile-port"
+     "dm/verify"
     ],
-    "last_commit": "2026-10-17T11:21:14Z",
+    "last_commit": "2026-10-19T09:14:39Z",
     "subjects": [
+     "feat(android): checkpoint D2R iOS parity port",
+     "feat(android): bootstrap Echoes of Wisdom 1.1.0",
+     "feat(android): add FPS display, aspect fit and optional 60 FPS pacing",
+     "docs: describe experimental Android support in both READMEs",
+     "fix(android): preserve submission context in Vulkan profiling",
+     "perf(android): per-mip image layouts, 2-way shader control cache, gated hot-path timers",
+     "perf(android): precise Vulkan sync, chunked + async submission, cached writeback",
+     "feat(android): add native game host and Vulkan renderer"
+    ]
+   },
+   {
+    "branch": "main",
+    "ahead": 40,
+    "behind": 0,
+    "files": 300,
+    "real_files": 298,
+    "dirs": [
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T10:24:23Z",
+    "subjects": [
+     "feat(android): stop Zelda port and omit cloud sync",
+     "feat(android): consolidate D2R parity work on main",
+     "Merge Android pipeline persistence and prewarming",
+     "Merge upstream v1.0.18 fixes into Android integration",
      "Merge codex/d2r-offline-installer into main",
      "fix(vulkan): replay polygon offset and preserve previous crash log",
      "fix(android): retain installer entry points in rebuilt APKs",
-     "fix(android): route controller B and Back to guest input",
-     "Merge upstream/main and adapt Android copy pitches and touch scaling",
-     "feat(android): add optional native-resolution UI performance mode",
-     "docs(android): record readonly shader performance probe",
-     "perf(android): profile GPU-owned pool reads safely"
+     "fix(android): route controller B and Back to guest input"
     ]
    }
   ]
@@ -1281,33 +1305,34 @@
   ]
  },
  "d2r-mobile/d2r-mobile": {
-  "pushed_at": "2026-10-19T01:56:34Z",
+  "pushed_at": "2026-10-19T06:32:08Z",
   "branches": [
    {
     "branch": "dev",
-    "mirror": true,
-    "last_commit": "2026-10-19T01:53:30Z",
+    "mirror": false,
+    "last_commit": "2026-10-19T06:31:31Z",
     "subjects": [
+     "Clarify manual setup link",
      "iOS audio: mix with other apps instead of interrupting them (#77)",
      "README: 4 GB devices now start and run, with very tight memory (player test on iPad mini 6)",
      "Packaging: reserve a code-signature area in Guest so LiveContainer can sign it (#76)",
      "Touch controls: brighter rim on empty skill slots (#74 follow-up)",
      "New touch controls look and layout, adopted community fixes, diagnostics",
      "Fix native iPhone fullscreen and supported-game startup (#73)",
-     "fix(loader): preserve null unresolved weak imports (#66)",
-     "Fix Mac mouse press latency and held movement (#65)"
+     "fix(loader): preserve null unresolved weak imports (#66)"
     ]
    }
   ]
  },
  "d2r-mobile/.github": {
-  "pushed_at": "2026-10-12T12:26:03Z",
+  "pushed_at": "2026-10-19T10:19:23Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-12T12:24:19Z",
+    "last_commit": "2026-10-19T10:19:22Z",
     "subjects": [
+     "docs: link the D2R Mobile website from the organization profile",
      "Add the organization profile pointing to d2r-mobile"
     ]
    }
@@ -1480,12 +1505,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-18T20:57:00Z",
+  "pushed_at": "2026-10-19T04:56:13Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T20:56:59Z",
+    "last_commit": "2026-10-19T04:56:13Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1540,41 +1565,41 @@
   ]
  },
  "hyc1743/super-mario-odyssey-ios": {
-  "pushed_at": "2026-10-19T01:00:27Z",
+  "pushed_at": "2026-10-19T13:15:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-19T01:00:24Z",
+    "last_commit": "2026-10-19T06:11:19Z",
     "subjects": [
-     "D24S8/X24_Stencil8 在 iOS 上不可用：depth/stencil 格式守卫用 __IPHONE_OS_VERSION_MIN_REQUIRED 隔开（CI iOS 编译错误）",
-     "pipeline_skip 返回 id：ARC 禁止 int→id<MTLRenderPipelineState> 隐式转换（CI 编译错误）",
-     "metal_render_selftest：c1 读取用指针下标（(*a.c1)[1] 是向量分量下标，非法的 .x）",
-     "缓冲绑定诊断注释与 STATUS 补充（第三波取证工具）",
-     "真机诊断捕获接进 App + 缓冲绑定诊断不再被标题画面淹没",
-     "黑屏第二波：support_buffer 与 c1 是翻译器合成缓冲，宿主按参考实现填默认值",
-     "真机 v0.6.19 游戏世界黑屏后闪退：RG11B10F 深度附件守卫 + 管线早退取证",
-     "metal_resources_selftest：3D 贴图的单层视图允许是整体 3D 视图（不要求与基础纹理同一对象）"
+     "nxnative: expose attachment and shader pipeline failures",
+     "nxnative: support packed float and BGRA vertex formats",
+     "nxnative: add reproducible v0 shader profile generation",
+     "nxnative: diagnose render target bindings",
+     "nxnative: accept packed vertices and romfs layout",
+     "metal: allow depth textures to be sampled",
+     "nxnative: add thin IPA delivery and iOS runtime integration",
+     "D24S8/X24_Stencil8 在 iOS 上不可用：depth/stencil 格式守卫用 __IPHONE_OS_VERSION_MIN_REQUIRED 隔开（CI iOS 编译错误）"
     ]
    }
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-19T03:13:35Z",
+  "pushed_at": "2026-10-19T10:50:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-19T03:13:33Z",
+    "last_commit": "2026-10-19T10:50:50Z",
     "subjects": [
-     "TOTK notes: the opening cave's stone blocks get no torch light; what is ruled out, and the layout bug MacNativeGames found",
-     "docs: keep game names and IPA sizes from wrapping",
-     "docs: restore notes column with compact wrapped text",
-     "docs: move game notes below the table",
-     "docs: remove NSP requirements column from games table",
-     "Yield back-off starts after 2 ms of yields: Tears of the Kingdom holds 30 fps again",
-     "Power lines show render-target traffic and guest CPU by Switch priority; DM_QOS_MAP maps priority to QoS (off by default)",
-     "c1 guard proves the whole index against the shader's real c1 span, and checks every stage"
+     "NSP script: provisional profiles read their switches off the game files; a short heap check",
+     "Three Houses: Mac input route for 60 fps",
+     "Three Houses: 60 fps also in the opening movie and character creation",
+     "README: drop the packing notes from the Three Houses and Super Mario Galaxy rows",
+     "Fire Emblem: Three Houses runs at 60 fps",
+     "README: Super Mario Galaxy plays on the iPhone",
+     "shader_split.py: zstd dictionary frames fall back to backports.zstd before Python 3.14",
+     "README: Tears of the Kingdom runs on the iPhone, Super Mario Galaxy plays on the Mac; screenshots of both"
     ]
    }
   ]
@@ -1640,12 +1665,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-19T04:38:44Z",
+  "pushed_at": "2026-10-19T13:11:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-19T04:38:43Z",
+    "last_commit": "2026-10-19T13:11:44Z",
     "subjects": [
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
@@ -1668,12 +1693,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-18T23:21:44Z",
+  "pushed_at": "2026-10-19T04:52:19Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T23:21:43Z",
+    "last_commit": "2026-10-19T04:52:18Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -3045,7 +3070,7 @@
   ]
  },
  "StandonJoyner/awesome-rea": {
-  "pushed_at": "2026-10-18T23:45:46Z",
+  "pushed_at": "2026-10-19T13:24:59Z",
   "branches": [
    {
     "branch": "main",
@@ -3439,13 +3464,15 @@
   ]
  },
  "yokeyhh/switch-port-to-apple": {
-  "pushed_at": "2026-10-18T05:41:27Z",
+  "pushed_at": "2026-10-19T12:40:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T05:41:21Z",
+    "last_commit": "2026-10-19T12:40:03Z",
     "subjects": [
+     "v5: layer-range bug (renderTargetArrayLength) that blackens whole scenes; how to diagnose a black scene",
+     "v4: runtime-constructed shaders + HLE/input pitfalls",
      "Add runnable scripts/ toolkit; correct c1 semantics",
      "Add shader-banks reference: BNSH containers and the c1 BRX jump table",
      "Fix GitHub account in install URLs (yokeyhh)",
@@ -3509,8 +3536,26 @@
   ]
  },
  "pericn/d2r-mobile": {
-  "pushed_at": "2026-10-17T17:16:27Z",
+  "pushed_at": "2026-10-19T12:59:37Z",
   "branches": [
+   {
+    "branch": "feat/ios-panel-dpad",
+    "ahead": 5,
+    "behind": 0,
+    "files": 7,
+    "real_files": 7,
+    "dirs": [
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-19T12:24:33Z",
+    "subjects": [
+     "feat(ios): add light haptics to accepted panel D-pad presses",
+     "fix(ios): keep panel D-pad clear of controls across screen sizes",
+     "fix(ios): guard panel D-pad against accidental window closing",
+     "fix(ios): keep panel D-pad clear of vendor shelf",
+     "feat(ios): add touch D-pad for inventory and vendors"
+    ]
+   },
    {
     "branch": "fix/ios-global-quick-actions",
     "ahead": 1,
@@ -3523,6 +3568,35 @@
     "last_commit": "2026-10-17T17:16:05Z",
     "subjects": [
      "fix(ios): preserve global actions in touch skill bindings"
+    ]
+   },
+   {
+    "branch": "fix/mac-custom-features",
+    "ahead": 1,
+    "behind": 0,
+    "files": 8,
+    "real_files": 8,
+    "dirs": [
+     "dm/host",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-19T06:50:55Z",
+    "subjects": [
+     "fix(mac): load custom item annotations and honor auto buff setting"
+    ]
+   },
+   {
+    "branch": "fix/mac-mouse-hover",
+    "ahead": 1,
+    "behind": 0,
+    "files": 5,
+    "real_files": 5,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T12:55:57Z",
+    "subjects": [
+     "fix(mac): show item tooltips on mouse hover"
     ]
    }
   ]
@@ -3585,7 +3659,7 @@
   ]
  },
  "ashappyasdog/d2r-mobile-build": {
-  "pushed_at": "2026-10-17T13:54:53Z",
+  "pushed_at": "2026-10-19T09:38:23Z",
   "branches": [
    {
     "branch": "main",
@@ -3646,21 +3720,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-18T20:23:13Z",
+  "pushed_at": "2026-10-19T13:15:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T20:23:13Z",
+    "last_commit": "2026-10-19T13:15:02Z",
     "subjects": [
-     "Merge pull request #16 from RVZO6/fix/totk-precompiled-shaders",
-     "Merge pull request #14 from RVZO6/fix/totk-command-q",
-     "Merge pull request #12 from joevans/english-ui",
-     "Merge pull request #11 from joevans/macos-27-address-space",
-     "Draw overlay lines with missing pixel glyphs through CoreText",
-     "Compile the startup shaders into the app when the Metal toolchain is present",
-     "Merge pull request #3 from huahuahuahuahuahuahuahua/fix/totk-rendering-textures",
-     "Add Command-Q to quit TOTK through save-aware window close"
+     "data: 585 new 1.4.3 variants in the shared shader list from a player's contribution (#38)",
+     "feat: key 4 ultrawide keeps the HUD's shape in the middle 16:9",
+     "feat: key 4 switches a true 21:9 ultrawide view on the Mac (1.2.1, 1.4.3)",
+     "perf: the guest yield back-off is off by default (TOTK_YIELD_BACKOFF=on)",
+     "fix: pipeline prediction skips untranslated programs and depth-less guesses for depth export; limits, statistics and negative controls",
+     "Merge PR #29: pipeline prediction resolves no future program on the submit thread, is bounded and frees stale guesses",
+     "feat: TOTK_PCHTXT loads an emulator ExeFS patch, TOTK_STRETCH=1 fills the window",
+     "perf: a long run of guest yields backs off instead of spinning (after nxnative)"
     ]
    }
   ]
@@ -4139,7 +4213,7 @@
   ]
  },
  "n2ray/d2r-mobile": {
-  "pushed_at": "2026-10-19T04:48:03Z",
+  "pushed_at": "2026-10-19T13:22:52Z",
   "branches": [
    {
     "branch": "android-snapdragon-elite",
@@ -4179,6 +4253,31 @@
      "fix(vk): bind execution to validated bytes and pre-check device limits (#12)",
      "Merge pull request #59 from n2ray/hermes/issue-32-native-events",
      "feat(vk): reflection-driven consumer for owned compute fixtures (#12)"
+    ]
+   },
+   {
+    "branch": "codex/android-guest-elf-map",
+    "ahead": 424,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T11:36:44Z",
+    "subjects": [
+     "fix(android): restore ELF loading and guest context publication",
+     "test(loader): use actual 0..7 producer key indices (#249)",
+     "fix(loader): validate layout key slots before key-page writes (#249)",
+     "Merge pull request #247 from n2ray/hermes/java-package-targets",
+     "fix(android): gate installed-package readiness on module targets (#245)",
+     "Merge pull request #248 from n2ray/hermes/optional-module-create",
+     "Merge pull request #244 from n2ray/hermes/embedded-target-copy",
+     "fix(android): honor optional failure when creating shader modules"
     ]
    },
    {
@@ -4234,8 +4333,8 @@
     ]
    },
    {
-    "branch": "hermes/audio-focus-jni",
-    "ahead": 307,
+    "branch": "hermes/android-target-guard",
+    "ahead": 400,
     "behind": 5,
     "files": 300,
     "real_files": 297,
@@ -4246,16 +4345,41 @@
      "ci/tests",
      "dm/android"
     ],
-    "last_commit": "2026-10-19T04:46:03Z",
+    "last_commit": "2026-10-19T10:08:53Z",
     "subjects": [
+     "fix(android): use per-module NAME.target markers (#234)",
+     "guard(android): require android-context-v1 before module mapping (#234)",
+     "Merge pull request #231 from n2ray/hermes/reference-draw-parameters",
+     "Merge pull request #226 from n2ray/hermes/import-runtime",
+     "fix(audio): preserve Apple interruption recovery retries",
+     "Merge pull request #233 from n2ray/hermes/reuse-shader-profile",
+     "fix(android): clear draw feature state on driver fallback reset",
+     "fix(audio): track physical AAudio callback quiescence at every caller (#222)"
+    ]
+   },
+   {
+    "branch": "hermes/audio-focus-jni",
+    "ahead": 308,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T04:52:13Z",
+    "subjects": [
+     "fix(android): retain the platform request across a failed abandon (#184)",
      "Merge remote-tracking branch 'origin/main' into hermes/audio-focus-jni",
      "Merge pull request #186 from n2ray/hermes/controller-hotplug",
      "docs: record the 46-check harness and root 41-check cross (#184)",
      "fix(android): keep release retryable and clear JNI exceptions on failed create (#184)",
      "fix(android): use activity classloader in hotplug JNI (#183)",
      "Merge pull request #181 from n2ray/hermes/ime-view",
-     "fix(ci): build the JVM-loaded JNI plugin without sanitizer runtime (#184)",
-     "fix(android): enforce hotplug owner and retry release (#183)"
+     "fix(ci): build the JVM-loaded JNI plugin without sanitizer runtime (#184)"
     ]
    },
    {
@@ -4285,6 +4409,31 @@
     ]
    },
    {
+    "branch": "hermes/audio-native-app",
+    "ahead": 334,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T05:37:00Z",
+    "subjects": [
+     "fix(android): identity-gated audio pause and callback fixture audio seam (#200)",
+     "merge main (IME PR193) preserving both text and audio hooks (#200)",
+     "feat(android): wire NativeActivity keyboard P/S diagnostics to the accepted audio session (#200)",
+     "Merge pull request #193 from n2ray/hermes/ime-native-app",
+     "Merge pull request #197 from n2ray/hermes/audio-session",
+     "Merge pull request #198 from n2ray/hermes/ime-insets",
+     "fix(android): release text bridge on show rollback (#190)",
+     "fix(android): order focus result before intent and fail closed on uncertain request (#195)"
+    ]
+   },
+   {
     "branch": "hermes/audio-output-integration",
     "ahead": 254,
     "behind": 5,
@@ -4307,6 +4456,106 @@
      "Merge pull request #156 from n2ray/hermes/gamepad-events",
      "fix(android): apply target gain to every replacement stream (#153)",
      "Merge remote-tracking branch 'origin/main' into hermes/gamepad-events"
+    ]
+   },
+   {
+    "branch": "hermes/audio-pcm-pacing",
+    "ahead": 341,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T05:54:35Z",
+    "subjects": [
+     "fix(android): carry exact fractional frame remainder across ticks (#206)",
+     "fix(android): pace owned diagnostic PCM at 48kHz with bounded backlog (#206)",
+     "Merge pull request #202 from n2ray/hermes/audio-native-app",
+     "fix(android): identity-gated audio pause and callback fixture audio seam (#200)",
+     "Merge pull request #203 from n2ray/hermes/hud-swapchain",
+     "fix(android): guard HUD presenter partial-init cleanup (#199)",
+     "merge main (IME PR193) preserving both text and audio hooks (#200)",
+     "Merge remote-tracking branch 'origin/main' into hermes/hud-swapchain"
+    ]
+   },
+   {
+    "branch": "hermes/audio-session",
+    "ahead": 317,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T05:10:11Z",
+    "subjects": [
+     "fix(android): order focus result before intent and fail closed on uncertain request (#195)",
+     "feat(android): serialized audio session combining accepted focus JNI and output owner (#195)",
+     "Merge pull request #185 from n2ray/hermes/audio-focus-jni",
+     "Merge pull request #191 from n2ray/hermes/hotplug-required-ci",
+     "fix(android): retain the platform request across a failed abandon (#184)",
+     "test(android): link libm in callback fixture for Linux CI (#189)",
+     "Merge pull request #188 from n2ray/hermes/ime-activity-host",
+     "ci: require hotplug regressions in Java gate (#189)"
+    ]
+   },
+   {
+    "branch": "hermes/audio-touch-entry",
+    "ahead": 362,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T06:25:47Z",
+    "subjects": [
+     "fix(android): keep touch layout within existing stubs; measured stack prevents overlap (#211)",
+     "fix(android): actual audio_entry JNI fixture and measured touch layout (#211)",
+     "merge main (HUD PR208) preserving audio touch and HUD fields (#211)",
+     "feat(android): owned touch play/stop buttons for diagnostic audio (#211)",
+     "Merge pull request #208 from n2ray/hermes/hud-native-app",
+     "fix(android): pin header-only Vulkan for WSI host fixtures (#205)",
+     "Merge pull request #207 from n2ray/hermes/audio-pcm-pacing",
+     "fix(android): resolve Vulkan headers for WSI HUD CTest (#205)"
+    ]
+   },
+   {
+    "branch": "hermes/character-rendering",
+    "ahead": 435,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T12:32:01Z",
+    "subjects": [
+     "fix(android): keep complete texture diagnostic token identity (#259)",
+     "fix(android): trigger texture diagnostics at the real scene (#259)",
+     "feat(android): bounded texture binding diagnostics (#259)",
+     "Merge pull request #256 from n2ray/hermes/heap-snapshot-perf",
+     "Merge pull request #257 from n2ray/hermes/phone-aspect-output",
+     "fix(host): restore Apple heap range export",
+     "fix(android): bound output geometry before numeric conversion (#254)",
+     "feat(android): phone-aspect game output at 720-level height (#254)"
     ]
    },
    {
@@ -4470,6 +4719,81 @@
     ]
    },
    {
+    "branch": "hermes/dirty-snapshot-transaction",
+    "ahead": 437,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T12:30:02Z",
+    "subjects": [
+     "build(nvn): link dirty transaction into Android backend",
+     "perf(nvn): add dirty snapshot transaction",
+     "Merge pull request #260 from n2ray/hermes/host-snapshot-guard",
+     "test(host): link save fixtures to snapshot guard",
+     "perf(host): add guest snapshot writer guard",
+     "Merge pull request #256 from n2ray/hermes/heap-snapshot-perf",
+     "Merge pull request #257 from n2ray/hermes/phone-aspect-output",
+     "fix(host): restore Apple heap range export"
+    ]
+   },
+   {
+    "branch": "hermes/embedded-target-copy",
+    "ahead": 411,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T10:30:53Z",
+    "subjects": [
+     "fix(android): reject truncated metadata paths (#243)",
+     "fix(android): copy embedded module target markers (#243)",
+     "Merge pull request #238 from n2ray/hermes/game-host-link",
+     "fix(android): allow headless bridge without a display (#224)",
+     "Merge accepted integration/android-reference (PR236/237)",
+     "Merge pull request #236 from n2ray/hermes/shader-required-features",
+     "Merge pull request #237 from n2ray/hermes/android-target-guard",
+     "fix(android): provide real host bridge for game linking (#224)"
+    ]
+   },
+   {
+    "branch": "hermes/game-host-link",
+    "ahead": 408,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T10:17:07Z",
+    "subjects": [
+     "fix(android): allow headless bridge without a display (#224)",
+     "Merge accepted integration/android-reference (PR236/237)",
+     "Merge pull request #236 from n2ray/hermes/shader-required-features",
+     "Merge pull request #237 from n2ray/hermes/android-target-guard",
+     "fix(android): provide real host bridge for game linking (#224)",
+     "test(android): execute production shader feature decisions",
+     "fix(android): use per-module NAME.target markers (#234)",
+     "fix(android): guard Apple QoS attribute in NVN thread start (#224)"
+    ]
+   },
+   {
     "branch": "hermes/gamepad-events",
     "ahead": 241,
     "behind": 5,
@@ -4523,6 +4847,56 @@
     ]
    },
    {
+    "branch": "hermes/heap-snapshot-perf",
+    "ahead": 428,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T11:57:08Z",
+    "subjects": [
+     "fix(host): restore Apple heap range export",
+     "perf(android): restore protected guest heap snapshots",
+     "Merge pull request #252 from n2ray/codex/android-guest-elf-map",
+     "fix(android): restore ELF loading and guest context publication",
+     "Merge pull request #250 from n2ray/hermes/loader-key-layout",
+     "test(loader): use actual 0..7 producer key indices (#249)",
+     "fix(loader): validate layout key slots before key-page writes (#249)",
+     "Merge pull request #247 from n2ray/hermes/java-package-targets"
+    ]
+   },
+   {
+    "branch": "hermes/host-snapshot-guard",
+    "ahead": 434,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T12:22:09Z",
+    "subjects": [
+     "test(host): link save fixtures to snapshot guard",
+     "perf(host): add guest snapshot writer guard",
+     "Merge pull request #256 from n2ray/hermes/heap-snapshot-perf",
+     "Merge pull request #257 from n2ray/hermes/phone-aspect-output",
+     "fix(host): restore Apple heap range export",
+     "fix(android): bound output geometry before numeric conversion (#254)",
+     "feat(android): phone-aspect game output at 720-level height (#254)",
+     "perf(android): restore protected guest heap snapshots"
+    ]
+   },
+   {
     "branch": "hermes/hotplug-required-ci",
     "ahead": 304,
     "behind": 5,
@@ -4545,6 +4919,56 @@
      "fix(android): enforce hotplug owner and retry release (#183)",
      "docs(android): correct text editor cursor contract (#179)",
      "Merge remote-tracking branch 'origin/main' into hermes/ime-view"
+    ]
+   },
+   {
+    "branch": "hermes/hud-native-app",
+    "ahead": 354,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T06:02:26Z",
+    "subjects": [
+     "fix(android): pin header-only Vulkan for WSI host fixtures (#205)",
+     "fix(android): resolve Vulkan headers for WSI HUD CTest (#205)",
+     "fix(android): take Vulkan include from CMake target (#205)",
+     "Merge remote-tracking branch 'origin/main' into hermes/hud-native-app",
+     "fix(android): pass CMake Vulkan include to WSI HUD fixture (#205)",
+     "Merge pull request #204 from n2ray/hermes/ime-touch-entry",
+     "fix: quiesce app before deferred IME teardown",
+     "test(android): cover WSI HUD caller and no-record mutant (#205)"
+    ]
+   },
+   {
+    "branch": "hermes/hud-swapchain",
+    "ahead": 334,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T05:31:23Z",
+    "subjects": [
+     "fix(android): guard HUD presenter partial-init cleanup (#199)",
+     "Merge remote-tracking branch 'origin/main' into hermes/hud-swapchain",
+     "feat(android): present owned HUD through swapchain (#199)",
+     "Merge pull request #193 from n2ray/hermes/ime-native-app",
+     "Merge pull request #197 from n2ray/hermes/audio-session",
+     "Merge pull request #198 from n2ray/hermes/ime-insets",
+     "fix(android): release text bridge on show rollback (#190)",
+     "fix(android): order focus result before intent and fail closed on uncertain request (#195)"
     ]
    },
    {
@@ -4598,6 +5022,106 @@
     ]
    },
    {
+    "branch": "hermes/ime-host-required-ci",
+    "ahead": 309,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T04:55:07Z",
+    "subjects": [
+     "ci: require accepted IME View/Activity host regressions (#192)",
+     "Merge pull request #191 from n2ray/hermes/hotplug-required-ci",
+     "test(android): link libm in callback fixture for Linux CI (#189)",
+     "Merge pull request #188 from n2ray/hermes/ime-activity-host",
+     "ci: require hotplug regressions in Java gate (#189)",
+     "Merge pull request #186 from n2ray/hermes/controller-hotplug",
+     "fix(android): roll back focus refusal and hide failures (#187)",
+     "fix(android): use activity classloader in hotplug JNI (#183)"
+    ]
+   },
+   {
+    "branch": "hermes/ime-insets",
+    "ahead": 319,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T05:08:29Z",
+    "subjects": [
+     "fix(android): bind IME insets to root extent and attach token (#196)",
+     "feat(android): observe IME insets on owned editor (#196)",
+     "Merge pull request #194 from n2ray/hermes/ime-host-required-ci",
+     "Merge pull request #185 from n2ray/hermes/audio-focus-jni",
+     "ci: require accepted IME View/Activity host regressions (#192)",
+     "Merge pull request #191 from n2ray/hermes/hotplug-required-ci",
+     "fix(android): retain the platform request across a failed abandon (#184)",
+     "test(android): link libm in callback fixture for Linux CI (#189)"
+    ]
+   },
+   {
+    "branch": "hermes/ime-native-app",
+    "ahead": 324,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T05:13:18Z",
+    "subjects": [
+     "fix(android): release text bridge on show rollback (#190)",
+     "Merge remote-tracking branch 'origin/main' into hermes/ime-native-app",
+     "fix(android): harden text trigger, BACK pair and JNI lifecycle (#190)",
+     "Merge pull request #194 from n2ray/hermes/ime-host-required-ci",
+     "fix(android): match text JNI callback signature (#190)",
+     "Merge pull request #185 from n2ray/hermes/audio-focus-jni",
+     "fix(android): keep text loader receiver distinct (#190)",
+     "ci: require accepted IME View/Activity host regressions (#192)"
+    ]
+   },
+   {
+    "branch": "hermes/ime-native-insets",
+    "ahead": 367,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T06:36:22Z",
+    "subjects": [
+     "fix(android): reject non-boolean IME known/visible payloads (#215)",
+     "feat(android): route IME insets into text JNI and view policy (#215)",
+     "Merge pull request #210 from n2ray/hermes/ime-utf16-payload",
+     "test(android): verify full payload clear on cancel, empty and end (#209)",
+     "Merge accepted main 41995b2",
+     "fix(android): clear stale UTF-16 payload storage on replacement and end (#209)",
+     "Merge pull request #208 from n2ray/hermes/hud-native-app",
+     "test(android): cover surrogate pair at UTF-16 payload boundary (#209)"
+    ]
+   },
+   {
     "branch": "hermes/ime-required-ci",
     "ahead": 287,
     "behind": 5,
@@ -4623,6 +5147,56 @@
     ]
    },
    {
+    "branch": "hermes/ime-touch-entry",
+    "ahead": 345,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T05:48:40Z",
+    "subjects": [
+     "fix: quiesce app before deferred IME teardown",
+     "Merge remote-tracking branch 'origin/main' into hermes/ime-touch-entry",
+     "fix(android): retain IME cleanup owner through terminal destroy (#201)",
+     "Merge pull request #202 from n2ray/hermes/audio-native-app",
+     "fix(android): identity-gated audio pause and callback fixture audio seam (#200)",
+     "Merge remote-tracking branch 'origin/main' into hermes/ime-touch-entry",
+     "fix(android): clear JNI failures and retain cleanup ownership (#201)",
+     "Merge pull request #203 from n2ray/hermes/hud-swapchain"
+    ]
+   },
+   {
+    "branch": "hermes/ime-utf16-payload",
+    "ahead": 364,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T06:18:25Z",
+    "subjects": [
+     "test(android): verify full payload clear on cancel, empty and end (#209)",
+     "Merge accepted main 41995b2",
+     "fix(android): clear stale UTF-16 payload storage on replacement and end (#209)",
+     "Merge pull request #208 from n2ray/hermes/hud-native-app",
+     "test(android): cover surrogate pair at UTF-16 payload boundary (#209)",
+     "fix(android): pin header-only Vulkan for WSI host fixtures (#205)",
+     "Merge pull request #207 from n2ray/hermes/audio-pcm-pacing",
+     "Merge accepted main after PR204"
+    ]
+   },
+   {
     "branch": "hermes/ime-view",
     "ahead": 297,
     "behind": 5,
@@ -4645,6 +5219,81 @@
      "ci: run accepted IME logic tests and mutations in the required Java gate (#180)",
      "fix(android): retire text session before terminal callbacks (#179)",
      "Merge remote-tracking branch 'origin/main' into hermes/ime-view"
+    ]
+   },
+   {
+    "branch": "hermes/import-build",
+    "ahead": 381,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T09:42:59Z",
+    "subjects": [
+     "fix(android): exclude desktop mouse consumer from host link (#224)",
+     "docs(android): note platform guard on existing touch sources (#224)",
+     "fix(android): keep only supported quality presets and touch deps (#224)",
+     "Merge accepted integration/android-reference (PR228)",
+     "Merge pull request #228 from n2ray/hermes/import-graphics",
+     "fix(android): repair game-run routing and frontend build (#224)",
+     "fix(android): remove dead NVN helpers and keep Werror",
+     "build(android): compile imported NVN Vulkan backend with NDK"
+    ]
+   },
+   {
+    "branch": "hermes/import-graphics",
+    "ahead": 373,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T08:53:39Z",
+    "subjects": [
+     "fix(android): remove dead NVN helpers and keep Werror",
+     "build(android): compile imported NVN Vulkan backend with NDK",
+     "verify Android context entry with owned on-device ARM64 fixture",
+     "adapt Android context emission while preserving Apple target",
+     "import Android backend sources from pinned sydeEvans snapshot",
+     "Merge pull request #214 from n2ray/hermes/scene-hud-wsi",
+     "Merge remote-tracking branch 'origin/main' into hermes/scene-hud-wsi",
+     "Merge pull request #210 from n2ray/hermes/ime-utf16-payload"
+    ]
+   },
+   {
+    "branch": "hermes/import-runtime",
+    "ahead": 378,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T09:56:41Z",
+    "subjects": [
+     "fix(audio): preserve Apple interruption recovery retries",
+     "fix(audio): track physical AAudio callback quiescence at every caller (#222)",
+     "fix(audio): require confirmed AAudio stop before consumer handoff (#222)",
+     "fix(host): real Android HLE sections and AAudio output (#222)",
+     "adapt(host): Android instruction profiling reports unavailable (#222)",
+     "adapt(host): Android context records, sections and lifecycle (#222)",
+     "Merge remote-tracking branch 'origin/integration/android-reference' into hermes/import-runtime",
+     "adapt(host): compile crash, fdstat and main timelines for Android (#222)"
     ]
    },
    {
@@ -5826,6 +6475,81 @@
     ]
    },
    {
+    "branch": "hermes/java-package-targets",
+    "ahead": 415,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T10:39:06Z",
+    "subjects": [
+     "fix(android): gate installed-package readiness on module targets (#245)",
+     "fix(android): require per-module target markers in Java package import (#245)",
+     "Merge pull request #241 from n2ray/hermes/optional-shader-refusal",
+     "Merge pull request #242 from n2ray/hermes/touch-pointer-identity",
+     "Merge pull request #238 from n2ray/hermes/game-host-link",
+     "fix(touch): stable Android pointer-id mapping without aliasing (#239)",
+     "fix(android): skip unsupported optional shader warmups",
+     "fix(android): allow headless bridge without a display (#224)"
+    ]
+   },
+   {
+    "branch": "hermes/live-d2r-touch",
+    "ahead": 440,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T12:26:11Z",
+    "subjects": [
+     "fix(android): resume queued pointer pulses in owner step (#255)",
+     "fix(android): keep owner scheduler alive for deferred core work (#255)",
+     "fix(android): publish neutral touch state on window loss (#255)",
+     "fix(android): require an explicit live touch mode (#255)",
+     "fix(android): advance live touch owner tick and real picture geometry (#255)",
+     "Merge accepted integration (PR256/257 width/height interfaces)",
+     "Merge pull request #256 from n2ray/hermes/heap-snapshot-perf",
+     "Merge pull request #257 from n2ray/hermes/phone-aspect-output"
+    ]
+   },
+   {
+    "branch": "hermes/live-touch-belt-actions",
+    "ahead": 463,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T13:31:12Z",
+    "subjects": [
+     "touch: quarantine belt gestures across unknown host state",
+     "touch: disable stale belt gestures on invalid host state",
+     "test: use repo-relative touch core include",
+     "touch: route core belt requests through Android host actions",
+     "Merge pull request #264 from n2ray/hermes/live-touch-module-identity",
+     "fix(android): revalidate module identity around generic snapshot (#33)",
+     "feat(host): publish immutable loader module identity for touch provider (#33)",
+     "Merge pull request #263 from n2ray/hermes/live-touch-provider"
+    ]
+   },
+   {
     "branch": "hermes/live-touch-hud",
     "ahead": 182,
     "behind": 5,
@@ -5854,6 +6578,56 @@
     ]
    },
    {
+    "branch": "hermes/live-touch-module-identity",
+    "ahead": 458,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T13:02:59Z",
+    "subjects": [
+     "fix(android): revalidate module identity around generic snapshot (#33)",
+     "feat(host): publish immutable loader module identity for touch provider (#33)",
+     "Merge pull request #263 from n2ray/hermes/live-touch-provider",
+     "fix(android): make scene observation identity-only and fail closed (#33)",
+     "fix(android): keep object cohort unavailable in scene provider (#33)",
+     "test(android): exercise provider through existing game bridge (#33)",
+     "feat(android): feed live touch scene identity from host state (#33)",
+     "Merge pull request #261 from n2ray/hermes/character-rendering"
+    ]
+   },
+   {
+    "branch": "hermes/live-touch-provider",
+    "ahead": 448,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T12:49:01Z",
+    "subjects": [
+     "fix(android): make scene observation identity-only and fail closed (#33)",
+     "fix(android): keep object cohort unavailable in scene provider (#33)",
+     "test(android): exercise provider through existing game bridge (#33)",
+     "feat(android): feed live touch scene identity from host state (#33)",
+     "Merge pull request #258 from n2ray/hermes/live-d2r-touch",
+     "fix(android): resume queued pointer pulses in owner step (#255)",
+     "Merge pull request #260 from n2ray/hermes/host-snapshot-guard",
+     "fix(android): keep owner scheduler alive for deferred core work (#255)"
+    ]
+   },
+   {
     "branch": "hermes/lm-consumer-h2",
     "ahead": 139,
     "behind": 5,
@@ -5879,6 +6653,31 @@
      "Merge pull request #94 from n2ray/hermes/issue-72-dontcare-contract",
      "docs: clarify DontCare guest physical state",
      "fix(android): release canceled portal pointer ids (#91)"
+    ]
+   },
+   {
+    "branch": "hermes/loader-key-layout",
+    "ahead": 423,
+    "behind": 5,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-19T10:51:20Z",
+    "subjects": [
+     "test(loader): use actual 0..7 producer key indices (#249)",
+     "fix(loader): validate layout key slots before key-page writes (#249)",
+     "Merge pull request #247 from n2ray/hermes/java-package-targets",
+     "fix(android): gate installed-package readiness on module targets (#245)",
+     "Merge pull request #248 from n2ray/hermes/optional-module-create",
+     "Merge pull request #244 from n2ray/hermes/embedded-target-copy",
+     "fix(android): honor optional failure when creating shader modules",
+     "fix(android): require per-module target markers in Java package import (#245)"
     ]
    },
    {
@@ -5958,597 +6757,6 @@
      "fix(android): wire the WSI mode through the real lifecycle and frame path (#143)",
      "feat(android): explicit owned WSI diagnostic mode with a real swapchain (#143)",
      "Merge pull request #142 from n2ray/hermes/owned-swapchain"
-    ]
-   },
-   {
-    "branch": "hermes/native-gamepad",
-    "ahead": 275,
-    "behind": 5,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-18T23:11:25Z",
-    "subjects": [
-     "fix(android): retire gamepad state on touch takeover (#174)",
-     "feat(android): route physical gamepads through arbiter (#174)",
-     "Merge pull request #172 from n2ray/hermes/native-arbiter",
-     "Merge pull request #169 from n2ray/hermes/custom-preferences-store",
-     "feat(android): wire NativeActivity input to arbiter (#168)",
-     "Merge remote-tracking branch 'origin/main' into hermes/custom-preferences-store",
-     "fix(android): make preferences store nonblocking and symlink-safe (#167)",
-     "Merge pull request #164 from n2ray/hermes/audio-output-integration"
-    ]
-   },
-   {
-    "branch": "hermes/native-input-source",
-    "ahead": 258,
-    "behind": 5,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-18T22:30:00Z",
-    "subjects": [
-     "fix(android): use source-bit membership for touch dispatch (#161)",
-     "Merge remote-tracking branch 'origin/main' into hermes/native-input-source",
-     "Merge pull request #160 from n2ray/hermes/input-request-retirement",
-     "Merge remote-tracking branch 'origin/main' into hermes/input-request-retirement",
-     "fix(input): reject provider-attached request retirement before mutation (#159)",
-     "Merge pull request #158 from n2ray/hermes/custom-preferences",
-     "Merge pull request #155 from n2ray/hermes/audio-focus-policy",
-     "fix(android): gate NativeActivity touch entry by input source (#161)"
-    ]
-   },
-   {
-    "branch": "hermes/native-textured-diagnostic",
-    "ahead": 169,
-    "behind": 5,
-    "files": 280,
-    "real_files": 257,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T17:48:14Z",
-    "subjects": [
-     "feat(android): draw owned indexed-textured scene in the diagnostic app (#117)",
-     "Merge pull request #116 from n2ray/hermes/indexed-textured",
-     "fix(vulkan): bound textured dimensions before size arithmetic (#115)",
-     "test(vulkan): reject non-finite textured UV (#115)",
-     "feat(vulkan): add bounded textured indexed offscreen draw (#115)",
-     "Merge pull request #114 from n2ray/hermes/indexed-offscreen",
-     "feat(vulkan): add bounded typed indexed offscreen draw (#112)",
-     "Merge pull request #110 from n2ray/hermes/reflected-uniform"
-    ]
-   },
-   {
-    "branch": "hermes/native-wsi-diagnostic",
-    "ahead": 219,
-    "behind": 5,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx"
-    ],
-    "last_commit": "2026-10-18T20:59:27Z",
-    "subjects": [
-     "fix(android): synchronize cached window after failed WSI replacement",
-     "fix(android): identity-safe stale callbacks and error-exact WSI dispatch (#143)",
-     "fix(android): wire the WSI mode through the real lifecycle and frame path (#143)",
-     "feat(android): explicit owned WSI diagnostic mode with a real swapchain (#143)",
-     "Merge pull request #142 from n2ray/hermes/owned-swapchain",
-     "fix(android): retire enqueued out-of-date presents before recreation",
-     "fix(vulkan): complete maintenance capability and acquire proof (#141)",
-     "fix(vulkan): prove presentation completion in swapchain reuse (#141)"
-    ]
-   },
-   {
-    "branch": "hermes/owned-aaudio",
-    "ahead": 228,
-    "behind": 5,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx"
-    ],
-    "last_commit": "2026-10-18T22:07:49Z",
-    "subjects": [
-     "fix(android): retain AAudio callback owner on failed rollback close (#149)",
-     "fix(android): make AAudio teardown retryable and validate setters (#149)",
-     "fix(android): clear closed AAudio stream before retained failure return (#149)",
-     "fix(android): retire AAudio callback before close and fix host leak (#149)",
-     "feat(android): add owned AAudio PCM16 output boundary (#149)",
-     "Merge pull request #146 from n2ray/hermes/native-callback-ci",
-     "test(android): exercise active timer and actual callback routes (#145)",
-     "test(android): cover actual native callback dispatch (#145)"
-    ]
-   },
-   {
-    "branch": "hermes/owned-swapchain",
-    "ahead": 214,
-    "behind": 5,
-    "files": 300,
-    "real_files": 292,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T20:36:19Z",
-    "subjects": [
-     "fix(android): retire enqueued out-of-date presents before recreation",
-     "fix(vulkan): complete maintenance capability and acquire proof (#141)",
-     "fix(vulkan): prove presentation completion in swapchain reuse (#141)",
-     "test(vulkan): cover extent clamping in owned swapchain (#141)",
-     "feat(vulkan): add bounded owned swapchain frames (#141)",
-     "Merge pull request #140 from n2ray/hermes/present-init",
-     "fix(vulkan): enable advertised portability subset for present init (#139)",
-     "feat(vulkan): add opt-in present-aware initialization (#139)"
-    ]
-   },
-   {
-    "branch": "hermes/plan-failures",
-    "ahead": 202,
-    "behind": 5,
-    "files": 300,
-    "real_files": 288,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T19:45:32Z",
-    "subjects": [
-     "test(vulkan): broaden plan failure injection matrix (#137)",
-     "test(vulkan): cover colored/textured plan failure rollback (#137)",
-     "Merge pull request #134 from n2ray/hermes/textured-interface",
-     "test(vulkan): fail cross-kind check when canvas changes",
-     "fix(vulkan): reject cross-kind graphics plans before Vulkan (#133)",
-     "feat(vulkan): validate textured UV and sampler plan (#133)",
-     "Merge pull request #130 from n2ray/hermes/graphics-interface",
-     "Merge pull request #132 from n2ray/hermes/diagnostic-provenance"
-    ]
-   },
-   {
-    "branch": "hermes/platform-audio-focus",
-    "ahead": 268,
-    "behind": 5,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-18T22:58:23Z",
-    "subjects": [
-     "fix(android): enforce main-looper focus ownership, drop staging queue (#170)",
-     "fix(android): real delayed-focus opt-in and enforced focus ownership publication (#170)",
-     "feat(android): real AudioManager focus boundary packaged in the APK (#170)",
-     "Merge pull request #164 from n2ray/hermes/audio-output-integration",
-     "fix(android): retire a disconnected AAudio stream on explicit replay (#163)",
-     "Merge pull request #166 from n2ray/hermes/input-source-view",
-     "Merge pull request #162 from n2ray/hermes/native-input-source",
-     "feat(input): add arbiter view and atomic geometry (#165)"
-    ]
-   },
-   {
-    "branch": "hermes/portal-bridge",
-    "ahead": 137,
-    "behind": 5,
-    "files": 242,
-    "real_files": 223,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T16:26:50Z",
-    "subjects": [
-     "fix(android): disable latent portal on provider attach (#98)",
-     "feat(android): expose key-bound portal through touch bridge (#98)",
-     "Merge pull request #93 from n2ray/hermes/issue-91-portal-adapter",
-     "Merge pull request #94 from n2ray/hermes/issue-72-dontcare-contract",
-     "docs: clarify DontCare guest physical state",
-     "fix(android): release canceled portal pointer ids (#91)",
-     "docs: correct DontCare guest-core model scope",
-     "Merge pull request #92 from n2ray/hermes/issue-73-apm-outparam"
-    ]
-   },
-   {
-    "branch": "hermes/present-init",
-    "ahead": 208,
-    "behind": 5,
-    "files": 300,
-    "real_files": 289,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T20:02:29Z",
-    "subjects": [
-     "fix(vulkan): enable advertised portability subset for present init (#139)",
-     "feat(vulkan): add opt-in present-aware initialization (#139)",
-     "Merge pull request #138 from n2ray/hermes/plan-failures",
-     "test(vulkan): broaden plan failure injection matrix (#137)",
-     "test(vulkan): cover colored/textured plan failure rollback (#137)",
-     "Merge pull request #136 from n2ray/hermes/clean-apk-provenance",
-     "docs(android): clarify APK hash and signing trust boundaries",
-     "docs(android): record a real clean-tree APK build and sidecar verification (#135)"
-    ]
-   },
-   {
-    "branch": "hermes/reflected-sampling",
-    "ahead": 149,
-    "behind": 5,
-    "files": 252,
-    "real_files": 232,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T17:02:36Z",
-    "subjects": [
-     "test(vulkan): count every owned object in sampled cleanup oracle (#105)",
-     "fix(vulkan): restrict sampled type and cover post-preflight cleanup (#105)",
-     "feat(vulkan): reflected sampled-2D compute consumer (#105)",
-     "Merge pull request #104 from n2ray/hermes/subresource-rows",
-     "test(vulkan): require nonzero Y in subresource row paths (#103)",
-     "test(vulkan): cover nonzero mip/layer row update and readback (#103)",
-     "Merge pull request #100 from n2ray/hermes/lm-consumer-h2",
-     "Merge pull request #99 from n2ray/hermes/portal-bridge"
-    ]
-   },
-   {
-    "branch": "hermes/reflected-uniform",
-    "ahead": 156,
-    "behind": 5,
-    "files": 259,
-    "real_files": 238,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T17:16:24Z",
-    "subjects": [
-     "fix(vulkan): reject malformed OpTypeInt and truncated sidecar counts (#109)",
-     "feat(vulkan): add fixed-layout uniform compute consumer (#109)",
-     "Merge pull request #107 from n2ray/hermes/reflected-sampling",
-     "test(vulkan): count every owned object in sampled cleanup oracle (#105)",
-     "fix(vulkan): restrict sampled type and cover post-preflight cleanup (#105)",
-     "feat(vulkan): reflected sampled-2D compute consumer (#105)",
-     "Merge pull request #102 from n2ray/hermes/inventory-adapter-tests",
-     "fix(android): let observed timed hold expire in a full queue (#101)"
-    ]
-   },
-   {
-    "branch": "hermes/required-java-ci",
-    "ahead": 279,
-    "behind": 5,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-18T23:08:57Z",
-    "subjects": [
-     "fix(ci): install Android platform without a SIGPIPE-prone yes pipeline (#176)",
-     "ci: mandatory real-android.jar Java compile and focus host controls (#176)",
-     "Merge pull request #171 from n2ray/hermes/platform-audio-focus",
-     "fix(android): enforce main-looper focus ownership, drop staging queue (#170)",
-     "Merge pull request #172 from n2ray/hermes/native-arbiter",
-     "fix(android): real delayed-focus opt-in and enforced focus ownership publication (#170)",
-     "Merge pull request #169 from n2ray/hermes/custom-preferences-store",
-     "feat(android): wire NativeActivity input to arbiter (#168)"
-    ]
-   },
-   {
-    "branch": "hermes/shader-test-isolation",
-    "ahead": 32,
-    "behind": 5,
-    "files": 179,
-    "real_files": 173,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T09:14:29Z",
-    "subjects": [
-     "test(gfx): isolate build-test sandboxes across in-process suites (#48)",
-     "Merge pull request #47 from n2ray/hermes/issue-12-contract-gate",
-     "Merge pull request #46 from n2ray/hermes/issue-32-touch-adapter",
-     "test(android): cover pulse arrival during touch release",
-     "fix(gfx): stage finish() outputs per key and commit only when all stages pass (#12)",
-     "fix(android): hold touch pulse release across ticks",
-     "fix(android): preserve ordered pending touch pulses",
-     "fix(gfx): make the build gate fail honestly, restore only after validation (#12)"
-    ]
-   },
-   {
-    "branch": "hermes/subresource-rows",
-    "ahead": 145,
-    "behind": 5,
-    "files": 244,
-    "real_files": 225,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T16:44:57Z",
-    "subjects": [
-     "test(vulkan): require nonzero Y in subresource row paths (#103)",
-     "test(vulkan): cover nonzero mip/layer row update and readback (#103)",
-     "Merge pull request #100 from n2ray/hermes/lm-consumer-h2",
-     "Merge pull request #99 from n2ray/hermes/portal-bridge",
-     "fix(lm): hold consumer lifetime guard and reject competing take (#96)",
-     "fix(android): disable latent portal on provider attach (#98)",
-     "feat(lm): bounded host consumer with retained retry and backpressure (#96)",
-     "feat(android): expose key-bound portal through touch bridge (#98)"
-    ]
-   },
-   {
-    "branch": "hermes/textured-interface",
-    "ahead": 199,
-    "behind": 5,
-    "files": 300,
-    "real_files": 288,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T19:31:18Z",
-    "subjects": [
-     "test(vulkan): fail cross-kind check when canvas changes",
-     "fix(vulkan): reject cross-kind graphics plans before Vulkan (#133)",
-     "feat(vulkan): validate textured UV and sampler plan (#133)",
-     "Merge pull request #130 from n2ray/hermes/graphics-interface",
-     "Merge pull request #132 from n2ray/hermes/diagnostic-provenance",
-     "fix(vulkan): bound function type parameter count (#125)",
-     "fix(android): enforce provenance sidecar identity schema (#131)",
-     "fix(vulkan): validate entry definition and bounds (#125)"
-    ]
-   },
-   {
-    "branch": "hermes/touch-hud-observation",
-    "ahead": 176,
-    "behind": 5,
-    "files": 286,
-    "real_files": 263,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T17:58:58Z",
-    "subjects": [
-     "feat(android): add read-only HUD observation seam (#119)",
-     "Merge pull request #118 from n2ray/hermes/native-textured-diagnostic",
-     "feat(android): draw owned indexed-textured scene in the diagnostic app (#117)",
-     "Merge pull request #113 from n2ray/hermes/touch-hud-offscreen",
-     "test(android): replace self-accounting with Vulkan lifecycle mocks (#111)",
-     "Merge pull request #116 from n2ray/hermes/indexed-textured",
-     "fix(vulkan): bound textured dimensions before size arithmetic (#115)",
-     "test(vulkan): reject non-finite textured UV (#115)"
-    ]
-   },
-   {
-    "branch": "hermes/touch-hud-offscreen",
-    "ahead": 163,
-    "behind": 5,
-    "files": 258,
-    "real_files": 238,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T17:43:59Z",
-    "subjects": [
-     "test(android): replace self-accounting with Vulkan lifecycle mocks (#111)",
-     "test(android): include command buffer in HUD ownership accounting (#111)",
-     "fix(android): propagate HUD render errors and bound preflight (#111)",
-     "feat(android): first offscreen native touch HUD geometry (#111)",
-     "Merge pull request #108 from n2ray/hermes/item-use-identity",
-     "fix(android): freeze USE source coordinates at generation (#106)",
-     "fix(android): bind USE identity to immutable gesture token (#106)",
-     "Merge pull request #107 from n2ray/hermes/reflected-sampling"
-    ]
-   },
-   {
-    "branch": "hermes/touch-invalid-reasons",
-    "ahead": 188,
-    "behind": 5,
-    "files": 290,
-    "real_files": 267,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T18:57:18Z",
-    "subjects": [
-     "feat(android): add bounded invalid touch reasons (#128)",
-     "Merge pull request #127 from n2ray/hermes/diagnostic-landscape",
-     "feat(android): declare sensorLandscape for the diagnostic Activity (#126)",
-     "Merge pull request #124 from n2ray/hermes/xiaomi-window-format",
-     "fix(android): negotiate RGBA_8888 Surface geometry before acquiring it (#123)",
-     "Merge pull request #122 from n2ray/hermes/live-touch-hud",
-     "fix(android): retain external HUD redraw before fallible work",
-     "fix(android): compose HUD on external redraw and ack after post (#121)"
-    ]
-   },
-   {
-    "branch": "hermes/wsi-evidence-report",
-    "ahead": 227,
-    "behind": 5,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx"
-    ],
-    "last_commit": "2026-10-18T21:49:33Z",
-    "subjects": [
-     "fix(android): retain distinct terminal failures and reset recovered retries",
-     "fix(android): single failure episode and real-open attempt accounting (#147)",
-     "fix(android): faithful WSI failure evidence and single-count lifecycle transitions (#147)",
-     "feat(android): bounded WSI evidence reports for the explicit diagnostic (#147)",
-     "Merge pull request #146 from n2ray/hermes/native-callback-ci",
-     "test(android): exercise active timer and actual callback routes (#145)",
-     "test(android): cover actual native callback dispatch (#145)",
-     "Merge pull request #144 from n2ray/hermes/native-wsi-diagnostic"
-    ]
-   },
-   {
-    "branch": "hermes/xiaomi-window-format",
-    "ahead": 184,
-    "behind": 5,
-    "files": 290,
-    "real_files": 267,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T18:41:58Z",
-    "subjects": [
-     "fix(android): negotiate RGBA_8888 Surface geometry before acquiring it (#123)",
-     "Merge pull request #122 from n2ray/hermes/live-touch-hud",
-     "fix(android): retain external HUD redraw before fallible work",
-     "fix(android): compose HUD on external redraw and ack after post (#121)",
-     "test(android): cover coalesced/lifecycle CPU HUD scheduling (#121)",
-     "fix(android): harden CPU HUD overlay clipping and scheduling (#121)",
-     "feat(android): wire live observation into diagnostic HUD (#121)",
-     "Merge pull request #120 from n2ray/hermes/touch-hud-observation"
-    ]
-   },
-   {
-    "branch": "main",
-    "ahead": 305,
-    "behind": 5,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T04:48:03Z",
-    "subjects": [
-     "Merge pull request #188 from n2ray/hermes/ime-activity-host",
-     "Merge pull request #186 from n2ray/hermes/controller-hotplug",
-     "fix(android): roll back focus refusal and hide failures (#187)",
-     "fix(android): use activity classloader in hotplug JNI (#183)",
-     "feat(android): host accepted text editor in Activity content (#187)",
-     "Merge pull request #181 from n2ray/hermes/ime-view",
-     "fix(android): enforce hotplug owner and retry release (#183)",
-     "docs(android): correct text editor cursor contract (#179)"
     ]
    }
   ]
@@ -6645,21 +6853,21 @@
   ]
  },
  "armyja/nxnative-aa-port": {
-  "pushed_at": "2026-10-18T15:12:52Z",
+  "pushed_at": "2026-10-19T13:03:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T15:12:49Z",
+    "last_commit": "2026-10-19T13:03:33Z",
     "subjects": [
-     "docs: add Ace Attorney 456 bring-up notes; link from FORK-NOTES",
-     "去掉注释中的游戏 UI 文案与本地绝对路径；补充 fork 说明（存档修复、XCI 支持）",
-     "本地：456(Apollo Justice Trilogy) 临时档案 + nx_extract 的 XCI 支持",
-     "本地：AA 存档日期注入改用本机时区（localtime tm_gmtoff），不再显示 UTC",
-     "本地：AA 存档日期注入尝试（门桩回写 DateTime，宿主真实时间）；nn::time 真实初始化实验（默认关闭）",
-     "本地：修好 CUTS 表结构并保留 AA 存档修复说明",
-     "本地修复：AA 存档/读档 —— DateTime.Now 强制走时区差重算分支（绕开空缓存空引用）；宿主兜底默认关闭",
-     "本地：AA get_Now 时间值观测门（定位到 guest 当前时间返回 0 导致时区缓存空引用）"
+     "NVN: bind device-pointer buffers larger than one 4 MB mapping as one flat run",
+     "NVN: resolve pointer-style uniform bindings from the staging copy; frame tag on indirect draws",
+     "Mac window: fullscreen (green button, Command-F, menu) and no phantom focus loss",
+     "AGENTS.md: commit as the repository owner (armyja), not the upstream identity",
+     "gitignore: stray diagnostic output redirected into the repository root",
+     "NVN: staged uniform updates fix the picture (argument tables are re-encoded when a staged update lands)",
+     "NVN: CPU-side uniform readers prefer the staged copy (still behind DM_UB_STAGE)",
+     "NVN (experimental, off by default): DM_UB_STAGE binds the staged uniform copy"
     ]
    }
   ]
@@ -6737,21 +6945,21 @@
   ]
  },
  "reacher-z/Awesome-REA": {
-  "pushed_at": "2026-10-18T20:08:24Z",
+  "pushed_at": "2026-10-19T13:29:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-18T20:08:22Z",
+    "last_commit": "2026-10-19T13:32:24Z",
     "subjects": [
-     "Add the TypeForge composite type recovery paper (#781)",
-     "Curate the Animal Crossing: Wild World DS decompilation case (#780)",
-     "Add the BAR 2026 agent failure-pattern study of CTF reverse engineering (#779)",
-     "Curate the SpaghettiKart Mario Kart 64 native port case (#778)",
-     "Add the Debin debug-information recovery paper (#777)",
-     "Curate the P.T. PC engine reimplementation case (#767)",
-     "Curate the TonyWasAProSkater THPS1 decompilation and port case (#766)",
-     "Add the Coda neural decompiler paper (#765)"
+     "Distinguish official from community REA tags and add a README tag legend (#939)",
+     "Show targets outside an entry's section on README metadata lines (#933)",
+     "Resolve the batch 25 post-only case leads as insufficient evidence (#931)",
+     "Resolve the r/recomps AI workflow discussion lead as insufficient evidence (#927)",
+     "Resolve the batch 17 post-only case leads (#923)",
+     "Resolve the batch 23 post-only case leads as insufficient evidence (#918)",
+     "Record the current release version and date in CITATION.cff (#914)",
+     "Curate the decomp-compat-kit verification tool (#912)"
     ]
    }
   ]
@@ -6812,7 +7020,7 @@
   ]
  },
  "Nishikori-Yui/lordran-native": {
-  "pushed_at": "2026-10-18T23:07:16Z",
+  "pushed_at": "2026-10-19T12:05:29Z",
   "branches": [
    {
     "branch": "main",
@@ -6832,11 +7040,11 @@
   ]
  },
  "kxn/d2r-mobile": {
-  "pushed_at": "2026-10-19T04:44:16Z",
+  "pushed_at": "2026-10-19T13:26:29Z",
   "branches": [
    {
     "branch": "codex/android-native-backup-20261019",
-    "ahead": 23,
+    "ahead": 46,
     "behind": 12,
     "files": 300,
     "real_files": 299,
@@ -6844,22 +7052,42 @@
      "AGENTS.md",
      "dm/android",
      "dm/gfx",
-     "dm/host",
-     "dm/i18n",
-     "dm/ios",
-     "dm/runtime",
-     "dm/third_party"
+     "dm/host"
     ],
-    "last_commit": "2026-10-19T04:43:26Z",
+    "last_commit": "2026-10-19T13:20:41Z",
     "subjects": [
-     "Abandon unexecuted shader requests when retrying attachment consumers",
-     "Share source loads between direct GPU uploads and CPU shadows",
-     "Preserve local ordering across proved attachment subpasses",
-     "Link standalone Vulkan tests with the embedded oracle hooks",
-     "Keep cold launch tools from stopping an existing user game",
-     "Verify empty pixel-local fallbacks without redundant shader analysis",
-     "Copy only initialized pool pages during backing migration",
-     "Add guarded pixel-local Vulkan subpass rendering"
+     "Preclassify immutable shader pool bindings before draw admission",
+     "Reclaim completed idle GPU buffers on Android memory pressure",
+     "Avoid CPU-source helper work when deferred publication is disabled",
+     "Add a cold experiment for demand-driven GPU pool publication",
+     "Share loop bookkeeping across paired dirty-page blocks",
+     "Reuse texture dirty proofs across unrelated pool writes",
+     "Reuse exact backing mapping for sparse CPU page uploads",
+     "Avoid shader stage setup on PSO cache hits and retain NVN pool intent"
+    ]
+   },
+   {
+    "branch": "codex/shared-guest-allocation-v1",
+    "ahead": 46,
+    "behind": 12,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-19T13:26:26Z",
+    "subjects": [
+     "Add bounded mapped guest memory owner and borrowed buffer API",
+     "Reclaim completed idle GPU buffers on Android memory pressure",
+     "Avoid CPU-source helper work when deferred publication is disabled",
+     "Add a cold experiment for demand-driven GPU pool publication",
+     "Share loop bookkeeping across paired dirty-page blocks",
+     "Reuse texture dirty proofs across unrelated pool writes",
+     "Reuse exact backing mapping for sparse CPU page uploads",
+     "Avoid shader stage setup on PSO cache hits and retain NVN pool intent"
     ]
    }
   ]
@@ -6887,21 +7115,21 @@
   ]
  },
  "iceorange-dev/manosaba-ios": {
-  "pushed_at": "2026-10-19T04:21:43Z",
+  "pushed_at": "2026-10-19T04:53:05Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-19T04:16:08Z",
+    "last_commit": "2026-10-19T04:27:55Z",
     "subjects": [
+     "Plan: nxnative after 2b31dbd as items 73-77, before Tier 2",
+     "t_sleep: precision bounds unchecked on a machine with coarse timers",
      "Plan batch 4: tooling and diagnostics items 28-35 of the wider review",
      "Plan batch 3: iOS and Mac items 19-27 of the wider review",
      "Plan batch 2: performance items 13-18 of the wider review",
      "Plan batch 1: correctness items 1-12 of the wider review",
      "Docs: the wider review of the references, and a plan for all of it, simple to complex",
-     "LICENSE: copyright line for this fork's own work, next to d2r-mobile's",
-     "Docs: links for every acknowledgement, Tears of the Kingdom's status, SDK wording paraphrased",
-     "Docs: the 2026-10-19 review and what was ported from it"
+     "LICENSE: copyright line for this fork's own work, next to d2r-mobile's"
     ]
    }
   ]
@@ -6951,6 +7179,155 @@
      "Compile the startup shaders into the app when the Metal toolchain is present",
      "Merge pull request #3 from huahuahuahuahuahuahuahua/fix/totk-rendering-textures",
      "Add Command-Q to quit TOTK through save-aware window close"
+    ]
+   }
+  ]
+ },
+ "beginor/d2r-mobile": {
+  "pushed_at": "2026-10-19T08:58:04Z",
+  "branches": []
+ },
+ "bluewater0121/d2r-mobile-a12z": {
+  "pushed_at": "2026-10-19T11:39:07Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-18T00:42:33Z",
+    "subjects": [
+     "docs: iOS build/run operations (shader library build, chain version, c1 list, device modes)",
+     "iPad Pro 2020 (A12Z) support: per-slot binding shader mode, GPU-based library selection",
+     "iOS audio: mix with other apps instead of interrupting them (#77)",
+     "README: 4 GB devices now start and run, with very tight memory (player test on iPad mini 6)",
+     "Packaging: reserve a code-signature area in Guest so LiveContainer can sign it (#76)",
+     "Touch controls: brighter rim on empty skill slots (#74 follow-up)",
+     "New touch controls look and layout, adopted community fixes, diagnostics",
+     "Fix native iPhone fullscreen and supported-game startup (#73)"
+    ]
+   }
+  ]
+ },
+ "amwje315/d2r-mobile-build": {
+  "pushed_at": "2026-10-19T07:49:35Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-19T07:38:54Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "LuciDuan/123": {
+  "pushed_at": "2026-10-19T10:15:37Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-19T10:09:20Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "Chcolate1412/123": {
+  "pushed_at": "2026-10-19T05:23:32Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-19T05:23:32Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "huajiaoshu520/acnh-mobile": {
+  "pushed_at": "2026-10-19T11:34:09Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-19T11:28:43Z",
+    "subjects": [
+     "Fix missing app icon in public shell builds",
+     "Allow Actions to build and publish a new release tag",
+     "Enable native ACNH movie playback by default",
+     "Explain automatic Releases publication in READMEs",
+     "Document automatic release publication",
+     "Automatically publish complete game-free shell releases",
+     "Build game-free iOS shells with GitHub Actions",
+     "Explain missing owned program before shell startup"
+    ]
+   }
+  ]
+ },
+ "Liliallen/ZR-runtime": {
+  "pushed_at": "2026-10-19T13:04:26Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-19T13:01:05Z",
+    "subjects": [
+     "ZR-runtime: initial import (based on Ryubing 1.3.3)"
+    ]
+   }
+  ]
+ },
+ "OJZen/totk-mobile": {
+  "pushed_at": "2026-10-19T09:56:13Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-19T09:55:54Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "mdhskiy/test": {
+  "pushed_at": "2026-10-19T12:42:13Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-19T12:41:08Z",
+    "subjects": [
+     "nvn: implement nvnTextureGetStride / nvnTextureBuilderGetStride (D3 asks on every texture; the red stub answered 0)",
+     "pctl: answer CheckFreeCommunicationPermission (D3 asks at startup; no pctl service -> ipc assert + Break#1)",
+     "d3rm_pack: dedupe manifest entries, write dm/pack_info.txt",
+     "shell_build: braces around variables followed by full-width punctuation (set -u + C locale broke on $OUT（); CI: tee the script output for the failure summary",
+     "CI: macos-26 image + newest Xcode (iOS 26 SDK; macos-15 defaults to Xcode 16.4)",
+     "shell build on CI: fontTools in a venv (PEP 668), xcodegen retry, font fallback, failure diagnostics in the run summary",
+     "D3: CPK shader source, Windows portability fixes, shell build + Windows packer",
+     "Super Mario Galaxy: profile 010099C022B96000 (1.3.1, SDK 18); plays on the Mac"
+    ]
+   }
+  ]
+ },
+ "JackyTTT0306/acnh-ios2": {
+  "pushed_at": "2026-10-19T13:22:05Z",
+  "branches": [
+   {
+    "branch": "acnh",
+    "mirror": false,
+    "last_commit": "2026-10-19T13:31:29Z",
+    "subjects": [
+     "acnh rewriter: second OBS_TRACE probe at main+0x197bb20 (object factory entry)",
+     "acnh host: trace_cb walks the x29 chain (regs[30] is the gate return point, not guest lr)",
+     "acnh host: add OBS_TRACE probe (rewriter observation gate at init-chain entry)",
+     "acnh host: take over the 9 remaining nn::account imports (offline semantics)",
+     "acnh host: log every svc under DM_SVC (find the call right before the crash)",
+     "run workflow: fetch romfs_start.zip and set DM_ROMFS",
+     "acnh host: drop duplicate oe::Initialize (hle_sdkinit.c owns it)",
+     "acnh host: implement nn::oe (19 imports) and nn::settings LanguageCode with offline defaults"
     ]
    }
   ]
