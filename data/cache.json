@@ -340,36 +340,36 @@
   ]
  },
  "n3crosis/d2r-mobile": {
-  "pushed_at": "2026-10-20T08:32:14Z",
+  "pushed_at": "2026-10-20T14:21:20Z",
   "branches": [
    {
     "branch": "feature/web-ipa-packager",
-    "ahead": 14,
+    "ahead": 51,
     "behind": 0,
-    "files": 153,
-    "real_files": 143,
+    "files": 300,
+    "real_files": 297,
     "dirs": [
      "web/.gitignore",
-     "web/.prettierignore",
-     "web/.prettierrc.json",
+     "web/.oxfmtrc.json",
+     "web/.oxlintrc.json",
      "web/ARCHIVE_READER_SCOPE.md",
+     "web/ASSET_GENERATOR_ADAPTER_SCOPE.md",
+     "web/ASSET_PIPELINE_ADAPTER_SCOPE.md",
+     "web/CASC_LOGICAL_READER_SCOPE.md",
      "web/CHECKSUM_VERIFIER_SCOPE.md",
      "web/CONTENT_SELECTION_SCOPE.md",
-     "web/DEPENDENCY_SECURITY.md",
-     "web/LARGE_OUTPUT_SCOPE.md",
-     "web/NSO_VALIDATION_SCOPE.md",
-     "web/NSP_INPUT_SCOPE.md"
+     "web/D2R_RUNTIME_CONTENT_MODE.md"
     ],
-    "last_commit": "2026-10-20T08:32:05Z",
+    "last_commit": "2026-10-20T14:21:16Z",
     "subjects": [
-     "Upgrade Actions to Node 24 and add bounded texture, ZIP reader and large-output pipelines",
-     "Implement parallel browser toolchains, content and shell contracts, and simplified folder UI",
-     "Add single-folder NSP/key preflight UI and browser resource checksum integration",
-     "Publish shader harness through WebAssembly static web assets and expose bounded layout diagnostics",
-     "Add bounded archive decoding and legacy NSO integrity validation with synthetic oracles",
-     "Gate shader spike on real Chromium execution and independent native parity",
-     "Adopt audited dependency lock and restore strict reproducible CI installs",
-     "Repair isolated shader dependency closure and regenerate reviewed security pins in CI"
+     "Replace browser Python runtime with source-pinned JavaScript and standalone WASM",
+     "Accept padded key sources and full patch CNMT delta records",
+     "Apply repository format to native key-parser regression",
+     "Accept standard RSA-sized prod key lines without native parser fragmentation",
+     "Apply repository C formatting profile to extraction boundary",
+     "Format native missing-title-key diagnostic comment",
+     "Add safe packaging diagnostics and accept optional title keys",
+     "Fix image-kernel build script lint and repository formatting"
     ]
    },
    {
@@ -405,14 +405,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-20T06:18:41Z",
+  "pushed_at": "2026-10-20T14:12:41Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 173,
+    "ahead": 181,
     "behind": 22,
-    "files": 203,
-    "real_files": 198,
+    "files": 205,
+    "real_files": 200,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -421,16 +421,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-20T06:18:02Z",
+    "last_commit": "2026-10-20T14:12:29Z",
     "subjects": [
-     "Isolate guarded P5R same-target render-pass continuation",
-     "Remove the experimental guest font hooks from the stable build",
-     "Allow P5R to opt into the TBDR pass optimisations",
-     "Add a depth-bounds-off switch for the flicker test",
-     "Hook the font engine's load/set/glyph entry points",
-     "Use sys_icache_invalidate for the guest jump patch",
-     "Hook the guest's nn::pl font entry points with a host jump",
-     "Log every draw of the census frame"
+     "Skip the atlas readback on the Metal 4 backend",
+     "Use the cross-backend blit helper for the atlas readback",
+     "Build the P5R shell against the Metal 4 backend for a performance comparison",
+     "Keep vibration disabled until the hid service session exists",
+     "Add CoreHaptics HD rumble for P5R vibration values",
+     "Log the P5R pass options at first submit",
+     "Share CPU-updated RGBA8 glyph textures with guest linear storage",
+     "Prove P5R combined bindings read-only and use production reflection in tests"
     ]
    },
    {
@@ -516,19 +516,22 @@
   "branches": []
  },
  "tkcoliver-glitch/d2r-mobile": {
-  "pushed_at": "2026-10-15T08:11:37Z",
+  "pushed_at": "2026-10-20T12:36:51Z",
   "branches": [
    {
     "branch": "dev",
-    "ahead": 5,
-    "behind": 2,
-    "files": 13,
-    "real_files": 13,
+    "ahead": 6,
+    "behind": 19,
+    "files": 20,
+    "real_files": 20,
     "dirs": [
-     "dm/host"
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
     ],
-    "last_commit": "2026-10-15T08:11:33Z",
+    "last_commit": "2026-10-20T12:29:50Z",
     "subjects": [
+     "feat(ios): add bulk attribute allocation menu",
      "fix(input): await confirmed off-hand weapon swap",
      "fix(ui): restore minimap after first-clear act cinematics",
      "chore(diagnostics): record automap visibility transitions",
@@ -1064,7 +1067,7 @@
   "branches": []
  },
  "dodola/d2r-mobile": {
-  "pushed_at": "2026-10-20T01:36:48Z",
+  "pushed_at": "2026-10-20T14:05:02Z",
   "branches": [
    {
     "branch": "codex/android-measured-optimizations",
@@ -1120,26 +1123,25 @@
    },
    {
     "branch": "main",
-    "ahead": 69,
+    "ahead": 73,
     "behind": 4,
     "files": 300,
     "real_files": 298,
     "dirs": [
      "DESIGN.md",
      "dm/android",
-     "dm/gfx",
-     "dm/host"
+     "dm/gfx"
     ],
-    "last_commit": "2026-10-20T01:07:56Z",
+    "last_commit": "2026-10-20T13:16:16Z",
     "subjects": [
+     "Improve Android launcher flow and launch settings",
+     "feat(android): load prepared MOD packs and reveal current map",
+     "feat(android): add opt-in QA console with isolated saves",
+     "perf(android): port checked texture uploads from android-integration",
      "feat(android): default the offline release to the bundled Turnip driver on Qualcomm",
      "docs(android): record the shader lookup fix, Turnip comparison and 94012 offline release mode",
      "tools(android): add a diagnostics-only --debuggable offline release build",
-     "perf(android): memoize full-code shader identity lookups",
-     "feat(android): build the game 94012 offline release chain",
-     "fix(android): treat texture id 0xfffff as an unbound shader texture",
-     "tools(android): bias the game driver's exploration west; record combat and respawn results",
-     "docs(android): record in-game panel and save-and-exit round trip verification"
+     "perf(android): memoize full-code shader identity lookups"
     ]
    }
   ]
@@ -1537,12 +1539,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-20T05:04:31Z",
+  "pushed_at": "2026-10-20T11:53:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T05:04:30Z",
+    "last_commit": "2026-10-20T11:53:05Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1617,41 +1619,41 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-20T08:22:22Z",
+  "pushed_at": "2026-10-20T13:36:05Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T08:22:20Z",
+    "last_commit": "2026-10-20T13:35:58Z",
     "subjects": [
+     "README: Unicorn Overlord moves to the playable table (on an iPhone)",
+     "Unicorn Overlord boots on the Mac: Vanillaware profile, multi-stream Opus C interface, CSRNG, alloc_big_align",
+     "README: Hades II moves to the playable table (on an iPhone)",
+     "Hades II boots on the Mac: NVN profile, texture slots up to 34, SDK 19's nn::ro::LoadModule",
+     "README: Ace Attorney Investigations Collection moves to the playable table (on an iPhone)",
+     "Ace Attorney Investigations Collection boots on the Mac: Unity 2022 shaders, the C library's file checks and clock",
      "Frame step: a hold raised for late frames keeps the 60 fps real-time deadline",
-     "Hyrule Warriors: Age of Calamity runs at 60 fps; battles convert only the vertices each draw reads",
-     "Breath of the Wild: the second BC4 encoder builds; grass reads its integer-as-float attribute",
-     "Unity clocks start: the user clock context comes from the host (from PR #14)",
-     "README: Monster Hunter Rise moves to the playable table (60 fps on an iPhone)",
-     "README: Monster Hunter Rise runs at 60 fps on an iPhone",
-     "Logs: dropped frames judged by each frame's own hold; the D2R render-scale line only on request",
-     "Tears of the Kingdom and Breath of the Wild: draws into BC textures and draws with no target (from PR #11)"
+     "Hyrule Warriors: Age of Calamity runs at 60 fps; battles convert only the vertices each draw reads"
     ]
    }
   ]
  },
  "ForceMind/Game2Mobile": {
-  "pushed_at": "2026-10-20T08:09:54Z",
+  "pushed_at": "2026-10-20T10:29:12Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T08:09:54Z",
+    "last_commit": "2026-10-20T10:29:12Z",
     "subjects": [
+     "Merge pull request #14 from ForceMind/fix/device-run-evidence-20261020",
+     "fix(ios): preserve explicit watchdog log-collection workflows",
+     "fix(ios): bind device-run completion to the launched process and fresh logs",
      "Merge pull request #13 from ForceMind/fix/product-cache-20261020",
      "fix(build): reject incomplete or stale rewritten-module caches",
      "Merge pull request #12 from ForceMind/fix/ios-build-staging-20261020",
      "fix(ios): stop on staging failures and support portable resource copies",
-     "Merge pull request #11 from ForceMind/fix/m1-input-provenance-20261019",
-     "fix(m1): preserve selected inputs and verify source provenance across stages",
-     "M1: compile all 17 iOS frontends on both Apple targets and repair iOS18 APIs",
-     "M1: verify complete iPhoneOS shader cache before setup and Xcode game build"
+     "Merge pull request #11 from ForceMind/fix/m1-input-provenance-20261019"
     ]
    }
   ]
@@ -1697,14 +1699,14 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-20T04:48:52Z",
+  "pushed_at": "2026-10-20T11:34:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T04:48:51Z",
+    "last_commit": "2026-10-20T11:34:15Z",
     "subjects": [
-     "chore: 自动同步 Star 地图（184 个项目）",
+     "chore: 自动同步 Star 地图（185 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
@@ -1725,12 +1727,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-20T00:27:57Z",
+  "pushed_at": "2026-10-20T08:42:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T00:27:56Z",
+    "last_commit": "2026-10-20T08:42:19Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -3513,21 +3515,21 @@
   ]
  },
  "yokeyhh/switch-port-to-apple": {
-  "pushed_at": "2026-10-20T06:43:58Z",
+  "pushed_at": "2026-10-20T12:58:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T06:43:55Z",
+    "last_commit": "2026-10-20T14:22:14Z",
     "subjects": [
+     "skill v15: a constant-valued post-process is either shader-computed or clear-value; check the input atlas is empty and whether its producer pass is scene-gated; DM_NVN_CBHEX for deep cbuffer slots",
+     "skill v14: identical input that yields different frames means undefined content; measure UI rectangles; self-test on-screen controls; TF guard covers index/indirect buffers",
+     "v13: a downscaled screenshot is not evidence — the same \"tiling\" artifact was misread twice, in opposite directions; pixel-diff, 1-D autocorrelation of a high-passed text row, and a 2x crop of a small strip",
+     "v12: \"exploded model\" = rasterizer discard ignored + a transform-feedback buffer nobody wrote; skip draws that read it, and treat an all-zero diagnostic as an ABI bug first",
+     "v11: input nulling (zero one input to measure its share), prove a value is unused on both GPU and CPU before calling it missing, rebuild a missing exposure stage from the tone curve's own middle-grey units, match constants by value not index",
      "v10: measure a washed-out frame (HDR median/p99/clipped + displayed range vs a known-good scene), exposure baked into c1 vs dead 1x1 auto-exposure, clear-only passes are usually not host bugs",
      "v9: shared-font BFTTF header vs raw TTF (CJK-only null deref), read-range proof, on-screen controls",
-     "v8: raw-dump lane-0 is not a decoder (trust the PNG); sampling your own depth attachment is UB; add totk-mobile as a second reference",
-     "v7: fragment output type class vs integer attachments (fout); raw-dump rowBytes trap; prove the tonemap before blaming it",
-     "v6: NVN texture-view STENCIL mode (sampling a stencil plane) - Metal can't, mirror it; the depth-LSB stripes it causes",
-     "v5: layer-range bug (renderTargetArrayLength) that blackens whole scenes; how to diagnose a black scene",
-     "v4: runtime-constructed shaders + HLE/input pitfalls",
-     "Add runnable scripts/ toolkit; correct c1 semantics"
+     "v8: raw-dump lane-0 is not a decoder (trust the PNG); sampling your own depth attachment is UB; add totk-mobile as a second reference"
     ]
    }
   ]
@@ -3770,21 +3772,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-19T22:20:34Z",
+  "pushed_at": "2026-10-20T14:12:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-19T22:20:01Z",
+    "last_commit": "2026-10-20T14:12:23Z",
     "subjects": [
-     "data: 495 new variants in the shared shader list from the 1.4.3 teleport survey",
-     "feat: the world survey (teleport) works on 1.4.3",
-     "data: 463 new variants in the shared shader list from a player's contribution (#58)",
-     "fix: a stale optional target reference no longer crashes after long play (#57)",
-     "fix: vertex shaders emulate sampler border colours Metal lacks too (#49)",
-     "fix: samplers clamp to border colours Metal lacks (grass lay flat and could not be cut, #49)",
-     "feat: RomFS mods can add files the game does not have (#48)",
-     "Merge PR #51: the shortcut help shows the current interpolation and picture modes"
+     "data: 681 new variants in the shared shader list from #95, #96 and #98; README shows the list's size",
+     "refactor: Bayonetta 3 carries its own rewriter, graphics layer, translator and scripts; games/totk stays as it was (after PR #62)",
+     "Merge PR #62: Bayonetta 3 on Apple silicon, plus rewriter and NVN-on-Metal changes for it",
+     "fix: the dirty-page tracker no longer loses a CPU-written texture page; the glyph cache is not re-uploaded for its neighbours' writes (#90)",
+     "fix: collect_shader_issues.py says it needs gh and that players do not need it (#85); README shows the list's current size",
+     "data: 514 new variants in the shared shader list from #94",
+     "fix: hair and cloth animate at the right speed above 30 FPS on 1.0.0, 1.1.2 and 1.2.1",
+     "fix: build_app.py identifies the game before the disk-space checks, so Breath of the Wild with --platform ios gets its own error"
     ]
    }
   ]
@@ -4332,7 +4334,7 @@
   ]
  },
  "n2ray/d2r-mobile": {
-  "pushed_at": "2026-10-20T05:40:56Z",
+  "pushed_at": "2026-10-20T14:18:16Z",
   "branches": [
    {
     "branch": "android-snapdragon-elite",
@@ -4528,8 +4530,8 @@
     ]
    },
    {
-    "branch": "codex/touch-pulse-receipts",
-    "ahead": 554,
+    "branch": "codex/touch-ios-gestures",
+    "ahead": 560,
     "behind": 9,
     "files": 300,
     "real_files": 297,
@@ -4540,16 +4542,66 @@
      "ci/tests",
      "dm/android"
     ],
-    "last_commit": "2026-10-20T05:40:35Z",
+    "last_commit": "2026-10-20T11:40:50Z",
     "subjects": [
+     "Fix gesture fixtures under required sanitizer and warning checks",
+     "Port original iOS frontend touch gestures to Android",
+     "Merge pull request #294 from n2ray/codex/touch-map-presentation",
+     "Default to original touch controls and reduce HUD obstruction",
+     "Merge pull request #293 from n2ray/codex/touch-pulse-receipts",
+     "Fix Android touch timer starvation, item state and skill glyphs",
+     "Preserve skill binding Y pulses while gating item A receipts",
+     "Prevent event shortcut from ending unacknowledged pointer pulses"
+    ]
+   },
+   {
+    "branch": "codex/touch-map-presentation",
+    "ahead": 557,
+    "behind": 9,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-20T09:52:50Z",
+    "subjects": [
+     "Default to original touch controls and reduce HUD obstruction",
+     "Merge pull request #293 from n2ray/codex/touch-pulse-receipts",
+     "Fix Android touch timer starvation, item state and skill glyphs",
+     "Preserve skill binding Y pulses while gating item A receipts",
+     "Prevent event shortcut from ending unacknowledged pointer pulses",
+     "Keep pickup origin stable until delivered input polls complete",
+     "Accept intentional empty touch hint replacements from iOS overlays",
+     "Merge remote-tracking branch 'origin/integration/android-reference' into codex/touch-pulse-receipts"
+    ]
+   },
+   {
+    "branch": "codex/touch-pulse-receipts",
+    "ahead": 555,
+    "behind": 9,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-20T09:04:16Z",
+    "subjects": [
+     "Fix Android touch timer starvation, item state and skill glyphs",
      "Preserve skill binding Y pulses while gating item A receipts",
      "Prevent event shortcut from ending unacknowledged pointer pulses",
      "Keep pickup origin stable until delivered input polls complete",
      "Accept intentional empty touch hint replacements from iOS overlays",
      "Merge remote-tracking branch 'origin/integration/android-reference' into codex/touch-pulse-receipts",
      "Merge pull request #290 from n2ray/hermes/live-touch-skill-binding",
-     "Merge Android overlay and input mode integration into skill glyphs",
-     "Merge pull request #291 from n2ray/hermes/live-touch-item-interactions"
+     "Merge Android overlay and input mode integration into skill glyphs"
     ]
    },
    {
@@ -6817,59 +6869,6 @@
      "touch: route core belt requests through Android host actions",
      "diag(nvn): add Android property control for snapshot reuse"
     ]
-   },
-   {
-    "branch": "hermes/live-touch-hud",
-    "ahead": 182,
-    "behind": 9,
-    "files": 290,
-    "real_files": 267,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T18:32:41Z",
-    "subjects": [
-     "fix(android): retain external HUD redraw before fallible work",
-     "fix(android): compose HUD on external redraw and ack after post (#121)",
-     "test(android): cover coalesced/lifecycle CPU HUD scheduling (#121)",
-     "fix(android): harden CPU HUD overlay clipping and scheduling (#121)",
-     "feat(android): wire live observation into diagnostic HUD (#121)",
-     "Merge pull request #120 from n2ray/hermes/touch-hud-observation",
-     "feat(android): add read-only HUD observation seam (#119)",
-     "Merge pull request #118 from n2ray/hermes/native-textured-diagnostic"
-    ]
-   },
-   {
-    "branch": "hermes/live-touch-item-interactions",
-    "ahead": 538,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T22:29:55Z",
-    "subjects": [
-     "fix(android): retire legacy touch pad on controller switch",
-     "Merge integration/android-reference 27b5bd8 into live item routing",
-     "feat(android): route touch and controller input to original layouts",
-     "Merge pull request #289 from n2ray/hermes/live-touch-visual-overlay",
-     "Merge remote-tracking branch 'origin/integration/android-reference' into hermes/live-touch-visual-overlay",
-     "fix(android): observe original panel stack for inventory navigation (#34)",
-     "Merge pull request #288 from n2ray/hermes/live-touch-visual-overlay",
-     "fix(android): gate owner timer on attached input/resume/window (#34)"
-    ]
    }
   ]
  },
@@ -7057,21 +7056,21 @@
   ]
  },
  "reacher-z/Awesome-REA": {
-  "pushed_at": "2026-10-20T08:39:04Z",
+  "pushed_at": "2026-10-20T14:20:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T08:40:16Z",
+    "last_commit": "2026-10-20T14:20:10Z",
     "subjects": [
-     "Resolve the Niuniu AI MT5 rebuild lead as insufficient evidence (#883)",
-     "Add the CodeInverter Suite with reviewed ASE citation and scope limits (#2035)",
-     "Prepare source-reviewed COD4 Rewrite and libd2 cases (#1672)",
-     "Use Git cloning for catalog access and compute search ranks once (#1677)",
-     "Clarify repository metadata and topic matching (#1673)",
-     "Curate the OpenDMCUFirm Wii U display firmware reimplementation (#1429)",
-     "Resolve the Samsung TV web-remote report as insufficient evidence (#951)",
-     "Resolve five post-only case leads and record a partial audit mapping (#952)"
+     "Add DIO-Agent v2 and correct the Humans arXiv DOI (#2233)",
+     "Curate three reviewed projects and Schema research (#2232)",
+     "Resolve the batch 14 post-only case leads as insufficient evidence (#891)",
+     "Resolve the Wiki Lab agent-Wikipedia lead as insufficient evidence (#888)",
+     "Curate two source-reviewed app analysis tools (#2231)",
+     "Add eight reviewed reverse engineering research papers (#2230)",
+     "Add opt-in private diagnostics for README transport failures (#2229)",
+     "Bring repository results above the fold in browsing mode (#2228)"
     ]
    }
   ]
@@ -7132,31 +7131,31 @@
   ]
  },
  "Nishikori-Yui/lordran-native": {
-  "pushed_at": "2026-10-20T08:34:35Z",
+  "pushed_at": "2026-10-20T14:15:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T07:26:56Z",
+    "last_commit": "2026-10-20T14:23:22Z",
     "subjects": [
+     "Merge pull request #27 from Nishikori-Yui/feat/mac-performance-hud",
+     "Merge pull request #24 from Nishikori-Yui/feat/issue-9-cheat-patches",
+     "fix: exclude Mac performance UI from generated iOS sources",
+     "feat: add text-only Mac performance overlay with F5 display modes",
+     "feat: import build-bound static cheats before native rewriting",
      "Merge pull request #22 from Nishikori-Yui/feat/issue-19-bundle-id",
      "docs: describe default and custom bundle identities",
-     "build: align diagnostic apps with the project namespace",
-     "feat: migrate packaging to the Lordran Native bundle identity",
-     "Merge pull request #20 from Nishikori-Yui/feat/player-support-skill",
-     "docs: track in-scope PR findings in review comments",
-     "fix: preserve ordinary log JSON in feedback evidence",
-     "build: validate player support commands on hosted runners"
+     "build: align diagnostic apps with the project namespace"
     ]
    }
   ]
  },
  "kxn/d2r-mobile": {
-  "pushed_at": "2026-10-20T08:38:33Z",
+  "pushed_at": "2026-10-20T14:18:44Z",
   "branches": [
    {
     "branch": "codex/android-native-backup-20261019",
-    "ahead": 103,
+    "ahead": 117,
     "behind": 16,
     "files": 300,
     "real_files": 299,
@@ -7166,16 +7165,16 @@
      "dm/gfx",
      "dm/host"
     ],
-    "last_commit": "2026-10-20T08:38:32Z",
+    "last_commit": "2026-10-20T13:43:08Z",
     "subjects": [
-     "docs: record original PanVK failure without shared import",
-     "docs: clarify portable texture upload layout",
-     "docs: distinguish sampled ASTC adoption from upload and correct sync evidence",
-     "docs: record full6 official resource capture and visual limitation",
-     "docs: record combined CPU candidate and PanVK baseline gap",
-     "Record stock ASTC official GPU and CPU evidence with thermal limits",
-     "docs: record stock Vulkan legacy ASTC original-game HUD pass",
-     "docs: record actual stock Mali ASTC oracle and original-game preflight failure"
+     "docs(android): close real ASTC native image and window union validation",
+     "docs(android): clarify native image performance evidence boundary",
+     "docs(android): record official window CPU costs and finite native image lane",
+     "docs(android): close owned ASTC window validation and record SDK rebind limit",
+     "docs(android): record shared-window real-game memory and PanVK replay evidence",
+     "Record real first Buffer requests behind large shared pool registration",
+     "Record real memfd shared heap acceptance and unchanged whole-pool residency",
+     "Record verified alias index CPU reduction and pending memory candidate"
     ]
    },
    {
@@ -7560,6 +7559,30 @@
      "Separate descriptor creation miss stack from binding cache path",
      "Store exclusive buffer history endpoints for dependency lookup",
      "Expose cold ASTC decode comparison in Android launcher"
+    ]
+   },
+   {
+    "branch": "codex/fs-buffer-query-fusion-v3",
+    "ahead": 127,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T09:30:10Z",
+    "subjects": [
+     "vulkan: keep no-history dependencies safe outside recording",
+     "vulkan: preserve empty buffer dependency before recording setup",
+     "vulkan: collect fragment buffer producers in one dependency query",
+     "Restore readback fixture allocation class before temporary retirement",
+     "Enumerate immutable image binding indices before dynamic resource work",
+     "Use verified fullscreen Surface dimensions for original menu input",
+     "Skip empty legacy texture CPU preflight snapshots",
+     "Expose a cold system-Vulkan readback batch oracle"
     ]
    },
    {
@@ -7971,6 +7994,30 @@
     ]
    },
    {
+    "branch": "codex/native-image-bb-lldb-v1",
+    "ahead": 142,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T13:46:46Z",
+    "subjects": [
+     "Run owned debugger cleanup on caller cancellation",
+     "Name recorded NVN packaged-layout bytes explicitly",
+     "Prepare finite bb4 native-image official LLDB hook",
+     "Keep native image imports independent of shared Buffer window unions",
+     "Prepare Turnip native family identity over current shared alias backend",
+     "Integrate native families with real shared prewrite gate and cold app oracle",
+     "Preserve original thumbnail semantics in native resource families",
+     "Track native image buffer aliases and add original NVN resource oracle"
+    ]
+   },
+   {
     "branch": "codex/native-image-payload-v1",
     "ahead": 84,
     "behind": 16,
@@ -7992,6 +8039,30 @@
      "docs: record corrected full ASTC game validation and thermal gap",
      "Preserve original declared texture-array format groups in ASTC composition",
      "Compact store-index texture dependency footprints"
+    ]
+   },
+   {
+    "branch": "codex/native-image-pending-acquire-v1",
+    "ahead": 140,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T14:10:38Z",
+    "subjects": [
+     "Keep independent native texture acquire before a pending render pass",
+     "Keep native image imports independent of shared Buffer window unions",
+     "Prepare Turnip native family identity over current shared alias backend",
+     "Integrate native families with real shared prewrite gate and cold app oracle",
+     "Preserve original thumbnail semantics in native resource families",
+     "Track native image buffer aliases and add original NVN resource oracle",
+     "Add default-off native resource table and shared image runtime candidate",
+     "Synchronize shared host-phase backing metadata snapshots"
     ]
    },
    {
@@ -8064,6 +8135,126 @@
      "Clean inherited controller whitespace",
      "Prepare isolated cold app UID native-image bake and import byte fixture",
      "Import frozen 3446abb native image fixture and driver source package"
+    ]
+   },
+   {
+    "branch": "codex/native-image-window-app-v1",
+    "ahead": 141,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T13:32:49Z",
+    "subjects": [
+     "Record effective native window fixture compile selection",
+     "Add isolated cold Android native-family window fixture entry",
+     "Keep native image imports independent of shared Buffer window unions",
+     "Prepare Turnip native family identity over current shared alias backend",
+     "Integrate native families with real shared prewrite gate and cold app oracle",
+     "Preserve original thumbnail semantics in native resource families",
+     "Track native image buffer aliases and add original NVN resource oracle",
+     "Add default-off native resource table and shared image runtime candidate"
+    ]
+   },
+   {
+    "branch": "codex/native-image-window-lane-v1",
+    "ahead": 139,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T13:10:23Z",
+    "subjects": [
+     "Keep native image imports independent of shared Buffer window unions",
+     "Prepare Turnip native family identity over current shared alias backend",
+     "Integrate native families with real shared prewrite gate and cold app oracle",
+     "Preserve original thumbnail semantics in native resource families",
+     "Track native image buffer aliases and add original NVN resource oracle",
+     "Add default-off native resource table and shared image runtime candidate",
+     "Synchronize shared host-phase backing metadata snapshots",
+     "Add opt-in shared pool range imports with quiescent alias unions"
+    ]
+   },
+   {
+    "branch": "codex/native-one-game-controller-v1",
+    "ahead": 140,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T13:44:11Z",
+    "subjects": [
+     "Add reversible original-game single native material validation controller",
+     "Keep native image imports independent of shared Buffer window unions",
+     "Prepare Turnip native family identity over current shared alias backend",
+     "Integrate native families with real shared prewrite gate and cold app oracle",
+     "Preserve original thumbnail semantics in native resource families",
+     "Track native image buffer aliases and add original NVN resource oracle",
+     "Add default-off native resource table and shared image runtime candidate",
+     "Synchronize shared host-phase backing metadata snapshots"
+    ]
+   },
+   {
+    "branch": "codex/native-one-game-controller-v2",
+    "ahead": 141,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T13:59:59Z",
+    "subjects": [
+     "Handle owned Vivo install confirmation in reversible native game test",
+     "Add reversible original-game single native material validation controller",
+     "Keep native image imports independent of shared Buffer window unions",
+     "Prepare Turnip native family identity over current shared alias backend",
+     "Integrate native families with real shared prewrite gate and cold app oracle",
+     "Preserve original thumbnail semantics in native resource families",
+     "Track native image buffer aliases and add original NVN resource oracle",
+     "Add default-off native resource table and shared image runtime candidate"
+    ]
+   },
+   {
+    "branch": "codex/native-one-game-controller-v3",
+    "ahead": 143,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T14:21:47Z",
+    "subjects": [
+     "Require sampled FS caller and explicit native token identity in game proof",
+     "Authenticate real native use and preserve HUD evidence before postconditions",
+     "Handle owned Vivo install confirmation in reversible native game test",
+     "Add reversible original-game single native material validation controller",
+     "Keep native image imports independent of shared Buffer window unions",
+     "Prepare Turnip native family identity over current shared alias backend",
+     "Integrate native families with real shared prewrite gate and cold app oracle",
+     "Preserve original thumbnail semantics in native resource families"
     ]
    },
    {
@@ -8523,6 +8714,126 @@
     ]
    },
    {
+    "branch": "codex/panvk-gfxr-android-replay-v1",
+    "ahead": 134,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T11:19:33Z",
+    "subjects": [
+     "tools: use supported official Android GFXR file log output",
+     "tools: preserve adrenotools directory suffix contract in replay bridge",
+     "tools: bound complete Android shader inventory hashing to128 files",
+     "tools: prepare isolated official Android GFXR PanVK replay",
+     "Keep official Android capture property below size limit",
+     "Capture bounded offscreen PanVK failure submits with official GFXR",
+     "Preserve normalized color values for Vulkan shadow comparisons",
+     "Reuse original offscreen GPU route for cold official VVL game diagnosis"
+    ]
+   },
+   {
+    "branch": "codex/panvk-gfxr-bc-route-rebind-v1",
+    "ahead": 138,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T12:31:14Z",
+    "subjects": [
+     "tools: prepare restored cold BC-route control on official rebind allocator",
+     "tools: isolate graphics overlap with one official render-pass serialization replay",
+     "tools: serialize one full-prefix official PanVK replay with registered sync option",
+     "tools: admit only restored and parsed full PanVK startup capture for replay",
+     "tools: use supported official Android GFXR file log output",
+     "tools: preserve adrenotools directory suffix contract in replay bridge",
+     "tools: bound complete Android shader inventory hashing to128 files",
+     "tools: prepare isolated official Android GFXR PanVK replay"
+    ]
+   },
+   {
+    "branch": "codex/panvk-gfxr-renderpass-serialize-v1",
+    "ahead": 137,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T12:10:23Z",
+    "subjects": [
+     "tools: isolate graphics overlap with one official render-pass serialization replay",
+     "tools: serialize one full-prefix official PanVK replay with registered sync option",
+     "tools: admit only restored and parsed full PanVK startup capture for replay",
+     "tools: use supported official Android GFXR file log output",
+     "tools: preserve adrenotools directory suffix contract in replay bridge",
+     "tools: bound complete Android shader inventory hashing to128 files",
+     "tools: prepare isolated official Android GFXR PanVK replay",
+     "Keep official Android capture property below size limit"
+    ]
+   },
+   {
+    "branch": "codex/panvk-gfxr-startup-replay-v1",
+    "ahead": 135,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T11:46:58Z",
+    "subjects": [
+     "tools: admit only restored and parsed full PanVK startup capture for replay",
+     "tools: use supported official Android GFXR file log output",
+     "tools: preserve adrenotools directory suffix contract in replay bridge",
+     "tools: bound complete Android shader inventory hashing to128 files",
+     "tools: prepare isolated official Android GFXR PanVK replay",
+     "Keep official Android capture property below size limit",
+     "Capture bounded offscreen PanVK failure submits with official GFXR",
+     "Preserve normalized color values for Vulkan shadow comparisons"
+    ]
+   },
+   {
+    "branch": "codex/panvk-gfxr-startup-sync-replay-v1",
+    "ahead": 136,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T12:00:09Z",
+    "subjects": [
+     "tools: serialize one full-prefix official PanVK replay with registered sync option",
+     "tools: admit only restored and parsed full PanVK startup capture for replay",
+     "tools: use supported official Android GFXR file log output",
+     "tools: preserve adrenotools directory suffix contract in replay bridge",
+     "tools: bound complete Android shader inventory hashing to128 files",
+     "tools: prepare isolated official Android GFXR PanVK replay",
+     "Keep official Android capture property below size limit",
+     "Capture bounded offscreen PanVK failure submits with official GFXR"
+    ]
+   },
+   {
     "branch": "codex/panvk-host-import-ext-v1",
     "ahead": 59,
     "behind": 16,
@@ -8619,6 +8930,78 @@
     ]
    },
    {
+    "branch": "codex/panvk-layered-game-validation-v1",
+    "ahead": 126,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T09:20:35Z",
+    "subjects": [
+     "Keep temporary diagnostic PSO cache in restored private driver directory",
+     "Prepare isolated official VVL diagnosis for original PanVK game",
+     "Restore readback fixture allocation class before temporary retirement",
+     "Add isolated official VVL entry through Android custom-driver loader",
+     "Use verified fullscreen Surface dimensions for original menu input",
+     "Skip empty legacy texture CPU preflight snapshots",
+     "Expose a cold system-Vulkan readback batch oracle",
+     "Batch completed readback invalidations in bounded VMA calls"
+    ]
+   },
+   {
+    "branch": "codex/panvk-layered-offscreen-game-v1",
+    "ahead": 127,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T09:32:37Z",
+    "subjects": [
+     "Reuse original offscreen GPU route for cold official VVL game diagnosis",
+     "Keep temporary diagnostic PSO cache in restored private driver directory",
+     "Prepare isolated official VVL diagnosis for original PanVK game",
+     "Restore readback fixture allocation class before temporary retirement",
+     "Add isolated official VVL entry through Android custom-driver loader",
+     "Use verified fullscreen Surface dimensions for original menu input",
+     "Skip empty legacy texture CPU preflight snapshots",
+     "Expose a cold system-Vulkan readback batch oracle"
+    ]
+   },
+   {
+    "branch": "codex/panvk-layered-vvl-tool-v1",
+    "ahead": 124,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T08:51:17Z",
+    "subjects": [
+     "Restore readback fixture allocation class before temporary retirement",
+     "Add isolated official VVL entry through Android custom-driver loader",
+     "Use verified fullscreen Surface dimensions for original menu input",
+     "Skip empty legacy texture CPU preflight snapshots",
+     "Expose a cold system-Vulkan readback batch oracle",
+     "Batch completed readback invalidations in bounded VMA calls",
+     "Order legacy image CPU observation before draw and dispatch borrows",
+     "Prepare explicit-validation stock ASTC oracle and cold launcher"
+    ]
+   },
+   {
     "branch": "codex/panvk-native-image-app-v1",
     "ahead": 95,
     "behind": 16,
@@ -8712,6 +9095,126 @@
      "Limit graphics storage bias scratch to consumed words",
      "Keep equal dirty pages out of changed-upload scratch frame",
      "docs: record corrected full ASTC game validation and thermal gap"
+    ]
+   },
+   {
+    "branch": "codex/panvk-offscreen-gfxr-submit-v1",
+    "ahead": 129,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T10:38:40Z",
+    "subjects": [
+     "Capture bounded offscreen PanVK failure submits with official GFXR",
+     "Preserve normalized color values for Vulkan shadow comparisons",
+     "Reuse original offscreen GPU route for cold official VVL game diagnosis",
+     "Keep temporary diagnostic PSO cache in restored private driver directory",
+     "Prepare isolated official VVL diagnosis for original PanVK game",
+     "Restore readback fixture allocation class before temporary retirement",
+     "Add isolated official VVL entry through Android custom-driver loader",
+     "Use verified fullscreen Surface dimensions for original menu input"
+    ]
+   },
+   {
+    "branch": "codex/panvk-offscreen-gfxr-submit-v2",
+    "ahead": 130,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T10:41:39Z",
+    "subjects": [
+     "Keep official Android capture property below size limit",
+     "Capture bounded offscreen PanVK failure submits with official GFXR",
+     "Preserve normalized color values for Vulkan shadow comparisons",
+     "Reuse original offscreen GPU route for cold official VVL game diagnosis",
+     "Keep temporary diagnostic PSO cache in restored private driver directory",
+     "Prepare isolated official VVL diagnosis for original PanVK game",
+     "Restore readback fixture allocation class before temporary retirement",
+     "Add isolated official VVL entry through Android custom-driver loader"
+    ]
+   },
+   {
+    "branch": "codex/panvk-offscreen-gfxr-untrimmed-v2",
+    "ahead": 132,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T11:43:13Z",
+    "subjects": [
+     "tools: clear Android runtime trigger for untrimmed capture",
+     "tools: capture original PanVK startup without trim reconstruction",
+     "Keep official Android capture property below size limit",
+     "Capture bounded offscreen PanVK failure submits with official GFXR",
+     "Preserve normalized color values for Vulkan shadow comparisons",
+     "Reuse original offscreen GPU route for cold official VVL game diagnosis",
+     "Keep temporary diagnostic PSO cache in restored private driver directory",
+     "Prepare isolated official VVL diagnosis for original PanVK game"
+    ]
+   },
+   {
+    "branch": "codex/panvk-original-csf-diagnostic-v1",
+    "ahead": 130,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T10:14:24Z",
+    "subjects": [
+     "Bind one official-VVL game run to original-fork fault decoder",
+     "Reuse Mesa fault decoder on original kbase fork pending rings",
+     "Preserve normalized color values for Vulkan shadow comparisons",
+     "Reuse original offscreen GPU route for cold official VVL game diagnosis",
+     "Keep temporary diagnostic PSO cache in restored private driver directory",
+     "Prepare isolated official VVL diagnosis for original PanVK game",
+     "Restore readback fixture allocation class before temporary retirement",
+     "Add isolated official VVL entry through Android custom-driver loader"
+    ]
+   },
+   {
+    "branch": "codex/panvk-original-csf-diagnostic-v2",
+    "ahead": 132,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T10:22:49Z",
+    "subjects": [
+     "Pin full-entry fault decoder for one existing-game diagnostic",
+     "Decode retained full ring entry before a stalled CALL",
+     "Bind one official-VVL game run to original-fork fault decoder",
+     "Reuse Mesa fault decoder on original kbase fork pending rings",
+     "Preserve normalized color values for Vulkan shadow comparisons",
+     "Reuse original offscreen GPU route for cold official VVL game diagnosis",
+     "Keep temporary diagnostic PSO cache in restored private driver directory",
+     "Prepare isolated official VVL diagnosis for original PanVK game"
     ]
    },
    {
@@ -8931,6 +9434,30 @@
     ]
    },
    {
+    "branch": "codex/panvk-replay-rebind-bda-glue-v1",
+    "ahead": 139,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T12:59:41Z",
+    "subjects": [
+     "Enable queried normal BDA only for explicit official replay rebind",
+     "tools: prepare restored cold BC-route control on official rebind allocator",
+     "tools: isolate graphics overlap with one official render-pass serialization replay",
+     "tools: serialize one full-prefix official PanVK replay with registered sync option",
+     "tools: admit only restored and parsed full PanVK startup capture for replay",
+     "tools: use supported official Android GFXR file log output",
+     "tools: preserve adrenotools directory suffix contract in replay bridge",
+     "tools: bound complete Android shader inventory hashing to128 files"
+    ]
+   },
+   {
     "branch": "codex/panvk-scoped-dirty-proof-v1",
     "ahead": 70,
     "behind": 16,
@@ -9024,534 +9551,6 @@
      "Avoid clearing cold scope snapshot on stable dirty proof refresh",
      "Prototype bounded readonly imports inside borrowed NVN pools",
      "Distinguish live host bytes from shadow verification in fixture evidence"
-    ]
-   },
-   {
-    "branch": "codex/panvk-surface-wsi-fixture-v1",
-    "ahead": 59,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T18:22:40Z",
-    "subjects": [
-     "Add bounded Android Surface presentation fixture",
-     "Set a private Mesa cache directory before loading PanVK",
-     "Append both fixture output streams after a single truncation",
-     "Make fixture validation an explicit developer option",
-     "Add explicit app-local PanVK ICD selection",
-     "Precompute immutable physical image layout traits",
-     "Reuse operation-local pinned pool owners",
-     "Enable source-proved pixel-local subpasses on Android"
-    ]
-   },
-   {
-    "branch": "codex/physical-image-layout-traits-v1",
-    "ahead": 54,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T17:11:09Z",
-    "subjects": [
-     "Precompute immutable physical image layout traits",
-     "Reuse operation-local pinned pool owners",
-     "Enable source-proved pixel-local subpasses on Android",
-     "Reduce pixel-local plans to consumer render targets",
-     "Avoid repeated state copies in bloom lookahead",
-     "Reclaim cold CPU-backed images on memory pressure",
-     "Process only live dynamic Uniform offsets",
-     "Add bounded fragment quad transfer path for compute-only subgroup devices"
-    ]
-   },
-   {
-    "branch": "codex/pixel-local-second-targets-v1",
-    "ahead": 50,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T16:18:48Z",
-    "subjects": [
-     "Reduce pixel-local plans to consumer render targets",
-     "Reclaim cold CPU-backed images on memory pressure",
-     "Process only live dynamic Uniform offsets",
-     "Add bounded fragment quad transfer path for compute-only subgroup devices",
-     "Preclassify immutable shader pool bindings before draw admission",
-     "Reclaim completed idle GPU buffers on Android memory pressure",
-     "Avoid CPU-source helper work when deferred publication is disabled",
-     "Add a cold experiment for demand-driven GPU pool publication"
-    ]
-   },
-   {
-    "branch": "codex/pool-access-bitmap-cache-v1",
-    "ahead": 61,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T19:33:46Z",
-    "subjects": [
-     "Reuse retired pool access bitmaps within recording contexts",
-     "Release completed descriptor contexts under idle memory pressure",
-     "Combine ARM64 upload change bits before horizontal reduction",
-     "Recycle aged idle Vulkan temporary buffers above soft budget",
-     "Skip deferred mip no-op on cached texture preflight",
-     "Compact attachment dependency event records",
-     "Borrow cached texture topology when preflight cannot drain",
-     "Precompute immutable physical image layout traits"
-    ]
-   },
-   {
-    "branch": "codex/pool-operation-pin-owner-v1",
-    "ahead": 53,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T16:48:08Z",
-    "subjects": [
-     "Reuse operation-local pinned pool owners",
-     "Enable source-proved pixel-local subpasses on Android",
-     "Reduce pixel-local plans to consumer render targets",
-     "Avoid repeated state copies in bloom lookahead",
-     "Reclaim cold CPU-backed images on memory pressure",
-     "Process only live dynamic Uniform offsets",
-     "Add bounded fragment quad transfer path for compute-only subgroup devices",
-     "Preclassify immutable shader pool bindings before draw admission"
-    ]
-   },
-   {
-    "branch": "codex/readback-fixture-class-restore-v1",
-    "ahead": 124,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T08:16:21Z",
-    "subjects": [
-     "Restore readback fixture allocation class before temporary retirement",
-     "Enumerate immutable image binding indices before dynamic resource work",
-     "Use verified fullscreen Surface dimensions for original menu input",
-     "Skip empty legacy texture CPU preflight snapshots",
-     "Expose a cold system-Vulkan readback batch oracle",
-     "Batch completed readback invalidations in bounded VMA calls",
-     "Order legacy image CPU observation before draw and dispatch borrows",
-     "Prepare explicit-validation stock ASTC oracle and cold launcher"
-    ]
-   },
-   {
-    "branch": "codex/readback-invalidate-batch-v1",
-    "ahead": 120,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T07:12:35Z",
-    "subjects": [
-     "Expose a cold system-Vulkan readback batch oracle",
-     "Batch completed readback invalidations in bounded VMA calls",
-     "Order legacy image CPU observation before draw and dispatch borrows",
-     "Prepare explicit-validation stock ASTC oracle and cold launcher",
-     "Add opt-in legacy ASTC encoding for fresh decoded copy arrays",
-     "Add bounded short CPU observations to legacy dirty ranges",
-     "Hold shared packaged CPU reads against paired kernel writes",
-     "Preserve ASTC encoding in fresh logical BC3 page arrays"
-    ]
-   },
-   {
-    "branch": "codex/shared-anon-controller-crash-v2",
-    "ahead": 74,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T00:27:02Z",
-    "subjects": [
-     "Preserve crashed import oracles and wait for unclaimed PIDs to exit",
-     "Verify memory-type identity for every import round",
-     "Package cold shared-anonymous byte oracle as isolated Android fixture",
-     "Add owned shared-anonymous dirty-cycle import control",
-     "Isolate original dirty protection and raw GPU bytes in owned host fixtures",
-     "Add explicit implicit-host publication contrast to owned byte fixtures",
-     "Record failed Mali readonly noncoherent dirty rewrite result",
-     "Add opt-in noncoherent publication for readonly imported pool windows"
-    ]
-   },
-   {
-    "branch": "codex/shared-anon-controller-ownership-v3",
-    "ahead": 75,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T00:31:32Z",
-    "subjects": [
-     "Reject unowned terminal pass in shared-anon fixture matrix",
-     "Preserve crashed import oracles and wait for unclaimed PIDs to exit",
-     "Verify memory-type identity for every import round",
-     "Package cold shared-anonymous byte oracle as isolated Android fixture",
-     "Add owned shared-anonymous dirty-cycle import control",
-     "Isolate original dirty protection and raw GPU bytes in owned host fixtures",
-     "Add explicit implicit-host publication contrast to owned byte fixtures",
-     "Record failed Mali readonly noncoherent dirty rewrite result"
-    ]
-   },
-   {
-    "branch": "codex/shared-gate-mode-query-v1",
-    "ahead": 111,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T03:35:21Z",
-    "subjects": [
-     "Expose frozen shared GPU prewrite admission capability",
-     "Gate scoped NC GPU publications before host writes",
-     "Hold paired guest kernel-write leases across original file reads",
-     "Use exact GPU publication tokens without absorbing CPU image updates",
-     "Acknowledge only exact protected-scope GPU publications",
-     "Publish native shared image copies into canonical NVN backing on GPU",
-     "Restore CPU authority alias membership after physical image promotion",
-     "Cover a fresh texture identity over stale GPU-owned image source bytes"
-    ]
-   },
-   {
-    "branch": "codex/shared-guest-allocation-v1",
-    "ahead": 46,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T13:26:26Z",
-    "subjects": [
-     "Add bounded mapped guest memory owner and borrowed buffer API",
-     "Reclaim completed idle GPU buffers on Android memory pressure",
-     "Avoid CPU-source helper work when deferred publication is disabled",
-     "Add a cold experiment for demand-driven GPU pool publication",
-     "Share loop bookkeeping across paired dirty-page blocks",
-     "Reuse texture dirty proofs across unrelated pool writes",
-     "Reuse exact backing mapping for sparse CPU page uploads",
-     "Avoid shader stage setup on PSO cache hits and retain NVN pool intent"
-    ]
-   },
-   {
-    "branch": "codex/shared-guest-game-combined-v1",
-    "ahead": 93,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T01:22:56Z",
-    "subjects": [
-     "Record actual PanVK timestamp gate and shared game validation boundary",
-     "Wire cold shared heap game candidate and exercise real heap GPU consumers",
-     "Reuse verified app-local Vulkan provider loader in shared game candidate",
-     "Select shared guest heap backing before first memory SVC",
-     "Track shared packaged image source pages with scoped dirty ownership",
-     "Select fixed shared backing only after a successful cold capability probe",
-     "Publish fixed shared NVN query records directly in GPU order",
-     "Publish registered NVN event payloads in the GPU command stream"
-    ]
-   },
-   {
-    "branch": "codex/shared-guest-game-combined-v2",
-    "ahead": 96,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T01:34:23Z",
-    "subjects": [
-     "Keep owned real SVC heap alive through fixture process exit",
-     "Document saturated query admission and shared synchronization costs",
-     "Match Android unsigned timestamp saturation without rejecting valid 64-bit clocks",
-     "Record actual PanVK timestamp gate and shared game validation boundary",
-     "Wire cold shared heap game candidate and exercise real heap GPU consumers",
-     "Reuse verified app-local Vulkan provider loader in shared game candidate",
-     "Select shared guest heap backing before first memory SVC",
-     "Track shared packaged image source pages with scoped dirty ownership"
-    ]
-   },
-   {
-    "branch": "codex/shared-image-cpu-read-guard-v1",
-    "ahead": 99,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T02:04:08Z",
-    "subjects": [
-     "Serialize fixed shared NVN ReadTexels on the existing translation owner",
-     "Keep cover wait-reference reads optional for shared image aliases",
-     "Reject stale shared image aliases in required CPU reads and decline optional proofs",
-     "Keep owned real SVC heap alive through fixture process exit",
-     "Document saturated query admission and shared synchronization costs",
-     "Match Android unsigned timestamp saturation without rejecting valid 64-bit clocks",
-     "Record actual PanVK timestamp gate and shared game validation boundary",
-     "Wire cold shared heap game candidate and exercise real heap GPU consumers"
-    ]
-   },
-   {
-    "branch": "codex/shared-image-dirty-v1",
-    "ahead": 83,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T00:49:45Z",
-    "subjects": [
-     "Track shared packaged image source pages with scoped dirty ownership",
-     "Publish registered NVN event payloads in the GPU command stream",
-     "Order shared host cache phases and CPU effects against overlapping GPU uses",
-     "Add owned oracle for completion effect ordering against shared GPU writes",
-     "Bound the cold shared-memory GPU capability fence wait",
-     "Prototype fixed startup shared pools with lazy whole import and bidirectional NVN buffers",
-     "Compact store-index texture dependency footprints",
-     "Batch consecutive host dirty-page write preparation"
-    ]
-   },
-   {
-    "branch": "codex/shared-image-format-canonical-app-v1",
-    "ahead": 114,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T04:37:16Z",
-    "subjects": [
-     "Preserve ASTC encoding in fresh logical BC3 page arrays",
-     "Require actual ASTC encoding oracle before accepting retile fixture",
-     "Link immutable cold loader status query for isolated fixture",
-     "Gate scoped NC GPU publications before host writes",
-     "Prepare isolated Android shared-image NC gate oracle transaction",
-     "Hold paired guest kernel-write leases across original file reads",
-     "Use exact GPU publication tokens without absorbing CPU image updates",
-     "Acknowledge only exact protected-scope GPU publications"
-    ]
-   },
-   {
-    "branch": "codex/shared-image-gate-app-v1",
-    "ahead": 112,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T03:49:04Z",
-    "subjects": [
-     "Link immutable cold loader status query for isolated fixture",
-     "Gate scoped NC GPU publications before host writes",
-     "Prepare isolated Android shared-image NC gate oracle transaction",
-     "Hold paired guest kernel-write leases across original file reads",
-     "Use exact GPU publication tokens without absorbing CPU image updates",
-     "Acknowledge only exact protected-scope GPU publications",
-     "Publish native shared image copies into canonical NVN backing on GPU",
-     "Restore CPU authority alias membership after physical image promotion"
-    ]
-   },
-   {
-    "branch": "codex/shared-image-gpu-prewrite-gate-v1",
-    "ahead": 112,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T03:33:08Z",
-    "subjects": [
-     "Fail signal-sleep oracle on syscall errors",
-     "Verify actual signal-side futex sleep and completion wake",
-     "Gate scoped NC GPU publications before host writes",
-     "Hold paired guest kernel-write leases across original file reads",
-     "Use exact GPU publication tokens without absorbing CPU image updates",
-     "Acknowledge only exact protected-scope GPU publications",
-     "Publish native shared image copies into canonical NVN backing on GPU",
-     "Restore CPU authority alias membership after physical image promotion"
-    ]
-   },
-   {
-    "branch": "codex/shared-image-partial-freshness-v1",
-    "ahead": 105,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T02:08:32Z",
-    "subjects": [
-     "Restore CPU authority alias membership after physical image promotion",
-     "Cover a fresh texture identity over stale GPU-owned image source bytes",
-     "Reject CPU image uploads from another GPU-owned optimal backing",
-     "Serialize fixed shared NVN ReadTexels on the existing translation owner",
-     "Keep cover wait-reference reads optional for shared image aliases",
-     "Keep alias-read linear oracle separate from retained first-clear image storage",
-     "Reject stale shared image aliases in required CPU reads and decline optional proofs",
-     "Exercise first-clear GPU sampling before checking source observation metadata"
-    ]
-   },
-   {
-    "branch": "codex/shared-image-publish-ack-v1",
-    "ahead": 106,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T02:38:31Z",
-    "subjects": [
-     "Acknowledge only exact protected-scope GPU publications",
-     "Restore CPU authority alias membership after physical image promotion",
-     "Cover a fresh texture identity over stale GPU-owned image source bytes",
-     "Reject CPU image uploads from another GPU-owned optimal backing",
-     "Serialize fixed shared NVN ReadTexels on the existing translation owner",
-     "Keep cover wait-reference reads optional for shared image aliases",
-     "Keep alias-read linear oracle separate from retained first-clear image storage",
-     "Reject stale shared image aliases in required CPU reads and decline optional proofs"
-    ]
-   },
-   {
-    "branch": "codex/shared-packaged-cpu-read-lease-v1",
-    "ahead": 114,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T05:01:22Z",
-    "subjects": [
-     "Hold shared packaged CPU reads against paired kernel writes",
-     "Preserve ASTC encoding in fresh logical BC3 page arrays",
-     "Link immutable cold loader status query for isolated fixture",
-     "Gate scoped NC GPU publications before host writes",
-     "Prepare isolated Android shared-image NC gate oracle transaction",
-     "Hold paired guest kernel-write leases across original file reads",
-     "Use exact GPU publication tokens without absorbing CPU image updates",
-     "Acknowledge only exact protected-scope GPU publications"
-    ]
-   },
-   {
-    "branch": "codex/shared-t2t-format-diagnostic-v1",
-    "ahead": 113,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T04:05:11Z",
-    "subjects": [
-     "Log original and physical T2T metadata before unsupported conversion exit",
-     "Link immutable cold loader status query for isolated fixture",
-     "Gate scoped NC GPU publications before host writes",
-     "Prepare isolated Android shared-image NC gate oracle transaction",
-     "Hold paired guest kernel-write leases across original file reads",
-     "Use exact GPU publication tokens without absorbing CPU image updates",
-     "Acknowledge only exact protected-scope GPU publications",
-     "Publish native shared image copies into canonical NVN backing on GPU"
     ]
    }
   ]
@@ -9712,7 +9711,7 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-10-20T07:22:52Z",
+  "pushed_at": "2026-10-20T10:37:27Z",
   "branches": [
    {
     "branch": "main",
@@ -9760,21 +9759,21 @@
   ]
  },
  "mdhskiy/test": {
-  "pushed_at": "2026-10-20T04:32:21Z",
+  "pushed_at": "2026-10-20T13:22:37Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T04:32:20Z",
+    "last_commit": "2026-10-20T13:22:35Z",
     "subjects": [
-     "D3: write the size its dynamic resolution is a fraction of in the game settings struct (DM_D3_RES; the pair is found by the size being rendered at, build id guarded) -- the only way to get a picture that is not 16:9 out of this game",
-     "nvn: hash the shader code area through its guest address again (mtl_addr returns the MTLBuffer object pointer, not the storage: hashing that gave every D3 shader a wrong key, none were found in the map, black screen)",
-     "nvn: present can cover the canvas instead of fitting inside it (DM_PRESENT_FILL, default 1) -- non-stretched fullscreen for a game whose aspect ratio is not the screen's, by uniform scale and crop",
-     "nvn: keep a host copy of every shader stage control section, and hash the code area through its host address (D3 SIGBUS in keys_hash: the game unmaps the control section before the first draw)",
-     "iOS: native fullscreen -- the game is told the screen pixels instead of the Switch 16:9 constants, the game view covers the screen, and a launch screen is declared so iPhone does not run the app at a legacy size",
-     "nvn: do not recompute a shader key from a dead control pointer (D3 SIGSEGV in keys_hash when entering the game)",
-     "fix: LF line endings (the API commit carried CRLF, which broke the shell script on macOS)",
-     "app identity: DIABLO3 display name + the game icon (from the NSP control data); profile app_name"
+     "D3: render_cond off (conditional rendering made a lantern glow quad blink); keeps the Globals render-size write, no-crop default, magic-checked control copies and per-submission LUT sync",
+     "D3: render size via GFXNX64NVN::Globals (device size +0x00/+0x04, aspect +0x10) and the display-mode source at +0x224, both signature-checked; no crop by default; magic-checked shader control copies; linear-texture copies synced every submission",
+     "Present: no crop by default (DM_PRESENT_FILL=0) -- the cover crop from the earlier rounds was still on, which is what kept cutting the picture",
+     "D3: write the render size through GFXNX64NVN::Globals (main+0x1150470, the source of GfxGetDesiredDisplayMode at main+0x29b1e0) aiming at 1776x816; magic-checked control copies (crash); sync linear-texture copies every submission (flicker)",
+     "D3: probe where the render size lives (whole-image scan), and aim at 1776x816 (2.17:1 at the game's own pixel budget; native is 2.63x the GPU cost)",
+     "D3: validate the padded linear-texture source against the pools before reading it (stale pool = random crash)",
+     "D3: write DisplayModeWidth/Height at main+0x181b294/+0x181b2bc (from the registration site) and ask the game to re-read; unaligned linear textures go through replaceRegion",
+     "D3: refresh the padded linear-texture copy when the CPU writes it (FlushTexels / WriteTexels path)"
     ]
    }
   ]
@@ -9840,11 +9839,11 @@
   ]
  },
  "aerolithink/d2r-mobile-ipad-2020": {
-  "pushed_at": "2026-10-20T08:25:59Z",
+  "pushed_at": "2026-10-20T08:56:08Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 21,
+    "ahead": 22,
     "behind": 4,
     "files": 39,
     "real_files": 38,
@@ -9858,16 +9857,16 @@
      "dm/tools",
      "rebuild_for_a12z.py"
     ],
-    "last_commit": "2026-10-20T08:25:44Z",
+    "last_commit": "2026-10-20T08:55:56Z",
     "subjects": [
+     "fix(i18n): inject missing dmCustomTouchSwap strings into overlay ui.json",
      "feat(lighting): add bright_boost custom setting switch (default off: authentic dark atmosphere)",
      "fix(a12z): fix buff aura glow, ground decal strips, and settings switch focus bar",
      "fix(a12z): fix BC texture decompression MSL shift bug, UI scissor offset, and restore skill native art table",
      "Fix 3D texture misalignment: align ASTC overlay TVFS with 1017670023-byte pack",
      "fix(build): use repo_dir instead of script_dir in rebuild_for_a12z.py",
      "fix(gfx): populate full 64-bit DRV2 handles and package updated c1_full.tsv",
-     "fix(gfx): fix discrete UI matrix patch, DRV2 image handles, and disable pass fusing without _bf shaders",
-     "Implement discrete binding for b3e7e0042d1f on A12Z and tune memory pool"
+     "fix(gfx): fix discrete UI matrix patch, DRV2 image handles, and disable pass fusing without _bf shaders"
     ]
    }
   ]
@@ -9932,7 +9931,7 @@
   "branches": []
  },
  "codetrek/d2r-server": {
-  "pushed_at": "2026-10-20T08:09:32Z",
+  "pushed_at": "2026-10-20T13:34:40Z",
   "branches": [
    {
     "branch": "main",
@@ -10012,54 +10011,56 @@
   ]
  },
  "Xc1Ym/LumaDock": {
-  "pushed_at": "2026-10-20T08:27:00Z",
+  "pushed_at": "2026-10-20T12:53:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T08:21:37Z",
+    "last_commit": "2026-10-20T12:53:25Z",
     "subjects": [
+     "Document engine validation limits",
+     "Add English UI, appearance settings and sync nxnative",
      "Release LumaDock 0.2.0 Mac launcher"
     ]
    }
   ]
  },
  "qoopoke1-creator/za-ios-port": {
-  "pushed_at": "2026-10-20T07:14:40Z",
+  "pushed_at": "2026-10-20T11:13:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T07:14:31Z",
+    "last_commit": "2026-10-20T11:13:18Z",
     "subjects": [
+     "Generate runtime probe entitlements with plistlib on runner",
+     "Add isolated cloud runtime startup and scripted input probe",
+     "Add local IPA resource merge and temporary bridge cleanup",
+     "Run locked shader translator through installed dotnet runtime",
+     "Add local Trinity shader preparation and private cloud build pipeline",
      "Add extracted-game survey and Apple toolchain CI probe",
      "Unity clocks start: the user clock context comes from the host (from PR #14)",
-     "README: Monster Hunter Rise moves to the playable table (60 fps on an iPhone)",
-     "README: Monster Hunter Rise runs at 60 fps on an iPhone",
-     "Logs: dropped frames judged by each frame's own hold; the D2R render-scale line only on request",
-     "Tears of the Kingdom and Breath of the Wild: draws into BC textures and draws with no target (from PR #11)",
-     "Breath of the Wild: a render scale (DM_RENDER_SCALE 0.5 to 1.0)",
-     "Breath of the Wild and Tears of the Kingdom: one 60 fps frame step, in whole vsyncs decided by the host"
+     "README: Monster Hunter Rise moves to the playable table (60 fps on an iPhone)"
     ]
    }
   ]
  },
  "armyja/nxnative-cuphead": {
-  "pushed_at": "2026-10-20T08:31:03Z",
+  "pushed_at": "2026-10-20T10:35:34Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T04:45:04Z",
+    "last_commit": "2026-10-20T10:35:26Z",
     "subjects": [
-     "docs: round 43 - Metal validation found a copy-encoder barrier bug (not the shard)",
-     "nvn: valid MTL4 encoder stages for the copy-encoder barrier (validation layer assertion)",
-     "docs: round 42 - guest-frame anchoring and the run-start gap",
-     "nvn: apply DM_PLAY_IN at the guest frame tick; capture by render frame (DM_NVN_SHOT_ANCHOR)",
-     "docs: put the texture-content gap and the GPU-drain result up front",
-     "docs: round 41 - fastC repeat, the fast control is not reproducible",
-     "docs: round 41 - GPU-drain A/B and the inconclusive safe-math test",
-     "nvn: per-frame GPU-drain A/B for the submission race (DM_NVN_DRAIN)"
+     "nvn: factor the copy-source snapshot ring into cps_snap (no behaviour change)",
+     "nvn: only arm the click capture when MTL_CAPTURE_ENABLED is set (normal play clicks are touch input)",
+     "docs: drop the superseded r39 shard contact sheets; keep the two clearest defect frames",
+     "docs: fork notes - geometry shredding marked fixed (Round 45), deadlock still open",
+     "docs: round 45 - the shard is a buffer-copy source reuse race (fixed)",
+     "nvn: snapshot small buffer-copy sources at encode time by default (DM_NVN_COPY_SNAP=0 disables)",
+     "nvn: DM_NVN_DUMP records whether the index buffer has a pending GPU write at the draw",
+     "nvn: DM_NVN_DUMP also writes vertex bytes past the declared range up to the largest index"
     ]
    }
   ]
@@ -10080,6 +10081,35 @@
      "Reorganise for publication: README (en/zh-CN), scripts/, upstream docs moved to docs/upstream, .local git-ignored",
      "Hades II: restore LF line endings, drop temporary crash diagnostics, export dodola-file patches",
      "NVN: bound vertex stream pool reads to the draw's extent (Hades binds streams to the end of an 8 MiB ring; gameplay 29 -> 60 FPS)"
+    ]
+   }
+  ]
+ },
+ "tr0j4ndev/d2r-harmonyos": {
+  "pushed_at": "2026-10-20T14:04:52Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-20T14:04:48Z",
+    "subjects": [
+     "根 README 默认改为中文版，英文移至 README.en.md",
+     "重写根 README：聚焦鸿蒙移植，记录全部修改与优化及实测数据",
+     "鸿蒙：描述符自有区域与跨帧记忆、提交队列线程、回读缓存、设备工具链归集",
+     "归集隔离的鸿蒙运行桥、图形后端与应用源码"
+    ]
+   }
+  ]
+ },
+ "jack20251225/jack": {
+  "pushed_at": "2026-10-20T13:59:20Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-20T13:59:19Z",
+    "subjects": [
+     "Initial commit"
     ]
    }
   ]
