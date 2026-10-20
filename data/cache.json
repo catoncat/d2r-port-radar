@@ -340,11 +340,11 @@
   ]
  },
  "n3crosis/d2r-mobile": {
-  "pushed_at": "2026-10-20T19:10:34Z",
+  "pushed_at": "2026-10-20T22:02:47Z",
   "branches": [
    {
     "branch": "feature/web-ipa-packager",
-    "ahead": 74,
+    "ahead": 86,
     "behind": 0,
     "files": 300,
     "real_files": 290,
@@ -356,20 +356,20 @@
      "web/.oxfmtrc.json",
      "web/.oxlintrc.json",
      "web/ARCHIVE_READER_SCOPE.md",
-     "web/ASSET_GENERATOR_ADAPTER_SCOPE.md",
-     "web/ASSET_PIPELINE_ADAPTER_SCOPE.md",
-     "web/CASC_LOGICAL_READER_SCOPE.md"
+     "web/ARCHIVE_READ_RPC.md",
+     "web/ARCHIVE_READ_RPC.zh-CN.md",
+     "web/ARCHIVE_STREAM_READER.md"
     ],
-    "last_commit": "2026-10-20T19:10:29Z",
+    "last_commit": "2026-10-20T22:02:37Z",
     "subjects": [
-     "Make the zlib WASM smoke check self-contained in clean CI",
-     "Add bounded ASTC transforms and cancellation-safe disk and zlib streams",
-     "Select pinned iOS targets without downloading both shells",
-     "Add closed legacy shell profiles and bounded ASTC encoder foundation",
-     "Show resource export progress and clarify browser compatibility",
-     "Validate shared translation sources before browser builds",
-     "Release staged producer buffers and image intermediates earlier [skip ci]",
-     "Reduce browser buffer copies and optimize shader scanning [skip ci]"
+     "Refresh bilingual delivery evidence for the published browser build",
+     "Release artwork temporaries early and stabilize shader source metadata",
+     "Batch logical asset suffix resolution and diagnose shader build metadata",
+     "Preserve completed downloads and cancellation cleanup outcomes",
+     "Add bounded fast ASTC preset and stabilize runtime build metadata",
+     "Bound shader output copies and release consumed source buffers",
+     "Trim unused runtime source payloads and include recognized Warlock inputs",
+     "Add explicit IPA-only resource export mode and storage advisory"
     ]
    },
    {
@@ -405,14 +405,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-20T19:07:23Z",
+  "pushed_at": "2026-10-20T22:30:39Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 214,
+    "ahead": 228,
     "behind": 22,
-    "files": 213,
-    "real_files": 208,
+    "files": 216,
+    "real_files": 211,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -421,16 +421,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-20T19:07:16Z",
+    "last_commit": "2026-10-20T22:30:35Z",
     "subjects": [
-     "Add P5R occlusion-query force-visible diagnostic",
-     "Port P5R haptics mixer to MZhao-ouo/Touchable scheme",
-     "Add P5R no-cull diagnostic",
-     "Measure and optionally bypass conditional render sync",
-     "Cache multiple P5R conditional render regions",
-     "Coalesce P5R conditional render waits",
-     "Profile P5R index preparation",
-     "Split P5R draw-state timing"
+     "Fold six-channel PCM into stereo without dropping center dialogue",
+     "Share CPU-updated linear BGRA8 UI textures with Metal",
+     "Use supported full-channel clear in the R32F alias regression",
+     "Use the standard macOS 15 Apple Silicon runner label",
+     "Run shared linear storage GPU checks on an independent Apple runner",
+     "Share linear R32F occlusion render targets with guest CPU memory",
+     "Log frame number in the per-draw object trace",
+     "Hash the object buffer (r3) instead of the first CBUF in objlog"
     ]
    },
    {
@@ -648,7 +648,7 @@
   ]
  },
  "feiyunwill/d2r-mobile": {
-  "pushed_at": "2026-10-17T23:36:08Z",
+  "pushed_at": "2026-10-20T23:32:24Z",
   "branches": []
  },
  "mrggbond/d2r-mobile": {
@@ -1554,12 +1554,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-20T17:22:24Z",
+  "pushed_at": "2026-10-20T21:47:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T17:22:22Z",
+    "last_commit": "2026-10-20T21:47:56Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1634,21 +1634,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-20T19:20:01Z",
+  "pushed_at": "2026-10-20T23:28:38Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T19:19:59Z",
+    "last_commit": "2026-10-20T23:28:35Z",
     "subjects": [
+     "README: Pokémon Legends: Z-A moves to the playable table (on an iPhone)",
+     "One NVN driver layout for every game; shader sources read from the game files",
+     "Pokémon Legends: Z-A plays on the Mac: Trinity packs through the game's Oodle, transform feedback, stencil views, the base instance in the driver segment",
      "README: the 60 fps upgrades need the update each note names; no update column",
      "README: each game's supported update; the 60 fps upgrades hold for that update only",
      "README: Octopath Traveler 0 runs at 60 fps (tested on an iPhone)",
      "Octopath Traveler 0 runs at 60 fps: the host writes Unreal's t.MaxFPS and rhi.SyncInterval",
-     "NVN API version and shared-font layout follow the SDK; Oodle found by its name string",
-     "Remove the D2R code and the legacy frame step",
-     "README: Octopath Traveler 0 moves to the playable table (on an iPhone)",
-     "Texture type mismatch: the red line says when the slot reads the dummy"
+     "NVN API version and shared-font layout follow the SDK; Oodle found by its name string"
     ]
    }
   ]
@@ -1714,16 +1714,16 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-20T17:01:48Z",
+  "pushed_at": "2026-10-20T21:36:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T17:01:47Z",
+    "last_commit": "2026-10-20T21:36:24Z",
     "subjects": [
      "chore: 自动同步 Star 地图（185 个项目）",
      "chore: 自动同步 Star 地图（185 个项目）",
-     "chore: 自动同步 Star 地图（184 个项目）",
+     "chore: 自动同步 Star 地图（185 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）",
@@ -1742,12 +1742,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-20T14:24:16Z",
+  "pushed_at": "2026-10-20T19:23:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T14:24:14Z",
+    "last_commit": "2026-10-20T19:23:20Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -1976,11 +1976,11 @@
   ]
  },
  "vickwv/d2r-mobile": {
-  "pushed_at": "2026-10-20T14:38:03Z",
+  "pushed_at": "2026-10-20T23:16:45Z",
   "branches": [
    {
     "branch": "android-integration",
-    "ahead": 188,
+    "ahead": 191,
     "behind": 4,
     "files": 152,
     "real_files": 130,
@@ -1994,16 +1994,16 @@
      "dm/tools",
      "tools/pf"
     ],
-    "last_commit": "2026-10-20T14:32:44Z",
+    "last_commit": "2026-10-20T23:15:35Z",
     "subjects": [
+     "perf(android): 默认开启绿色颜色 store 与深度 load 跳过（营地 −24%、深坑 −37% 带宽）",
+     "perf(nvn): 重试颜色 store / 深度 load——找到全局 store 坏 UI 的根因，两项改为 opt-in",
+     "docs(android): 四项未开的带宽优化逐个重试——三项判负、清屏无对象",
      "docs(android): 构建步骤补上 build_modules.sh——三张查表是 ninja 的编译期依赖",
      "fix(android): 进洞穴 3D 加亮不生效——不再用空关卡表",
      "perf(android): 默认开启逐通道覆盖率表（89 图/25,552 探针，0 新增颜色假绿）",
      "perf(nvn): 批量扫 43 张图/12,810 探针，0 条新增颜色假绿",
-     "fix(nvn): 神秘避难所抓到 800x600 加载键假绿，种子改红",
-     "docs(android): 补五页 UI 面板与 Act 2 场景切换验证",
-     "docs(android): 补第二局怪群战斗与深坑/墓穴全黑对照",
-     "docs(android): 补战斗中验证与探针截图品红说明"
+     "fix(nvn): 神秘避难所抓到 800x600 加载键假绿，种子改红"
     ]
    }
   ]
@@ -2162,15 +2162,16 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-20T19:14:38Z",
+  "pushed_at": "2026-10-20T23:55:38Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 101,
+    "ahead": 124,
     "behind": 5,
-    "files": 44,
-    "real_files": 43,
+    "files": 48,
+    "real_files": 47,
     "dirs": [
+     "UPDATE-2026-10-20.zh-CN.md",
      "codemagic.yaml",
      "codemagic_pick_pack.py",
      "dm/data",
@@ -2181,16 +2182,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-20T19:14:37Z",
+    "last_commit": "2026-10-20T23:55:35Z",
     "subjects": [
-     "Remove the in-game version label (version only on the launch/select pages)",
-     "Probe: dump top panels and text widgets (mercenary name / orb numbers) once after the game starts",
-     "Version label drawn inside the game too; hireling HP tint gets a class-id fallback",
-     "Fix dm_update: properly empty the build label text",
-     "Fix: keep the text buffer declaration when blanking the build label",
-     "Fix: declare the game-font helper after UIKit import",
-     "Fix invisible buttons (socket draw restored); queue tap-to-hover onto the game thread (crash on panel tap); version label uses the game font at the bottom-left edge; drop the in-game build number",
-     "Socket wear: newest rust parameters (cloud 29/3/60%/46%, speckle 35%/2/45% round, grain 16%, rust 70%, seed 306); scratches and dents fixed (not randomised)"
+     "﻿Round 4: orb/mana/Lv numbers shared 30px glyphs in map-name dark gold (212,196,145); mercenary name tint with robust text locating; density 1x..4x by tier; stats title line-break removed by visible text; skill release fixes; treasure-class probabilities are 32-bit (fix scroll zeroing) + Duriel table sanity check",
+     "﻿HUD round 3: orb numbers get the map-name dark gold from the generated vital glyphs; mercenary name is tinted on the game's own text (no overlay redraw); density applies the players tier with retry; character-panel title line-break fix; skill release state fixes; tab highlight sync",
+     "﻿Top function tabs: load the target page first, then sync the tab strip index (highlight follows); only do work when the page actually changes",
+     "Chinese font subset: keep huiwen's own advances for ASCII letters/punctuation (only CJK/digits follow the original font widths), fixing uneven English spacing such as 'Malthael'",
+     "Close tick_gate_product after the density hook (brace was missing)",
+     "Restore tick_gate_product body (lost while adding the density hook) and call the density step there",
+     "Remove temporary probes (panel/HUD tree) and the useless excel-open log",
+     "Orb numbers gold via the HUD layout (ValueDisplay fontColor, documented approach); stop capturing orbs, remove the widget-tree probe"
     ]
    },
    {
@@ -3787,21 +3788,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-20T18:38:12Z",
+  "pushed_at": "2026-10-20T21:18:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T18:35:27Z",
+    "last_commit": "2026-10-20T21:18:27Z",
     "subjects": [
+     "docs: CONTRIBUTING.md with the project's rules for contributors",
+     "docs: README points macOS 15 players to the community Metal 3 fork (after PR #6)",
+     "Merge origin/main (PR #117 BotW base + update packages, PR #111 texture descriptor caps)",
+     "docs: README update history for tonight's merges (#97, #100, #103, #104) and the iOS first start",
+     "perf: iOS reads the prepared shaders inside the app where they are; the first start shows the game in 6.6 s instead of 184 s",
      "Merge PR #111: texture descriptor fields a mod sets beyond what Metal allows are capped instead of aborting",
      "Merge PR #117: Breath of the Wild 1.6.0 builds from a base package plus a separate 1.6.0 update",
-     "data: 739 new variants in the shared shader list from #109, #112, #113, #115 and #116; README shows the list's size",
-     "Update README.md",
-     "Create test_botw_import.py",
-     "Merge BOTW base and separate update with private ticket keys",
-     "Read BOTW update ExeFS using common NSP tickets",
-     "Support separate BOTW base and 1.6.0 update packages"
+     "Merge origin/main (shader list +739 from #109, #112, #113, #115, #116)"
     ]
    }
   ]
@@ -4349,7 +4350,7 @@
   ]
  },
  "n2ray/d2r-mobile": {
-  "pushed_at": "2026-10-20T18:17:36Z",
+  "pushed_at": "2026-10-20T23:44:49Z",
   "branches": [
    {
     "branch": "android-snapdragon-elite",
@@ -4368,8 +4369,8 @@
     ]
    },
    {
-    "branch": "claude/black-material-fable",
-    "ahead": 481,
+    "branch": "codex/android-dirty-cost",
+    "ahead": 602,
     "behind": 9,
     "files": 300,
     "real_files": 297,
@@ -4380,21 +4381,21 @@
      "ci/tests",
      "dm/android"
     ],
-    "last_commit": "2026-10-19T15:10:14Z",
+    "last_commit": "2026-10-20T23:44:33Z",
     "subjects": [
-     "fix(android): sample depth compares on R16/R32F through a depth-format alias (Refs #259)",
-     "feat(android): default-off one-frame production render trace (Refs #259)",
-     "Merge pull request #271 from n2ray/hermes/snapshot-conservative-default",
-     "fix(nvn): default snapshots to conservative COW",
-     "Merge pull request #270 from n2ray/hermes/material-black-rendering",
-     "fix(android): bound and narrow the material visual probe (#259)",
-     "Merge pull request #269 from n2ray/hermes/snapshot-inplace-isolation",
-     "feat(android): add bounded texture-vs-shader material experiment (#259)"
+     "Coalesce contiguous dirty-page write preparation",
+     "Merge pull request #324 from n2ray/codex/buffer-allocation-followup",
+     "Adapt idle Vulkan buffer cache to current workload",
+     "Pool small Vulkan buffer memory allocations",
+     "Merge pull request #322 from n2ray/main",
+     "Merge pull request #321 from n2ray/codex/readme-current-status",
+     "docs(android): refresh English and Chinese playable status",
+     "Merge pull request #319 from n2ray/hermes/map-button-left"
     ]
    },
    {
-    "branch": "claude/display-metal-parity-round2",
-    "ahead": 491,
+    "branch": "integration/android-reference",
+    "ahead": 601,
     "behind": 9,
     "files": 300,
     "real_files": 297,
@@ -4405,45 +4406,21 @@
      "ci/tests",
      "dm/android"
     ],
-    "last_commit": "2026-10-19T15:51:03Z",
+    "last_commit": "2026-10-20T23:35:58Z",
     "subjects": [
-     "fix(android): match Metal polygon-offset semantics in Vulkan (Refs #259)",
-     "Merge pull request #276 from n2ray/hermes/live-touch-skill-binding",
-     "fix(android): expose GNU process_vm_readv for snapshot reader",
-     "feat(android): port shared guest skill snapshot bridge",
-     "Merge pull request #273 from n2ray/claude/black-material-fable",
-     "fix(android): sample depth compares on R16/R32F through a depth-format alias (Refs #259)",
-     "Merge pull request #275 from n2ray/hermes/live-touch-visibility-refresh",
-     "fix(android): do not re-arm live readiness after input teardown (#274)"
+     "Merge pull request #324 from n2ray/codex/buffer-allocation-followup",
+     "Adapt idle Vulkan buffer cache to current workload",
+     "Pool small Vulkan buffer memory allocations",
+     "Merge pull request #322 from n2ray/main",
+     "Merge pull request #321 from n2ray/codex/readme-current-status",
+     "docs(android): refresh English and Chinese playable status",
+     "Merge pull request #319 from n2ray/hermes/map-button-left",
+     "fix(android): move map button to top-left"
     ]
    },
    {
-    "branch": "claude/issue-3-runtime-contract",
-    "ahead": 57,
-    "behind": 9,
-    "files": 203,
-    "real_files": 195,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T13:58:30Z",
-    "subjects": [
-     "docs(android): qualify non-Result SVC envelope rule and status opener (#3)",
-     "docs(android): coherent TLR state machine and current-vs-obligation split (#3)",
-     "docs(android): runtime contract for async events, TLR preemption state and SVC 0x36 (#3)",
-     "Merge pull request #60 from n2ray/hermes/issue-12-vulkan-consumer",
-     "fix(vk): bound every scanner operand read and prove it under ASAN (#12)",
-     "fix(vk): bind execution to validated bytes and pre-check device limits (#12)",
-     "Merge pull request #59 from n2ray/hermes/issue-32-native-events",
-     "feat(vk): reflection-driven consumer for owned compute fixtures (#12)"
-    ]
-   },
-   {
-    "branch": "codex/android-guest-elf-map",
-    "ahead": 424,
+    "branch": "main",
+    "ahead": 370,
     "behind": 9,
     "files": 300,
     "real_files": 297,
@@ -4454,2435 +4431,16 @@
      "ci/tests",
      "dm/android"
     ],
-    "last_commit": "2026-10-19T11:36:44Z",
+    "last_commit": "2026-10-20T22:05:35Z",
     "subjects": [
-     "fix(android): restore ELF loading and guest context publication",
-     "test(loader): use actual 0..7 producer key indices (#249)",
-     "fix(loader): validate layout key slots before key-page writes (#249)",
-     "Merge pull request #247 from n2ray/hermes/java-package-targets",
-     "fix(android): gate installed-package readiness on module targets (#245)",
-     "Merge pull request #248 from n2ray/hermes/optional-module-create",
-     "Merge pull request #244 from n2ray/hermes/embedded-target-copy",
-     "fix(android): honor optional failure when creating shader modules"
-    ]
-   },
-   {
-    "branch": "codex/ci63-66-validation",
-    "ahead": 78,
-    "behind": 9,
-    "files": 226,
-    "real_files": 216,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T14:33:54Z",
-    "subjects": [
-     "Merge commit '27348c1' into codex/ci63-66-validation",
-     "test: complete generated-entry sanitizer ABI boundaries",
-     "Merge remote-tracking branch 'origin/main' into codex/ci63-66-validation",
-     "Merge commit '83325fb06a36b1056da6d23cc0b202024cdc418c' into codex/ci63-66-validation",
-     "test: use x86 LowMem hints for HIPC wire fixture",
-     "Merge pull request #65 from n2ray/claude/issue-3-runtime-contract",
-     "Merge pull request #68 from n2ray/hermes/issue-13-mip-proof",
-     "fix(vk): align mip-prefix contract, add mid-pipeline cleanup proof (#13)"
-    ]
-   },
-   {
-    "branch": "codex/driver-picker",
-    "ahead": 577,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-20T15:56:30Z",
-    "subjects": [
-     "feat(android): select import and delete GPU drivers safely (#306)",
-     "fix(android): keep diagnostic GPU probes out of game builds",
-     "Merge pull request #301 from n2ray/hermes/shop-ghost-297",
-     "fix(android): replay shop item layer with captured uniforms",
-     "fix(android): allow shop ghosts in panel gesture mode",
-     "Merge remote-tracking branch 'origin/integration/android-reference' into hermes/shop-ghost-297",
-     "fix(android): retain shop drag owner across secondary touches",
-     "fix(android): bind shop ghost replay to physical contact"
-    ]
-   },
-   {
-    "branch": "codex/frontend-output-geometry",
-    "ahead": 522,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T20:22:42Z",
-    "subjects": [
-     "fix(android): map frontend touch to actual output aspect",
-     "diag(android): test frontend generation rearm source (#34)",
-     "fix(android): avoid stale snap-name attribution in FE trace (#34)",
-     "diag(android): rearm FE trace by generation (#34)",
-     "Merge commit '29515baa7b5b4fb1c56d8b7d00971e9703b94d4a' into hermes/live-touch-visual-overlay",
-     "Merge pull request #283 from n2ray/hermes/live-touch-visual-overlay",
-     "fix(android): bound and stage front-end touch trace (#34)",
-     "Merge pull request #284 from n2ray/codex/nvn-command-packet-diagnostic"
-    ]
-   },
-   {
-    "branch": "codex/nvn-command-packet-diagnostic",
-    "ahead": 511,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T19:19:18Z",
-    "subjects": [
-     "fix(android): wait on actual Vulkan submission fences",
-     "fix(android): hide combat HUD on front-end pages (#34)",
-     "Merge commit '2ea56b61c7efed9a612b75f1309237d0b33df0d0' into hermes/live-touch-visual-overlay",
-     "Merge pull request #281 from n2ray/hermes/live-touch-skill-binding",
-     "fix(android): preserve known item class 0 in bind route",
-     "fix(android): keep skill-tree taps in navigation while binding",
-     "feat(android): confirm bind skill tap through original core",
-     "Merge pull request #277 from n2ray/hermes/live-touch-visual-overlay"
-    ]
-   },
-   {
-    "branch": "codex/qualcomm-ubo-259",
-    "ahead": 577,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-20T15:14:13Z",
-    "subjects": [
-     "fix(android): keep diagnostic GPU probes out of game builds",
-     "fix(android): lower Qualcomm dynamic guest UBO component loads",
-     "Merge pull request #301 from n2ray/hermes/shop-ghost-297",
-     "fix(android): replay shop item layer with captured uniforms",
-     "fix(android): allow shop ghosts in panel gesture mode",
-     "Merge remote-tracking branch 'origin/integration/android-reference' into hermes/shop-ghost-297",
-     "fix(android): retain shop drag owner across secondary touches",
-     "fix(android): bind shop ghost replay to physical contact"
-    ]
-   },
-   {
-    "branch": "codex/touch-ios-gestures",
-    "ahead": 560,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-20T11:40:50Z",
-    "subjects": [
-     "Fix gesture fixtures under required sanitizer and warning checks",
-     "Port original iOS frontend touch gestures to Android",
-     "Merge pull request #294 from n2ray/codex/touch-map-presentation",
-     "Default to original touch controls and reduce HUD obstruction",
-     "Merge pull request #293 from n2ray/codex/touch-pulse-receipts",
-     "Fix Android touch timer starvation, item state and skill glyphs",
-     "Preserve skill binding Y pulses while gating item A receipts",
-     "Prevent event shortcut from ending unacknowledged pointer pulses"
-    ]
-   },
-   {
-    "branch": "codex/touch-map-presentation",
-    "ahead": 557,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-20T09:52:50Z",
-    "subjects": [
-     "Default to original touch controls and reduce HUD obstruction",
-     "Merge pull request #293 from n2ray/codex/touch-pulse-receipts",
-     "Fix Android touch timer starvation, item state and skill glyphs",
-     "Preserve skill binding Y pulses while gating item A receipts",
-     "Prevent event shortcut from ending unacknowledged pointer pulses",
-     "Keep pickup origin stable until delivered input polls complete",
-     "Accept intentional empty touch hint replacements from iOS overlays",
-     "Merge remote-tracking branch 'origin/integration/android-reference' into codex/touch-pulse-receipts"
-    ]
-   },
-   {
-    "branch": "codex/touch-pulse-receipts",
-    "ahead": 555,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-20T09:04:16Z",
-    "subjects": [
-     "Fix Android touch timer starvation, item state and skill glyphs",
-     "Preserve skill binding Y pulses while gating item A receipts",
-     "Prevent event shortcut from ending unacknowledged pointer pulses",
-     "Keep pickup origin stable until delivered input polls complete",
-     "Accept intentional empty touch hint replacements from iOS overlays",
-     "Merge remote-tracking branch 'origin/integration/android-reference' into codex/touch-pulse-receipts",
-     "Merge pull request #290 from n2ray/hermes/live-touch-skill-binding",
-     "Merge Android overlay and input mode integration into skill glyphs"
-    ]
-   },
-   {
-    "branch": "docs/android-project-readme",
-    "ahead": 32,
-    "behind": 9,
-    "files": 177,
-    "real_files": 171,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T09:26:56Z",
-    "subjects": [
-     "docs(android): align fork readmes with project goals and evidence",
-     "Merge pull request #47 from n2ray/hermes/issue-12-contract-gate",
-     "Merge pull request #46 from n2ray/hermes/issue-32-touch-adapter",
-     "test(android): cover pulse arrival during touch release",
-     "fix(gfx): stage finish() outputs per key and commit only when all stages pass (#12)",
-     "fix(android): hold touch pulse release across ticks",
-     "fix(android): preserve ordered pending touch pulses",
-     "fix(gfx): make the build gate fail honestly, restore only after validation (#12)"
-    ]
-   },
-   {
-    "branch": "hermes/android-target-guard",
-    "ahead": 400,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T10:08:53Z",
-    "subjects": [
-     "fix(android): use per-module NAME.target markers (#234)",
-     "guard(android): require android-context-v1 before module mapping (#234)",
-     "Merge pull request #231 from n2ray/hermes/reference-draw-parameters",
-     "Merge pull request #226 from n2ray/hermes/import-runtime",
-     "fix(audio): preserve Apple interruption recovery retries",
-     "Merge pull request #233 from n2ray/hermes/reuse-shader-profile",
-     "fix(android): clear draw feature state on driver fallback reset",
-     "fix(audio): track physical AAudio callback quiescence at every caller (#222)"
-    ]
-   },
-   {
-    "branch": "hermes/audio-focus-jni",
-    "ahead": 308,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T04:52:13Z",
-    "subjects": [
-     "fix(android): retain the platform request across a failed abandon (#184)",
-     "Merge remote-tracking branch 'origin/main' into hermes/audio-focus-jni",
-     "Merge pull request #186 from n2ray/hermes/controller-hotplug",
-     "docs: record the 46-check harness and root 41-check cross (#184)",
-     "fix(android): keep release retryable and clear JNI exceptions on failed create (#184)",
-     "fix(android): use activity classloader in hotplug JNI (#183)",
-     "Merge pull request #181 from n2ray/hermes/ime-view",
-     "fix(ci): build the JVM-loaded JNI plugin without sanitizer runtime (#184)"
-    ]
-   },
-   {
-    "branch": "hermes/audio-focus-policy",
-    "ahead": 227,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx"
-    ],
-    "last_commit": "2026-10-18T22:15:41Z",
-    "subjects": [
-     "fix(android): apply target gain to every replacement stream (#153)",
-     "chore(android): place the audio-focus CMake block clear of the merged input-source hunk (#153)",
-     "fix(android): retain backend ownership until one successful stop (#153)",
-     "feat(android): serialized audio-focus and desired-play policy (#153)",
-     "Merge pull request #146 from n2ray/hermes/native-callback-ci",
-     "test(android): exercise active timer and actual callback routes (#145)",
-     "test(android): cover actual native callback dispatch (#145)",
-     "Merge pull request #144 from n2ray/hermes/native-wsi-diagnostic"
-    ]
-   },
-   {
-    "branch": "hermes/audio-native-app",
-    "ahead": 334,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T05:37:00Z",
-    "subjects": [
-     "fix(android): identity-gated audio pause and callback fixture audio seam (#200)",
-     "merge main (IME PR193) preserving both text and audio hooks (#200)",
-     "feat(android): wire NativeActivity keyboard P/S diagnostics to the accepted audio session (#200)",
-     "Merge pull request #193 from n2ray/hermes/ime-native-app",
-     "Merge pull request #197 from n2ray/hermes/audio-session",
-     "Merge pull request #198 from n2ray/hermes/ime-insets",
-     "fix(android): release text bridge on show rollback (#190)",
-     "fix(android): order focus result before intent and fail closed on uncertain request (#195)"
-    ]
-   },
-   {
-    "branch": "hermes/audio-output-integration",
-    "ahead": 254,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-18T22:40:38Z",
-    "subjects": [
-     "fix(android): retire a disconnected AAudio stream on explicit replay (#163)",
-     "fix(android): keep the PCM composition test host-only (#163)",
-     "feat(android): compose real AAudio output with focus policy and PCM gain (#163)",
-     "Merge pull request #158 from n2ray/hermes/custom-preferences",
-     "Merge pull request #155 from n2ray/hermes/audio-focus-policy",
-     "Merge pull request #156 from n2ray/hermes/gamepad-events",
-     "fix(android): apply target gain to every replacement stream (#153)",
-     "Merge remote-tracking branch 'origin/main' into hermes/gamepad-events"
-    ]
-   },
-   {
-    "branch": "hermes/audio-pcm-pacing",
-    "ahead": 341,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T05:54:35Z",
-    "subjects": [
-     "fix(android): carry exact fractional frame remainder across ticks (#206)",
-     "fix(android): pace owned diagnostic PCM at 48kHz with bounded backlog (#206)",
-     "Merge pull request #202 from n2ray/hermes/audio-native-app",
-     "fix(android): identity-gated audio pause and callback fixture audio seam (#200)",
-     "Merge pull request #203 from n2ray/hermes/hud-swapchain",
-     "fix(android): guard HUD presenter partial-init cleanup (#199)",
-     "merge main (IME PR193) preserving both text and audio hooks (#200)",
-     "Merge remote-tracking branch 'origin/main' into hermes/hud-swapchain"
-    ]
-   },
-   {
-    "branch": "hermes/audio-session",
-    "ahead": 317,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T05:10:11Z",
-    "subjects": [
-     "fix(android): order focus result before intent and fail closed on uncertain request (#195)",
-     "feat(android): serialized audio session combining accepted focus JNI and output owner (#195)",
-     "Merge pull request #185 from n2ray/hermes/audio-focus-jni",
-     "Merge pull request #191 from n2ray/hermes/hotplug-required-ci",
-     "fix(android): retain the platform request across a failed abandon (#184)",
-     "test(android): link libm in callback fixture for Linux CI (#189)",
-     "Merge pull request #188 from n2ray/hermes/ime-activity-host",
-     "ci: require hotplug regressions in Java gate (#189)"
-    ]
-   },
-   {
-    "branch": "hermes/audio-touch-entry",
-    "ahead": 362,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T06:25:47Z",
-    "subjects": [
-     "fix(android): keep touch layout within existing stubs; measured stack prevents overlap (#211)",
-     "fix(android): actual audio_entry JNI fixture and measured touch layout (#211)",
-     "merge main (HUD PR208) preserving audio touch and HUD fields (#211)",
-     "feat(android): owned touch play/stop buttons for diagnostic audio (#211)",
-     "Merge pull request #208 from n2ray/hermes/hud-native-app",
-     "fix(android): pin header-only Vulkan for WSI host fixtures (#205)",
-     "Merge pull request #207 from n2ray/hermes/audio-pcm-pacing",
-     "fix(android): resolve Vulkan headers for WSI HUD CTest (#205)"
-    ]
-   },
-   {
-    "branch": "hermes/character-rendering",
-    "ahead": 435,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T12:32:01Z",
-    "subjects": [
-     "fix(android): keep complete texture diagnostic token identity (#259)",
-     "fix(android): trigger texture diagnostics at the real scene (#259)",
-     "feat(android): bounded texture binding diagnostics (#259)",
-     "Merge pull request #256 from n2ray/hermes/heap-snapshot-perf",
-     "Merge pull request #257 from n2ray/hermes/phone-aspect-output",
-     "fix(host): restore Apple heap range export",
-     "fix(android): bound output geometry before numeric conversion (#254)",
-     "feat(android): phone-aspect game output at 720-level height (#254)"
-    ]
-   },
-   {
-    "branch": "hermes/clean-apk-provenance",
-    "ahead": 198,
-    "behind": 9,
-    "files": 300,
-    "real_files": 278,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T19:36:14Z",
-    "subjects": [
-     "docs(android): clarify APK hash and signing trust boundaries",
-     "docs(android): record a real clean-tree APK build and sidecar verification (#135)",
-     "Merge pull request #130 from n2ray/hermes/graphics-interface",
-     "Merge pull request #132 from n2ray/hermes/diagnostic-provenance",
-     "fix(vulkan): bound function type parameter count (#125)",
-     "fix(android): enforce provenance sidecar identity schema (#131)",
-     "fix(vulkan): validate entry definition and bounds (#125)",
-     "feat(android): add diagnostic APK provenance sidecar (#131)"
-    ]
-   },
-   {
-    "branch": "hermes/controller-hotplug",
-    "ahead": 292,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T04:41:14Z",
-    "subjects": [
-     "fix(android): use activity classloader in hotplug JNI (#183)",
-     "fix(android): enforce hotplug owner and retry release (#183)",
-     "feat(android): retire controllers on InputManager removal (#183)",
-     "Merge pull request #178 from n2ray/hermes/native-gamepad",
-     "Merge pull request #177 from n2ray/hermes/required-java-ci",
-     "fix(android): retire gamepad state on touch takeover (#174)",
-     "Merge pull request #175 from n2ray/hermes/ime-boundary",
-     "fix(ci): install Android platform without a SIGPIPE-prone yes pipeline (#176)"
-    ]
-   },
-   {
-    "branch": "hermes/custom-preferences",
-    "ahead": 231,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx"
-    ],
-    "last_commit": "2026-10-18T22:12:12Z",
-    "subjects": [
-     "chore(android): place the custom-preferences CMake blocks clear of merged hunks (#157)",
-     "fix(android): upstream merc migration order and no-op apply semantics (#157)",
-     "feat(android): standalone custom-preferences transaction module (#157)",
-     "Merge pull request #148 from n2ray/hermes/wsi-evidence-report",
-     "fix(android): retain distinct terminal failures and reset recovered retries",
-     "fix(android): single failure episode and real-open attempt accounting (#147)",
-     "fix(android): faithful WSI failure evidence and single-count lifecycle transitions (#147)",
-     "feat(android): bounded WSI evidence reports for the explicit diagnostic (#147)"
-    ]
-   },
-   {
-    "branch": "hermes/custom-preferences-store",
-    "ahead": 270,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-18T22:46:53Z",
-    "subjects": [
-     "Merge remote-tracking branch 'origin/main' into hermes/custom-preferences-store",
-     "fix(android): make preferences store nonblocking and symlink-safe (#167)",
-     "Merge pull request #164 from n2ray/hermes/audio-output-integration",
-     "test(android): clean private store fixture directory (#167)",
-     "fix(android): retire a disconnected AAudio stream on explicit replay (#163)",
-     "Merge remote-tracking branch 'origin/main' into hermes/custom-preferences-store",
-     "feat(android): add private custom-preferences file adapter (#167)",
-     "Merge pull request #166 from n2ray/hermes/input-source-view"
-    ]
-   },
-   {
-    "branch": "hermes/diagnostic-landscape",
-    "ahead": 186,
-    "behind": 9,
-    "files": 290,
-    "real_files": 267,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T18:52:26Z",
-    "subjects": [
-     "feat(android): declare sensorLandscape for the diagnostic Activity (#126)",
-     "Merge pull request #124 from n2ray/hermes/xiaomi-window-format",
-     "fix(android): negotiate RGBA_8888 Surface geometry before acquiring it (#123)",
-     "Merge pull request #122 from n2ray/hermes/live-touch-hud",
-     "fix(android): retain external HUD redraw before fallible work",
-     "fix(android): compose HUD on external redraw and ack after post (#121)",
-     "test(android): cover coalesced/lifecycle CPU HUD scheduling (#121)",
-     "fix(android): harden CPU HUD overlay clipping and scheduling (#121)"
-    ]
-   },
-   {
-    "branch": "hermes/diagnostic-provenance",
-    "ahead": 191,
-    "behind": 9,
-    "files": 292,
-    "real_files": 269,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T19:09:30Z",
-    "subjects": [
-     "fix(android): enforce provenance sidecar identity schema (#131)",
-     "feat(android): add diagnostic APK provenance sidecar (#131)",
-     "Merge pull request #129 from n2ray/hermes/touch-invalid-reasons",
-     "feat(android): add bounded invalid touch reasons (#128)",
-     "Merge pull request #127 from n2ray/hermes/diagnostic-landscape",
-     "feat(android): declare sensorLandscape for the diagnostic Activity (#126)",
-     "Merge pull request #124 from n2ray/hermes/xiaomi-window-format",
-     "fix(android): negotiate RGBA_8888 Surface geometry before acquiring it (#123)"
-    ]
-   },
-   {
-    "branch": "hermes/dirty-snapshot-transaction",
-    "ahead": 437,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T12:30:02Z",
-    "subjects": [
-     "build(nvn): link dirty transaction into Android backend",
-     "perf(nvn): add dirty snapshot transaction",
-     "Merge pull request #260 from n2ray/hermes/host-snapshot-guard",
-     "test(host): link save fixtures to snapshot guard",
-     "perf(host): add guest snapshot writer guard",
-     "Merge pull request #256 from n2ray/hermes/heap-snapshot-perf",
-     "Merge pull request #257 from n2ray/hermes/phone-aspect-output",
-     "fix(host): restore Apple heap range export"
-    ]
-   },
-   {
-    "branch": "hermes/embedded-target-copy",
-    "ahead": 411,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T10:30:53Z",
-    "subjects": [
-     "fix(android): reject truncated metadata paths (#243)",
-     "fix(android): copy embedded module target markers (#243)",
-     "Merge pull request #238 from n2ray/hermes/game-host-link",
-     "fix(android): allow headless bridge without a display (#224)",
-     "Merge accepted integration/android-reference (PR236/237)",
-     "Merge pull request #236 from n2ray/hermes/shader-required-features",
-     "Merge pull request #237 from n2ray/hermes/android-target-guard",
-     "fix(android): provide real host bridge for game linking (#224)"
-    ]
-   },
-   {
-    "branch": "hermes/game-host-link",
-    "ahead": 408,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T10:17:07Z",
-    "subjects": [
-     "fix(android): allow headless bridge without a display (#224)",
-     "Merge accepted integration/android-reference (PR236/237)",
-     "Merge pull request #236 from n2ray/hermes/shader-required-features",
-     "Merge pull request #237 from n2ray/hermes/android-target-guard",
-     "fix(android): provide real host bridge for game linking (#224)",
-     "test(android): execute production shader feature decisions",
-     "fix(android): use per-module NAME.target markers (#234)",
-     "fix(android): guard Apple QoS attribute in NVN thread start (#224)"
-    ]
-   },
-   {
-    "branch": "hermes/gamepad-events",
-    "ahead": 241,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-18T22:14:25Z",
-    "subjects": [
-     "Merge remote-tracking branch 'origin/main' into hermes/gamepad-events",
-     "Merge pull request #151 from n2ray/hermes/owned-aaudio",
-     "ci: trigger exact-head check after missed pull_request event",
-     "fix(android): retain AAudio callback owner on failed rollback close (#149)",
-     "fix(android): preserve digital/analog gamepad contributions (#154)",
-     "Merge pull request #152 from n2ray/hermes/input-source",
-     "fix(android): make AAudio teardown retryable and validate setters (#149)",
-     "fix(android): reject touch takeover atomically (#150)"
-    ]
-   },
-   {
-    "branch": "hermes/graphics-interface",
-    "ahead": 188,
-    "behind": 9,
-    "files": 300,
-    "real_files": 276,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T19:11:50Z",
-    "subjects": [
-     "fix(vulkan): bound function type parameter count (#125)",
-     "fix(vulkan): validate entry definition and bounds (#125)",
-     "feat(vulkan): validate owned VS/PS graphics interface (#125)",
-     "Merge pull request #124 from n2ray/hermes/xiaomi-window-format",
-     "fix(android): negotiate RGBA_8888 Surface geometry before acquiring it (#123)",
-     "Merge pull request #122 from n2ray/hermes/live-touch-hud",
-     "fix(android): retain external HUD redraw before fallible work",
-     "fix(android): compose HUD on external redraw and ack after post (#121)"
-    ]
-   },
-   {
-    "branch": "hermes/heap-snapshot-perf",
-    "ahead": 428,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T11:57:08Z",
-    "subjects": [
-     "fix(host): restore Apple heap range export",
-     "perf(android): restore protected guest heap snapshots",
-     "Merge pull request #252 from n2ray/codex/android-guest-elf-map",
-     "fix(android): restore ELF loading and guest context publication",
-     "Merge pull request #250 from n2ray/hermes/loader-key-layout",
-     "test(loader): use actual 0..7 producer key indices (#249)",
-     "fix(loader): validate layout key slots before key-page writes (#249)",
-     "Merge pull request #247 from n2ray/hermes/java-package-targets"
-    ]
-   },
-   {
-    "branch": "hermes/host-snapshot-guard",
-    "ahead": 434,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T12:22:09Z",
-    "subjects": [
-     "test(host): link save fixtures to snapshot guard",
-     "perf(host): add guest snapshot writer guard",
-     "Merge pull request #256 from n2ray/hermes/heap-snapshot-perf",
-     "Merge pull request #257 from n2ray/hermes/phone-aspect-output",
-     "fix(host): restore Apple heap range export",
-     "fix(android): bound output geometry before numeric conversion (#254)",
-     "feat(android): phone-aspect game output at 720-level height (#254)",
-     "perf(android): restore protected guest heap snapshots"
-    ]
-   },
-   {
-    "branch": "hermes/hotplug-required-ci",
-    "ahead": 304,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T04:50:12Z",
-    "subjects": [
-     "test(android): link libm in callback fixture for Linux CI (#189)",
-     "ci: require hotplug regressions in Java gate (#189)",
-     "Merge pull request #186 from n2ray/hermes/controller-hotplug",
-     "fix(android): use activity classloader in hotplug JNI (#183)",
-     "Merge pull request #181 from n2ray/hermes/ime-view",
-     "fix(android): enforce hotplug owner and retry release (#183)",
-     "docs(android): correct text editor cursor contract (#179)",
-     "Merge remote-tracking branch 'origin/main' into hermes/ime-view"
-    ]
-   },
-   {
-    "branch": "hermes/hud-native-app",
-    "ahead": 354,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T06:02:26Z",
-    "subjects": [
-     "fix(android): pin header-only Vulkan for WSI host fixtures (#205)",
-     "fix(android): resolve Vulkan headers for WSI HUD CTest (#205)",
-     "fix(android): take Vulkan include from CMake target (#205)",
-     "Merge remote-tracking branch 'origin/main' into hermes/hud-native-app",
-     "fix(android): pass CMake Vulkan include to WSI HUD fixture (#205)",
-     "Merge pull request #204 from n2ray/hermes/ime-touch-entry",
-     "fix: quiesce app before deferred IME teardown",
-     "test(android): cover WSI HUD caller and no-record mutant (#205)"
-    ]
-   },
-   {
-    "branch": "hermes/hud-swapchain",
-    "ahead": 334,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T05:31:23Z",
-    "subjects": [
-     "fix(android): guard HUD presenter partial-init cleanup (#199)",
-     "Merge remote-tracking branch 'origin/main' into hermes/hud-swapchain",
-     "feat(android): present owned HUD through swapchain (#199)",
-     "Merge pull request #193 from n2ray/hermes/ime-native-app",
-     "Merge pull request #197 from n2ray/hermes/audio-session",
-     "Merge pull request #198 from n2ray/hermes/ime-insets",
-     "fix(android): release text bridge on show rollback (#190)",
-     "fix(android): order focus result before intent and fail closed on uncertain request (#195)"
-    ]
-   },
-   {
-    "branch": "hermes/ime-activity-host",
-    "ahead": 300,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T04:44:27Z",
-    "subjects": [
-     "fix(android): roll back focus refusal and hide failures (#187)",
-     "feat(android): host accepted text editor in Activity content (#187)",
-     "Merge pull request #181 from n2ray/hermes/ime-view",
-     "docs(android): correct text editor cursor contract (#179)",
-     "Merge remote-tracking branch 'origin/main' into hermes/ime-view",
-     "fix(android): keep IME session document and consume back pair (#179)",
-     "Merge pull request #182 from n2ray/hermes/ime-required-ci",
-     "Merge pull request #178 from n2ray/hermes/native-gamepad"
-    ]
-   },
-   {
-    "branch": "hermes/ime-boundary",
-    "ahead": 282,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-18T23:06:50Z",
-    "subjects": [
-     "Merge remote-tracking branch 'origin/main' into hermes/ime-boundary",
-     "fix(android): preserve composing during surrounding deletion (#173)",
-     "Merge pull request #171 from n2ray/hermes/platform-audio-focus",
-     "fix(android): preserve UTF-16 boundaries in IME edits (#173)",
-     "fix(android): enforce main-looper focus ownership, drop staging queue (#170)",
-     "Merge remote-tracking branch 'origin/main' into hermes/ime-boundary",
-     "feat(android): add real InputConnection text boundary (#173)",
-     "Merge pull request #172 from n2ray/hermes/native-arbiter"
-    ]
-   },
-   {
-    "branch": "hermes/ime-host-required-ci",
-    "ahead": 309,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T04:55:07Z",
-    "subjects": [
-     "ci: require accepted IME View/Activity host regressions (#192)",
-     "Merge pull request #191 from n2ray/hermes/hotplug-required-ci",
-     "test(android): link libm in callback fixture for Linux CI (#189)",
-     "Merge pull request #188 from n2ray/hermes/ime-activity-host",
-     "ci: require hotplug regressions in Java gate (#189)",
-     "Merge pull request #186 from n2ray/hermes/controller-hotplug",
-     "fix(android): roll back focus refusal and hide failures (#187)",
-     "fix(android): use activity classloader in hotplug JNI (#183)"
-    ]
-   },
-   {
-    "branch": "hermes/ime-insets",
-    "ahead": 319,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T05:08:29Z",
-    "subjects": [
-     "fix(android): bind IME insets to root extent and attach token (#196)",
-     "feat(android): observe IME insets on owned editor (#196)",
-     "Merge pull request #194 from n2ray/hermes/ime-host-required-ci",
-     "Merge pull request #185 from n2ray/hermes/audio-focus-jni",
-     "ci: require accepted IME View/Activity host regressions (#192)",
-     "Merge pull request #191 from n2ray/hermes/hotplug-required-ci",
-     "fix(android): retain the platform request across a failed abandon (#184)",
-     "test(android): link libm in callback fixture for Linux CI (#189)"
-    ]
-   },
-   {
-    "branch": "hermes/ime-native-app",
-    "ahead": 324,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T05:13:18Z",
-    "subjects": [
-     "fix(android): release text bridge on show rollback (#190)",
-     "Merge remote-tracking branch 'origin/main' into hermes/ime-native-app",
-     "fix(android): harden text trigger, BACK pair and JNI lifecycle (#190)",
-     "Merge pull request #194 from n2ray/hermes/ime-host-required-ci",
-     "fix(android): match text JNI callback signature (#190)",
-     "Merge pull request #185 from n2ray/hermes/audio-focus-jni",
-     "fix(android): keep text loader receiver distinct (#190)",
-     "ci: require accepted IME View/Activity host regressions (#192)"
-    ]
-   },
-   {
-    "branch": "hermes/ime-native-insets",
-    "ahead": 367,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T06:36:22Z",
-    "subjects": [
-     "fix(android): reject non-boolean IME known/visible payloads (#215)",
-     "feat(android): route IME insets into text JNI and view policy (#215)",
-     "Merge pull request #210 from n2ray/hermes/ime-utf16-payload",
-     "test(android): verify full payload clear on cancel, empty and end (#209)",
-     "Merge accepted main 41995b2",
-     "fix(android): clear stale UTF-16 payload storage on replacement and end (#209)",
-     "Merge pull request #208 from n2ray/hermes/hud-native-app",
-     "test(android): cover surrogate pair at UTF-16 payload boundary (#209)"
-    ]
-   },
-   {
-    "branch": "hermes/ime-required-ci",
-    "ahead": 287,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-18T23:13:50Z",
-    "subjects": [
-     "ci: run accepted IME logic tests and mutations in the required Java gate (#180)",
-     "Merge pull request #177 from n2ray/hermes/required-java-ci",
-     "Merge pull request #175 from n2ray/hermes/ime-boundary",
-     "fix(ci): install Android platform without a SIGPIPE-prone yes pipeline (#176)",
-     "Merge remote-tracking branch 'origin/main' into hermes/ime-boundary",
-     "fix(android): preserve composing during surrounding deletion (#173)",
-     "ci: mandatory real-android.jar Java compile and focus host controls (#176)",
-     "Merge pull request #171 from n2ray/hermes/platform-audio-focus"
-    ]
-   },
-   {
-    "branch": "hermes/ime-touch-entry",
-    "ahead": 345,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T05:48:40Z",
-    "subjects": [
-     "fix: quiesce app before deferred IME teardown",
-     "Merge remote-tracking branch 'origin/main' into hermes/ime-touch-entry",
-     "fix(android): retain IME cleanup owner through terminal destroy (#201)",
-     "Merge pull request #202 from n2ray/hermes/audio-native-app",
-     "fix(android): identity-gated audio pause and callback fixture audio seam (#200)",
-     "Merge remote-tracking branch 'origin/main' into hermes/ime-touch-entry",
-     "fix(android): clear JNI failures and retain cleanup ownership (#201)",
-     "Merge pull request #203 from n2ray/hermes/hud-swapchain"
-    ]
-   },
-   {
-    "branch": "hermes/ime-utf16-payload",
-    "ahead": 364,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T06:18:25Z",
-    "subjects": [
-     "test(android): verify full payload clear on cancel, empty and end (#209)",
-     "Merge accepted main 41995b2",
-     "fix(android): clear stale UTF-16 payload storage on replacement and end (#209)",
-     "Merge pull request #208 from n2ray/hermes/hud-native-app",
-     "test(android): cover surrogate pair at UTF-16 payload boundary (#209)",
-     "fix(android): pin header-only Vulkan for WSI host fixtures (#205)",
-     "Merge pull request #207 from n2ray/hermes/audio-pcm-pacing",
-     "Merge accepted main after PR204"
-    ]
-   },
-   {
-    "branch": "hermes/ime-view",
-    "ahead": 297,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T04:31:43Z",
-    "subjects": [
-     "docs(android): correct text editor cursor contract (#179)",
-     "Merge remote-tracking branch 'origin/main' into hermes/ime-view",
-     "fix(android): keep IME session document and consume back pair (#179)",
-     "Merge pull request #182 from n2ray/hermes/ime-required-ci",
-     "Merge pull request #178 from n2ray/hermes/native-gamepad",
-     "ci: run accepted IME logic tests and mutations in the required Java gate (#180)",
-     "fix(android): retire text session before terminal callbacks (#179)",
-     "Merge remote-tracking branch 'origin/main' into hermes/ime-view"
-    ]
-   },
-   {
-    "branch": "hermes/import-build",
-    "ahead": 381,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T09:42:59Z",
-    "subjects": [
-     "fix(android): exclude desktop mouse consumer from host link (#224)",
-     "docs(android): note platform guard on existing touch sources (#224)",
-     "fix(android): keep only supported quality presets and touch deps (#224)",
-     "Merge accepted integration/android-reference (PR228)",
-     "Merge pull request #228 from n2ray/hermes/import-graphics",
-     "fix(android): repair game-run routing and frontend build (#224)",
-     "fix(android): remove dead NVN helpers and keep Werror",
-     "build(android): compile imported NVN Vulkan backend with NDK"
-    ]
-   },
-   {
-    "branch": "hermes/import-graphics",
-    "ahead": 373,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T08:53:39Z",
-    "subjects": [
-     "fix(android): remove dead NVN helpers and keep Werror",
-     "build(android): compile imported NVN Vulkan backend with NDK",
-     "verify Android context entry with owned on-device ARM64 fixture",
-     "adapt Android context emission while preserving Apple target",
-     "import Android backend sources from pinned sydeEvans snapshot",
+     "Merge pull request #321 from n2ray/codex/readme-current-status",
+     "docs(android): refresh English and Chinese playable status",
      "Merge pull request #214 from n2ray/hermes/scene-hud-wsi",
      "Merge remote-tracking branch 'origin/main' into hermes/scene-hud-wsi",
-     "Merge pull request #210 from n2ray/hermes/ime-utf16-payload"
-    ]
-   },
-   {
-    "branch": "hermes/import-runtime",
-    "ahead": 378,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T09:56:41Z",
-    "subjects": [
-     "fix(audio): preserve Apple interruption recovery retries",
-     "fix(audio): track physical AAudio callback quiescence at every caller (#222)",
-     "fix(audio): require confirmed AAudio stop before consumer handoff (#222)",
-     "fix(host): real Android HLE sections and AAudio output (#222)",
-     "adapt(host): Android instruction profiling reports unavailable (#222)",
-     "adapt(host): Android context records, sections and lifecycle (#222)",
-     "Merge remote-tracking branch 'origin/integration/android-reference' into hermes/import-runtime",
-     "adapt(host): compile crash, fdstat and main timelines for Android (#222)"
-    ]
-   },
-   {
-    "branch": "hermes/indexed-offscreen",
-    "ahead": 163,
-    "behind": 9,
-    "files": 266,
-    "real_files": 244,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T17:26:00Z",
-    "subjects": [
-     "feat(vulkan): add bounded typed indexed offscreen draw (#112)",
-     "Merge pull request #110 from n2ray/hermes/reflected-uniform",
-     "Merge pull request #108 from n2ray/hermes/item-use-identity",
-     "fix(vulkan): reject malformed OpTypeInt and truncated sidecar counts (#109)",
-     "fix(android): freeze USE source coordinates at generation (#106)",
-     "feat(vulkan): add fixed-layout uniform compute consumer (#109)",
-     "fix(android): bind USE identity to immutable gesture token (#106)",
-     "Merge pull request #107 from n2ray/hermes/reflected-sampling"
-    ]
-   },
-   {
-    "branch": "hermes/indexed-textured",
-    "ahead": 167,
-    "behind": 9,
-    "files": 273,
-    "real_files": 250,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T17:38:56Z",
-    "subjects": [
-     "fix(vulkan): bound textured dimensions before size arithmetic (#115)",
-     "test(vulkan): reject non-finite textured UV (#115)",
-     "feat(vulkan): add bounded textured indexed offscreen draw (#115)",
-     "Merge pull request #114 from n2ray/hermes/indexed-offscreen",
-     "feat(vulkan): add bounded typed indexed offscreen draw (#112)",
-     "Merge pull request #110 from n2ray/hermes/reflected-uniform",
-     "Merge pull request #108 from n2ray/hermes/item-use-identity",
-     "fix(vulkan): reject malformed OpTypeInt and truncated sidecar counts (#109)"
-    ]
-   },
-   {
-    "branch": "hermes/input-request-retirement",
-    "ahead": 254,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-18T22:24:48Z",
-    "subjects": [
-     "Merge remote-tracking branch 'origin/main' into hermes/input-request-retirement",
-     "fix(input): reject provider-attached request retirement before mutation (#159)",
-     "Merge pull request #158 from n2ray/hermes/custom-preferences",
-     "Merge pull request #155 from n2ray/hermes/audio-focus-policy",
-     "Merge pull request #156 from n2ray/hermes/gamepad-events",
-     "feat(input): retire unconsumed touch requests on source invalidation (#159)",
-     "fix(android): apply target gain to every replacement stream (#153)",
-     "Merge remote-tracking branch 'origin/main' into hermes/gamepad-events"
-    ]
-   },
-   {
-    "branch": "hermes/input-source",
-    "ahead": 225,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx"
-    ],
-    "last_commit": "2026-10-18T22:00:00Z",
-    "subjects": [
-     "fix(android): reject touch takeover atomically (#150)",
-     "feat(android): add touch/gamepad input source arbitration (#150)",
-     "Merge pull request #146 from n2ray/hermes/native-callback-ci",
-     "test(android): exercise active timer and actual callback routes (#145)",
-     "test(android): cover actual native callback dispatch (#145)",
-     "Merge pull request #144 from n2ray/hermes/native-wsi-diagnostic",
-     "fix(android): synchronize cached window after failed WSI replacement",
-     "fix(android): identity-safe stale callbacks and error-exact WSI dispatch (#143)"
-    ]
-   },
-   {
-    "branch": "hermes/input-source-view",
-    "ahead": 256,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-18T22:33:57Z",
-    "subjects": [
-     "feat(input): add arbiter view and atomic geometry (#165)",
-     "Merge pull request #160 from n2ray/hermes/input-request-retirement",
-     "Merge remote-tracking branch 'origin/main' into hermes/input-request-retirement",
-     "fix(input): reject provider-attached request retirement before mutation (#159)",
-     "Merge pull request #158 from n2ray/hermes/custom-preferences",
-     "Merge pull request #155 from n2ray/hermes/audio-focus-policy",
-     "Merge pull request #156 from n2ray/hermes/gamepad-events",
-     "feat(input): retire unconsumed touch requests on source invalidation (#159)"
-    ]
-   },
-   {
-    "branch": "hermes/inventory-adapter-tests",
-    "ahead": 143,
-    "behind": 9,
-    "files": 243,
-    "real_files": 224,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T16:47:27Z",
-    "subjects": [
-     "fix(android): let observed timed hold expire in a full queue (#101)",
-     "fix(android): preserve timed pulse holds across reads (#101)",
-     "test(android): cover inventory gestures through touch adapter (#101)",
-     "Merge pull request #99 from n2ray/hermes/portal-bridge",
-     "fix(android): disable latent portal on provider attach (#98)",
-     "feat(android): expose key-bound portal through touch bridge (#98)",
-     "Merge pull request #97 from n2ray/hermes/mip-failure-coverage",
-     "Merge pull request #93 from n2ray/hermes/issue-91-portal-adapter"
-    ]
-   },
-   {
-    "branch": "hermes/issue-4-sync-contract",
-    "ahead": 75,
-    "behind": 9,
-    "files": 220,
-    "real_files": 210,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T14:42:18Z",
-    "subjects": [
-     "fix(sync): ARM-guard the sink, skip 77 off AArch64, narrow grep claim (#4)",
-     "docs(sync): pin helper boundary evidence and add RET reservation counterexample (#4)",
-     "Merge pull request #69 from n2ray/hermes/issue-56-owned-boundary",
-     "test(nvn): assert all five owned objects and harden stderr capture (#56)",
-     "Merge pull request #61 from n2ray/hermes/issue-33-scene-bridge",
-     "fix(android): release inner gestures on panel-bit transitions",
-     "test(nvn): phase-A boundary for DownsampleTextureView diagnostic (#56)",
-     "Merge pull request #65 from n2ray/claude/issue-3-runtime-contract"
-    ]
-   },
-   {
-    "branch": "hermes/issue-6-sm-lm",
-    "ahead": 4,
-    "behind": 9,
-    "files": 156,
-    "real_files": 154,
-    "dirs": [
-     "dm/android",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T07:00:31Z",
-    "subjects": [
-     "test(android): cover SM move-handle publication rollback",
-     "test(android): cover SM to lm discovery and reject foreign sm endpoint",
-     "Merge pull request #25 from n2ray/android-snapdragon-elite",
-     "Add Android ARM64 development baseline for Snapdragon 8 Elite"
-    ]
-   },
-   {
-    "branch": "hermes/issue-7-init-inventory",
-    "ahead": 72,
-    "behind": 9,
-    "files": 218,
-    "real_files": 208,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T14:38:09Z",
-    "subjects": [
-     "docs(android): split startup order and link bounded gap children",
-     "docs(android): inventory required startup services and imports",
-     "Merge pull request #61 from n2ray/hermes/issue-33-scene-bridge",
-     "fix(android): release inner gestures on panel-bit transitions",
-     "Merge pull request #65 from n2ray/claude/issue-3-runtime-contract",
-     "Merge pull request #68 from n2ray/hermes/issue-13-mip-proof",
-     "fix(vk): align mip-prefix contract, add mid-pipeline cleanup proof (#13)",
-     "docs(android): qualify non-Result SVC envelope rule and status opener (#3)"
-    ]
-   },
-   {
-    "branch": "hermes/issue-8-init-exit",
-    "ahead": 11,
-    "behind": 9,
-    "files": 163,
-    "real_files": 159,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T07:27:44Z",
-    "subjects": [
-     "docs(android): publish lifecycle pairing and repeat-exit regression",
-     "Merge pull request #28 from n2ray/hermes/issue-8-lifecycle",
-     "fix(android): keep accounting leases alive across host destroy",
-     "Merge pull request #27 from n2ray/hermes/issue-11-nvn-fixtures",
-     "Merge pull request #26 from n2ray/hermes/issue-6-sm-lm",
-     "test(android): cover SM move-handle publication rollback",
-     "test(nvn): second present frame and ordered teardown in acceptance scene (#11)",
-     "test(nvn): add entry inventory and self-owned acceptance scenes (#11)"
-    ]
-   },
-   {
-    "branch": "hermes/issue-8-lifecycle",
-    "ahead": 9,
-    "behind": 9,
-    "files": 162,
-    "real_files": 158,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T07:14:45Z",
-    "subjects": [
-     "fix(android): keep accounting leases alive across host destroy",
-     "Merge pull request #27 from n2ray/hermes/issue-11-nvn-fixtures",
-     "Merge pull request #26 from n2ray/hermes/issue-6-sm-lm",
-     "test(android): cover SM move-handle publication rollback",
-     "test(nvn): second present frame and ordered teardown in acceptance scene (#11)",
-     "test(nvn): add entry inventory and self-owned acceptance scenes (#11)",
-     "test(android): cover SM to lm discovery and reject foreign sm endpoint",
-     "Merge pull request #25 from n2ray/android-snapdragon-elite"
-    ]
-   },
-   {
-    "branch": "hermes/issue-11-nvn-fixtures",
-    "ahead": 2,
-    "behind": 9,
-    "files": 6,
-    "real_files": 4,
-    "dirs": [
-     "dm/gfx"
-    ],
-    "last_commit": "2026-10-18T06:58:01Z",
-    "subjects": [
-     "test(nvn): second present frame and ordered teardown in acceptance scene (#11)",
-     "test(nvn): add entry inventory and self-owned acceptance scenes (#11)"
-    ]
-   },
-   {
-    "branch": "hermes/issue-12-contract-gate",
-    "ahead": 25,
-    "behind": 9,
-    "files": 174,
-    "real_files": 168,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T08:59:22Z",
-    "subjects": [
-     "fix(gfx): stage finish() outputs per key and commit only when all stages pass (#12)",
-     "fix(gfx): make the build gate fail honestly, restore only after validation (#12)",
-     "feat(gfx): gate dmsh_build artifacts on the SPIR-V contract (#12)",
-     "Merge pull request #45 from n2ray/hermes/issue-12-shader-contract",
-     "fix(gfx): bind LocalSize to the entry function and state the preflight is opt-in (#12)",
-     "Merge pull request #44 from n2ray/hermes/issue-31-touch-parity",
-     "feat(gfx): check translator SPIR-V against its reflection before use (#12)",
-     "docs(android): add r2d touch parity matrix and checker"
-    ]
-   },
-   {
-    "branch": "hermes/issue-12-shader-contract",
-    "ahead": 19,
-    "behind": 9,
-    "files": 167,
-    "real_files": 163,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T08:13:22Z",
-    "subjects": [
-     "fix(gfx): bind LocalSize to the entry function and state the preflight is opt-in (#12)",
-     "feat(gfx): check translator SPIR-V against its reflection before use (#12)",
-     "Merge pull request #43 from n2ray/hermes/issue-13-formats",
-     "feat(vk): support NVN RGBA8_SRGB (0x38) with sampled-vs-raw regression (#13)",
-     "Merge pull request #29 from n2ray/hermes/issue-13-vulkan-resources",
-     "Merge pull request #30 from n2ray/hermes/issue-8-init-exit",
-     "fix(vk): require TRANSFER_SRC for readback images, cover row-op failures (#13)",
-     "docs(android): publish lifecycle pairing and repeat-exit regression"
-    ]
-   },
-   {
-    "branch": "hermes/issue-12-vulkan-consumer",
-    "ahead": 50,
-    "behind": 9,
-    "files": 193,
-    "real_files": 186,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T11:29:01Z",
-    "subjects": [
-     "fix(vk): bound every scanner operand read and prove it under ASAN (#12)",
-     "fix(vk): bind execution to validated bytes and pre-check device limits (#12)",
-     "feat(vk): reflection-driven consumer for owned compute fixtures (#12)",
-     "Merge pull request #58 from n2ray/hermes/issue-42-validation",
-     "fix(vk): race-free validation diagnostics and layer-present boundary tests (#42)",
-     "feat(vk): opt-in validation layer diagnostics with honest absence (#42)",
-     "Merge pull request #57 from n2ray/hermes/issue-41-nvn-boundaries",
-     "docs(nvn): use Vulkan worst-case indirect bounds, not min(count, max) (#41)"
-    ]
-   },
-   {
-    "branch": "hermes/issue-13-formats",
-    "ahead": 16,
-    "behind": 9,
-    "files": 165,
-    "real_files": 161,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T07:46:21Z",
-    "subjects": [
-     "feat(vk): support NVN RGBA8_SRGB (0x38) with sampled-vs-raw regression (#13)",
-     "Merge pull request #29 from n2ray/hermes/issue-13-vulkan-resources",
-     "Merge pull request #30 from n2ray/hermes/issue-8-init-exit",
-     "fix(vk): require TRANSFER_SRC for readback images, cover row-op failures (#13)",
-     "docs(android): publish lifecycle pairing and repeat-exit regression",
-     "Merge pull request #28 from n2ray/hermes/issue-8-lifecycle",
-     "feat(vk): row-stride RGBA8 region update/readback with owned fixture (#13)",
-     "fix(android): keep accounting leases alive across host destroy"
-    ]
-   },
-   {
-    "branch": "hermes/issue-13-mip-proof",
-    "ahead": 61,
-    "behind": 9,
-    "files": 212,
-    "real_files": 204,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T13:59:47Z",
-    "subjects": [
-     "fix(vk): align mip-prefix contract, add mid-pipeline cleanup proof (#13)",
-     "feat(vk): owned multi-mip RGBA8 upload with LOD pixel evidence (#13)",
-     "Merge pull request #62 from n2ray/hermes/issue-13-samplers",
-     "Merge origin/main into hermes/issue-13-samplers",
-     "fix(vk): restore minf 4/5 mipmap linear and reject malformed NVN LOD (#13)",
-     "fix(vk): exhaustive sampler enums, checked sampler2D input, defined non-mip LOD (#13)",
-     "feat(vk): bounded NVN sampler to Vulkan conversion and sampled-draw fixture (#13)",
-     "Merge pull request #60 from n2ray/hermes/issue-12-vulkan-consumer"
-    ]
-   },
-   {
-    "branch": "hermes/issue-13-samplers",
-    "ahead": 58,
-    "behind": 9,
-    "files": 208,
-    "real_files": 201,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T13:28:21Z",
-    "subjects": [
-     "Merge origin/main into hermes/issue-13-samplers",
-     "fix(vk): restore minf 4/5 mipmap linear and reject malformed NVN LOD (#13)",
-     "fix(vk): exhaustive sampler enums, checked sampler2D input, defined non-mip LOD (#13)",
-     "feat(vk): bounded NVN sampler to Vulkan conversion and sampled-draw fixture (#13)",
-     "Merge pull request #60 from n2ray/hermes/issue-12-vulkan-consumer",
-     "fix(vk): bound every scanner operand read and prove it under ASAN (#12)",
-     "fix(vk): bind execution to validated bytes and pre-check device limits (#12)",
-     "Merge pull request #59 from n2ray/hermes/issue-32-native-events"
-    ]
-   },
-   {
-    "branch": "hermes/issue-13-vulkan-resources",
-    "ahead": 10,
-    "behind": 9,
-    "files": 163,
-    "real_files": 159,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T07:29:17Z",
-    "subjects": [
-     "fix(vk): require TRANSFER_SRC for readback images, cover row-op failures (#13)",
-     "feat(vk): row-stride RGBA8 region update/readback with owned fixture (#13)",
-     "Merge pull request #27 from n2ray/hermes/issue-11-nvn-fixtures",
-     "Merge pull request #26 from n2ray/hermes/issue-6-sm-lm",
-     "test(android): cover SM move-handle publication rollback",
-     "test(nvn): second present frame and ordered teardown in acceptance scene (#11)",
-     "test(nvn): add entry inventory and self-owned acceptance scenes (#11)",
-     "test(android): cover SM to lm discovery and reject foreign sm endpoint"
-    ]
-   },
-   {
-    "branch": "hermes/issue-14-app-lifecycle",
-    "ahead": 35,
-    "behind": 9,
-    "files": 180,
-    "real_files": 174,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T09:45:17Z",
-    "subjects": [
-     "fix(android): retain touch surfaces while work is pending",
-     "fix(android): keep failed cleanup state accurate",
-     "fix(android): drain failed lifecycle cleanup safely",
-     "feat(android): add ordered app lifecycle controller",
-     "Merge pull request #47 from n2ray/hermes/issue-12-contract-gate",
-     "Merge pull request #46 from n2ray/hermes/issue-32-touch-adapter",
-     "test(android): cover pulse arrival during touch release",
-     "fix(gfx): stage finish() outputs per key and commit only when all stages pass (#12)"
-    ]
-   },
-   {
-    "branch": "hermes/issue-17-ci",
-    "ahead": 52,
-    "behind": 9,
-    "files": 206,
-    "real_files": 198,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T12:46:32Z",
-    "subjects": [
-     "ci: harden manifest, ndk stdout, and elf checks",
-     "ci: add game-free reproducible build and trace manifest",
-     "Merge pull request #59 from n2ray/hermes/issue-32-native-events",
-     "fix(android): gate touch input on native view and timer readiness",
-     "Merge pull request #58 from n2ray/hermes/issue-42-validation",
-     "fix(vk): race-free validation diagnostics and layer-present boundary tests (#42)",
-     "feat(android): deliver NativeActivity touch events to r2d core",
-     "feat(vk): opt-in validation layer diagnostics with honest absence (#42)"
-    ]
-   },
-   {
-    "branch": "hermes/issue-31-touch-parity",
-    "ahead": 18,
-    "behind": 9,
-    "files": 167,
-    "real_files": 161,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T07:58:29Z",
-    "subjects": [
-     "docs(android): add r2d touch parity matrix and checker",
-     "Merge pull request #43 from n2ray/hermes/issue-13-formats",
-     "feat(vk): support NVN RGBA8_SRGB (0x38) with sampled-vs-raw regression (#13)",
-     "Merge pull request #29 from n2ray/hermes/issue-13-vulkan-resources",
-     "Merge pull request #30 from n2ray/hermes/issue-8-init-exit",
-     "fix(vk): require TRANSFER_SRC for readback images, cover row-op failures (#13)",
-     "docs(android): publish lifecycle pairing and repeat-exit regression",
-     "Merge pull request #28 from n2ray/hermes/issue-8-lifecycle"
-    ]
-   },
-   {
-    "branch": "hermes/issue-32-belt-action",
-    "ahead": 108,
-    "behind": 9,
-    "files": 237,
-    "real_files": 223,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T15:14:44Z",
-    "subjects": [
-     "feat(android): expose one-shot belt action through outer touch bridge (#84)",
-     "Merge pull request #83 from n2ray/hermes/issue-32-belt-bridge",
-     "Merge pull request #80 from n2ray/hermes/issue-72-owned-policy",
-     "feat(android): add belt context boundary to outer touch bridge (#82)",
-     "fix(android): freeze virtual core policy on attachment",
-     "Merge pull request #79 from n2ray/hermes/issue-32-belt-context",
-     "test: cover non-ARM configured GetInfo expectation",
-     "Merge pull request #76 from n2ray/hermes/issue-73-service-contract"
-    ]
-   },
-   {
-    "branch": "hermes/issue-32-belt-bridge",
-    "ahead": 102,
-    "behind": 9,
-    "files": 236,
-    "real_files": 222,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T15:05:55Z",
-    "subjects": [
-     "feat(android): add belt context boundary to outer touch bridge (#82)",
-     "Merge pull request #79 from n2ray/hermes/issue-32-belt-context",
-     "Merge pull request #76 from n2ray/hermes/issue-73-service-contract",
-     "feat(android): add host-fed belt context to touch adapter (#78)",
-     "docs: correct relocation evidence and static analysis limits",
-     "Merge pull request #77 from n2ray/hermes/issue-32-parity-next",
-     "Merge pull request #75 from n2ray/hermes/issue-72-virtual-core-contract",
-     "docs(services): resolve the nine init edges and account for the tail call (#73)"
-    ]
-   },
-   {
-    "branch": "hermes/issue-32-belt-context",
-    "ahead": 96,
-    "behind": 9,
-    "files": 235,
-    "real_files": 222,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T14:58:20Z",
-    "subjects": [
-     "feat(android): add host-fed belt context to touch adapter (#78)",
-     "Merge pull request #77 from n2ray/hermes/issue-32-parity-next",
-     "Merge pull request #75 from n2ray/hermes/issue-72-virtual-core-contract",
-     "test(android): port belt tap and second-set belt parity cases (#32)",
-     "docs(android): separate virtual core ABI layers and failure semantics",
-     "Merge pull request #74 from n2ray/hermes/issue-32-touch-parity",
-     "Merge pull request #71 from n2ray/hermes/issue-4-sync-contract",
-     "docs(android): define virtual core mask contract"
-    ]
-   },
-   {
-    "branch": "hermes/issue-32-native-events",
-    "ahead": 42,
-    "behind": 9,
-    "files": 191,
-    "real_files": 185,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T10:44:36Z",
-    "subjects": [
-     "fix(android): gate touch input on native view and timer readiness",
-     "feat(android): deliver NativeActivity touch events to r2d core",
-     "Merge pull request #50 from n2ray/hermes/issue-14-app-lifecycle",
-     "fix(android): retain touch surfaces while work is pending",
-     "Merge pull request #52 from n2ray/docs/android-project-readme",
-     "fix(android): keep failed cleanup state accurate",
-     "fix(android): drain failed lifecycle cleanup safely",
-     "docs(android): align fork readmes with project goals and evidence"
-    ]
-   },
-   {
-    "branch": "hermes/issue-32-parity-next",
-    "ahead": 91,
-    "behind": 9,
-    "files": 234,
-    "real_files": 222,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T14:50:39Z",
-    "subjects": [
-     "test(android): port belt tap and second-set belt parity cases (#32)",
-     "Merge pull request #74 from n2ray/hermes/issue-32-touch-parity",
-     "Merge pull request #71 from n2ray/hermes/issue-4-sync-contract",
-     "Merge pull request #70 from n2ray/hermes/issue-7-init-inventory",
-     "fix(android): use ACTION_CANCEL time for stick resume (#32)",
-     "fix(sync): ARM-guard the sink, skip 77 off AArch64, narrow grep claim (#4)",
-     "docs(android): split startup order and link bounded gap children",
-     "Merge pull request #63 from n2ray/hermes/issue-17-ci"
-    ]
-   },
-   {
-    "branch": "hermes/issue-32-provider-actions",
-    "ahead": 118,
-    "behind": 9,
-    "files": 238,
-    "real_files": 223,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T15:24:23Z",
-    "subjects": [
-     "fix(android): drop stale core actions at provider boundaries (#88)",
-     "Merge pull request #86 from n2ray/hermes/issue-72-thread-mask",
-     "Merge pull request #85 from n2ray/hermes/issue-32-belt-action",
-     "Merge pull request #81 from n2ray/hermes/issue-73-apm-trace",
-     "docs(services): bound provenance and rescan all selected functions",
-     "test: guard ARM-only virtual core state check",
-     "android: store bounded owned thread core-mask state",
-     "feat(android): expose one-shot belt action through outer touch bridge (#84)"
-    ]
-   },
-   {
-    "branch": "hermes/issue-32-touch-adapter",
-    "ahead": 23,
-    "behind": 9,
-    "files": 170,
-    "real_files": 164,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T09:01:31Z",
-    "subjects": [
-     "test(android): cover pulse arrival during touch release",
-     "fix(android): hold touch pulse release across ticks",
-     "fix(android): preserve ordered pending touch pulses",
-     "feat(android): add pointer-id touch adapter over r2d core",
-     "Merge pull request #44 from n2ray/hermes/issue-31-touch-parity",
-     "docs(android): add r2d touch parity matrix and checker",
-     "Merge pull request #43 from n2ray/hermes/issue-13-formats",
-     "feat(vk): support NVN RGBA8_SRGB (0x38) with sampled-vs-raw regression (#13)"
-    ]
-   },
-   {
-    "branch": "hermes/issue-32-touch-parity",
-    "ahead": 83,
-    "behind": 9,
-    "files": 231,
-    "real_files": 221,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T14:42:24Z",
-    "subjects": [
-     "fix(android): use ACTION_CANCEL time for stick resume (#32)",
-     "Merge pull request #63 from n2ray/hermes/issue-17-ci",
-     "Merge pull request #66 from n2ray/hermes/issue-64-linux-ci",
-     "Merge pull request #69 from n2ray/hermes/issue-56-owned-boundary",
-     "test: complete generated-entry sanitizer ABI boundaries",
-     "test(nvn): assert all five owned objects and harden stderr capture (#56)",
-     "Merge pull request #61 from n2ray/hermes/issue-33-scene-bridge",
-     "fix(android): release inner gestures on panel-bit transitions"
-    ]
-   },
-   {
-    "branch": "hermes/issue-33-scene-bridge",
-    "ahead": 53,
-    "behind": 9,
-    "files": 199,
-    "real_files": 192,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T14:27:07Z",
-    "subjects": [
-     "fix(android): release inner gestures on panel-bit transitions",
-     "fix(android): invalidate outer touch ownership on game context changes",
-     "feat(android): add bounded game scene identity and hit bridge",
-     "Merge pull request #59 from n2ray/hermes/issue-32-native-events",
-     "fix(android): gate touch input on native view and timer readiness",
-     "Merge pull request #58 from n2ray/hermes/issue-42-validation",
-     "fix(vk): race-free validation diagnostics and layer-present boundary tests (#42)",
-     "feat(android): deliver NativeActivity touch events to r2d core"
-    ]
-   },
-   {
-    "branch": "hermes/issue-41-nvn-boundaries",
-    "ahead": 36,
-    "behind": 9,
-    "files": 180,
-    "real_files": 173,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T09:58:39Z",
-    "subjects": [
-     "docs(nvn): use Vulkan worst-case indirect bounds, not min(count, max) (#41)",
-     "docs(nvn): correct stub behaviour, lifetimes and indexed bounds (#41)",
-     "docs(nvn): specify boundaries for the four static-called red stubs (#41)",
-     "Merge pull request #49 from n2ray/hermes/shader-test-isolation",
-     "test(gfx): isolate build-test sandboxes across in-process suites (#48)",
-     "Merge pull request #47 from n2ray/hermes/issue-12-contract-gate",
-     "Merge pull request #46 from n2ray/hermes/issue-32-touch-adapter",
-     "test(android): cover pulse arrival during touch release"
-    ]
-   },
-   {
-    "branch": "hermes/issue-42-validation",
-    "ahead": 46,
-    "behind": 9,
-    "files": 186,
-    "real_files": 179,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T10:31:05Z",
-    "subjects": [
-     "fix(vk): race-free validation diagnostics and layer-present boundary tests (#42)",
-     "feat(vk): opt-in validation layer diagnostics with honest absence (#42)",
-     "Merge pull request #57 from n2ray/hermes/issue-41-nvn-boundaries",
-     "docs(nvn): use Vulkan worst-case indirect bounds, not min(count, max) (#41)",
-     "Merge pull request #50 from n2ray/hermes/issue-14-app-lifecycle",
-     "fix(android): retain touch surfaces while work is pending",
-     "docs(nvn): correct stub behaviour, lifetimes and indexed bounds (#41)",
-     "Merge pull request #52 from n2ray/docs/android-project-readme"
-    ]
-   },
-   {
-    "branch": "hermes/issue-56-owned-boundary",
-    "ahead": 68,
-    "behind": 9,
-    "files": 214,
-    "real_files": 205,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T14:31:01Z",
-    "subjects": [
-     "test(nvn): assert all five owned objects and harden stderr capture (#56)",
-     "test(nvn): phase-A boundary for DownsampleTextureView diagnostic (#56)",
-     "Merge pull request #65 from n2ray/claude/issue-3-runtime-contract",
-     "Merge pull request #68 from n2ray/hermes/issue-13-mip-proof",
-     "fix(vk): align mip-prefix contract, add mid-pipeline cleanup proof (#13)",
-     "docs(android): qualify non-Result SVC envelope rule and status opener (#3)",
-     "docs(android): coherent TLR state machine and current-vs-obligation split (#3)",
-     "feat(vk): owned multi-mip RGBA8 upload with LOD pixel evidence (#13)"
-    ]
-   },
-   {
-    "branch": "hermes/issue-64-linux-ci",
-    "ahead": 59,
-    "behind": 9,
-    "files": 204,
-    "real_files": 197,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T14:33:43Z",
-    "subjects": [
-     "test: complete generated-entry sanitizer ABI boundaries",
-     "test: use x86 LowMem hints for HIPC wire fixture",
-     "test: keep HIPC log fixture inside wire address range",
-     "test: fix Linux ASAN fixtures and generated-entry UBSAN metadata",
-     "fix(ci): address Linux baseline compile and sanitizer failures",
-     "Merge pull request #60 from n2ray/hermes/issue-12-vulkan-consumer",
-     "fix(vk): bound every scanner operand read and prove it under ASAN (#12)",
-     "fix(vk): bind execution to validated bytes and pre-check device limits (#12)"
-    ]
-   },
-   {
-    "branch": "hermes/issue-72-dontcare-contract",
-    "ahead": 128,
-    "behind": 9,
-    "files": 241,
-    "real_files": 223,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T15:44:56Z",
-    "subjects": [
-     "docs: clarify DontCare guest physical state",
-     "docs: correct DontCare guest-core model scope",
-     "docs: document pinned DontCare reference semantics",
-     "Merge pull request #90 from n2ray/hermes/issue-72-sdk-arguments",
-     "Merge pull request #89 from n2ray/hermes/issue-32-provider-actions",
-     "docs: record bounded nnMain virtual-core callsite arguments",
-     "Merge pull request #87 from n2ray/hermes/issue-73-apm-provenance",
-     "docs(services): retain raw reloc index and qualify apm Release mapping (#73)"
-    ]
-   },
-   {
-    "branch": "hermes/issue-72-owned-policy",
-    "ahead": 98,
-    "behind": 9,
-    "files": 236,
-    "real_files": 223,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T15:03:37Z",
-    "subjects": [
-     "fix(android): freeze virtual core policy on attachment",
-     "test: cover non-ARM configured GetInfo expectation",
-     "feat(android): add opt-in virtual core policy",
-     "Merge pull request #77 from n2ray/hermes/issue-32-parity-next",
-     "Merge pull request #75 from n2ray/hermes/issue-72-virtual-core-contract",
-     "test(android): port belt tap and second-set belt parity cases (#32)",
-     "docs(android): separate virtual core ABI layers and failure semantics",
-     "Merge pull request #74 from n2ray/hermes/issue-32-touch-parity"
-    ]
-   },
-   {
-    "branch": "hermes/issue-72-sdk-arguments",
-    "ahead": 118,
-    "behind": 9,
-    "files": 239,
-    "real_files": 223,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T15:28:11Z",
-    "subjects": [
-     "docs: record bounded nnMain virtual-core callsite arguments",
-     "Merge pull request #86 from n2ray/hermes/issue-72-thread-mask",
-     "Merge pull request #85 from n2ray/hermes/issue-32-belt-action",
-     "Merge pull request #81 from n2ray/hermes/issue-73-apm-trace",
-     "docs(services): bound provenance and rescan all selected functions",
-     "test: guard ARM-only virtual core state check",
-     "android: store bounded owned thread core-mask state",
-     "feat(android): expose one-shot belt action through outer touch bridge (#84)"
-    ]
-   },
-   {
-    "branch": "hermes/issue-72-thread-mask",
-    "ahead": 107,
-    "behind": 9,
-    "files": 237,
-    "real_files": 223,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T15:15:58Z",
-    "subjects": [
-     "test: guard ARM-only virtual core state check",
-     "android: store bounded owned thread core-mask state",
-     "Merge pull request #80 from n2ray/hermes/issue-72-owned-policy",
-     "fix(android): freeze virtual core policy on attachment",
-     "Merge pull request #79 from n2ray/hermes/issue-32-belt-context",
-     "test: cover non-ARM configured GetInfo expectation",
-     "Merge pull request #76 from n2ray/hermes/issue-73-service-contract",
-     "feat(android): add opt-in virtual core policy"
-    ]
-   },
-   {
-    "branch": "hermes/issue-72-virtual-core-contract",
-    "ahead": 87,
-    "behind": 9,
-    "files": 233,
-    "real_files": 221,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T14:49:54Z",
-    "subjects": [
-     "docs(android): separate virtual core ABI layers and failure semantics",
-     "docs(android): define virtual core mask contract",
-     "Merge pull request #70 from n2ray/hermes/issue-7-init-inventory",
-     "docs(android): split startup order and link bounded gap children",
-     "Merge pull request #63 from n2ray/hermes/issue-17-ci",
-     "Merge pull request #66 from n2ray/hermes/issue-64-linux-ci",
-     "docs(android): inventory required startup services and imports",
-     "Merge pull request #69 from n2ray/hermes/issue-56-owned-boundary"
-    ]
-   },
-   {
-    "branch": "hermes/issue-73-apm-outparam",
-    "ahead": 123,
-    "behind": 9,
-    "files": 240,
-    "real_files": 223,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T15:36:00Z",
-    "subjects": [
-     "docs(services): narrow apm out-param note to observed store presence (#73)",
-     "docs(services): prove apm shim helper stack out-param write (#73)",
-     "Merge pull request #87 from n2ray/hermes/issue-73-apm-provenance",
-     "docs(services): retain raw reloc index and qualify apm Release mapping (#73)",
-     "Merge remote-tracking branch 'origin/main' into hermes/issue-73-apm-provenance",
-     "docs(services): bound apm BLR x8 receiver/vtable provenance (#73)",
-     "Merge pull request #86 from n2ray/hermes/issue-72-thread-mask",
-     "Merge pull request #85 from n2ray/hermes/issue-32-belt-action"
-    ]
-   },
-   {
-    "branch": "hermes/issue-73-apm-provenance",
-    "ahead": 120,
-    "behind": 9,
-    "files": 239,
-    "real_files": 223,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T15:24:57Z",
-    "subjects": [
-     "docs(services): retain raw reloc index and qualify apm Release mapping (#73)",
-     "Merge remote-tracking branch 'origin/main' into hermes/issue-73-apm-provenance",
-     "docs(services): bound apm BLR x8 receiver/vtable provenance (#73)",
-     "Merge pull request #86 from n2ray/hermes/issue-72-thread-mask",
-     "Merge pull request #85 from n2ray/hermes/issue-32-belt-action",
-     "Merge pull request #81 from n2ray/hermes/issue-73-apm-trace",
-     "docs(services): bound provenance and rescan all selected functions",
-     "test: guard ARM-only virtual core state check"
-    ]
-   },
-   {
-    "branch": "hermes/issue-73-apm-trace",
-    "ahead": 103,
-    "behind": 9,
-    "files": 237,
-    "real_files": 222,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T15:16:43Z",
-    "subjects": [
-     "docs(services): bound provenance and rescan all selected functions",
-     "docs(services): fix ADD fields, write-kill and visited counts (#73)",
-     "docs(services): correct tracer, reach the indirect/vtable frontier (#73)",
-     "docs(services): trace oe→apm/applet to the first unsupported indirection (#73)",
-     "Merge pull request #76 from n2ray/hermes/issue-73-service-contract",
-     "docs: correct relocation evidence and static analysis limits",
-     "Merge pull request #77 from n2ray/hermes/issue-32-parity-next",
-     "Merge pull request #75 from n2ray/hermes/issue-72-virtual-core-contract"
-    ]
-   },
-   {
-    "branch": "hermes/issue-73-service-contract",
-    "ahead": 93,
-    "behind": 9,
-    "files": 235,
-    "real_files": 222,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T14:57:54Z",
-    "subjects": [
-     "docs: correct relocation evidence and static analysis limits",
-     "docs(services): resolve the nine init edges and account for the tail call (#73)",
-     "docs(services): phase-1 SDK module-init service contract evidence (#73)",
-     "Merge pull request #74 from n2ray/hermes/issue-32-touch-parity",
-     "Merge pull request #71 from n2ray/hermes/issue-4-sync-contract",
-     "Merge pull request #70 from n2ray/hermes/issue-7-init-inventory",
-     "fix(android): use ACTION_CANCEL time for stick resume (#32)",
-     "fix(sync): ARM-guard the sink, skip 77 off AArch64, narrow grep claim (#4)"
-    ]
-   },
-   {
-    "branch": "hermes/issue-91-portal-adapter",
-    "ahead": 125,
-    "behind": 9,
-    "files": 239,
-    "real_files": 223,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T15:43:48Z",
-    "subjects": [
-     "fix(android): release canceled portal pointer ids (#91)",
-     "feat(android): add portal context/request/ack to touch adapter (#91)",
-     "Merge pull request #89 from n2ray/hermes/issue-32-provider-actions",
-     "Merge pull request #87 from n2ray/hermes/issue-73-apm-provenance",
-     "docs(services): retain raw reloc index and qualify apm Release mapping (#73)",
-     "fix(android): drop stale core actions at provider boundaries (#88)",
-     "Merge remote-tracking branch 'origin/main' into hermes/issue-73-apm-provenance",
-     "docs(services): bound apm BLR x8 receiver/vtable provenance (#73)"
-    ]
-   },
-   {
-    "branch": "hermes/item-use-identity",
-    "ahead": 154,
-    "behind": 9,
-    "files": 244,
-    "real_files": 225,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android",
-     "dm/gfx",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-18T17:11:58Z",
-    "subjects": [
-     "fix(android): freeze USE source coordinates at generation (#106)",
-     "fix(android): bind USE identity to immutable gesture token (#106)",
-     "test(android): reject stale USE across provider replacement (#106)",
-     "feat(android): retain item identity for provider USE (#106)",
-     "Merge pull request #102 from n2ray/hermes/inventory-adapter-tests",
-     "fix(android): let observed timed hold expire in a full queue (#101)",
-     "Merge pull request #104 from n2ray/hermes/subresource-rows",
-     "test(vulkan): require nonzero Y in subresource row paths (#103)"
-    ]
-   },
-   {
-    "branch": "hermes/java-package-targets",
-    "ahead": 415,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-19T10:39:06Z",
-    "subjects": [
-     "fix(android): gate installed-package readiness on module targets (#245)",
-     "fix(android): require per-module target markers in Java package import (#245)",
-     "Merge pull request #241 from n2ray/hermes/optional-shader-refusal",
-     "Merge pull request #242 from n2ray/hermes/touch-pointer-identity",
-     "Merge pull request #238 from n2ray/hermes/game-host-link",
-     "fix(touch): stable Android pointer-id mapping without aliasing (#239)",
-     "fix(android): skip unsupported optional shader warmups",
-     "fix(android): allow headless bridge without a display (#224)"
-    ]
-   },
-   {
-    "branch": "hermes/launcher-state-308",
-    "ahead": 581,
-    "behind": 9,
-    "files": 300,
-    "real_files": 297,
-    "dirs": [
-     "ci/README.md",
-     "ci/actions.lock",
-     "ci/scripts",
-     "ci/tests",
-     "dm/android"
-    ],
-    "last_commit": "2026-10-20T18:14:06Z",
-    "subjects": [
-     "fix(android): dismiss disabled debug overlay window",
-     "fix(android): resolve debug overlay strings from generated Android table",
-     "fix(android): restore launcher readiness and persist overlay toggle",
-     "Merge pull request #307 from n2ray/codex/driver-picker",
-     "feat(android): select import and delete GPU drivers safely (#306)",
-     "fix(android): keep diagnostic GPU probes out of game builds",
-     "Merge pull request #301 from n2ray/hermes/shop-ghost-297",
-     "fix(android): replay shop item layer with captured uniforms"
+     "Merge pull request #210 from n2ray/hermes/ime-utf16-payload",
+     "test(android): verify full payload clear on cancel, empty and end (#209)",
+     "feat(android): record scene then HUD in one WSI frame (#213)",
+     "Merge accepted main 41995b2"
     ]
    }
   ]
@@ -7071,7 +4629,7 @@
   ]
  },
  "reacher-z/Awesome-REA": {
-  "pushed_at": "2026-10-20T18:42:42Z",
+  "pushed_at": "2026-10-20T23:50:08Z",
   "branches": [
    {
     "branch": "main",
@@ -7166,11 +4724,11 @@
   ]
  },
  "kxn/d2r-mobile": {
-  "pushed_at": "2026-10-20T19:14:15Z",
+  "pushed_at": "2026-10-20T23:52:54Z",
   "branches": [
    {
     "branch": "codex/android-native-backup-20261019",
-    "ahead": 125,
+    "ahead": 218,
     "behind": 16,
     "files": 300,
     "real_files": 299,
@@ -7180,16 +4738,16 @@
      "dm/gfx",
      "dm/host"
     ],
-    "last_commit": "2026-10-20T18:48:57Z",
+    "last_commit": "2026-10-20T23:21:24Z",
     "subjects": [
-     "Record official native-layout CPU evidence and diagnostic ANR limits",
-     "Record official heap tool incompatibility and completed lifecycle recovery",
-     "Record native-only image game validation and unresolved heap growth",
-     "Record actual bulk native game memory regression and next allocation target",
-     "Document mixed texture fallback and actual PanVK namespace blocker",
-     "Record bulk texture copy closure and real synchronization evidence",
-     "Consume contiguous pool page bits as ordered runs",
-     "Document real-game native texture admission and bulk scope"
+     "Document stock Mali memory attribution and private cache budget limits",
+     "Merge bounded guest-entry private image cache maintenance validated on Q and Mali",
+     "Record actual private image footprint and Mali emulated BC evidence",
+     "docs: record Mali BC3 queue validation and guest cache boundary",
+     "Restrict private image cache maintenance to original guest submission entry",
+     "Bound completed CPU-backed private image cache at foreground owner boundaries",
+     "docs: record actual ADPF policy experiment and memory trim gap",
+     "docs: record retained span cache mechanism and actual game limits"
     ]
    },
    {
@@ -7550,6 +5108,78 @@
      "Borrow cached texture topology when preflight cannot drain",
      "Precompute immutable physical image layout traits",
      "Reuse operation-local pinned pool owners"
+    ]
+   },
+   {
+    "branch": "codex/descriptor-shader-slot-hint-fault-values-v1",
+    "ahead": 213,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T23:07:04Z",
+    "subjects": [
+     "Merge commit 'd9f7b9d' into codex/descriptor-shader-slot-hint-fault-values-v1",
+     "Close app selector guard and use valid empty NVN state inputs",
+     "Owned negative: omit descriptor hint value equality",
+     "Keep hint coverage assertions out of the game APK",
+     "Reuse exact descriptor history slots after shader switches",
+     "Clarify the nested admission single-hint condition",
+     "Exercise retained span geometry in real nested operation admission",
+     "Verify geometry reset across every reclaimed submission owner"
+    ]
+   },
+   {
+    "branch": "codex/descriptor-shader-slot-hint-fault-values-v2",
+    "ahead": 213,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T23:13:17Z",
+    "subjects": [
+     "Owned value fault retains the current capacity bound",
+     "Bound descriptor hint comparisons by the current entry capacity",
+     "Close app selector guard and use valid empty NVN state inputs",
+     "Keep hint coverage assertions out of the game APK",
+     "Reuse exact descriptor history slots after shader switches",
+     "Clarify the nested admission single-hint condition",
+     "Exercise retained span geometry in real nested operation admission",
+     "Verify geometry reset across every reclaimed submission owner"
+    ]
+   },
+   {
+    "branch": "codex/descriptor-shader-slot-hint-v1",
+    "ahead": 212,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T23:12:47Z",
+    "subjects": [
+     "Bound descriptor hint comparisons by the current entry capacity",
+     "Close app selector guard and use valid empty NVN state inputs",
+     "Keep hint coverage assertions out of the game APK",
+     "Reuse exact descriptor history slots after shader switches",
+     "Clarify the nested admission single-hint condition",
+     "Exercise retained span geometry in real nested operation admission",
+     "Verify geometry reset across every reclaimed submission owner",
+     "Reuse bounded submission-retained physical span geometry after single hints miss"
     ]
    },
    {
@@ -7985,6 +5615,126 @@
     ]
    },
    {
+    "branch": "codex/mali-candidate-guest-astc6-copy-v2",
+    "ahead": 163,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T23:41:04Z",
+    "subjects": [
+     "Copy inherited ASTC resources into owned validation staging",
+     "Validate corrected ASTC6 resources with accepted stock Mali runtime",
+     "Prepare reversible stock Mali runtime validation with official tools",
+     "Pin guest-boundary private image budget validation to reviewed runtime",
+     "Gate private image budget short validation on exact reviewed artifacts",
+     "Gate 80a span geometry short validation on reviewed 26b qualification",
+     "Gate reviewed 26b short native-only validation with original CPU tools",
+     "Test camp B C return route without the failed C A shortcut"
+    ]
+   },
+   {
+    "branch": "codex/mali-candidate-guest-astc6-exit-v1",
+    "ahead": 164,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T23:45:00Z",
+    "subjects": [
+     "Prepare bounded original joystick transition to reported field entrance",
+     "Copy inherited ASTC resources into owned validation staging",
+     "Validate corrected ASTC6 resources with accepted stock Mali runtime",
+     "Prepare reversible stock Mali runtime validation with official tools",
+     "Pin guest-boundary private image budget validation to reviewed runtime",
+     "Gate private image budget short validation on exact reviewed artifacts",
+     "Gate 80a span geometry short validation on reviewed 26b qualification",
+     "Gate reviewed 26b short native-only validation with original CPU tools"
+    ]
+   },
+   {
+    "branch": "codex/mali-candidate-guest-astc6-v1",
+    "ahead": 162,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T23:28:57Z",
+    "subjects": [
+     "Validate corrected ASTC6 resources with accepted stock Mali runtime",
+     "Prepare reversible stock Mali runtime validation with official tools",
+     "Pin guest-boundary private image budget validation to reviewed runtime",
+     "Gate private image budget short validation on exact reviewed artifacts",
+     "Gate 80a span geometry short validation on reviewed 26b qualification",
+     "Gate reviewed 26b short native-only validation with original CPU tools",
+     "Test camp B C return route without the failed C A shortcut",
+     "Orchestrate bounded original-input native sustained play with lifecycle restore"
+    ]
+   },
+   {
+    "branch": "codex/mali-candidate-guest-full4-light-v1",
+    "ahead": 162,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T23:52:51Z",
+    "subjects": [
+     "Prepare lightweight stock Mali ASTC4 memory control without repeated profiles",
+     "Prepare reversible stock Mali runtime validation with official tools",
+     "Pin guest-boundary private image budget validation to reviewed runtime",
+     "Gate private image budget short validation on exact reviewed artifacts",
+     "Gate 80a span geometry short validation on reviewed 26b qualification",
+     "Gate reviewed 26b short native-only validation with original CPU tools",
+     "Test camp B C return route without the failed C A shortcut",
+     "Orchestrate bounded original-input native sustained play with lifecycle restore"
+    ]
+   },
+   {
+    "branch": "codex/mali-candidate-guest-v1",
+    "ahead": 161,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T23:10:49Z",
+    "subjects": [
+     "Prepare reversible stock Mali runtime validation with official tools",
+     "Pin guest-boundary private image budget validation to reviewed runtime",
+     "Gate private image budget short validation on exact reviewed artifacts",
+     "Gate 80a span geometry short validation on reviewed 26b qualification",
+     "Gate reviewed 26b short native-only validation with original CPU tools",
+     "Test camp B C return route without the failed C A shortcut",
+     "Orchestrate bounded original-input native sustained play with lifecycle restore",
+     "Bracket official collector metadata with stable proc identities"
+    ]
+   },
+   {
     "branch": "codex/mixed-compressed-array-android-oracle-v1",
     "ahead": 144,
     "behind": 16,
@@ -8105,6 +5855,30 @@
     ]
    },
    {
+    "branch": "codex/native-astc-linear-compose-v1",
+    "ahead": 141,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T19:25:01Z",
+    "subjects": [
+     "Separate historical producer provenance from current linear ASTC driver receipts",
+     "tools(android): authenticate new batch producer and require complete actual receipt coverage",
+     "tools(android): add matched standard NVN ASTC4 control for identical bulk selection",
+     "tools(android): preserve descriptor filename case and verify pinned source CFT membership",
+     "tools(android): compose authenticated native texture batches with bounded CASC streaming",
+     "tools(android): fingerprint native producer inputs and imported CASC helpers",
+     "tools(android): reuse full original TVFS proof for selected native replacement",
+     "tools(android): compose GPU-verified Turnip native family over original BC assets"
+    ]
+   },
+   {
     "branch": "codex/native-astc-linear-filter-oracle-v1",
     "ahead": 107,
     "behind": 16,
@@ -8126,6 +5900,54 @@
      "tools(android): batch original native resource preparation and cold producer",
      "Reuse complete existing DMNRES1 real-resource producer record",
      "Declare native family transfer usages in actual Turnip bake"
+    ]
+   },
+   {
+    "branch": "codex/native-astc-linear-game-inputs-v1",
+    "ahead": 151,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T19:27:59Z",
+    "subjects": [
+     "Prepare non-executable f830 pair inputs from complete real batch composition",
+     "Authenticate f830 native tables while retaining exact AA game pair path",
+     "Trim trailing whitespace in import comparison notes",
+     "Allow measured one MiB native import window comparison",
+     "tools: initialize readiness journal and execute offline readiness cases",
+     "tools: prepare matched native texture CPU and SurfaceFlinger windows",
+     "Add once-only official debugger counters to resource residency experiment",
+     "Add reversible matched native texture game experiment controller"
+    ]
+   },
+   {
+    "branch": "codex/native-astc-linear-game-pair-v1",
+    "ahead": 150,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T19:25:01Z",
+    "subjects": [
+     "Authenticate f830 native tables while retaining exact AA game pair path",
+     "Trim trailing whitespace in import comparison notes",
+     "Allow measured one MiB native import window comparison",
+     "tools: initialize readiness journal and execute offline readiness cases",
+     "tools: prepare matched native texture CPU and SurfaceFlinger windows",
+     "Add once-only official debugger counters to resource residency experiment",
+     "Add reversible matched native texture game experiment controller",
+     "Require sampled FS caller and explicit native token identity in game proof"
     ]
    },
    {
@@ -8369,6 +6191,78 @@
     ]
    },
    {
+    "branch": "codex/native-bulk-sdp-realtime-v1",
+    "ahead": 151,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T19:42:47Z",
+    "subjects": [
+     "Add optional owned official SDP Realtime game-pair window",
+     "Authenticate f830 native tables while retaining exact AA game pair path",
+     "Trim trailing whitespace in import comparison notes",
+     "Allow measured one MiB native import window comparison",
+     "tools: initialize readiness journal and execute offline readiness cases",
+     "tools: prepare matched native texture CPU and SurfaceFlinger windows",
+     "Add once-only official debugger counters to resource residency experiment",
+     "Add reversible matched native texture game experiment controller"
+    ]
+   },
+   {
+    "branch": "codex/native-bulk-sdp-realtime-v2",
+    "ahead": 153,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T20:08:03Z",
+    "subjects": [
+     "Skip CPU collection when optional SDK pause and cleanup are unproven",
+     "Fix official SDP device-clock coverage and isolate optional tool failures",
+     "Add optional owned official SDP Realtime game-pair window",
+     "Authenticate f830 native tables while retaining exact AA game pair path",
+     "Trim trailing whitespace in import comparison notes",
+     "Allow measured one MiB native import window comparison",
+     "tools: initialize readiness journal and execute offline readiness cases",
+     "tools: prepare matched native texture CPU and SurfaceFlinger windows"
+    ]
+   },
+   {
+    "branch": "codex/native-bulk-sdp-realtime-v3",
+    "ahead": 154,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T20:52:42Z",
+    "subjects": [
+     "Bracket official collector metadata with stable proc identities",
+     "Skip CPU collection when optional SDK pause and cleanup are unproven",
+     "Fix official SDP device-clock coverage and isolate optional tool failures",
+     "Add optional owned official SDP Realtime game-pair window",
+     "Authenticate f830 native tables while retaining exact AA game pair path",
+     "Trim trailing whitespace in import comparison notes",
+     "Allow measured one MiB native import window comparison",
+     "tools: initialize readiness journal and execute offline readiness cases"
+    ]
+   },
+   {
     "branch": "codex/native-bulk-throughput-cpu-v1",
     "ahead": 146,
     "behind": 16,
@@ -8441,6 +6335,174 @@
     ]
    },
    {
+    "branch": "codex/native-candidate-80a-adpf-v1",
+    "ahead": 159,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T22:04:39Z",
+    "subjects": [
+     "Combine reviewed optional ADPF flow with exact 80a short candidate gate",
+     "Gate 80a span geometry short validation on reviewed 26b qualification",
+     "Gate reviewed 26b short native-only validation with original CPU tools",
+     "Test camp B C return route without the failed C A shortcut",
+     "Orchestrate bounded original-input native sustained play with lifecycle restore",
+     "Bracket official collector metadata with stable proc identities",
+     "Skip CPU collection when optional SDK pause and cleanup are unproven",
+     "Fix official SDP device-clock coverage and isolate optional tool failures"
+    ]
+   },
+   {
+    "branch": "codex/native-candidate-adpf-v1",
+    "ahead": 158,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T21:53:25Z",
+    "subjects": [
+     "Orchestrate optional same PID ADPF policy experiment with mandatory OFF restore",
+     "Gate reviewed 26b short native-only validation with original CPU tools",
+     "Test camp B C return route without the failed C A shortcut",
+     "Orchestrate bounded original-input native sustained play with lifecycle restore",
+     "Bracket official collector metadata with stable proc identities",
+     "Skip CPU collection when optional SDK pause and cleanup are unproven",
+     "Fix official SDP device-clock coverage and isolate optional tool failures",
+     "Add optional owned official SDP Realtime game-pair window"
+    ]
+   },
+   {
+    "branch": "codex/native-candidate-short-80a-v1",
+    "ahead": 158,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T21:59:47Z",
+    "subjects": [
+     "Gate 80a span geometry short validation on reviewed 26b qualification",
+     "Gate reviewed 26b short native-only validation with original CPU tools",
+     "Test camp B C return route without the failed C A shortcut",
+     "Orchestrate bounded original-input native sustained play with lifecycle restore",
+     "Bracket official collector metadata with stable proc identities",
+     "Skip CPU collection when optional SDK pause and cleanup are unproven",
+     "Fix official SDP device-clock coverage and isolate optional tool failures",
+     "Add optional owned official SDP Realtime game-pair window"
+    ]
+   },
+   {
+    "branch": "codex/native-candidate-short-d5-v1",
+    "ahead": 161,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T23:26:41Z",
+    "subjects": [
+     "Pin descriptor shader-slot candidate short validation to reviewed d5 artifacts",
+     "Pin guest-boundary private image budget validation to reviewed runtime",
+     "Gate private image budget short validation on exact reviewed artifacts",
+     "Gate 80a span geometry short validation on reviewed 26b qualification",
+     "Gate reviewed 26b short native-only validation with original CPU tools",
+     "Test camp B C return route without the failed C A shortcut",
+     "Orchestrate bounded original-input native sustained play with lifecycle restore",
+     "Bracket official collector metadata with stable proc identities"
+    ]
+   },
+   {
+    "branch": "codex/native-candidate-short-ed-v1",
+    "ahead": 159,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T22:32:57Z",
+    "subjects": [
+     "Gate private image budget short validation on exact reviewed artifacts",
+     "Gate 80a span geometry short validation on reviewed 26b qualification",
+     "Gate reviewed 26b short native-only validation with original CPU tools",
+     "Test camp B C return route without the failed C A shortcut",
+     "Orchestrate bounded original-input native sustained play with lifecycle restore",
+     "Bracket official collector metadata with stable proc identities",
+     "Skip CPU collection when optional SDK pause and cleanup are unproven",
+     "Fix official SDP device-clock coverage and isolate optional tool failures"
+    ]
+   },
+   {
+    "branch": "codex/native-candidate-short-guest-v1",
+    "ahead": 160,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T22:49:16Z",
+    "subjects": [
+     "Pin guest-boundary private image budget validation to reviewed runtime",
+     "Gate private image budget short validation on exact reviewed artifacts",
+     "Gate 80a span geometry short validation on reviewed 26b qualification",
+     "Gate reviewed 26b short native-only validation with original CPU tools",
+     "Test camp B C return route without the failed C A shortcut",
+     "Orchestrate bounded original-input native sustained play with lifecycle restore",
+     "Bracket official collector metadata with stable proc identities",
+     "Skip CPU collection when optional SDK pause and cleanup are unproven"
+    ]
+   },
+   {
+    "branch": "codex/native-candidate-short-v1",
+    "ahead": 157,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T21:26:18Z",
+    "subjects": [
+     "Gate reviewed 26b short native-only validation with original CPU tools",
+     "Test camp B C return route without the failed C A shortcut",
+     "Orchestrate bounded original-input native sustained play with lifecycle restore",
+     "Bracket official collector metadata with stable proc identities",
+     "Skip CPU collection when optional SDK pause and cleanup are unproven",
+     "Fix official SDP device-clock coverage and isolate optional tool failures",
+     "Add optional owned official SDP Realtime game-pair window",
+     "Authenticate f830 native tables while retaining exact AA game pair path"
+    ]
+   },
+   {
     "branch": "codex/native-family-firepit-overlay-v1",
     "ahead": 121,
     "behind": 16,
@@ -8510,6 +6572,30 @@
      "Order older native image alias writers before pending acquire",
      "Preserve native acquire scope for every mip and alias envelope",
      "Keep independent native texture acquire before a pending render pass"
+    ]
+   },
+   {
+    "branch": "codex/native-general-window-results-doc-v1",
+    "ahead": 126,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T19:21:03Z",
+    "subjects": [
+     "Document native GENERAL and 1MiB window actual results",
+     "Record official native-layout CPU evidence and diagnostic ANR limits",
+     "Record official heap tool incompatibility and completed lifecycle recovery",
+     "Record native-only image game validation and unresolved heap growth",
+     "Record actual bulk native game memory regression and next allocation target",
+     "Document mixed texture fallback and actual PanVK namespace blocker",
+     "Record bulk texture copy closure and real synchronization evidence",
+     "Consume contiguous pool page bits as ordered runs"
     ]
    },
    {
@@ -8753,6 +6839,30 @@
     ]
    },
    {
+    "branch": "codex/native-image-resident-astc-app-v3",
+    "ahead": 149,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T19:42:11Z",
+    "subjects": [
+     "Validate resident native Image to existing Buffer compute visibility",
+     "Validate native alias preparation before same-recording ASTC consumers",
+     "Exercise resident coherent ASTC ownership with original AA185 oracle",
+     "test(vulkan): distinguish native-range Buffer holes from Pool status",
+     "Exercise native-only ASTC images before late real Buffer consumer in owned app",
+     "Retain native-only image imports without unused canonical Buffer windows",
+     "Preserve defined mixed compressed arrays in decoded RGBA storage",
+     "Order older native image alias writers before pending acquire"
+    ]
+   },
+   {
     "branch": "codex/native-image-resident-owner-v1",
     "ahead": 147,
     "behind": 16,
@@ -8774,6 +6884,30 @@
      "Order older native image alias writers before pending acquire",
      "Preserve native acquire scope for every mip and alias envelope",
      "Keep independent native texture acquire before a pending render pass"
+    ]
+   },
+   {
+    "branch": "codex/native-image-resident-owner-v4",
+    "ahead": 150,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T19:41:15Z",
+    "subjects": [
+     "Preserve global visibility for native image aliases in Buffer consumers",
+     "Retain original global transfer dependencies without duplicate WAW barriers",
+     "Prepare resident image alias dependencies before actual GPU consumers",
+     "Keep native-only writer negative proof in resident window oracle",
+     "Keep audited coherent native images on their Vulkan queue across chunks",
+     "Keep authenticated native image sampling in external GENERAL layout",
+     "Retain native-only image imports without unused canonical Buffer windows",
+     "Preserve defined mixed compressed arrays in decoded RGBA storage"
     ]
    },
    {
@@ -8991,582 +7125,6 @@
      "Integrate native families with real shared prewrite gate and cold app oracle",
      "Preserve original thumbnail semantics in native resource families"
     ]
-   },
-   {
-    "branch": "codex/native-previous-writer-astc-app-v2",
-    "ahead": 146,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T15:39:44Z",
-    "subjects": [
-     "Require changed ASTC pixels across both older GPU producer cases",
-     "Extend owned ASTC family oracle with older writer and cross-mip consumers",
-     "Add isolated cold Android native-family window fixture entry",
-     "Record effective native window fixture compile selection",
-     "Order older native image alias writers before pending acquire",
-     "Preserve native acquire scope for every mip and alias envelope",
-     "Keep independent native texture acquire before a pending render pass",
-     "Keep native image imports independent of shared Buffer window unions"
-    ]
-   },
-   {
-    "branch": "codex/native-previous-writer-astc-app-v3",
-    "ahead": 147,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T15:51:14Z",
-    "subjects": [
-     "Compile and verify the selected native ASTC oracle body",
-     "Require changed ASTC pixels across both older GPU producer cases",
-     "Extend owned ASTC family oracle with older writer and cross-mip consumers",
-     "Add isolated cold Android native-family window fixture entry",
-     "Record effective native window fixture compile selection",
-     "Order older native image alias writers before pending acquire",
-     "Preserve native acquire scope for every mip and alias envelope",
-     "Keep independent native texture acquire before a pending render pass"
-    ]
-   },
-   {
-    "branch": "codex/nvn-native-resource-family-v2",
-    "ahead": 108,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T04:14:29Z",
-    "subjects": [
-     "Preserve original thumbnail semantics in native resource families",
-     "Track native image buffer aliases and add original NVN resource oracle",
-     "Add default-off native resource table and shared image runtime candidate",
-     "Restore CPU authority alias membership after physical image promotion",
-     "Cover a fresh texture identity over stale GPU-owned image source bytes",
-     "Reject CPU image uploads from another GPU-owned optimal backing",
-     "Serialize fixed shared NVN ReadTexels on the existing translation owner",
-     "Keep cover wait-reference reads optional for shared image aliases"
-    ]
-   },
-   {
-    "branch": "codex/nvn-native-resource-oracle-v1",
-    "ahead": 107,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T03:55:16Z",
-    "subjects": [
-     "Track native image buffer aliases and add original NVN resource oracle",
-     "Add default-off native resource table and shared image runtime candidate",
-     "Restore CPU authority alias membership after physical image promotion",
-     "Cover a fresh texture identity over stale GPU-owned image source bytes",
-     "Reject CPU image uploads from another GPU-owned optimal backing",
-     "Serialize fixed shared NVN ReadTexels on the existing translation owner",
-     "Keep cover wait-reference reads optional for shared image aliases",
-     "Keep alias-read linear oracle separate from retained first-clear image storage"
-    ]
-   },
-   {
-    "branch": "codex/nvn-native-resource-runtime-v1",
-    "ahead": 106,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T03:37:32Z",
-    "subjects": [
-     "Add default-off native resource table and shared image runtime candidate",
-     "Restore CPU authority alias membership after physical image promotion",
-     "Cover a fresh texture identity over stale GPU-owned image source bytes",
-     "Reject CPU image uploads from another GPU-owned optimal backing",
-     "Serialize fixed shared NVN ReadTexels on the existing translation owner",
-     "Keep cover wait-reference reads optional for shared image aliases",
-     "Keep alias-read linear oracle separate from retained first-clear image storage",
-     "Reject stale shared image aliases in required CPU reads and decline optional proofs"
-    ]
-   },
-   {
-    "branch": "codex/nvn-readonly-host-import-v1",
-    "ahead": 66,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T18:29:06Z",
-    "subjects": [
-     "Verify successful host pin across original dirty protection and rewrites",
-     "Apply owned fixture window size through the existing cold setter",
-     "Count actual shared pool copies and cover protected owned-page fallback",
-     "Add bounded readonly host import pool experiment with mirror handoff",
-     "Support PanVK host-import opt-in and report validation setup failures",
-     "Order host import oracle transfer reuse explicitly",
-     "Append both fixture output streams after a single truncation",
-     "Add isolated standard Vulkan host import byte oracle"
-    ]
-   },
-   {
-    "branch": "codex/nvn-readonly-host-prebind-v1",
-    "ahead": 67,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T18:43:10Z",
-    "subjects": [
-     "Preregister bounded readonly buffers during Vulkan command translation",
-     "Verify successful host pin across original dirty protection and rewrites",
-     "Apply owned fixture window size through the existing cold setter",
-     "Count actual shared pool copies and cover protected owned-page fallback",
-     "Add bounded readonly host import pool experiment with mirror handoff",
-     "Support PanVK host-import opt-in and report validation setup failures",
-     "Order host import oracle transfer reuse explicitly",
-     "Append both fixture output streams after a single truncation"
-    ]
-   },
-   {
-    "branch": "codex/panvk-app-local-loader-v1",
-    "ahead": 58,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T17:39:18Z",
-    "subjects": [
-     "Set a private Mesa cache directory before loading PanVK",
-     "Append both fixture output streams after a single truncation",
-     "Make fixture validation an explicit developer option",
-     "Add explicit app-local PanVK ICD selection",
-     "Precompute immutable physical image layout traits",
-     "Reuse operation-local pinned pool owners",
-     "Enable source-proved pixel-local subpasses on Android",
-     "Reduce pixel-local plans to consumer render targets"
-    ]
-   },
-   {
-    "branch": "codex/panvk-borrowed-nvn-app-fixture-v2",
-    "ahead": 88,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T22:46:57Z",
-    "subjects": [
-     "docs: record actual Mali noncoherent borrowed NVN validation",
-     "Distinguish live host bytes from shadow verification in fixture evidence",
-     "Package the borrowed NVN oracle for a separate ordinary application UID",
-     "Set a private Mesa cache directory before loading PanVK",
-     "Append both fixture output streams after a single truncation",
-     "Make fixture validation an explicit developer option",
-     "Add explicit app-local PanVK ICD selection",
-     "Close borrowed import review gaps and exercise actual vertex fetch"
-    ]
-   },
-   {
-    "branch": "codex/panvk-borrowed-subwindows-review-fix-v1",
-    "ahead": 91,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T23:11:32Z",
-    "subjects": [
-     "Close full-reference retirement and alias-publication review gaps",
-     "Cover full-reference transition with nonzero imported windows",
-     "Avoid clearing cold scope snapshot on stable dirty proof refresh",
-     "Prototype bounded readonly imports inside borrowed NVN pools",
-     "Distinguish live host bytes from shadow verification in fixture evidence",
-     "Package the borrowed NVN oracle for a separate ordinary application UID",
-     "Set a private Mesa cache directory before loading PanVK",
-     "Append both fixture output streams after a single truncation"
-    ]
-   },
-   {
-    "branch": "codex/panvk-borrowed-subwindows-v1",
-    "ahead": 89,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T23:04:57Z",
-    "subjects": [
-     "Avoid clearing cold scope snapshot on stable dirty proof refresh",
-     "Prototype bounded readonly imports inside borrowed NVN pools",
-     "Distinguish live host bytes from shadow verification in fixture evidence",
-     "Package the borrowed NVN oracle for a separate ordinary application UID",
-     "Set a private Mesa cache directory before loading PanVK",
-     "Append both fixture output streams after a single truncation",
-     "Make fixture validation an explicit developer option",
-     "Add explicit app-local PanVK ICD selection"
-    ]
-   },
-   {
-    "branch": "codex/panvk-borrowed-window-review-fix-v1",
-    "ahead": 81,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T22:26:43Z",
-    "subjects": [
-     "Close borrowed import review gaps and exercise actual vertex fetch",
-     "Clarify provenance of the initial borrowed fixture build failure",
-     "Exercise bounded borrowed NVN pool leases through original buffer operations",
-     "Keep unchanged owned-scope selection valid in the complete suite",
-     "Add a build-gated owned NVN readonly buffer functional prototype",
-     "Exercise scoped dirty proofs in the owned renderer fixture",
-     "Preserve disjoint dirty proofs with fixed owned-page scopes",
-     "Store exclusive buffer history endpoints for dependency lookup"
-    ]
-   },
-   {
-    "branch": "codex/panvk-borrowed-window-v1",
-    "ahead": 80,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T22:14:05Z",
-    "subjects": [
-     "Clarify provenance of the initial borrowed fixture build failure",
-     "Exercise bounded borrowed NVN pool leases through original buffer operations",
-     "Keep unchanged owned-scope selection valid in the complete suite",
-     "Add a build-gated owned NVN readonly buffer functional prototype",
-     "Exercise scoped dirty proofs in the owned renderer fixture",
-     "Preserve disjoint dirty proofs with fixed owned-page scopes",
-     "Store exclusive buffer history endpoints for dependency lookup",
-     "Expose cold ASTC decode comparison in Android launcher"
-    ]
-   },
-   {
-    "branch": "codex/panvk-csf-fault-decode-v1",
-    "ahead": 64,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T05:04:00Z",
-    "subjects": [
-     "Fix bounded PanVK CSF fault decoding without changing GPU submissions",
-     "Add experimental noncoherent PanVK host import and range oracle",
-     "Support PanVK host-import opt-in and report validation setup failures",
-     "Order host import oracle transfer reuse explicitly",
-     "Add isolated standard Vulkan host import byte oracle",
-     "Add experimental coherent PanVK host import source package",
-     "Set a private Mesa cache directory before loading PanVK",
-     "Append both fixture output streams after a single truncation"
-    ]
-   },
-   {
-    "branch": "codex/panvk-csf-fault-streams-v2",
-    "ahead": 65,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T05:22:37Z",
-    "subjects": [
-     "Decode all retained CSF root streams at the existing timeout entry",
-     "Fix bounded PanVK CSF fault decoding without changing GPU submissions",
-     "Add experimental noncoherent PanVK host import and range oracle",
-     "Support PanVK host-import opt-in and report validation setup failures",
-     "Order host import oracle transfer reuse explicitly",
-     "Add isolated standard Vulkan host import byte oracle",
-     "Add experimental coherent PanVK host import source package",
-     "Set a private Mesa cache directory before loading PanVK"
-    ]
-   },
-   {
-    "branch": "codex/panvk-fixed-shared-app-fixture-v1",
-    "ahead": 84,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T00:19:17Z",
-    "subjects": [
-     "Record bounded fixture cache ranges without adding profiling",
-     "Keep fixed shared fixture selection cold and bound APK build parallelism",
-     "Order shared host cache phases and CPU effects against overlapping GPU uses",
-     "Add owned oracle for completion effect ordering against shared GPU writes",
-     "Prepare isolated Android wrapper for fixed shared Buffer fixtures",
-     "Bound the cold shared-memory GPU capability fence wait",
-     "Prototype fixed startup shared pools with lazy whole import and bidirectional NVN buffers",
-     "Compact store-index texture dependency footprints"
-    ]
-   },
-   {
-    "branch": "codex/panvk-fixed-shared-cache-ownership-v1",
-    "ahead": 81,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T00:15:57Z",
-    "subjects": [
-     "Order shared host cache phases and CPU effects against overlapping GPU uses",
-     "Add owned oracle for completion effect ordering against shared GPU writes",
-     "Bound the cold shared-memory GPU capability fence wait",
-     "Prototype fixed startup shared pools with lazy whole import and bidirectional NVN buffers",
-     "Compact store-index texture dependency footprints",
-     "Batch consecutive host dirty-page write preparation",
-     "Separate descriptor creation miss stack from binding cache path",
-     "Store exclusive buffer history endpoints for dependency lookup"
-    ]
-   },
-   {
-    "branch": "codex/panvk-fixed-shared-cold-policy-v1",
-    "ahead": 85,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T00:53:15Z",
-    "subjects": [
-     "Select fixed shared backing only after a successful cold capability probe",
-     "Record bounded fixture cache ranges without adding profiling",
-     "Keep fixed shared fixture selection cold and bound APK build parallelism",
-     "Order shared host cache phases and CPU effects against overlapping GPU uses",
-     "Add owned oracle for completion effect ordering against shared GPU writes",
-     "Prepare isolated Android wrapper for fixed shared Buffer fixtures",
-     "Bound the cold shared-memory GPU capability fence wait",
-     "Prototype fixed startup shared pools with lazy whole import and bidirectional NVN buffers"
-    ]
-   },
-   {
-    "branch": "codex/panvk-fixed-shared-pools-v1",
-    "ahead": 79,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-19T23:55:51Z",
-    "subjects": [
-     "Bound the cold shared-memory GPU capability fence wait",
-     "Prototype fixed startup shared pools with lazy whole import and bidirectional NVN buffers",
-     "Compact store-index texture dependency footprints",
-     "Batch consecutive host dirty-page write preparation",
-     "Separate descriptor creation miss stack from binding cache path",
-     "Store exclusive buffer history endpoints for dependency lookup",
-     "Expose cold ASTC decode comparison in Android launcher",
-     "Use typed shader scope in ASTC decode GPU fixture"
-    ]
-   },
-   {
-    "branch": "codex/panvk-fixed-shared-publication-app-v1",
-    "ahead": 89,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T01:02:56Z",
-    "subjects": [
-     "Preserve strict first PID ownership across all cold shared fixtures",
-     "Prepare independent cold shared Buffer Event and Query app fixtures",
-     "Publish fixed shared NVN query records directly in GPU order",
-     "Publish registered NVN event payloads in the GPU command stream",
-     "Select fixed shared backing only after a successful cold capability probe",
-     "Record bounded fixture cache ranges without adding profiling",
-     "Keep fixed shared fixture selection cold and bound APK build parallelism",
-     "Order shared host cache phases and CPU effects against overlapping GPU uses"
-    ]
-   },
-   {
-    "branch": "codex/panvk-fixed-shared-query-v1",
-    "ahead": 83,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T00:49:19Z",
-    "subjects": [
-     "Publish fixed shared NVN query records directly in GPU order",
-     "Publish registered NVN event payloads in the GPU command stream",
-     "Order shared host cache phases and CPU effects against overlapping GPU uses",
-     "Add owned oracle for completion effect ordering against shared GPU writes",
-     "Bound the cold shared-memory GPU capability fence wait",
-     "Prototype fixed startup shared pools with lazy whole import and bidirectional NVN buffers",
-     "Compact store-index texture dependency footprints",
-     "Batch consecutive host dirty-page write preparation"
-    ]
-   },
-   {
-    "branch": "codex/panvk-gfxr-android-replay-v1",
-    "ahead": 134,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T11:19:33Z",
-    "subjects": [
-     "tools: use supported official Android GFXR file log output",
-     "tools: preserve adrenotools directory suffix contract in replay bridge",
-     "tools: bound complete Android shader inventory hashing to128 files",
-     "tools: prepare isolated official Android GFXR PanVK replay",
-     "Keep official Android capture property below size limit",
-     "Capture bounded offscreen PanVK failure submits with official GFXR",
-     "Preserve normalized color values for Vulkan shadow comparisons",
-     "Reuse original offscreen GPU route for cold official VVL game diagnosis"
-    ]
-   },
-   {
-    "branch": "codex/panvk-gfxr-bc-route-rebind-v1",
-    "ahead": 138,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T12:31:14Z",
-    "subjects": [
-     "tools: prepare restored cold BC-route control on official rebind allocator",
-     "tools: isolate graphics overlap with one official render-pass serialization replay",
-     "tools: serialize one full-prefix official PanVK replay with registered sync option",
-     "tools: admit only restored and parsed full PanVK startup capture for replay",
-     "tools: use supported official Android GFXR file log output",
-     "tools: preserve adrenotools directory suffix contract in replay bridge",
-     "tools: bound complete Android shader inventory hashing to128 files",
-     "tools: prepare isolated official Android GFXR PanVK replay"
-    ]
-   },
-   {
-    "branch": "codex/panvk-gfxr-renderpass-serialize-v1",
-    "ahead": 137,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T12:10:23Z",
-    "subjects": [
-     "tools: isolate graphics overlap with one official render-pass serialization replay",
-     "tools: serialize one full-prefix official PanVK replay with registered sync option",
-     "tools: admit only restored and parsed full PanVK startup capture for replay",
-     "tools: use supported official Android GFXR file log output",
-     "tools: preserve adrenotools directory suffix contract in replay bridge",
-     "tools: bound complete Android shader inventory hashing to128 files",
-     "tools: prepare isolated official Android GFXR PanVK replay",
-     "Keep official Android capture property below size limit"
-    ]
    }
   ]
  },
@@ -9774,21 +7332,21 @@
   ]
  },
  "mdhskiy/test": {
-  "pushed_at": "2026-10-20T18:27:58Z",
+  "pushed_at": "2026-10-20T23:36:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T18:27:57Z",
+    "last_commit": "2026-10-20T23:36:49Z",
     "subjects": [
+     "hle_oe: use vm_region_64 for the mapped-range check (the iOS SDK rejects mach_vm.h, which broke the build)",
      "CI: try the macos-26 pool (macos-15 has been queued for hours without a runner)",
      "hle_oe: include mach/vm_region.h for the region query types",
      "CI: build one macOS leg (macos-15) instead of two, so a run takes a single runner slot and stops being cancelled for the other leg",
      "Revert the linear-texture padded copy: it is what made the lantern glow flicker. Keep the render-size write (mapped-range check), no-crop default and the magic-checked control copies",
      "D3: accept the globals pointers by asking whether the range is mapped (they are on the game heap, which mtl_addr's pool check rejected), so the render-size write can finally happen",
      "D3: render_cond off (conditional rendering made a lantern glow quad blink); keeps the Globals render-size write, no-crop default, magic-checked control copies and per-submission LUT sync",
-     "D3: render size via GFXNX64NVN::Globals (device size +0x00/+0x04, aspect +0x10) and the display-mode source at +0x224, both signature-checked; no crop by default; magic-checked shader control copies; linear-texture copies synced every submission",
-     "Present: no crop by default (DM_PRESENT_FILL=0) -- the cover crop from the earlier rounds was still on, which is what kept cutting the picture"
+     "D3: render size via GFXNX64NVN::Globals (device size +0x00/+0x04, aspect +0x10) and the display-mode source at +0x224, both signature-checked; no crop by default; magic-checked shader control copies; linear-texture copies synced every submission"
     ]
    }
   ]
@@ -9946,7 +7504,7 @@
   "branches": []
  },
  "codetrek/d2r-server": {
-  "pushed_at": "2026-10-20T15:47:53Z",
+  "pushed_at": "2026-10-20T23:55:38Z",
   "branches": [
    {
     "branch": "main",
@@ -10174,6 +7732,93 @@
      "workflow: use --break-system-packages for fontTools (PEP 668), fix log paths",
      "gitattributes: force LF for scripts and sources",
      "nxnative + Windows shell path (shell_build.sh, nx_pack.py, cloud workflow)"
+    ]
+   }
+  ]
+ },
+ "PowerBeef/d2r-mobile": {
+  "pushed_at": "2026-10-20T23:39:31Z",
+  "branches": [
+   {
+    "branch": "feat/mac-cursor-autohide",
+    "ahead": 1,
+    "behind": 0,
+    "files": 3,
+    "real_files": 1,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-20T22:45:38Z",
+    "subjects": [
+     "feat(mac): auto-hide the pointer when it rests over the game window"
+    ]
+   },
+   {
+    "branch": "feat/mac-default-icon",
+    "ahead": 1,
+    "behind": 0,
+    "files": 3,
+    "real_files": 1,
+    "dirs": [
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-20T22:50:45Z",
+    "subjects": [
+     "feat(mac): give the Mac App the project's icon by default"
+    ]
+   },
+   {
+    "branch": "fix/extract-split-nsp",
+    "ahead": 1,
+    "behind": 0,
+    "files": 7,
+    "real_files": 2,
+    "dirs": [
+     "dm/tools",
+     "setup.sh"
+    ],
+    "last_commit": "2026-10-20T22:56:42Z",
+    "subjects": [
+     "fix(setup): extract from separate base/update packages and read title keys from tickets"
+    ]
+   },
+   {
+    "branch": "fix/ios-install-battery-gate",
+    "ahead": 1,
+    "behind": 0,
+    "files": 2,
+    "real_files": 2,
+    "dirs": [
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-20T22:53:24Z",
+    "subjects": [
+     "fix(ios): don't let the test-device battery gate block normal installs"
+    ]
+   },
+   {
+    "branch": "personal",
+    "ahead": 9,
+    "behind": 0,
+    "files": 14,
+    "real_files": 7,
+    "dirs": [
+     "CLAUDE.md",
+     "dm/host",
+     "dm/ios",
+     "dm/tools",
+     "setup.sh"
+    ],
+    "last_commit": "2026-10-20T23:39:30Z",
+    "subjects": [
+     "docs: add CLAUDE.md for this fork (fork-only, not for upstream)",
+     "Merge feat/mac-cursor-autohide into personal",
+     "Merge feat/mac-default-icon into personal",
+     "Merge fix/ios-install-battery-gate into personal",
+     "Merge fix/extract-split-nsp into personal",
+     "fix(setup): extract from separate base/update packages and read title keys from tickets",
+     "fix(ios): don't let the test-device battery gate block normal installs",
+     "feat(mac): give the Mac App the project's icon by default"
     ]
    }
   ]
