@@ -340,11 +340,11 @@
   ]
  },
  "n3crosis/d2r-mobile": {
-  "pushed_at": "2026-10-21T16:48:03Z",
+  "pushed_at": "2026-10-21T19:35:02Z",
   "branches": [
    {
     "branch": "feature/web-ipa-packager",
-    "ahead": 159,
+    "ahead": 169,
     "behind": 0,
     "files": 300,
     "real_files": 292,
@@ -360,16 +360,16 @@
      "web/ARCHIVE_READ_RPC.zh-CN.md",
      "web/ARCHIVE_STREAM_READER.md"
     ],
-    "last_commit": "2026-10-21T16:47:51Z",
+    "last_commit": "2026-10-21T19:34:49Z",
     "subjects": [
-     "fix(web): recover interrupted pinned source caches atomically",
-     "fix(web): recover ASTC source fetches and remove stale CSP expectations",
-     "test(web): tolerate retry button JSX formatting",
-     "chore(web): keep PR preparation external and relax comment-sensitive test",
-     "fix(web): clean failed staged reads and check imports semantically",
-     "fix(web): isolate startup observers and relax brittle test counts",
-     "perf(web): transfer owned shader inputs without redundant copies",
-     "fix(web): bound overlay text allocations and retry pinned source downloads"
+     "perf(web): retire completed compute stages and bound base64 decoding",
+     "perf(web): release completed program runtime and adopt overlay outputs",
+     "perf(web): adopt exclusively transferred program outputs",
+     "fix(web): make extractor disposal irreversible on cleanup failures",
+     "fix(web): hash exact CASC views and keep Bun oracle Unicode portable",
+     "fix(web): own byte snapshots across Buffer-backed adapters",
+     "perf(web): avoid redundant RomFS extent sorting",
+     "perf(web): batch cached archive snapshots and trim buffer clearing"
     ]
    },
    {
@@ -405,14 +405,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-21T17:05:09Z",
+  "pushed_at": "2026-10-21T18:55:52Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 235,
+    "ahead": 237,
     "behind": 22,
-    "files": 218,
-    "real_files": 213,
+    "files": 221,
+    "real_files": 216,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -421,16 +421,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-21T17:05:06Z",
+    "last_commit": "2026-10-21T18:55:50Z",
     "subjects": [
+     "Type resource test paths as file URLs",
+     "Redesign the P5R launcher and open local resource folders",
      "Restore Metal 4 for P5R launcher preset builds",
      "Keep launcher preset labels legible on the black canvas",
      "Add saved quality and performance presets before P5R launch",
      "Compare Metal backends and report P5R power state",
      "Check observed packed color format and replace obsolete CI runs",
-     "Keep texture view parameters immutable under ARC",
-     "Snapshot sampled color attachments before distortion draws",
-     "Fold six-channel PCM into stereo without dropping center dialogue"
+     "Keep texture view parameters immutable under ARC"
     ]
    },
    {
@@ -558,14 +558,14 @@
   "branches": []
  },
  "Seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-21T04:43:22Z",
+  "pushed_at": "2026-10-21T21:13:07Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 199,
+    "ahead": 210,
     "behind": 9,
-    "files": 165,
-    "real_files": 164,
+    "files": 177,
+    "real_files": 176,
     "dirs": [
      "NOTICE.md",
      "PORTABLE.md",
@@ -574,16 +574,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-10-21T04:17:59Z",
+    "last_commit": "2026-10-21T21:11:23Z",
     "subjects": [
-     "feat(ohos): 面包屑把停车点钉到函数级——PreInitializeApp 在 0xdb9770 调 0xdb7684（ResourceMgrTask 启动）后不再返回",
-     "feat(ohos): 队列配对记录 + 线程退出记账 + 强制放行实验（结论为负）",
-     "feat(ohos): 主线程停车点定谳——它在等\"任务/线程完成\"，对象=0x5b96b78e80（vt=img+0x21cfa18）",
-     "feat(ohos): 补 SystemEvent 家族（恒已置位）+ 轨迹空转过滤 + 栈回溯取证；判据未达成",
-     "fix(ohos): SleepThread(0) 按 NX 语义让出时间片（sched_yield）——判据未达成，CPU 饥饿假设被否定",
-     "feat(ohos): 内容门真开关=\"当前堆\"——假影子换成影子分配器，游戏首次跑进 ksys::PreInitializeApp",
-     "chore(ohos): 深跑退回退役状态（np167 实验结束；np168/169 曾带深跑跑测——变量已混淆）",
-     "wip(ohos): P0-3 内容门——启动信息影子注入 + 编排三点探针（发现钩子机制疑点）"
+     "feat(loader): S2 完成——7 个模块全装载 + 全局符号表（26,865）；S3 卡在 subsdk0 的 NVN 构造函数",
+     "feat(loader): 通用化第一步——跑 SDK 自己的 78 个构造函数（71 通 / 7 崩，崩点全在 IPC 服务）",
+     "perf(tex): 转码 1.53→1.27 µs/块（8 线程 37 MB/s），并加多线程 + 判据⑦",
+     "feat(tex): C3 第二步——设备接线（选路 + 能力查询 + ASTC 上传通道），3.4-E 真机全过",
+     "feat(tex): C3 第一步——BC→ASTC 4x4 转码模块 + 离线参考自测",
+     "fix(tools): 代码洞 0x10000→0x18000（204 格）——重定位修好后安装数涨到 157",
+     "feat(ohos): 实验 I 收官——flags 确是 runner 放行门；任务生命周期首次全程跑通",
+     "fix(ohos): 钩子重定位彻底修——adrp/adr/ldr字面量物化，条件分支超程改取反跳"
     ]
    }
   ]
@@ -1554,12 +1554,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-21T12:05:23Z",
+  "pushed_at": "2026-10-21T17:25:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-21T12:05:21Z",
+    "last_commit": "2026-10-21T17:25:19Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1634,21 +1634,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-21T16:54:48Z",
+  "pushed_at": "2026-10-21T17:36:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-21T16:54:39Z",
+    "last_commit": "2026-10-21T17:36:18Z",
     "subjects": [
+     "README: Big Brain Academy: Brain vs. Brain and Patrick's Parabox play on the iPhone",
+     "Movie output buffers written from their start, AudioUnit setup off the game's stack, clock snapshot arithmetic answered by the host (from PR #36)",
+     "Patrick's Parabox plays on the Mac: profile 0100E44016C22000 (update 1.0.1, SDK 13.3.7)",
      "Big Brain Academy: Brain vs. Brain plays on the Mac: profile 0100620012D6E000 (update 1.2.0, SDK 11.4.3)",
      "Display link: frames in order, one per tick, at most one behind (from PR #31)",
      "pctl free-communication permission query answered offline; host tests link again (from PR #38)",
      "Age of Calamity's last red lines, fixed for every game: buffer textures read by 1D integer fetches are bound as 2D rows, and shadow vertex inputs replace the CPU vertex conversion",
-     "README: STEINS;GATE RE:BOOT plays on the iPhone",
-     "STEINS;GATE RE:BOOT plays on the Mac and the iPhone: profile 01008BC024FDE000 (update 1.0.3, SDK 20.5.17)",
-     "NSP script: game language option (--language / LANGUAGE, English by default), checked against the languages in the game's control data and packed as DMLanguage in Info.plist",
-     "README: IPA size and notes under each game's picture, no games table"
+     "README: STEINS;GATE RE:BOOT plays on the iPhone"
     ]
    }
   ]
@@ -1714,20 +1714,20 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-21T17:11:12Z",
+  "pushed_at": "2026-10-21T21:41:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-21T17:11:10Z",
+    "last_commit": "2026-10-21T21:41:55Z",
     "subjects": [
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
+     "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（185 个项目）",
      "chore: 自动同步 Star 地图（185 个项目）",
      "chore: 自动同步 Star 地图（185 个项目）",
-     "chore: 自动同步 Star 地图（184 个项目）",
      "chore: 自动同步 Star 地图（184 个项目）"
     ]
    }
@@ -1742,12 +1742,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-21T12:01:11Z",
+  "pushed_at": "2026-10-21T17:21:18Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-21T12:01:10Z",
+    "last_commit": "2026-10-21T17:21:17Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2162,14 +2162,14 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-21T17:10:46Z",
+  "pushed_at": "2026-10-21T21:36:38Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 128,
+    "ahead": 142,
     "behind": 5,
-    "files": 48,
-    "real_files": 47,
+    "files": 50,
+    "real_files": 49,
     "dirs": [
      "UPDATE-2026-10-20.zh-CN.md",
      "codemagic.yaml",
@@ -2182,16 +2182,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-21T17:03:14Z",
+    "last_commit": "2026-10-21T21:23:45Z",
     "subjects": [
-     "Drops: compact treasure-class item slots after removing tsc/isc (fixes empty first slot that made Duriel drop nothing); English Attack titles: widen the box; dump the mercenary Name widget fields to locate its text/colour",
-     "Fix duplicated if-line from the English title patch (brace imbalance)",
-     "Mercenary name: overlay redraw with native text cleared (works around the unrenderable colour field); English Attack Damage/Rating titles: drop the newline and widen the box",
-     "﻿Round 5: density 5x at tier 8; monsters gain extra max/current HP by tier (1.00x..2.00x, baseline-tracked so it never compounds); Duriel normal/quest NoDrop zeroed in the compiled table (u32 at +68) with a 2/2 sanity check",
-     "﻿Round 4: orb/mana/Lv numbers shared 30px glyphs in map-name dark gold (212,196,145); mercenary name tint with robust text locating; density 1x..4x by tier; stats title line-break removed by visible text; skill release fixes; treasure-class probabilities are 32-bit (fix scroll zeroing) + Duriel table sanity check",
-     "﻿HUD round 3: orb numbers get the map-name dark gold from the generated vital glyphs; mercenary name is tinted on the game's own text (no overlay redraw); density applies the players tier with retry; character-panel title line-break fix; skill release state fixes; tab highlight sync",
-     "﻿Top function tabs: load the target page first, then sync the tab strip index (highlight follows); only do work when the page actually changes",
-     "Chinese font subset: keep huiwen's own advances for ASCII letters/punctuation (only CJK/digits follow the original font widths), fixing uneven English spacing such as 'Malthael'"
+     "Dynamic Island geometry: iPhone 16 Pro metrics (126 x 37.33 pt, 11 pt inset) so the portal zone and metal ring follow the real island shape",
+     "HUD names: hide the game Name widget (restored each pump) so the coloured copy is not covered; reset published slots every pump so a teleport cannot leave stale positions",
+     "HUD names: match Icon0/Icon1... by prefix (golem/skeleton slots); overlay: 2pt black edge hides the magenta sliver",
+     "Icon content 95% (letter no longer touches the edge); mercenary/minion names stay visible but dimmed while a menu is open instead of disappearing",
+     "Fix link: export dm_hud_names_count/dm_hud_names_get (the overlay calls them from another translation unit)",
+     "Fix build: declare dm_friendly_hp_pct before the minion-name code",
+     "Diagnostics: log visible top-level panel names and dump the hire/merc panel widget tree so the mercenary-hire tooltip can be wired to real widgets",
+     "Mercenary/minion names: per-visible-icon, original small font size under each portrait, game text hidden, hidden while menus are open, 4 HP bands (server merc HP / friendly-hit HP)"
     ]
    },
    {
@@ -3803,21 +3803,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-21T16:14:37Z",
+  "pushed_at": "2026-10-21T20:54:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-21T16:05:42Z",
+    "last_commit": "2026-10-21T20:52:55Z",
     "subjects": [
-     "data: 447 new variants in the shared shader list from #156, #161, #162, #165, #174 and #175; README shows the list's size",
-     "perf: three small replay costs: texture slot generation, last pool hit first, pass dump check",
-     "perf: the replay finds memory pools without the pool lock (per-thread cache of the last pools)",
-     "perf: hand the GPU smaller chunks of a frame (first after 30 draws, then every 40)",
-     "docs: README update history for #120, #143 and #157",
-     "test: the shortcut probe runs key 4's production cycle instead of its own stubs (after PR #120)",
-     "Merge PR #120 (squashed): 16:10 on the Mac: key 4 cycles 16:9 / fit to the window or display / 21:9, HUD kept in shape below 16:9 (Vert+ opt-in)",
-     "Merge PR #143: ReadTexels/WriteTexels convert a texel region on the GPU instead of the whole mip level on the CPU"
+     "fix: three kernel sync behaviours match the Switch: SignalToAddress wake-all, SystemEvent rebinding, targeted wakes",
+     "perf: repackaging and the first start after it reuse what did not change",
+     "fix: with a pipeline archive the warm-up skips every list's shader-library rows (8b6d26b loaded 20,368 on the iPhone)",
+     "fix: find Metal's leftover archive folders under the bundle id, where the iPhone and the Mac app keep them",
+     "Merge pull request #164: feat: iOS players can choose the game language in the Settings app",
+     "Merge pull request #172: docs: player mods for Breath of the Wild (mods/botw160), and make_mod_manifest.py takes botw160",
+     "Merge pull request #170: fix: a Breath of the Wild build takes its shared fonts from --firmware too",
+     "Merge pull request #171: fix: a Breath of the Wild build works from a folder whose path has spaces"
     ]
    }
   ]
@@ -4365,7 +4365,7 @@
   ]
  },
  "n2ray/d2r-mobile": {
-  "pushed_at": "2026-10-21T16:10:30Z",
+  "pushed_at": "2026-10-21T21:30:46Z",
   "branches": [
    {
     "branch": "android-snapdragon-elite",
@@ -4434,6 +4434,31 @@
     ]
    },
    {
+    "branch": "fix/x18-context-cache-collisions",
+    "ahead": 621,
+    "behind": 0,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-21T18:51:29Z",
+    "subjects": [
+     "fix(android): stop x18 context-cache collisions from pinning threads to TLSDESC",
+     "Merge pull request #335 from n2ray/codex/android-adpf-batch",
+     "Document ADPF wiring and conservative batch-policy closeout",
+     "Retire capped ADPF sessions when switching to uncapped work",
+     "Merge remote-tracking branch 'origin/integration/android-reference' into codex/android-adpf-batch",
+     "Merge pull request #334 from n2ray/codex/render-lifetime-prologue",
+     "Merge branch 'codex/render-lifetime-prologue' into codex/android-adpf-batch",
+     "Keep uploader and phase fixtures aligned with production interfaces"
+    ]
+   },
+   {
     "branch": "hermes/skill-icons-328",
     "ahead": 602,
     "behind": 9,
@@ -4485,7 +4510,7 @@
    },
    {
     "branch": "integration/android-reference",
-    "ahead": 620,
+    "ahead": 626,
     "behind": 0,
     "files": 300,
     "real_files": 297,
@@ -4496,16 +4521,16 @@
      "ci/tests",
      "dm/android"
     ],
-    "last_commit": "2026-10-21T16:10:23Z",
+    "last_commit": "2026-10-21T21:30:46Z",
     "subjects": [
+     "Merge pull request #338 from n2ray/perf/android-display-refresh-cap",
+     "Merge pull request #337 from n2ray/perf/small-guest-heap-reads",
+     "Merge pull request #336 from n2ray/fix/x18-context-cache-collisions",
+     "perf(android): request refresh-aligned present times at the 60 fps cap too",
+     "perf(android): read small guest baselines under the heap lease, not per-read syscalls",
+     "fix(android): stop x18 context-cache collisions from pinning threads to TLSDESC",
      "Merge pull request #335 from n2ray/codex/android-adpf-batch",
-     "Document ADPF wiring and conservative batch-policy closeout",
-     "Retire capped ADPF sessions when switching to uncapped work",
-     "Merge remote-tracking branch 'origin/integration/android-reference' into codex/android-adpf-batch",
-     "Merge pull request #334 from n2ray/codex/render-lifetime-prologue",
-     "Merge branch 'codex/render-lifetime-prologue' into codex/android-adpf-batch",
-     "Keep uploader and phase fixtures aligned with production interfaces",
-     "Add bounded Vulkan batch slot and draw-limit controls for device comparisons"
+     "Document ADPF wiring and conservative batch-policy closeout"
     ]
    },
    {
@@ -4531,6 +4556,56 @@
      "Merge remote-tracking branch 'origin/main' into hermes/scene-hud-wsi",
      "Merge pull request #210 from n2ray/hermes/ime-utf16-payload",
      "test(android): verify full payload clear on cancel, empty and end (#209)"
+    ]
+   },
+   {
+    "branch": "perf/android-display-refresh-cap",
+    "ahead": 621,
+    "behind": 0,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-21T21:18:08Z",
+    "subjects": [
+     "perf(android): request refresh-aligned present times at the 60 fps cap too",
+     "Merge pull request #335 from n2ray/codex/android-adpf-batch",
+     "Document ADPF wiring and conservative batch-policy closeout",
+     "Retire capped ADPF sessions when switching to uncapped work",
+     "Merge remote-tracking branch 'origin/integration/android-reference' into codex/android-adpf-batch",
+     "Merge pull request #334 from n2ray/codex/render-lifetime-prologue",
+     "Merge branch 'codex/render-lifetime-prologue' into codex/android-adpf-batch",
+     "Keep uploader and phase fixtures aligned with production interfaces"
+    ]
+   },
+   {
+    "branch": "perf/small-guest-heap-reads",
+    "ahead": 621,
+    "behind": 0,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-21T20:39:03Z",
+    "subjects": [
+     "perf(android): read small guest baselines under the heap lease, not per-read syscalls",
+     "Merge pull request #335 from n2ray/codex/android-adpf-batch",
+     "Document ADPF wiring and conservative batch-policy closeout",
+     "Retire capped ADPF sessions when switching to uncapped work",
+     "Merge remote-tracking branch 'origin/integration/android-reference' into codex/android-adpf-batch",
+     "Merge pull request #334 from n2ray/codex/render-lifetime-prologue",
+     "Merge branch 'codex/render-lifetime-prologue' into codex/android-adpf-batch",
+     "Keep uploader and phase fixtures aligned with production interfaces"
     ]
    }
   ]
@@ -4814,7 +4889,7 @@
   ]
  },
  "kxn/d2r-mobile": {
-  "pushed_at": "2026-10-21T17:00:58Z",
+  "pushed_at": "2026-10-21T21:47:40Z",
   "branches": [
    {
     "branch": "codex/alias-negative-last-gap-v1",
@@ -4842,7 +4917,7 @@
    },
    {
     "branch": "codex/android-native-backup-20261019",
-    "ahead": 306,
+    "ahead": 316,
     "behind": 16,
     "files": 300,
     "real_files": 299,
@@ -4852,16 +4927,16 @@
      "dm/gfx",
      "dm/host"
     ],
-    "last_commit": "2026-10-21T17:00:56Z",
+    "last_commit": "2026-10-21T21:38:40Z",
     "subjects": [
-     "Budget whole-path optimization work and retain failed lazy-import game result",
-     "Record repeated-profile conclusions and lazy shared window experiment boundaries",
-     "Hide Android internal NVN fast thunk symbols",
-     "Skip NVN diagnostic atomic counts in normal Android app calls",
-     "Revalidate texture recipe identity during the existing locked lookup",
-     "Validate complete FP call paths and retain macro CPU priorities",
-     "Record repeated same-binary profiles and measured baseline drift",
-     "Prioritize same-binary profiling repeatability before further CPU tuning"
+     "docs: prioritize whole-path CPU changes with prechange budgets",
+     "docs: retain four-round byte-scope profiles and bound CPU benefit",
+     "docs: record completed coherent image byte-scope Android artifacts",
+     "docs: record qualified coherent byte scope implementation and pending Android build",
+     "docs: identify a real coherent image wait caused by adjacent GPU bytes",
+     "docs: ground draw aggregation budgets in current Q frame and CPU callers",
+     "docs: retain index phase comparisons and prioritize image dependency stalls",
+     "docs: bound translator optimizations using repeated whole-path profiles"
     ]
    },
    {
@@ -5417,6 +5492,30 @@
     ]
    },
    {
+    "branch": "codex/cpu-image-source-empty-plan-v1",
+    "ahead": 297,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-21T21:43:48Z",
+    "subjects": [
+     "Reuse complete logical image plans with empty CPU preflight",
+     "Keep shared window scope oracle out of Android app",
+     "Exclude coherent observation fixtures from Android app preprocessing",
+     "Wire cold Android coherent image observation experiment and report policy",
+     "Narrow coherent CPU image GPU publication conflicts to byte scope",
+     "Include physical interval metadata for shared-only builds",
+     "Index lazy Buffer physical union coverage without changing bindings",
+     "Keep empty buffer bindings distinct from unknown vertex extents"
+    ]
+   },
+   {
     "branch": "codex/cpu-pool-pin-coherent-combined-v1",
     "ahead": 281,
     "behind": 16,
@@ -5486,6 +5585,30 @@
      "Qualify reviewed combined translator candidate with unchanged raw provenance",
      "Preserve official PMU enabled and running counters",
      "Collect official CPU PMU stat windows alongside native game CPU profile"
+    ]
+   },
+   {
+    "branch": "codex/cpu-source-completion-combined-v1",
+    "ahead": 298,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-21T21:44:09Z",
+    "subjects": [
+     "Reuse complete logical image plans with empty CPU preflight",
+     "Separate guest fence completion notifications from queue work",
+     "Keep shared window scope oracle out of Android app",
+     "Exclude coherent observation fixtures from Android app preprocessing",
+     "Wire cold Android coherent image observation experiment and report policy",
+     "Narrow coherent CPU image GPU publication conflicts to byte scope",
+     "Include physical interval metadata for shared-only builds",
+     "Index lazy Buffer physical union coverage without changing bindings"
     ]
    },
    {
@@ -5774,6 +5897,30 @@
      "Share loop bookkeeping across paired dirty-page blocks",
      "Reuse texture dirty proofs across unrelated pool writes",
      "Reuse exact backing mapping for sparse CPU page uploads"
+    ]
+   },
+   {
+    "branch": "codex/guest-fence-notify-scope-v1",
+    "ahead": 297,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-21T21:28:39Z",
+    "subjects": [
+     "Separate guest fence completion notifications from queue work",
+     "Keep shared window scope oracle out of Android app",
+     "Exclude coherent observation fixtures from Android app preprocessing",
+     "Wire cold Android coherent image observation experiment and report policy",
+     "Narrow coherent CPU image GPU publication conflicts to byte scope",
+     "Include physical interval metadata for shared-only builds",
+     "Index lazy Buffer physical union coverage without changing bindings",
+     "Keep empty buffer bindings distinct from unknown vertex extents"
     ]
    },
    {
@@ -7143,78 +7290,6 @@
      "Fix official SDP device-clock coverage and isolate optional tool failures",
      "Add optional owned official SDP Realtime game-pair window"
     ]
-   },
-   {
-    "branch": "codex/native-candidate-short-633-v1",
-    "ahead": 163,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-21T01:00:19Z",
-    "subjects": [
-     "Pin original short Q validation to reviewed native-retirement633 artifacts",
-     "Pin short original-game validation to reviewed planned-forward10c artifacts",
-     "Pin descriptor shader-slot candidate short validation to reviewed d5 artifacts",
-     "Pin guest-boundary private image budget validation to reviewed runtime",
-     "Gate private image budget short validation on exact reviewed artifacts",
-     "Gate 80a span geometry short validation on reviewed 26b qualification",
-     "Gate reviewed 26b short native-only validation with original CPU tools",
-     "Test camp B C return route without the failed C A shortcut"
-    ]
-   },
-   {
-    "branch": "codex/native-candidate-short-d5-v1",
-    "ahead": 161,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T23:26:41Z",
-    "subjects": [
-     "Pin descriptor shader-slot candidate short validation to reviewed d5 artifacts",
-     "Pin guest-boundary private image budget validation to reviewed runtime",
-     "Gate private image budget short validation on exact reviewed artifacts",
-     "Gate 80a span geometry short validation on reviewed 26b qualification",
-     "Gate reviewed 26b short native-only validation with original CPU tools",
-     "Test camp B C return route without the failed C A shortcut",
-     "Orchestrate bounded original-input native sustained play with lifecycle restore",
-     "Bracket official collector metadata with stable proc identities"
-    ]
-   },
-   {
-    "branch": "codex/native-candidate-short-ed-v1",
-    "ahead": 159,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T22:32:57Z",
-    "subjects": [
-     "Gate private image budget short validation on exact reviewed artifacts",
-     "Gate 80a span geometry short validation on reviewed 26b qualification",
-     "Gate reviewed 26b short native-only validation with original CPU tools",
-     "Test camp B C return route without the failed C A shortcut",
-     "Orchestrate bounded original-input native sustained play with lifecycle restore",
-     "Bracket official collector metadata with stable proc identities",
-     "Skip CPU collection when optional SDK pause and cleanup are unproven",
-     "Fix official SDP device-clock coverage and isolate optional tool failures"
-    ]
    }
   ]
  },
@@ -7241,21 +7316,21 @@
   ]
  },
  "iceorange-dev/manosaba-ios": {
-  "pushed_at": "2026-10-21T14:49:58Z",
+  "pushed_at": "2026-10-21T18:40:17Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-21T14:01:15Z",
+    "last_commit": "2026-10-21T18:40:12Z",
     "subjects": [
+     "Plan batch 68: G-buffer decals read the tile instead of copies; time-constraint declarations follow the cap (181, 182; Tier 7)",
+     "Plan batch 67: the 60 fps iPhone build, a hot-hold switch, the display target paces the game (62l, 135a, 135b)",
+     "Plan batch 66: the iOS libvpx with NEON and optimization (62b2)",
      "Plan batch 65: inline uniform updates reach draws after they are written (62k)",
      "Plan batch 64: Tears of the Kingdom's first run on an iPhone (62i; 62j, 62k open)",
      "Plan batch 63: the increased memory limit on a free account (65)",
      "Plan batch 62: the phone's haptics after the background; iPhone checks (67e, 68)",
-     "t_audio: room for a CI runner's timing and its virtual sound device",
-     "DEVELOPMENT.md: compressed (2,521 → 1,031 lines), what is left by what it needs",
-     "Plan batch 61: frame latency auto, the wide picture (152 [-], 153, 154, 131a [-])",
-     "Plan batch 60: face buttons by position, pchtxt and a cheat VM (149, 150, 151)"
+     "t_audio: room for a CI runner's timing and its virtual sound device"
     ]
    }
   ]
@@ -8128,21 +8203,21 @@
   ]
  },
  "littckerQiu/witchspringr-ios": {
-  "pushed_at": "2026-10-21T14:29:31Z",
+  "pushed_at": "2026-10-21T20:49:31Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-21T14:29:30Z",
+    "last_commit": "2026-10-21T20:49:31Z",
     "subjects": [
+     "ios: apply the Diagnostics toggles to the host's environment",
+     "ios: Diagnostics toggles for svc/import logging (no way to set the environment on a device)",
+     "host: read debug flags from Documents/dm.cfg (iOS cannot set the environment)",
+     "ci: fast IPA rebuild that reuses the shader libraries of a previous full run",
+     "host: hand out nn::os::AllocateAddressRegion from the alias region (VAMM was empty -> WitchSpring R aborted in nninitStartup)",
      "ci(repro): try a smaller application pool (DM_APP_POOL_ADD_MB)",
      "ci(repro): log svcs/imports, probe which os allocation fails",
-     "ci(repro): probe the CentralHeap::Init path",
-     "ci(repro): probes on the SDK TLS-slot path",
-     "ci: headless repro workflow + a data-free profile (witchspringr-ci)",
-     "ci(witchspringr): BSD sed has no first~step; shard with awk",
-     "ci(witchspringr): 8-way sharded full shader build + IPA assembly from the merged libs",
-     "ci(witchspringr): ipa mode with a shader limit; single shader job"
+     "ci(repro): probe the CentralHeap::Init path"
     ]
    }
   ]
@@ -8177,6 +8252,52 @@
     "last_commit": "2026-10-21T12:06:46Z",
     "subjects": [
      "SM3DW Mobile: native iPad / iPhone / Mac port of Super Mario 3D World + Bowser's Fury"
+    ]
+   }
+  ]
+ },
+ "MaxCaoZhenyan/anhei2": {
+  "pushed_at": "2026-10-21T17:57:05Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-21T17:50:06Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "MaxCaoZhenyan/game": {
+  "pushed_at": "2026-10-21T17:49:28Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-21T17:49:27Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "LNPANDY/nxnative-romfs-archive": {
+  "pushed_at": "2026-10-21T17:45:20Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-21T17:45:18Z",
+    "subjects": [
+     "Docs: keep the v0.1.0 release notes in the repository",
+     "Docs: collapse the screenshot behind a <details> and cap its width",
+     "Frontend: find the repository automatically; abbreviate ~ in paths",
+     "Frontend: compact layout that fits, plus a screenshot and docs",
+     "Frontend: pick base / update / DLC / keys separately; fix dependency false negatives",
+     "Frontend: restore the missing @main App entry (the launch crash)",
+     "Frontend: dependency detection with one-click install",
+     "Frontend: a macOS SwiftUI app that drives the build for new users"
     ]
    }
   ]
