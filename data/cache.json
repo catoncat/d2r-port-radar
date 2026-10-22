@@ -340,11 +340,11 @@
   ]
  },
  "n3crosis/d2r-mobile": {
-  "pushed_at": "2026-10-22T16:56:25Z",
+  "pushed_at": "2026-10-22T21:20:41Z",
   "branches": [
    {
     "branch": "feature/web-ipa-packager",
-    "ahead": 194,
+    "ahead": 197,
     "behind": 0,
     "files": 300,
     "real_files": 292,
@@ -360,16 +360,16 @@
      "web/ARCHIVE_READ_RPC.zh-CN.md",
      "web/ARCHIVE_STREAM_READER.md"
     ],
-    "last_commit": "2026-10-22T16:56:12Z",
+    "last_commit": "2026-10-22T21:20:34Z",
     "subjects": [
+     "Fix AIR storage layout and shader interface metadata",
+     "fix(web): preserve constant pointer merges and activate half support after initialization",
+     "fix(web): enable native Metal half semantics and retain failed compiler evidence",
      "fix(web): resolve corpus shader compiler lowering failures",
      "fix(web): expose workgroup barriers through Metal standard library",
      "fix(web): preserve unfamiliar native frontend diagnostic prose",
      "feat(web): implement missing scalar math bit reversal and SIMD vote",
-     "fix(web): refresh UI provenance and check it before runtime builds",
-     "fix(web): report actionable local shader compiler diagnostics",
-     "fix(web): cancel stalled folder enumeration without late reads",
-     "fix(web): close cancelled shader work and preserve safe failure diagnostics"
+     "fix(web): refresh UI provenance and check it before runtime builds"
     ]
    },
    {
@@ -405,14 +405,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-22T11:25:10Z",
+  "pushed_at": "2026-10-22T18:27:47Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 238,
+    "ahead": 242,
     "behind": 22,
-    "files": 226,
-    "real_files": 221,
+    "files": 229,
+    "real_files": 224,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -421,16 +421,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-22T11:24:56Z",
+    "last_commit": "2026-10-22T18:27:40Z",
     "subjects": [
+     "Retain externally armed profiling control in optimized builds",
+     "Identify individual GPU profile submissions and truncated captures",
+     "Add bounded Metal 4 render compute and copy timestamp profiling",
+     "Preserve P5R visibility totals on GPU without submit readback waits",
      "Cache P5R program compositions and support local launcher backgrounds",
      "Type resource test paths as file URLs",
      "Redesign the P5R launcher and open local resource folders",
-     "Restore Metal 4 for P5R launcher preset builds",
-     "Keep launcher preset labels legible on the black canvas",
-     "Add saved quality and performance presets before P5R launch",
-     "Compare Metal backends and report P5R power state",
-     "Check observed packed color format and replace obsolete CI runs"
+     "Restore Metal 4 for P5R launcher preset builds"
     ]
    },
    {
@@ -1082,7 +1082,7 @@
   "branches": []
  },
  "dodola/d2r-mobile": {
-  "pushed_at": "2026-10-22T01:59:37Z",
+  "pushed_at": "2026-10-22T17:40:26Z",
   "branches": [
    {
     "branch": "codex/android-measured-optimizations",
@@ -1138,7 +1138,7 @@
    },
    {
     "branch": "main",
-    "ahead": 103,
+    "ahead": 110,
     "behind": 0,
     "files": 300,
     "real_files": 298,
@@ -1147,21 +1147,21 @@
      "dm/android",
      "dm/gfx"
     ],
-    "last_commit": "2026-10-21T23:21:19Z",
+    "last_commit": "2026-10-22T17:39:50Z",
     "subjects": [
-     "docs(android): record why the GPU writeback is not skipped",
-     "tools(android): device-independent perf measurement and regression scripts",
-     "fix(nvn): do not recycle descriptor sets when a binding is skipped",
-     "fix(nvn): keep GPU-written pages exact under fault-around",
-     "fix(android): address review findings on the PPG optimization batch",
-     "test(nvn): regression test for the storage-index bias literal-ID mismatch; bench script",
-     "docs(android): record the dirty-tracker kernel cost and the fault-around result",
-     "perf(nvn): fault-around and protect-around in the dirty-page tracker (64 KB window, default on)"
+     "docs(android): performance work handoff for 2026-10-23",
+     "perf(nvn): conflict ledger for multi-slot rendering (step 0, no behaviour change)",
+     "perf(nvn): compile pipelines on several worker threads",
+     "perf(nvn): HITCH log also reports replay CPU, dirty faults, mprotect time, page-in I/O and context switches",
+     "perf(nvn): automatic native BC texture passthrough on Adreno 8xx",
+     "perf(nvn): hitch attribution log and async PSO compilation for graphics draws",
+     "docs(android): performance work handoff for the next agent",
+     "docs(android): record why the GPU writeback is not skipped"
     ]
    },
    {
     "branch": "port/android-integration-20261021",
-    "ahead": 103,
+    "ahead": 110,
     "behind": 0,
     "files": 300,
     "real_files": 298,
@@ -1170,16 +1170,16 @@
      "dm/android",
      "dm/gfx"
     ],
-    "last_commit": "2026-10-21T23:21:19Z",
+    "last_commit": "2026-10-22T17:39:50Z",
     "subjects": [
-     "docs(android): record why the GPU writeback is not skipped",
-     "tools(android): device-independent perf measurement and regression scripts",
-     "fix(nvn): do not recycle descriptor sets when a binding is skipped",
-     "fix(nvn): keep GPU-written pages exact under fault-around",
-     "fix(android): address review findings on the PPG optimization batch",
-     "test(nvn): regression test for the storage-index bias literal-ID mismatch; bench script",
-     "docs(android): record the dirty-tracker kernel cost and the fault-around result",
-     "perf(nvn): fault-around and protect-around in the dirty-page tracker (64 KB window, default on)"
+     "docs(android): performance work handoff for 2026-10-23",
+     "perf(nvn): conflict ledger for multi-slot rendering (step 0, no behaviour change)",
+     "perf(nvn): compile pipelines on several worker threads",
+     "perf(nvn): HITCH log also reports replay CPU, dirty faults, mprotect time, page-in I/O and context switches",
+     "perf(nvn): automatic native BC texture passthrough on Adreno 8xx",
+     "perf(nvn): hitch attribution log and async PSO compilation for graphics draws",
+     "docs(android): performance work handoff for the next agent",
+     "docs(android): record why the GPU writeback is not skipped"
     ]
    }
   ]
@@ -1657,21 +1657,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-22T17:10:33Z",
+  "pushed_at": "2026-10-22T18:46:02Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-22T17:10:18Z",
+    "last_commit": "2026-10-22T18:45:50Z",
     "subjects": [
+     "Tears of the Kingdom's crash in mtl_exec after minutes of play (GitHub issue #61): a command memory link never writes past what GetCommandMemoryUsed reported",
+     "DRAGON QUEST VII Reimagined at 60 fps (30 on the Switch): profile fps_target 60",
      "Movies: 5.1 Vorbis sound decodes right, as stb_vorbis's type-2 residues span every channel of their submap (GitHub PR #60)",
      "NSP script: --prepare-xcode makes a per-game Xcode project to sign and run with your own developer account (GitHub PR #59)",
      "DRAGON QUEST VII Reimagined plays on the iPhone: README games table, AGENTS.md list",
      "DRAGON QUEST VII Reimagined plays on the Mac: profile 0100A9D01C446000 (update 1.2.0, SDK 19.3.1)",
      "Animal Crossing: New Horizons plays on the iPhone: README games table, AGENTS.md list",
-     "Animal Crossing: New Horizons plays on the Mac: profile 01006F8002326000 (update 3.0.3, SDK 20.5.4)",
-     "Shared fonts: LoadFont gets the TTF when a game hands it the host's BFTTF header (GitHub PR #55): The Legend of Zelda: Echoes of Wisdom imports Decode but loads its shared fonts without it",
-     "Digimon Story Cyber Sleuth: Complete Edition plays on the iPhone: README games table, AGENTS.md list"
+     "Animal Crossing: New Horizons plays on the Mac: profile 01006F8002326000 (update 3.0.3, SDK 20.5.4)"
     ]
    }
   ]
@@ -1737,21 +1737,21 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-22T17:09:38Z",
+  "pushed_at": "2026-10-22T21:34:30Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-22T17:09:37Z",
+    "last_commit": "2026-10-22T21:34:29Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（185 个项目）",
      "chore: 自动同步 Star 地图（185 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
-     "chore: 自动同步 Star 地图（186 个项目）",
-     "chore: 自动同步 Star 地图（185 个项目）"
+     "chore: 自动同步 Star 地图（186 个项目）"
     ]
    }
   ]
@@ -1765,12 +1765,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-22T12:03:41Z",
+  "pushed_at": "2026-10-22T17:19:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-22T12:03:40Z",
+    "last_commit": "2026-10-22T17:19:05Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2241,14 +2241,14 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-22T16:51:22Z",
+  "pushed_at": "2026-10-22T18:55:06Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 151,
+    "ahead": 154,
     "behind": 5,
-    "files": 52,
-    "real_files": 51,
+    "files": 53,
+    "real_files": 52,
     "dirs": [
      "UPDATE-2026-10-20.zh-CN.md",
      "codemagic.yaml",
@@ -2261,16 +2261,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-22T16:19:34Z",
+    "last_commit": "2026-10-22T18:49:17Z",
     "subjects": [
+     "Settings UI plan B, persistent attack-title newline removal, 3D scale 0.9, touch-mode focus frame hidden",
+     "Build fix: register characterstatspanelhd.json as touch-only layout",
+     "Settings UI three rows, hire-list performance/highlight, skill blue, minimap, capsule island button",
      "Render at native scale, minimap +10px up/+40px right, smaller HUD names, hire info follows the row",
      "Hire info follows the tapped merc, Show FPS row forced visible, white HP band, forced quality at native scale",
      "Performance mode: add forced quality (locked 60 fps / quality); drop the skill-page tweaks",
      "Settings: performance mode (no power saver), Show FPS option; name/title text fixes",
-     "UI feedback round: names stay coloured in menus, hire info bar with skills, vendor taps, island ring",
-     "T10 fix: placeholder files in the empty legacy overlay dirs (payload manifest)",
-     "T8: automatic thermal downgrade (no UI); T10: BC-only, drop the legacy ASTC overlays",
-     "HUD names: colour the game's own text; hire panel: info bar on tap + bigger skill icons"
+     "UI feedback round: names stay coloured in menus, hire info bar with skills, vendor taps, island ring"
     ]
    },
    {
@@ -3883,21 +3883,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-22T16:53:43Z",
+  "pushed_at": "2026-10-22T21:18:15Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-22T16:53:41Z",
+    "last_commit": "2026-10-22T21:08:46Z",
     "subjects": [
+     "feat: iOS game data in the app's Documents, installed once; .app output, app icon and the name TOTK; faster iOS packaging",
+     "perf: iPhone / iPad warm the shared list's render pipelines and draw while new ones are prepared; shader and pipeline counts shown",
+     "feat: one shader-list-contribution file in the project folder for the Mac and every iPhone / iPad",
      "perf: the iOS build keeps compiled shader libraries by source, so a new seed recompiles only what changed",
      "fix: a pipeline key leaves out blend factors of targets that do not blend and the state of missing colour targets",
      "feat: mouse mode on the Mac (key 7): camera, gyro aiming and mouse buttons (issue #20)",
      "feat: key 6 on the Mac picks the controller type (auto, Xbox, PlayStation, Switch)",
-     "feat: render pipelines the game builds in play go into the contribution file with the shaders; reminders every 100",
-     "feat: players contribute only shader states the built-in default variants do not serve; reminders every 50",
-     "feat: the Mac's overlay box shows a render pipeline line under the shaders, new / total",
-     "perf: packaging reuses the signed game data in a cloned work folder and shares translations across work folders"
+     "feat: render pipelines the game builds in play go into the contribution file with the shaders; reminders every 100"
     ]
    }
   ]
@@ -4445,7 +4445,7 @@
   ]
  },
  "n2ray/d2r-mobile": {
-  "pushed_at": "2026-10-22T16:29:58Z",
+  "pushed_at": "2026-10-22T21:02:16Z",
   "branches": [
    {
     "branch": "android-snapdragon-elite",
@@ -4464,7 +4464,7 @@
     ]
    },
    {
-    "branch": "feat/android-overlay-updates",
+    "branch": "hermes/android-autobuff-360",
     "ahead": 696,
     "behind": 0,
     "files": 300,
@@ -4478,9 +4478,9 @@
      "ci/tests",
      "dm/android"
     ],
-    "last_commit": "2026-10-22T16:29:56Z",
+    "last_commit": "2026-10-22T18:13:39Z",
     "subjects": [
-     "feat(android): update interface overlays independently",
+     "fix(android): enable autobuff through the Android platform gate (#360)",
      "Merge pull request #358 from n2ray/fix/android-custom-settings",
      "fix(android): hide unsupported iCloud custom setting",
      "Merge pull request #357 from n2ray/docs/audio-call-acceptance",
@@ -4491,8 +4491,8 @@
     ]
    },
    {
-    "branch": "main",
-    "ahead": 695,
+    "branch": "hermes/android-swap-above-361",
+    "ahead": 696,
     "behind": 0,
     "files": 300,
     "real_files": 297,
@@ -4505,16 +4505,43 @@
      "ci/tests",
      "dm/android"
     ],
-    "last_commit": "2026-10-22T16:03:37Z",
+    "last_commit": "2026-10-22T18:15:14Z",
     "subjects": [
+     "feat(android): wire touch_swap_above layout setting",
      "Merge pull request #358 from n2ray/fix/android-custom-settings",
      "fix(android): hide unsupported iCloud custom setting",
      "Merge pull request #357 from n2ray/docs/audio-call-acceptance",
      "docs: complete device audio call acceptance",
      "Merge pull request #356 from n2ray/docs/save-lifecycle-regression-results",
      "docs(android): record save and lifecycle device regressions",
-     "Merge pull request #355 from n2ray/fix/save-recovery-invalid-live",
-     "fix(android): reject unreadable save recovery targets"
+     "Merge pull request #355 from n2ray/fix/save-recovery-invalid-live"
+    ]
+   },
+   {
+    "branch": "main",
+    "ahead": 707,
+    "behind": 0,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "CONTRIBUTING.md",
+     "CONTRIBUTING.zh-CN.md",
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-22T21:02:14Z",
+    "subjects": [
+     "Merge pull request #366 from n2ray/feat/android-minimap-long-press",
+     "fix(android): hide the full automap and retain a localized title entry",
+     "feat(android): toggle minimap content with a title long press",
+     "Merge pull request #365 from n2ray/fix/android-upstream-map-entry",
+     "fix(android): let minimap taps pass hidden touch targets",
+     "fix(android): seed upstream touch defaults before loading saves",
+     "fix(android): use upstream minimap entry without extra MAP button",
+     "Merge pull request #364 from n2ray/feat/apk-bundled-interface"
     ]
    }
   ]
@@ -8113,21 +8140,21 @@
   ]
  },
  "littckerQiu/witchspringr-ios": {
-  "pushed_at": "2026-10-22T12:48:48Z",
+  "pushed_at": "2026-10-22T19:13:38Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-22T12:48:47Z",
+    "last_commit": "2026-10-22T19:13:38Z",
     "subjects": [
+     "nx-ipa: one failed shader must not abort the run (cache the shader build too)",
      "docs: round-4 findings and the decision to port the BC decoder to upstream instead of fighting our VAMM",
      "host: keep the nlib page takeover on both platforms (the SDK's own path fails on macOS too)",
      "host: the nlib physical-page takeover is iOS-only (macOS lets the SDK map its own heap pages)",
      "vamm: let the SDK's own address-region manager run (GetInfo 2/3) and cut its 1 GB node area to 62 MB (.github/workflows/own-boot.yml)",
      "vamm: let the SDK's own address-region manager run (GetInfo 2/3) and cut its 1 GB node area to 62 MB (games/witchspringr/rules.py)",
      "vamm: let the SDK's own address-region manager run (GetInfo 2/3) and cut its 1 GB node area to 62 MB (host/hle_svc.c)",
-     "docs: WitchSpring R bring-up notes (what reaches nnMain, the next failure, what was rejected)",
-     "host: guest_dbg_dump is weak (the crash unit test links crash.c alone) (host/dm.h)"
+     "docs: WitchSpring R bring-up notes (what reaches nnMain, the next failure, what was rejected)"
     ]
    }
   ]
@@ -8210,21 +8237,21 @@
   ]
  },
  "LNPANDY/nxnative-romfs-archive": {
-  "pushed_at": "2026-10-21T17:45:20Z",
+  "pushed_at": "2026-10-22T20:13:24Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-21T17:45:18Z",
+    "last_commit": "2026-10-22T20:13:22Z",
     "subjects": [
+     "Docs: release notes for v0.2.0 (bilingual front end)",
+     "Frontend: bilingual UI, English by default for non-Chinese devices",
      "Docs: keep the v0.1.0 release notes in the repository",
      "Docs: collapse the screenshot behind a <details> and cap its width",
      "Frontend: find the repository automatically; abbreviate ~ in paths",
      "Frontend: compact layout that fits, plus a screenshot and docs",
      "Frontend: pick base / update / DLC / keys separately; fix dependency false negatives",
-     "Frontend: restore the missing @main App entry (the launch crash)",
-     "Frontend: dependency detection with one-click install",
-     "Frontend: a macOS SwiftUI app that drives the build for new users"
+     "Frontend: restore the missing @main App entry (the launch crash)"
     ]
    }
   ]
