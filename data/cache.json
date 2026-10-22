@@ -340,11 +340,11 @@
   ]
  },
  "n3crosis/d2r-mobile": {
-  "pushed_at": "2026-10-22T11:53:08Z",
+  "pushed_at": "2026-10-22T16:56:25Z",
   "branches": [
    {
     "branch": "feature/web-ipa-packager",
-    "ahead": 181,
+    "ahead": 194,
     "behind": 0,
     "files": 300,
     "real_files": 292,
@@ -360,16 +360,16 @@
      "web/ARCHIVE_READ_RPC.zh-CN.md",
      "web/ARCHIVE_STREAM_READER.md"
     ],
-    "last_commit": "2026-10-22T11:52:58Z",
+    "last_commit": "2026-10-22T16:56:12Z",
     "subjects": [
-     "feat(toolchain): complete stage resource and domain compiler integration",
-     "feat(web): add bounded local IPA shader inspection utility",
-     "fix(ci): exclude C++ trust fragments from HTML formatting",
-     "feat(web): wire verified AIR compiler workers into IPA shader production",
-     "feat(toolchain): implement Metal resources constants vectors and SIMD headers",
-     "build(toolchain): make verified AIR WASM compilation reproducible",
-     "fix(toolchain): preserve scalar and vector NaN checks under fast math",
-     "feat(toolchain): add explicit math profiles and versioned AIR header bundle"
+     "fix(web): resolve corpus shader compiler lowering failures",
+     "fix(web): expose workgroup barriers through Metal standard library",
+     "fix(web): preserve unfamiliar native frontend diagnostic prose",
+     "feat(web): implement missing scalar math bit reversal and SIMD vote",
+     "fix(web): refresh UI provenance and check it before runtime builds",
+     "fix(web): report actionable local shader compiler diagnostics",
+     "fix(web): cancel stalled folder enumeration without late reads",
+     "fix(web): close cancelled shader work and preserve safe failure diagnostics"
     ]
    },
    {
@@ -1577,12 +1577,12 @@
   ]
  },
  "scarin-corporations/ports-lib": {
-  "pushed_at": "2026-10-22T05:04:52Z",
+  "pushed_at": "2026-10-22T12:07:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-22T05:04:51Z",
+    "last_commit": "2026-10-22T12:07:56Z",
     "subjects": [
      "chore: refresh catalog",
      "chore: refresh catalog",
@@ -1657,21 +1657,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-22T11:17:18Z",
+  "pushed_at": "2026-10-22T17:10:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-22T11:16:38Z",
+    "last_commit": "2026-10-22T17:10:18Z",
     "subjects": [
-     "Breath of the Wild's sky is blue again (GitHub issue #52): every game fills a texture from storage it flushed before the texture's first use",
-     "Catherine: Full Body plays on the iPhone: README games table, AGENTS.md list",
-     "Catherine: Full Body plays on the Mac: profile 0100BF00112C0000 (update 1.0.1a, SDK 8.2.1)",
-     "README: DLC is optional, as the update is",
-     "NSP script: the update is optional and any version builds (a derived profile for versions the profile was not brought up on)",
-     "Hollow Knight: Silksong plays on the iPhone: README games table, AGENTS.md list",
-     "Hollow Knight: Silksong plays on the Mac: profile 010013C00E930000 (update 1.0.30000, SDK 20.5.8)",
-     "Paper Mario: The Thousand-Year Door plays on the iPhone: README games table, AGENTS.md list"
+     "Movies: 5.1 Vorbis sound decodes right, as stb_vorbis's type-2 residues span every channel of their submap (GitHub PR #60)",
+     "NSP script: --prepare-xcode makes a per-game Xcode project to sign and run with your own developer account (GitHub PR #59)",
+     "DRAGON QUEST VII Reimagined plays on the iPhone: README games table, AGENTS.md list",
+     "DRAGON QUEST VII Reimagined plays on the Mac: profile 0100A9D01C446000 (update 1.2.0, SDK 19.3.1)",
+     "Animal Crossing: New Horizons plays on the iPhone: README games table, AGENTS.md list",
+     "Animal Crossing: New Horizons plays on the Mac: profile 01006F8002326000 (update 3.0.3, SDK 20.5.4)",
+     "Shared fonts: LoadFont gets the TTF when a game hands it the host's BFTTF header (GitHub PR #55): The Legend of Zelda: Echoes of Wisdom imports Decode but loads its shared fonts without it",
+     "Digimon Story Cyber Sleuth: Complete Edition plays on the iPhone: README games table, AGENTS.md list"
     ]
    }
   ]
@@ -1697,7 +1697,7 @@
   ]
  },
  "HachiMiku39/pjdv_mega39s_ios": {
-  "pushed_at": "2026-10-22T12:00:38Z",
+  "pushed_at": "2026-10-22T12:09:26Z",
   "branches": [
    {
     "branch": "main",
@@ -1737,20 +1737,20 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-22T11:50:12Z",
+  "pushed_at": "2026-10-22T17:09:38Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-22T11:50:11Z",
+    "last_commit": "2026-10-22T17:09:37Z",
     "subjects": [
-     "chore: 自动同步 Star 地图（186 个项目）",
-     "chore: 自动同步 Star 地图（186 个项目）",
-     "chore: 自动同步 Star 地图（186 个项目）",
-     "chore: 自动同步 Star 地图（186 个项目）",
-     "chore: 自动同步 Star 地图（186 个项目）",
-     "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（185 个项目）",
+     "chore: 自动同步 Star 地图（186 个项目）",
+     "chore: 自动同步 Star 地图（186 个项目）",
+     "chore: 自动同步 Star 地图（186 个项目）",
+     "chore: 自动同步 Star 地图（186 个项目）",
+     "chore: 自动同步 Star 地图（186 个项目）",
+     "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（185 个项目）"
     ]
    }
@@ -1765,12 +1765,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-22T05:00:23Z",
+  "pushed_at": "2026-10-22T12:03:41Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-22T05:00:22Z",
+    "last_commit": "2026-10-22T12:03:40Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2100,7 +2100,7 @@
   ]
  },
  "biglawine/d2r-mobile": {
-  "pushed_at": "2026-10-22T10:18:18Z",
+  "pushed_at": "2026-10-22T12:33:31Z",
   "branches": [
    {
     "branch": "codex/harmony-port",
@@ -2170,34 +2170,6 @@
      "Rewrite verification: equiv.py checks Android outputs and reads below sp",
      "Notes: first-play stutter, background builds and the warm-up seed",
      "Vulkan shader bundles: build the 4 query kernels from source"
-    ]
-   },
-   {
-    "branch": "harmony-shell",
-    "ahead": 363,
-    "behind": 0,
-    "files": 282,
-    "real_files": 243,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/harmony",
-     "dm/host",
-     "dm/i18n",
-     "dm/ios",
-     "dm/tools",
-     "dm/verify"
-    ],
-    "last_commit": "2026-10-22T09:07:40Z",
-    "subjects": [
-     "HarmonyOS shell: import-pack contract, derived tables, release self-check",
-     "Follow-ups from the #114 review",
-     "HarmonyOS app (dm/harmony) on the shared Vulkan engine",
-     "Shared code for the HarmonyOS port, gated on __OHOS__",
-     "Vulkan: NaN-ignoring min / max / clamp, as on Maxwell (OnePlus 13 black tiles)",
-     "Rewriter, Android target: keep nothing below sp in rewrite blocks",
-     "Rewrite verification: equiv.py checks Android outputs and reads below sp",
-     "Notes: first-play stutter, background builds and the warm-up seed"
     ]
    }
   ]
@@ -2269,14 +2241,14 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-22T01:22:02Z",
+  "pushed_at": "2026-10-22T16:51:22Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 146,
+    "ahead": 151,
     "behind": 5,
-    "files": 50,
-    "real_files": 49,
+    "files": 52,
+    "real_files": 51,
     "dirs": [
      "UPDATE-2026-10-20.zh-CN.md",
      "codemagic.yaml",
@@ -2289,16 +2261,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-22T01:16:21Z",
+    "last_commit": "2026-10-22T16:19:34Z",
     "subjects": [
+     "Render at native scale, minimap +10px up/+40px right, smaller HUD names, hire info follows the row",
+     "Hire info follows the tapped merc, Show FPS row forced visible, white HP band, forced quality at native scale",
+     "Performance mode: add forced quality (locked 60 fps / quality); drop the skill-page tweaks",
+     "Settings: performance mode (no power saver), Show FPS option; name/title text fixes",
+     "UI feedback round: names stay coloured in menus, hire info bar with skills, vendor taps, island ring",
      "T10 fix: placeholder files in the empty legacy overlay dirs (payload manifest)",
      "T8: automatic thermal downgrade (no UI); T10: BC-only, drop the legacy ASTC overlays",
-     "HUD names: colour the game's own text; hire panel: info bar on tap + bigger skill icons",
-     "HUD tabs: measure the highlight animation; hire list: tap = hover-only description",
-     "Dynamic Island geometry: iPhone 16 Pro metrics (126 x 37.33 pt, 11 pt inset) so the portal zone and metal ring follow the real island shape",
-     "HUD names: hide the game Name widget (restored each pump) so the coloured copy is not covered; reset published slots every pump so a teleport cannot leave stale positions",
-     "HUD names: match Icon0/Icon1... by prefix (golem/skeleton slots); overlay: 2pt black edge hides the magenta sliver",
-     "Icon content 95% (letter no longer touches the edge); mercenary/minion names stay visible but dimmed while a menu is open instead of disappearing"
+     "HUD names: colour the game's own text; hire panel: info bar on tap + bigger skill icons"
     ]
    },
    {
@@ -3092,7 +3064,7 @@
   ]
  },
  "Ti800/d2r": {
-  "pushed_at": "2026-10-22T08:28:57Z",
+  "pushed_at": "2026-10-22T14:59:07Z",
   "branches": [
    {
     "branch": "main",
@@ -3911,21 +3883,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-22T11:29:18Z",
+  "pushed_at": "2026-10-22T16:53:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-22T11:28:12Z",
+    "last_commit": "2026-10-22T16:53:41Z",
     "subjects": [
-     "perf: compute shaders go to the urgent translators too, and a dispatch waits for them instead of being skipped",
-     "docs: README describes gyro aiming on the Mac (which controllers, TOTK_GYRO, dead zone, axes)",
-     "fix: HID pad axes and hat follow each element's logical range; no extra poll of GameController pads (after PR #190)",
-     "Merge pull request #190: feat: generic USB HID gamepads that GameController refuses work on the Mac",
-     "data: 4,663 TOTK and 1,374 BotW shader variants from players' issues in the shared shader lists",
-     "docs: README update table keeps the headline rows (the Chinese edit by the user), English to match",
-     "Merge pull request #216: feat: sign the iOS IPA with your own Xcode team and install it over the cable",
-     "Merge pull request #205: fix: preserve border colour interpolation at texture and mip edges"
+     "perf: the iOS build keeps compiled shader libraries by source, so a new seed recompiles only what changed",
+     "fix: a pipeline key leaves out blend factors of targets that do not blend and the state of missing colour targets",
+     "feat: mouse mode on the Mac (key 7): camera, gyro aiming and mouse buttons (issue #20)",
+     "feat: key 6 on the Mac picks the controller type (auto, Xbox, PlayStation, Switch)",
+     "feat: render pipelines the game builds in play go into the contribution file with the shaders; reminders every 100",
+     "feat: players contribute only shader states the built-in default variants do not serve; reminders every 50",
+     "feat: the Mac's overlay box shows a render pipeline line under the shaders, new / total",
+     "perf: packaging reuses the signed game data in a cloned work folder and shares translations across work folders"
     ]
    }
   ]
@@ -4473,7 +4445,7 @@
   ]
  },
  "n2ray/d2r-mobile": {
-  "pushed_at": "2026-10-22T11:39:08Z",
+  "pushed_at": "2026-10-22T16:29:58Z",
   "branches": [
    {
     "branch": "android-snapdragon-elite",
@@ -4492,8 +4464,8 @@
     ]
    },
    {
-    "branch": "main",
-    "ahead": 680,
+    "branch": "feat/android-overlay-updates",
+    "ahead": 696,
     "behind": 0,
     "files": 300,
     "real_files": 297,
@@ -4506,16 +4478,43 @@
      "ci/tests",
      "dm/android"
     ],
-    "last_commit": "2026-10-22T11:39:06Z",
+    "last_commit": "2026-10-22T16:29:56Z",
     "subjects": [
-     "Merge pull request #351 from n2ray/fix/shader-pair-contract",
-     "test(android): require both save read and write EINTR retries",
-     "fix(android): validate SPIR-V reflection pairs before publication",
-     "Merge pull request #350 from n2ray/fix/save-copy-io-failures",
-     "fix(android): reject delayed save copy I/O failures",
-     "Merge pull request #349 from n2ray/codex/shader-reflection-boundary",
-     "fix(android): validate shader reflection before Vulkan loading",
-     "Merge pull request #348 from n2ray/codex/roadmap-index"
+     "feat(android): update interface overlays independently",
+     "Merge pull request #358 from n2ray/fix/android-custom-settings",
+     "fix(android): hide unsupported iCloud custom setting",
+     "Merge pull request #357 from n2ray/docs/audio-call-acceptance",
+     "docs: complete device audio call acceptance",
+     "Merge pull request #356 from n2ray/docs/save-lifecycle-regression-results",
+     "docs(android): record save and lifecycle device regressions",
+     "Merge pull request #355 from n2ray/fix/save-recovery-invalid-live"
+    ]
+   },
+   {
+    "branch": "main",
+    "ahead": 695,
+    "behind": 0,
+    "files": 300,
+    "real_files": 297,
+    "dirs": [
+     "CONTRIBUTING.md",
+     "CONTRIBUTING.zh-CN.md",
+     "ci/README.md",
+     "ci/actions.lock",
+     "ci/scripts",
+     "ci/tests",
+     "dm/android"
+    ],
+    "last_commit": "2026-10-22T16:03:37Z",
+    "subjects": [
+     "Merge pull request #358 from n2ray/fix/android-custom-settings",
+     "fix(android): hide unsupported iCloud custom setting",
+     "Merge pull request #357 from n2ray/docs/audio-call-acceptance",
+     "docs: complete device audio call acceptance",
+     "Merge pull request #356 from n2ray/docs/save-lifecycle-regression-results",
+     "docs(android): record save and lifecycle device regressions",
+     "Merge pull request #355 from n2ray/fix/save-recovery-invalid-live",
+     "fix(android): reject unreadable save recovery targets"
     ]
    }
   ]
@@ -4799,7 +4798,7 @@
   ]
  },
  "kxn/d2r-mobile": {
-  "pushed_at": "2026-10-22T11:47:19Z",
+  "pushed_at": "2026-10-22T14:13:48Z",
   "branches": [
    {
     "branch": "codex/alias-negative-last-gap-v1",
@@ -4827,7 +4826,7 @@
    },
    {
     "branch": "codex/android-native-backup-20261019",
-    "ahead": 343,
+    "ahead": 348,
     "behind": 16,
     "files": 300,
     "real_files": 299,
@@ -4837,16 +4836,16 @@
      "dm/gfx",
      "dm/host"
     ],
-    "last_commit": "2026-10-22T11:47:17Z",
+    "last_commit": "2026-10-22T13:51:44Z",
     "subjects": [
+     "Record repeated pool memory savings, daily delivery, and verified fork detail gaps",
+     "Record actual 30-minute town run and qualified descriptor pool candidate",
+     "Identify oversized descriptor pool reservations with stock Mesa BOS",
+     "Record sustained observer failure and narrowed binding cost evidence",
+     "tools: read only completed original game-state JSONL records",
      "Clarify structural CPU optimization budgets before implementation",
      "Record current sustained test qualification and live first checkpoint",
-     "Record repeated same-window workload and bounded compiler evidence",
-     "Record same-window CPU workload and structural optimization budgets",
-     "Record actual memory ABBA and verified 886 desktop delivery",
-     "docs: prioritize whole-thread budget and same-parent DVFS drift",
-     "Record cold-path ABBA results and actual memory ownership budget",
-     "Record actual ARM64 draw layout qualification and costs"
+     "Record repeated same-window workload and bounded compiler evidence"
     ]
    },
    {
@@ -5258,6 +5257,30 @@
     ]
    },
    {
+    "branch": "codex/compute-bind-state-v1",
+    "ahead": 309,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-22T14:01:48Z",
+    "subjects": [
+     "vulkan: share compute binding state across all recording paths",
+     "vulkan: shrink descriptor pool growth blocks without lowering retained sets",
+     "Resolve retained lazy Buffer spans with typed physical interval index",
+     "Outline complete optional draw phases behind existing guards",
+     "Complete shared B2T source preflight before physical borrows",
+     "Persist verified cold startup selection for ordinary Android launches",
+     "Separate five-artifact driver proofs from pixel-local pipeline identity",
+     "Declare span qualification hook before original sparse fixture"
+    ]
+   },
+   {
     "branch": "codex/cpu-binding-phase-combined-v1",
     "ahead": 274,
     "behind": 16,
@@ -5618,6 +5641,54 @@
     ]
    },
    {
+    "branch": "codex/descriptor-pool-block-512-v1",
+    "ahead": 308,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-22T12:34:40Z",
+    "subjects": [
+     "vulkan: shrink descriptor pool growth blocks without lowering retained sets",
+     "Resolve retained lazy Buffer spans with typed physical interval index",
+     "Outline complete optional draw phases behind existing guards",
+     "Complete shared B2T source preflight before physical borrows",
+     "Persist verified cold startup selection for ordinary Android launches",
+     "Separate five-artifact driver proofs from pixel-local pipeline identity",
+     "Declare span qualification hook before original sparse fixture",
+     "Add startup-only driver span reference for matched shader assets"
+    ]
+   },
+   {
+    "branch": "codex/descriptor-pool-memory-tools-v1",
+    "ahead": 210,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-22T12:57:54Z",
+    "subjects": [
+     "tools: verify actual seven-unit descriptor RAM closure",
+     "tools: qualify exact descriptor-pool memory comparison",
+     "tools: keep complete state observations throughout sustained capture",
+     "tools: read only completed original game-state JSONL records",
+     "tools: accept reviewed stopped886 warm-cache baseline",
+     "tools: qualify delivered886 adaptive sustained town attempt",
+     "Compose qualified desktop publisher with current reviewed runtime gates",
+     "Archive builtin VMA from the original final suspend after official CPU windows"
+    ]
+   },
+   {
     "branch": "codex/descriptor-shader-slot-hint-fault-values-v1",
     "ahead": 213,
     "behind": 16,
@@ -5687,6 +5758,30 @@
      "Exercise retained span geometry in real nested operation admission",
      "Verify geometry reset across every reclaimed submission owner",
      "Reuse bounded submission-retained physical span geometry after single hints miss"
+    ]
+   },
+   {
+    "branch": "codex/diagnostic-timing-gates-v1",
+    "ahead": 309,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-22T13:43:02Z",
+    "subjects": [
+     "host: gate dirty and yield diagnostics on boot profiling",
+     "vulkan: shrink descriptor pool growth blocks without lowering retained sets",
+     "Resolve retained lazy Buffer spans with typed physical interval index",
+     "Outline complete optional draw phases behind existing guards",
+     "Complete shared B2T source preflight before physical borrows",
+     "Persist verified cold startup selection for ordinary Android launches",
+     "Separate five-artifact driver proofs from pixel-local pipeline identity",
+     "Declare span qualification hook before original sparse fixture"
     ]
    },
    {
@@ -5783,6 +5878,30 @@
      "docs: record completed coherent image byte-scope Android artifacts",
      "docs: record qualified coherent byte scope implementation and pending Android build",
      "docs: identify a real coherent image wait caused by adjacent GPU bytes"
+    ]
+   },
+   {
+    "branch": "codex/driver-constant-state-fastpath-v1",
+    "ahead": 309,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-22T14:12:30Z",
+    "subjects": [
+     "Reuse submission driver constants before key construction on unchanged state",
+     "vulkan: shrink descriptor pool growth blocks without lowering retained sets",
+     "Resolve retained lazy Buffer spans with typed physical interval index",
+     "Outline complete optional draw phases behind existing guards",
+     "Complete shared B2T source preflight before physical borrows",
+     "Persist verified cold startup selection for ordinary Android launches",
+     "Separate five-artifact driver proofs from pixel-local pipeline identity",
+     "Declare span qualification hook before original sparse fixture"
     ]
    },
    {
@@ -5951,6 +6070,30 @@
      "Use verified fullscreen Surface dimensions for original menu input",
      "Skip empty legacy texture CPU preflight snapshots",
      "Expose a cold system-Vulkan readback batch oracle"
+    ]
+   },
+   {
+    "branch": "codex/game-state-complete-line-v1",
+    "ahead": 208,
+    "behind": 16,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-22T12:07:45Z",
+    "subjects": [
+     "tools: keep complete state observations throughout sustained capture",
+     "tools: read only completed original game-state JSONL records",
+     "tools: accept reviewed stopped886 warm-cache baseline",
+     "tools: qualify delivered886 adaptive sustained town attempt",
+     "Compose qualified desktop publisher with current reviewed runtime gates",
+     "Archive builtin VMA from the original final suspend after official CPU windows",
+     "Qualify same-stop memory provenance from actual 930 game acceptance",
+     "Validate B2T correctness successor without unrelated CPU sampling"
     ]
    },
    {
@@ -7056,150 +7199,6 @@
      "Add reversible original-game single native material validation controller",
      "Keep native image imports independent of shared Buffer window unions"
     ]
-   },
-   {
-    "branch": "codex/native-bulk-malloc-debug-default-v2",
-    "ahead": 151,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T18:12:49Z",
-    "subjects": [
-     "Use official default heap backtraces and reject allocator coverage errors",
-     "Require actual official malloc_debug activation and reject option errors",
-     "Bound failed diagnostic cold-start cleanup through original lifecycle",
-     "Add opt-in official malloc_debug control diagnostic packaging and lifecycle",
-     "Use bounded official heap diagnostic capture after observed transport failure",
-     "Add official startup heap profiling to resource residency experiment",
-     "Add once-only official debugger counters to resource residency experiment",
-     "Add reversible matched native texture game experiment controller"
-    ]
-   },
-   {
-    "branch": "codex/native-bulk-malloc-debug-default-v3",
-    "ahead": 152,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T18:15:54Z",
-    "subjects": [
-     "Match actual ActivityTaskManager horizontal Hist whitespace safely",
-     "Use official default heap backtraces and reject allocator coverage errors",
-     "Require actual official malloc_debug activation and reject option errors",
-     "Bound failed diagnostic cold-start cleanup through original lifecycle",
-     "Add opt-in official malloc_debug control diagnostic packaging and lifecycle",
-     "Use bounded official heap diagnostic capture after observed transport failure",
-     "Add official startup heap profiling to resource residency experiment",
-     "Add once-only official debugger counters to resource residency experiment"
-    ]
-   },
-   {
-    "branch": "codex/native-bulk-malloc-debug-v1",
-    "ahead": 150,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T17:58:11Z",
-    "subjects": [
-     "Require actual official malloc_debug activation and reject option errors",
-     "Bound failed diagnostic cold-start cleanup through original lifecycle",
-     "Add opt-in official malloc_debug control diagnostic packaging and lifecycle",
-     "Use bounded official heap diagnostic capture after observed transport failure",
-     "Add official startup heap profiling to resource residency experiment",
-     "Add once-only official debugger counters to resource residency experiment",
-     "Add reversible matched native texture game experiment controller",
-     "Require sampled FS caller and explicit native token identity in game proof"
-    ]
-   },
-   {
-    "branch": "codex/native-bulk-sdp-realtime-v1",
-    "ahead": 151,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T19:42:47Z",
-    "subjects": [
-     "Add optional owned official SDP Realtime game-pair window",
-     "Authenticate f830 native tables while retaining exact AA game pair path",
-     "Trim trailing whitespace in import comparison notes",
-     "Allow measured one MiB native import window comparison",
-     "tools: initialize readiness journal and execute offline readiness cases",
-     "tools: prepare matched native texture CPU and SurfaceFlinger windows",
-     "Add once-only official debugger counters to resource residency experiment",
-     "Add reversible matched native texture game experiment controller"
-    ]
-   },
-   {
-    "branch": "codex/native-bulk-sdp-realtime-v2",
-    "ahead": 153,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T20:08:03Z",
-    "subjects": [
-     "Skip CPU collection when optional SDK pause and cleanup are unproven",
-     "Fix official SDP device-clock coverage and isolate optional tool failures",
-     "Add optional owned official SDP Realtime game-pair window",
-     "Authenticate f830 native tables while retaining exact AA game pair path",
-     "Trim trailing whitespace in import comparison notes",
-     "Allow measured one MiB native import window comparison",
-     "tools: initialize readiness journal and execute offline readiness cases",
-     "tools: prepare matched native texture CPU and SurfaceFlinger windows"
-    ]
-   },
-   {
-    "branch": "codex/native-bulk-sdp-realtime-v3",
-    "ahead": 154,
-    "behind": 16,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T20:52:42Z",
-    "subjects": [
-     "Bracket official collector metadata with stable proc identities",
-     "Skip CPU collection when optional SDK pause and cleanup are unproven",
-     "Fix official SDP device-clock coverage and isolate optional tool failures",
-     "Add optional owned official SDP Realtime game-pair window",
-     "Authenticate f830 native tables while retaining exact AA game pair path",
-     "Trim trailing whitespace in import comparison notes",
-     "Allow measured one MiB native import window comparison",
-     "tools: initialize readiness journal and execute offline readiness cases"
-    ]
    }
   ]
  },
@@ -7659,21 +7658,21 @@
   ]
  },
  "Xc1Ym/LumaDock": {
-  "pushed_at": "2026-10-22T07:54:48Z",
+  "pushed_at": "2026-10-22T12:37:45Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-22T07:53:32Z",
+    "last_commit": "2026-10-22T12:37:45Z",
     "subjects": [
+     "Merge pull request #5 from Xc1Ym/codex/concise-readme",
+     "docs: streamline bilingual README and development guides",
      "Merge pull request #4 from Xc1Ym/codex/build-error-diagnostics",
      "feat: add build diagnostics, progress tracking and IPA export",
      "Release LumaDock 0.2.5",
      "Fix onboarding dismissal and application quit during setup",
      "Release LumaDock 0.2.4",
-     "Release LumaDock 0.2.3",
-     "Release LumaDock 0.2.2",
-     "Improve environment setup checks and DMG installer"
+     "Release LumaDock 0.2.3"
     ]
    }
   ]
@@ -8114,28 +8113,45 @@
   ]
  },
  "littckerQiu/witchspringr-ios": {
-  "pushed_at": "2026-10-22T11:53:52Z",
+  "pushed_at": "2026-10-22T12:48:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-22T11:53:52Z",
+    "last_commit": "2026-10-22T12:48:47Z",
     "subjects": [
-     "ios: DM_ENV_FILE is resolved from ios/ (run.sh's working directory)",
-     "ios: absolute DM_ENV_FILE (run.sh cd's into ios/)",
-     "ios: bake DM_APP_POOL_ADD_MB=-900 and svc logging into the bundle (.github/workflows/ipa-fast.yml)",
-     "ios: bake DM_APP_POOL_ADD_MB=-900 and svc logging into the bundle (ios/witchspringr.env)",
-     "nx: re-lock the translation chain against the runner's tools (spirv-cross / Metal build)",
-     "nx: profile needs shader_groups / shader_note for shader_split",
-     "nx: shader tables -> iOS metallibs -> IPA",
-     "nx: boot without a residency set in CI"
+     "docs: round-4 findings and the decision to port the BC decoder to upstream instead of fighting our VAMM",
+     "host: keep the nlib page takeover on both platforms (the SDK's own path fails on macOS too)",
+     "host: the nlib physical-page takeover is iOS-only (macOS lets the SDK map its own heap pages)",
+     "vamm: let the SDK's own address-region manager run (GetInfo 2/3) and cut its 1 GB node area to 62 MB (.github/workflows/own-boot.yml)",
+     "vamm: let the SDK's own address-region manager run (GetInfo 2/3) and cut its 1 GB node area to 62 MB (games/witchspringr/rules.py)",
+     "vamm: let the SDK's own address-region manager run (GetInfo 2/3) and cut its 1 GB node area to 62 MB (host/hle_svc.c)",
+     "docs: WitchSpring R bring-up notes (what reaches nnMain, the next failure, what was rejected)",
+     "host: guest_dbg_dump is weak (the crash unit test links crash.c alone) (host/dm.h)"
     ]
    }
   ]
  },
  "soulsakura/d2r-mobile": {
-  "pushed_at": "2026-10-21T13:08:01Z",
-  "branches": []
+  "pushed_at": "2026-10-22T12:18:45Z",
+  "branches": [
+   {
+    "branch": "feature/korean-i18n",
+    "ahead": 1,
+    "behind": 0,
+    "files": 3,
+    "real_files": 3,
+    "dirs": [
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-22T12:18:46Z",
+    "subjects": [
+     "i18n: add Korean (koKR) support"
+    ]
+   }
+  ]
  },
  "ohxiaoguang/d2r-mobile": {
   "pushed_at": "2026-10-21T14:48:37Z",
@@ -8214,54 +8230,56 @@
   ]
  },
  "shh632058099/d2r-mobile": {
-  "pushed_at": "2026-10-22T11:29:57Z",
+  "pushed_at": "2026-10-22T15:37:22Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 6,
+    "ahead": 9,
     "behind": 0,
-    "files": 59,
-    "real_files": 50,
+    "files": 64,
+    "real_files": 55,
     "dirs": [
      "THIRD_PARTY_NOTICES.md",
      "dm/gfx",
      "dm/host",
+     "dm/i18n",
      "dm/ios",
      "requirements.txt",
      "scripts/analyze_thermal_log.py",
      "scripts/archive_input.py",
      "scripts/cache_budget.py",
-     "scripts/ci.py",
-     "scripts/input_config.py"
+     "scripts/ci.py"
     ],
-    "last_commit": "2026-10-22T11:23:46Z",
+    "last_commit": "2026-10-22T15:37:16Z",
     "subjects": [
+     "Optimize CPU hot paths and add sampled NVN profiling",
+     "Improve PSO warmup diagnostics and reduce profiling overhead",
+     "perf: cache NVN pool lookups and improve diagnostics",
      "Improve GPU and memory diagnostics",
      "Add reproducible private IPA build workflow",
      "Add unified iOS performance diagnostics",
      "Optimize repeated Metal vertex buffer bindings",
-     "Improve dynamic 3D scaling and portable tests",
-     "feat(ios): add smart thermal throttling and render profiling"
+     "Improve dynamic 3D scaling and portable tests"
     ]
    }
   ]
  },
  "MayBAMemory/nvn-metal": {
-  "pushed_at": "2026-10-22T03:24:59Z",
+  "pushed_at": "2026-10-22T15:57:17Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-22T03:22:41Z",
+    "last_commit": "2026-10-22T15:53:16Z",
     "subjects": [
+     "H4-mac：异步建管线——缺管线丢后台编、这次绘制跳过，不再冻住（卡比缺省开，DM_PSO_ASYNC=0 关）",
+     "H4-mac：Apple 芯片 Mac 上直接跑通 kirbyhost（M5，到难易度选择画面，无窗口 60 秒稳定 60 Hz）",
      "repo: README 加「换一台电脑接着做」——上游固定在 6a2474d 再套补丁（套不上最新 main）、本机工具、工作区要拷哪些、手机与签名、测试调试变量与坑、当前进度与已知问题",
      "repo: 独立成仓——只放卡比相关代码，上游 dm/ 通过补丁 + D2R_MOBILE 引入",
      "H4-ios：未绑定整数属性按整数变体处理（修骨骼拉伸）；预排布贴图 600 帧未用回收 + 内存统计；管线预热读随包清单与设备 pso_user.tsv；按键脚本加摇杆 SU/SD/SL/SR；shlib_ios 预编整数属性全掩码变体",
      "H4-ios：整数顶点属性按运行时格式选 _b_ia 变体（修骨骼拉伸）；KIRBY_PROF 采样分析器（Mach 停线程取样，不用信号——客体把 x18 当普通寄存器，苹果内核递送信号不保留 x18）；内存池查找加最近命中缓存、未跟踪预排布贴图每帧最多哈希一次（关卡内提交线程两处热点 24% + 18%）；run.sh 拉整数属性变体清单、装机重试 3 次",
      "H4-ios：默认掌机 720p + 画质钮；骨骼属性按位传；混合整数 MRT 变体；未跟踪贴图按哈希判重传；内存统计",
-     "H4-ios：GL 窗口原点 / 深度、整数颜色附件、贴图类型对齐、8 位索引、RGB10A2SN",
-     "H4-ios：过场动画空播走通——交出 2 帧黑帧 + 流尾（卡比播放器要帧队列 ≥2 帧才就绪计时），GetOutputBufferFormat 正常返回宽高；真机已越过开场动画进入第一关 3D 场景",
-     "H4-ios：过场动画改为空播（报 1 条 VP9 视频轨，0.1 秒后按库协议送流尾）；KIRBY_KEYS 按时间按键脚本"
+     "H4-ios：GL 窗口原点 / 深度、整数颜色附件、贴图类型对齐、8 位索引、RGB10A2SN"
     ]
    }
   ]
@@ -8271,11 +8289,11 @@
   "branches": []
  },
  "guyuefangyuan/d2r-mobile": {
-  "pushed_at": "2026-10-22T08:26:21Z",
+  "pushed_at": "2026-10-22T12:27:52Z",
   "branches": [
    {
     "branch": "android-framework",
-    "ahead": 107,
+    "ahead": 109,
     "behind": 0,
     "files": 300,
     "real_files": 297,
@@ -8288,16 +8306,16 @@
      "dm/android",
      "dm/gfx"
     ],
-    "last_commit": "2026-10-22T08:26:00Z",
+    "last_commit": "2026-10-22T12:27:35Z",
     "subjects": [
+     "fix(android): correct a Turnip choice on a SoC Turnip cannot drive",
+     "fix(android): restore the on-screen menu controls upstream deleted",
      "revert(android): keep the upstream launcher artwork",
      "merge: adopt upstream main (526ae46), keep three Android-only fixes",
      "docs(android): publish scope, bilingual test plan and neutral artwork",
      "feat(android): phone/tablet UI parity, fps tiers, HUD assets and Mali resilience",
      "docs(android): record why the GPU writeback is not skipped",
-     "tools(android): device-independent perf measurement and regression scripts",
-     "fix(nvn): do not recycle descriptor sets when a binding is skipped",
-     "fix(nvn): keep GPU-written pages exact under fault-around"
+     "tools(android): device-independent perf measurement and regression scripts"
     ]
    },
    {
@@ -8459,6 +8477,82 @@
     "branch": "main",
     "mirror": false,
     "last_commit": "2026-10-22T07:41:46Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "Ti800/d2r-mobile": {
+  "pushed_at": "2026-10-22T14:55:33Z",
+  "branches": [
+   {
+    "branch": "feat/ps-glyphs",
+    "ahead": 1,
+    "behind": 0,
+    "files": 3,
+    "real_files": 3,
+    "dirs": [
+     "dm/host",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-22T14:45:33Z",
+    "subjects": [
+     "feat(pad): PlayStation button glyphs for DualSense / DualShock 4"
+    ]
+   },
+   {
+    "branch": "ps-glyphs-screenshots",
+    "unrelated": true
+   }
+  ]
+ },
+ "BoXu1225/d2r-mobile": {
+  "pushed_at": "2026-10-22T15:43:22Z",
+  "branches": []
+ },
+ "seeyajack/d2r-mobile": {
+  "pushed_at": "2026-10-22T10:32:06Z",
+  "branches": [
+   {
+    "branch": "harmony",
+    "ahead": 226,
+    "behind": 9,
+    "files": 191,
+    "real_files": 190,
+    "dirs": [
+     "NOTICE.md",
+     "PORTABLE.md",
+     "dm/gfx",
+     "dm/host",
+     "dm/ohos",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-22T10:21:44Z",
+    "subjects": [
+     "feat(m4): 真交换链上屏打通 —— NVN PresentTexture → vkQueuePresentKHR，M4 机制链路全闭环",
+     "feat(m4): Draw 系执行打通——NVN DrawArrays → Vulkan 管线 → 读回像素逐通道一致",
+     "feat(m4): 真执行层落地——合成冒烟通过（NVN→记录→提交→Vulkan→读回，像素逐通道一致）",
+     "feat(m4/m3): 真机档——NVN 四层自测 4/4 全过；F_wait 对象定类（+0x128 是内嵌子对象的 vtable）",
+     "feat(m4-a): 纹理/采样器等 154 个补齐 —— NVN 请求面 **449/449 全覆盖（100%）**",
+     "feat(m4-c): 命令缓冲记录层 127/127 归零 —— 总覆盖 37.4%→65.7%",
+     "feat(m4-c): 设备/窗口/队列三族归零（Device 26/26 · Window 15/15 · Queue 24/24），总覆盖 6.9%→37.4%",
+     "feat(m4-a): NVN 状态族 77 个函数落地——Pipeline/States 缺口归零，覆盖率 6.9%→24.7%"
+    ]
+   }
+  ]
+ },
+ "yvph31/d2r-mobile": {
+  "pushed_at": "2026-10-22T12:06:10Z",
+  "branches": []
+ },
+ "lidong121/anheipohuaishen2": {
+  "pushed_at": "2026-10-22T15:22:45Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-22T15:14:10Z",
     "subjects": [
      "Initial commit"
     ]
