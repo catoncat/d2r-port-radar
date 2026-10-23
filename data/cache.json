@@ -341,12 +341,12 @@
   ]
  },
  "n3crosis/d2r-mobile": {
-  "pushed_at": "2026-10-23T17:00:21Z",
+  "pushed_at": "2026-10-23T19:10:32Z",
   "branches": [
    {
     "branch": "feature/web-ipa-packager",
-    "ahead": 233,
-    "behind": 0,
+    "ahead": 235,
+    "behind": 1,
     "files": 300,
     "real_files": 292,
     "dirs": [
@@ -361,22 +361,22 @@
      "web/APP_CUSTOMIZATION.zh-CN.md",
      "web/ARCHIVE_READER_SCOPE.md"
     ],
-    "last_commit": "2026-10-23T17:00:04Z",
+    "last_commit": "2026-10-23T19:10:02Z",
     "subjects": [
+     "Clarify unsupported browsers, remove optional full hashing and align CI formatting",
+     "Align browser sources with contribution guidelines and preserve bundled notices",
      "Export direct data folders and verify existing resources before reuse",
      "Publish verified preview to Pages and expose D2R cache folder",
      "Merge upstream main through 758f5d4",
      "Refresh derived overlay fingerprints for signing recovery copy",
      "Wait for signed output before publishing download readiness",
-     "Show foreground and first-build timing reminder",
-     "Remove language-history helper notice",
-     "Add persistent live English and Chinese language switch"
+     "Show foreground and first-build timing reminder"
     ]
    },
    {
     "branch": "perf/patch-nso-prefilter",
     "ahead": 1,
-    "behind": 22,
+    "behind": 23,
     "files": 1,
     "real_files": 1,
     "dirs": [
@@ -385,6 +385,29 @@
     "last_commit": "2026-10-15T11:29:59Z",
     "subjects": [
      "Speed up NSO x18 scan with register field prefilter"
+    ]
+   },
+   {
+    "branch": "pr/web-ipa-packager",
+    "ahead": 1,
+    "behind": 1,
+    "files": 300,
+    "real_files": 292,
+    "dirs": [
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "web/.gitignore",
+     "web/.oxfmtrc.json",
+     "web/.oxlintrc.json",
+     "web/ALTERNATE_INPUT_SCOPE.md",
+     "web/APP_CUSTOMIZATION.md",
+     "web/APP_CUSTOMIZATION.zh-CN.md",
+     "web/ARCHIVE_READER_SCOPE.md"
+    ],
+    "last_commit": "2026-10-23T19:10:21Z",
+    "subjects": [
+     "feat(web): add local browser IPA packager"
     ]
    }
   ]
@@ -1460,21 +1483,21 @@
   ]
  },
  "d2r-mobile/d2r-mobile": {
-  "pushed_at": "2026-10-23T07:13:49Z",
+  "pushed_at": "2026-10-23T20:16:09Z",
   "branches": [
    {
     "branch": "dev",
     "mirror": false,
-    "last_commit": "2026-10-23T07:07:54Z",
+    "last_commit": "2026-10-23T20:12:09Z",
     "subjects": [
-     "Run checks on both branches",
-     "Add PlayStation button icons",
-     "Add Mac iCloud signing",
-     "Fix Linux skill snapshots",
-     "Fix Android runtime hooks",
-     "Fix platform audio and test setup",
-     "Fix Android build selection",
-     "Add minimap hold controls"
+     "Keep Android driver inputs optional",
+     "Support parked Android Auto launches",
+     "Release Android input on lifecycle changes",
+     "Add Android controller input",
+     "Persist Android driver selection",
+     "Honor Android power saving frame limits",
+     "Add Android driver dispatch and display settings",
+     "Preserve the selected map size"
     ]
    }
   ]
@@ -1740,21 +1763,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-23T16:47:53Z",
+  "pushed_at": "2026-10-23T17:52:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T16:47:48Z",
+    "last_commit": "2026-10-23T17:52:16Z",
     "subjects": [
+     "test_xcode_workflow.py: the provisional-warning test calls report_profile_status with its artifact name ('Xcode project'), the argument 98a91a6 (--platform mac) put in place of prepare_xcode; it failed with a TypeError since. The five tool and workflow test files pass (37 tests)",
+     "Balatro (0100CD801CE5E000, update 1.1.3, LÖVE 11.4 \"love-nx\" with LuaJIT and SDL on SDK 18.3.2): game profile and the GL layer LÖVE needs, plus four general changes. Plays on the iPhone by touch; on the Mac from the intro and the title into a run and its tutorial, at 60 fps with sound, about 0.65 GB resident and flat over three minutes. The game is Lua source in the RomFS and renders with NVIDIA's desktop OpenGL through EGL, as Digimon does. GL layer (dm/gfx/gl/hle_gl.m): LÖVE reads GL_CONTEXT_PROFILE_MASK and takes its core-profile paths only when it says core (with a compatibility profile it streams vertices from client memory, which Metal cannot draw from), so the layer answers core and implements what those paths use, about 150 functions in all against Digimon's 79: persistently mapped buffers (glBufferStorage, glMapBufferRange: the shared MTLBuffer's own memory), glBufferSubData in command order, fences (a fence is the serial of the command buffer being recorded; a wait on one still recording commits it), glBindAttribLocation (the game's attribute index of each Metal input, set at the link) and current attribute values (glVertexAttrib4f: LÖVE's VertexColor and ConstantColor are disabled arrays), glGetActiveUniform and the uniform read-backs, every glUniform* form, glTexStorage2D / 3D with their level counts, 3D and 2D array textures (LÖVE makes a default of each type on 96 units), GL_TEXTURE_SWIZZLE_* (its font glyphs are RG8 read as R, R, R, G), glGenerateMipmap as a blit (the game's images are mipmapped), instanced and base-vertex draws, separate read and draw framebuffers, glBlitFramebuffer (colour, same size), glReadPixels, glClearBufferfv, glFrontFace and the EGL calls SDL makes; stack arguments of the functions with more than eight are 64-bit, as AAPCS64 lays them out. DM_GL_STUBS=1 gives every GL name the layer lacks a stub of its own that reports its first call, instead of a null pointer. Shaders: LÖVE puts its 35 GLSL sources together at run time in Lua, so the NSP script captures them on the Mac as it does Super Mario Galaxy's SPIR-V (capture_shaders now serves both, profile gl_capture.tsv; profile_guess.py's gl_capture rule: an OpenGL game with no GLSL source in its RomFS or main), and gl_shaders.py keeps a bool uniform's declared type (a uint in SPIR-V; LÖVE's Shader:send takes only a boolean for a bool) and takes from main only strings that start with '#version <number>' (Balatro's main has glslang's messages). General: profile_guess.py leaves vkGetInstanceProcAddr, SDL's Vulkan loader, out of its Vulkan count (Balatro's provisional profile said Vulkan; Hades and both Galaxies import 99 or 100 Vulkan functions); OpenAudioRenderer without an event now starts the host's render thread too (hle_audren.c ar_open: only the form with an event did, and such a game was silent); loader_census.py follows registers in a straight line (adrp, add, loads through relocated GOT entries, mov, csel), for LÖVE's glad, whose pointers are globals its code keeps the addresses of in registers; and the iPhone gamepad has a third layout, Tap (profile pad_layout touch, which needs op_mode handheld; DM_GAME_PAD_LAYOUT replaces DM_GAME_PAD_FULL): no control but the layout button, every touch to the game, offered in the layout cycle only in handheld mode. Profile: op_mode handheld (the Switch build plays by touch there), pad_layout touch, gl_capture.tsv. A Lua error makes Balatro quit (its Switch error handler), and love-nx's video worker is then deleted twice (main+0x339c00): the bring-up notes say how the errors were found. Checked: the NSP script packs it from the NSPs alone (the capture in under a second, 35 shaders for the Mac and iOS, an 82 MB IPA), tool tests pass, profile_guess.py --check changes no other profile; Digimon was not rerun (its files are not on hand). README (games table, a Mac picture of the title), AGENTS.md (47 → 48), docs/development.md, docs/agents and the READMEs of dm/games and dm/gfx say so",
+     "Readable-tile variants compile again for pixel shaders with an integer-output entry point (main0_u), from PR #83",
+     "Mac: each controller is a player of its own, for local co-op (GitHub issue #74), from PR #84",
+     "NSP script: --platform mac (PLATFORM = 'mac') builds only what running a game on this Mac needs, from PR #82",
      "shader_split.py reads GLSLC outputs of several stages: Baba Is You (01002CD00A51C000, no profile) keeps its shaders as 120 GLSLC outputs in RomFS/Assets.dat, each a pixel and a vertex shader compiled together, then a reflection section, and glslc_shaders took only outputs of one control section, so the NSP script's split found 0 shaders and the pack stopped one step later with \"no iOS shader libraries\". An output with more than one control section is now read by its section headers (glslc_section returns every GPU code section, glslc_program checks each stage and needs distinct stages); its stages are labelled #GLSLC@<offset>#var, so var_pairs pairs them with each other and separable_pairs leaves them out of the single-stage cover. The NSP script stops at the split when it finds no shader, with the reason, instead of at the iOS shader step. Checked: Baba Is You splits into 131 shaders (115 pixel, 16 vertex) and 115 pairs, and its pack built BabaIsYou.ipa from the provisional profile with 131 of 131 shaders ready (not run on an iPhone); the split's tables for 13 Sentinels, AI: THE SOMNIUM FILES, Raging Loop, Metroid Dread and Age of Calamity are byte-identical to their profiles', and no main on the game drive holds an output of several stages. docs/agents/04-graphics.md says so",
      "Mac, in fullscreen: a screen whose refresh rate is not a multiple of the game's frame rate switches to one that is (144 → 120 Hz), from PR #79",
-     "One translation chain version for every game: DMSH_CHAIN in dm/gfx/nvn/dmsh_chain.h replaces the 47 dm/games/<id>/dmsh_chain.h, which every chain change rewrote and some were left behind (GitHub issue #78). The version hashed each profile's shader tables and nvn_* / shader_* keys too, once the only thing that kept the host off a library built from older tables; each shader's cache key (dmsh_build.py shader_key) has covered them since, so the version now covers only the chain's tools (dmsh_chain.py, dmsh_build.py, dmsh_fetch.py, dmsh_vin.py, dmsh_geometry.py, dmsh_facts.py, the translator's source, ios_metal.py, the lock) and the options, and needs no DM_GAME. What the per-game part still did is done by the library itself: a full dmsh_build.py run stamps b-<V>/inputs.tsv (Mac and iOS) with the game and the digest of the profile's inputs (dmsh_chain.py inputs / --inputs: the four shader tables, bf_want.tsv, which the variants use but the version never counted, and the keys), starts from no shader outputs (a partial one from none of the keys it builds), so a key that left the map, a shader that no longer builds or a variant no longer made keeps no old library, refuses a directory stamped for another game, and writes the profile's c1_full.tsv and cb_extent.tsv from its Mac outputs; a partial build keeps the stamp only while it names the current inputs. c1_guard.py / cb_extent.py head their table with the library's chain version and stamp (table_head), and the host takes a table only beside that stamp, logs the stamp and reports one of another game; build_ipa.sh reads the one header and stops when the iOS libraries' stamp is not this profile's current inputs or c1_full.tsv names another. NSP script: chain_header writes the one header when stale, before any host is built; provisional and derived profiles no longer write one; chain_tables makes a table again when it does not name the reused library's stamp (False without one). Makefiles take the header beside nvn_mtl.m; Xcode projects prepared earlier point at a profile header that is gone and are told to prepare again. Tests: test_nsp_chain.py (the committed header is current, stale and missing ones are written, tables against the stamp). Checked on The Great Ace Attorney Chronicles: a full build gave 460 of 460 shaders and both tables (0 and 409 entries, as before), the Mac host booted with the stamp and both tables past frame 900; one added facts row rebuilt one shader under the same chain version with a new digest and new tables, and the host refused the old tables beside the new stamp; a full build removed planted outputs, another game's build into that directory stopped, a partial build after an input change dropped the stamp; build_ipa.sh stopped on a stale stamp, a missing one and a stale or old-form c1_full.tsv; three NSP packs built (no table lines: dmsh_build made them), reused everything, and remade deleted tables from the reused build. Graphics unit tests give the same results as before (on this Mac t_refl needs ~/dm-work's libraries and several GPU tests fail on the previous commit too). AGENTS.md's chain procedure (header once after a tool change; a full shader build makes the tables), dm/games/README.md, dm/gfx/README.md and docs/development.md say so",
-     "patch_nso.py split into the general rewriter and per-build patch files (GitHub issue #63): every game's bring-up edited the one file, so PRs for unrelated games conflicted. dm/tools/patch_nso.py (1,711 → about 1,100 lines) keeps the general passes and the driver; the instruction encoders move unchanged to dm/tools/nso_asm.py; a game's own patches (CUTS, OBS and the frame-step stubs, now FRAME_STEP = {build ID: stub(ctx)}) move verbatim with their comments to dm/games/<id>/patches.py (16 profiles: Tears of the Kingdom, Breath of the Wild, Age of Calamity and Paper Mario: The Thousand-Year Door with their stubs), and the cuts of Nintendo's sdk module builds, 6 of the 15 shipped by 2 to 4 games, to dm/tools/sdk_patches.py. The rewriter loads every patch file, whatever the game, and applies those of a module's build ID at the points it did before (cuts before the scan, gates after the rewrite, stubs after the gates); a build ID claimed twice stops it, and its command line needs no DM_GAME. build_src.sha256 lists the rewriter's files and every patch file (the same for every module). NSP script: the rewrite step's reuse key counts nso_asm.py and only the patch files that name one of the game's builds (patch_files), profile_files leaves patches.py out (only the rewrite step reads it), and a derived profile gets none. dm/tools/tests/test_patches.py: no build claimed twice, the entries' forms, a game's file names only its own profile's non-sdk builds, sdk_patches.py only sdk builds some profile ships, and the reuse key's patch files. Checked byte-identical: every extracted module on the game drive (131 builds) rewritten with the previous and the new rewriter gives the same outputs but build_src.sha256, 28 of the 30 patched builds among them (all four frame-step mains), and 7 fail alike (rtld, and New Super Mario Bros. U Deluxe's, which no profile rewrites); the other two (Super Mario Bros. Wonder's mains and Absolum's, no game files here) by their CUTS / OBS data, equal to the previous tables. AGENTS.md, docs, dm/games/README.md, the profiles' comments and the host comments that named a game's cut in patch_nso.py now name its patches.py or sdk_patches.py",
-     "c1_full.tsv and cb_extent.tsv are no longer committed: each checkout makes them from its own shader build's Mac outputs (git ignores them in dm/games/*/), as the NSP script does after its iOS shader build. They follow from the MSL this Mac built, every chain change rewrote about 90 of them, and 56704a0 could only carry most over unchecked; 81 files, 18.7 MB. The NSP script makes a missing one as a stale one (chain_tables now says whether both name the chain: with no Mac outputs a reuse builds again and a build stops), and no step's reuse key counts them (profile_files), so the run after they were made does not split again. build_ipa.sh stops for an NVN game whose c1_full.tsv is missing or names another chain, with the c1_guard.py command, before generating anything (the host would give every c1 its own 64 KiB). Checked on The Great Ace Attorney Chronicles from a checkout without them: the first pack made both (0 and 409 entries, as committed), the second reused the split and the iOS shaders with no table lines, a third with them deleted made them from the reused build's Mac outputs; build_ipa.sh stops on a missing and a stale c1_full.tsv. AGENTS.md's chain procedure, dm/games/README.md, dm/gfx/README.md and docs/development.md say so",
-     "NSP script: a registered profile's chain files that a chain change left behind are made again (GitHub issue #78: after bb585cd, 45 of 47 profiles' dmsh_chain.h no longer held the version their source gives, and Breath of the Wild's pack stopped at dmsh_build). chain_header writes dmsh_chain.h again, before any host is built, when it does not hold the version dmsh_chain.py gives (it follows from the source alone; a current one is left untouched, so the host is not rebuilt). chain_tables makes c1_full.tsv (c1_guard.py) or cb_extent.tsv (cb_extent.py) again from the build's Mac outputs when its header names another chain, which the host would ignore (every c1 its own 64 KiB, whole uniform bindings copied), also when the libraries are reused; provisional and derived profiles make both as before. The two tables are the shader step's outputs, so its reuse key no longer counts them. Tests: dm/tools/tests/test_nsp_chain.py (stale, missing and current headers and tables), and chain_tables with the real tools on Breath of the Wild's Mac cache (47 s, the committed list's 2 entries)",
-     "Super Mario Galaxy 2's half-white Mario on the iPhone (GitHub issue 72): min / max / clamp with a NaN operand give the other operand on every GPU, in the Vulkan, GL and NVN shader chains",
-     "README / AGENTS: Mario Kart 8 Deluxe plays on the iPhone (games table with a Mac picture of Mario Kart Stadium's anti-gravity section, IPA ~11.9 GB, Mii heads not drawn without the firmware; AGENTS.md list 46 → 47 with its notes; the profile says so). On an A20 Pro: 60 fps docked, about 6 ms of GPU time a frame, 2.4 GB footprint with 3.7 GB of headroom, no audio underruns"
+     "One translation chain version for every game: DMSH_CHAIN in dm/gfx/nvn/dmsh_chain.h replaces the 47 dm/games/<id>/dmsh_chain.h, which every chain change rewrote and some were left behind (GitHub issue #78). The version hashed each profile's shader tables and nvn_* / shader_* keys too, once the only thing that kept the host off a library built from older tables; each shader's cache key (dmsh_build.py shader_key) has covered them since, so the version now covers only the chain's tools (dmsh_chain.py, dmsh_build.py, dmsh_fetch.py, dmsh_vin.py, dmsh_geometry.py, dmsh_facts.py, the translator's source, ios_metal.py, the lock) and the options, and needs no DM_GAME. What the per-game part still did is done by the library itself: a full dmsh_build.py run stamps b-<V>/inputs.tsv (Mac and iOS) with the game and the digest of the profile's inputs (dmsh_chain.py inputs / --inputs: the four shader tables, bf_want.tsv, which the variants use but the version never counted, and the keys), starts from no shader outputs (a partial one from none of the keys it builds), so a key that left the map, a shader that no longer builds or a variant no longer made keeps no old library, refuses a directory stamped for another game, and writes the profile's c1_full.tsv and cb_extent.tsv from its Mac outputs; a partial build keeps the stamp only while it names the current inputs. c1_guard.py / cb_extent.py head their table with the library's chain version and stamp (table_head), and the host takes a table only beside that stamp, logs the stamp and reports one of another game; build_ipa.sh reads the one header and stops when the iOS libraries' stamp is not this profile's current inputs or c1_full.tsv names another. NSP script: chain_header writes the one header when stale, before any host is built; provisional and derived profiles no longer write one; chain_tables makes a table again when it does not name the reused library's stamp (False without one). Makefiles take the header beside nvn_mtl.m; Xcode projects prepared earlier point at a profile header that is gone and are told to prepare again. Tests: test_nsp_chain.py (the committed header is current, stale and missing ones are written, tables against the stamp). Checked on The Great Ace Attorney Chronicles: a full build gave 460 of 460 shaders and both tables (0 and 409 entries, as before), the Mac host booted with the stamp and both tables past frame 900; one added facts row rebuilt one shader under the same chain version with a new digest and new tables, and the host refused the old tables beside the new stamp; a full build removed planted outputs, another game's build into that directory stopped, a partial build after an input change dropped the stamp; build_ipa.sh stopped on a stale stamp, a missing one and a stale or old-form c1_full.tsv; three NSP packs built (no table lines: dmsh_build made them), reused everything, and remade deleted tables from the reused build. Graphics unit tests give the same results as before (on this Mac t_refl needs ~/dm-work's libraries and several GPU tests fail on the previous commit too). AGENTS.md's chain procedure (header once after a tool change; a full shader build makes the tables), dm/games/README.md, dm/gfx/README.md and docs/development.md say so"
     ]
    }
   ]
@@ -1820,19 +1843,19 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-23T17:05:35Z",
+  "pushed_at": "2026-10-23T21:23:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T17:05:34Z",
+    "last_commit": "2026-10-23T21:23:26Z",
     "subjects": [
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
-     "chore: 自动同步 Star 地图（185 个项目）",
-     "chore: 自动同步 Star 地图（185 个项目）",
-     "chore: 自动同步 Star 地图（185 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
+     "chore: 自动同步 Star 地图（185 个项目）",
+     "chore: 自动同步 Star 地图（185 个项目）",
+     "chore: 自动同步 Star 地图（185 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）"
     ]
@@ -1848,12 +1871,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-23T11:47:27Z",
+  "pushed_at": "2026-10-23T17:15:05Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T11:47:25Z",
+    "last_commit": "2026-10-23T17:15:04Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2324,12 +2347,12 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-22T23:46:27Z",
+  "pushed_at": "2026-10-23T18:46:06Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 156,
-    "behind": 6,
+    "ahead": 157,
+    "behind": 12,
     "files": 55,
     "real_files": 54,
     "dirs": [
@@ -2344,22 +2367,22 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-22T23:42:33Z",
+    "last_commit": "2026-10-23T18:45:58Z",
     "subjects": [
+     "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1",
      "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation",
      "Use the supplied portal capsule artwork in the Dynamic Island button",
      "Settings UI plan B, persistent attack-title newline removal, 3D scale 0.9, touch-mode focus frame hidden",
      "Build fix: register characterstatspanelhd.json as touch-only layout",
      "Settings UI three rows, hire-list performance/highlight, skill blue, minimap, capsule island button",
      "Render at native scale, minimap +10px up/+40px right, smaller HUD names, hire info follows the row",
-     "Hire info follows the tapped merc, Show FPS row forced visible, white HP band, forced quality at native scale",
-     "Performance mode: add forced quality (locked 60 fps / quality); drop the skill-page tweaks"
+     "Hire info follows the tapped merc, Show FPS row forced visible, white HP band, forced quality at native scale"
     ]
    },
    {
     "branch": "main",
     "ahead": 1,
-    "behind": 15,
+    "behind": 21,
     "files": 1,
     "real_files": 0,
     "dirs": [],
@@ -4731,7 +4754,7 @@
   ]
  },
  "oneincase/d2r-mobile": {
-  "pushed_at": "2026-10-23T06:31:27Z",
+  "pushed_at": "2026-10-23T18:39:30Z",
   "branches": []
  },
  "zJiaJun/d2r-mobile": {
@@ -4943,12 +4966,12 @@
   ]
  },
  "kxn/d2r-mobile": {
-  "pushed_at": "2026-10-23T01:40:03Z",
+  "pushed_at": "2026-10-23T21:19:16Z",
   "branches": [
    {
     "branch": "codex/alias-negative-last-gap-v1",
     "ahead": 247,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -4971,8 +4994,8 @@
    },
    {
     "branch": "codex/android-native-backup-20261019",
-    "ahead": 382,
-    "behind": 17,
+    "ahead": 424,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -4981,22 +5004,22 @@
      "dm/gfx",
      "dm/host"
     ],
-    "last_commit": "2026-10-23T01:39:40Z",
+    "last_commit": "2026-10-23T21:19:11Z",
     "subjects": [
-     "Record three-path implementation, controlled CPU results, and daily delivery",
-     "Merge commit '10d5e136aa2bd131c6d18c2cdfcce1d045e150ed' into codex/android-native-backup-20261019",
-     "Invalidate driver versions on setters without rescanning binding values",
-     "host: gate dirty and yield diagnostics on boot profiling",
-     "vulkan: batch packaged texture upload staging regions",
-     "Reuse submission driver constants before key construction on unchanged state",
-     "vulkan: share compute binding state across all recording paths",
-     "Record repeated pool memory savings, daily delivery, and verified fork detail gaps"
+     "Record real-game Mesa GPU queue profile and expose official renderstage capture",
+     "Record current official GPU counters and clarify covered-range reuse counts",
+     "Record controlled translation execution-rate and present-wait evidence",
+     "Record current CPU budgets and isolated sparse Pool qualification",
+     "Record completed two-TU size optimization comparison without claiming speedup",
+     "Record enabled raster reuse and full residual draw cost audit",
+     "Enable validated ordinary attachment raster runs by default",
+     "Represent repeated ordinary attachment histories as deferred raster runs"
     ]
    },
    {
     "branch": "codex/astc6-compose-v1",
     "ahead": 66,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5020,7 +5043,7 @@
    {
     "branch": "codex/astc-6x6-bulk-v1",
     "ahead": 64,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5044,7 +5067,7 @@
    {
     "branch": "codex/astc-6x6-samples-v1",
     "ahead": 61,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5068,7 +5091,7 @@
    {
     "branch": "codex/astc-array-group-closure-v1",
     "ahead": 78,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5092,7 +5115,7 @@
    {
     "branch": "codex/astc-copy-bb-closure-lldb-v1",
     "ahead": 144,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5116,7 +5139,7 @@
    {
     "branch": "codex/astc-copy-encoding-propagation-v1",
     "ahead": 113,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5140,7 +5163,7 @@
    {
     "branch": "codex/astc-unorm8-decode-fixture-v2",
     "ahead": 71,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5164,7 +5187,7 @@
    {
     "branch": "codex/astc-unorm8-decode-v1",
     "ahead": 70,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5188,7 +5211,7 @@
    {
     "branch": "codex/bias-clear-footprint-v1",
     "ahead": 81,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5212,7 +5235,7 @@
    {
     "branch": "codex/bloom-proof-state-cursor-v1",
     "ahead": 50,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5236,7 +5259,7 @@
    {
     "branch": "codex/buffer-history-end-v1",
     "ahead": 74,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5260,7 +5283,7 @@
    {
     "branch": "codex/casc-archive-hex-v1",
     "ahead": 61,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5284,7 +5307,7 @@
    {
     "branch": "codex/color-depth-comparison-hud55-v1",
     "ahead": 242,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5308,7 +5331,7 @@
    {
     "branch": "codex/combined-cpu-52181-tools-v1",
     "ahead": 211,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5332,7 +5355,7 @@
    {
     "branch": "codex/compressed-page-array-mip-fault-v1",
     "ahead": 234,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5356,7 +5379,7 @@
    {
     "branch": "codex/compressed-page-array-oracle-v1",
     "ahead": 235,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5380,7 +5403,7 @@
    {
     "branch": "codex/compressed-page-array-v1",
     "ahead": 233,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5404,7 +5427,7 @@
    {
     "branch": "codex/compressed-page-array-v2",
     "ahead": 234,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5428,7 +5451,7 @@
    {
     "branch": "codex/compute-bind-state-v1",
     "ahead": 309,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5452,7 +5475,7 @@
    {
     "branch": "codex/cpu-binding-phase-combined-v1",
     "ahead": 274,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5476,7 +5499,7 @@
    {
     "branch": "codex/cpu-cold-phase-game-qualification-v1",
     "ahead": 177,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5500,7 +5523,7 @@
    {
     "branch": "codex/cpu-cold-phase-outline-v1",
     "ahead": 277,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5524,7 +5547,7 @@
    {
     "branch": "codex/cpu-combined-device-qualification-v1",
     "ahead": 175,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5548,7 +5571,7 @@
    {
     "branch": "codex/cpu-game-report-output-guard-v1",
     "ahead": 180,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5572,7 +5595,7 @@
    {
     "branch": "codex/cpu-image-pressure-trim-v1",
     "ahead": 49,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5596,7 +5619,7 @@
    {
     "branch": "codex/cpu-image-source-empty-plan-v1",
     "ahead": 297,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5620,7 +5643,7 @@
    {
     "branch": "codex/cpu-pool-pin-coherent-combined-v1",
     "ahead": 281,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5644,7 +5667,7 @@
    {
     "branch": "codex/cpu-pool-pin-fullasset-game-tools-v1",
     "ahead": 179,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5668,7 +5691,7 @@
    {
     "branch": "codex/cpu-shared-whole-policy-tools-v1",
     "ahead": 178,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5692,7 +5715,7 @@
    {
     "branch": "codex/cpu-source-completion-combined-v1",
     "ahead": 298,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5716,7 +5739,7 @@
    {
     "branch": "codex/cpu-store-phase-combined-v1",
     "ahead": 276,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5740,7 +5763,7 @@
    {
     "branch": "codex/current-sustained-886-v1",
     "ahead": 206,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5764,7 +5787,7 @@
    {
     "branch": "codex/descriptor-create-cold-v1",
     "ahead": 75,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5788,7 +5811,7 @@
    {
     "branch": "codex/descriptor-pool-adaptive-v1",
     "ahead": 60,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5812,7 +5835,7 @@
    {
     "branch": "codex/descriptor-pool-block-512-v1",
     "ahead": 308,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5836,7 +5859,7 @@
    {
     "branch": "codex/descriptor-pool-memory-tools-v1",
     "ahead": 210,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5860,7 +5883,7 @@
    {
     "branch": "codex/descriptor-shader-slot-hint-fault-values-v1",
     "ahead": 213,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5884,7 +5907,7 @@
    {
     "branch": "codex/descriptor-shader-slot-hint-fault-values-v2",
     "ahead": 213,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5908,7 +5931,7 @@
    {
     "branch": "codex/descriptor-shader-slot-hint-v1",
     "ahead": 212,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5932,7 +5955,7 @@
    {
     "branch": "codex/diagnostic-timing-gates-v1",
     "ahead": 309,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5956,7 +5979,7 @@
    {
     "branch": "codex/dirty-prep-batch-v1",
     "ahead": 75,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5980,7 +6003,7 @@
    {
     "branch": "codex/draw-cold-positive-phases-v1",
     "ahead": 306,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6004,7 +6027,7 @@
    {
     "branch": "codex/draw-lookup-cold-stack-boundary-v1",
     "ahead": 246,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6026,9 +6049,33 @@
     ]
    },
    {
+    "branch": "codex/draw-shader-os-v1",
+    "ahead": 415,
+    "behind": 23,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-23T17:16:12Z",
+    "subjects": [
+     "Add isolated draw and shader host size optimization experiment",
+     "Enable validated ordinary attachment raster runs by default",
+     "Represent repeated ordinary attachment histories as deferred raster runs",
+     "Narrow Store lookup budget and audit remaining draw and execution-rate costs",
+     "Record same-window translation reuse work reduction and remaining cost budgets",
+     "Record source-partition cost transfer and next macro measurement",
+     "Enable validated translation reuse paths for Android startup",
+     "Experiment with event-driven image source responsibility partition"
+    ]
+   },
+   {
     "branch": "codex/driver-binding-invalidation-v2",
     "ahead": 313,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6052,7 +6099,7 @@
    {
     "branch": "codex/driver-constant-span-proof-v1",
     "ahead": 319,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6076,7 +6123,7 @@
    {
     "branch": "codex/driver-constant-state-fastpath-v1",
     "ahead": 309,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6100,7 +6147,7 @@
    {
     "branch": "codex/driver-proof-fingerprint-v1",
     "ahead": 303,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6124,7 +6171,7 @@
    {
     "branch": "codex/driver-span-experiment-tools-v1",
     "ahead": 192,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6148,7 +6195,7 @@
    {
     "branch": "codex/driver-span-supplement-tools-v1",
     "ahead": 303,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6172,7 +6219,7 @@
    {
     "branch": "codex/driver-uniform-span-q-baseline-v1",
     "ahead": 302,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6196,7 +6243,7 @@
    {
     "branch": "codex/driver-uniform-span-v1",
     "ahead": 321,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6220,7 +6267,7 @@
    {
     "branch": "codex/fixed-shared-review-oracle-v1",
     "ahead": 80,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6244,7 +6291,7 @@
    {
     "branch": "codex/fs-buffer-query-fusion-v3",
     "ahead": 127,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6268,7 +6315,7 @@
    {
     "branch": "codex/game-state-complete-line-v1",
     "ahead": 208,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6292,7 +6339,7 @@
    {
     "branch": "codex/gpu-native-events-v1",
     "ahead": 82,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6316,7 +6363,7 @@
    {
     "branch": "codex/guest-as-shared-slice-v1",
     "ahead": 47,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6340,7 +6387,7 @@
    {
     "branch": "codex/guest-fence-main-integration-v1",
     "ahead": 319,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6364,7 +6411,7 @@
    {
     "branch": "codex/guest-fence-notify-scope-v1",
     "ahead": 297,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6388,7 +6435,7 @@
    {
     "branch": "codex/guest-kernel-write-lease-v1",
     "ahead": 109,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6412,7 +6459,7 @@
    {
     "branch": "codex/guest-shared-heap-startup-v1",
     "ahead": 85,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6436,7 +6483,7 @@
    {
     "branch": "codex/host-import-shared-anon-app-v1",
     "ahead": 73,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6460,7 +6507,7 @@
    {
     "branch": "codex/host-import-shared-anon-dirty-v1",
     "ahead": 71,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6484,7 +6531,7 @@
    {
     "branch": "codex/host-import-vulkan-oracle-v1",
     "ahead": 60,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6508,7 +6555,7 @@
    {
     "branch": "codex/host-sample-profile-v1",
     "ahead": 304,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6532,7 +6579,7 @@
    {
     "branch": "codex/host-thinlto-v1",
     "ahead": 282,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6556,7 +6603,7 @@
    {
     "branch": "codex/idle-descriptor-context-trim-v1",
     "ahead": 59,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6580,7 +6627,7 @@
    {
     "branch": "codex/image-binding-enumeration-v1",
     "ahead": 123,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6604,7 +6651,7 @@
    {
     "branch": "codex/image-record-covered-cold-v1",
     "ahead": 70,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6628,7 +6675,7 @@
    {
     "branch": "codex/lazy-physical-span-index-v1",
     "ahead": 307,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6652,7 +6699,7 @@
    {
     "branch": "codex/legacy-astc-stock-oracle-v1",
     "ahead": 118,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6676,7 +6723,7 @@
    {
     "branch": "codex/legacy-cpu-observer-core-v1",
     "ahead": 115,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6700,7 +6747,7 @@
    {
     "branch": "codex/legacy-cpu-source-prefilter-v1",
     "ahead": 119,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6724,7 +6771,7 @@
    {
     "branch": "codex/legacy-fresh-astc-copy-v1",
     "ahead": 116,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6748,7 +6795,7 @@
    {
     "branch": "codex/legacy-image-cpu-preflight-fix-v1",
     "ahead": 118,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6772,7 +6819,7 @@
    {
     "branch": "codex/logical-descriptor-owner-cache-v1",
     "ahead": 245,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6796,7 +6843,7 @@
    {
     "branch": "codex/main-2d347fa-host-integration-v1",
     "ahead": 236,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6820,7 +6867,7 @@
    {
     "branch": "codex/mali-candidate-guest-astc6-copy-v2",
     "ahead": 163,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6844,7 +6891,7 @@
    {
     "branch": "codex/mali-candidate-guest-astc6-exit-v1",
     "ahead": 164,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6868,7 +6915,7 @@
    {
     "branch": "codex/mali-candidate-guest-astc6-gate-v2",
     "ahead": 165,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6892,7 +6939,7 @@
    {
     "branch": "codex/mali-candidate-guest-astc6-v1",
     "ahead": 162,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6916,7 +6963,7 @@
    {
     "branch": "codex/mali-candidate-guest-full4-light-v1",
     "ahead": 162,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6940,7 +6987,7 @@
    {
     "branch": "codex/mali-candidate-guest-v1",
     "ahead": 161,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6964,7 +7011,7 @@
    {
     "branch": "codex/mali-gate-screenshots-v3",
     "ahead": 166,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6988,7 +7035,7 @@
    {
     "branch": "codex/mali-vma-fixed065-blocks-v1",
     "ahead": 168,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7012,7 +7059,7 @@
    {
     "branch": "codex/mixed-compressed-array-android-oracle-v1",
     "ahead": 144,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7036,7 +7083,7 @@
    {
     "branch": "codex/mixed-compressed-array-rgba-v1",
     "ahead": 143,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7060,7 +7107,7 @@
    {
     "branch": "codex/native-acquire-scope-negative-v1",
     "ahead": 141,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7084,7 +7131,7 @@
    {
     "branch": "codex/native-astc-linear-NVN-tools-v2",
     "ahead": 107,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7108,7 +7155,7 @@
    {
     "branch": "codex/native-astc-linear-bulk-tools-v1",
     "ahead": 105,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7132,7 +7179,7 @@
    {
     "branch": "codex/native-astc-linear-compose-v1",
     "ahead": 141,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7156,7 +7203,7 @@
    {
     "branch": "codex/native-astc-linear-filter-oracle-v1",
     "ahead": 107,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7180,7 +7227,7 @@
    {
     "branch": "codex/native-astc-linear-game-inputs-v1",
     "ahead": 151,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7204,7 +7251,7 @@
    {
     "branch": "codex/native-astc-linear-game-pair-v1",
     "ahead": 150,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7228,7 +7275,7 @@
    {
     "branch": "codex/native-astc-linear-gpu-fixture-tools-v2",
     "ahead": 106,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7252,7 +7299,7 @@
    {
     "branch": "codex/native-astc-linear-gpu-fixture-v1",
     "ahead": 105,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7276,7 +7323,7 @@
    {
     "branch": "codex/native-bulk-copy-diagnostic-v1",
     "ahead": 145,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7300,7 +7347,7 @@
    {
     "branch": "codex/native-bulk-counter-snapshot-v1",
     "ahead": 145,
-    "behind": 17,
+    "behind": 23,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7319,30 +7366,6 @@
      "Add reversible original-game single native material validation controller",
      "Keep native image imports independent of shared Buffer window unions",
      "Prepare Turnip native family identity over current shared alias backend"
-    ]
-   },
-   {
-    "branch": "codex/native-bulk-game-pair-v1",
-    "ahead": 144,
-    "behind": 17,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T15:43:59Z",
-    "subjects": [
-     "Add reversible matched native texture game experiment controller",
-     "Require sampled FS caller and explicit native token identity in game proof",
-     "Authenticate real native use and preserve HUD evidence before postconditions",
-     "Handle owned Vivo install confirmation in reversible native game test",
-     "Add reversible original-game single native material validation controller",
-     "Keep native image imports independent of shared Buffer window unions",
-     "Prepare Turnip native family identity over current shared alias backend",
-     "Integrate native families with real shared prewrite gate and cold app oracle"
     ]
    }
   ]
@@ -7370,21 +7393,21 @@
   ]
  },
  "iceorange-dev/manosaba-ios": {
-  "pushed_at": "2026-10-23T17:09:52Z",
+  "pushed_at": "2026-10-23T20:38:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T17:07:00Z",
+    "last_commit": "2026-10-23T20:18:55Z",
     "subjects": [
-     "Plan batch 87: the single-draw kernel passes of plan item 217 removed; the backend is the one before them again (262)",
-     "Plan batch 86: the Metal backend split by subject into 38 parts that nvn_mtl.m includes in order, one translation unit as before (261)",
-     "Plan batch 85: min / max / clamp with Maxwell's results for a NaN operand on every GPU, as precise:: (260)",
-     "Stale comments brought up to date: Tears of the Kingdom's TBDR default, the encode stage's default, the bandwidth ledger's stores, BC on GPUs without it",
-     "Development notes trimmed: DEVELOPMENT.md keeps the current state and the open work; the finished plan and the sources move to docs/",
-     "Plan batch 84: single-draw passes as compute kernels, opt-in (DM_NVN_KPASS=1): exact on the M5, no GPU time saved on the iPhone (217)",
-     "Plan batch 83: load-exclusives as acquire loads, the scene size changed while Tears of the Kingdom runs; spin loops measured (232, 240, 243)",
-     "Plan batch 82: the render encode stage on by default on iOS, less CPU energy and steadier frames on the iPhone; scheduling and pass-timing tools (234, 242, 244, 245, 251, 254-256)"
+     "Plan batch 96: the replay state, S and R and the commands that only set it, moves into gfx/nvn/core (264)",
+     "Plan batch 95: the two graphics switches off by default traced and removed, DM_NVN_RT_RANGE and DM_NVN_DEPTH_PLAIN (263)",
+     "Plan batch 94: inline uniform updates move into gfx/nvn/core (264)",
+     "Plan batch 93: the submit call's capture moves into gfx/nvn/core, and its part is gone (264)",
+     "Plan batch 92: the live texture at a storage address and the texture objects' host copies move into gfx/nvn/core (264)",
+     "Plan batch 91: pending buffer writes and the measurements by frame move into gfx/nvn/core (264)",
+     "Plan batch 90: the TBDR switches, the attachment validity ledger and the pass dump move into gfx/nvn/core (264)",
+     "Plan batch 89: uniform snapshots move out of the Metal backend into gfx/nvn/core (264)"
     ]
    }
   ]
@@ -7670,21 +7693,21 @@
   ]
  },
  "MZhao-ouo/Touchable": {
-  "pushed_at": "2026-10-23T15:27:13Z",
+  "pushed_at": "2026-10-23T19:04:51Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T15:27:12Z",
+    "last_commit": "2026-10-23T19:04:49Z",
     "subjects": [
+     "Add per-game improvement pages and a screenshot grid to the READMEs",
+     "Use the sketch controller layout, move controls nearer the edges, and end the press look at once",
      "Add a credit request and CITATION.cff, and rename the ROM version column",
      "Add the logo, badges, and Discord link to the READMEs",
      "Add Rhythm Toys touch, Drum Lessons controller, and localized app names",
      "Track new upstream patch files so the patch check passes",
      "Document the local and public history in AGENTS.md",
-     "Build Metal shaders for the iOS 26 deployment target",
-     "Merge pull request #7 from sdmj76/fix/rhythm-heaven-long-list-tap",
-     "Merge pull request #6 from sdmj76/feature/rhythm-heaven-tv-mode"
+     "Build Metal shaders for the iOS 26 deployment target"
     ]
    }
   ]
@@ -8217,21 +8240,21 @@
   ]
  },
  "littckerQiu/witchspringr-ios": {
-  "pushed_at": "2026-10-23T15:51:23Z",
+  "pushed_at": "2026-10-23T20:12:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T15:51:23Z",
+    "last_commit": "2026-10-23T20:12:48Z",
     "subjects": [
+     "host: DM_APP_POOL_MB override so the pool can be tuned on the device (Documents/env.txt)",
+     "nx-ipa: do not pack the RomFS into the app (1.58 GiB of the 2.29 GiB IPA; the game plays from Documents/romfs)",
+     "profile: report a 1.5 GB pool so Unity's pools have address space left (device: 2 MB region came back NULL)",
      "nx-ipa: pin the full upstream SHA",
      "nx-ipa: pin the upstream snapshot our patches are written against (upstream split patch_nso.py today)",
      "bc: forward-declare nvn_fmt_bc (xcodebuild: implicit declaration)",
      "ios: search all of Documents for the game files and log every candidate (the Files app put them under a name the app did not look at)",
-     "nx-ipa: generate c1_full.tsv / cb_extent.tsv after the shader build (the device log asked for both)",
-     "bc: software BC decode for A15/A16 (files + patch)",
-     "bc: software BC decode for A15/A16 (files + patch)",
-     "bc: software BC decode for A15/A16 (files + patch)"
+     "nx-ipa: generate c1_full.tsv / cb_extent.tsv after the shader build (the device log asked for both)"
     ]
    }
   ]
@@ -8969,21 +8992,74 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-10-23T13:27:05Z",
+  "pushed_at": "2026-10-23T20:16:38Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T13:27:02Z",
+    "last_commit": "2026-10-23T20:16:35Z",
     "subjects": [
-     "README: the entitlement check needs no big game, and LiveContainer keeps it",
-     "Credits: LNPANDY/nxnative-romfs-archive for the memory-limit route",
-     "Ask for the increased memory limit, as the sibling fork does",
-     "smoke: assert the package carries the game's own bundle ID",
-     "Give every game its own bundle ID, so several can be installed",
-     "README: say that the repository itself is needed, and which Python gets the packages",
-     "Pack a dump that is not the build the profile was brought up on",
-     "Identify a cartridge dump by extracting it, since nothing inside names it"
+     "Size the heap against the modules a derived profile actually rewrote",
+     "Report when the packer's copies drift from the tree the shell is built from",
+     "A line-ending difference must not block registering the toolchain",
+     "Derive the module list from the files, and sync the translator's source",
+     "Sync the rewriter, the tools and every game profile with upstream",
+     "List the games this packer is built for, not everything upstream has",
+     "The supported page lists what the release supports, not what this snapshot carries",
+     "Restore this fork's three tool patches, which the previous sync erased"
+    ]
+   }
+  ]
+ },
+ "TIMYW2K/d2r-mobile-ios": {
+  "pushed_at": "2026-10-23T19:00:42Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-23T18:45:58Z",
+    "subjects": [
+     "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1",
+     "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation",
+     "Use the supplied portal capsule artwork in the Dynamic Island button",
+     "Settings UI plan B, persistent attack-title newline removal, 3D scale 0.9, touch-mode focus frame hidden",
+     "Build fix: register characterstatspanelhd.json as touch-only layout",
+     "Settings UI three rows, hire-list performance/highlight, skill blue, minimap, capsule island button",
+     "Render at native scale, minimap +10px up/+40px right, smaller HUD names, hire info follows the row",
+     "Hire info follows the tapped merc, Show FPS row forced visible, white HP band, forced quality at native scale"
+    ]
+   }
+  ]
+ },
+ "LNPANDY/NX2Apple": {
+  "pushed_at": "2026-10-23T21:05:00Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-23T21:04:58Z",
+    "subjects": [
+     "Frontend: the archive pack skips when the extracted RomFS is unchanged",
+     "Fix the Animal Crossing iPhone crash: archive stats carried a leading slash",
+     "Untrack the root .build/ (a stray build run created it); ignore it",
+     "Rename to NX2Apple; README opening and legal rewritten for what the project is",
+     "Frontend: the archive folder is Documents-ready, with an install guide",
+     "Fix the IPA build: the entitlement block ran before APP existed",
+     "Automate upstream sync; per-game version list; recover lost fork features",
+     "Sync upstream again: the real fix for the stale chain headers, and 48 games"
+    ]
+   }
+  ]
+ },
+ "dragon8long/dragon-z": {
+  "pushed_at": "2026-10-23T17:31:01Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-23T17:23:21Z",
+    "subjects": [
+     "Initial commit"
     ]
    }
   ]
