@@ -609,12 +609,39 @@
   "branches": []
  },
  "niesj-n/d2r-mobile": {
-  "pushed_at": "2026-10-23T16:29:41Z",
+  "pushed_at": "2026-10-24T13:24:57Z",
   "branches": [
+   {
+    "branch": "main",
+    "ahead": 86,
+    "behind": 3,
+    "files": 222,
+    "real_files": 184,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/third_party",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-24T13:24:51Z",
+    "subjects": [
+     "docs: distinguish Android fork additions and verified release scope",
+     "fix(android): keep the default joystick visible independent of left margin",
+     "fix(android): detach floating joystick start from left button margin",
+     "feat(android): show a floating joystick in a wider start region",
+     "fix(android): align compact Sort and Deposit buttons in inventory footer",
+     "chore(android): prepare drag image package version",
+     "feat(vulkan): replay bounded shop drag icons in their source pass",
+     "feat(android): publish held shelf drag image and cached source dim"
+    ]
+   },
    {
     "branch": "work/android-fixed-render-touch",
     "ahead": 52,
-    "behind": 2,
+    "behind": 3,
     "files": 161,
     "real_files": 143,
     "dirs": [
@@ -641,7 +668,7 @@
    {
     "branch": "work/android-product-v3",
     "ahead": 31,
-    "behind": 2,
+    "behind": 3,
     "files": 117,
     "real_files": 109,
     "dirs": [
@@ -668,7 +695,7 @@
    {
     "branch": "work/original-cursor-parity-next-20261023",
     "ahead": 41,
-    "behind": 2,
+    "behind": 3,
     "files": 130,
     "real_files": 119,
     "dirs": [
@@ -1794,21 +1821,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-24T10:55:17Z",
+  "pushed_at": "2026-10-24T15:25:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T10:55:11Z",
+    "last_commit": "2026-10-24T15:25:01Z",
     "subjects": [
-     "Pokémon Sword (0100ABF008968000, update 1.3.2, Game Freak's engine on SDK 7.3.2): game profile plus general changes to the shader split, the shader build, the NVN layer and HID / offline services. Plays on the iPhone (IPA 12.4 GB, user). On the Mac from a fresh save through the first boot's choices, the opening, Postwick, Hop's house, the walk to Wedgehurst and Leon's arrival, the starter choice (Scorbunny) and the first battle against Hop (won), and from a save in the bedroom through the title and out of the front door: 30 fps as on the Switch (frame time p50 33.3 / p95 about 35 ms, GPU 4-9 ms a frame on an M6, CPU about half a core), sound, 1.8 GB resident after the title and 2.4 GB after 17 minutes of new areas, 1.9 GB of Metal allocations, no red line on that route. The sdk and movie module (subsdk0) builds are Super Mario Odyssey 1.4.1's; subsdk1 is GLSLC, which main imports but never calls; no virtual address memory (a 3.13 GB heap in the 4 GB layout, mem_used 76 MB). shader_split.py: everything is in 7,699 GFPAK archives (GFLXPACK: file count at +0x10, 0x18-byte file entries of compression, length, stored length and offset; every entry LZ4, zlib and stored read too, Oodle a red line), whose BNSH entries the split now reads (gfpak_members): 3,126 shaders before, 38,361 after with the loose BNSH files and two in main. The 38 shaders still in no map at the title were Silicon Studio's YEBIS post effects: a .tfxo file (3,155 shaders, control sections each followed by its code area of control length + 0x704) in a 39.5 MB zlib stream in main (+0x1c98ed9), which tfxo_streams finds by its zlib header and the inflated file's magic (the header check inflates 4,096 bytes; 64 did not get past the first block header) and tfxo_shaders reads, single-stage programs: 41,516 shaders in all. Of the other games' mains the stream reader finds nothing, and main's loose control section reader (raw_shaders) finds nothing in this one, so every other profile's tables stay as they were. dmsh_build.py / nvn_mtl.m: the G-buffer pixel shaders write RGBA16Uint at colour 1 between two float targets, and the all-integer entry point (fs_uint, main0_u) made Metal refuse the pipeline for the float ones; a pixel shader whose outputs are partly integer bits now also has main0_m, which returns only those as integers (uint_mask_m in the reflection, 336 shaders here), and pso_desc takes it when the bound targets' integer formats are exactly those outputs (pso_mixed_uint). Chain version dec5ee141a9f. nvn_mtl.m tex_by_id: a cube view whose layer count is not a multiple of 6 (a view of one layer, as the player leaves the house) aborted in Metal; it now counts its layers in cubes when they fit, and is read as a 2D array with a red line otherwise. Packaged textures: the game writes beside its textures in the 16 KB host pages they share with other data, so each such write re-uploaded the texture, 73k re-uploads over a few minutes and frames from 33 to about 75 ms; the bytes of a texture's storage that lie in its shared first and last pages are kept after each upload (pkg_edges_take), and a dirty texture whose interior pages were not written and whose edge bytes are unchanged is re-protected without a re-upload (pkg_edges_clean; the packaged-textures log line counts them): 0 re-uploads on the route since. New t_nvn case 6c1 (writes beside a texture, then a real write), 110 checks. hle_nvn.c: nvnDeviceGetWindowOriginMode and nvnDeviceGetDepthMode, which the game reads without setting either. hle_hid.c: the Poké Ball Plus (Palma): boost mode a no-op, connection enable / disable succeed, GetPalmaConnectionHandle and every handle call fail with an invalid handle (the first boot crashed at SetPalmaBoostMode). hle_offline.c: pdm::QueryApplicationPlayStatistics answers each asked title as never played (the game asks about the Let's Go games; it crashed there next), err::ShowNetworkServiceError is logged. Profile: pad_layout full (the camera is on the right stick), shader groups bin / systemresource, a prewarm list recorded on the Mac over the route above (3,273 lines). Checked: the NSP script packs it from the NSPs alone (Mac and iOS); after the rebase onto 6d42bc9 the host unit tests, the 41 tool tests, t_nvn, t_dirty_slots, t_dirty_race, t_integer_blend, t_upgrade_alias, t_clear_ds and t_stencil_view (under validation) pass, and the route out of the house runs as before. README (games table, a Mac picture of Postwick), AGENTS.md (53 -> 54), docs/development.md and docs/agents 01 / 03 / 04 say so",
-     "Advance Wars 1+2: Re-Boot Camp (0100300012F2A000, base game 1.0.0, Unity 2020.2.1f3 IL2CPP on SDK 10.4.1): game profile, the SDK 10.4.1 sdk build's address-region cuts and a shader split reader for control sections loose in main. Plays on the iPhone (IPA 7.1 GB, user). On the Mac from the boot through the Bink opening movie, the title, Nell's introduction, a new casual campaign and the first training battle (Field Training, Troop Orders): 60 fps in the menus, 30 fps in battle by the game's own limit (present interval 1, the frame's work 33 ms with CPU and GPU mostly idle), FMOD sound through AudioOut, about 2.5 GB resident and 1.6-1.9 GB of Metal allocations, level over a 15-minute run with no red line. sdk_patches.py: the sdk build is The Great Ace Attorney Chronicles' (no virtual address memory there, so it never needed a cut); this game's NPDM declares 16 MB of system resource and nninitStartup (main+0x365310) hands pool - used to StandardAllocator, whose Initialize (sdk+0x2edf90) aborted at boot. The AddressRegionManager constructor (sdk+0x340e90) loads the 1 GB node area with orr w8 / w9, wzr, #0x3fe00000 (the SDK 7 / 8 form, +0x340ea0 / +0x340f3c), cut to 62 MB, and AllocateAddressRegion's 1 GB alignment of regions of 1 GB and more (+0x34109c) to 32 MB, as on DRAGON QUEST XI S's SDK 7.3.2 build. Profile: the NSP script's heap check set a 1 GB pool, as for the other Unity games with virtual address memory, but the game's malloc then ran dry at the first loading screen and Unity's GPU pool allocation (main+0x96f430) halved its aligned_alloc request down to 0 and spun there (frames stopped 17 s in; found with sample on the Mac host); with 2 GB the alias region is mapped up to 2.26 GB (high-water mark +3.27 GB of 4.375) in Engage's 5 GB block. shader_split.py raw_shaders: Bink 2's Unity plugin builds its programs from 32 control sections and code areas in main's read-only segment that are in no GLSLC output and no BNSH file (2 vertex, 22 pixel, 8 compute), so the movies drew white (two shaders not in the map and a program without a vertex shader as the opening movie started). 26 are 0x20-byte records in .data ({code pointer, control pointer, u32 code length, u32 control length}, found through the relative relocations, RELA or RELR: rel_targets); the code takes the other 6 by address, their code area right after the control section's own length or right before it, and two share one; both neighbours can pass the header and length checks (main+0x4a2c670, a compute shader, would have taken the first 0x100 bytes of the next vertex shader's code), so only a code area whose address the code builds with adrp + add nearest to the control section's is taken (adrp_targets). Compute code areas have no header (SDK 10), so the stage is glslc_stage's, and a code area may not hold a control section. Control sections another reader took from main are left alone (Celeste's MonoGame effect). Of the 25 mains on the game drive the reader adds shaders only to this one, so every other profile's tables stay as they were (Celeste and the other games on the second drive not checked: not mounted). 20,424 shaders, all build for the Mac and iOS. Checked: the NSP script packs it from the NSP alone (Mac and iOS), the tool tests pass. README (games table, a Mac picture of the first battle), AGENTS.md (52 -> 53), dm/games/README.md (the heap check's 1 GB is a starting point), docs/development.md and docs/agents 03 / 04 say so",
-     "Stencil-only views of depth-stencil textures with the format-view usage (general, from PR #106, found on Luigi's Mansion 3): every depth-stencil texture in the NVN and Vulkan layers is made with MTLTextureUsagePixelFormatView. A stencil-mode view, a texture built in stencil mode and the depth-stencil copy read stencil through an X32_Stencil8 view of a Depth32Float_Stencil8 texture, which Metal allows only with that usage: Apple GPUs read the view correctly without it (an M4 Pro, 50 frames of a per-pixel stencil pattern at 256x256, no wrong value), but the API validation layer aborts the process at the first such view, so a validation run of Pokémon Legends: Z-A, DRAGON QUEST VII Reimagined or Luigi's Mansion 3 could not get past it. Upgrading the texture when the view appears would recreate a depth buffer in use, so the usage is set at creation (nvn_mtl.m tex_desc) and the stencil exception in tex_need_pfv is gone. The PR set it in tex_desc only; the Vulkan layer had the same gap, since Vulkan needs no mutable-format flag for a stencil-aspect view, so hle_vk.m vkCreateImage sets it on depth-stencil images too (the OpenGL layer makes no texture views). The cost I had expected when this PR was first left out (bc5ba1b: lossless compression) does not show: on an M4 Pro a 2560x1440 depth-stencil texture has the same allocated size with and without the usage, and eight load / store passes take the same GPU time (1.085 / 1.067 ms against 1.063 / 1.074 ms). New test t_stencil_view (16 checks under MTL_DEBUG_LAYER: both NVN depth-stencil formats filled with a per-pixel depth and stencil, the stencil-mode view and the stencil-built texture are views of the texture's own storage, the copy draw carries every depth and stencil value) and a stencil-aspect view case in t_vk_desc (both depth-stencil formats); with the change taken out both abort under validation, and without validation only the usage checks fail. Checked: every other gfx test gives the same result as without the change; on the Mac host against the same build without it, Breath of the Wild for 90 s from boot (60 fps, the same red line) and Super Mario Galaxy 2 for 60 s (60 fps, the same four red lines); Breath of the Wild on the iPhone with the change plays as before (user). docs/agents/04-graphics.md no longer says the stencil view needs no format-view usage",
-     "iOS: an embedded module with an empty patch area is mapped without it (from PR #94). 87 of Super Smash Bros. Ultimate's 98 NROs have nothing to rewrite (no x18, SVC or TLS register use), so patch_nso.py writes no patch area and gen_embed.py packs a 0-byte x1 piece for them; map_image still remapped it, and vm_remap refuses 0 bytes (KERN_INVALID_ARGUMENT), which stopped the app at launch at the first such NRO, as the PR's author found on an iPhone (FATAL nro1 vm_remap ... (0 bytes) failed: 4). ff64352's iPhone run used a build from before d979c34's loader, so the merged build had not met it. Checked: loader.c compiles for iOS and the Mac with Smash's profile, and the host unit tests pass (the NRO loader test among them); not run on an iPhone (no Smash files here)",
-     "Run-time shader captures on a Mac without Metal 4 (GitHub issue #112: Balatro could not be packed on GitHub's macos-26 runner, a virtual Mac). The GL and Vulkan layers draw on classic Metal queues of their own and take only the device and the present path from the NVN layer, but mtl_device ran the NVN layer's whole start-up, which aborted on the paravirtualized GPU at the MTLResidencySet (and, past it, at the MTL4CommandQueue), so the GL capture boot stopped at eglGetDisplay and captured nothing. nvn_mtl.m mtl_init: a device without the Metal 4 GPU family, or one where the residency set or the Metal 4 queue cannot be made, now starts only the classic part (queue, shared event) when the caller came through mtl_device_classic (hle_gl.m, hle_vk.m), says so in one red line, and drops every present (present_enqueue gives ticket 0, so nothing waits on the present path), which a headless capture does not need; an NVN game still stops there, with a message naming the device and the reason. DM_TEST_NO_METAL4=1 takes the same path on any Mac. Checked on this Mac (M6): the NSP script for Balatro (--platform mac) with DM_TEST_NO_METAL4=1 captured the 35 shaders gl_capture.tsv lists in 1 s, translated them and built the Mac host; booted headless for 20 s without the switch, the host starts Metal 4 as before (35 shader table entries, no red line, graceful exit), and with the switch and the shader library the game runs the 20 s with presents dropped and exits gracefully. Not checked: the Vulkan capture (Super Mario Galaxy, Galaxy 2; same call, no NSPs here) and a real virtual Mac. docs/development.md (build step 4) says so",
-     "NVN and AudioOut fixes from PRs #105, #107, #108, #109 and #110 (general, found on Luigi's Mansion 3): no blending on integer targets, primitive restart in fan and quad expansion, partial depth-stencil clears, every name of an upgraded texture, the SDK's AudioOut fields. nvn_mtl.m pso_desc (#105): an integer colour target took the game's blend enable, and Metal refuses such a pipeline with an assertion even without the API validation layer (checked on this Mac); Maxwell ignores blending on integer targets, so it is off for them. draw (#110): indexed triangle fans and quads expanded on the CPU read the restart index as a vertex and joined the polygons across it, and the extra triangles cleared parts of Luigi's Mansion 3's cached shadow depth; nvn_primitive.h ends a polygon at the restart index (compared before the base vertex), at most as many triangles as before. OP_CLEAR_DS (#108): a depth-stencil clear whose scissor does not cover the target, or whose stencil mask is partial, cleared the whole target before the first draw, and a partial stencil mask did so in a pass too; both are drawn as a triangle now (clear_ds_tri), full clears stay load actions. Logs on the T7 show who takes the new path: Tears of the Kingdom clears 8x8 tiles of a 64x64 depth target (each clear wiped the whole target), AI: THE SOMNIUM FILES clears 1280x720 of a 1920x1080 one. tex_upgrade (#107): a texture recreated to add a usage replaced only the asking serial and one sharing-table entry, so other serials on the same storage read the old copy; every entry in g_by_serial, g_ghost and g_alias now moves to the new texture in place, g_alias_set follows, and the old one is retired after the submissions that used it. hle_audio.c (#109, reworked): the host left the guest AudioOut zero, and middleware that checks its first word before Stop / Close skipped the close, freed its PCM and the host's consumer read freed memory (SIGBUS on resume in Luigi's Mansion 3). The PR wrote 1 and cleared it on close; the SDK's OpenAudioOut (SDK 8, 12, 18 and 20 checked) writes sample rate, channel count, sample format and state at +0 / +4 / +8 / +0xc, its getters load from there, and CloseAudioOut only sets the state to stopped, so the host now writes the same (au_info). New tests t_integer_blend (63 checks), t_primitive_restart (37), t_clear_ds (43), t_upgrade_alias (10) in the gfx run list, and an AudioOut fields and lifetime case in t_audio (12 guarded open / close / unmap / resume cycles, silent sink and real output). Checked: the four new tests pass under Metal validation; every other gfx test gives the same result as on main (t_fuse_check, t_reorder_chain, t_defer_chain, t_mip_extent, t_rt_range_ro and t_rt_range fail the same cases on both; t_refl finds no reflection samples in this checkout's shader cache); the host unit tests pass; on the Mac host for 90 s from boot, against main built the same way: Breath of the Wild over the title, 60 fps and the same red lines; AI: THE SOMNIUM FILES (shaders built by the NSP script on this chain), whose 1280x720 depth clears at the start of a pass now take the triangle path too (from pass 119), 60 fps, no red line, 5 long frames against 12. Not taken from this batch: #106 (the stencil-only view of a depth-stencil texture works without format-view usage; only the validation layer asks for it, and the PR would put that usage on every depth-stencil buffer), #111 (an opt-in draft with no memory saving shown), #104 (Mac app bundle)",
-     "Bayonetta 3 (01004A4010FEA000, update 1.2.0, PlatinumGames' engine on SDK 13.3.2): game profile plus general changes to the Oodle tool mode, the shader split and the NVN layer. Plays on the iPhone (IPA 14.2 GB). On the Mac from the boot through the title, a new game (Standard, Naive Angel Mode off, brightness, the auto-save notice), the VP9 opening movie and the prologue's first real-time scene and play: 60 fps in play (frame time p50 16.67 / p95 17.5 ms, GPU about 5 ms a frame on an M6), 30 where the game asks for it (title, loading screens), sound, about 2 GB resident and 3.1 GB of Metal allocations, flat after the first scene; the title is up about 15 s after launch with a warm shader cache. hle_oodle.c: everything is in 72 PKZ archives (14 GB) of DAT archives whose entries are Oodle Kraken or stored, and this main reads them only through Oodle's streaming decoder (main+0xcbc698 / +0xcbc7f8), so OodleLZ_Decompress was never linked in and its name string is not there; when a main has no such name the tool mode now finds OodleLZDecoder_MemorySizeNeeded / Create / Destroy / DecodeSome (the two functions that pass oodlelzcompressors.cpp to Oodle's error handler, the first also taking the legacy-compressor message, and the two functions between them, checked) and decodes each request with them; games with OodleLZ_Decompress take the same path as before. shader_split.py: PKZ archives (pkz_entries, pkz_jobs: every entry, decoded by the game's own decoder in the Mac host), DAT archives (pgdat_members; a file that only starts with DAT\\0 but whose tables do not fit is scanned as before) and PlatinumGames' shader objects (pg_shader: VSO / PSO / CSO / HSO / DSO, a control section and a code area each, single-stage programs): 8,024 objects, all in root_000.pkz, 6,424 distinct keys; all build but two domain shaders (subgroup operations), which are never drawn. profile_guess.py turns on oodle_packs for Kraken PKZ archives, so the NSP script hands the split the Oodle host. hle_nvn.c: the engine checks each shader object's GPU code version against the driver's range (main+0xd0da20) and refused its first built-in shader, hwfillcolor.vso at 1.15, against the 1.14 the host reported (Super Mario Odyssey's SDK 7 table), so nnMain's start-up failed and the shutdown read an uninitialized pool (main+0xb8462c); a driver runs the code of its own SDK's GLSLC, so the newest version reported now follows the SDK: 1.15 from SDK 8, 1.16 from SDK 13, and at least a GLSLC the game carries, as before. Also nvnWindowGetCrop and nvnSamplerBuilderGetLodClamp, red stubs before. Profile: pad_layout full, mem_used 116 MB, shader groups core / eff, a prewarm list recorded on the Mac over the route above (678 lines). Checked: the NSP script packs it from the NSPs alone (Mac and iOS), the host unit tests and the six tool test files pass, and profile_guess.py --check gives the same results as before. README (games table, a Mac picture of the prologue), AGENTS.md (51 → 52), docs/development.md and docs/agents 01 / 03 / 04 say so",
-     "Super Smash Bros. Ultimate (01006A800016E000, update 13.0.5, SDK 8.2.1): game profile, NRO modules on iOS, data.arc shaders. Plays on the iPhone (IPA 17.5 GB, all 99 DLC licences)"
+     "README: gallery cells aligned to the top (valign), so the pictures of a row line up when their captions take different numbers of lines; GitHub centred them vertically, and 10 of the 19 rows were uneven (measured with GitHub's rendered markdown and stylesheet in headless Chrome), none now",
+     "README: the games gallery as an HTML table whose three columns are each 33% wide. In a Markdown table GitHub sizes each column by its caption text and shows images at max-width 100%, so with width 256 the pictures still came out 230, 256 and 222 px wide; with equal columns all 56 are 251 px (measured with GitHub's rendered markdown and stylesheet in headless Chrome at GitHub's README width). At phone width a column cannot be narrower than its longest word, so they differ by a few pixels there",
+     "Stardew Valley (0100E65002BB8000, update 1.6.15.13, MonoGame on Sickhead's BRUTE, SDK 20.5.27): game profile, no host change. Plays on the iPhone (IPA 0.6 GB, user). On the Mac: the title, a new farm (character creation with the software keyboard, Skip Intro), the farmhouse, the farm and its tools, the bus stop, Pelican Town by day and night, Pierre's shop and a purchase, the game menu, the mail, a night's sleep and its save, Load from the title, and the Co-op menu (Online Communication goes back to the title with no network): 60 fps (frame time p50 16.67 ms, p95 16.8 ms; GPU about 0.6 ms a frame on an M6; CPU 8% of a core), sound, 0.93 GB resident in play and flat over the last 10 of 23 minutes, no red line. About one frame in 800 takes 24-47 ms of the game's own CPU time (no pipeline build, upload or present in it; the main thread otherwise sleeps 95% of each frame in SleepThread, whose host sleep is exact), probably BRUTE's Boehm collector, not checked further. The two changes this game needed came before it from PR #120 (compressed XNB shaders, the Mac text box releasing the buttons that opened it). Profile: the provisional profile's guesses held (no system resource, a 2.96 GB heap in the 4 GB layout, mem_used 218 MB for the rewritten modules); 65 shaders (64 MonoGame effects in main, one in the LZ4 XNB Content/Effects/ShadowRemove.xnb); pad_layout full (main imports no touch screen or mouse; the D-pad in menus, the right stick for the cursor); a prewarm list recorded on the Mac with prewarm off over the route above (6 lines: SpriteBatch's two shaders and four pipelines; with it nothing was built on demand). Checked: the NSP script packs it from the NSPs with the profile in dm/games; the 41 tool tests pass. README (gallery, a Mac picture of the farm), AGENTS.md (55 -> 56) and docs/development.md say so",
+     "README: every gallery picture shown at one size (img width 256). GitHub sizes a table column by its widest content, so a long caption widened its column and the Markdown image stretched with it; all 55 pictures are 16:9",
+     "README: the games gallery in 3 columns, sorted by title (ignoring case, accents and a leading The), with shorter captions: the IPA's size, \"60 fps with <update>\" where that update gives 60 fps (one line above the table says it is 30 on the Switch), and the notes that matter to a player (played by touch, controller only, Japanese, offline, no Mii heads). Update versions not needed for 60 fps are left out, as Pack an IPA says any version works. 55 games in 19 rows instead of 28",
+     "README: point to NX2Apple (from issue #130), a community fork with a macOS app that runs the NSP pipeline and packs the RomFS into a sharded archive for a slimmer IPA, for people who prefer a graphical interface to the command line",
+     "NSP script: a title ID no profile has is looked up by its main build (general, from issue #114). A regional release of a build a profile registers has another title ID (Advance Wars 1+2: Re-Boot Camp's main 320a17744aefd67fec5738ca0c629795 under 0100300012FFF000 as well as 0100300012F2A000), so game.py by_title found nothing and the script surveyed it as an unknown game with a provisional profile. same_build now extracts only the code modules (nx_extract --manifest: no game files written) of the base game with its newest update, then of the base game alone, and game.py by_build looks main's build ID up in every profile's build rows; a match packs from a profile derived from that one (derive_profile), with the folder's title ID and main.npdm's program ID (the host reports that program ID and answers save data queries for it) and shaders split from the title's own files, since its RomFS may differ. The closing message says the derived build is the profile's registered build under another title ID instead of a version it was not brought up on. No two of the 56 registered main builds are in more than one profile. New test test_nsp_alias.py (by_build, the update-then-base order, the derived profile's IDs); the 44 tool tests pass. Checked: the script on Advance Wars' NSP with its title ID made to read as 0100300012FFF000 found profile 0100300012F2A000's v0 in 2 s, packed for the Mac (20,424 shaders) and the build ran 90 s headless with no red line; the real title packs as before, with no lookup. docs/development.md says so",
+     "Compressed MonoGame XNB shaders and the Mac text box (general, from PR #120, found on Stardew Valley). shader_split.py: MonoGame's compressed XNB files, ContentCompressedLzx (flag 0x80: a CHMLib-style LZX decoder with a 2^16 window inside XNB block framing) and ContentCompressedLz4 (0x40: one raw LZ4 block), are decompressed before the readers (xnb_decompress); for LZX only the first block is decoded unless it names EffectReader. An MGFX shader whose length runs past the data is no effect (a red line in an XNB). Stardew Valley's 3,549 XNB files (3,535 LZ4, 8 LZX, 6 plain) all decode to their declared sizes, and its one content effect (Content/Effects/ShadowRemove.xnb, LZ4) is now split: 65 shaders, 64 before. Celeste's uncompressed XNBs give its profile's tables byte for byte. front_mac.m: while the text box is up the game window sees no key-up or mouse-up, so the button or click that opened it stayed pressed and was read the moment the box closed (Stardew Valley's character creation re-opened the keyboard after every OK); the keyboard buttons, the WASD stick and the touch are released when the box opens. The box also stays up, saying so, while the text is shorter than ShowKeyboardArg's minimum length (+0x3b0, hle_swkbd.c g_swkbd_min_chars), as the applet keeps OK disabled. Left out of the PR: writing the text's byte count into the String's +8. The SDK's ReadCloseResultAndString (Pikmin 4's sdk+0x39b7d0) reads String{pointer, capacity} and copies at most the capacity, and GetInteractiveOutStorageCallback restores +8 after changing it, so on hardware +8 stays the game's capacity; t_swkbd now checks it is unchanged on every path (17/17). Checked: Stardew Valley packs from its NSPs with a provisional profile and boots on the Mac to the title, and in character creation (DM_KBD) Name, Farm Name and Favorite Thing each take the text from one keyboard call and OK starts the intro, with +8 left as the capacity; the host unit tests and the 41 tool tests pass. Not checked: the Mac text box by hand (a scripted DM_KBD never shows it), and no game here asks for a minimum length. The NSP script's MonoGame survey note and docs/agents/04 say so"
     ]
    }
   ]
@@ -1834,21 +1861,21 @@
   ]
  },
  "HachiMiku39/pjdv_mega39s_ios": {
-  "pushed_at": "2026-10-24T05:23:44Z",
+  "pushed_at": "2026-10-24T15:59:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T05:12:54Z",
+    "last_commit": "2026-10-24T15:37:55Z",
     "subjects": [
+     "Publish audited build17 source archive and bilingual release guide",
+     "docs: record M4 hot-switch recovery",
+     "docs: add complete English README and local candidate test status",
      "docs: record M4 confirmation of restored MetalFX clarity",
      "fix: preserve Touch Play strokes and add ProMotion research path (build16)",
      "fix: bound XCI import memory and add diagnostics (build14)",
      "docs: clarify XCI import methods and Files root setup",
-     "feat: add app-root XCI import and transfer progress diagnostics",
-     "fix: prepare iPad XCI file selection compatibility candidate",
-     "feat: publish host/runtime sources and Mac file import fix candidate",
-     "docs: publish build10 compatibility preview and validated limits"
+     "feat: add app-root XCI import and transfer progress diagnostics"
     ]
    }
   ]
@@ -1874,19 +1901,19 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-24T10:58:00Z",
+  "pushed_at": "2026-10-24T15:55:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T10:57:59Z",
+    "last_commit": "2026-10-24T15:55:48Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（187 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
-     "chore: 自动同步 Star 地图（185 个项目）",
      "chore: 自动同步 Star 地图（185 个项目）",
      "chore: 自动同步 Star 地图（185 个项目）"
     ]
@@ -1902,12 +1929,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-24T04:47:11Z",
+  "pushed_at": "2026-10-24T11:13:32Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T04:47:10Z",
+    "last_commit": "2026-10-24T11:13:31Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2312,12 +2339,28 @@
   ]
  },
  "williamwue/d2r-mobile": {
-  "pushed_at": "2026-10-15T22:55:35Z",
+  "pushed_at": "2026-10-24T11:44:45Z",
   "branches": [
+   {
+    "branch": "feature/android-upstream-v2.0.0",
+    "ahead": 1,
+    "behind": 6,
+    "files": 3,
+    "real_files": 3,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-10-23T09:17:47Z",
+    "subjects": [
+     "fix(tooling): refresh upstream Android validation fixtures"
+    ]
+   },
    {
     "branch": "main",
     "ahead": 6,
-    "behind": 0,
+    "behind": 21,
     "files": 47,
     "real_files": 46,
     "dirs": [
@@ -4789,7 +4832,7 @@
   ]
  },
  "oneincase/d2r-mobile": {
-  "pushed_at": "2026-10-23T18:39:30Z",
+  "pushed_at": "2026-10-24T12:51:13Z",
   "branches": []
  },
  "zJiaJun/d2r-mobile": {
@@ -7500,7 +7543,7 @@
   ]
  },
  "beginor/d2r-mobile": {
-  "pushed_at": "2026-10-19T08:58:04Z",
+  "pushed_at": "2026-10-24T14:35:48Z",
   "branches": []
  },
  "bluewater0121/d2r-mobile-a12z": {
@@ -7563,21 +7606,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-10-21T22:37:11Z",
+  "pushed_at": "2026-10-24T11:40:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-21T22:33:53Z",
+    "last_commit": "2026-10-24T11:31:34Z",
     "subjects": [
-     "Release v0.1.21 build34 with audited iOS26 and iOS18 shell workflow",
-     "Document v0.1.8 build 30 camera album release",
-     "Remove local camera copy after confirmed Photos save",
-     "Add asynchronous add-only Photos export for game camera",
-     "Simplify public feature and validation notes",
-     "Release v0.1.7 build 28 with amiibo import",
-     "Add NFC and amiibo import without performance branch changes",
-     "Release v0.1.6 build 21 with map UI shaders only"
+     "Release v0.3.28 with private temporary storage",
+     "Release v0.3.27 with upstream rendering audio lifetime and empty-module fixes",
+     "Integrate upstream GPU safety NVN queries and iOS NRO embedding",
+     "Use neutral label colors for Personalization disclosure",
+     "Group launcher preferences under collapsible Personalization with separate cards",
+     "Integrate upstream PSO scheduling game rumble gestures and Mac NRO lifecycle",
+     "Integrate upstream upload readback presentation audio fixes and touch feedback",
+     "Release v0.3.20 with camera saves and LiveContainer Photos compatibility"
     ]
    }
   ]
@@ -7861,21 +7904,21 @@
   ]
  },
  "Xc1Ym/LumaDock": {
-  "pushed_at": "2026-10-24T08:19:01Z",
+  "pushed_at": "2026-10-24T15:50:05Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T08:00:30Z",
+    "last_commit": "2026-10-24T15:04:26Z",
     "subjects": [
-     "Release LumaDock 0.2.7",
-     "Merge pull request #10 from Xc1Ym/codex/fix-dlc-extraction",
-     "Merge pull request #8 from Xc1Ym/codex/sak-file-conversion",
-     "fix: pass engine source directory when extracting DLC",
-     "feat: bundle SAK-Mac file conversion tools",
-     "Merge pull request #5 from Xc1Ym/codex/concise-readme",
-     "docs: streamline bilingual README and development guides",
-     "Merge pull request #4 from Xc1Ym/codex/build-error-diagnostics"
+     "Release LumaDock 0.2.8",
+     "Merge pull request #11 from Xc1Ym/codex/s2arm-game-progress",
+     "Merge pull request #12 from Xc1Ym/codex/chain-header-guard",
+     "merge: integrate shader header compatibility with milestone progress",
+     "fix: preserve legacy shader chain headers",
+     "fix: read the shader chain header from the upstream shared location (#9)",
+     "fix: simplify milestone text for Swift type checking",
+     "feat: adapt S2Arm milestone progress for game preparation"
     ]
    }
   ]
@@ -8779,21 +8822,21 @@
   ]
  },
  "alexgaoth/awesome-reverse-engineered": {
-  "pushed_at": "2026-10-23T11:57:43Z",
+  "pushed_at": "2026-10-24T11:17:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T11:57:40Z",
+    "last_commit": "2026-10-24T11:17:41Z",
     "subjects": [
+     "Nightly refresh 2026-10-24 (#49)",
      "Nightly refresh 2026-10-23 (#48)",
      "Keep the count in mcp/README.md in step with the data (#47)",
      "Add the Resurrected page: 131 products their makers killed, kept alive by open source (#46)",
      "README in Vietnamese and Brazilian Portuguese (#45)",
      "Share card: 16,000+ projects (#44)",
      "Update index: round 15: game decomps, recomps and ports, revived servers and devices, REA-era lists (16,844 projects) (#43)",
-     "Add an MCP server for the index (#41)",
-     "Nightly refresh 2026-10-22 (#38)"
+     "Add an MCP server for the index (#41)"
     ]
    }
   ]
@@ -8858,23 +8901,8 @@
   ]
  },
  "svich/d2r-mobile": {
-  "pushed_at": "2026-10-23T07:24:52Z",
-  "branches": [
-   {
-    "branch": "perf/arena-out-params",
-    "ahead": 1,
-    "behind": 2,
-    "files": 1,
-    "real_files": 1,
-    "dirs": [
-     "dm/gfx"
-    ],
-    "last_commit": "2026-10-23T07:22:55Z",
-    "subjects": [
-     "Graphics: the arena buffer out-parameter no longer goes through the autorelease pool"
-    ]
-   }
-  ]
+  "pushed_at": "2026-10-24T14:57:26Z",
+  "branches": []
  },
  "derron/d2r-mobile": {
   "pushed_at": "2026-10-23T09:22:07Z",
@@ -9032,21 +9060,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-10-24T10:37:30Z",
+  "pushed_at": "2026-10-24T15:57:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T11:12:48Z",
+    "last_commit": "2026-10-24T15:57:24Z",
     "subjects": [
-     "Take the system resource from the NPDM, and never pass its zero",
-     "Do not carry git apply leftovers into the tree",
-     "Rebase onto upstream 6d42bc9 (Metal 4 device classes, 159 lines of shader_split)",
-     "Say which shader route a game takes, and refuse the two that need a capture",
-     "Name this fork's commit in the version, so a fix cannot hide behind the old tag",
-     "Build a shader library from source when the package carries source",
-     "Give the newly carried values to derived profiles only",
-     "Key the shader-prep marker by the package, not by the source tree"
+     "Vulkan games on Windows: translate the SPIR-V here, compile it on the device",
+     "Revert the nninitStartup switch: it solved a problem that did not exist",
+     "Absolum 1.0.4: the 40 GB malloc region cut, at this build's address",
+     "Take nninitStartup from the SDK when the profile says so",
+     "A LOVE game's shaders without running it",
+     "Derive a module list from the profile, not from the files",
+     "Read the shader source under the name the packer writes",
+     "Report which half of a shader lookup failed, and take the file's only entry point"
     ]
    }
   ]
@@ -9242,14 +9270,14 @@
   ]
  },
  "fallenwood/d2r-mobile": {
-  "pushed_at": "2026-10-24T07:10:27Z",
+  "pushed_at": "2026-10-24T15:30:41Z",
   "branches": [
    {
     "branch": "windows_arm64",
-    "ahead": 1,
-    "behind": 6,
-    "files": 80,
-    "real_files": 78,
+    "ahead": 5,
+    "behind": 0,
+    "files": 87,
+    "real_files": 85,
     "dirs": [
      "dm/README.md",
      "dm/README.zh-CN.md",
@@ -9260,9 +9288,26 @@
      "dm/verify",
      "dm/windows"
     ],
-    "last_commit": "2026-10-24T07:09:22Z",
+    "last_commit": "2026-10-24T15:30:22Z",
     "subjects": [
+     "Merge origin/main into windows_arm64",
+     "Add Windows target FPS control and fix Vulkan paths",
+     "Fix Windows audio dropouts and reduce presentation stalls",
+     "Improve Windows ARM64 performance and fix guest stack bounds",
      "Add native Windows ARM64 host and desktop input"
+    ]
+   }
+  ]
+ },
+ "Vincent199008/c": {
+  "pushed_at": "2026-10-24T14:52:29Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-24T14:52:28Z",
+    "subjects": [
+     "Initial commit"
     ]
    }
   ]
