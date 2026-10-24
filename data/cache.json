@@ -341,14 +341,14 @@
   ]
  },
  "n3crosis/d2r-mobile": {
-  "pushed_at": "2026-10-23T19:10:32Z",
+  "pushed_at": "2026-10-24T04:41:32Z",
   "branches": [
    {
     "branch": "feature/web-ipa-packager",
-    "ahead": 235,
-    "behind": 1,
+    "ahead": 238,
+    "behind": 0,
     "files": 300,
-    "real_files": 292,
+    "real_files": 294,
     "dirs": [
      "dm/host",
      "dm/i18n",
@@ -361,16 +361,16 @@
      "web/APP_CUSTOMIZATION.zh-CN.md",
      "web/ARCHIVE_READER_SCOPE.md"
     ],
-    "last_commit": "2026-10-23T19:10:02Z",
+    "last_commit": "2026-10-24T04:41:22Z",
     "subjects": [
+     "Remove stale verification history and brittle UI test assertions [skip ci]",
+     "Trim upstream documentation and redundant tests [skip ci]",
+     "Merge upstream map-size persistence fixes",
      "Clarify unsupported browsers, remove optional full hashing and align CI formatting",
      "Align browser sources with contribution guidelines and preserve bundled notices",
      "Export direct data folders and verify existing resources before reuse",
      "Publish verified preview to Pages and expose D2R cache folder",
-     "Merge upstream main through 758f5d4",
-     "Refresh derived overlay fingerprints for signing recovery copy",
-     "Wait for signed output before publishing download readiness",
-     "Show foreground and first-build timing reminder"
+     "Merge upstream main through 758f5d4"
     ]
    },
    {
@@ -390,7 +390,7 @@
    {
     "branch": "pr/web-ipa-packager",
     "ahead": 1,
-    "behind": 1,
+    "behind": 0,
     "files": 300,
     "real_files": 292,
     "dirs": [
@@ -405,7 +405,7 @@
      "web/APP_CUSTOMIZATION.zh-CN.md",
      "web/ARCHIVE_READER_SCOPE.md"
     ],
-    "last_commit": "2026-10-23T19:10:21Z",
+    "last_commit": "2026-10-24T03:31:13Z",
     "subjects": [
      "feat(web): add local browser IPA packager"
     ]
@@ -1291,11 +1291,11 @@
   ]
  },
  "ilderaj/d2r-mobile": {
-  "pushed_at": "2026-10-13T05:35:04Z",
+  "pushed_at": "2026-10-24T04:01:49Z",
   "branches": []
  },
  "MichaelC001/d2r-mobile": {
-  "pushed_at": "2026-10-23T02:31:17Z",
+  "pushed_at": "2026-10-24T02:31:20Z",
   "branches": []
  },
  "tinytub/d2r-mobile": {
@@ -1483,21 +1483,21 @@
   ]
  },
  "d2r-mobile/d2r-mobile": {
-  "pushed_at": "2026-10-23T20:16:09Z",
+  "pushed_at": "2026-10-24T01:39:10Z",
   "branches": [
    {
     "branch": "dev",
     "mirror": false,
-    "last_commit": "2026-10-23T20:12:09Z",
+    "last_commit": "2026-10-24T01:39:03Z",
     "subjects": [
+     "Tidy acknowledgements",
      "Keep Android driver inputs optional",
      "Support parked Android Auto launches",
      "Release Android input on lifecycle changes",
      "Add Android controller input",
      "Persist Android driver selection",
      "Honor Android power saving frame limits",
-     "Add Android driver dispatch and display settings",
-     "Preserve the selected map size"
+     "Add Android driver dispatch and display settings"
     ]
    }
   ]
@@ -1663,21 +1663,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-10-23T04:22:43Z",
+  "pushed_at": "2026-10-24T04:13:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T04:22:42Z",
+    "last_commit": "2026-10-24T04:13:10Z",
     "subjects": [
+     "radar 2026-10-24",
      "radar 2026-10-23",
      "radar 2026-10-22",
      "radar 2026-10-21",
      "radar 2026-10-20",
      "radar 2026-10-19",
      "radar 2026-10-18",
-     "radar 2026-10-17",
-     "radar 2026-10-16"
+     "radar 2026-10-17"
     ]
    }
   ]
@@ -1763,21 +1763,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-23T17:52:26Z",
+  "pushed_at": "2026-10-24T03:39:03Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T17:52:16Z",
+    "last_commit": "2026-10-24T03:38:12Z",
     "subjects": [
-     "test_xcode_workflow.py: the provisional-warning test calls report_profile_status with its artifact name ('Xcode project'), the argument 98a91a6 (--platform mac) put in place of prepare_xcode; it failed with a TypeError since. The five tool and workflow test files pass (37 tests)",
-     "Balatro (0100CD801CE5E000, update 1.1.3, LÖVE 11.4 \"love-nx\" with LuaJIT and SDL on SDK 18.3.2): game profile and the GL layer LÖVE needs, plus four general changes. Plays on the iPhone by touch; on the Mac from the intro and the title into a run and its tutorial, at 60 fps with sound, about 0.65 GB resident and flat over three minutes. The game is Lua source in the RomFS and renders with NVIDIA's desktop OpenGL through EGL, as Digimon does. GL layer (dm/gfx/gl/hle_gl.m): LÖVE reads GL_CONTEXT_PROFILE_MASK and takes its core-profile paths only when it says core (with a compatibility profile it streams vertices from client memory, which Metal cannot draw from), so the layer answers core and implements what those paths use, about 150 functions in all against Digimon's 79: persistently mapped buffers (glBufferStorage, glMapBufferRange: the shared MTLBuffer's own memory), glBufferSubData in command order, fences (a fence is the serial of the command buffer being recorded; a wait on one still recording commits it), glBindAttribLocation (the game's attribute index of each Metal input, set at the link) and current attribute values (glVertexAttrib4f: LÖVE's VertexColor and ConstantColor are disabled arrays), glGetActiveUniform and the uniform read-backs, every glUniform* form, glTexStorage2D / 3D with their level counts, 3D and 2D array textures (LÖVE makes a default of each type on 96 units), GL_TEXTURE_SWIZZLE_* (its font glyphs are RG8 read as R, R, R, G), glGenerateMipmap as a blit (the game's images are mipmapped), instanced and base-vertex draws, separate read and draw framebuffers, glBlitFramebuffer (colour, same size), glReadPixels, glClearBufferfv, glFrontFace and the EGL calls SDL makes; stack arguments of the functions with more than eight are 64-bit, as AAPCS64 lays them out. DM_GL_STUBS=1 gives every GL name the layer lacks a stub of its own that reports its first call, instead of a null pointer. Shaders: LÖVE puts its 35 GLSL sources together at run time in Lua, so the NSP script captures them on the Mac as it does Super Mario Galaxy's SPIR-V (capture_shaders now serves both, profile gl_capture.tsv; profile_guess.py's gl_capture rule: an OpenGL game with no GLSL source in its RomFS or main), and gl_shaders.py keeps a bool uniform's declared type (a uint in SPIR-V; LÖVE's Shader:send takes only a boolean for a bool) and takes from main only strings that start with '#version <number>' (Balatro's main has glslang's messages). General: profile_guess.py leaves vkGetInstanceProcAddr, SDL's Vulkan loader, out of its Vulkan count (Balatro's provisional profile said Vulkan; Hades and both Galaxies import 99 or 100 Vulkan functions); OpenAudioRenderer without an event now starts the host's render thread too (hle_audren.c ar_open: only the form with an event did, and such a game was silent); loader_census.py follows registers in a straight line (adrp, add, loads through relocated GOT entries, mov, csel), for LÖVE's glad, whose pointers are globals its code keeps the addresses of in registers; and the iPhone gamepad has a third layout, Tap (profile pad_layout touch, which needs op_mode handheld; DM_GAME_PAD_LAYOUT replaces DM_GAME_PAD_FULL): no control but the layout button, every touch to the game, offered in the layout cycle only in handheld mode. Profile: op_mode handheld (the Switch build plays by touch there), pad_layout touch, gl_capture.tsv. A Lua error makes Balatro quit (its Switch error handler), and love-nx's video worker is then deleted twice (main+0x339c00): the bring-up notes say how the errors were found. Checked: the NSP script packs it from the NSPs alone (the capture in under a second, 35 shaders for the Mac and iOS, an 82 MB IPA), tool tests pass, profile_guess.py --check changes no other profile; Digimon was not rerun (its files are not on hand). README (games table, a Mac picture of the title), AGENTS.md (47 → 48), docs/development.md, docs/agents and the READMEs of dm/games and dm/gfx say so",
-     "Readable-tile variants compile again for pixel shaders with an integer-output entry point (main0_u), from PR #83",
-     "Mac: each controller is a player of its own, for local co-op (GitHub issue #74), from PR #84",
-     "NSP script: --platform mac (PLATFORM = 'mac') builds only what running a game on this Mac needs, from PR #82",
-     "shader_split.py reads GLSLC outputs of several stages: Baba Is You (01002CD00A51C000, no profile) keeps its shaders as 120 GLSLC outputs in RomFS/Assets.dat, each a pixel and a vertex shader compiled together, then a reflection section, and glslc_shaders took only outputs of one control section, so the NSP script's split found 0 shaders and the pack stopped one step later with \"no iOS shader libraries\". An output with more than one control section is now read by its section headers (glslc_section returns every GPU code section, glslc_program checks each stage and needs distinct stages); its stages are labelled #GLSLC@<offset>#var, so var_pairs pairs them with each other and separable_pairs leaves them out of the single-stage cover. The NSP script stops at the split when it finds no shader, with the reason, instead of at the iOS shader step. Checked: Baba Is You splits into 131 shaders (115 pixel, 16 vertex) and 115 pairs, and its pack built BabaIsYou.ipa from the provisional profile with 131 of 131 shaders ready (not run on an iPhone); the split's tables for 13 Sentinels, AI: THE SOMNIUM FILES, Raging Loop, Metroid Dread and Age of Calamity are byte-identical to their profiles', and no main on the game drive holds an output of several stages. docs/agents/04-graphics.md says so",
-     "Mac, in fullscreen: a screen whose refresh rate is not a multiple of the game's frame rate switches to one that is (144 → 120 Hz), from PR #79",
-     "One translation chain version for every game: DMSH_CHAIN in dm/gfx/nvn/dmsh_chain.h replaces the 47 dm/games/<id>/dmsh_chain.h, which every chain change rewrote and some were left behind (GitHub issue #78). The version hashed each profile's shader tables and nvn_* / shader_* keys too, once the only thing that kept the host off a library built from older tables; each shader's cache key (dmsh_build.py shader_key) has covered them since, so the version now covers only the chain's tools (dmsh_chain.py, dmsh_build.py, dmsh_fetch.py, dmsh_vin.py, dmsh_geometry.py, dmsh_facts.py, the translator's source, ios_metal.py, the lock) and the options, and needs no DM_GAME. What the per-game part still did is done by the library itself: a full dmsh_build.py run stamps b-<V>/inputs.tsv (Mac and iOS) with the game and the digest of the profile's inputs (dmsh_chain.py inputs / --inputs: the four shader tables, bf_want.tsv, which the variants use but the version never counted, and the keys), starts from no shader outputs (a partial one from none of the keys it builds), so a key that left the map, a shader that no longer builds or a variant no longer made keeps no old library, refuses a directory stamped for another game, and writes the profile's c1_full.tsv and cb_extent.tsv from its Mac outputs; a partial build keeps the stamp only while it names the current inputs. c1_guard.py / cb_extent.py head their table with the library's chain version and stamp (table_head), and the host takes a table only beside that stamp, logs the stamp and reports one of another game; build_ipa.sh reads the one header and stops when the iOS libraries' stamp is not this profile's current inputs or c1_full.tsv names another. NSP script: chain_header writes the one header when stale, before any host is built; provisional and derived profiles no longer write one; chain_tables makes a table again when it does not name the reused library's stamp (False without one). Makefiles take the header beside nvn_mtl.m; Xcode projects prepared earlier point at a profile header that is gone and are told to prepare again. Tests: test_nsp_chain.py (the committed header is current, stale and missing ones are written, tables against the stamp). Checked on The Great Ace Attorney Chronicles: a full build gave 460 of 460 shaders and both tables (0 and 409 entries, as before), the Mac host booted with the stamp and both tables past frame 900; one added facts row rebuilt one shader under the same chain version with a new digest and new tables, and the host refused the old tables beside the new stamp; a full build removed planted outputs, another game's build into that directory stopped, a partial build after an input change dropped the stamp; build_ipa.sh stopped on a stale stamp, a missing one and a stale or old-form c1_full.tsv; three NSP packs built (no table lines: dmsh_build made them), reused everything, and remade deleted tables from the reused build. Graphics unit tests give the same results as before (on this Mac t_refl needs ~/dm-work's libraries and several GPU tests fail on the previous commit too). AGENTS.md's chain procedure (header once after a tool change; a full shader build makes the tables), dm/games/README.md, dm/gfx/README.md and docs/development.md say so"
+     "Integrate demand-first PSOs, far-base tracing and NRO loading",
+     "Taiko Risshiden V DX (0100346017304000, update 1.1.1, Koei Tecmo's KTGL on SDK 12.3.3): game profile plus two general host changes. Plays on the iPhone by touch (IPA 3.3 GB, Japanese; the game has no English). On the Mac from the notice, the logos and the opening movie through the title, a new game (1560, Kinoshita Tokichiro) with its opening story, the town, a council with a battle proposal, the territory map, a rest at home, a save and a load, and the field battle tutorial, docked with buttons and in handheld mode by touch: 60 fps (frame time p50 16.66 / p95 16.85 ms in the town), sound, about 0.7 GB resident and 1.6 GB of Metal allocations, flat over 15 minutes, no red line on that route. hle_oe.c: oe::SetCpuOverclockEnabled, the first boot's crash (nnMain at main+0x2e1e4c; the SDK's setter reads the apm session the host never opened, null read at sdk+0x362b8, as IsCpuOverclockEnabled did for Monster Hunter Rise); the host keeps the flag and the query reports it. hle_touch.c / hle_hid.c: gestures for hid::GetGestureStates, which answered no entries: the game takes its taps, drags and flicks only from there (main+0x42f1ac acts on types 5-9; its GetTouchScreenState read only tracks the finger), so no tap registered in handheld mode. The host now recognizes them from the same touch points, only in handheld mode as touches, by yuzu's rules (Touch, Press after 0.5 s, Pan, Pinch / Rotate, Cancel on a change in the finger count, then Tap with IsDoubleTap within 0.35 s, Swipe above 400 px/s or Complete, and Idle) plus an 8 px slop before a touch counts as moving, since a fingertip on a phone wobbles; DM_TOUCH_LOG=1 logs the entries, and a DM_CTL line drag <x0> <y0> <x1> <y1> [seconds] moves a finger for testing pans and swipes on the Mac. New unit test t_gesture (43 checks: tap, double tap, slop, slow pan, swipe, press, finger-count cancel, pinch, a press and lift between two reads). Profile: op_mode handheld and pad_layout touch (the Tap layout: the gamepad's corners would cover the cards, the menu icons and the on-screen B button; the layout button brings it back), shaders from eff/ (167 in the G2S container KTGLEffect.g1s, _S2G3000, and 45 GLSLC outputs in main, read by the existing splitter), a prewarm list recorded on the Mac over the route above (18 lines). patches.py: KTGL's frame end (main+0x443e8c) slept in 2 ms rounds until 1/60 s had passed since the frame started, which with about 2 ms of work ended at 18.2 ms: 55 fps in the menus and the town, every 11th frame on screen two vsyncs. The game presents at interval 1, so a cut on this build skips that wait (b.hs → b at main+0x443fd4) and the host's present pacing holds 60; wakeups 2,050 → 320 a second, CPU energy 1.7 → 0.7 mJ a frame. Checked: the NSP script packs it from the NSPs alone (Mac and iOS), the host unit tests and the four tool test files pass. README (games table, a Mac picture of the town), AGENTS.md (49 → 50), docs/development.md and docs/agents/03-bringup.md say so",
+     "Add game rumble for iPhone and Apple game controllers",
+     "dm/gfx/tests/.gitignore: the binaries of t_readback (PR #98) and t_linear_readback (PR #97)",
+     "iOS: add optional haptic feedback for touch-control press edges",
+     "Fix parser-invalid shader split f-string",
+     "Fix nested f-string quoting in NSP build script",
+     "AudioOut: explicitly downmix six-channel PCM for stereo output"
     ]
    }
   ]
@@ -1843,20 +1843,20 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-23T21:23:27Z",
+  "pushed_at": "2026-10-24T04:34:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T21:23:26Z",
+    "last_commit": "2026-10-24T04:34:35Z",
     "subjects": [
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
-     "chore: 自动同步 Star 地图（185 个项目）",
-     "chore: 自动同步 Star 地图（185 个项目）",
-     "chore: 自动同步 Star 地图（185 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
+     "chore: 自动同步 Star 地图（185 个项目）",
+     "chore: 自动同步 Star 地图（185 个项目）",
+     "chore: 自动同步 Star 地图（185 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）"
     ]
    }
@@ -1871,12 +1871,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-23T17:15:05Z",
+  "pushed_at": "2026-10-23T21:31:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T17:15:04Z",
+    "last_commit": "2026-10-23T21:31:45Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -1961,7 +1961,7 @@
   "branches": []
  },
  "hyhou/d2r-mobile": {
-  "pushed_at": "2026-10-15T09:26:30Z",
+  "pushed_at": "2026-10-24T02:24:53Z",
   "branches": []
  },
  "austery/d2r-mobile": {
@@ -2347,14 +2347,14 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-23T18:46:06Z",
+  "pushed_at": "2026-10-24T01:22:11Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 157,
+    "ahead": 158,
     "behind": 12,
-    "files": 55,
-    "real_files": 54,
+    "files": 58,
+    "real_files": 57,
     "dirs": [
      "UPDATE-2026-10-20.zh-CN.md",
      "codemagic.yaml",
@@ -2367,16 +2367,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-23T18:45:58Z",
+    "last_commit": "2026-10-24T01:18:18Z",
     "subjects": [
+     "Portrait mode (launch-orientation lock); release v1.2",
      "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1",
      "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation",
      "Use the supplied portal capsule artwork in the Dynamic Island button",
      "Settings UI plan B, persistent attack-title newline removal, 3D scale 0.9, touch-mode focus frame hidden",
      "Build fix: register characterstatspanelhd.json as touch-only layout",
      "Settings UI three rows, hire-list performance/highlight, skill blue, minimap, capsule island button",
-     "Render at native scale, minimap +10px up/+40px right, smaller HUD names, hire info follows the row",
-     "Hire info follows the tapped merc, Show FPS row forced visible, white HP band, forced quality at native scale"
+     "Render at native scale, minimap +10px up/+40px right, smaller HUD names, hire info follows the row"
     ]
    },
    {
@@ -3437,7 +3437,7 @@
   ]
  },
  "donutnomad/d2r-mobile": {
-  "pushed_at": "2026-10-21T00:54:30Z",
+  "pushed_at": "2026-10-24T00:46:28Z",
   "branches": []
  },
  "funkhua/d2r-mobile": {
@@ -4966,7 +4966,7 @@
   ]
  },
  "kxn/d2r-mobile": {
-  "pushed_at": "2026-10-23T21:19:16Z",
+  "pushed_at": "2026-10-24T04:20:46Z",
   "branches": [
    {
     "branch": "codex/alias-negative-last-gap-v1",
@@ -4994,7 +4994,7 @@
    },
    {
     "branch": "codex/android-native-backup-20261019",
-    "ahead": 424,
+    "ahead": 436,
     "behind": 23,
     "files": 300,
     "real_files": 299,
@@ -5004,16 +5004,16 @@
      "dm/gfx",
      "dm/host"
     ],
-    "last_commit": "2026-10-23T21:19:11Z",
+    "last_commit": "2026-10-24T04:20:44Z",
     "subjects": [
-     "Record real-game Mesa GPU queue profile and expose official renderstage capture",
-     "Record current official GPU counters and clarify covered-range reuse counts",
-     "Record controlled translation execution-rate and present-wait evidence",
-     "Record current CPU budgets and isolated sparse Pool qualification",
-     "Record completed two-TU size optimization comparison without claiming speedup",
-     "Record enabled raster reuse and full residual draw cost audit",
-     "Enable validated ordinary attachment raster runs by default",
-     "Represent repeated ordinary attachment histories as deferred raster runs"
+     "Record repeated CPU profiles and actual retained rejection causes",
+     "Document completed descriptor updates and measured reuse coverage",
+     "Record actual retained command recording coverage from six API frames",
+     "Document descriptor delivery cost and repeated Turnip autotune results",
+     "Record six-window source cost balance and standard Turnip autotune experiment",
+     "Record source forwarding comparison and descriptor buffer capability limits",
+     "Record new callchain verification and qualified control limits",
+     "Record retained drawing cost separation and measured management fixes"
     ]
    },
    {
@@ -5782,6 +5782,54 @@
      "Validate B2T correctness successor without unrelated CPU sampling",
      "Wait for public LLDB stop events before qualifying conditional hits",
      "Use pinned Android executable and linker for startup debugger target"
+    ]
+   },
+   {
+    "branch": "codex/descriptor-buffer-completed-mutation-v1",
+    "ahead": 453,
+    "behind": 23,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-24T03:34:24Z",
+    "subjects": [
+     "Allow completed descriptor-buffer slots to update all typed contents",
+     "Skip packet sealing traversal for descriptor-buffer contexts",
+     "Add optional retained descriptor-buffer delivery with completed-context arenas",
+     "Reuse ordinary image group CPU-source classification before preparation",
+     "Index immutable per-context draw parameter schemas",
+     "Avoid UAB management for jobs past their retention opportunity",
+     "vulkan: reuse completed UAB pools and batch immutable publication",
+     "vulkan: qualify immutable UAB shader and program layouts once"
+    ]
+   },
+   {
+    "branch": "codex/descriptor-buffer-end-seal-v1",
+    "ahead": 452,
+    "behind": 23,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-24T02:56:12Z",
+    "subjects": [
+     "Skip packet sealing traversal for descriptor-buffer contexts",
+     "Add optional retained descriptor-buffer delivery with completed-context arenas",
+     "Reuse ordinary image group CPU-source classification before preparation",
+     "Index immutable per-context draw parameter schemas",
+     "Avoid UAB management for jobs past their retention opportunity",
+     "vulkan: reuse completed UAB pools and batch immutable publication",
+     "vulkan: qualify immutable UAB shader and program layouts once",
+     "test: distinguish ordinary descriptor and actual UAB delivery coverage"
     ]
    },
    {
@@ -7319,54 +7367,6 @@
      "Prepare one real ASTC resource ordinary UID Turnip producer",
      "Version exact Turnip loader and installer fixture checks"
     ]
-   },
-   {
-    "branch": "codex/native-bulk-copy-diagnostic-v1",
-    "ahead": 145,
-    "behind": 23,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T16:04:24Z",
-    "subjects": [
-     "Capture one original ASTC copy refusal with official LLDB",
-     "Add reversible matched native texture game experiment controller",
-     "Require sampled FS caller and explicit native token identity in game proof",
-     "Authenticate real native use and preserve HUD evidence before postconditions",
-     "Handle owned Vivo install confirmation in reversible native game test",
-     "Add reversible original-game single native material validation controller",
-     "Keep native image imports independent of shared Buffer window unions",
-     "Prepare Turnip native family identity over current shared alias backend"
-    ]
-   },
-   {
-    "branch": "codex/native-bulk-counter-snapshot-v1",
-    "ahead": 145,
-    "behind": 23,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T16:32:29Z",
-    "subjects": [
-     "Add once-only official debugger counters to resource residency experiment",
-     "Add reversible matched native texture game experiment controller",
-     "Require sampled FS caller and explicit native token identity in game proof",
-     "Authenticate real native use and preserve HUD evidence before postconditions",
-     "Handle owned Vivo install confirmation in reversible native game test",
-     "Add reversible original-game single native material validation controller",
-     "Keep native image imports independent of shared Buffer window unions",
-     "Prepare Turnip native family identity over current shared alias backend"
-    ]
    }
   ]
  },
@@ -7393,21 +7393,21 @@
   ]
  },
  "iceorange-dev/manosaba-ios": {
-  "pushed_at": "2026-10-23T20:38:53Z",
+  "pushed_at": "2026-10-24T00:41:03Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T20:18:55Z",
+    "last_commit": "2026-10-24T00:35:29Z",
     "subjects": [
-     "Plan batch 96: the replay state, S and R and the commands that only set it, moves into gfx/nvn/core (264)",
-     "Plan batch 95: the two graphics switches off by default traced and removed, DM_NVN_RT_RANGE and DM_NVN_DEPTH_PLAIN (263)",
-     "Plan batch 94: inline uniform updates move into gfx/nvn/core (264)",
-     "Plan batch 93: the submit call's capture moves into gfx/nvn/core, and its part is gone (264)",
-     "Plan batch 92: the live texture at a storage address and the texture objects' host copies move into gfx/nvn/core (264)",
-     "Plan batch 91: pending buffer writes and the measurements by frame move into gfx/nvn/core (264)",
-     "Plan batch 90: the TBDR switches, the attachment validity ledger and the pass dump move into gfx/nvn/core (264)",
-     "Plan batch 89: uniform snapshots move out of the Metal backend into gfx/nvn/core (264)"
+     "Plan batch 107: the core tests share their fakes and checks (264)",
+     "Plan batch 106: host/ in directories by role",
+     "Plan batch 105: the interface layer, hle_nvn.c, in parts",
+     "Plan batch 104: three more translation units of the Metal backend (264)",
+     "Plan batch 103: the Metal backend's private header, and its first translation unit of its own (264)",
+     "Plan batch 102: the draw part split into the draw's stages and the copies (264)",
+     "Plan batch 101: SetRenderTargets, the clears and conditional rendering move into gfx/nvn/core (264)",
+     "Plan batch 100: the execution interface and the replay loop move into gfx/nvn/core (264)"
     ]
    }
   ]
@@ -7984,14 +7984,14 @@
   ]
  },
  "PowerBeef/d2r-mobile": {
-  "pushed_at": "2026-10-23T13:01:33Z",
+  "pushed_at": "2026-10-24T00:43:38Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 59,
-    "behind": 2,
-    "files": 120,
-    "real_files": 120,
+    "ahead": 103,
+    "behind": 3,
+    "files": 176,
+    "real_files": 172,
     "dirs": [
      "CLAUDE.md",
      "dm/.gitignore",
@@ -8004,22 +8004,22 @@
      "dm/verify",
      "setup.sh"
     ],
-    "last_commit": "2026-10-23T13:01:32Z",
+    "last_commit": "2026-10-23T23:52:02Z",
     "subjects": [
-     "CLAUDE.md: debugging commands and gotchas from the M4 harness work",
-     "docs: automatic exploration and replay in the debugging guide",
-     "tools: explore.py, seeded random play with shrinking",
-     "tools: replay.py, self-recorded replay across host builds",
-     "tools: tickdiff.py, the first divergent tick between two DM_TICKS records",
-     "docs: debugging guide for the debugger, sanitizer builds and Metal validation",
-     "verify: sanitizer and Metal validation scans in the scenario runner",
-     "debug: DM_BREAK_AT_TICK and an LLDB command for game addresses"
+     "fix(gfx): retired color tables, reused occlusion buffers and full M3 buffer tables are handled",
+     "fix(gfx): partial stencil clears, no-alpha formats and pending vertex writes replay as NVN does",
+     "fix(gfx): replay bounds for 10 attachments, vertex streams 14/15 and negative indices",
+     "fix(gfx): replay keeps the scissor, clear views and present slots alive where it must",
+     "fix(gfx): translation thread reads the texture table and graphics switches without races",
+     "fix(save): one \"progress not saved\" alert per run of failed commits",
+     "fix(save): note that the Mac front end now implements front_save_failed too",
+     "fix(save): a death or a busy cell no longer drops pouch, vault or page proofs"
     ]
    }
   ]
  },
  "921262989/d2r-mobile-": {
-  "pushed_at": "2026-10-21T03:32:28Z",
+  "pushed_at": "2026-10-24T00:52:12Z",
   "branches": []
  },
  "rrroy5640/d2r-mobile": {
@@ -8240,21 +8240,21 @@
   ]
  },
  "littckerQiu/witchspringr-ios": {
-  "pushed_at": "2026-10-23T20:12:48Z",
+  "pushed_at": "2026-10-23T22:35:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T20:12:48Z",
+    "last_commit": "2026-10-23T22:35:48Z",
     "subjects": [
+     "nx-ipa: build from the full shader set (58,430 shaders scanned from the complete RomFS)",
      "host: DM_APP_POOL_MB override so the pool can be tuned on the device (Documents/env.txt)",
      "nx-ipa: do not pack the RomFS into the app (1.58 GiB of the 2.29 GiB IPA; the game plays from Documents/romfs)",
      "profile: report a 1.5 GB pool so Unity's pools have address space left (device: 2 MB region came back NULL)",
      "nx-ipa: pin the full upstream SHA",
      "nx-ipa: pin the upstream snapshot our patches are written against (upstream split patch_nso.py today)",
      "bc: forward-declare nvn_fmt_bc (xcodebuild: implicit declaration)",
-     "ios: search all of Documents for the game files and log every candidate (the Files app put them under a name the app did not look at)",
-     "nx-ipa: generate c1_full.tsv / cb_extent.tsv after the shader build (the device log asked for both)"
+     "ios: search all of Documents for the game files and log every candidate (the Files app put them under a name the app did not look at)"
     ]
    }
   ]
@@ -8875,13 +8875,14 @@
   "branches": []
  },
  "wdjwxh/Taikou5-mobile": {
-  "pushed_at": "2026-10-23T12:11:12Z",
+  "pushed_at": "2026-10-24T01:03:05Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T08:22:55Z",
+    "last_commit": "2026-10-23T12:10:50Z",
     "subjects": [
+     "Fix Android save persistence and Activity audio lifecycle",
      "Fix native menu touch gestures and portrait ZIP picker",
      "Fix partial CPU writes to GPU-owned textures",
      "Add labeled emulator screenshots to English and Chinese READMEs",
@@ -8992,41 +8993,41 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-10-23T20:16:38Z",
+  "pushed_at": "2026-10-24T02:27:41Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T20:16:35Z",
+    "last_commit": "2026-10-24T02:27:37Z",
     "subjects": [
-     "Size the heap against the modules a derived profile actually rewrote",
-     "Report when the packer's copies drift from the tree the shell is built from",
-     "A line-ending difference must not block registering the toolchain",
-     "Derive the module list from the files, and sync the translator's source",
-     "Sync the rewriter, the tools and every game profile with upstream",
-     "List the games this packer is built for, not everything upstream has",
-     "The supported page lists what the release supports, not what this snapshot carries",
-     "Restore this fork's three tool patches, which the previous sync erased"
+     "An update with no version in its name or metadata is still newer than the base",
+     "Layer an update whose patch region is not 16-byte aligned, and it works",
+     "Revert the aligned-read wrapper: it does not build, and it is on the release path",
+     "AlignedReadStorage: the rest of IStorage (SetSize, Flush), so the tool builds",
+     "An update NSP without a CNMT type is still an update",
+     "Read a stacked update through 16-byte aligned windows",
+     "The drift check only watched the packer's tools: the host sources drifted too",
+     "Mac host build: link the profile where the Makefile looks for it, and give it the chain header"
     ]
    }
   ]
  },
  "TIMYW2K/d2r-mobile-ios": {
-  "pushed_at": "2026-10-23T19:00:42Z",
+  "pushed_at": "2026-10-24T01:26:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T18:45:58Z",
+    "last_commit": "2026-10-24T01:18:18Z",
     "subjects": [
+     "Portrait mode (launch-orientation lock); release v1.2",
      "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1",
      "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation",
      "Use the supplied portal capsule artwork in the Dynamic Island button",
      "Settings UI plan B, persistent attack-title newline removal, 3D scale 0.9, touch-mode focus frame hidden",
      "Build fix: register characterstatspanelhd.json as touch-only layout",
      "Settings UI three rows, hire-list performance/highlight, skill blue, minimap, capsule island button",
-     "Render at native scale, minimap +10px up/+40px right, smaller HUD names, hire info follows the row",
-     "Hire info follows the tapped merc, Show FPS row forced visible, white HP band, forced quality at native scale"
+     "Render at native scale, minimap +10px up/+40px right, smaller HUD names, hire info follows the row"
     ]
    }
   ]
@@ -9058,6 +9059,143 @@
     "branch": "main",
     "mirror": false,
     "last_commit": "2026-10-23T17:23:21Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "somegeng/d2r-mobile": {
+  "pushed_at": "2026-10-24T02:01:01Z",
+  "branches": []
+ },
+ "TATAMA/d2r-mobile": {
+  "pushed_at": "2026-10-23T21:54:38Z",
+  "branches": []
+ },
+ "QYLJ/rhythm-heaven-android": {
+  "pushed_at": "2026-10-24T04:18:23Z",
+  "branches": [
+   {
+    "branch": "codex/android-measured-optimizations",
+    "ahead": 10,
+    "behind": 22,
+    "files": 123,
+    "real_files": 113,
+    "dirs": [
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-15T19:58:25Z",
+    "subjects": [
+     "Add Android Vulkan runtime controls and measured game A/B records",
+     "Optimize Vulkan attachment clears and proven dead stores on Android",
+     "Move Android NVN translation to an ordered worker with fence-safe waits",
+     "Merge upstream v1.0.17 while preserving Android host and Vulkan backend",
+     "feat(android): add FPS display, aspect fit and optional 60 FPS pacing",
+     "docs: describe experimental Android support in both READMEs",
+     "fix(android): preserve submission context in Vulkan profiling",
+     "perf(android): per-mip image layouts, 2-way shader control cache, gated hot-path timers"
+    ]
+   },
+   {
+    "branch": "codex/zelda-echoes-of-wisdom-android",
+    "ahead": 8,
+    "behind": 11,
+    "files": 291,
+    "real_files": 287,
+    "dirs": [
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/ios",
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-10-19T09:14:39Z",
+    "subjects": [
+     "feat(android): checkpoint D2R iOS parity port",
+     "feat(android): bootstrap Echoes of Wisdom 1.1.0",
+     "feat(android): add FPS display, aspect fit and optional 60 FPS pacing",
+     "docs: describe experimental Android support in both READMEs",
+     "fix(android): preserve submission context in Vulkan profiling",
+     "perf(android): per-mip image layouts, 2-way shader control cache, gated hot-path timers",
+     "perf(android): precise Vulkan sync, chunked + async submission, cached writeback",
+     "feat(android): add native game host and Vulkan renderer"
+    ]
+   },
+   {
+    "branch": "main",
+    "ahead": 122,
+    "behind": 7,
+    "files": 300,
+    "real_files": 298,
+    "dirs": [
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx"
+    ],
+    "last_commit": "2026-10-24T04:18:05Z",
+    "subjects": [
+     "feat(android): publish Rhythm Heaven native host and migration guide",
+     "feat(android): adapt display geometry and fix NPC audio and input",
+     "style(android): add atmospheric launcher scenery and brass controls",
+     "feat(android): add launcher settings and save transfers",
+     "Bump offline release to 1.1.2-94012 (5)",
+     "Merge validated Android render slots and Turnip presentation fixes",
+     "Fix Turnip presentation rotation and Vulkan NaN semantics",
+     "feat(vulkan): default all devices and drivers to two render slots"
+    ]
+   },
+   {
+    "branch": "port/android-integration-20261021",
+    "ahead": 110,
+    "behind": 7,
+    "files": 300,
+    "real_files": 298,
+    "dirs": [
+     "DESIGN.md",
+     "dm/android",
+     "dm/gfx"
+    ],
+    "last_commit": "2026-10-22T17:39:50Z",
+    "subjects": [
+     "docs(android): performance work handoff for 2026-10-23",
+     "perf(nvn): conflict ledger for multi-slot rendering (step 0, no behaviour change)",
+     "perf(nvn): compile pipelines on several worker threads",
+     "perf(nvn): HITCH log also reports replay CPU, dirty faults, mprotect time, page-in I/O and context switches",
+     "perf(nvn): automatic native BC texture passthrough on Adreno 8xx",
+     "perf(nvn): hitch attribution log and async PSO compilation for graphics draws",
+     "docs(android): performance work handoff for the next agent",
+     "docs(android): record why the GPU writeback is not skipped"
+    ]
+   }
+  ]
+ },
+ "myzzzqqwa/private2": {
+  "pushed_at": "2026-10-23T23:49:00Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-23T23:39:23Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "andy85670430-cpu/ipa": {
+  "pushed_at": "2026-10-24T03:39:07Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-24T03:28:45Z",
     "subjects": [
      "Initial commit"
     ]
