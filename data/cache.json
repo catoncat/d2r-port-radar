@@ -1553,21 +1553,21 @@
   ]
  },
  "d2r-mobile/d2r-mobile": {
-  "pushed_at": "2026-10-24T01:39:10Z",
+  "pushed_at": "2026-10-25T01:39:34Z",
   "branches": [
    {
     "branch": "dev",
     "mirror": false,
-    "last_commit": "2026-10-24T01:39:03Z",
+    "last_commit": "2026-10-25T01:39:26Z",
     "subjects": [
+     "Release menu buttons after one input sample",
      "Tidy acknowledgements",
      "Keep Android driver inputs optional",
      "Support parked Android Auto launches",
      "Release Android input on lifecycle changes",
      "Add Android controller input",
      "Persist Android driver selection",
-     "Honor Android power saving frame limits",
-     "Add Android driver dispatch and display settings"
+     "Honor Android power saving frame limits"
     ]
    }
   ]
@@ -1733,21 +1733,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-10-24T04:13:11Z",
+  "pushed_at": "2026-10-25T04:16:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T04:13:10Z",
+    "last_commit": "2026-10-25T04:16:23Z",
     "subjects": [
+     "radar 2026-10-25",
      "radar 2026-10-24",
      "radar 2026-10-23",
      "radar 2026-10-22",
      "radar 2026-10-21",
      "radar 2026-10-20",
      "radar 2026-10-19",
-     "radar 2026-10-18",
-     "radar 2026-10-17"
+     "radar 2026-10-18"
     ]
    }
   ]
@@ -1833,21 +1833,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-24T18:34:20Z",
+  "pushed_at": "2026-10-25T04:27:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T18:34:18Z",
+    "last_commit": "2026-10-25T04:27:40Z",
     "subjects": [
-     "NSZ and XCZ files in the NSP folder (from PR #140): the NSP script converts them itself instead of a second script. scan_nsps lists *.nsz and *.xcz beside *.nsp and *.xci (an NSZ is a PFS0 with the NSP's ticket, so title_of reads it as it is; a compressed file with an NSP of the same name beside it is skipped), and decompress_nsz converts each once with nsz -D, run from the Python running the script (Spyder does not have its bin folder on PATH), into <title ID>_build/nsp/, before the build ID lookup or the survey reads them. nsz writes into an empty temporary folder and the file is moved into nsp/ only when nsz exits 0 and made it, so a partial file left by a failure or an interruption is never taken for a whole one (with -w left out, nsz itself skips an output whose title and version are already there and exits 0); a conversion is reused while its source has the same name, size and modification time. nsz -D prints an NCA hash mismatch but goes on and exits 0 (Decompressor.decompress passes raiseVerificationException=False), so a damaged file is left to nx_extract's own hash check (--allow-damaged). Without the nsz package the script stops with one line: pip install nsz. README: one line in the packing steps; docs/development.md says how it works. AGENTS.md: only build_ipa_from_nsp.py has to run in Spyder with F5; the other scripts in scripts/ run from a terminal (the user). New test dm/tools/tests/test_nsp_nsz.py (nsz stood in for). Checked: the new test, test_nsp_alias, test_nsp_chain, test_nsp_mac, test_nsp_progress and test_xcode_workflow pass; ANIMAL WELL's base game and update compressed with nsz 5.0.0 -C, then the script on a folder holding only the two NSZ files: both converted (byte for byte the original NSPs), the IPA built (exit 0), and a second run reused both conversions. Not checked: an XCZ, the IPA on the iPhone",
-     "Upload batches flushed outside a submission are handed to the encode thread at once (general, from PR #141). With the encode thread on (the iOS default, DM_NVN_ENC_THREAD), an upload batch's commit is a record in the encode thread's current block (rec_commit_upload), which is handed over when the block fills or a submission ends. Outside a submission (no replay command buffer: a texture zeroed at creation, tex_zero_fill, or a packaged texture uploaded between submissions) up_flush meant to commit the batch on the spot, but the record stayed in the block until the next submission, and every wait for it waited for that submission: nvnQueueFinish (mtl_finish_gpu, on any thread) or up_begin on a busy slot. A game whose last submitting thread creates a texture and then calls nvnQueueFinish before it submits again waited for good. up_flush now hands the block over when it runs outside a submission (it runs on the submit thread only, up_owner_check). From PR #141 (LNPANDY, found analysing a Hades II save-load freeze on an iPhone 14 Pro): mtl_finish_gpu hands over the block before it waits when it runs on the submit thread, as up_begin does since 9cb7af3 and q_cb does; nvnQueueFinish cannot run inside a submission (one nvnQueueSubmitCommands call, which ends with rec_drain), so that line matters for the window above and for the diagnostics that wait mid-submission (td_dump, DM_NVN_T2T_TRACE). Checked: dmhost builds for Super Mario Bros. Wonder (NVN) and Hades (Vulkan), the host unit tests pass, the graphics run list passes, and with DM_NVN_ENC_THREAD=1 every test passes but t_rt_range, which stops on main alike (DmRecEnc has no stand-in for the copyFromTexture:...toBuffer:...options: form). Not checked: a game, the iPhone",
-     "CI on GitHub's macOS runners (from PR #132): .github/workflows/tests.yml runs, for pull requests, pushes to main and manual dispatch, three jobs on macos-26 in parallel: the host unit tests and the graphics tests that need no GPU (t_dirty_slots, t_dirty_race, t_pace, t_fstep, t_hmap, t_cover, t_pso_skey, t_refl and t_rt_range_ro, the last two skipping their sample checks); every test_*.py of dm/tools/tests, dm/ios/tests and dm/gfx/tests on Python 3.14 with lz4, capstone and fonttools; and a build check: dmhost for Wonder (NVN), Hades (Vulkan) and Digimon Story Cyber Sleuth (GL), every graphics test compiled but not run, and the iOS host sources compiled for the iPhone SDK by a new helper, dm/ios/tools/compile_check.py (the host Makefile's file list and flags as gen_build.py takes them, the host's own command first so its header paths come before libvpx's; 133 files, no game files, signing or Xcode project). Read-only permissions, superseded runs cancelled, a timeout per job, logs uploaded only on failure, actions pinned to commit SHAs (checkout v7.0.1, setup-python v7.1.0, upload-artifact v7.0.2, each checked against its tag). The GPU tests stay local (the hosted runners are virtual Macs without Metal 4, issue #112), and so does profile_guess.py --check (it reads game extractions). test_xcode_workflow.py: the stand-in profile carries the registered profile's title_id, which report_profile_status reads since ce17300 (the test had 3 errors on main). Checked by replaying the three jobs on this Mac on current main: all pass, the tool tests in a fresh Python 3.14 venv with only the three packages",
-     "Mario vs. Donkey Kong (0100B99019412000, update 1.0.1 over the cartridge base game, Nintendo's sead / agl / gsys engine on SDK 15.3.0): game profile plus three general host changes. Plays on the iPhone (IPA 1.6 GB, user). On the Mac: the opening movie with sound, the title (Press L+R), file select, the play style choice, the first cutscene, level 1-1 (both colour switches, the spring, a time-out and its restart), the pause menu, leaving the level, level select and the save it shows: 60 fps (frame interval p99 about 17 ms), sound, about 1 GB resident in the level and flat while it runs, CPU about 30% of a core, no red line on that route.",
-     "Spin waits that take a spin lock (general, from PR #134, found on Breath of the Wild; fixes #129). In steady play on the Mac, Breath of the Wild had frames with 30-210 ms of CPU work every 1-10 s: the main thread and the two workers spinning in one job queue poll (main+0xef62dc). The first item of some of its jobs is for the thread of core 0; the others wait until it is taken, taking and releasing the queue's lock (an exclusive test-and-set, then a compare-and-clear) and writing a status word on every pass, so the spin wait search (a store or an exclusive store ends a path) did not take it. Polled at full speed by the two workers, the lock went back and forth between their cores, and the main thread, whose item it was, lost nearly every exclusive store: in a 40 s Time Profiler trace it never held the lock while each worker held it in about 750 samples. patch_nso.py \"Spin waits\": a lock taken and released on the same address on every path back to the head (spin_lock 'acq' / 'rel', counted like the exclusive adds), a test loop on a word inside the region ('tst', whose branch back goes to the original loop and its own gate), and up to four stores whose value and address registers the region never writes ('stc', only in a region that loads something). Such stores write fixed values to fixed addresses, so a loop can change its own state for a few hundred passes at most, well inside the gate's 2 ms of polling, before its passes repeat. A store of a value a pass changes ends its path and the search runs again without it (the path that takes an item stores the new cursor); when the region with stores does not cover the old one's back-edges, the old one is used. Through the gate the workers leave the lock a moment between passes and the main thread takes its item at once. Zora's Domain on an M2 Max at 120 Hz (one host, 42 s of steady play per run, three runs each, before -> after): standing still, frames with more than 30 ms of work 2.8 / 6.3 / 3.5 -> 0 per 30 s, the frame's work p99 20-21 -> 8.3-8.4 ms; turning the camera, CPU hitches 11.9 / 13.3 / 6.3 -> 0, p99 21-25 -> 9-15 ms; process CPU per frame unchanged. Every module on the game drives rewritten with the old and the new search (206: 108 NSOs and Super Smash Bros. Ultimate's 98 NROs): 175 byte for byte as before (Hades, Super Smash Bros. Ultimate, Super Mario Odyssey among them), 7 fail alike under both (every rtld, New Super Mario Bros. U Deluxe), and 24 take new or wider loops, all but Breath of the Wild's queue through the store rule alone: Monster Hunter Rise's main 90 -> 166 (72 of them one inlined countdown whose reset makes the next pass leave), BALL x PIT 87 -> 94, Animal Crossing: New Horizons 162 -> 166, Balatro 9 -> 12, Octopath Traveler 0 75 -> 78, Pikmin 4 80 -> 83, Bayonetta 3 35 -> 37, Breath of the Wild 308 -> 310, one more each in Big Brain Academy, Mario Kart 8 Deluxe, Metroid Dread, Pokemon Legends: Z-A, Stardew Valley, Super Mario Bros. Wonder (both builds) and Tears of the Kingdom; the movie library's thread loop is wider in the subsdk0 of Breath of the Wild, Mario Kart 8 Deluxe, Animal Crossing, BALL x PIT, Monster Train 2 and Octopath Traveler 0, and one loop is wider in the main of AI: THE SOMNIUM FILES and Advance Wars 1+2. No loop of the old search is lost or loses a back-edge. Each distinct shape was read in its disassembly: one-pass resets and state setters (the gate is reached only when another thread changes the word), parser states that leave on the next pass, and real flag waits. Rewriting all 206 takes about 4,100 s of CPU instead of 3,250. Diagnostics: DM_HITCH_DUMP=<ms>[:<s>] logs every guest thread (its wait, last SVC, where it is, x0-x2 and x19-x25 in guest code) when no NVN frame was presented for that long, and each guest thread names its pthread '<handle> <name>' (0x1008 Worker) before it enters guest code, the main thread '0x1001 main thread', so sample and Instruments' Time Profiler show which guest thread a sample belongs to. The graphics tests that link hle_nvn.c without the host define dm_present_ns (t_host_stubs.c weak, t_nvn.c). New test dm/tools/tests/test_spin_waits.py. Checked: the host builds, the host unit tests, the 46 tool tests and the gfx run list pass; Breath of the Wild into Zora's Domain and Mario Kart 8 Deluxe for 85 s from boot with the new rewrite (the PR's author), and Monster Hunter Rise from a fresh save for 180 s headless with each rewrite on one host (e72a065's, the chain of its Mac libraries): 60 fps, frame p95 about 17.5 ms, the same red lines, no hang. Not checked: Paper Mario: The Thousand-Year Door, DARK SOULS: REMASTERED, FINAL FANTASY TACTICS and FINAL FANTASY RESONANCE (no files on the drives), the iPhone. docs/development.md (Spin loops, Breath of the Wild) and docs/agents/05-debugging.md say so",
-     "README: the Mario and Zelda games first in the games gallery (Mario, then Zelda, each alphabetical), the other games after them in alphabetical order as before",
-     "BALL x PIT (010086A022444000, update 1.293, Unity 6000.0.62f1 on SDK 20.5.19): game profile and the SDK 20.5.19 sdk build's node-area cut, no host change. Plays on the iPhone (IPA 1.1 GB, user). On the Mac from a fresh save through the title, a new game, the intro and the descent into the pit, the first dive and its tutorial (moving, aiming with the right stick and shooting with ZR, gems and XP, the enemy waves that overrun the player and end it), and the base-building tutorial (the sidebar, the build menu, a wheat field and a forest placed, the first harvest): 60 fps (frame time p50 16.66 ms, p95 about 16.8 ms; GPU 1-5 ms a frame), FMOD sound through one stereo AudioOut, about 1.6 GB resident and 0.7 GB of Metal allocations, flat over 10 minutes, no red line. sdk_patches.py: like Hollow Knight: Silksong, Unity 6 takes all its memory through AllocateAddressRegion / AllocateMemoryPages with no heap; this sdk build's AddressRegionManager constructor is the SDK 20.5.22 build's at the same offsets (sdk+0x145cfc; the node area limit +0x145d0c and its occupied length +0x145d78 cut from 0x3fe00000 to 0x3e00000): the alias region's high-water mark +2.00 GB of 4.375 GB, 1.26 GB mapped. The provisional profile was otherwise right as generated (Engage's 5 GB block, sys_resource 16 MB; profile_guess.py --check: ok). Shaders: 38,099 (18,913 vertex, 18,917 pixel, 116 compute, 76 hull and domain, one geometry), 11 of them GLSLC outputs of Unity's player in main; the loose serialized files (resources.assets, sharedassets1.assets, the built-in resources) have no type trees and borrow the Shader tree 10 of the 11 Addressables bundles carry (the same type hash, shader_split.py's deferred pass), so unityfs.py needed no layout; all build for the Mac and iOS. The game draws 1280x720 into 1920x1080 window textures with a window crop (nvnWindowSetCrop 0,0 1280x720), which the present already scales. Profile: pad_layout full (the right stick aims in a dive), a prewarm list recorded on the Mac over the route above (297 lines). Checked: the NSP script packs it from the NSPs alone (Mac and iOS); after the rebase onto ded1cff the 44 tool tests pass. README (games gallery, a Mac picture of the first dive), AGENTS.md (56 -> 57), docs/development.md and docs/agents 03 / 04 say so",
-     "README: gallery cells aligned to the top (valign), so the pictures of a row line up when their captions take different numbers of lines; GitHub centred them vertically, and 10 of the 19 rows were uneven (measured with GitHub's rendered markdown and stylesheet in headless Chrome), none now"
+     "Load LZ4 only when decoding NSO files",
+     "Keep guest memory queries, budgets and stack ownership consistent",
+     "Cache Metal 4 pipeline bases with per-game archives",
+     "Fail fast when SetHeapSize protection changes fail",
+     "Bayonetta (010076F0049A2000, update 1.1 = v65536, PlatinumGames' engine in its Wii U form on SDK 3.6.0, as Bayonetta 2): game profile, no host change. Plays on the iPhone (IPA 8.8 GB, user). Same sdk and subsdk0 builds as Bayonetta 2, so its profile is Bayonetta 2's with its own build row and tables, and the CPK reader and the two NVN fixes made for Bayonetta 2 cover it. On the Mac from a fresh save: the boot, the opening movie (USM; Plus skips it), the title and its attract demo, a new game (PLAY, NEW GAME, the auto-save notice, Normal), the prologue on the falling clock tower, the graveyard cutscene (skipped), the touch-controls tips, the practice tutorial (punch, kick, combos, evade, Witch Time), the graveyard fight of Verse 1 with Witch Time, its autosave and the next loading screen's practice, with CRI ADX2 sound through one 6-channel AudioOut and no red line: 60 fps in play (frame time p50 16.65 ms, p95 17.1-17.5 ms; GPU 2-4 ms a frame on an M6), 30 in its cutscenes, where the game sets present interval 2; about 2.45 GB resident and 1.54 GB of Metal allocations, flat over 15 minutes. No virtual address memory (a 3.11 GB heap in the 4 GB layout, mem_used 102 MB). Files: nine CRI CPK archives (data00.cpk ... data03.cpk, data10.cpk ... data14.cpk, 4.25 GB) of PlatinumGames DAT archives, beside the USM movies and the ADX2 sound. Shaders: 458 BNSH files of one stage each (236 pixel, 222 vertex), the .vso / .pso members of shader.dat in data00.cpk, all built for the Mac and iOS. Profile: the 3D pad layout (the camera is on the right stick; the touch controls are handheld only), a prewarm list recorded on the Mac over the route above (513 lines). Checked: the NSP script packs it from the NSPs alone (Mac and iOS); the Python tool, gfx and iOS tests pass (test_tbdr_budget with DM_GAME set). README (games gallery, a Mac picture of the graveyard fight), AGENTS.md (59 -> 60), docs/development.md and docs/agents 01 / 03 / 04 say so",
+     "Mac front end: input held when the game window loses focus is released (general, from PR #128). A window that is no longer key sees no key-up, mouse-up or controller release, so a key, a click or a controller button held when the window lost focus (another app, the software keyboard's text box, minimizing) stayed pressed in the game. Now front_mac.m releases what the front end itself pressed when the window resigns key or is minimized (input_release): the keyboard buttons and the WASD stick, the touch only while the mouse holds it (g_mouse_down), and the pad of each player a controller holds (in DM_PAD_MERGE mode player 1's, when a controller is connected); while out of focus the keyboard, the mouse and the controllers' value changes are ignored (g_input_on), and when the window is key again each held controller is read as it is now (input_resume), so a button still held or a stick still deflected counts again. From PR #128 (nocmt), with two changes: the PR released player 1's pad and the touch in every case, which are also DM_KEYS' and DM_CTL's paths (hle_hid.c), so a scripted hold or drag ended early at a focus change during a Mac run; and it took input up again only if NSApp.isActive held when the window became key, so if AppKit makes the window key before the app counts as active, the keyboard, the mouse and the controllers stayed off until the next focus change. Also left out: the handler queue set to the main queue (already GameController's default), the focus state 3 on resigning key while minimized (DidMiniaturize sets it), the release on deminiaturizing (nothing is held then), and the t_hid test, which checked only that dm_input_set / dm_pad_set_player with zeros clear the state, not the focus handling. Checked: the host unit tests pass (GAME=010015100B514000), the Mac host builds for Mario vs. Donkey Kong, and a DM_WINDOW run boots it with DM_CTL presses reaching the game. Not checked: an actual focus change (in that run the window never became key or resigned it: the shell's activation requests and Finder's activation left no focus line), a physical controller, the software keyboard's text box by hand",
+     "Tests: allow CI scheduling delays in audio stall recovery",
+     "Haptics: a Core Haptics engine that fails to start is replaced, not retried for good (general, from PR #143). A Bluetooth Switch Pro controller that vibrates through iOS Settings' Identify stayed silent in a game, which logged Core Haptics -4810 (server init failed): the adapter made each engine once per route and called startAndReturnError on that same broken engine at every later effect, and its stop/reset handlers were installed only after the start. Now haptics_apple.m makes an engine when the first effect needs it (the phone's too, so after the audio session is active), installs the handlers before starting it, and a failure to make or start the engine, make or start its player or send its parameters releases that engine: a fresh game signal makes a new one after a backoff of 1, 2, 4 or 8 s, effects from before the failure are not replayed, and the old engine's callbacks are stale (generation). A controller whose left and right handle engines cannot be made or started falls back to its default locality until it reconnects; a player or parameter failure (a service reset, say) is retried on the same handle. Idle release (1 s of silence), focus loss and engine resets stop an engine but keep it, so the next effect restarts the same engine, as before. Errors name the target, the stage, the error domain and code and the underlying error, and the log names the controller, its localities and the output channels. From PR #143 (nanda86), with two changes: the PR dropped the engine at every stop, so each rumble after a second of silence made a new engine (a new connection to the haptics service on a controller, a new initWithAudioSession: engine on the phone), and any handle failure moved the route to the default locality for good. t_haptics_apple covers each failure stage, the backoff, the fallback (and no fallback on a player failure), stale callbacks, a restarted engine after idle release, a disconnect and a controller without haptics, with fake controllers and engines. Checked: the host unit tests pass (GAME=0100DCA0064A6000), haptics_apple.m compiles for iOS arm64 with -Wall -Werror. Not checked: a physical controller or the iPhone's own haptics"
     ]
    }
   ]
@@ -1913,21 +1913,21 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-24T20:47:44Z",
+  "pushed_at": "2026-10-25T04:39:17Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T20:47:43Z",
+    "last_commit": "2026-10-25T04:39:16Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（187 个项目）",
      "chore: 自动同步 Star 地图（187 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
-     "chore: 自动同步 Star 地图（186 个项目）",
-     "chore: 自动同步 Star 地图（185 个项目）"
+     "chore: 自动同步 Star 地图（186 个项目）"
     ]
    }
   ]
@@ -1941,12 +1941,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-24T20:56:00Z",
+  "pushed_at": "2026-10-24T23:20:51Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T20:55:59Z",
+    "last_commit": "2026-10-24T23:20:50Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2351,42 +2351,25 @@
   ]
  },
  "williamwue/d2r-mobile": {
-  "pushed_at": "2026-10-24T11:44:45Z",
+  "pushed_at": "2026-10-25T01:10:12Z",
   "branches": [
    {
-    "branch": "feature/android-upstream-v2.0.0",
-    "ahead": 1,
-    "behind": 6,
-    "files": 3,
-    "real_files": 3,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-23T09:17:47Z",
-    "subjects": [
-     "fix(tooling): refresh upstream Android validation fixtures"
-    ]
-   },
-   {
     "branch": "main",
-    "ahead": 6,
-    "behind": 21,
-    "files": 47,
-    "real_files": 46,
-    "dirs": [
-     "dm/android",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-10-15T22:48:48Z",
+    "ahead": 9,
+    "behind": 0,
+    "files": 0,
+    "real_files": 0,
+    "dirs": [],
+    "last_commit": "2026-10-25T01:09:10Z",
     "subjects": [
+     "chore: adopt the standard upstream implementation",
+     "docs(android): record probe branch acceptance and limits",
+     "feat(android): verify Vulkan presentation and lifecycle on emulator",
      "fix(tooling): normalize Windows paths in the literal verification gate",
      "Merge latest upstream fixes into Android foundation",
      "feat(android): add isolated synthetic ARM64 bridge verification",
      "chore(android): align resource contract with upstream v1.0.16",
-     "Merge remote-tracking branch 'origin/main' into android/upstream-v1.0.16",
-     "feat(android): add emulator resource import foundation"
+     "Merge remote-tracking branch 'origin/main' into android/upstream-v1.0.16"
     ]
    }
   ]
@@ -2433,11 +2416,11 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-24T01:22:11Z",
+  "pushed_at": "2026-10-25T04:30:29Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 158,
+    "ahead": 159,
     "behind": 12,
     "files": 58,
     "real_files": 57,
@@ -2453,16 +2436,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-24T01:18:18Z",
+    "last_commit": "2026-10-25T04:30:22Z",
     "subjects": [
+     "v1.2 build 5: landscape launch, in-run portrait rotation, force landscape on exit",
      "Portrait mode (launch-orientation lock); release v1.2",
      "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1",
      "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation",
      "Use the supplied portal capsule artwork in the Dynamic Island button",
      "Settings UI plan B, persistent attack-title newline removal, 3D scale 0.9, touch-mode focus frame hidden",
      "Build fix: register characterstatspanelhd.json as touch-only layout",
-     "Settings UI three rows, hire-list performance/highlight, skill blue, minimap, capsule island button",
-     "Render at native scale, minimap +10px up/+40px right, smaller HUD names, hire info follows the row"
+     "Settings UI three rows, hire-list performance/highlight, skill blue, minimap, capsule island button"
     ]
    },
    {
@@ -7618,21 +7601,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-10-24T20:25:24Z",
+  "pushed_at": "2026-10-25T00:57:34Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T20:18:43Z",
+    "last_commit": "2026-10-25T00:53:26Z",
     "subjects": [
+     "Prepare v0.3.32 release notes",
+     "Mask launcher during initial landscape orientation transition",
      "Release v0.3.31 with selected upstream rendering movie and wait fixes",
      "Hide runtime directories using filesystem attributes without renaming",
      "Restore original visible temporary directory behavior",
      "Release v0.3.28 with private temporary storage",
      "Release v0.3.27 with upstream rendering audio lifetime and empty-module fixes",
-     "Integrate upstream GPU safety NVN queries and iOS NRO embedding",
-     "Use neutral label colors for Personalization disclosure",
-     "Group launcher preferences under collapsible Personalization with separate cards"
+     "Integrate upstream GPU safety NVN queries and iOS NRO embedding"
     ]
    }
   ]
@@ -8074,12 +8057,12 @@
   ]
  },
  "PowerBeef/d2r-mobile": {
-  "pushed_at": "2026-10-24T16:02:36Z",
+  "pushed_at": "2026-10-25T03:36:29Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 104,
-    "behind": 3,
+    "ahead": 107,
+    "behind": 0,
     "files": 176,
     "real_files": 172,
     "dirs": [
@@ -8094,16 +8077,16 @@
      "dm/verify",
      "setup.sh"
     ],
-    "last_commit": "2026-10-24T16:02:25Z",
+    "last_commit": "2026-10-25T03:36:28Z",
     "subjects": [
+     "CLAUDE.md: the Mac App's StartFullScreen default",
+     "feat(mac): StartFullScreen opens the App in full screen",
+     "Merge upstream/main (touch map size, PR #126 autorelease fix) into main",
      "docs(fork): gh's default repo in a fork clone, worktrees and parallel sessions",
      "fix(gfx): retired color tables, reused occlusion buffers and full M3 buffer tables are handled",
      "fix(gfx): partial stencil clears, no-alpha formats and pending vertex writes replay as NVN does",
      "fix(gfx): replay bounds for 10 attachments, vertex streams 14/15 and negative indices",
-     "fix(gfx): replay keeps the scissor, clear views and present slots alive where it must",
-     "fix(gfx): translation thread reads the texture table and graphics switches without races",
-     "fix(save): one \"progress not saved\" alert per run of failed commits",
-     "fix(save): note that the Mac front end now implements front_save_failed too"
+     "fix(gfx): replay keeps the scissor, clear views and present slots alive where it must"
     ]
    }
   ]
@@ -9092,41 +9075,41 @@
   ]
  },
  "TIMYW2K/d2r-mobile-ios": {
-  "pushed_at": "2026-10-24T01:26:56Z",
+  "pushed_at": "2026-10-25T04:34:03Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T01:18:18Z",
+    "last_commit": "2026-10-25T04:30:22Z",
     "subjects": [
+     "v1.2 build 5: landscape launch, in-run portrait rotation, force landscape on exit",
      "Portrait mode (launch-orientation lock); release v1.2",
      "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1",
      "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation",
      "Use the supplied portal capsule artwork in the Dynamic Island button",
      "Settings UI plan B, persistent attack-title newline removal, 3D scale 0.9, touch-mode focus frame hidden",
      "Build fix: register characterstatspanelhd.json as touch-only layout",
-     "Settings UI three rows, hire-list performance/highlight, skill blue, minimap, capsule island button",
-     "Render at native scale, minimap +10px up/+40px right, smaller HUD names, hire info follows the row"
+     "Settings UI three rows, hire-list performance/highlight, skill blue, minimap, capsule island button"
     ]
    }
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-10-24T18:31:01Z",
+  "pushed_at": "2026-10-24T23:30:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T18:30:59Z",
+    "last_commit": "2026-10-24T23:30:33Z",
     "subjects": [
+     "Sync upstream 6a06877",
      "Sync upstream b87a0cc",
      "Sync patcher: upstream ported the mtl_finish_gpu fix with their own comment",
      "Ignore the sync workflow's log (git add -A had committed it)",
      "README: the ten games of the upstream sync (58 profiles)",
      "Ignore the sync workflow's log (git add -A had committed it)",
      "Sync upstream 156d3c2",
-     "Sync patchers for upstream's own fixes and new files",
-     "Sync patcher: upstream independently fixed the up_begin half of the upload wait"
+     "Sync patchers for upstream's own fixes and new files"
     ]
    }
   ]
