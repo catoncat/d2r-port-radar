@@ -460,14 +460,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-24T19:36:38Z",
+  "pushed_at": "2026-10-25T13:52:31Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 246,
+    "ahead": 249,
     "behind": 29,
-    "files": 233,
-    "real_files": 226,
+    "files": 236,
+    "real_files": 228,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -476,16 +476,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-24T19:36:33Z",
+    "last_commit": "2026-10-25T13:52:27Z",
     "subjects": [
+     "Keep experimental compute batching disabled after sustained testing",
+     "Retain compute batching device comparison controls",
+     "Batch ordered P5R Metal 4 buffer compute work",
      "Replace P5R touch camera stick with relative screen swipes",
      "Allow explicit dispatch of the isolated exact-math GPU check",
      "Run synthetic exact-math GPU checks directly on the P5R test branch",
      "Compare exact float helper inlining in compute and fragment GPU output",
-     "Retain externally armed profiling control in optimized builds",
-     "Identify individual GPU profile submissions and truncated captures",
-     "Add bounded Metal 4 render compute and copy timestamp profiling",
-     "Preserve P5R visibility totals on GPU without submit readback waits"
+     "Retain externally armed profiling control in optimized builds"
     ]
    },
    {
@@ -1833,21 +1833,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-25T11:36:37Z",
+  "pushed_at": "2026-10-25T15:49:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T11:41:20Z",
+    "last_commit": "2026-10-25T15:49:24Z",
     "subjects": [
-     "Remove descriptions from launcher haptics settings",
-     "Add ASTRAL CHAIN profile and fix PlatinumGames startup compatibility",
-     "Widen iOS launcher settings and remove list heading",
-     "Expand CI with texture, sanitizer and unsigned iOS build checks",
-     "Use native navigation list for iOS launcher settings",
-     "Fix isolated SVC test linking after Unreal heap support",
-     "Add opt-in frame buffering with safe snapshot pacing and suspend",
-     "OCTOPATH TRAVELER II: the IPA with the geometry split (geo_split, three-dispatch index compaction) and the Unreal-heap thread stacks (16f4889) plays on the iPhone (user); the game note says so and drops the open item"
+     "Port Persona 5 Royal with Needle shaders and NVN texture fixes",
+     "Guard Metal image atomics and reject unsupported bindings",
+     "Merge PR #166: match verified game patches across updates",
+     "Merge original PR 166 history into the generalized patch update",
+     "Match verified game patches across compatible updates",
+     "Enable ASTRAL CHAIN 60 fps with corrected game timing",
+     "Fix Mac app missing-module checks and quoted alerts",
+     "EoW A-2: docs for the Mac app (--platform mac-app)"
     ]
    }
   ]
@@ -1873,21 +1873,21 @@
   ]
  },
  "HachiMiku39/pjdv_mega39s_ios": {
-  "pushed_at": "2026-10-25T10:33:00Z",
+  "pushed_at": "2026-10-25T13:44:55Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T10:09:54Z",
+    "last_commit": "2026-10-25T13:44:54Z",
     "subjects": [
+     "Update README.md",
      "Prepare build18 MOD manager preview and synchronize public sources",
      "Publish audited build17 source archive and bilingual release guide",
      "docs: record M4 hot-switch recovery",
      "docs: add complete English README and local candidate test status",
      "docs: record M4 confirmation of restored MetalFX clarity",
      "fix: preserve Touch Play strokes and add ProMotion research path (build16)",
-     "fix: bound XCI import memory and add diagnostics (build14)",
-     "docs: clarify XCI import methods and Files root setup"
+     "fix: bound XCI import memory and add diagnostics (build14)"
     ]
    }
   ]
@@ -1913,18 +1913,18 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-25T11:25:42Z",
+  "pushed_at": "2026-10-25T16:16:23Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T11:25:41Z",
+    "last_commit": "2026-10-25T16:16:23Z",
     "subjects": [
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
+     "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（187 个项目）",
      "chore: 自动同步 Star 地图（187 个项目）",
-     "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）"
@@ -1941,12 +1941,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-25T04:51:39Z",
+  "pushed_at": "2026-10-25T11:41:30Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T04:51:38Z",
+    "last_commit": "2026-10-25T11:41:29Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2175,12 +2175,27 @@
   ]
  },
  "vickwv/d2r-mobile": {
-  "pushed_at": "2026-10-21T03:20:20Z",
+  "pushed_at": "2026-10-25T15:41:16Z",
   "branches": [
+   {
+    "branch": "android/adreno-740-750-rewrites",
+    "ahead": 1,
+    "behind": 0,
+    "files": 6,
+    "real_files": 4,
+    "dirs": [
+     "dm/android",
+     "dm/gfx"
+    ],
+    "last_commit": "2026-10-25T15:38:05Z",
+    "subjects": [
+     "Android: Adreno 740/750 default the quad and warp32 rewrites off"
+    ]
+   },
    {
     "branch": "android-integration",
     "ahead": 200,
-    "behind": 0,
+    "behind": 7,
     "files": 151,
     "real_files": 131,
     "dirs": [
@@ -2416,11 +2431,11 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-25T05:49:35Z",
+  "pushed_at": "2026-10-25T14:58:02Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 160,
+    "ahead": 161,
     "behind": 12,
     "files": 59,
     "real_files": 58,
@@ -2436,16 +2451,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-25T05:49:14Z",
+    "last_commit": "2026-10-25T14:57:58Z",
     "subjects": [
+     "v1.2: detect portrait from window bounds, rebuild game view, always push oe 31",
      "v1.2: portrait present fills the screen (square swapchain, full-screen crop)",
      "v1.2 build 5: landscape launch, in-run portrait rotation, force landscape on exit",
      "Portrait mode (launch-orientation lock); release v1.2",
      "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1",
      "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation",
      "Use the supplied portal capsule artwork in the Dynamic Island button",
-     "Settings UI plan B, persistent attack-title newline removal, 3D scale 0.9, touch-mode focus frame hidden",
-     "Build fix: register characterstatspanelhd.json as touch-only layout"
+     "Settings UI plan B, persistent attack-title newline removal, 3D scale 0.9, touch-mode focus frame hidden"
     ]
    },
    {
@@ -4037,21 +4052,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-23T08:56:46Z",
+  "pushed_at": "2026-10-25T16:13:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T08:51:33Z",
+    "last_commit": "2026-10-25T16:13:55Z",
     "subjects": [
-     "feat: iPhone / iPad fill the screen and run at 30 fps; the thermal state is logged",
-     "perf: the title comes after the whole warm-up; on iPhone / iPad the shared list's pipelines go into the archive only",
-     "fix: the iPhone shader seed goes over as a pack and is unpacked on the device; an unreachable device stops the install",
-     "perf: iOS packaging in about a minute: no repeated copies, signed in place, shaders installed into Documents once",
-     "perf: iPhone / iPad memory: idle texture copies purgeable, eviction at 250 MB, seen lines kept as hashes",
-     "perf: the start-up warm-up writes the pipelines it compiled into the archive; nothing waits for an idle moment in play",
-     "fix: the shared lists hold each render pipeline once: keys normalised as the runtime makes them",
-     "data: 91 TOTK and 486 BotW shader variants and 17,230 render pipeline rows from players' issues in the shared lists"
+     "perf: TOTK asynchronous core preemption on by default on the Mac (PR #488)",
+     "feat: merge 2 shared shader list contributions",
+     "feat: the shader issue collector routes each row to the game its shader keys belong to",
+     "fix: the sound-link timer patch goes through put_words, so the phone checks the words the export wrote (after PR #327)",
+     "Merge pull request #327 from tvc97 (fix: Breath of the Wild's sound-link timers follow real time, so Cryonis' ice block marker grows at 120 fps)",
+     "Merge pull request #304 from liafonx (fix: Breath of the Wild ramps audio volumes over each frame, so the music no longer clicks when a menu ducks it)",
+     "Merge pull request #243 from LudovicLemarinel (fix: six-axis states on the console's 5 ms clock (Breath of the Wild's motion aim was much smaller than TOTK's))",
+     "Merge pull request #689 from KriTiCal007 (feat(odyssey): start Odyssey's shader list; the app writes shader-list contributions)"
     ]
    }
   ]
@@ -8240,12 +8255,12 @@
   "branches": []
  },
  "codetrek/d2r-mobile": {
-  "pushed_at": "2026-10-22T07:53:43Z",
+  "pushed_at": "2026-10-25T12:16:03Z",
   "branches": [
    {
     "branch": "with-server",
     "ahead": 32,
-    "behind": 0,
+    "behind": 7,
     "files": 86,
     "real_files": 84,
     "dirs": [
@@ -8818,21 +8833,21 @@
   ]
  },
  "alexgaoth/awesome-reverse-engineered": {
-  "pushed_at": "2026-10-24T11:17:43Z",
+  "pushed_at": "2026-10-25T11:43:51Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T11:17:41Z",
+    "last_commit": "2026-10-25T11:43:49Z",
     "subjects": [
+     "Nightly refresh 2026-10-25 (#50)",
      "Nightly refresh 2026-10-24 (#49)",
      "Nightly refresh 2026-10-23 (#48)",
      "Keep the count in mcp/README.md in step with the data (#47)",
      "Add the Resurrected page: 131 products their makers killed, kept alive by open source (#46)",
      "README in Vietnamese and Brazilian Portuguese (#45)",
      "Share card: 16,000+ projects (#44)",
-     "Update index: round 15: game decomps, recomps and ports, revived servers and devices, REA-era lists (16,844 projects) (#43)",
-     "Add an MCP server for the index (#41)"
+     "Update index: round 15: game decomps, recomps and ports, revived servers and devices, REA-era lists (16,844 projects) (#43)"
     ]
    }
   ]
@@ -9056,27 +9071,27 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-10-24T19:27:48Z",
+  "pushed_at": "2026-10-25T15:11:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T19:27:21Z",
+    "last_commit": "2026-10-25T15:01:12Z",
     "subjects": [
-     "Sync the two profiles this fork was missing, and stop saying LÖVE was a fix",
-     "Say what changed, and stop interleaving the two languages",
-     "Give every shader child stdin=/dev/null: one of them deadlocked for 20 minutes",
-     "An XCI of the base game plus an NSP update is an ordinary pairing",
-     "Only the schedule and a manual run publish a release",
-     "A Vulkan capture run has no shaders to translate: --no-shaders skips that step",
-     "Do not report a Vulkan game as having no shader library once it does",
-     "Vulkan games on Windows: translate the SPIR-V here, compile it on the device"
+     "Point the quick start at the release instead of at cloning",
+     "Treat a release as a snapshot of the repository, and publish on any change",
+     "Publish when the packer changes, even if the shell does not",
+     "Keep every release; only stop re-publishing the same one",
+     "Notice a rebuild of the same upstream commit, and keep the release list short",
+     "Sync every packer copy with the tree the shell is built from",
+     "Bring the packer's own copies level with the tree the shell is built from",
+     "Rebase the memory-layout patch onto ec4ea16, where upstream reworked that code"
     ]
    }
   ]
  },
  "TIMYW2K/d2r-mobile-ios": {
-  "pushed_at": "2026-10-25T06:03:17Z",
+  "pushed_at": "2026-10-25T15:02:31Z",
   "branches": [
    {
     "branch": "main",
@@ -9096,21 +9111,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-10-24T23:30:35Z",
+  "pushed_at": "2026-10-25T16:15:28Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T23:30:33Z",
+    "last_commit": "2026-10-25T16:15:25Z",
     "subjects": [
-     "Sync upstream 6a06877",
-     "Sync upstream b87a0cc",
-     "Sync patcher: upstream ported the mtl_finish_gpu fix with their own comment",
-     "Ignore the sync workflow's log (git add -A had committed it)",
-     "README: the ten games of the upstream sync (58 profiles)",
-     "Ignore the sync workflow's log (git add -A had committed it)",
-     "Sync upstream 156d3c2",
-     "Sync patchers for upstream's own fixes and new files"
+     "Close three environment assumptions found by auditing after the user's three failures",
+     "Strip extended attributes before the placeholder ad-hoc signature",
+     "Verify DOTNET_ROOT by running the shader translator; never fall back to a guess",
+     "App: self-update from GitHub Releases, and a ZIP copy can be connected to git",
+     "App: a manual download route for flaky networks, and ZIP copies are understood",
+     "App: download the repository and pull its updates in one click",
+     "Auto-recover the NuGet-Migrations first-run failure (issue #3)",
+     "Sync upstream 6a06877"
     ]
    }
   ]
@@ -9331,29 +9346,30 @@
   ]
  },
  "friednoodle-s/d2r-mobile": {
-  "pushed_at": "2026-10-25T11:28:30Z",
+  "pushed_at": "2026-10-25T16:21:22Z",
   "branches": [
    {
     "branch": "summon-console",
-    "ahead": 15,
+    "ahead": 34,
     "behind": 6,
-    "files": 10,
-    "real_files": 10,
+    "files": 26,
+    "real_files": 26,
     "dirs": [
+     "dm/gfx",
      "dm/host",
      "dm/i18n",
      "dm/ios"
     ],
-    "last_commit": "2026-10-25T11:28:28Z",
+    "last_commit": "2026-10-25T16:21:21Z",
     "subjects": [
-     "Summon: keep minions through pet-cap recalculation",
-     "Summon: rename snapshot arrays that clashed with the global g_flag",
-     "Summon: bind-type switch and per-tick minion snapshots",
-     "Summon: bind with the skeleton pet type, keep summons off the kill board",
-     "Summon panel: restore page frames commented out by the previous edit",
-     "Summon panel: visible tabs and count buttons, version label",
-     "Summon: put the floating button at the top-left of the safe area",
-     "Summon: unlock all waypoints and difficulties from the cheat page"
+     "Item spawn: drop at the player's own cell so the pick-up is in range",
+     "Loadout: rest about 1 s after equipping; log why a pick-up stayed on the ground",
+     "Loadout: wait for one-tap crafting to finish before the next piece",
+     "DM_TEST_LOADOUT=empty: drop the inventory at the feet before the test loadout",
+     "Metal: DM_TEST_NO_RESIDENCY lets unattended runs continue without a residency set",
+     "Test switch DM_TEST_LOADOUT: start the loadout once the inventory is open (cloud test runs)",
+     "Loadout: a failing piece is skipped instead of stopping the whole loadout",
+     "Loadout: runeword base extras go into the runeword list; affix write failures no longer stop the loadout"
     ]
    }
   ]
@@ -9371,6 +9387,72 @@
     "last_commit": "2026-10-25T07:43:08Z",
     "subjects": [
      "Initial commit"
+    ]
+   }
+  ]
+ },
+ "augustxxx-debug/d2r-mobile-plus": {
+  "pushed_at": "2026-10-25T15:58:29Z",
+  "branches": [
+   {
+    "branch": "codex/plus",
+    "ahead": 2,
+    "behind": 0,
+    "files": 47,
+    "real_files": 43,
+    "dirs": [
+     "CHANGELOG.md",
+     "CHANGELOG.zh-CN.md",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-25T15:58:24Z",
+    "subjects": [
+     "Add experimental MetalFX spatial upscaling profiles",
+     "Improve adaptive iOS UI and quest touch handling; document Plus preview"
+    ]
+   }
+  ]
+ },
+ "lunarseaonline/d2r-mobile-original": {
+  "pushed_at": "2026-10-25T14:49:47Z",
+  "branches": [
+   {
+    "branch": "low-memory-iphone",
+    "ahead": 1,
+    "behind": 6,
+    "files": 7,
+    "real_files": 7,
+    "dirs": [
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-25T14:49:44Z",
+    "subjects": [
+     "Add low-memory profile for 6-7 GiB iPhones"
+    ]
+   }
+  ]
+ },
+ "biigdrong/d2r-mobile": {
+  "pushed_at": "2026-10-25T16:23:17Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": true,
+    "last_commit": "2026-10-23T19:16:05Z",
+    "subjects": [
+     "Touch map remembers the map size the player wants: \"Full screen\" in the options works, and the full-screen map comes back after panels and area changes",
+     "Android / HarmonyOS shader bundles: DM_VK_INLINE_CS=1 inlines compute shaders whose helper functions use subgroup instructions (test switch for #123, off by default)",
+     "Adopt community PR #126: the arena buffer out-parameter no longer goes through the autorelease pool",
+     "Adopt community PR #120: optional VP8 cutscene playback on iOS",
+     "Adopt community PR #119: PlayStation button icons for DualSense / DualShock 4",
+     "Adopt community PR #121: iCloud save sync for the Mac App with a paid developer account",
+     "v2.0: Android and HarmonyOS ports, Korean, iPhone Duo, Xbox controller layout, separate game packages, Mac icon and pointer",
+     "Adopt community PRs: in-game Russian (#100), Mac packaging (#96), optional Mac VP8 movies (#97)"
     ]
    }
   ]
