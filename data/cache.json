@@ -1373,7 +1373,7 @@
   "branches": []
  },
  "yzxh24/d2r-mobile": {
-  "pushed_at": "2026-10-18T06:49:04Z",
+  "pushed_at": "2026-10-25T06:28:48Z",
   "branches": []
  },
  "gamerenzz/d2r-mobile": {
@@ -1833,21 +1833,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-25T04:27:42Z",
+  "pushed_at": "2026-10-25T11:36:37Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T04:27:40Z",
+    "last_commit": "2026-10-25T11:41:20Z",
     "subjects": [
-     "Load LZ4 only when decoding NSO files",
-     "Keep guest memory queries, budgets and stack ownership consistent",
-     "Cache Metal 4 pipeline bases with per-game archives",
-     "Fail fast when SetHeapSize protection changes fail",
-     "Bayonetta (010076F0049A2000, update 1.1 = v65536, PlatinumGames' engine in its Wii U form on SDK 3.6.0, as Bayonetta 2): game profile, no host change. Plays on the iPhone (IPA 8.8 GB, user). Same sdk and subsdk0 builds as Bayonetta 2, so its profile is Bayonetta 2's with its own build row and tables, and the CPK reader and the two NVN fixes made for Bayonetta 2 cover it. On the Mac from a fresh save: the boot, the opening movie (USM; Plus skips it), the title and its attract demo, a new game (PLAY, NEW GAME, the auto-save notice, Normal), the prologue on the falling clock tower, the graveyard cutscene (skipped), the touch-controls tips, the practice tutorial (punch, kick, combos, evade, Witch Time), the graveyard fight of Verse 1 with Witch Time, its autosave and the next loading screen's practice, with CRI ADX2 sound through one 6-channel AudioOut and no red line: 60 fps in play (frame time p50 16.65 ms, p95 17.1-17.5 ms; GPU 2-4 ms a frame on an M6), 30 in its cutscenes, where the game sets present interval 2; about 2.45 GB resident and 1.54 GB of Metal allocations, flat over 15 minutes. No virtual address memory (a 3.11 GB heap in the 4 GB layout, mem_used 102 MB). Files: nine CRI CPK archives (data00.cpk ... data03.cpk, data10.cpk ... data14.cpk, 4.25 GB) of PlatinumGames DAT archives, beside the USM movies and the ADX2 sound. Shaders: 458 BNSH files of one stage each (236 pixel, 222 vertex), the .vso / .pso members of shader.dat in data00.cpk, all built for the Mac and iOS. Profile: the 3D pad layout (the camera is on the right stick; the touch controls are handheld only), a prewarm list recorded on the Mac over the route above (513 lines). Checked: the NSP script packs it from the NSPs alone (Mac and iOS); the Python tool, gfx and iOS tests pass (test_tbdr_budget with DM_GAME set). README (games gallery, a Mac picture of the graveyard fight), AGENTS.md (59 -> 60), docs/development.md and docs/agents 01 / 03 / 04 say so",
-     "Mac front end: input held when the game window loses focus is released (general, from PR #128). A window that is no longer key sees no key-up, mouse-up or controller release, so a key, a click or a controller button held when the window lost focus (another app, the software keyboard's text box, minimizing) stayed pressed in the game. Now front_mac.m releases what the front end itself pressed when the window resigns key or is minimized (input_release): the keyboard buttons and the WASD stick, the touch only while the mouse holds it (g_mouse_down), and the pad of each player a controller holds (in DM_PAD_MERGE mode player 1's, when a controller is connected); while out of focus the keyboard, the mouse and the controllers' value changes are ignored (g_input_on), and when the window is key again each held controller is read as it is now (input_resume), so a button still held or a stick still deflected counts again. From PR #128 (nocmt), with two changes: the PR released player 1's pad and the touch in every case, which are also DM_KEYS' and DM_CTL's paths (hle_hid.c), so a scripted hold or drag ended early at a focus change during a Mac run; and it took input up again only if NSApp.isActive held when the window became key, so if AppKit makes the window key before the app counts as active, the keyboard, the mouse and the controllers stayed off until the next focus change. Also left out: the handler queue set to the main queue (already GameController's default), the focus state 3 on resigning key while minimized (DidMiniaturize sets it), the release on deminiaturizing (nothing is held then), and the t_hid test, which checked only that dm_input_set / dm_pad_set_player with zeros clear the state, not the focus handling. Checked: the host unit tests pass (GAME=010015100B514000), the Mac host builds for Mario vs. Donkey Kong, and a DM_WINDOW run boots it with DM_CTL presses reaching the game. Not checked: an actual focus change (in that run the window never became key or resigned it: the shell's activation requests and Finder's activation left no focus line), a physical controller, the software keyboard's text box by hand",
-     "Tests: allow CI scheduling delays in audio stall recovery",
-     "Haptics: a Core Haptics engine that fails to start is replaced, not retried for good (general, from PR #143). A Bluetooth Switch Pro controller that vibrates through iOS Settings' Identify stayed silent in a game, which logged Core Haptics -4810 (server init failed): the adapter made each engine once per route and called startAndReturnError on that same broken engine at every later effect, and its stop/reset handlers were installed only after the start. Now haptics_apple.m makes an engine when the first effect needs it (the phone's too, so after the audio session is active), installs the handlers before starting it, and a failure to make or start the engine, make or start its player or send its parameters releases that engine: a fresh game signal makes a new one after a backoff of 1, 2, 4 or 8 s, effects from before the failure are not replayed, and the old engine's callbacks are stale (generation). A controller whose left and right handle engines cannot be made or started falls back to its default locality until it reconnects; a player or parameter failure (a service reset, say) is retried on the same handle. Idle release (1 s of silence), focus loss and engine resets stop an engine but keep it, so the next effect restarts the same engine, as before. Errors name the target, the stage, the error domain and code and the underlying error, and the log names the controller, its localities and the output channels. From PR #143 (nanda86), with two changes: the PR dropped the engine at every stop, so each rumble after a second of silence made a new engine (a new connection to the haptics service on a controller, a new initWithAudioSession: engine on the phone), and any handle failure moved the route to the default locality for good. t_haptics_apple covers each failure stage, the backoff, the fallback (and no fallback on a player failure), stale callbacks, a restarted engine after idle release, a disconnect and a controller without haptics, with fake controllers and engines. Checked: the host unit tests pass (GAME=0100DCA0064A6000), haptics_apple.m compiles for iOS arm64 with -Wall -Werror. Not checked: a physical controller or the iPhone's own haptics"
+     "Remove descriptions from launcher haptics settings",
+     "Add ASTRAL CHAIN profile and fix PlatinumGames startup compatibility",
+     "Widen iOS launcher settings and remove list heading",
+     "Expand CI with texture, sanitizer and unsigned iOS build checks",
+     "Use native navigation list for iOS launcher settings",
+     "Fix isolated SVC test linking after Unreal heap support",
+     "Add opt-in frame buffering with safe snapshot pacing and suspend",
+     "OCTOPATH TRAVELER II: the IPA with the geometry split (geo_split, three-dispatch index compaction) and the Unreal-heap thread stacks (16f4889) plays on the iPhone (user); the game note says so and drops the open item"
     ]
    }
   ]
@@ -1873,21 +1873,21 @@
   ]
  },
  "HachiMiku39/pjdv_mega39s_ios": {
-  "pushed_at": "2026-10-24T15:59:47Z",
+  "pushed_at": "2026-10-25T10:33:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T15:37:55Z",
+    "last_commit": "2026-10-25T10:09:54Z",
     "subjects": [
+     "Prepare build18 MOD manager preview and synchronize public sources",
      "Publish audited build17 source archive and bilingual release guide",
      "docs: record M4 hot-switch recovery",
      "docs: add complete English README and local candidate test status",
      "docs: record M4 confirmation of restored MetalFX clarity",
      "fix: preserve Touch Play strokes and add ProMotion research path (build16)",
      "fix: bound XCI import memory and add diagnostics (build14)",
-     "docs: clarify XCI import methods and Files root setup",
-     "feat: add app-root XCI import and transfer progress diagnostics"
+     "docs: clarify XCI import methods and Files root setup"
     ]
    }
   ]
@@ -1913,17 +1913,17 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-25T04:39:17Z",
+  "pushed_at": "2026-10-25T11:25:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T04:39:16Z",
+    "last_commit": "2026-10-25T11:25:41Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（187 个项目）",
      "chore: 自动同步 Star 地图（187 个项目）",
-     "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
@@ -1941,12 +1941,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-24T23:20:51Z",
+  "pushed_at": "2026-10-25T04:51:39Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T23:20:50Z",
+    "last_commit": "2026-10-25T04:51:38Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2416,14 +2416,14 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-25T04:30:29Z",
+  "pushed_at": "2026-10-25T05:49:35Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 159,
+    "ahead": 160,
     "behind": 12,
-    "files": 58,
-    "real_files": 57,
+    "files": 59,
+    "real_files": 58,
     "dirs": [
      "UPDATE-2026-10-20.zh-CN.md",
      "codemagic.yaml",
@@ -2436,16 +2436,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-25T04:30:22Z",
+    "last_commit": "2026-10-25T05:49:14Z",
     "subjects": [
+     "v1.2: portrait present fills the screen (square swapchain, full-screen crop)",
      "v1.2 build 5: landscape launch, in-run portrait rotation, force landscape on exit",
      "Portrait mode (launch-orientation lock); release v1.2",
      "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1",
      "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation",
      "Use the supplied portal capsule artwork in the Dynamic Island button",
      "Settings UI plan B, persistent attack-title newline removal, 3D scale 0.9, touch-mode focus frame hidden",
-     "Build fix: register characterstatspanelhd.json as touch-only layout",
-     "Settings UI three rows, hire-list performance/highlight, skill blue, minimap, capsule island button"
+     "Build fix: register characterstatspanelhd.json as touch-only layout"
     ]
    },
    {
@@ -3480,31 +3480,8 @@
   ]
  },
  "albionlee/d2r-mobile": {
-  "pushed_at": "2026-10-19T18:25:06Z",
-  "branches": [
-   {
-    "branch": "main",
-    "ahead": 8,
-    "behind": 0,
-    "files": 8,
-    "real_files": 8,
-    "dirs": [
-     "dm/host",
-     "dm/ios"
-    ],
-    "last_commit": "2026-10-19T18:25:06Z",
-    "subjects": [
-     "Merge branch 'jhaizhou-ops:main' into main",
-     "Merge branch 'main' of https://github.com/albionlee/d2r-mobile",
-     "增加崩溃日志，继续尝试修复手柄操作时佣兵界面崩溃问题",
-     "Merge branch 'jhaizhou-ops:main' into main",
-     "手柄模式下佣兵页保持默认状态",
-     "测试原版布局是否会造成佣兵页崩溃",
-     "Merge branch 'jhaizhou-ops:main' into main",
-     "尝试修复佣兵页崩溃的问题"
-    ]
-   }
-  ]
+  "pushed_at": "2026-10-25T08:11:41Z",
+  "branches": []
  },
  "donutnomad/d2r-mobile": {
   "pushed_at": "2026-10-24T00:46:28Z",
@@ -7601,21 +7578,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-10-25T00:57:34Z",
+  "pushed_at": "2026-10-25T08:38:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T00:53:26Z",
+    "last_commit": "2026-10-25T08:26:13Z",
     "subjects": [
+     "Release v0.3.38 with upstream memory geometry and focus fixes",
+     "Group iOS diagnostics in logs with legacy file migration",
+     "Create visible data directory before first resource import",
+     "Merge selected NXNative rendering haptics and diagnostic fixes",
      "Prepare v0.3.32 release notes",
      "Mask launcher during initial landscape orientation transition",
      "Release v0.3.31 with selected upstream rendering movie and wait fixes",
-     "Hide runtime directories using filesystem attributes without renaming",
-     "Restore original visible temporary directory behavior",
-     "Release v0.3.28 with private temporary storage",
-     "Release v0.3.27 with upstream rendering audio lifetime and empty-module fixes",
-     "Integrate upstream GPU safety NVN queries and iOS NRO embedding"
+     "Hide runtime directories using filesystem attributes without renaming"
     ]
    }
   ]
@@ -7899,21 +7876,21 @@
   ]
  },
  "Xc1Ym/LumaDock": {
-  "pushed_at": "2026-10-24T16:07:03Z",
+  "pushed_at": "2026-10-25T06:43:07Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T16:06:44Z",
+    "last_commit": "2026-10-25T06:42:02Z",
     "subjects": [
+     "Merge pull request #14 from Xc1Ym/codex/fix-container-metadata",
+     "fix: prepare embedded game versions and protect active app builds",
      "Release LumaDock 0.2.9",
      "Merge pull request #13 from Xc1Ym/codex/fix-add-game-pipeline",
      "fix: keep native game imports out of file conversion",
      "Release LumaDock 0.2.8",
      "Merge pull request #11 from Xc1Ym/codex/s2arm-game-progress",
-     "Merge pull request #12 from Xc1Ym/codex/chain-header-guard",
-     "merge: integrate shader header compatibility with milestone progress",
-     "fix: preserve legacy shader chain headers"
+     "Merge pull request #12 from Xc1Ym/codex/chain-header-guard"
     ]
    }
   ]
@@ -8057,14 +8034,14 @@
   ]
  },
  "PowerBeef/d2r-mobile": {
-  "pushed_at": "2026-10-25T03:36:29Z",
+  "pushed_at": "2026-10-25T07:41:52Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 107,
+    "ahead": 116,
     "behind": 0,
-    "files": 176,
-    "real_files": 172,
+    "files": 183,
+    "real_files": 177,
     "dirs": [
      "CLAUDE.md",
      "dm/.gitignore",
@@ -8077,16 +8054,39 @@
      "dm/verify",
      "setup.sh"
     ],
-    "last_commit": "2026-10-25T03:36:28Z",
+    "last_commit": "2026-10-25T07:35:28Z",
     "subjects": [
-     "CLAUDE.md: the Mac App's StartFullScreen default",
-     "feat(mac): StartFullScreen opens the App in full screen",
-     "Merge upstream/main (touch map size, PR #126 autorelease fix) into main",
-     "docs(fork): gh's default repo in a fork clone, worktrees and parallel sessions",
-     "fix(gfx): retired color tables, reused occlusion buffers and full M3 buffer tables are handled",
-     "fix(gfx): partial stencil clears, no-alpha formats and pending vertex writes replay as NVN does",
-     "fix(gfx): replay bounds for 10 attachments, vertex streams 14/15 and negative indices",
-     "fix(gfx): replay keeps the scissor, clear views and present slots alive where it must"
+     "docs: the iOS Graphics settings in the README",
+     "fix(host): picture settings stay off on Android and HarmonyOS",
+     "CLAUDE.md: MetalFX on the 3D upscale pass and the iOS Graphics rows",
+     "feat(ios): Graphics settings in the iOS Custom tab; 3D resolution applies live",
+     "feat(gfx): MetalFX replaces the game's 3D upscale pass",
+     "CLAUDE.md: the Mac picture settings page, MetalFX and their test switches",
+     "feat(mac): Display and Graphics settings in the game's Options panel",
+     "feat(gfx): MetalFX spatial upscaling at the Mac present step"
+    ]
+   },
+   {
+    "branch": "up/graphics",
+    "ahead": 7,
+    "behind": 0,
+    "files": 18,
+    "real_files": 14,
+    "dirs": [
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-25T07:35:35Z",
+    "subjects": [
+     "docs: the iOS Graphics settings in the README",
+     "fix(host): picture settings stay off on Android and HarmonyOS",
+     "feat(ios): Graphics settings in the iOS Custom tab; 3D resolution applies live",
+     "feat(gfx): MetalFX replaces the game's 3D upscale pass",
+     "feat(mac): Display and Graphics settings in the game's Options panel",
+     "feat(gfx): MetalFX spatial upscaling at the Mac present step",
+     "feat(mac): StartFullScreen opens the App in full screen"
     ]
    }
   ]
@@ -8712,35 +8712,36 @@
   "branches": []
  },
  "seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-24T09:00:44Z",
+  "pushed_at": "2026-10-25T06:46:55Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 247,
+    "ahead": 267,
     "behind": 1,
-    "files": 210,
-    "real_files": 206,
+    "files": 213,
+    "real_files": 209,
     "dirs": [
      "NOTICE.md",
      "PORTABLE.md",
      "dist/README.md",
      "dist/make_dist.py",
      "dm/gfx",
+     "dm/harmony",
      "dm/host",
      "dm/ohos",
      "dm/tools",
      "tools/ohos"
     ],
-    "last_commit": "2026-10-24T09:00:03Z",
+    "last_commit": "2026-10-25T06:46:14Z",
     "subjects": [
-     "fix(np257): 放开 nv::InitializeGraphics —— 图形初始化被宿主空操作挡掉了",
-     "feat(np255-256): 进入 NVN 图形初始化；补 NVNbuffer 家族 + 空命令缓冲区兜底",
-     "chore(np254): 主线程栈 8MB→32MB；加 DM_DUMP_GLUE 崩溃探针",
-     "fix(np252-253): 补 nn::sm 与 hid::InitializeDebugPad 两个缺口",
-     "fix(np251): 补上游戏没创建的锁单例 —— 工人线程开始运行",
-     "feat(np250): 宿主接管 AddressSpaceAllocator —— 线程这关通了",
-     "fix(np248-249): 主线程搬进客体栈区（线程卡点两次试错后的真修）",
-     "chore(tools): 我们自己的脚本收拢到 tools/ohos/"
+     "np293-296: 客体分配链路整段打通 + 构造链空指针保护",
+     "np291/292: 装 libc 初始化 hook（客体 malloc 族可用）+ 崩点链探针",
+     "chore(np289): 崩时主动采集主堆读数（上一版只读缓存，全是 0）",
+     "feat(np287-288): 导入缺口归零（movie 补齐）+ 三个定位探针",
+     "fix(np286): nn::os TLS 改用线程局部独立数组 —— TLS 这一关彻底过了",
+     "feat(np285): Tls 族加调用序列日志 + 崩时打印客体 AS 已登记区间",
+     "fix(np284): 补 nn::os TLS 槽族 —— this=0 的来源链完整读通",
+     "chore(np283): 两个定音探针 —— 单例槽全量 + 命令缓冲区指针有效性"
     ]
    }
   ]
@@ -9075,21 +9076,21 @@
   ]
  },
  "TIMYW2K/d2r-mobile-ios": {
-  "pushed_at": "2026-10-25T04:34:03Z",
+  "pushed_at": "2026-10-25T06:03:17Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T04:30:22Z",
+    "last_commit": "2026-10-25T05:49:14Z",
     "subjects": [
+     "v1.2: portrait present fills the screen (square swapchain, full-screen crop)",
      "v1.2 build 5: landscape launch, in-run portrait rotation, force landscape on exit",
      "Portrait mode (launch-orientation lock); release v1.2",
      "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1",
      "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation",
      "Use the supplied portal capsule artwork in the Dynamic Island button",
      "Settings UI plan B, persistent attack-title newline removal, 3D scale 0.9, touch-mode focus frame hidden",
-     "Build fix: register characterstatspanelhd.json as touch-only layout",
-     "Settings UI three rows, hire-list performance/highlight, skill blue, minimap, capsule island button"
+     "Build fix: register characterstatspanelhd.json as touch-only layout"
     ]
    }
   ]
@@ -9325,6 +9326,51 @@
     "last_commit": "2026-10-24T17:36:22Z",
     "subjects": [
      "French: full game text, a sixth language in the custom page, French voices when the voice chunk is present, and README.fr.md"
+    ]
+   }
+  ]
+ },
+ "friednoodle-s/d2r-mobile": {
+  "pushed_at": "2026-10-25T11:28:30Z",
+  "branches": [
+   {
+    "branch": "summon-console",
+    "ahead": 15,
+    "behind": 6,
+    "files": 10,
+    "real_files": 10,
+    "dirs": [
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-25T11:28:28Z",
+    "subjects": [
+     "Summon: keep minions through pet-cap recalculation",
+     "Summon: rename snapshot arrays that clashed with the global g_flag",
+     "Summon: bind-type switch and per-tick minion snapshots",
+     "Summon: bind with the skeleton pet type, keep summons off the kill board",
+     "Summon panel: restore page frames commented out by the previous edit",
+     "Summon panel: visible tabs and count buttons, version label",
+     "Summon: put the floating button at the top-left of the safe area",
+     "Summon: unlock all waypoints and difficulties from the cheat page"
+    ]
+   }
+  ]
+ },
+ "northeastwolf/d2r-mobile": {
+  "pushed_at": "2026-10-25T05:35:44Z",
+  "branches": []
+ },
+ "Liberalser/Private": {
+  "pushed_at": "2026-10-25T07:43:09Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-25T07:43:08Z",
+    "subjects": [
+     "Initial commit"
     ]
    }
   ]
