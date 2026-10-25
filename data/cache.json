@@ -1833,21 +1833,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-25T15:49:27Z",
+  "pushed_at": "2026-10-25T18:27:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T15:49:24Z",
+    "last_commit": "2026-10-25T18:27:03Z",
     "subjects": [
-     "Port Persona 5 Royal with Needle shaders and NVN texture fixes",
-     "Guard Metal image atomics and reject unsupported bindings",
-     "Merge PR #166: match verified game patches across updates",
-     "Merge original PR 166 history into the generalized patch update",
-     "Match verified game patches across compatible updates",
-     "Enable ASTRAL CHAIN 60 fps with corrected game timing",
-     "Fix Mac app missing-module checks and quoted alerts",
-     "EoW A-2: docs for the Mac app (--platform mac-app)"
+     "Order same-core wake handoffs and remove Dread movie gates",
+     "Rescue stalled display links with bounded retries (#198)",
+     "Fix NVN dirty-page upload races (#197)",
+     "Merge PR #196: deduplicate normalized NVN pipeline keys",
+     "Test and document NVN prewarm key normalization",
+     "Fix Xcode workflow mock for the rewrite profile return",
+     "Port Portal: Source engine NROs on NVN, shaders from game.zip",
+     "Merge PR #195: fix NVN autorelease ownership and registry contention"
     ]
    }
   ]
@@ -1913,19 +1913,19 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-25T16:16:23Z",
+  "pushed_at": "2026-10-25T20:49:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T16:16:23Z",
+    "last_commit": "2026-10-25T20:49:35Z",
     "subjects": [
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
+     "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（187 个项目）",
      "chore: 自动同步 Star 地图（187 个项目）",
-     "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）"
     ]
@@ -1941,12 +1941,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-25T11:41:30Z",
+  "pushed_at": "2026-10-25T16:30:31Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T11:41:29Z",
+    "last_commit": "2026-10-25T16:30:30Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2431,14 +2431,14 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-25T14:58:02Z",
+  "pushed_at": "2026-10-25T20:52:39Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 161,
+    "ahead": 163,
     "behind": 12,
-    "files": 59,
-    "real_files": 58,
+    "files": 61,
+    "real_files": 60,
     "dirs": [
      "UPDATE-2026-10-20.zh-CN.md",
      "codemagic.yaml",
@@ -2451,16 +2451,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-25T14:57:58Z",
+    "last_commit": "2026-10-25T20:52:38Z",
     "subjects": [
+     "Refine portrait HUD and harden external app resume",
+     "Improve portrait controls and camera for v1.2.1",
      "v1.2: detect portrait from window bounds, rebuild game view, always push oe 31",
      "v1.2: portrait present fills the screen (square swapchain, full-screen crop)",
      "v1.2 build 5: landscape launch, in-run portrait rotation, force landscape on exit",
      "Portrait mode (launch-orientation lock); release v1.2",
      "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1",
-     "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation",
-     "Use the supplied portal capsule artwork in the Dynamic Island button",
-     "Settings UI plan B, persistent attack-title newline removal, 3D scale 0.9, touch-mode focus frame hidden"
+     "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation"
     ]
    },
    {
@@ -4052,21 +4052,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-25T16:13:56Z",
+  "pushed_at": "2026-10-25T20:56:12Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T16:13:55Z",
+    "last_commit": "2026-10-25T20:56:10Z",
     "subjects": [
-     "perf: TOTK asynchronous core preemption on by default on the Mac (PR #488)",
-     "feat: merge 2 shared shader list contributions",
-     "feat: the shader issue collector routes each row to the game its shader keys belong to",
-     "fix: the sound-link timer patch goes through put_words, so the phone checks the words the export wrote (after PR #327)",
-     "Merge pull request #327 from tvc97 (fix: Breath of the Wild's sound-link timers follow real time, so Cryonis' ice block marker grows at 120 fps)",
-     "Merge pull request #304 from liafonx (fix: Breath of the Wild ramps audio volumes over each frame, so the music no longer clicks when a menu ducks it)",
-     "Merge pull request #243 from LudovicLemarinel (fix: six-axis states on the console's 5 ms clock (Breath of the Wild's motion aim was much smaller than TOTK's))",
-     "Merge pull request #689 from KriTiCal007 (feat(odyssey): start Odyssey's shader list; the app writes shader-list contributions)"
+     "docs: README recommends letting an AI assistant install and test the app, which is the one-click build",
+     "feat: a settings panel on key 1 replaces the shortcut keys 2-7",
+     "fix: the running interpreter's folder comes after Homebrew in the tool paths, so a system Python's /usr/bin never shadows Homebrew's tools (after PR #796)",
+     "Merge pull request #796 from huhfoo (build_app.py finds the Python uv selected)",
+     "test: the Jamboree input-link test compares resolved paths, as macOS's temporary folder is a link (after PR #684)",
+     "docs: README lists Super Mario Party Jamboree, with its update in the Chinese history (after PR #684)",
+     "feat: Super Mario Party Jamboree 2.3.0 native Mac port, games/jamboree (PR #684, squashed)",
+     "Merge pull request #693 from scoofz (Ori and the Blind Forest: Definitive Edition 1.0.1 native Mac port, games/ori)"
     ]
    }
   ]
@@ -7593,21 +7593,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-10-25T08:38:11Z",
+  "pushed_at": "2026-10-25T20:41:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T08:26:13Z",
+    "last_commit": "2026-10-25T20:32:38Z",
     "subjects": [
+     "Release v0.3.40 with upstream upload readback dirty-page and present recovery fixes",
+     "Preserve approved v0.3.39 launcher framebuffer and Mac packaging integration",
      "Release v0.3.38 with upstream memory geometry and focus fixes",
      "Group iOS diagnostics in logs with legacy file migration",
      "Create visible data directory before first resource import",
      "Merge selected NXNative rendering haptics and diagnostic fixes",
      "Prepare v0.3.32 release notes",
-     "Mask launcher during initial landscape orientation transition",
-     "Release v0.3.31 with selected upstream rendering movie and wait fixes",
-     "Hide runtime directories using filesystem attributes without renaming"
+     "Mask launcher during initial landscape orientation transition"
     ]
    }
   ]
@@ -8049,14 +8049,14 @@
   ]
  },
  "PowerBeef/d2r-mobile": {
-  "pushed_at": "2026-10-25T07:41:52Z",
+  "pushed_at": "2026-10-25T20:36:44Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 116,
+    "ahead": 130,
     "behind": 0,
-    "files": 183,
-    "real_files": 177,
+    "files": 189,
+    "real_files": 182,
     "dirs": [
      "CLAUDE.md",
      "dm/.gitignore",
@@ -8069,39 +8069,40 @@
      "dm/verify",
      "setup.sh"
     ],
-    "last_commit": "2026-10-25T07:35:28Z",
+    "last_commit": "2026-10-25T20:20:11Z",
     "subjects": [
-     "docs: the iOS Graphics settings in the README",
-     "fix(host): picture settings stay off on Android and HarmonyOS",
-     "CLAUDE.md: MetalFX on the 3D upscale pass and the iOS Graphics rows",
-     "feat(ios): Graphics settings in the iOS Custom tab; 3D resolution applies live",
-     "feat(gfx): MetalFX replaces the game's 3D upscale pass",
-     "CLAUDE.md: the Mac picture settings page, MetalFX and their test switches",
-     "feat(mac): Display and Graphics settings in the game's Options panel",
-     "feat(gfx): MetalFX spatial upscaling at the Mac present step"
+     "CLAUDE.md: Frame Rate / Frame Drops live on the Video tab",
+     "feat(options): Frame Rate and Frame Drops on the Video tab",
+     "CLAUDE.md: the Options controller highlight and the scroll-area clip",
+     "fix(options): the game's own control highlight on Video and Extras",
+     "fix(mac): a front-end drag needs a press first",
+     "CLAUDE.md + scenario docs: Options page notes, test traps, wheel / drag steps",
+     "docs(host): list dm_video.c; touch_mac.c also takes the Mac mouse and wheel",
+     "CLAUDE.md: the Video / Extras tab design and pages that do not work"
     ]
    },
    {
     "branch": "up/graphics",
-    "ahead": 7,
+    "ahead": 16,
     "behind": 0,
-    "files": 18,
-    "real_files": 14,
+    "files": 28,
+    "real_files": 23,
     "dirs": [
      "dm/gfx",
      "dm/host",
      "dm/i18n",
      "dm/ios"
     ],
-    "last_commit": "2026-10-25T07:35:35Z",
+    "last_commit": "2026-10-25T20:23:58Z",
     "subjects": [
-     "docs: the iOS Graphics settings in the README",
-     "fix(host): picture settings stay off on Android and HarmonyOS",
-     "feat(ios): Graphics settings in the iOS Custom tab; 3D resolution applies live",
-     "feat(gfx): MetalFX replaces the game's 3D upscale pass",
-     "feat(mac): Display and Graphics settings in the game's Options panel",
-     "feat(gfx): MetalFX spatial upscaling at the Mac present step",
-     "feat(mac): StartFullScreen opens the App in full screen"
+     "feat(options): Frame Rate and Frame Drops on the Video tab",
+     "fix(options): the game's own control highlight on Video and Extras",
+     "fix(mac): a front-end drag needs a press first",
+     "docs(host): list dm_video.c; touch_mac.c also takes the Mac mouse and wheel",
+     "feat(options): Video and Extras tabs on the Mac and iOS",
+     "docs(mac): the Video tab, the Options buttons, wheel and drags",
+     "feat(mac): wheel, trackpad, list drags and scroll bars work in menus",
+     "fix(ios): the Options hint text no longer shows under the buttons"
     ]
    }
   ]
@@ -9071,61 +9072,61 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-10-25T15:11:29Z",
+  "pushed_at": "2026-10-25T19:03:01Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T15:01:12Z",
+    "last_commit": "2026-10-25T19:02:58Z",
     "subjects": [
-     "Point the quick start at the release instead of at cloning",
-     "Treat a release as a snapshot of the repository, and publish on any change",
-     "Publish when the packer changes, even if the shell does not",
-     "Keep every release; only stop re-publishing the same one",
-     "Notice a rebuild of the same upstream commit, and keep the release list short",
-     "Sync every packer copy with the tree the shell is built from",
-     "Bring the packer's own copies level with the tree the shell is built from",
-     "Rebase the memory-layout patch onto ec4ea16, where upstream reworked that code"
+     "Build on a push that only moves the patch base or rewrites a patch",
+     "Write down how to move the base deliberately, and the CRLF trap in checking a patch",
+     "Sync dm/third_party with upstream: the tools job compiles it from this tree",
+     "Rebase onto upstream 9a56ecf, which fixes in the host what two game patches worked around",
+     "Ship zstd with the tools instead of telling the user to find one",
+     "Decompress a plain zstd frame with the module when there is one",
+     "Regenerate the supported-games page: nine profiles had been added without it",
+     "Drop a dead memory-layout macro, and stop dating the patch base"
     ]
    }
   ]
  },
  "TIMYW2K/d2r-mobile-ios": {
-  "pushed_at": "2026-10-25T15:02:31Z",
+  "pushed_at": "2026-10-25T20:52:41Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T05:49:14Z",
+    "last_commit": "2026-10-25T20:52:38Z",
     "subjects": [
+     "Refine portrait HUD and harden external app resume",
+     "Improve portrait controls and camera for v1.2.1",
+     "v1.2: detect portrait from window bounds, rebuild game view, always push oe 31",
      "v1.2: portrait present fills the screen (square swapchain, full-screen crop)",
      "v1.2 build 5: landscape launch, in-run portrait rotation, force landscape on exit",
      "Portrait mode (launch-orientation lock); release v1.2",
      "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1",
-     "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation",
-     "Use the supplied portal capsule artwork in the Dynamic Island button",
-     "Settings UI plan B, persistent attack-title newline removal, 3D scale 0.9, touch-mode focus frame hidden",
-     "Build fix: register characterstatspanelhd.json as touch-only layout"
+     "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation"
     ]
    }
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-10-25T16:15:28Z",
+  "pushed_at": "2026-10-25T19:47:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T16:15:25Z",
+    "last_commit": "2026-10-25T19:47:33Z",
     "subjects": [
-     "Close three environment assumptions found by auditing after the user's three failures",
-     "Strip extended attributes before the placeholder ad-hoc signature",
-     "Verify DOTNET_ROOT by running the shader translator; never fall back to a guess",
-     "App: self-update from GitHub Releases, and a ZIP copy can be connected to git",
-     "App: a manual download route for flaky networks, and ZIP copies are understood",
-     "App: download the repository and pull its updates in one click",
-     "Auto-recover the NuGet-Migrations first-run failure (issue #3)",
-     "Sync upstream 6a06877"
+     "README: drop the parenthetical after the Chinese link",
+     "Badges: the game and verified counts read JSON the sync keeps current",
+     "docs/badges: JSON the README badges read (so their numbers update themselves)",
+     "README: keep the language badges alongside the text link",
+     "README: replace the language badges with a plain text link under the hero",
+     "README: English hero banner (the Chinese one stays on README.zh-CN.md)",
+     "README: a 3:1 hero banner, centred header, Chinese game titles",
+     "README: badges, language switcher, contents, features table, update history"
     ]
    }
   ]
@@ -9346,30 +9347,30 @@
   ]
  },
  "friednoodle-s/d2r-mobile": {
-  "pushed_at": "2026-10-25T16:21:22Z",
+  "pushed_at": "2026-10-25T18:11:56Z",
   "branches": [
    {
     "branch": "summon-console",
-    "ahead": 34,
+    "ahead": 44,
     "behind": 6,
-    "files": 26,
-    "real_files": 26,
+    "files": 28,
+    "real_files": 28,
     "dirs": [
      "dm/gfx",
      "dm/host",
      "dm/i18n",
      "dm/ios"
     ],
-    "last_commit": "2026-10-25T16:21:21Z",
+    "last_commit": "2026-10-25T18:11:55Z",
     "subjects": [
-     "Item spawn: drop at the player's own cell so the pick-up is in range",
-     "Loadout: rest about 1 s after equipping; log why a pick-up stayed on the ground",
-     "Loadout: wait for one-tap crafting to finish before the next piece",
-     "DM_TEST_LOADOUT=empty: drop the inventory at the feet before the test loadout",
-     "Metal: DM_TEST_NO_RESIDENCY lets unattended runs continue without a residency set",
-     "Test switch DM_TEST_LOADOUT: start the loadout once the inventory is open (cloud test runs)",
-     "Loadout: a failing piece is skipped instead of stopping the whole loadout",
-     "Loadout: runeword base extras go into the runeword list; affix write failures no longer stop the loadout"
+     "Test action bag: log inventory cells",
+     "Merge branch 'inv13' into summon-console",
+     "Inventory 13x8 with the original 98-unit cells (BIG_INV=2)",
+     "Extra skills: attach Teleport, Battle Orders and 10 other common skills of other classes at level 20",
+     "Summon panel: version 19",
+     "Fixes from review: additive base extras, CAS request claims, cancel on timeout / game change, packed summon and cheat requests; cancel crafting on the client thread; stat 92 cancels leftover required level",
+     "Test script DM_TEST_ACTS: timed summon / cheat / item / belt actions for unattended runs",
+     "Item spawn: force the wanted socket count on uniques that roll their own; log equip failures in detail"
     ]
    }
   ]
@@ -9392,24 +9393,29 @@
   ]
  },
  "augustxxx-debug/d2r-mobile-plus": {
-  "pushed_at": "2026-10-25T15:58:29Z",
+  "pushed_at": "2026-10-25T20:04:25Z",
   "branches": [
    {
     "branch": "codex/plus",
-    "ahead": 2,
+    "ahead": 6,
     "behind": 0,
-    "files": 47,
-    "real_files": 43,
+    "files": 61,
+    "real_files": 54,
     "dirs": [
      "CHANGELOG.md",
      "CHANGELOG.zh-CN.md",
      "dm/gfx",
      "dm/host",
      "dm/i18n",
-     "dm/ios"
+     "dm/ios",
+     "dm/tools"
     ],
-    "last_commit": "2026-10-25T15:58:24Z",
+    "last_commit": "2026-10-25T20:04:24Z",
     "subjects": [
+     "Refresh README screenshot links for five-tab settings",
+     "Fix Settings tab preservation and verify global defaults",
+     "Document graphics settings and notifications with device screenshots",
+     "Polish graphics controls, font fallback, and localized notifications",
      "Add experimental MetalFX spatial upscaling profiles",
      "Improve adaptive iOS UI and quest touch handling; document Plus preview"
     ]
@@ -9453,6 +9459,24 @@
      "Adopt community PR #121: iCloud save sync for the Mac App with a paid developer account",
      "v2.0: Android and HarmonyOS ports, Korean, iPhone Duo, Xbox controller layout, separate game packages, Mac icon and pointer",
      "Adopt community PRs: in-game Russian (#100), Mac packaging (#96), optional Mac VP8 movies (#97)"
+    ]
+   }
+  ]
+ },
+ "zooluis/d2r-mobile": {
+  "pushed_at": "2026-10-25T17:05:01Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 2,
+    "behind": 7,
+    "files": 2,
+    "real_files": 0,
+    "dirs": [],
+    "last_commit": "2026-10-25T17:05:00Z",
+    "subjects": [
+     "Add Traditional Chinese (zh-TW) README",
+     "Add Simplified Chinese (zh-CN) README"
     ]
    }
   ]
