@@ -460,14 +460,14 @@
   "branches": []
  },
  "GirlNet/d2r-mobile": {
-  "pushed_at": "2026-10-25T13:52:31Z",
+  "pushed_at": "2026-10-26T00:19:10Z",
   "branches": [
    {
     "branch": "codex/p5r-runtime",
-    "ahead": 249,
+    "ahead": 252,
     "behind": 29,
-    "files": 236,
-    "real_files": 228,
+    "files": 239,
+    "real_files": 230,
     "dirs": [
      "dm/gfx",
      "dm/host",
@@ -476,16 +476,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-25T13:52:27Z",
+    "last_commit": "2026-10-26T00:19:07Z",
     "subjects": [
+     "Exclude truncated compute workload labels from comparisons",
+     "Label compute comparisons with dispatch workload dimensions",
+     "Add guarded same-process compute shader comparisons",
      "Keep experimental compute batching disabled after sustained testing",
      "Retain compute batching device comparison controls",
      "Batch ordered P5R Metal 4 buffer compute work",
      "Replace P5R touch camera stick with relative screen swipes",
-     "Allow explicit dispatch of the isolated exact-math GPU check",
-     "Run synthetic exact-math GPU checks directly on the P5R test branch",
-     "Compare exact float helper inlining in compute and fragment GPU output",
-     "Retain externally armed profiling control in optimized builds"
+     "Allow explicit dispatch of the isolated exact-math GPU check"
     ]
    },
    {
@@ -765,7 +765,7 @@
   ]
  },
  "Zhangbu/d2r-mobile": {
-  "pushed_at": "2026-10-21T03:25:35Z",
+  "pushed_at": "2026-10-26T00:57:28Z",
   "branches": []
  },
  "zcanic/d2r-mobile": {
@@ -824,7 +824,7 @@
   ]
  },
  "feiyunwill/d2r-mobile": {
-  "pushed_at": "2026-10-20T23:32:24Z",
+  "pushed_at": "2026-10-26T04:48:26Z",
   "branches": []
  },
  "mrggbond/d2r-mobile": {
@@ -1553,21 +1553,21 @@
   ]
  },
  "d2r-mobile/d2r-mobile": {
-  "pushed_at": "2026-10-25T01:39:34Z",
+  "pushed_at": "2026-10-26T01:35:11Z",
   "branches": [
    {
     "branch": "dev",
     "mirror": false,
-    "last_commit": "2026-10-25T01:39:26Z",
+    "last_commit": "2026-10-26T01:35:06Z",
     "subjects": [
+     "Clarify Mac guide descriptions",
      "Release menu buttons after one input sample",
      "Tidy acknowledgements",
      "Keep Android driver inputs optional",
      "Support parked Android Auto launches",
      "Release Android input on lifecycle changes",
      "Add Android controller input",
-     "Persist Android driver selection",
-     "Honor Android power saving frame limits"
+     "Persist Android driver selection"
     ]
    }
   ]
@@ -1733,21 +1733,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-10-25T04:16:25Z",
+  "pushed_at": "2026-10-26T04:20:15Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T04:16:23Z",
+    "last_commit": "2026-10-26T04:20:14Z",
     "subjects": [
+     "radar 2026-10-26",
      "radar 2026-10-25",
      "radar 2026-10-24",
      "radar 2026-10-23",
      "radar 2026-10-22",
      "radar 2026-10-21",
      "radar 2026-10-20",
-     "radar 2026-10-19",
-     "radar 2026-10-18"
+     "radar 2026-10-19"
     ]
    }
   ]
@@ -1833,21 +1833,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-25T23:13:29Z",
+  "pushed_at": "2026-10-26T04:09:31Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T23:13:22Z",
+    "last_commit": "2026-10-26T04:09:07Z",
     "subjects": [
-     "Port NieR Automata with 60 fps and geometry fixes",
-     "Fix Depth16 load-clears to match fragment depth writes (#199)",
-     "Order same-core wake handoffs and remove Dread movie gates",
-     "Rescue stalled display links with bounded retries (#198)",
-     "Fix NVN dirty-page upload races (#197)",
-     "Merge PR #196: deduplicate normalized NVN pipeline keys",
-     "Test and document NVN prewarm key normalization",
-     "Fix Xcode workflow mock for the rewrite profile return"
+     "Add GPU diagnostics and close periodic profiles per frame (#225)",
+     "Add repeatable Mac benchmarks and harden report generation (#191)",
+     "Support masked-predecessor jump tables and external patches (#237)",
+     "Build and ship offline Metal pipeline archives (#226)",
+     "Exclude Mac shader intermediates and respect ARG_MAX (#240)",
+     "Fix custom key loading for compressed game inputs (#204)",
+     "Preserve Horizon audio renderer work-buffer requirements",
+     "Add thermal frame-rate cap with synchronized recovery (#220)"
     ]
    }
   ]
@@ -1913,20 +1913,20 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-25T20:49:36Z",
+  "pushed_at": "2026-10-26T04:44:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T20:49:35Z",
+    "last_commit": "2026-10-26T04:44:43Z",
     "subjects": [
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
+     "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（187 个项目）",
      "chore: 自动同步 Star 地图（187 个项目）",
-     "chore: 自动同步 Star 地图（186 个项目）",
      "chore: 自动同步 Star 地图（186 个项目）"
     ]
    }
@@ -1941,12 +1941,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-25T20:56:45Z",
+  "pushed_at": "2026-10-25T23:19:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T20:56:44Z",
+    "last_commit": "2026-10-25T23:19:41Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2023,7 +2023,7 @@
   "branches": []
  },
  "zlinoliver/d2r-mobile": {
-  "pushed_at": "2026-10-21T07:59:00Z",
+  "pushed_at": "2026-10-26T01:54:49Z",
   "branches": []
  },
  "tenfar/d2r-mobile": {
@@ -2410,7 +2410,7 @@
   ]
  },
  "yamoroc/d2r-mobile": {
-  "pushed_at": "2026-10-19T01:02:08Z",
+  "pushed_at": "2026-10-26T00:56:33Z",
   "branches": []
  },
  "x-omen-x/d2r-mobile": {
@@ -2431,11 +2431,11 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-25T20:52:39Z",
+  "pushed_at": "2026-10-25T23:35:12Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 163,
+    "ahead": 164,
     "behind": 12,
     "files": 61,
     "real_files": 60,
@@ -2451,16 +2451,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-25T20:52:38Z",
+    "last_commit": "2026-10-25T23:35:08Z",
     "subjects": [
+     "Move portrait D2 Pal shortcut to belt menu and suppress duplicate HUD art",
      "Refine portrait HUD and harden external app resume",
      "Improve portrait controls and camera for v1.2.1",
      "v1.2: detect portrait from window bounds, rebuild game view, always push oe 31",
      "v1.2: portrait present fills the screen (square swapchain, full-screen crop)",
      "v1.2 build 5: landscape launch, in-run portrait rotation, force landscape on exit",
      "Portrait mode (launch-orientation lock); release v1.2",
-     "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1",
-     "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation"
+     "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1"
     ]
    },
    {
@@ -2478,14 +2478,14 @@
   ]
  },
  "4ppp44/d2r-mobile-ios17": {
-  "pushed_at": "2026-10-24T10:37:22Z",
+  "pushed_at": "2026-10-26T02:27:18Z",
   "branches": [
    {
     "branch": "codex/ios17-a16-v1.0.17",
-    "ahead": 5,
+    "ahead": 6,
     "behind": 21,
-    "files": 96,
-    "real_files": 89,
+    "files": 116,
+    "real_files": 109,
     "dirs": [
      "CHANGELOG.md",
      "dm/gfx",
@@ -2494,8 +2494,9 @@
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-10-24T10:34:13Z",
+    "last_commit": "2026-10-26T02:27:10Z",
     "subjects": [
+     "Sync iOS17 runtime through build2026102501: GPU-gated DRS, 0.60 floor, speculative compile limiter, cross-pass args reuse; update README with How-to-Use guide",
      "Sync iOS17 runtime through build2026102406: 0.55 scale floor, precise driver-segment fill, lock-free pool lookup with first-touch fix; bump to 1.0.18",
      "Backport reviewed upstream layout/audio fixes and timing-report regression",
      "Sync iOS17 runtime through build2026101705 and document validation limits",
@@ -4052,21 +4053,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-25T22:54:44Z",
+  "pushed_at": "2026-10-26T02:15:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T22:54:01Z",
+    "last_commit": "2026-10-26T02:15:50Z",
     "subjects": [
-     "Merge pull request #393 from svich (runtime separated from game data: built without game files, update_runtime.py installs it into an app)",
-     "Merge pull request #830 from vinifloriano (Mario vs. Donkey Kong 1.0.1 native Mac port, games/mvdk)",
-     "Merge pull request #832 from emberastroid (README grammar)",
-     "Merge pull request #834 from kanapitsas (pace a ProMotion iPhone at its display link's 60 Hz)",
-     "docs: README lists Apple Vision Pro (windowed, early) for Tears of the Kingdom, with links to its install section",
-     "fix: the rewriter check accepts modules that are the rewrites this repository pins, whatever build_src.sha256 says",
-     "test: verify_v143_timing.py runs the render-resolution patch as shipped and expects its four sites",
-     "Merge pull request #829 from 1395490241lhj-code (BotW grass masks land when their GPU work completes)"
+     "perf: the warm-up builds its pipelines on several threads and writes the pipeline archive in files of 8 (Mac)",
+     "fix: TOTK_BOTW_SAMPLED_COPY=0 turns off the refreshed sampled copies (after PR #511)",
+     "Merge pull request #511 from liafonx (Link no longer sinks into the ground after a Breath of the Wild save loads)",
+     "Merge pull request #477 from 1395490241lhj-code (DualSense R2 resists like a bowstring only while Link draws the bow (BotW 1.9.0, TOTK 1.4.3))",
+     "Merge pull request #523 from 1395490241lhj-code (rumble, rumble strength and gyro settings kept in files next to controls.txt (Mac))",
+     "Merge pull request #836 from kanapitsas (a 60 / 30 button in the iPhone / iPad touch controls switches the frame rate while playing)",
+     "Merge pull request #842 from humanperzeus (Smash follow-up: no crash in long World of Light sessions or on a photo, DLC fighters, photos, alpha test)",
+     "fix: the shared shader lists drop the variants that differed only in colour output types"
     ]
    }
   ]
@@ -7436,7 +7437,7 @@
   ]
  },
  "lixing0016/d2r-mobile": {
-  "pushed_at": "2026-10-19T02:39:21Z",
+  "pushed_at": "2026-10-26T00:44:52Z",
   "branches": []
  },
  "CNyezi/d2r-mobile": {
@@ -7891,21 +7892,21 @@
   ]
  },
  "Xc1Ym/LumaDock": {
-  "pushed_at": "2026-10-25T06:43:07Z",
+  "pushed_at": "2026-10-26T03:24:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T06:42:02Z",
+    "last_commit": "2026-10-26T03:24:38Z",
     "subjects": [
-     "Merge pull request #14 from Xc1Ym/codex/fix-container-metadata",
-     "fix: prepare embedded game versions and protect active app builds",
-     "Release LumaDock 0.2.9",
-     "Merge pull request #13 from Xc1Ym/codex/fix-add-game-pipeline",
-     "fix: keep native game imports out of file conversion",
-     "Release LumaDock 0.2.8",
-     "Merge pull request #11 from Xc1Ym/codex/s2arm-game-progress",
-     "Merge pull request #12 from Xc1Ym/codex/chain-header-guard"
+     "Release LumaDock 0.2.12 with smaller ARM64 installer",
+     "Merge pull request #18 from Xc1Ym/codex/reduce-installer-size",
+     "perf: reduce macOS installer size",
+     "Merge pull request #17 from Xc1Ym/codex/bundled-native-controllers",
+     "merge: reconcile released PRs with the integration branch",
+     "Merge pull request #16 from Xc1Ym/codex/compact-library-environment-ui",
+     "Release LumaDock 0.2.11 with integrated recovery, UI and bundled engine",
+     "Merge pull request #15 from Xc1Ym/codex/save-backup-runtime-rollback"
     ]
    }
   ]
@@ -9092,21 +9093,21 @@
   ]
  },
  "TIMYW2K/d2r-mobile-ios": {
-  "pushed_at": "2026-10-25T20:56:34Z",
+  "pushed_at": "2026-10-25T23:38:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T20:52:38Z",
+    "last_commit": "2026-10-25T23:35:08Z",
     "subjects": [
+     "Move portrait D2 Pal shortcut to belt menu and suppress duplicate HUD art",
      "Refine portrait HUD and harden external app resume",
      "Improve portrait controls and camera for v1.2.1",
      "v1.2: detect portrait from window bounds, rebuild game view, always push oe 31",
      "v1.2: portrait present fills the screen (square swapchain, full-screen crop)",
      "v1.2 build 5: landscape launch, in-run portrait rotation, force landscape on exit",
      "Portrait mode (launch-orientation lock); release v1.2",
-     "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1",
-     "Dynamic Island capsule: 2 pt left / 2 pt up, and stay visible during rotation"
+     "Settings UI plan C (T42) and hire-panel row pick (65.2); release v1.1.1"
     ]
    }
   ]
@@ -9347,11 +9348,11 @@
   ]
  },
  "friednoodle-s/d2r-mobile": {
-  "pushed_at": "2026-10-25T23:18:59Z",
+  "pushed_at": "2026-10-26T00:07:14Z",
   "branches": [
    {
     "branch": "summon-console",
-    "ahead": 48,
+    "ahead": 50,
     "behind": 6,
     "files": 30,
     "real_files": 30,
@@ -9361,16 +9362,16 @@
      "dm/i18n",
      "dm/ios"
     ],
-    "last_commit": "2026-10-25T23:18:57Z",
+    "last_commit": "2026-10-26T00:07:12Z",
     "subjects": [
+     "Auto map clear: give up an item after 3 jumps; 10 s no-progress watchdog",
+     "Auto map clear: no use of the item unit after the pick-up (gold is freed at once)",
      "Auto map clear: cast the main skill at once when the area skill is refused; test-only pick-all bit",
      "Auto map clear: fall back to the left-hand node after 3 refusals; log cast results",
      "Auto map clear: include dm_bossrush.h for dm_game_notice",
      "Auto map clear: find, fight and loot through the current map (panel Auto page)",
      "Test action bag: log inventory cells",
-     "Merge branch 'inv13' into summon-console",
-     "Inventory 13x8 with the original 98-unit cells (BIG_INV=2)",
-     "Extra skills: attach Teleport, Battle Orders and 10 other common skills of other classes at level 20"
+     "Merge branch 'inv13' into summon-console"
     ]
    }
   ]
@@ -9393,14 +9394,14 @@
   ]
  },
  "augustxxx-debug/d2r-mobile-plus": {
-  "pushed_at": "2026-10-25T21:22:21Z",
+  "pushed_at": "2026-10-26T01:47:15Z",
   "branches": [
    {
     "branch": "codex/plus",
-    "ahead": 7,
+    "ahead": 9,
     "behind": 0,
-    "files": 62,
-    "real_files": 55,
+    "files": 90,
+    "real_files": 83,
     "dirs": [
      "CHANGELOG.md",
      "CHANGELOG.zh-CN.md",
@@ -9410,15 +9411,16 @@
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-10-25T21:22:20Z",
+    "last_commit": "2026-10-26T01:47:13Z",
     "subjects": [
+     "Record physical Xbox and Duo folding acceptance for the audited build",
+     "Audit notification delivery, modal input and MetalFX transitions",
      "Stabilize MetalFX Auto recovery against oscillating system signals",
      "Refresh README screenshot links for five-tab settings",
      "Fix Settings tab preservation and verify global defaults",
      "Document graphics settings and notifications with device screenshots",
      "Polish graphics controls, font fallback, and localized notifications",
-     "Add experimental MetalFX spatial upscaling profiles",
-     "Improve adaptive iOS UI and quest touch handling; document Plus preview"
+     "Add experimental MetalFX spatial upscaling profiles"
     ]
    }
   ]
@@ -9483,14 +9485,14 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-10-25T22:30:08Z",
+  "pushed_at": "2026-10-26T04:34:37Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 137,
+    "ahead": 148,
     "behind": 0,
-    "files": 196,
-    "real_files": 185,
+    "files": 210,
+    "real_files": 199,
     "dirs": [
      ".gitattributes",
      "CLAUDE.md",
@@ -9503,40 +9505,65 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-25T22:30:03Z",
+    "last_commit": "2026-10-26T04:12:42Z",
     "subjects": [
-     "d2r-metal: README and CLAUDE.md catch up",
-     "docs(host): dm_video.c also drives Frame Rate and Frame Drops",
-     "docs(debugging): lldb-mcp's own lldb can't attach on Xcode 27.1",
-     "d2r-metal: the install-shell message points at the fork",
-     "d2r-metal: README for the fork",
-     "d2r-metal: the apps are called D2R Metal",
-     "d2r-metal: fork identity, Apple-only scope, README merge rule",
-     "CLAUDE.md: Frame Rate / Frame Drops live on the Video tab"
+     "docs(mac): bring the Mac guide up to date",
+     "docs(readme): rewrite for players and developers, accurate per platform",
+     "feat(options): Frame Drops defaults to Keep 3D Res on the Mac",
+     "docs(claude): on-screen keyboard and the background-safe test lines",
+     "feat(ios): on-screen controller keyboard in the iOS shell",
+     "feat(input): on-screen controller keyboard; Mac text box becomes a translated sheet",
+     "fix(cloud): a corrupted shared stash can no longer hang iCloud sync",
+     "test(harness): DM_TEST_TERMINATE_AT also fires while a modal box is up"
     ]
    },
    {
     "branch": "up/graphics",
-    "ahead": 16,
+    "ahead": 7,
     "behind": 0,
-    "files": 28,
-    "real_files": 23,
+    "files": 29,
+    "real_files": 24,
     "dirs": [
      "dm/gfx",
      "dm/host",
      "dm/i18n",
      "dm/ios"
     ],
-    "last_commit": "2026-10-25T20:23:58Z",
+    "last_commit": "2026-10-26T04:26:41Z",
     "subjects": [
-     "feat(options): Frame Rate and Frame Drops on the Video tab",
-     "fix(options): the game's own control highlight on Video and Extras",
-     "fix(mac): a front-end drag needs a press first",
-     "docs(host): list dm_video.c; touch_mac.c also takes the Mac mouse and wheel",
-     "feat(options): Video and Extras tabs on the Mac and iOS",
-     "docs(mac): the Video tab, the Options buttons, wheel and drags",
-     "feat(mac): wheel, trackpad, list drags and scroll bars work in menus",
-     "fix(ios): the Options hint text no longer shows under the buttons"
+     "feat(options): Video and Extras tabs, the game's own highlight, Frame Rate and Frame Drops",
+     "feat(mac): wheel, trackpad, list drags and scroll bars in menus",
+     "feat(options): Options laid out like iOS on the Mac, with clickable buttons",
+     "feat(ios): Graphics settings on iOS; 3D Resolution applies live",
+     "feat(gfx): MetalFX replaces the game's 3D upscale pass",
+     "feat(mac): Display and Graphics settings in the game's Options",
+     "feat(mac): MetalFX upscaling at the present step; full screen at launch"
+    ]
+   }
+  ]
+ },
+ "jim3788/d2r2.0": {
+  "pushed_at": "2026-10-26T02:03:42Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-26T01:57:58Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "cabezony/d2r": {
+  "pushed_at": "2026-10-26T02:45:00Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-26T02:37:26Z",
+    "subjects": [
+     "Initial commit"
     ]
    }
   ]
