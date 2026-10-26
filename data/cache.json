@@ -583,12 +583,12 @@
   "branches": []
  },
  "tkcoliver-glitch/d2r-mobile": {
-  "pushed_at": "2026-10-20T12:36:51Z",
+  "pushed_at": "2026-10-26T12:40:34Z",
   "branches": [
    {
     "branch": "dev",
     "ahead": 6,
-    "behind": 19,
+    "behind": 33,
     "files": 20,
     "real_files": 20,
     "dirs": [
@@ -1553,21 +1553,21 @@
   ]
  },
  "d2r-mobile/d2r-mobile": {
-  "pushed_at": "2026-10-26T01:35:11Z",
+  "pushed_at": "2026-10-26T07:42:56Z",
   "branches": [
    {
     "branch": "dev",
     "mirror": false,
-    "last_commit": "2026-10-26T01:35:06Z",
+    "last_commit": "2026-10-26T07:41:53Z",
     "subjects": [
+     "Document Android Auto setup",
+     "Handle Android startup driver errors",
      "Clarify Mac guide descriptions",
      "Release menu buttons after one input sample",
      "Tidy acknowledgements",
      "Keep Android driver inputs optional",
      "Support parked Android Auto launches",
-     "Release Android input on lifecycle changes",
-     "Add Android controller input",
-     "Persist Android driver selection"
+     "Release Android input on lifecycle changes"
     ]
    }
   ]
@@ -1833,21 +1833,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-26T04:09:31Z",
+  "pushed_at": "2026-10-26T11:43:45Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T04:09:07Z",
+    "last_commit": "2026-10-26T11:40:09Z",
     "subjects": [
-     "Add GPU diagnostics and close periodic profiles per frame (#225)",
-     "Add repeatable Mac benchmarks and harden report generation (#191)",
-     "Support masked-predecessor jump tables and external patches (#237)",
-     "Build and ship offline Metal pipeline archives (#226)",
-     "Exclude Mac shader intermediates and respect ARG_MAX (#240)",
-     "Fix custom key loading for compressed game inputs (#204)",
-     "Preserve Horizon audio renderer work-buffer requirements",
-     "Add thermal frame-rate cap with synchronized recovery (#220)"
+     "Port Sea of Stars 2.0.59001 at 60 fps",
+     "Port SHIN MEGAMI TENSEI V: Vengeance 1.0.3 at 60 fps",
+     "NVN on Metal: remove Metal's archive build folders, cap texture fields Metal refuses, 8-byte hash keys as one word (general, from MacNativeGames)",
+     "Shader split: check a size-prefixed frame's own size first, bound TextAsset reads (#203, #238)",
+     "Shader split: open HAL's .cmp containers",
+     "shader_split: read GLSLC outputs kept in Unity TextAssets",
+     "Pack shader pairs and the offline pipeline archive into Mac apps (#241, #260)",
+     "Port Pokemon Brilliant Diamond 1.3.0 at 60 fps"
     ]
    }
   ]
@@ -1913,21 +1913,21 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-26T04:44:44Z",
+  "pushed_at": "2026-10-26T12:59:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T04:44:43Z",
+    "last_commit": "2026-10-26T12:59:48Z",
     "subjects": [
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
+     "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（187 个项目）",
-     "chore: 自动同步 Star 地图（187 个项目）",
-     "chore: 自动同步 Star 地图（186 个项目）"
+     "chore: 自动同步 Star 地图（187 个项目）"
     ]
    }
   ]
@@ -1941,12 +1941,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-25T23:19:42Z",
+  "pushed_at": "2026-10-26T04:56:23Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T23:19:41Z",
+    "last_commit": "2026-10-26T04:56:22Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2478,12 +2478,12 @@
   ]
  },
  "4ppp44/d2r-mobile-ios17": {
-  "pushed_at": "2026-10-26T02:27:18Z",
+  "pushed_at": "2026-10-26T05:42:30Z",
   "branches": [
    {
-    "branch": "codex/ios17-a16-v1.0.17",
+    "branch": "main",
     "ahead": 6,
-    "behind": 21,
+    "behind": 28,
     "files": 116,
     "real_files": 109,
     "dirs": [
@@ -4053,21 +4053,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-26T02:15:59Z",
+  "pushed_at": "2026-10-26T12:05:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T02:15:50Z",
+    "last_commit": "2026-10-26T12:05:32Z",
     "subjects": [
+     "docs: shorten the README tagline to the NVN-on-Metal question",
+     "docs: README puts the legal notice first and presents the project as a technical exploration",
+     "feat: merge 66 shared shader list contributions",
+     "fix: tile-read pipelines reach the shared list (T rows), so a new install no longer builds them in play",
+     "docs: remove the gameplay screenshot from the README",
      "perf: the warm-up builds its pipelines on several threads and writes the pipeline archive in files of 8 (Mac)",
      "fix: TOTK_BOTW_SAMPLED_COPY=0 turns off the refreshed sampled copies (after PR #511)",
-     "Merge pull request #511 from liafonx (Link no longer sinks into the ground after a Breath of the Wild save loads)",
-     "Merge pull request #477 from 1395490241lhj-code (DualSense R2 resists like a bowstring only while Link draws the bow (BotW 1.9.0, TOTK 1.4.3))",
-     "Merge pull request #523 from 1395490241lhj-code (rumble, rumble strength and gyro settings kept in files next to controls.txt (Mac))",
-     "Merge pull request #836 from kanapitsas (a 60 / 30 button in the iPhone / iPad touch controls switches the frame rate while playing)",
-     "Merge pull request #842 from humanperzeus (Smash follow-up: no crash in long World of Light sessions or on a photo, DLC fighters, photos, alpha test)",
-     "fix: the shared shader lists drop the variants that differed only in colour output types"
+     "Merge pull request #511 from liafonx (Link no longer sinks into the ground after a Breath of the Wild save loads)"
     ]
    }
   ]
@@ -5032,12 +5032,12 @@
   ]
  },
  "kxn/d2r-mobile": {
-  "pushed_at": "2026-10-24T06:33:46Z",
+  "pushed_at": "2026-10-26T05:31:42Z",
   "branches": [
    {
     "branch": "codex/alias-negative-last-gap-v1",
     "ahead": 247,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5060,8 +5060,8 @@
    },
    {
     "branch": "codex/android-native-backup-20261019",
-    "ahead": 441,
-    "behind": 23,
+    "ahead": 442,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5070,22 +5070,22 @@
      "dm/gfx",
      "dm/host"
     ],
-    "last_commit": "2026-10-24T06:33:44Z",
+    "last_commit": "2026-10-26T05:31:36Z",
     "subjects": [
+     "docs: compare upstream Android v2 on matched device and thread modes",
      "Record partition repair, repeated CPU budgets, and net work regression",
      "Record repeated PMU cost and exact submission counter denominator",
      "Document isolated preparation reuse experiments and group invalidation regression",
      "Clarify early preparation reuse independently of retained commands",
      "Document actual pass and geometry reuse limits",
      "Record repeated CPU profiles and actual retained rejection causes",
-     "Document completed descriptor updates and measured reuse coverage",
-     "Record actual retained command recording coverage from six API frames"
+     "Document completed descriptor updates and measured reuse coverage"
     ]
    },
    {
     "branch": "codex/astc6-compose-v1",
     "ahead": 66,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5109,7 +5109,7 @@
    {
     "branch": "codex/astc-6x6-bulk-v1",
     "ahead": 64,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5133,7 +5133,7 @@
    {
     "branch": "codex/astc-6x6-samples-v1",
     "ahead": 61,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5157,7 +5157,7 @@
    {
     "branch": "codex/astc-array-group-closure-v1",
     "ahead": 78,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5181,7 +5181,7 @@
    {
     "branch": "codex/astc-copy-bb-closure-lldb-v1",
     "ahead": 144,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5205,7 +5205,7 @@
    {
     "branch": "codex/astc-copy-encoding-propagation-v1",
     "ahead": 113,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5229,7 +5229,7 @@
    {
     "branch": "codex/astc-unorm8-decode-fixture-v2",
     "ahead": 71,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5253,7 +5253,7 @@
    {
     "branch": "codex/astc-unorm8-decode-v1",
     "ahead": 70,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5277,7 +5277,7 @@
    {
     "branch": "codex/bias-clear-footprint-v1",
     "ahead": 81,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5301,7 +5301,7 @@
    {
     "branch": "codex/bloom-proof-state-cursor-v1",
     "ahead": 50,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5325,7 +5325,7 @@
    {
     "branch": "codex/buffer-history-end-v1",
     "ahead": 74,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5349,7 +5349,7 @@
    {
     "branch": "codex/casc-archive-hex-v1",
     "ahead": 61,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5373,7 +5373,7 @@
    {
     "branch": "codex/color-depth-comparison-hud55-v1",
     "ahead": 242,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5397,7 +5397,7 @@
    {
     "branch": "codex/combined-cpu-52181-tools-v1",
     "ahead": 211,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5421,7 +5421,7 @@
    {
     "branch": "codex/compressed-page-array-mip-fault-v1",
     "ahead": 234,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5445,7 +5445,7 @@
    {
     "branch": "codex/compressed-page-array-oracle-v1",
     "ahead": 235,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5469,7 +5469,7 @@
    {
     "branch": "codex/compressed-page-array-v1",
     "ahead": 233,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5493,7 +5493,7 @@
    {
     "branch": "codex/compressed-page-array-v2",
     "ahead": 234,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5517,7 +5517,7 @@
    {
     "branch": "codex/compute-bind-state-v1",
     "ahead": 309,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5541,7 +5541,7 @@
    {
     "branch": "codex/cpu-binding-phase-combined-v1",
     "ahead": 274,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5565,7 +5565,7 @@
    {
     "branch": "codex/cpu-cold-phase-game-qualification-v1",
     "ahead": 177,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5589,7 +5589,7 @@
    {
     "branch": "codex/cpu-cold-phase-outline-v1",
     "ahead": 277,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5613,7 +5613,7 @@
    {
     "branch": "codex/cpu-combined-device-qualification-v1",
     "ahead": 175,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5637,7 +5637,7 @@
    {
     "branch": "codex/cpu-game-report-output-guard-v1",
     "ahead": 180,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5661,7 +5661,7 @@
    {
     "branch": "codex/cpu-image-pressure-trim-v1",
     "ahead": 49,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5685,7 +5685,7 @@
    {
     "branch": "codex/cpu-image-source-empty-plan-v1",
     "ahead": 297,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5709,7 +5709,7 @@
    {
     "branch": "codex/cpu-pool-pin-coherent-combined-v1",
     "ahead": 281,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5733,7 +5733,7 @@
    {
     "branch": "codex/cpu-pool-pin-fullasset-game-tools-v1",
     "ahead": 179,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5757,7 +5757,7 @@
    {
     "branch": "codex/cpu-shared-whole-policy-tools-v1",
     "ahead": 178,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5781,7 +5781,7 @@
    {
     "branch": "codex/cpu-source-completion-combined-v1",
     "ahead": 298,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5805,7 +5805,7 @@
    {
     "branch": "codex/cpu-store-phase-combined-v1",
     "ahead": 276,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5829,7 +5829,7 @@
    {
     "branch": "codex/current-sustained-886-v1",
     "ahead": 206,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5853,7 +5853,7 @@
    {
     "branch": "codex/descriptor-buffer-completed-mutation-v1",
     "ahead": 453,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5877,7 +5877,7 @@
    {
     "branch": "codex/descriptor-buffer-end-seal-v1",
     "ahead": 452,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5901,7 +5901,7 @@
    {
     "branch": "codex/descriptor-create-cold-v1",
     "ahead": 75,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5925,7 +5925,7 @@
    {
     "branch": "codex/descriptor-pool-adaptive-v1",
     "ahead": 60,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5949,7 +5949,7 @@
    {
     "branch": "codex/descriptor-pool-block-512-v1",
     "ahead": 308,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5973,7 +5973,7 @@
    {
     "branch": "codex/descriptor-pool-memory-tools-v1",
     "ahead": 210,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -5997,7 +5997,7 @@
    {
     "branch": "codex/descriptor-shader-slot-hint-fault-values-v1",
     "ahead": 213,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6021,7 +6021,7 @@
    {
     "branch": "codex/descriptor-shader-slot-hint-fault-values-v2",
     "ahead": 213,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6045,7 +6045,7 @@
    {
     "branch": "codex/descriptor-shader-slot-hint-v1",
     "ahead": 212,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6069,7 +6069,7 @@
    {
     "branch": "codex/diagnostic-timing-gates-v1",
     "ahead": 309,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6093,7 +6093,7 @@
    {
     "branch": "codex/dirty-prep-batch-v1",
     "ahead": 75,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6117,7 +6117,7 @@
    {
     "branch": "codex/draw-cold-positive-phases-v1",
     "ahead": 306,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6141,7 +6141,7 @@
    {
     "branch": "codex/draw-lookup-cold-stack-boundary-v1",
     "ahead": 246,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6165,7 +6165,7 @@
    {
     "branch": "codex/draw-shader-os-v1",
     "ahead": 415,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6189,7 +6189,7 @@
    {
     "branch": "codex/driver-binding-invalidation-v2",
     "ahead": 313,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6213,7 +6213,7 @@
    {
     "branch": "codex/driver-constant-span-proof-v1",
     "ahead": 319,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6237,7 +6237,7 @@
    {
     "branch": "codex/driver-constant-state-fastpath-v1",
     "ahead": 309,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6261,7 +6261,7 @@
    {
     "branch": "codex/driver-proof-fingerprint-v1",
     "ahead": 303,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6285,7 +6285,7 @@
    {
     "branch": "codex/driver-span-experiment-tools-v1",
     "ahead": 192,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6309,7 +6309,7 @@
    {
     "branch": "codex/driver-span-supplement-tools-v1",
     "ahead": 303,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6333,7 +6333,7 @@
    {
     "branch": "codex/driver-uniform-span-q-baseline-v1",
     "ahead": 302,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6357,7 +6357,7 @@
    {
     "branch": "codex/driver-uniform-span-v1",
     "ahead": 321,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6381,7 +6381,7 @@
    {
     "branch": "codex/early-native-consumer-v1",
     "ahead": 439,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6405,7 +6405,7 @@
    {
     "branch": "codex/fixed-shared-review-oracle-v1",
     "ahead": 80,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6429,7 +6429,7 @@
    {
     "branch": "codex/fs-buffer-query-fusion-v3",
     "ahead": 127,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6453,7 +6453,7 @@
    {
     "branch": "codex/game-state-complete-line-v1",
     "ahead": 208,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6477,7 +6477,7 @@
    {
     "branch": "codex/gpu-native-events-v1",
     "ahead": 82,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6501,7 +6501,7 @@
    {
     "branch": "codex/guest-as-shared-slice-v1",
     "ahead": 47,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6525,7 +6525,7 @@
    {
     "branch": "codex/guest-fence-main-integration-v1",
     "ahead": 319,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6549,7 +6549,7 @@
    {
     "branch": "codex/guest-fence-notify-scope-v1",
     "ahead": 297,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6573,7 +6573,7 @@
    {
     "branch": "codex/guest-kernel-write-lease-v1",
     "ahead": 109,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6597,7 +6597,7 @@
    {
     "branch": "codex/guest-shared-heap-startup-v1",
     "ahead": 85,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6621,7 +6621,7 @@
    {
     "branch": "codex/host-import-shared-anon-app-v1",
     "ahead": 73,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6645,7 +6645,7 @@
    {
     "branch": "codex/host-import-shared-anon-dirty-v1",
     "ahead": 71,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6669,7 +6669,7 @@
    {
     "branch": "codex/host-import-vulkan-oracle-v1",
     "ahead": 60,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6693,7 +6693,7 @@
    {
     "branch": "codex/host-sample-profile-v1",
     "ahead": 304,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6717,7 +6717,7 @@
    {
     "branch": "codex/host-thinlto-v1",
     "ahead": 282,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6741,7 +6741,7 @@
    {
     "branch": "codex/idle-descriptor-context-trim-v1",
     "ahead": 59,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6765,7 +6765,7 @@
    {
     "branch": "codex/image-binding-enumeration-v1",
     "ahead": 123,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6789,7 +6789,7 @@
    {
     "branch": "codex/image-record-covered-cold-v1",
     "ahead": 70,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6813,7 +6813,7 @@
    {
     "branch": "codex/lazy-physical-span-index-v1",
     "ahead": 307,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6837,7 +6837,7 @@
    {
     "branch": "codex/legacy-astc-stock-oracle-v1",
     "ahead": 118,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6861,7 +6861,7 @@
    {
     "branch": "codex/legacy-cpu-observer-core-v1",
     "ahead": 115,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6885,7 +6885,7 @@
    {
     "branch": "codex/legacy-cpu-source-prefilter-v1",
     "ahead": 119,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6909,7 +6909,7 @@
    {
     "branch": "codex/legacy-fresh-astc-copy-v1",
     "ahead": 116,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6933,7 +6933,7 @@
    {
     "branch": "codex/legacy-image-cpu-preflight-fix-v1",
     "ahead": 118,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6957,7 +6957,7 @@
    {
     "branch": "codex/logical-descriptor-owner-cache-v1",
     "ahead": 245,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -6981,7 +6981,7 @@
    {
     "branch": "codex/main-2d347fa-host-integration-v1",
     "ahead": 236,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7005,7 +7005,7 @@
    {
     "branch": "codex/mali-candidate-guest-astc6-copy-v2",
     "ahead": 163,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7029,7 +7029,7 @@
    {
     "branch": "codex/mali-candidate-guest-astc6-exit-v1",
     "ahead": 164,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7053,7 +7053,7 @@
    {
     "branch": "codex/mali-candidate-guest-astc6-gate-v2",
     "ahead": 165,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7077,7 +7077,7 @@
    {
     "branch": "codex/mali-candidate-guest-astc6-v1",
     "ahead": 162,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7101,7 +7101,7 @@
    {
     "branch": "codex/mali-candidate-guest-full4-light-v1",
     "ahead": 162,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7125,7 +7125,7 @@
    {
     "branch": "codex/mali-candidate-guest-v1",
     "ahead": 161,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7149,7 +7149,7 @@
    {
     "branch": "codex/mali-gate-screenshots-v3",
     "ahead": 166,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7173,7 +7173,7 @@
    {
     "branch": "codex/mali-vma-fixed065-blocks-v1",
     "ahead": 168,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7197,7 +7197,7 @@
    {
     "branch": "codex/mixed-compressed-array-android-oracle-v1",
     "ahead": 144,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7221,7 +7221,7 @@
    {
     "branch": "codex/mixed-compressed-array-rgba-v1",
     "ahead": 143,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7245,7 +7245,7 @@
    {
     "branch": "codex/native-acquire-scope-negative-v1",
     "ahead": 141,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7269,7 +7269,7 @@
    {
     "branch": "codex/native-astc-linear-NVN-tools-v2",
     "ahead": 107,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7293,7 +7293,7 @@
    {
     "branch": "codex/native-astc-linear-bulk-tools-v1",
     "ahead": 105,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7317,7 +7317,7 @@
    {
     "branch": "codex/native-astc-linear-compose-v1",
     "ahead": 141,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7341,7 +7341,7 @@
    {
     "branch": "codex/native-astc-linear-filter-oracle-v1",
     "ahead": 107,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7365,7 +7365,7 @@
    {
     "branch": "codex/native-astc-linear-game-inputs-v1",
     "ahead": 151,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7389,7 +7389,7 @@
    {
     "branch": "codex/native-astc-linear-game-pair-v1",
     "ahead": 150,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7413,7 +7413,7 @@
    {
     "branch": "codex/native-astc-linear-gpu-fixture-tools-v2",
     "ahead": 106,
-    "behind": 23,
+    "behind": 30,
     "files": 300,
     "real_files": 299,
     "dirs": [
@@ -7594,21 +7594,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-10-25T20:41:42Z",
+  "pushed_at": "2026-10-26T12:27:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T20:32:38Z",
+    "last_commit": "2026-10-26T12:27:48Z",
     "subjects": [
-     "Release v0.3.40 with upstream upload readback dirty-page and present recovery fixes",
-     "Preserve approved v0.3.39 launcher framebuffer and Mac packaging integration",
-     "Release v0.3.38 with upstream memory geometry and focus fixes",
-     "Group iOS diagnostics in logs with legacy file migration",
-     "Create visible data directory before first resource import",
-     "Merge selected NXNative rendering haptics and diagnostic fixes",
-     "Prepare v0.3.32 release notes",
-     "Mask launcher during initial landscape orientation transition"
+     "Remove redundant red picker accessory and keep native top instructions",
+     "Localize native build selection prompts to the macOS system language",
+     "Highlight supported game version 3.0.3 in the build input picker",
+     "Fix cross-volume package output and clarify input selection steps",
+     "Rewrite one-click guide around the double-click folder selection flow",
+     "Add interactive Mac app launcher and verified-build cache cleanup",
+     "Release 0.3.43 Duo testing with selected upstream compatibility fixes",
+     "Preserve approved Duo test layout screenshot and save coordination changes"
     ]
    }
   ]
@@ -7892,7 +7892,7 @@
   ]
  },
  "Xc1Ym/LumaDock": {
-  "pushed_at": "2026-10-26T03:24:42Z",
+  "pushed_at": "2026-10-26T07:41:21Z",
   "branches": [
    {
     "branch": "main",
@@ -8729,14 +8729,14 @@
   "branches": []
  },
  "seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-25T06:46:55Z",
+  "pushed_at": "2026-10-26T09:36:21Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 267,
-    "behind": 1,
-    "files": 213,
-    "real_files": 209,
+    "ahead": 273,
+    "behind": 8,
+    "files": 214,
+    "real_files": 210,
     "dirs": [
      "NOTICE.md",
      "PORTABLE.md",
@@ -8749,16 +8749,16 @@
      "dm/tools",
      "tools/ohos"
     ],
-    "last_commit": "2026-10-25T06:46:14Z",
+    "last_commit": "2026-10-26T09:31:48Z",
     "subjects": [
+     "np348: 门票① 收窄 —— NVN 调用真时间序 + 内存/虚表探针",
+     "np347: DeviceGetInteger 对账 —— 能力位加 DM_DEVIINFO_CAP 开关（默认关，零行为变化）",
+     "np303-np346: 真机夜战收口 —— 仪器加固 + NVN 入口补齐 + svc 层对齐 nxnative",
+     "np302: HLE 危险条目审计 —— 返回 NULL 时无条件报红",
+     "np301: 装载后清补丁点 icache（未解决 0x45f9dc 崩点，但机制正确）",
+     "np297-300: 运行时改客体代码不可靠 → 改为离线改产物",
      "np293-296: 客体分配链路整段打通 + 构造链空指针保护",
-     "np291/292: 装 libc 初始化 hook（客体 malloc 族可用）+ 崩点链探针",
-     "chore(np289): 崩时主动采集主堆读数（上一版只读缓存，全是 0）",
-     "feat(np287-288): 导入缺口归零（movie 补齐）+ 三个定位探针",
-     "fix(np286): nn::os TLS 改用线程局部独立数组 —— TLS 这一关彻底过了",
-     "feat(np285): Tls 族加调用序列日志 + 崩时打印客体 AS 已登记区间",
-     "fix(np284): 补 nn::os TLS 槽族 —— this=0 的来源链完整读通",
-     "chore(np283): 两个定音探针 —— 单例槽全量 + 命令缓冲区指针有效性"
+     "np291/292: 装 libc 初始化 hook（客体 malloc 族可用）+ 崩点链探针"
     ]
    }
   ]
@@ -8918,12 +8918,30 @@
   "branches": []
  },
  "derron/d2r-mobile": {
-  "pushed_at": "2026-10-23T09:22:07Z",
+  "pushed_at": "2026-10-26T05:53:29Z",
   "branches": [
+   {
+    "branch": "codex/webdav-icloud-backend",
+    "ahead": 1,
+    "behind": 7,
+    "files": 33,
+    "real_files": 25,
+    "dirs": [
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools",
+     "scripts/tests"
+    ],
+    "last_commit": "2026-10-26T03:39:32Z",
+    "subjects": [
+     "feat(sync): add optional WebDAV storage for iCloud save packs"
+    ]
+   },
    {
     "branch": "codex/webdav-save-sync",
     "ahead": 1,
-    "behind": 5,
+    "behind": 13,
     "files": 38,
     "real_files": 32,
     "dirs": [
@@ -9073,21 +9091,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-10-25T19:03:01Z",
+  "pushed_at": "2026-10-26T13:02:30Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T19:02:58Z",
+    "last_commit": "2026-10-26T13:13:57Z",
     "subjects": [
-     "Build on a push that only moves the patch base or rewrites a patch",
-     "Write down how to move the base deliberately, and the CRLF trap in checking a patch",
-     "Sync dm/third_party with upstream: the tools job compiles it from this tree",
-     "Rebase onto upstream 9a56ecf, which fixes in the host what two game patches worked around",
-     "Ship zstd with the tools instead of telling the user to find one",
-     "Decompress a plain zstd frame with the module when there is one",
-     "Regenerate the supported-games page: nine profiles had been added without it",
-     "Drop a dead memory-layout macro, and stop dating the patch base"
+     "Say in the packer's words what a game that needs Oodle on a Mac actually needs",
+     "Read the nine profile keys whose host only knew a compiled-in constant from the environment",
+     "Rebase onto upstream ce9b30b: six commits of shader split, NVN and two game ports",
+     "Align dm/ios and docs with upstream 4639c51",
+     "Do not write DM_PROGRAM_ID: the shell's save-data answer depends on the compiled constant",
+     "LICENSE: the copyright line names seedds, whose MIT code this is",
+     "Carry every profile switch the shell reads from the environment",
+     "Rebase onto upstream 4639c51: twelve commits of GPU, host and movie work"
     ]
    }
   ]
@@ -9113,21 +9131,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-10-25T19:47:35Z",
+  "pushed_at": "2026-10-26T12:12:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-25T19:47:33Z",
+    "last_commit": "2026-10-26T12:12:22Z",
     "subjects": [
-     "README: drop the parenthetical after the Chinese link",
-     "Badges: the game and verified counts read JSON the sync keeps current",
-     "docs/badges: JSON the README badges read (so their numbers update themselves)",
-     "README: keep the language badges alongside the text link",
-     "README: replace the language badges with a plain text link under the hero",
-     "README: English hero banner (the Chinese one stays on README.zh-CN.md)",
-     "README: a 3:1 hero banner, centred header, Chinese game titles",
-     "README: badges, language switcher, contents, features table, update history"
+     "README: the three games the sync brought (72 profiles, 45 playable upstream)",
+     "Sync upstream ce9b30b",
+     "Sync patcher: the work-dir patch handles upstream #278's block too (from PR #17)",
+     "Sync patcher: carry the touch-pad geometry test too",
+     "Per-game data layout: Documents/games/<titleID>/{romfs,save,temp,msl}",
+     "Skip the NRO header when scanning text for rewrite sites (issue #14)",
+     "Fix the UnboundLocalError every app build hit: work before out_ipa (PR #15)",
+     "Windows installs: the tools landed where nothing looked for them"
     ]
    }
   ]
@@ -9562,6 +9580,95 @@
     "branch": "main",
     "mirror": false,
     "last_commit": "2026-10-26T02:37:26Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "downsea/d2r-mobile": {
+  "pushed_at": "2026-10-26T06:36:28Z",
+  "branches": [
+   {
+    "branch": "hmos/004-pc-2in1",
+    "ahead": 1,
+    "behind": 7,
+    "files": 3,
+    "real_files": 3,
+    "dirs": [
+     "dm/harmony"
+    ],
+    "last_commit": "2026-10-26T06:36:23Z",
+    "subjects": [
+     "HarmonyOS PC (2in1): the app installs on PCs, opens in immersive full screen with the window's content locked to the screen aspect, and picks the game's output size from the screen instead of the first window size"
+    ]
+   },
+   {
+    "branch": "main",
+    "ahead": 1,
+    "behind": 7,
+    "files": 29,
+    "real_files": 6,
+    "dirs": [
+     ".docs-check.toml",
+     "CHANGELOG.md",
+     "CLAUDE.md",
+     "CONTEXT.md",
+     "tools/dev"
+    ],
+    "last_commit": "2026-10-26T06:09:13Z",
+    "subjects": [
+     "docs: initialise fork doc surface and the HarmonyOS PC + phone epic (#001)"
+    ]
+   }
+  ]
+ },
+ "cxu/d2r-mobile": {
+  "pushed_at": "2026-10-26T07:14:59Z",
+  "branches": []
+ },
+ "oneforoneofone/d2r-mobile": {
+  "pushed_at": "2026-10-26T10:15:01Z",
+  "branches": []
+ },
+ "yxxxxx1/d2r-mobile-windows-skill": {
+  "pushed_at": "2026-10-26T11:44:52Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-26T11:44:01Z",
+    "subjects": [
+     "Merge pull request #2 from yxxxxx1/codex/credit-original-authors",
+     "docs: prominently credit original D2R and build authors",
+     "Merge pull request #1 from yxxxxx1/codex/publish-skill",
+     "chore: normalize file endings for distribution",
+     "feat: add reusable D2R Mobile Windows installation skill",
+     "docs: initialize skill sharing repository"
+    ]
+   }
+  ]
+ },
+ "pengjialiang5055-ops/33": {
+  "pushed_at": "2026-10-26T12:10:43Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-26T12:10:43Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "aciadgnuh/D2Rmobile": {
+  "pushed_at": "2026-10-26T10:18:26Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-26T10:18:26Z",
     "subjects": [
      "Initial commit"
     ]
