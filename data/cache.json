@@ -930,12 +930,26 @@
   "branches": []
  },
  "hubeiqiao/d2r-mobile": {
-  "pushed_at": "2026-10-20T16:32:30Z",
+  "pushed_at": "2026-10-26T21:38:57Z",
   "branches": [
+   {
+    "branch": "codex/cow-leg-any-difficulty",
+    "ahead": 1,
+    "behind": 0,
+    "files": 4,
+    "real_files": 2,
+    "dirs": [
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-26T21:38:56Z",
+    "subjects": [
+     "prototype: add scoped cow recipe source transformer and tests"
+    ]
+   },
    {
     "branch": "codex/entry-failure-diagnostics",
     "ahead": 1,
-    "behind": 0,
+    "behind": 15,
     "files": 7,
     "real_files": 5,
     "dirs": [
@@ -950,7 +964,7 @@
    {
     "branch": "codex/ipad-map-portal-tooltip",
     "ahead": 3,
-    "behind": 4,
+    "behind": 19,
     "files": 5,
     "real_files": 3,
     "dirs": [
@@ -966,7 +980,7 @@
    {
     "branch": "codex/map-portal-diagnostics",
     "ahead": 1,
-    "behind": 19,
+    "behind": 34,
     "files": 9,
     "real_files": 7,
     "dirs": [
@@ -980,7 +994,7 @@
    {
     "branch": "codex/minimap-act-travel",
     "ahead": 1,
-    "behind": 14,
+    "behind": 29,
     "files": 7,
     "real_files": 5,
     "dirs": [
@@ -994,7 +1008,7 @@
    {
     "branch": "codex/pet-life-diagnostics",
     "ahead": 1,
-    "behind": 32,
+    "behind": 47,
     "files": 5,
     "real_files": 3,
     "dirs": [
@@ -1008,7 +1022,7 @@
    {
     "branch": "codex/potion-code-allowlist",
     "ahead": 1,
-    "behind": 4,
+    "behind": 19,
     "files": 5,
     "real_files": 3,
     "dirs": [
@@ -1022,7 +1036,7 @@
    {
     "branch": "codex/promo-video-readme",
     "ahead": 4,
-    "behind": 30,
+    "behind": 45,
     "files": 2,
     "real_files": 0,
     "dirs": [],
@@ -1037,7 +1051,7 @@
    {
     "branch": "codex/readable-idle-skills",
     "ahead": 1,
-    "behind": 52,
+    "behind": 67,
     "files": 1,
     "real_files": 1,
     "dirs": [
@@ -1051,7 +1065,7 @@
    {
     "branch": "codex/rift-encounter-profiles",
     "ahead": 2,
-    "behind": 32,
+    "behind": 47,
     "files": 10,
     "real_files": 6,
     "dirs": [
@@ -1067,7 +1081,7 @@
    {
     "branch": "codex/rift-endgame-integration",
     "ahead": 8,
-    "behind": 31,
+    "behind": 46,
     "files": 37,
     "real_files": 31,
     "dirs": [
@@ -1090,7 +1104,7 @@
    {
     "branch": "codex/rift-guardian-town",
     "ahead": 1,
-    "behind": 19,
+    "behind": 34,
     "files": 5,
     "real_files": 3,
     "dirs": [
@@ -1104,7 +1118,7 @@
    {
     "branch": "codex/rift-hud-tier-cap",
     "ahead": 1,
-    "behind": 32,
+    "behind": 47,
     "files": 5,
     "real_files": 5,
     "dirs": [
@@ -1119,7 +1133,7 @@
    {
     "branch": "codex/rift-overtime-ui",
     "ahead": 1,
-    "behind": 30,
+    "behind": 45,
     "files": 13,
     "real_files": 13,
     "dirs": [
@@ -1135,7 +1149,7 @@
    {
     "branch": "codex/rift-safe-completion",
     "ahead": 1,
-    "behind": 32,
+    "behind": 47,
     "files": 9,
     "real_files": 9,
     "dirs": [
@@ -1151,7 +1165,7 @@
    {
     "branch": "codex/rift-suspend-clock",
     "ahead": 1,
-    "behind": 52,
+    "behind": 67,
     "files": 3,
     "real_files": 3,
     "dirs": [
@@ -1165,7 +1179,7 @@
    {
     "branch": "codex/setup-bash32-braces",
     "ahead": 1,
-    "behind": 53,
+    "behind": 68,
     "files": 1,
     "real_files": 1,
     "dirs": [
@@ -1179,7 +1193,7 @@
    {
     "branch": "codex/touch-close-pickup",
     "ahead": 1,
-    "behind": 4,
+    "behind": 19,
     "files": 5,
     "real_files": 3,
     "dirs": [
@@ -1193,7 +1207,7 @@
    {
     "branch": "codex/update-service-failure",
     "ahead": 1,
-    "behind": 4,
+    "behind": 19,
     "files": 11,
     "real_files": 9,
     "dirs": [
@@ -1833,21 +1847,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-26T19:42:27Z",
+  "pushed_at": "2026-10-27T00:23:12Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T19:42:10Z",
+    "last_commit": "2026-10-27T00:23:06Z",
     "subjects": [
+     "Fix audio-device test host-work fixture",
+     "Port Xenoblade Chronicles 3 2.2.1",
+     "Add cross-game regression harness and prevent false passes (#328)",
+     "Port Mario + Rabbids Sparks of Hope",
      "Share physical storage for live NVN resolution variants",
      "Make display-link tick tests deterministic in CI",
      "Route direct OpenGL imports through the GL layer",
-     "Pace high-refresh NVN display mode in display-link ticks (#324)",
-     "Run image atomics as native Metal texture atomics, 3D images and CAS included",
-     "Lint Python tools in CI with a checker-specific baseline ratchet (#323)",
-     "Port Kirby and the Forgotten Land 1.1.0",
-     "Pad vertex outputs for every pipeline prebuild pair"
+     "Pace high-refresh NVN display mode in display-link ticks (#324)"
     ]
    }
   ]
@@ -1913,12 +1927,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-26T12:59:50Z",
+  "pushed_at": "2026-10-26T22:39:24Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T12:59:48Z",
+    "last_commit": "2026-10-26T22:39:23Z",
     "subjects": [
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
@@ -1926,7 +1940,7 @@
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
-     "chore: 自动同步 Star 地图（187 个项目）",
+     "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（187 个项目）"
     ]
    }
@@ -1941,12 +1955,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-26T13:15:54Z",
+  "pushed_at": "2026-10-26T20:36:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T13:15:53Z",
+    "last_commit": "2026-10-26T20:36:42Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2431,15 +2445,16 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-26T19:18:42Z",
+  "pushed_at": "2026-10-26T20:51:46Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 165,
+    "ahead": 168,
     "behind": 20,
-    "files": 99,
-    "real_files": 98,
+    "files": 120,
+    "real_files": 119,
     "dirs": [
+     "NATIVE-MOVIES.md",
      "UPDATE-2026-10-20.zh-CN.md",
      "V1.3-MIGRATION.md",
      "codemagic.yaml",
@@ -2448,19 +2463,18 @@
      "dm/gfx",
      "dm/host",
      "dm/i18n",
-     "dm/ios",
-     "dm/tools"
+     "dm/ios"
     ],
-    "last_commit": "2026-10-26T19:17:45Z",
+    "last_commit": "2026-10-26T20:51:44Z",
     "subjects": [
+     "Preserve cancelled touch semantics and requested presentation intervals",
+     "Handle absent movie resources through native zero-track EOS protocol",
+     "Fix portrait rotation and touch lifecycle; enable native VP8 cutscenes",
      "Release v1.3 with MetalFX and portrait reliability improvements",
      "Move portrait D2 Pal shortcut to belt menu and suppress duplicate HUD art",
      "Refine portrait HUD and harden external app resume",
      "Improve portrait controls and camera for v1.2.1",
-     "v1.2: detect portrait from window bounds, rebuild game view, always push oe 31",
-     "v1.2: portrait present fills the screen (square swapchain, full-screen crop)",
-     "v1.2 build 5: landscape launch, in-run portrait rotation, force landscape on exit",
-     "Portrait mode (launch-orientation lock); release v1.2"
+     "v1.2: detect portrait from window bounds, rebuild game view, always push oe 31"
     ]
    },
    {
@@ -4053,21 +4067,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-26T19:44:34Z",
+  "pushed_at": "2026-10-26T23:17:41Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T19:44:33Z",
+    "last_commit": "2026-10-26T23:11:05Z",
     "subjects": [
-     "docs: install guide only installs; controls and test records get their own pages",
-     "docs: install skill for AI assistants, linked from the README",
-     "docs: shorten the README tagline to the NVN-on-Metal question",
-     "docs: README puts the legal notice first and presents the project as a technical exploration",
-     "feat: merge 66 shared shader list contributions",
-     "fix: tile-read pipelines reach the shared list (T rows), so a new install no longer builds them in play",
-     "docs: remove the gameplay screenshot from the README",
-     "perf: the warm-up builds its pipelines on several threads and writes the pipeline archive in files of 8 (Mac)"
+     "fix: the controller chord opens the settings panel only after a second's hold; its docs in docs/controls.md (after PR #977)",
+     "Merge PR #977: open and navigate the macOS settings panel with a controller (@tiff75009)",
+     "feat(dread): Metroid Dread 1.0.0 runs natively, playable through the first area (from PR #970)",
+     "docs: the phone's touch gyro and haptics under the touch controls in docs/controls.md (after PR #561)",
+     "Merge PR #561: the iPhone's own gyro and haptics serve touch play (@XMirageL)",
+     "fix: make_button_icons.py says which RomFS file is missing instead of stopping with StopIteration (after PR #767)",
+     "Merge PR #767: keyboard key icons for any layout, and in the in-game button guide (@kanapitsas)",
+     "fix: controller text entry follows the host's language, its docs move to docs/controls.md, its probes run under unittest (after PR #976)"
     ]
    }
   ]
@@ -4615,7 +4629,7 @@
   ]
  },
  "n2ray/d2r-mobile": {
-  "pushed_at": "2026-10-26T18:41:24Z",
+  "pushed_at": "2026-10-26T20:43:00Z",
   "branches": [
    {
     "branch": "archive/android-legacy-20261023",
@@ -4689,6 +4703,33 @@
      "test(ui): document synthetic vault regression fixtures",
      "fix(ui): suppress vault tab highlights under item descriptions",
      "fix(ui): align Chronicle vault tab hitboxes with their artwork"
+    ]
+   },
+   {
+    "branch": "generic/android",
+    "ahead": 726,
+    "behind": 0,
+    "files": 53,
+    "real_files": 50,
+    "dirs": [
+     "dm/android",
+     "dm/games",
+     "dm/gfx",
+     "dm/harmony",
+     "dm/host",
+     "dm/ios",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-26T20:42:50Z",
+    "subjects": [
+     "refactor(android): extract initial D2R game profile",
+     "fix(ui): draw Chronicle tabs below item descriptions",
+     "fix(ui): align Chronicle vault tab hitboxes with their artwork",
+     "Merge upstream Android 2.0.1 and controller UI fixes",
+     "fix(touch): release virtual menu commands after one input sample",
+     "Merge upstream map state restoration",
+     "docs: make upstream-based Android the active fork baseline",
+     "chore: retain legacy Android history under upstream-based main"
     ]
    },
    {
@@ -5051,7 +5092,7 @@
   ]
  },
  "kxn/d2r-mobile": {
-  "pushed_at": "2026-10-26T19:59:28Z",
+  "pushed_at": "2026-10-27T00:15:46Z",
   "branches": [
    {
     "branch": "codex/alias-negative-last-gap-v1",
@@ -5079,7 +5120,7 @@
    },
    {
     "branch": "codex/android-native-backup-20261019",
-    "ahead": 465,
+    "ahead": 477,
     "behind": 31,
     "files": 300,
     "real_files": 299,
@@ -5089,16 +5130,40 @@
      "dm/gfx",
      "dm/host"
     ],
-    "last_commit": "2026-10-26T19:59:26Z",
+    "last_commit": "2026-10-27T00:13:39Z",
     "subjects": [
-     "Compare repaired GPU workload and isolate presentation buffer traffic",
-     "Measure isolated store planning cost with Perfetto PMU and actual API traces",
-     "Isolate attachment store index cost while retaining query and state planning",
-     "Verify ordinary desktop launches with coherent shared backing and Turnip policy",
-     "Publish typed cold execution and app-private Turnip policies in startup profile v2",
-     "Integrate verified inline translation experiments and coherent image byte-scope fix",
-     "Prove shared image page false dependency and same-process 16 to 40 FPS recovery",
-     "Default coherent image CPU observations to exact GPU byte dependencies"
+     "Document query preparation cost matrix and qualified ordinary deployment",
+     "Retain prepared attachments while live occlusion query preparation is a no-op",
+     "Record native presentation bandwidth results and incomplete resume qualification",
+     "Avoid whole-swapchain clear for negligible native presentation borders",
+     "Add cold application-local game-size presentation buffer experiment",
+     "Document completed QoS, trace overhead and hardware instruction comparisons",
+     "Verify QoS selection from actual guest worker startup entries",
+     "Include Android thread ID declaration for QoS setup"
+    ]
+   },
+   {
+    "branch": "codex/android-query-attachment-reuse-v1",
+    "ahead": 476,
+    "behind": 31,
+    "files": 300,
+    "real_files": 299,
+    "dirs": [
+     "AGENTS.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/host"
+    ],
+    "last_commit": "2026-10-26T23:36:54Z",
+    "subjects": [
+     "Retain prepared attachments while live occlusion query preparation is a no-op",
+     "Record native presentation bandwidth results and incomplete resume qualification",
+     "Avoid whole-swapchain clear for negligible native presentation borders",
+     "Add cold application-local game-size presentation buffer experiment",
+     "Document completed QoS, trace overhead and hardware instruction comparisons",
+     "Verify QoS selection from actual guest worker startup entries",
+     "Include Android thread ID declaration for QoS setup",
+     "Add cold Android guest worker QoS parity experiment"
     ]
    },
    {
@@ -7428,30 +7493,6 @@
      "Add once-only official debugger counters to resource residency experiment",
      "Add reversible matched native texture game experiment controller"
     ]
-   },
-   {
-    "branch": "codex/native-astc-linear-game-pair-v1",
-    "ahead": 150,
-    "behind": 31,
-    "files": 300,
-    "real_files": 299,
-    "dirs": [
-     "AGENTS.md",
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-20T19:25:01Z",
-    "subjects": [
-     "Authenticate f830 native tables while retaining exact AA game pair path",
-     "Trim trailing whitespace in import comparison notes",
-     "Allow measured one MiB native import window comparison",
-     "tools: initialize readiness journal and execute offline readiness cases",
-     "tools: prepare matched native texture CPU and SurfaceFlinger windows",
-     "Add once-only official debugger counters to resource residency experiment",
-     "Add reversible matched native texture game experiment controller",
-     "Require sampled FS caller and explicit native token identity in game proof"
-    ]
    }
   ]
  },
@@ -7613,21 +7654,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-10-26T12:27:50Z",
+  "pushed_at": "2026-10-26T23:35:40Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T12:27:48Z",
+    "last_commit": "2026-10-26T23:35:38Z",
     "subjects": [
+     "Preflight shader translator before game extraction and allow manual retry",
+     "Release v0.3.46 with isolated save failures and Mac audio recovery",
+     "Release v0.3.45: Duo tabletop game and controller layout",
+     "Complete verified renderer source for v0.3.44",
+     "Release v0.3.44: grouped launcher and NX performance settings",
      "Remove redundant red picker accessory and keep native top instructions",
      "Localize native build selection prompts to the macOS system language",
-     "Highlight supported game version 3.0.3 in the build input picker",
-     "Fix cross-volume package output and clarify input selection steps",
-     "Rewrite one-click guide around the double-click folder selection flow",
-     "Add interactive Mac app launcher and verified-build cache cleanup",
-     "Release 0.3.43 Duo testing with selected upstream compatibility fixes",
-     "Preserve approved Duo test layout screenshot and save coordination changes"
+     "Highlight supported game version 3.0.3 in the build input picker"
     ]
    }
   ]
@@ -7911,21 +7952,21 @@
   ]
  },
  "Xc1Ym/LumaDock": {
-  "pushed_at": "2026-10-26T07:41:21Z",
+  "pushed_at": "2026-10-26T23:13:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T03:24:38Z",
+    "last_commit": "2026-10-26T23:13:46Z",
     "subjects": [
+     "chore: sync tested nxnative snapshot",
      "Release LumaDock 0.2.12 with smaller ARM64 installer",
      "Merge pull request #18 from Xc1Ym/codex/reduce-installer-size",
      "perf: reduce macOS installer size",
      "Merge pull request #17 from Xc1Ym/codex/bundled-native-controllers",
      "merge: reconcile released PRs with the integration branch",
      "Merge pull request #16 from Xc1Ym/codex/compact-library-environment-ui",
-     "Release LumaDock 0.2.11 with integrated recovery, UI and bundled engine",
-     "Merge pull request #15 from Xc1Ym/codex/save-backup-runtime-rollback"
+     "Release LumaDock 0.2.11 with integrated recovery, UI and bundled engine"
     ]
    }
   ]
@@ -8748,12 +8789,12 @@
   "branches": []
  },
  "seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-26T09:36:21Z",
+  "pushed_at": "2026-10-26T21:59:02Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 273,
-    "behind": 8,
+    "ahead": 277,
+    "behind": 9,
     "files": 214,
     "real_files": 210,
     "dirs": [
@@ -8768,16 +8809,16 @@
      "dm/tools",
      "tools/ohos"
     ],
-    "last_commit": "2026-10-26T09:31:48Z",
+    "last_commit": "2026-10-26T21:57:43Z",
     "subjects": [
+     "feat(os): 64KB-align allocations >= 64KB (upstream alloc_big_align)",
+     "fix(nvn): BEGIN not counted in GetCommandMemoryUsed; CopyCommands really copies",
+     "feat(diag): runtime null-this guards, guest-body probes, fp chain & thread dump",
+     "fix(host): gate D2R-only automation pumps (BotW: hardcoded D2R address called as guest fn)",
      "np348: 门票① 收窄 —— NVN 调用真时间序 + 内存/虚表探针",
      "np347: DeviceGetInteger 对账 —— 能力位加 DM_DEVIINFO_CAP 开关（默认关，零行为变化）",
      "np303-np346: 真机夜战收口 —— 仪器加固 + NVN 入口补齐 + svc 层对齐 nxnative",
-     "np302: HLE 危险条目审计 —— 返回 NULL 时无条件报红",
-     "np301: 装载后清补丁点 icache（未解决 0x45f9dc 崩点，但机制正确）",
-     "np297-300: 运行时改客体代码不可靠 → 改为离线改产物",
-     "np293-296: 客体分配链路整段打通 + 构造链空指针保护",
-     "np291/292: 装 libc 初始化 hook（客体 malloc 族可用）+ 崩点链探针"
+     "np302: HLE 危险条目审计 —— 返回 NULL 时无条件报红"
     ]
    }
   ]
@@ -8854,21 +8895,21 @@
   ]
  },
  "alexgaoth/awesome-reverse-engineered": {
-  "pushed_at": "2026-10-26T13:24:17Z",
+  "pushed_at": "2026-10-26T20:50:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T13:24:14Z",
+    "last_commit": "2026-10-26T20:48:40Z",
     "subjects": [
+     "Trendshift badge in the README; IndexNow key for the site (#53)",
+     "Crawlable category pages, sitemap.xml and robots.txt (#52)",
      "Nightly refresh 2026-10-26 (#51)",
      "Nightly refresh 2026-10-25 (#50)",
      "Nightly refresh 2026-10-24 (#49)",
      "Nightly refresh 2026-10-23 (#48)",
      "Keep the count in mcp/README.md in step with the data (#47)",
-     "Add the Resurrected page: 131 products their makers killed, kept alive by open source (#46)",
-     "README in Vietnamese and Brazilian Portuguese (#45)",
-     "Share card: 16,000+ projects (#44)"
+     "Add the Resurrected page: 131 products their makers killed, kept alive by open source (#46)"
     ]
    }
   ]
@@ -9130,41 +9171,41 @@
   ]
  },
  "TIMYW2K/d2r-mobile-ios": {
-  "pushed_at": "2026-10-26T19:24:46Z",
+  "pushed_at": "2026-10-26T20:58:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T19:17:45Z",
+    "last_commit": "2026-10-26T20:51:44Z",
     "subjects": [
+     "Preserve cancelled touch semantics and requested presentation intervals",
+     "Handle absent movie resources through native zero-track EOS protocol",
+     "Fix portrait rotation and touch lifecycle; enable native VP8 cutscenes",
      "Release v1.3 with MetalFX and portrait reliability improvements",
      "Move portrait D2 Pal shortcut to belt menu and suppress duplicate HUD art",
      "Refine portrait HUD and harden external app resume",
      "Improve portrait controls and camera for v1.2.1",
-     "v1.2: detect portrait from window bounds, rebuild game view, always push oe 31",
-     "v1.2: portrait present fills the screen (square swapchain, full-screen crop)",
-     "v1.2 build 5: landscape launch, in-run portrait rotation, force landscape on exit",
-     "Portrait mode (launch-orientation lock); release v1.2"
+     "v1.2: detect portrait from window bounds, rebuild game view, always push oe 31"
     ]
    }
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-10-26T20:17:23Z",
+  "pushed_at": "2026-10-26T22:01:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T20:17:21Z",
+    "last_commit": "2026-10-26T22:01:54Z",
     "subjects": [
+     "hle_time: CreateWithAdjustableSystemClock, and the snapshot type byte (PR #26)",
+     "hle_oe: add the EnableAlbumImageTakenNotification entry (PR #24)",
+     "v0.4.7 notes: the launcher has not been built, and the Windows package is not shipping",
+     "v0.4.7: the update-history rows describe the whole release",
+     "Two notices the last build cycle asked for, then some",
      "build script: rmtree survives an external exFAT work folder",
      "Qt front end: the language toggle re-translates everything, and the venv finds the app interpreter",
-     "dlopen probe: zero Xcode warnings",
-     "dlopen probe: embed the framework into the app bundle",
-     "dlopen probe as an Xcode project: the route around throttled sideloaders",
-     "Windows: the fifth handheld report — verdicts, evidence, and the missing installers",
-     "Xcode detection asks xcode-select, so a beta counts (issue #21)",
-     "launcher-c-design: note that the dlopen probe has landed (the two branches merged)"
+     "dlopen probe: zero Xcode warnings"
     ]
    }
   ]
@@ -9522,14 +9563,14 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-10-26T18:33:11Z",
+  "pushed_at": "2026-10-27T00:01:51Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 151,
+    "ahead": 154,
     "behind": 8,
-    "files": 210,
-    "real_files": 199,
+    "files": 221,
+    "real_files": 210,
     "dirs": [
      ".gitattributes",
      "CLAUDE.md",
@@ -9542,16 +9583,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-26T18:08:33Z",
+    "last_commit": "2026-10-26T23:59:35Z",
     "subjects": [
+     "feat(re): extract the engine's reflection tables; register DM_RE_PORT",
+     "feat(tools): guestsyms and sampagg show engine names from the analysis export",
+     "feat(re): a private engine-analysis database of the game program (Ghidra)",
      "docs(claude): the DM_TEST_PAD_GLYPH test switch",
      "feat(mac): the Options buttons show their controller keys; back = Discard",
      "fix(tests): the options layout test accepts a platform default",
      "docs(mac): bring the Mac guide up to date",
-     "docs(readme): rewrite for players and developers, accurate per platform",
-     "feat(options): Frame Drops defaults to Keep 3D Res on the Mac",
-     "docs(claude): on-screen keyboard and the background-safe test lines",
-     "feat(ios): on-screen controller keyboard in the iOS shell"
+     "docs(readme): rewrite for players and developers, accurate per platform"
     ]
    },
    {
