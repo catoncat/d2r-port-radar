@@ -1862,21 +1862,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-27T15:11:51Z",
+  "pushed_at": "2026-10-27T20:13:07Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-27T15:11:47Z",
+    "last_commit": "2026-10-27T19:53:05Z",
     "subjects": [
-     "Issue forms, a pull request template and CONTRIBUTING.md (#306, #388)",
-     "Fix four host static-analyzer findings (#424)",
-     "Mac app: a settings window before the game starts (#379, #374, #388)",
-     "Restore 1963fab and 35e1b6e, which f646545 undid by mistake",
-     "AGENTS.md: use the games table instead of a count (#398)",
-     "Saved choices: one store and one order for every way a game starts (#388)",
-     "iOS launcher: sub-settings appear only when they can do anything (#355)",
-     "launcher.json: the render scale's base size, from the profile's render_base (#399)"
+     "Run CI sanitizers and fix audio and thread publication bugs",
+     "Fix memory-test CI and path-free regression impact",
+     "regress.py: no machine-specific default for --root / --games-dir",
+     "Address space, stage 1: a region table and StandardAllocator's address space",
+     "Allow input-free smoke routes in regression tests",
+     "Port Silver Pines 1.0.0 (#449)",
+     "Port Blasphemous 1.0.8",
+     "Recover stripped Unity 2021.3 compute kernels (#440)"
     ]
    }
   ]
@@ -1942,16 +1942,16 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-27T12:09:22Z",
+  "pushed_at": "2026-10-27T22:12:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-27T12:09:21Z",
+    "last_commit": "2026-10-27T22:12:25Z",
     "subjects": [
      "chore: 自动同步 Star 地图（189 个项目）",
-     "chore: 自动同步 Star 地图（188 个项目）",
-     "chore: 自动同步 Star 地图（188 个项目）",
+     "chore: 自动同步 Star 地图（189 个项目）",
+     "chore: 自动同步 Star 地图（189 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
@@ -1970,12 +1970,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-27T09:09:57Z",
+  "pushed_at": "2026-10-27T15:27:39Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-27T09:09:55Z",
+    "last_commit": "2026-10-27T15:27:38Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2460,36 +2460,36 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-27T15:11:19Z",
+  "pushed_at": "2026-10-27T22:16:32Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 172,
+    "ahead": 177,
     "behind": 22,
-    "files": 131,
-    "real_files": 130,
+    "files": 136,
+    "real_files": 134,
     "dirs": [
      "NATIVE-MOVIES.md",
      "UPDATE-2026-10-20.zh-CN.md",
      "V1.3-MIGRATION.md",
      "codemagic.yaml",
      "codemagic_pick_pack.py",
+     "dm/common",
      "dm/data",
      "dm/gfx",
      "dm/host",
-     "dm/i18n",
-     "dm/ios"
+     "dm/i18n"
     ],
-    "last_commit": "2026-10-27T15:11:16Z",
+    "last_commit": "2026-10-27T22:13:58Z",
     "subjects": [
+     "Fix portrait rotation crash from panel relayout hooks",
+     "Improve portrait HUD alignment and diagnostics",
+     "Fix minimap outline local variable name",
+     "Adjust portrait HUD and character highlight",
+     "Fix character card overlay span lengths",
      "Fix frontend card height and inset; drive rotation from independent motion intent",
      "Clear late previous-run posture without blocking new-run rotation",
-     "Restore first landscape rotation and keep credits exit touches out of movie skip",
-     "Fix frontend modals and portrait entry; add touch movie skip and scene framing",
-     "Preserve cancelled touch semantics and requested presentation intervals",
-     "Handle absent movie resources through native zero-track EOS protocol",
-     "Fix portrait rotation and touch lifecycle; enable native VP8 cutscenes",
-     "Release v1.3 with MetalFX and portrait reliability improvements"
+     "Restore first landscape rotation and keep credits exit touches out of movie skip"
     ]
    },
    {
@@ -4082,21 +4082,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-27T14:21:28Z",
+  "pushed_at": "2026-10-27T18:01:15Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-27T14:15:03Z",
+    "last_commit": "2026-10-27T18:01:05Z",
     "subjects": [
+     "chore: 32 shader list issues merged (#1078–#1121): TOTK 13,619 variants, 65,361 pipeline rows; BotW 481 variants, 15,952 pipeline rows",
+     "perf(botw): inline CallCommands/CopyCommands bodies in one copy for Breath of the Wild too",
      "docs(acnh): the Ryujinx audio licence its runtime cites, and the README names the two code patches (after PR #820)",
      "feat(acnh): Animal Crossing: New Horizons 1.2.1 runs natively (from PR #820)",
      "Merge PR #1083: feat: add The Legend of Zelda: Echoes of Wisdom 1.1.0 community port (@pliskinfree)",
      "Merge PR #149: rumble over HID for controllers macOS gives no haptics, from a profile table (@qq3229311585-jpg)",
      "Merge PR #920: Write a Switch Pro Controller's rumble to its HID reports (@LudovicLemarinel)",
-     "docs: the controls section says the profile line can end in [1] when the high motor is the weak one",
-     "docs: two untested HID rumble profile lines from SDL's drivers (8BitDo Pro 3, NVIDIA Shield V103), and what a profile cannot express",
-     "fix: 8BitDo rumble resends a held value every 50 ms, repeats the stop, and the low motor carries the stronger side"
+     "docs: the controls section says the profile line can end in [1] when the high motor is the weak one"
     ]
    }
   ]
@@ -5133,7 +5133,7 @@
   ]
  },
  "kxn/d2r-mobile": {
-  "pushed_at": "2026-10-27T15:08:38Z",
+  "pushed_at": "2026-10-27T22:12:31Z",
   "branches": [
    {
     "branch": "codex/alias-negative-last-gap-v1",
@@ -5161,7 +5161,7 @@
    },
    {
     "branch": "codex/android-native-backup-20261019",
-    "ahead": 525,
+    "ahead": 561,
     "behind": 33,
     "files": 300,
     "real_files": 299,
@@ -5171,16 +5171,16 @@
      "dm/gfx",
      "dm/host"
     ],
-    "last_commit": "2026-10-27T15:08:35Z",
+    "last_commit": "2026-10-27T22:11:16Z",
     "subjects": [
-     "tools: verify explicit capture metadata and bind owner identities across profiler schemas",
-     "docs: separate observed CPU policy caps from governor demand changes",
-     "docs: correct small-sample cost attribution after reverse controls",
-     "docs: investigate WALT feedback and require actual swapchain parity",
-     "docs: qualify sparse costs by raw sample support and trace coverage",
-     "tools: show validated raw sample support alongside whole-run cost changes",
-     "docs: account for sparse replay net costs and current upstream GPU gap",
-     "vulkan: streamline state replay within a single proven pure span"
+     "Add verified VS and FS address-normalized shader cache candidate",
+     "docs: record native VS address normalization game gains",
+     "tools: verify and reuse immutable device shader input for incremental atomic deployment",
+     "shaders: add authenticated cache-derived recipe and UBO normalization build stages",
+     "shaders: prove modular UBO index normalization and verify actual-driver native load coalescing",
+     "docs: record actual-driver native constant-load coalescing evidence",
+     "tools: preserve reproducible actual-driver texel format qualification without game dependencies",
+     "docs: prioritize current actual GPU shader budgets and record qualified exclusions"
     ]
    },
    {
@@ -7560,21 +7560,21 @@
   ]
  },
  "iceorange-dev/manosaba-ios": {
-  "pushed_at": "2026-10-24T00:41:03Z",
+  "pushed_at": "2026-10-27T21:30:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-24T00:35:29Z",
+    "last_commit": "2026-10-27T20:47:19Z",
     "subjects": [
-     "Plan batch 107: the core tests share their fakes and checks (264)",
-     "Plan batch 106: host/ in directories by role",
-     "Plan batch 105: the interface layer, hle_nvn.c, in parts",
-     "Plan batch 104: three more translation units of the Metal backend (264)",
-     "Plan batch 103: the Metal backend's private header, and its first translation unit of its own (264)",
-     "Plan batch 102: the draw part split into the draw's stages and the copies (264)",
-     "Plan batch 101: SetRenderTargets, the clears and conditional rendering move into gfx/nvn/core (264)",
-     "Plan batch 100: the execution interface and the replay loop move into gfx/nvn/core (264)"
+     "Plan batch 121: the Native setting for Tears of the Kingdom, docked at 1080p (281)",
+     "Plan: 285's runs were the cool case (the phone has a cooler on it)",
+     "Plan: 270 measured on the iPhone Air at 60 and 30 fps, closed",
+     "Plan batch 120: uniform copy sizes counted, t_upwait by its median (271)",
+     "Plan batch 119: 8-byte hash keys compared as one word (271, part)",
+     "Plan batch 118: TotK's frame-rate interval held at 1 on request (285, part)",
+     "Plan batch 117: TotK's dynamic resolution seen and held at 100 % on request (276, 131a)",
+     "Plan batch 116: bounded pipeline compiles, texture views by their base (283, 271)"
     ]
    }
   ]
@@ -8816,14 +8816,14 @@
   "branches": []
  },
  "seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-27T10:30:02Z",
+  "pushed_at": "2026-10-27T17:01:06Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 280,
+    "ahead": 283,
     "behind": 11,
-    "files": 221,
-    "real_files": 217,
+    "files": 222,
+    "real_files": 218,
     "dirs": [
      "NOTICE.md",
      "PORTABLE.md",
@@ -8836,16 +8836,16 @@
      "dm/tools",
      "tools/ohos"
     ],
-    "last_commit": "2026-10-27T10:06:16Z",
+    "last_commit": "2026-10-27T16:59:29Z",
     "subjects": [
+     "fix(loader): guard the scene-manager virtual call site at main+0xa660a8",
+     "feat(loader): two-level null guard for the resource-manager getter",
+     "fix(account): take over ListAllUsers / OpenPreselectedUser / CloseUser",
      "fix(vi): initialise the display vsync SystemEvent and drive it at 60 Hz",
      "feat(diag): trustworthy backtraces and full guest debug output",
      "feat(host): game identity gate + service-layer takeovers for a second game",
      "feat(os): 64KB-align allocations >= 64KB (upstream alloc_big_align)",
-     "fix(nvn): BEGIN not counted in GetCommandMemoryUsed; CopyCommands really copies",
-     "feat(diag): runtime null-this guards, guest-body probes, fp chain & thread dump",
-     "fix(host): gate D2R-only automation pumps (BotW: hardcoded D2R address called as guest fn)",
-     "np348: 门票① 收窄 —— NVN 调用真时间序 + 内存/虚表探针"
+     "fix(nvn): BEGIN not counted in GetCommandMemoryUsed; CopyCommands really copies"
     ]
    }
   ]
@@ -9178,61 +9178,61 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-10-27T13:04:58Z",
+  "pushed_at": "2026-10-27T20:50:12Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-27T13:03:25Z",
+    "last_commit": "2026-10-27T19:12:13Z",
     "subjects": [
-     "Move the base to 1963fab: RomFS bytes into the zstd fallback, Pokemon Scarlet and Xenoblade 2",
-     "Kirby: declare colour 5 as uint for the 137 pixel shaders whose pipelines Metal refused",
-     "Move the base to 75065df: streamed RomFS images, pacing past 60 Hz, four more games",
-     "Move the base to 40b643b: Retro SNVN shaders, incremental IPA packs, two more games",
-     "Re-extract a DLC when the file behind its index changed",
-     "Pack the DLC in the folder instead of refusing it",
-     "Say in the README which games cannot be packed, before a user tries",
-     "Ship the shader directory this build filled, not the alphabetically last one"
+     "Move the base to 4397e2e: Obra Dinn, both Blasphemous games and Silver Pines",
+     "Kirby: let the facts file's header say what it now holds",
+     "Sync the packer's copies with 84ca44b: three more games and Mario Kart's 4.0.1",
+     "Kirby: add the 24 colour-5 rows a 28-minute run printed",
+     "Move the patch base to 84ca44b, where main.m's include block moved under our patch",
+     "Say what a Vulkan capture needs instead of that the packer has none",
+     "Hand the merged shader facts to the translator, and stop shadowing rows",
+     "Move the base to 1963fab: RomFS bytes into the zstd fallback, Pokemon Scarlet and Xenoblade 2"
     ]
    }
   ]
  },
  "TIMYW2K/d2r-mobile-ios": {
-  "pushed_at": "2026-10-27T15:19:12Z",
+  "pushed_at": "2026-10-27T22:16:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-27T15:11:16Z",
+    "last_commit": "2026-10-27T22:13:58Z",
     "subjects": [
+     "Fix portrait rotation crash from panel relayout hooks",
+     "Improve portrait HUD alignment and diagnostics",
+     "Fix minimap outline local variable name",
+     "Adjust portrait HUD and character highlight",
+     "Fix character card overlay span lengths",
      "Fix frontend card height and inset; drive rotation from independent motion intent",
      "Clear late previous-run posture without blocking new-run rotation",
-     "Restore first landscape rotation and keep credits exit touches out of movie skip",
-     "Fix frontend modals and portrait entry; add touch movie skip and scene framing",
-     "Preserve cancelled touch semantics and requested presentation intervals",
-     "Handle absent movie resources through native zero-track EOS protocol",
-     "Fix portrait rotation and touch lifecycle; enable native VP8 cutscenes",
-     "Release v1.3 with MetalFX and portrait reliability improvements"
+     "Restore first landscape rotation and keep credits exit touches out of movie skip"
     ]
    }
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-10-27T14:36:32Z",
+  "pushed_at": "2026-10-27T21:58:40Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-27T14:36:28Z",
+    "last_commit": "2026-10-27T21:58:36Z",
     "subjects": [
-     "Mac saves move beside the game; the iPhone can pick its game data from anywhere",
-     "Windows: the Metal probe works under a Chinese user name, and the panel stops crying wolf",
-     "The glslang check is a function, so the Xcode fixture can mock it (CI red)",
-     "Merge PR #62 by hand: the launcher installs its own updates, and keeps the sheet",
-     "Merge PR #61: the library's hero takes what the collection row leaves, so fullscreen fits (v0lumehi)",
-     "README: glslang is in the brew line, marked as the OpenGL-only one",
-     "An OpenGL game's missing glslangValidator is reported before the long steps (issue #71)",
-     "Release notes: English in full, then Chinese in full (and the sheet reads both shapes)"
+     "v0.5.0",
+     "README: the latest highlights under the banner (both languages), and the v0.5.0 release notes draft",
+     "No game data yet boots into the launcher, and Play (re)locates the data",
+     "Keep every extracted version as the build resource it is, and reveal the game data after a device install",
+     "Merge branch 'pr-96'",
+     "Issue forms for game, build and launcher problems, a PR template and contribution rules that tools follow too",
+     "Merge branch 'pr-94'",
+     "sync_upstream: DataBookmark is the fork's own file (OURS)"
     ]
    }
   ]
@@ -9590,42 +9590,42 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-10-27T06:54:12Z",
+  "pushed_at": "2026-10-27T22:02:15Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 218,
-    "behind": 0,
-    "files": 298,
-    "real_files": 286,
+    "ahead": 258,
+    "behind": 2,
+    "files": 300,
+    "real_files": 296,
     "dirs": [
      ".gitattributes",
      "CLAUDE.md",
+     "CONTRIBUTING.md",
+     "CONTRIBUTING.zh-CN.md",
      "dm/.gitignore",
+     "dm/PRODUCT",
+     "dm/README.md",
+     "dm/README.zh-CN.md",
      "dm/gfx",
-     "dm/host",
-     "dm/i18n",
-     "dm/ios",
-     "dm/switches.tsv",
-     "dm/tools",
-     "dm/verify"
+     "dm/host"
     ],
-    "last_commit": "2026-10-27T06:40:59Z",
+    "last_commit": "2026-10-27T21:42:43Z",
     "subjects": [
-     "re: autoname's coverage projection counts only still-unnamed functions",
-     "re: bulk naming candidates (autoname.py)",
-     "verify: client packets labelled in plain words, lengths checked",
-     "state: gold, stash gold, items, repeated item ids, live monsters",
-     "re: data-table layouts from the running game; game, inventory, item structures",
-     "saves: report slow save I/O before it can crash the game (save_slow)",
-     "verify: FORK_GATE notes the first full run and the Mac naming case",
-     "verify: scenario backends per front end; Mac App naming variant"
+     "build: Metal 4 and macOS / iOS 27 only",
+     "perf(gfx): let a render pass's vertex work overlap earlier passes (Metal 4)",
+     "docs(claude): Mac picture settings keys, Native output and rec_v",
+     "feat(mac): Native output and a 3D Resolution row; Recommended v2",
+     "feat(bench): re-compare a finished A/B on any metric; @bindskip series",
+     "perf(gfx): filter repeated state binds while recording",
+     "feat(mac): Color, Anti-Aliasing and Texture Filtering rows on the Video tab",
+     "feat(gfx): anisotropic filtering override for the game's trilinear samplers"
     ]
    },
    {
     "branch": "up/graphics",
     "ahead": 8,
-    "behind": 0,
+    "behind": 2,
     "files": 31,
     "real_files": 26,
     "dirs": [
@@ -9949,6 +9949,49 @@
     "last_commit": "2026-10-27T14:48:27Z",
     "subjects": [
      "Initial commit"
+    ]
+   }
+  ]
+ },
+ "ImstyleX783/d2r-mobile": {
+  "pushed_at": "2026-10-27T16:50:31Z",
+  "branches": [
+   {
+    "branch": "codespace-foul-crematorium-p794jxpwgp4jhr6w6",
+    "ahead": 1,
+    "behind": 71,
+    "files": 1,
+    "real_files": 1,
+    "dirs": [
+     ".vscode/launch.json"
+    ],
+    "last_commit": "2026-10-27T16:50:28Z",
+    "subjects": [
+     "Pending changes exported from your codespace"
+    ]
+   }
+  ]
+ },
+ "pojoker/d2r-mobile": {
+  "pushed_at": "2026-10-27T17:26:31Z",
+  "branches": []
+ },
+ "Carter54git/Greates-Games-Decompilations-List": {
+  "pushed_at": "2026-10-27T16:38:19Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-27T16:38:17Z",
+    "subjects": [
+     "Add files via upload",
+     "Add files via upload",
+     "Add files via upload",
+     "Add files via upload",
+     "Add files via upload",
+     "Add files via upload",
+     "Add files via upload",
+     "Update README.md"
     ]
    }
   ]
