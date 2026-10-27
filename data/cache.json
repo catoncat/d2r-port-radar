@@ -318,25 +318,25 @@
   ]
  },
  "n1zjqo/d2r-mobile": {
-  "pushed_at": "2026-10-24T06:03:19Z",
+  "pushed_at": "2026-10-27T06:28:53Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 8,
+    "ahead": 9,
     "behind": 0,
     "files": 1,
     "real_files": 0,
     "dirs": [],
-    "last_commit": "2026-10-24T06:03:19Z",
+    "last_commit": "2026-10-27T06:28:53Z",
     "subjects": [
+     "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge pull request #1 from jhaizhou-ops/main",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
-     "Merge branch 'jhaizhou-ops:main' into main",
-     "ci: sync upstream main daily at 09:23 China time"
+     "Merge branch 'jhaizhou-ops:main' into main"
     ]
    }
   ]
@@ -571,7 +571,7 @@
   "branches": []
  },
  "linjiacheng/d2r-mobile": {
-  "pushed_at": "2026-10-18T11:37:38Z",
+  "pushed_at": "2026-10-27T02:10:10Z",
   "branches": []
  },
  "fengtong1109/d2r-mobile": {
@@ -583,21 +583,22 @@
   "branches": []
  },
  "tkcoliver-glitch/d2r-mobile": {
-  "pushed_at": "2026-10-26T12:40:34Z",
+  "pushed_at": "2026-10-27T06:41:26Z",
   "branches": [
    {
     "branch": "dev",
-    "ahead": 6,
-    "behind": 33,
-    "files": 20,
-    "real_files": 20,
+    "ahead": 7,
+    "behind": 8,
+    "files": 21,
+    "real_files": 21,
     "dirs": [
      "dm/host",
      "dm/i18n",
      "dm/ios"
     ],
-    "last_commit": "2026-10-20T12:29:50Z",
+    "last_commit": "2026-10-26T13:09:54Z",
     "subjects": [
+     "test(ui): stub touch mode in rebased minimap fixture",
      "feat(ios): add bulk attribute allocation menu",
      "fix(input): await confirmed off-hand weapon swap",
      "fix(ui): restore minimap after first-clear act cinematics",
@@ -765,7 +766,7 @@
   ]
  },
  "Zhangbu/d2r-mobile": {
-  "pushed_at": "2026-10-26T00:57:28Z",
+  "pushed_at": "2026-10-27T06:27:04Z",
   "branches": []
  },
  "zcanic/d2r-mobile": {
@@ -832,12 +833,12 @@
   "branches": []
  },
  "klacee/d2r-mobile": {
-  "pushed_at": "2026-10-23T08:13:41Z",
+  "pushed_at": "2026-10-27T08:36:35Z",
   "branches": [
    {
     "branch": "main",
     "ahead": 2,
-    "behind": 33,
+    "behind": 42,
     "files": 1,
     "real_files": 0,
     "dirs": [],
@@ -930,8 +931,22 @@
   "branches": []
  },
  "hubeiqiao/d2r-mobile": {
-  "pushed_at": "2026-10-26T21:38:57Z",
+  "pushed_at": "2026-10-27T01:53:25Z",
   "branches": [
+   {
+    "branch": "codex/belt-drop-cell",
+    "ahead": 1,
+    "behind": 0,
+    "files": 4,
+    "real_files": 3,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-27T01:53:12Z",
+    "subjects": [
+     "fix(touch): preserve potion drops in overlapping belt cells"
+    ]
+   },
    {
     "branch": "codex/cow-leg-any-difficulty",
     "ahead": 1,
@@ -1379,7 +1394,7 @@
   "branches": []
  },
  "MichaelC001/d2r-mobile": {
-  "pushed_at": "2026-10-24T02:31:20Z",
+  "pushed_at": "2026-10-27T02:31:25Z",
   "branches": []
  },
  "tinytub/d2r-mobile": {
@@ -1567,21 +1582,21 @@
   ]
  },
  "d2r-mobile/d2r-mobile": {
-  "pushed_at": "2026-10-26T16:05:08Z",
+  "pushed_at": "2026-10-27T08:41:32Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T16:02:06Z",
+    "last_commit": "2026-10-27T08:37:26Z",
     "subjects": [
+     "Add Android save backups",
+     "Fix vault tab layering",
+     "Fix vault tab hit areas",
+     "Update Android release notes",
      "Fix controller legend cleanup",
      "Clarify command pool timeout logging",
      "Bump Android version to 2.0.1",
-     "Build texture checks on macOS",
-     "Skip compute pipelines rejected by the driver",
-     "Use filterable channels for BC4 and BC5",
-     "Adjust shader rewrites for Adreno 740 and 750",
-     "Fix inventory drift after closing the stash"
+     "Build texture checks on macOS"
     ]
    }
   ]
@@ -1646,7 +1661,7 @@
   ]
  },
  "wukongtime/d2r-mobile-build-backup": {
-  "pushed_at": "2026-10-23T02:04:01Z",
+  "pushed_at": "2026-10-27T01:55:32Z",
   "branches": [
    {
     "branch": "main",
@@ -1747,21 +1762,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-10-26T04:20:15Z",
+  "pushed_at": "2026-10-27T04:39:32Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T04:20:14Z",
+    "last_commit": "2026-10-27T04:39:31Z",
     "subjects": [
+     "radar 2026-10-27",
      "radar 2026-10-26",
      "radar 2026-10-25",
      "radar 2026-10-24",
      "radar 2026-10-23",
      "radar 2026-10-22",
      "radar 2026-10-21",
-     "radar 2026-10-20",
-     "radar 2026-10-19"
+     "radar 2026-10-20"
     ]
    }
   ]
@@ -1847,21 +1862,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-27T00:23:12Z",
+  "pushed_at": "2026-10-27T09:03:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-27T00:23:06Z",
+    "last_commit": "2026-10-27T09:02:47Z",
     "subjects": [
-     "Fix audio-device test host-work fixture",
-     "Port Xenoblade Chronicles 3 2.2.1",
-     "Add cross-game regression harness and prevent false passes (#328)",
-     "Port Mario + Rabbids Sparks of Hope",
-     "Share physical storage for live NVN resolution variants",
-     "Make display-link tick tests deterministic in CI",
-     "Route direct OpenGL imports through the GL layer",
-     "Pace high-refresh NVN display mode in display-link ticks (#324)"
+     "c1_guard.py: check the shaders on every core (#381)",
+     "romfs.open: type it as the builtin open, so readers keep bytes and str",
+     "Thread dump: read a waiting thread's guest stack page by page",
+     "Thread dump: x19-x28 on the guest stack line of a thread waiting in an SVC (x23-x28 are the caller's registers untouched by the SDK's wait wrappers, where a task or object pointer often is)",
+     "Thread dump: the guest callers of a thread waiting in an SVC",
+     "Stream RomFS images through extraction, build tools and app bundles",
+     "DM_NVN_TSV: per-frame rows for the display-link tick that took each frame",
+     "Display link summary: count empty ticks instead of ticks minus presents"
     ]
    }
   ]
@@ -1927,12 +1942,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-26T22:39:24Z",
+  "pushed_at": "2026-10-27T05:01:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T22:39:23Z",
+    "last_commit": "2026-10-27T05:01:56Z",
     "subjects": [
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
@@ -1941,7 +1956,7 @@
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
      "chore: 自动同步 Star 地图（188 个项目）",
-     "chore: 自动同步 Star 地图（187 个项目）"
+     "chore: 自动同步 Star 地图（188 个项目）"
     ]
    }
   ]
@@ -1955,12 +1970,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-26T20:36:43Z",
+  "pushed_at": "2026-10-27T00:33:58Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T20:36:42Z",
+    "last_commit": "2026-10-27T00:33:57Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2045,7 +2060,7 @@
   "branches": []
  },
  "hyhou/d2r-mobile": {
-  "pushed_at": "2026-10-24T02:24:53Z",
+  "pushed_at": "2026-10-27T01:57:48Z",
   "branches": []
  },
  "austery/d2r-mobile": {
@@ -2445,14 +2460,14 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-10-26T20:51:46Z",
+  "pushed_at": "2026-10-27T02:35:38Z",
   "branches": [
    {
     "branch": "lang-voice",
-    "ahead": 168,
+    "ahead": 171,
     "behind": 20,
-    "files": 120,
-    "real_files": 119,
+    "files": 128,
+    "real_files": 127,
     "dirs": [
      "NATIVE-MOVIES.md",
      "UPDATE-2026-10-20.zh-CN.md",
@@ -2465,16 +2480,16 @@
      "dm/i18n",
      "dm/ios"
     ],
-    "last_commit": "2026-10-26T20:51:44Z",
+    "last_commit": "2026-10-27T02:35:36Z",
     "subjects": [
+     "Clear late previous-run posture without blocking new-run rotation",
+     "Restore first landscape rotation and keep credits exit touches out of movie skip",
+     "Fix frontend modals and portrait entry; add touch movie skip and scene framing",
      "Preserve cancelled touch semantics and requested presentation intervals",
      "Handle absent movie resources through native zero-track EOS protocol",
      "Fix portrait rotation and touch lifecycle; enable native VP8 cutscenes",
      "Release v1.3 with MetalFX and portrait reliability improvements",
-     "Move portrait D2 Pal shortcut to belt menu and suppress duplicate HUD art",
-     "Refine portrait HUD and harden external app resume",
-     "Improve portrait controls and camera for v1.2.1",
-     "v1.2: detect portrait from window bounds, rebuild game view, always push oe 31"
+     "Move portrait D2 Pal shortcut to belt menu and suppress duplicate HUD art"
     ]
    },
    {
@@ -3514,7 +3529,7 @@
   "branches": []
  },
  "donutnomad/d2r-mobile": {
-  "pushed_at": "2026-10-24T00:46:28Z",
+  "pushed_at": "2026-10-27T00:47:24Z",
   "branches": []
  },
  "funkhua/d2r-mobile": {
@@ -3590,7 +3605,7 @@
   "branches": []
  },
  "maxshine/d2r-mobile": {
-  "pushed_at": "2026-10-17T05:02:05Z",
+  "pushed_at": "2026-10-27T01:51:06Z",
   "branches": []
  },
  "hzdlive/d2r-mobile": {
@@ -4067,21 +4082,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-26T23:17:41Z",
+  "pushed_at": "2026-10-27T02:10:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T23:11:05Z",
+    "last_commit": "2026-10-27T02:10:43Z",
     "subjects": [
+     "chore: 43 pipelines collected in play (15 render, 28 tile-read) into the shared list",
+     "fix(botw): the options' Labo VR mode no longer crashes the game; the stereo vision check answers \"not permitted\"",
      "fix: the controller chord opens the settings panel only after a second's hold; its docs in docs/controls.md (after PR #977)",
      "Merge PR #977: open and navigate the macOS settings panel with a controller (@tiff75009)",
      "feat(dread): Metroid Dread 1.0.0 runs natively, playable through the first area (from PR #970)",
      "docs: the phone's touch gyro and haptics under the touch controls in docs/controls.md (after PR #561)",
      "Merge PR #561: the iPhone's own gyro and haptics serve touch play (@XMirageL)",
-     "fix: make_button_icons.py says which RomFS file is missing instead of stopping with StopIteration (after PR #767)",
-     "Merge PR #767: keyboard key icons for any layout, and in the in-game button guide (@kanapitsas)",
-     "fix: controller text entry follows the host's language, its docs move to docs/controls.md, its probes run under unittest (after PR #976)"
+     "fix: make_button_icons.py says which RomFS file is missing instead of stopping with StopIteration (after PR #767)"
     ]
    }
   ]
@@ -4629,7 +4644,7 @@
   ]
  },
  "n2ray/d2r-mobile": {
-  "pushed_at": "2026-10-26T20:43:00Z",
+  "pushed_at": "2026-10-27T07:07:37Z",
   "branches": [
    {
     "branch": "archive/android-legacy-20261023",
@@ -4670,6 +4685,32 @@
     "last_commit": "2026-10-23T15:38:49Z",
     "subjects": [
      "android: declare Android Auto parked-game entry"
+    ]
+   },
+   {
+    "branch": "feature/startup-save-backup",
+    "ahead": 729,
+    "behind": 0,
+    "files": 44,
+    "real_files": 41,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/harmony",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-27T07:07:17Z",
+    "subjects": [
+     "feat(android): add startup save ZIP export and guarded restore",
+     "fix(ui): draw Chronicle tabs below item descriptions",
+     "revert(ui): withdraw unverified vault highlight suppression",
+     "test(ui): document synthetic vault regression fixtures",
+     "fix(ui): suppress vault tab highlights under item descriptions",
+     "fix(ui): align Chronicle vault tab hitboxes with their artwork",
+     "Merge upstream Android 2.0.1 and controller UI fixes",
+     "fix(touch): release virtual menu commands after one input sample"
     ]
    },
    {
@@ -4997,21 +5038,21 @@
   ]
  },
  "reacher-z/Awesome-REA": {
-  "pushed_at": "2026-10-24T08:03:25Z",
+  "pushed_at": "2026-10-27T09:03:18Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T18:42:40Z",
+    "last_commit": "2026-10-27T09:07:22Z",
     "subjects": [
+     "Resolve the batch 19 post-only case leads and curate the Roborock Local Server case (#932)",
+     "Resolve the Gemini Web To API stand-in test lead as insufficient evidence (#930)",
+     "Add a generated totals and review-date line to README Contents (#929)",
+     "Resolve the batch 18 post-only case leads as insufficient evidence (#928)",
+     "Resolve the batch 24 post-only case leads as insufficient evidence (#926)",
      "Resolve the coding-harness skill-distillation lead as insufficient evidence (#924)",
      "Resolve the Ask HN AI decompilation discussion lead as insufficient evidence (#922)",
-     "Curate the Noflag REA evidence-architecture study (#920)",
-     "Resolve the AI-generated decompilations discussion lead as insufficient evidence (#919)",
-     "Resolve the batch 16 post-only case leads and curate the iX500 Scan case (#916)",
-     "Resolve the genAI PC-port speed-up discussion lead as insufficient evidence (#915)",
-     "Curate the Sonic Advance 3 AI-assisted module decompilation study (#913)",
-     "Resolve the guitar-effects firmware lead and curate the reflecticon-224 case (#911)"
+     "Curate the Noflag REA evidence-architecture study (#920)"
     ]
    }
   ]
@@ -5092,7 +5133,7 @@
   ]
  },
  "kxn/d2r-mobile": {
-  "pushed_at": "2026-10-27T00:15:46Z",
+  "pushed_at": "2026-10-27T08:25:31Z",
   "branches": [
    {
     "branch": "codex/alias-negative-last-gap-v1",
@@ -5120,7 +5161,7 @@
    },
    {
     "branch": "codex/android-native-backup-20261019",
-    "ahead": 477,
+    "ahead": 500,
     "behind": 31,
     "files": 300,
     "real_files": 299,
@@ -5130,16 +5171,16 @@
      "dm/gfx",
      "dm/host"
     ],
-    "last_commit": "2026-10-27T00:13:39Z",
+    "last_commit": "2026-10-27T08:22:22Z",
     "subjects": [
-     "Document query preparation cost matrix and qualified ordinary deployment",
-     "Retain prepared attachments while live occlusion query preparation is a no-op",
-     "Record native presentation bandwidth results and incomplete resume qualification",
-     "Avoid whole-swapchain clear for negligible native presentation borders",
-     "Add cold application-local game-size presentation buffer experiment",
-     "Document completed QoS, trace overhead and hardware instruction comparisons",
-     "Verify QoS selection from actual guest worker startup entries",
-     "Include Android thread ID declaration for QoS setup"
+     "docs: keep upstream gap open and isolate driver execution cost",
+     "vulkan: reduce exact GPU query scaling to radix-65536 division",
+     "tools: add isolated existing IR3 compiler diagnostics wrapper",
+     "tools: expose existing Mesa pass tracing through diagnostic Android wrapper",
+     "docs: close major upstream performance gap investigation with verified evidence",
+     "docs: quantify current CPU memory stalls and macro budgets",
+     "Verify upstream UBWC and matched write parity; bound shared CPU and mip continuation evidence",
+     "Record alternating real-game UBWC write reductions and ordinary-launch qualification"
     ]
    },
    {
@@ -7628,7 +7669,7 @@
   ]
  },
  "LuciDuan/123": {
-  "pushed_at": "2026-10-19T10:15:37Z",
+  "pushed_at": "2026-10-27T05:41:59Z",
   "branches": [
    {
     "branch": "main",
@@ -7654,21 +7695,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-10-26T23:35:40Z",
+  "pushed_at": "2026-10-27T09:06:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T23:35:38Z",
+    "last_commit": "2026-10-27T09:03:31Z",
     "subjects": [
+     "Prepare v0.3.47 Duo testing release with audio and locale fixes",
+     "Add experimental Duo tabletop minimap mirror with isolated presentation buffers",
      "Preflight shader translator before game extraction and allow manual retry",
      "Release v0.3.46 with isolated save failures and Mac audio recovery",
      "Release v0.3.45: Duo tabletop game and controller layout",
      "Complete verified renderer source for v0.3.44",
      "Release v0.3.44: grouped launcher and NX performance settings",
-     "Remove redundant red picker accessory and keep native top instructions",
-     "Localize native build selection prompts to the macOS system language",
-     "Highlight supported game version 3.0.3 in the build input picker"
+     "Remove redundant red picker accessory and keep native top instructions"
     ]
    }
   ]
@@ -7843,25 +7884,11 @@
   "branches": []
  },
  "zzz6519003/d2r-mobile": {
-  "pushed_at": "2026-10-20T08:26:51Z",
-  "branches": [
-   {
-    "branch": "patch-1",
-    "ahead": 2,
-    "behind": 1,
-    "files": 1,
-    "real_files": 0,
-    "dirs": [],
-    "last_commit": "2026-10-20T08:26:50Z",
-    "subjects": [
-     "Refine older-systems compatibility docs for clarity and consistency",
-     "Refine documentation for older systems compatibility"
-    ]
-   }
-  ]
+  "pushed_at": "2026-10-27T06:52:55Z",
+  "branches": []
  },
  "neutronflare/d2r-mobile": {
-  "pushed_at": "2026-10-20T05:35:31Z",
+  "pushed_at": "2026-10-27T03:50:22Z",
   "branches": []
  },
  "codetrek/d2r-server": {
@@ -9032,7 +9059,7 @@
   "branches": []
  },
  "wdjwxh/Taikou5-mobile": {
-  "pushed_at": "2026-10-24T08:22:31Z",
+  "pushed_at": "2026-10-27T05:29:48Z",
   "branches": [
    {
     "branch": "main",
@@ -9151,7 +9178,7 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-10-26T17:11:36Z",
+  "pushed_at": "2026-10-27T03:01:13Z",
   "branches": [
    {
     "branch": "main",
@@ -9171,41 +9198,41 @@
   ]
  },
  "TIMYW2K/d2r-mobile-ios": {
-  "pushed_at": "2026-10-26T20:58:14Z",
+  "pushed_at": "2026-10-27T02:41:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T20:51:44Z",
+    "last_commit": "2026-10-27T02:35:36Z",
     "subjects": [
+     "Clear late previous-run posture without blocking new-run rotation",
+     "Restore first landscape rotation and keep credits exit touches out of movie skip",
+     "Fix frontend modals and portrait entry; add touch movie skip and scene framing",
      "Preserve cancelled touch semantics and requested presentation intervals",
      "Handle absent movie resources through native zero-track EOS protocol",
      "Fix portrait rotation and touch lifecycle; enable native VP8 cutscenes",
      "Release v1.3 with MetalFX and portrait reliability improvements",
-     "Move portrait D2 Pal shortcut to belt menu and suppress duplicate HUD art",
-     "Refine portrait HUD and harden external app resume",
-     "Improve portrait controls and camera for v1.2.1",
-     "v1.2: detect portrait from window bounds, rebuild game view, always push oe 31"
+     "Move portrait D2 Pal shortcut to belt menu and suppress duplicate HUD art"
     ]
    }
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-10-26T22:01:56Z",
+  "pushed_at": "2026-10-27T09:05:55Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T22:01:54Z",
+    "last_commit": "2026-10-27T09:05:53Z",
     "subjects": [
-     "hle_time: CreateWithAdjustableSystemClock, and the snapshot type byte (PR #26)",
-     "hle_oe: add the EnableAlbumImageTakenNotification entry (PR #24)",
-     "v0.4.7 notes: the launcher has not been built, and the Windows package is not shipping",
-     "v0.4.7: the update-history rows describe the whole release",
-     "Two notices the last build cycle asked for, then some",
-     "build script: rmtree survives an external exFAT work folder",
-     "Qt front end: the language toggle re-translates everything, and the venv finds the app interpreter",
-     "dlopen probe: zero Xcode warnings"
+     "Sync upstream 75065df",
+     "Sync upstream: RomFS images, and every carrier realigned for the changes they brought",
+     "sync: dm/games/game.py belongs in OURS, not behind a verifier",
+     "sync: the tests/Makefile patcher's rule/recipe pairing was off by one line",
+     "sync: tests/Makefile's patcher adds hle_profile.c to the rules that reach dm_profile()",
+     "sync: the pwd-import anchor follows upstream's import line (zlib left it)",
+     "sync: build_ipa.sh's slim patch handles the image form too",
+     "sync: realign the patchers for upstream's RomFS image work"
     ]
    }
   ]
@@ -9563,14 +9590,14 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-10-27T00:01:51Z",
+  "pushed_at": "2026-10-27T06:54:12Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 154,
-    "behind": 8,
-    "files": 221,
-    "real_files": 210,
+    "ahead": 218,
+    "behind": 0,
+    "files": 298,
+    "real_files": 286,
     "dirs": [
      ".gitattributes",
      "CLAUDE.md",
@@ -9583,16 +9610,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-26T23:59:35Z",
+    "last_commit": "2026-10-27T06:40:59Z",
     "subjects": [
-     "feat(re): extract the engine's reflection tables; register DM_RE_PORT",
-     "feat(tools): guestsyms and sampagg show engine names from the analysis export",
-     "feat(re): a private engine-analysis database of the game program (Ghidra)",
-     "docs(claude): the DM_TEST_PAD_GLYPH test switch",
-     "feat(mac): the Options buttons show their controller keys; back = Discard",
-     "fix(tests): the options layout test accepts a platform default",
-     "docs(mac): bring the Mac guide up to date",
-     "docs(readme): rewrite for players and developers, accurate per platform"
+     "re: autoname's coverage projection counts only still-unnamed functions",
+     "re: bulk naming candidates (autoname.py)",
+     "verify: client packets labelled in plain words, lengths checked",
+     "state: gold, stash gold, items, repeated item ids, live monsters",
+     "re: data-table layouts from the running game; game, inventory, item structures",
+     "saves: report slow save I/O before it can crash the game (save_slow)",
+     "verify: FORK_GATE notes the first full run and the Mac naming case",
+     "verify: scenario backends per front end; Mac App naming variant"
     ]
    },
    {
@@ -9685,27 +9712,45 @@
   ]
  },
  "cxu/d2r-mobile": {
-  "pushed_at": "2026-10-26T07:14:59Z",
-  "branches": []
+  "pushed_at": "2026-10-27T06:07:23Z",
+  "branches": [
+   {
+    "branch": "local-fixes",
+    "ahead": 1,
+    "behind": 0,
+    "files": 3,
+    "real_files": 3,
+    "dirs": [
+     "dm/android",
+     "dm/gfx"
+    ],
+    "last_commit": "2026-10-27T06:03:31Z",
+    "subjects": [
+     "Pura 适配：跳过 subgroup 校验 + 存档外置公共目录"
+    ]
+   }
+  ]
  },
  "oneforoneofone/d2r-mobile": {
   "pushed_at": "2026-10-26T10:15:01Z",
   "branches": []
  },
  "yxxxxx1/d2r-mobile-windows-skill": {
-  "pushed_at": "2026-10-26T11:44:52Z",
+  "pushed_at": "2026-10-27T03:58:55Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T11:44:01Z",
+    "last_commit": "2026-10-27T03:58:20Z",
     "subjects": [
+     "Merge pull request #4 from yxxxxx1/codex/resource-search-note",
+     "docs: add user-provided Switch520 resource search note",
+     "Merge pull request #3 from yxxxxx1/codex/optional-community-saves",
+     "feat: bundle 24 optional community character saves",
      "Merge pull request #2 from yxxxxx1/codex/credit-original-authors",
      "docs: prominently credit original D2R and build authors",
      "Merge pull request #1 from yxxxxx1/codex/publish-skill",
-     "chore: normalize file endings for distribution",
-     "feat: add reusable D2R Mobile Windows installation skill",
-     "docs: initialize skill sharing repository"
+     "chore: normalize file endings for distribution"
     ]
    }
   ]
@@ -9765,6 +9810,50 @@
     "last_commit": "2026-10-26T14:07:16Z",
     "subjects": [
      "Initial commit"
+    ]
+   }
+  ]
+ },
+ "benloong/d2r-mobile": {
+  "pushed_at": "2026-10-27T03:18:31Z",
+  "branches": []
+ },
+ "Xc1Ym/LumaNX": {
+  "pushed_at": "2026-10-27T06:05:38Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-27T05:44:05Z",
+    "subjects": [
+     "Release LumaNX 0.2.15",
+     "Merge pull request #22 from Xc1Ym/codex/rename-lumanx",
+     "Rename project to LumaNX and refresh bilingual screenshots",
+     "Release LumaDock 0.2.14",
+     "chore: sync tested nxnative snapshot",
+     "Release LumaDock 0.2.13",
+     "Merge pull request #21 from Xc1Ym/codex/fix-package-guard-fixture",
+     "Merge pull request #19 from Xc1Ym/codex/compact-glass-pages"
+    ]
+   }
+  ]
+ },
+ "leeashine/ot2-mobile": {
+  "pushed_at": "2026-10-26T15:12:04Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-26T06:29:19Z",
+    "subjects": [
+     "test(host): run the classic-Metal tests against the vendored gfx by default",
+     "docs(release): launcher, virtualenv note and measured first-build time",
+     "feat(scripts): add ot2_play.sh and print the offline-shader switch",
+     "docs(release): use the snowy town as the hero screenshot",
+     "fix(gfx): 默认使用OT2离线shader路线",
+     "fix(gfx): 预编译预看后恢复裁剪矩形",
+     "docs(release): all shaders are now extracted statically",
+     "fix(shaders): decode every UEXP shader record from its full LZ4 block"
     ]
    }
   ]
