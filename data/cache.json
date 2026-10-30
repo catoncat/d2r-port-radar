@@ -1562,7 +1562,7 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-10-30T17:19:11Z",
+  "pushed_at": "2026-10-30T19:29:50Z",
   "branches": [
    {
     "branch": "main",
@@ -1942,18 +1942,18 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-30T12:53:07Z",
+  "pushed_at": "2026-10-30T22:17:17Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T12:53:06Z",
+    "last_commit": "2026-10-30T22:17:16Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（193 个项目）",
      "chore: 自动同步 Star 地图（192 个项目）",
      "chore: 自动同步 Star 地图（191 个项目）",
      "chore: 自动同步 Star 地图（190 个项目）",
      "chore: 自动同步 Star 地图（190 个项目）",
-     "chore: 自动同步 Star 地图（189 个项目）",
      "chore: 自动同步 Star 地图（189 个项目）",
      "chore: 自动同步 Star 地图（189 个项目）",
      "chore: 自动同步 Star 地图（189 个项目）"
@@ -1970,12 +1970,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-30T10:10:09Z",
+  "pushed_at": "2026-10-30T18:04:34Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T10:10:08Z",
+    "last_commit": "2026-10-30T18:04:33Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -3286,7 +3286,7 @@
   ]
  },
  "Ti800/d2r": {
-  "pushed_at": "2026-10-28T06:01:43Z",
+  "pushed_at": "2026-10-30T21:02:00Z",
   "branches": [
    {
     "branch": "main",
@@ -4659,12 +4659,12 @@
   ]
  },
  "n2ray/d2r-mobile": {
-  "pushed_at": "2026-10-29T06:31:35Z",
+  "pushed_at": "2026-10-30T22:04:16Z",
   "branches": [
    {
     "branch": "archive/android-legacy-20261023",
     "ahead": 712,
-    "behind": 21,
+    "behind": 37,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4691,7 +4691,7 @@
    {
     "branch": "feat/android-auto-parked",
     "ahead": 1,
-    "behind": 15,
+    "behind": 31,
     "files": 3,
     "real_files": 3,
     "dirs": [
@@ -4705,7 +4705,7 @@
    {
     "branch": "feature/startup-save-backup",
     "ahead": 729,
-    "behind": 6,
+    "behind": 22,
     "files": 44,
     "real_files": 41,
     "dirs": [
@@ -4731,7 +4731,7 @@
    {
     "branch": "fix/android-power-saver-pacing",
     "ahead": 1,
-    "behind": 15,
+    "behind": 31,
     "files": 3,
     "real_files": 3,
     "dirs": [
@@ -4745,7 +4745,7 @@
    {
     "branch": "fix/upstream-chronicle-vault-tabs",
     "ahead": 5,
-    "behind": 6,
+    "behind": 22,
     "files": 4,
     "real_files": 4,
     "dirs": [
@@ -4764,7 +4764,7 @@
    {
     "branch": "generic/android",
     "ahead": 726,
-    "behind": 6,
+    "behind": 22,
     "files": 53,
     "real_files": 50,
     "dirs": [
@@ -4791,7 +4791,7 @@
    {
     "branch": "hermes/android-autobuff-360",
     "ahead": 696,
-    "behind": 21,
+    "behind": 37,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4818,7 +4818,7 @@
    {
     "branch": "hermes/android-swap-above-361",
     "ahead": 696,
-    "behind": 21,
+    "behind": 37,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -4845,7 +4845,7 @@
    {
     "branch": "main",
     "ahead": 723,
-    "behind": 6,
+    "behind": 22,
     "files": 35,
     "real_files": 32,
     "dirs": [
@@ -4870,7 +4870,7 @@
    {
     "branch": "review/upstream-183",
     "ahead": 736,
-    "behind": 0,
+    "behind": 16,
     "files": 51,
     "real_files": 48,
     "dirs": [
@@ -4896,7 +4896,7 @@
    {
     "branch": "sync/upstream-android-2.0.2",
     "ahead": 731,
-    "behind": 4,
+    "behind": 20,
     "files": 44,
     "real_files": 41,
     "dirs": [
@@ -4922,7 +4922,7 @@
    {
     "branch": "sync/upstream-android-2.1.0",
     "ahead": 732,
-    "behind": 0,
+    "behind": 16,
     "files": 46,
     "real_files": 43,
     "dirs": [
@@ -4943,6 +4943,32 @@
      "revert(ui): withdraw unverified vault highlight suppression",
      "test(ui): document synthetic vault regression fixtures",
      "fix(ui): suppress vault tab highlights under item descriptions"
+    ]
+   },
+   {
+    "branch": "sync/upstream-android-2.2.1",
+    "ahead": 737,
+    "behind": 0,
+    "files": 43,
+    "real_files": 40,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/harmony",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-30T22:04:01Z",
+    "subjects": [
+     "Sync upstream 2.2.1 and restore upstream map behavior",
+     "fix: unblock crash watchdog for alarm signal",
+     "Merge remote-tracking branch 'upstream/review-183' into review/upstream-183",
+     "Threads: log when a guest thread exits through the host-stack path (first 20, then every 50th)",
+     "Crash handling: a crash can no longer hang the game; guest threads exit on the host stack",
+     "Merge remote-tracking branch 'upstream/main' into sync/upstream-android-2.1.0",
+     "docs: record upstream Android 2.0.2 sync",
+     "Merge remote-tracking branch 'upstream/main' into sync/upstream-android-2.0.2"
     ]
    }
   ]
@@ -9372,21 +9398,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-10-30T18:01:34Z",
+  "pushed_at": "2026-10-30T22:22:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T17:59:52Z",
+    "last_commit": "2026-10-30T22:22:25Z",
     "subjects": [
-     "Merge pull request #266 from LNPANDY/v0lumehi/devicectl-no-wipe",
-     "Never pass devicectl's --remove-existing-content",
-     "Merge pull request #262 from LNPANDY/v0lumehi/regen-qt-table",
-     "Qt: regenerate the language table for the cheats iOS note",
-     "Merge pull request #259 from LNPANDY/v0lumehi/dependabot-bundled-python",
-     "Merge pull request #258 from LNPANDY/v0lumehi/bundle-zbic",
-     "Merge pull request #257 from LNPANDY/v0lumehi/ios-cheats-note",
-     "Merge pull request #256 from LNPANDY/fix/qt-locale-and-table"
+     "Merge pull request #279 from LNPANDY/v0lumehi/icloud-build-folder",
+     "Merge pull request #276 from LNPANDY/v0lumehi/issue-and-pr-forms",
+     "Merge pull request #277 from LNPANDY/v0lumehi/restart-and-wrapping",
+     "Stop a build whose folder is in iCloud Drive and explain why",
+     "Settings rows: wrap prose details, cut only paths in the middle, widen the language picker",
+     "Restart now: open the new copy from a helper once the old process has exited",
+     "PR template asks fix or feature as a question, ideas skip the problem form, triage reads fenced fields",
+     "v0.7.3"
     ]
    }
   ]
@@ -10340,21 +10366,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-10-29T20:15:07Z",
+  "pushed_at": "2026-10-30T19:29:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T20:15:06Z",
+    "last_commit": "2026-10-30T18:55:14Z",
     "subjects": [
-     "Merge pull request #103 from todwang96/fix-turnip-gpu-heap-auto",
-     "Turnip: gpu_heap = auto keeps the heap on for the driver's renamed Adreno 7xx",
-     "Merge pull request #97 from 3122380113/framepace-no-ffmpeg",
-     "0.2.4-beta (versionCode 24)",
-     "Motion: a controller's gyroscope takes over only after a quarter second of movement, and gives back after 2 s of zeros (#78)",
-     "framepace: builds without FFmpeg link again (g_movie_playing lives in movie.c, left out then)",
-     "Game code build: a resumed build reads only this run's generator log (#52, #92)",
-     "Mali: the arena and readbacks in cached memory again, flushed and invalidated by hand"
+     "0.2.5-beta (versionCode 25)",
+     "Merge origin/main: #97 (framepace builds without FFmpeg), #103 (Turnip gpu_heap = auto on renamed Adreno 7xx)",
+     "Menus: Game Files' copy/in-place choice translated, and the 12 lines the other languages lacked",
+     "Movies: a missing one is stood in for by another of its folder, from its end (#113)",
+     "Shaders: an 8-bit value read back with x * 255 is rounded, not truncated (#112)",
+     "Vulkan: a surface lost while making the swapchain is made again at the next frame, no FATAL (#108)",
+     "Movies: one that can't be opened plays as an empty movie instead of crashing the game (#113)",
+     "Game Files: the DLC's romfs is no longer taken for the game's (#87)"
     ]
    }
   ]
@@ -10397,21 +10423,21 @@
   ]
  },
  "simipoB/PKShield-Android": {
-  "pushed_at": "2026-10-30T16:48:50Z",
+  "pushed_at": "2026-10-30T22:21:51Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T03:51:13Z",
+    "last_commit": "2026-10-30T22:21:48Z",
     "subjects": [
+     "Update mirrored pools in submission order and cap anisotropic filtering",
+     "Move driver memory onto pools on Xclipse and check the engine's shader chain",
      "Build custom Vulkan driver support by default",
      "Translate shaders in smaller batches and run the GL depth pass in parallel",
      "Show shader translation progress and keep the screen on during setup",
      "Translate captured shaders after a restart and capture unmapped ones",
      "Fix extractor crash, lost captured shaders and stale shader packs",
-     "Synchronize packaged shader chain version",
-     "Fallback Mali render target views to native format",
-     "Log missing Mali render target images"
+     "Synchronize packaged shader chain version"
     ]
    }
   ]
@@ -10450,12 +10476,12 @@
   ]
  },
  "tib-kpl/d2r-mobile": {
-  "pushed_at": "2026-10-30T13:32:21Z",
+  "pushed_at": "2026-10-30T18:28:20Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 16,
-    "behind": 2,
+    "ahead": 17,
+    "behind": 0,
     "files": 68,
     "real_files": 61,
     "dirs": [
@@ -10469,16 +10495,16 @@
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-10-30T13:28:06Z",
+    "last_commit": "2026-10-30T18:22:47Z",
     "subjects": [
+     "Merge upstream map crash fix while preserving Android CI versioning",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge upstream controller and camera updates while preserving Android profiles",
      "Move FFmpeg notices to an optional Android licenses page",
      "Present fork features in an English README note",
      "Load Android touch art from the selected game pack",
      "Read Android game packs from SD filesystems without xattrs",
-     "Fetch pinned FFmpeg source from its official GitHub mirror",
-     "Retry interrupted FFmpeg source downloads in Android CI"
+     "Fetch pinned FFmpeg source from its official GitHub mirror"
     ]
    }
   ]
@@ -10556,7 +10582,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-10-30T18:01:12Z",
+  "pushed_at": "2026-10-30T18:05:58Z",
   "branches": [
    {
     "branch": "main",
@@ -10576,21 +10602,21 @@
   ]
  },
  "Desm0nt/doom-port": {
-  "pushed_at": "2026-10-30T13:09:34Z",
+  "pushed_at": "2026-10-30T20:37:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T13:09:33Z",
+    "last_commit": "2026-10-30T20:37:28Z",
     "subjects": [
+     "README: fast zlib loads",
+     "Fast zlib and Turnip sysmem by default",
      "README: link the latest release",
      "README: 8 Gen 2 tested, current performance, memory advice, zlib-ng credit",
      "docs: zlib, memory and texture-discard notes, id Tech 6 resource research",
      "Memory: RAM-adaptive VRAM pool headroom, texture classification, optional guest-copy discard",
      "Optional fast inflate: zlib-ng (NEON) behind the game's zlib 1.2.3",
-     "README: settings languages, FPS limit, shared dynamic resolution, drivers by GPU, other GPUs",
-     "docs: settings, non-Adreno support notes, new defaults and switches",
-     "Engine: survive non-Adreno GPUs, cheaper texture dirty checks, NaN-safe saturate, FPS cap"
+     "README: settings languages, FPS limit, shared dynamic resolution, drivers by GPU, other GPUs"
     ]
    }
   ]
@@ -10707,5 +10733,69 @@
     ]
    }
   ]
+ },
+ "vertanom/d2r-mobile": {
+  "pushed_at": "2026-10-30T20:16:50Z",
+  "branches": [
+   {
+    "branch": "android-red-zone",
+    "ahead": 358,
+    "behind": 37,
+    "files": 225,
+    "real_files": 186,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-10-22T00:22:21Z",
+    "subjects": [
+     "Rewriter, Android target: keep nothing below sp in rewrite blocks",
+     "Rewrite verification: equiv.py checks Android outputs and reads below sp",
+     "Notes: first-play stutter, background builds and the warm-up seed",
+     "Vulkan shader bundles: build the 4 query kernels from source",
+     "Vulkan shader bundles: biglawine's XGS1 packer and query-kernel source",
+     "test_mac_features: define DM_PHONE in the synthetic autobuff source",
+     "gen_assets: reuse fresh full assets for overlay-only requests; keep .pyc out of the stamp",
+     "Mac/iOS: give mtl_event_read an empty weak definition"
+    ]
+   },
+   {
+    "branch": "fix/widestash-plus-close-drift",
+    "ahead": 1,
+    "behind": 30,
+    "files": 3,
+    "real_files": 3,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-25T16:54:56Z",
+    "subjects": [
+     "Widened stash: the inventory no longer drifts right each time the stash is closed with +"
+    ]
+   },
+   {
+    "branch": "fix/zr-portal-bound-skill",
+    "ahead": 1,
+    "behind": 0,
+    "files": 4,
+    "real_files": 4,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-10-30T20:14:53Z",
+    "subjects": [
+     "Free town portal: a skill bound to ZR (or ZL+ZR) is cast again instead of opening a portal"
+    ]
+   }
+  ]
+ },
+ "nx-ports/d2r-mobile": {
+  "pushed_at": "2026-10-24T14:57:26Z",
+  "branches": []
  }
 }
