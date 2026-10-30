@@ -1862,21 +1862,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-29T18:24:30Z",
+  "pushed_at": "2026-10-30T01:03:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T18:24:29Z",
+    "last_commit": "2026-10-30T01:02:17Z",
     "subjects": [
-     "t_fpslock: copy the Frostbite names literal by its own length (PR #648)",
-     "Capstone 5 pinned: the rewriter and the NSP script reject other versions (PR #390)",
-     "DM_NVN_CAPTURE: gone texture IDs, the standard thread policy, pool bytes last",
-     "NVN replay: the replayer's own objects take serials above a capture's (Pokemon Scarlet)",
-     "CI: the c2_array lint finding, and game-patches.md without tripled host rows",
-     "Cloud saves: a game's Mac and iPhone apps share one save through an iCloud Drive folder (PR #617)",
-     "Host fs: stop at the rom mount when DM_ROMFS is missing (#615, PR #616)",
-     "nacp: inflate a compressed title area no further than its 0x6000 bytes, and let the nacp fuzz harness catch zlib inflation (#610)"
+     "NSP script: a package with no ticket and no [title ID] in its name gives its title ID from its own meta NCA (PR #666)",
+     "DM_REC and DM_KEYS frame steps at the game's reads: replays frame for frame",
+     "CI: dmsh_logic lint findings silenced with reasons (chain b3ca4b7c621f), test_dmsh_logic finds its sibling module, DM_WINDOW_TOP in the switch table",
+     "Same-pass feedback snapshots without per-game lists: a draw that writes what it samples, one snapshot until the game's next barrier",
+     "NVN logic operations through a chain-built library; ordering barriers before a later write (GitHub issue #643)",
+     "Record player input as DM_KEYS steps (DM_REC), DM_KEYS=@<file> (PR #448)",
+     "Shaders: sampler border colours Metal lacks, emulated through a twin sampler (#607)",
+     "Captures at chain f3ceca86cac5; Tears of the Kingdom varies under early fragment tests"
     ]
    }
   ]
@@ -1942,15 +1942,15 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-29T12:58:29Z",
+  "pushed_at": "2026-10-29T22:44:03Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T12:58:28Z",
+    "last_commit": "2026-10-29T22:44:02Z",
     "subjects": [
      "chore: 自动同步 Star 地图（190 个项目）",
-     "chore: 自动同步 Star 地图（189 个项目）",
+     "chore: 自动同步 Star 地图（190 个项目）",
      "chore: 自动同步 Star 地图（189 个项目）",
      "chore: 自动同步 Star 地图（189 个项目）",
      "chore: 自动同步 Star 地图（189 个项目）",
@@ -1970,12 +1970,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-29T10:08:04Z",
+  "pushed_at": "2026-10-29T18:32:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T10:08:03Z",
+    "last_commit": "2026-10-29T18:32:19Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4097,21 +4097,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-29T18:22:57Z",
+  "pushed_at": "2026-10-29T18:32:54Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T18:14:44Z",
+    "last_commit": "2026-10-29T18:32:53Z",
     "subjects": [
+     "Merge PR #1271 again: the author's merge of main (no new change)",
+     "Merge origin/main into feat/mk8d-booster-course",
+     "Merge PR #1309 again: the author's newer commit (feat(xc3): add 2.2.1)",
+     "Merge PR #1271 again: the author's newer commit (fix(mk8d): the controller applet gives the focus back, so Minus on the character screen no longer freezes the game)",
+     "fix(mk8d): the controller applet gives the focus back, so Minus on the character screen no longer freezes the game",
+     "feat(xc3): add 2.2.1",
      "fix(builder): restoring a save waits for the game to be closed and works before the first save; a backup naming a path outside itself is refused; the shader cache is shown where the launcher writes it (no move it would not follow); BotW reads the TOTK_* names; the off-topic best-effort-dm.md goes (after PR #1277)",
-     "build(xc3): the shader translator is the maintainers' rebuild from the repository's sources (.NET SDK 10.0.401), replay-checked against the contributor's build; prebuilt README (after PR #1309)",
-     "Merge PR #1277: feat(builder): 键盘测试、存储管理、存档管理与启动检查汇总 (@wuwangggg)",
-     "docs(xc3): the cutscene-corner note says it was seen in play with PR #1309, not a maintainer's decision (after PR #1309)",
-     "chore: the render pipelines @tiff75009 observed in TOTK 1.2.1 (PR #1293): 498 new rows; 325 rows naming shaders no version's seed has (a mod's) left out",
-     "Merge PR #1309: feat: add Xenoblade Chronicles 3 1.0.0 community port (@1Bartosz)",
-     "chore(alc): the porting plan with a keys path and the Bayonetta 3 resolution script go; probes find AC_build from the current folder or ALC_BUILD; the scripts and app name 1.0.1 and AC_build; README row in Chinese (after PR #1304)",
-     "Merge PR #1304: feat(alc): Astral Chain 1.0.1 — a new community port in games/alc (first frame presented, title flow playable) (@oneincase)"
+     "build(xc3): the shader translator is the maintainers' rebuild from the repository's sources (.NET SDK 10.0.401), replay-checked against the contributor's build; prebuilt README (after PR #1309)"
     ]
    }
   ]
@@ -7653,21 +7653,21 @@
   ]
  },
  "iceorange-dev/manosaba-ios": {
-  "pushed_at": "2026-10-27T21:30:48Z",
+  "pushed_at": "2026-10-30T00:17:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-27T20:47:19Z",
+    "last_commit": "2026-10-29T23:35:15Z",
     "subjects": [
-     "Plan batch 121: the Native setting for Tears of the Kingdom, docked at 1080p (281)",
-     "Plan: 285's runs were the cool case (the phone has a cooler on it)",
-     "Plan: 270 measured on the iPhone Air at 60 and 30 fps, closed",
-     "Plan batch 120: uniform copy sizes counted, t_upwait by its median (271)",
-     "Plan batch 119: 8-byte hash keys compared as one word (271, part)",
-     "Plan batch 118: TotK's frame-rate interval held at 1 on request (285, part)",
-     "Plan batch 117: TotK's dynamic resolution seen and held at 100 % on request (276, 131a)",
-     "Plan batch 116: bounded pipeline compiles, texture views by their base (283, 271)"
+     "Plan batch 127: shaders and draws on Vulkan for the Android app (301e2)",
+     "Plan batch 126: the Vulkan backend's base for the Android app (301e1)",
+     "Plan batch 125: manosaba as an Android app (301d)",
+     "Plan batch 124: manosaba headless on the Android phone (301c)",
+     "Plan batch 123: the rewriter's android target, without a red zone (301b)",
+     "Plan batch 122: two SDK return types (288) and the address-region node area cut for both games (289)",
+     "Plan: the tenth review (2026-10-30), items 288-301 and the Android port of manosaba",
+     "Plan batch 121: the Native setting for Tears of the Kingdom, docked at 1080p (281)"
     ]
    }
   ]
@@ -7788,21 +7788,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-10-29T10:13:49Z",
+  "pushed_at": "2026-10-29T21:59:38Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T10:07:29Z",
+    "last_commit": "2026-10-29T21:59:36Z",
     "subjects": [
+     "Keep launcher open when choosing an iCloud save folder (build 84)",
+     "Refine release notes for 0.3.74",
+     "Add optional iCloud save sharing and integrate verified fixes; release 0.3.74 (83)",
      "Integrate upstream alpha testing and texture fixes; release 0.3.69 (78)",
      "Apply scoped upstream rendering, SDK and controller fixes (v0.3.68 build 77)",
      "Add ACNH-scoped experimental LAN networking (v0.3.67 build 76)",
      "Compile GPU regressions in CI and run them on the local Metal device",
-     "Add approved controller assignment and local frame diagnostics (v0.3.66 build 69)",
-     "Merge scoped language, package validation and sampler fixes (v0.3.65 build 68)",
-     "Extend adaptive terminal background bands (v0.3.64 build 67)",
-     "Adapt iPad view and fix adaptive menus and editor orientation (v0.3.63 build 66)"
+     "Add approved controller assignment and local frame diagnostics (v0.3.66 build 69)"
     ]
    }
   ]
@@ -8909,11 +8909,11 @@
   "branches": []
  },
  "seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-29T17:24:38Z",
+  "pushed_at": "2026-10-29T20:06:30Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 314,
+    "ahead": 320,
     "behind": 15,
     "files": 225,
     "real_files": 221,
@@ -8929,16 +8929,16 @@
      "dm/tools",
      "tools/ohos"
     ],
-    "last_commit": "2026-10-29T17:23:23Z",
+    "last_commit": "2026-10-29T20:05:09Z",
     "subjects": [
+     "fix(os): guard 三函数 no_stack_protector 化（np517–519）——prologue canary 读不再炸未提交页",
+     "fix(locale): libdms2 自用 newlocale 的 GOT 改写（np514，dlsym 锚点自举）+ guard 修复真机验证生效（np515）",
+     "fix(os): newlocale NULL 兜底 + so 反汇编换算规则（np511–512）",
+     "fix(os): __cxa_guard_acquire/release 安全读写——主循环放出后守卫指针可能指向未提交的客体堆页（np509–510）",
+     "diag(oe): 事件脉冲=1 实测脉冲能到但需配套参数块（np503）——撤回全零保主循环健康",
+     "diag(oe): 双事件槽 pin（np501）——0x2d23e5a（1cf5a10 读）也是野指针，与 0x2d23e58 一起指向全零对象；np498 的 LockMutex(NULL) 由它造成。nn::util 链表崩（tag 0x2001）定性为 nn::oe 消息队列缺失，布局逆向切入点已记录（np502）",
      "feat(audio/oe): 生命周期事件指针兜底 + 音频内存池三 API 接管（np497–np500）",
-     "diag(thread): 主线程 SleepThread 现场改周期打点，揪出\"卡在生命周期事件等待\"（np494–495）",
-     "diag(nvn): 看门狗转储带上 NVN 最近调用表（np480）",
-     "diag(thread): 主线程 SleepThread 改用 fp 链回溯，一次定位轮询循环（np472）",
-     "diag(thread): 主线程首次 SleepThread 时记调用者 + 栈扫描（np471）",
-     "fix(thread): 事件\"被消费即清除\"——假音频时钟把空转从 100% CPU 压到 16%（np469）",
-     "fix: 缓冲区边表 512→8192 + 假音频时钟 + OpenAudioRenderer 建 event（np466–np468）",
-     "fix(diag): 崩溃处理不再自杀 + 探针新增 `@h<偏移>`（np464–np465）"
+     "diag(thread): 主线程 SleepThread 现场改周期打点，揪出\"卡在生命周期事件等待\"（np494–495）"
     ]
    }
   ]
@@ -9372,21 +9372,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-10-29T18:27:56Z",
+  "pushed_at": "2026-10-30T00:50:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T18:13:52Z",
+    "last_commit": "2026-10-30T00:50:48Z",
     "subjects": [
-     "Merge pull request #211 from LNPANDY/v0lumehi/python-venv-floor-mise",
-     "Merge pull request #212 from LNPANDY/v0lumehi/slim-dlc",
-     "Merge pull request #208 from LNPANDY/v0lumehi/build-log-pipe-eof",
-     "Merge pull request #209 from LNPANDY/v0lumehi/stable-staging",
-     "Python detection: a venv below 3.12 is no longer ready, and mise/asdf Pythons are found",
-     "v0.7.0",
-     "Merge pull request #107 from MilesWanli/launcher-uv-python",
-     "Slim iOS build: selected DLC reaches the game folder and the app finds it"
+     "README: link widmonstertony's iOS 16/17 + tvOS compatibility fork for older devices",
+     "Merge pull request #234 from LNPANDY/v0lumehi/pr-labeler",
+     "Label pull requests from the paths they change",
+     "Merge pull request #231 from LNPANDY/v0lumehi/prune-stale-shaders",
+     "Patch 0032: the issue line names this pull request, #231",
+     "Remove stale shader library folders after a build, and offer them in Free space",
+     "Merge pull request #229 from LNPANDY/v0lumehi/console-row-clip",
+     "Keep the first tile's focus ring inside the console row after scrolling back"
     ]
    }
   ]
@@ -9653,7 +9653,7 @@
   ]
  },
  "augustxxx-debug/d2r-mobile-plus": {
-  "pushed_at": "2026-10-29T18:27:03Z",
+  "pushed_at": "2026-10-30T00:22:31Z",
   "branches": [
    {
     "branch": "android/v1.0.0",
@@ -9685,6 +9685,35 @@
     ]
    },
    {
+    "branch": "android/v1.0.1",
+    "ahead": 203,
+    "behind": 14,
+    "files": 300,
+    "real_files": 296,
+    "dirs": [
+     "CHANGELOG.md",
+     "CHANGELOG.zh-CN.md",
+     "dm/android",
+     "dm/assets",
+     "dm/data",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-30T00:00:02Z",
+    "subjects": [
+     "fix(pad): a page withholds only the stick directions it declared (RC1.1 final audit P1-1)",
+     "Failure causes: relay and wrapper lines only when nothing else was found (eighth Android review P2-4)",
+     "fix(pad): lock the stick's dominant axis until both axes are released (RC1.1 audit P2)",
+     "CHANGELOG / string note: game files needed for Android 1.0.1, cleared free-portal bindings on upgrade",
+     "Game file check requires only what is read; version, rename and zero-stripped cases named; cleaner causes; no foreign file names (eighth Android review P1-1, P2-3, P2-4, P2-5)",
+     "Portal button badge counts only what the button can use (eighth Android review P2-2)",
+     "CHANGELOG: Android 1.0.1 controller fixes and known issues",
+     "Controller bottom bar: D-pad hints under the belt no longer cut off by the screen edge (defect ledger B030 / B017)"
+    ]
+   },
+   {
     "branch": "codex/plus",
     "ahead": 9,
     "behind": 14,
@@ -9713,10 +9742,10 @@
    },
    {
     "branch": "main",
-    "ahead": 218,
+    "ahead": 257,
     "behind": 14,
-    "files": 212,
-    "real_files": 192,
+    "files": 223,
+    "real_files": 203,
     "dirs": [
      "CHANGELOG.md",
      "CHANGELOG.zh-CN.md",
@@ -9727,16 +9756,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-29T18:26:00Z",
+    "last_commit": "2026-10-30T00:57:50Z",
     "subjects": [
-     "docs: release screenshots for iOS 1.0.0 RC1 and Android 1.0.0 (re-encoded, no metadata)",
-     "README: call the upcoming frame generation AI frame generation (MetalFX machine-learning interpolation)",
-     "README: download and verification links, coming-soon preview",
-     "Mirror manifest: add community.site (project website)",
-     "docs: narrow the bind-pose and eviction wording (17th external review, observation 1)",
-     "docs: latest.json build 1793254654 (= package a2bb5c3)",
-     "docs: changelog for the three fixes picked from upstream v2.1.0 (#134, #152, #49)",
-     "Touch: the minimap comes back after the act-change cutscene (#49)"
+     "docs: latest.json build 1793320010 (= package 6374e7c, 1.0.0-rc1.1)",
+     "Merge fork main (README Android 1.0.1) into RC1.1",
+     "fix(community): hand the focus back to the exact widget, found by pointer (RC1.1 recheck P2-5)",
+     "fix(community): touch hit queries answer \"control in a panel\" while the box is up (RC1.1 recheck P1-2)",
+     "README: Android 1.0.1 released",
+     "fix(pad): a stick push held across a page's declaration change moves one step (RC1.1 P1-1 follow-up)",
+     "fix(community): hide the menu's focus frame while the box is up, restore it on close (RC1.1 smoke PARENTHL)",
+     "fix(community): a tab tap cannot switch pages while the box is up (RC1.1 final audit P2-2)"
     ]
    }
   ]
@@ -9801,21 +9830,21 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-10-29T17:49:17Z",
+  "pushed_at": "2026-10-30T00:09:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T17:32:32Z",
+    "last_commit": "2026-10-29T23:40:49Z",
     "subjects": [
+     "fix(tools): a crash read in before a step's mark failed no step",
+     "perf(gfx): specialise SMAA's shaders on the HDR switch (-0.53 ms GPU per frame)",
+     "fix(gfx): compile shaders with -fpreserve-invariance (black grass flashes)",
      "iCloud merge: its post-commit hook takes a free slot, not dm_engine's",
      "Merge the iCloud sync and merge fixes (F-SAVE-3/4/5/7/10/11 and the merge halves of F-SAVE-1/2/15/16)",
      "fix(cloud): merge keeps unproven returns, settles only landed commits",
      "fix(cloud): idempotent stash inbox, atomic chronicle write-back, safer deletes",
-     "passgpu_top: skip a partial last row",
-     "bootprof.sh --metal-cold: warm runs failed on an empty array under set -u",
-     "iPhone shell edges: audio after an endless interruption, one link and gamepad set, fill an incomplete copy, battery on main",
-     "Tool tests pass on Linux CI: no corpus folder, c++filt outside Xcode"
+     "passgpu_top: skip a partial last row"
     ]
    }
   ]
@@ -10254,21 +10283,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-10-29T17:06:38Z",
+  "pushed_at": "2026-10-29T20:15:07Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T17:06:37Z",
+    "last_commit": "2026-10-29T20:15:06Z",
     "subjects": [
+     "Merge pull request #103 from todwang96/fix-turnip-gpu-heap-auto",
+     "Turnip: gpu_heap = auto keeps the heap on for the driver's renamed Adreno 7xx",
      "Merge pull request #97 from 3122380113/framepace-no-ffmpeg",
      "0.2.4-beta (versionCode 24)",
      "Motion: a controller's gyroscope takes over only after a quarter second of movement, and gives back after 2 s of zeros (#78)",
      "framepace: builds without FFmpeg link again (g_movie_playing lives in movie.c, left out then)",
      "Game code build: a resumed build reads only this run's generator log (#52, #92)",
-     "Mali: the arena and readbacks in cached memory again, flushed and invalidated by hand",
-     "docs: update READMEs for 0.2.3 beta",
-     "docs: add GitHub Sponsors section to READMEs"
+     "Mali: the arena and readbacks in cached memory again, flushed and invalidated by hand"
     ]
    }
   ]
