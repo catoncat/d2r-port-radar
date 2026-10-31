@@ -833,12 +833,12 @@
   "branches": []
  },
  "klacee/d2r-mobile": {
-  "pushed_at": "2026-10-30T09:34:25Z",
+  "pushed_at": "2026-10-31T09:15:51Z",
   "branches": [
    {
     "branch": "main",
     "ahead": 2,
-    "behind": 55,
+    "behind": 75,
     "files": 1,
     "real_files": 0,
     "dirs": [],
@@ -1862,21 +1862,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-31T03:23:24Z",
+  "pushed_at": "2026-10-31T12:35:55Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T03:23:13Z",
+    "last_commit": "2026-10-31T12:35:34Z",
     "subjects": [
-     "Specialize render function constants through Metal 4 pipelines",
-     "tests: assert thread registration before reading poll backoffs",
-     "Correct offline archive depth for seven confirmed profiles",
-     "nvn: honor buffer offsets and sizes written by guest ring allocators",
-     "Fix Echoes of Wisdom archive depth and detect profile mismatches",
-     "Fix shared Python lint failures in Unreal engine-region rewriting",
-     "regress.py: variant reflections hashed without the chain stamps; manifests of the older hashing hashed again",
-     "Port Metroid Prime Remastered 1.0.0; little-endian RFRM forms read by the shader split, the pixel sample index and GLSLC's sample position table, and image stores kept under rasterizer discard"
+     "Wait for Mac fullscreen readiness and retire startup retries (#665)",
+     "Report stale shader caches through build events (#490)",
+     "Show pipeline prebuild only when Metal 4 pipelines are enabled (#644)",
+     "Compile shared host shaders during builds",
+     "Parallelize rewriter scans and keep worker controls safe (#761)",
+     "Keep benchmark captures outside the measurement window (#754)",
+     "NVN: fix attachment capacity and combined depth/stencil pairing (PR #738)",
+     "Specialize render function constants through Metal 4 pipelines"
     ]
    }
   ]
@@ -1902,21 +1902,21 @@
   ]
  },
  "HachiMiku39/pjdv_mega39s_ios": {
-  "pushed_at": "2026-10-31T04:52:07Z",
+  "pushed_at": "2026-10-31T09:48:51Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T04:51:29Z",
+    "last_commit": "2026-10-31T09:48:37Z",
     "subjects": [
+     "Convert the verified Leo/need PC model package inside the App",
+     "Reduce redundant MOD preparation and document all local package trials",
      "Add native multi-MOD loading, transactional selection and integrity recovery",
      "Add native prepared MOD imports and document M4 five-package validation",
      "Document New Classics foundation research and M4 combined MOD trial",
      "Document M4 iPad MOD samples and remaining compatibility gaps",
      "Prepare build19 lightweight macOS and iOS previews",
-     "Add bounded MOD downloads/imports and documented local conversion trials",
-     "Update README.md",
-     "Prepare build18 MOD manager preview and synchronize public sources"
+     "Add bounded MOD downloads/imports and documented local conversion trials"
     ]
    }
   ]
@@ -1942,21 +1942,21 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-31T05:52:32Z",
+  "pushed_at": "2026-10-31T12:25:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T05:52:31Z",
+    "last_commit": "2026-10-31T12:25:55Z",
     "subjects": [
-     "chore: 自动同步 Star 地图（193 个项目）",
-     "chore: 恢复完整分类映射（193 个项目全覆盖）",
-     "chore: 恢复完整分类映射（193 个项目全覆盖）",
-     "chore: 恢复完整分类映射（193 个项目全覆盖）",
-     "chore: 恢复完整分类映射（193 个项目全覆盖）",
-     "chore: 自动同步 Star 地图（193 个项目）",
-     "test: 触发含单引号的待归类场景",
-     "test: 触发含单引号的待归类场景"
+     "chore: 自动同步 Star 地图（194 个项目）",
+     "chore: 自动同步 Star 地图（194 个项目）",
+     "chore: 更新 sync-stars.yml",
+     "chore: 更新 map_auto.py",
+     "chore: 更新 stars_pending.json",
+     "chore: 更新 stars.json",
+     "chore: 更新 gen_readme.py",
+     "fix: 自动分类标记失效 + 文案与实际流程不符"
     ]
    }
   ]
@@ -1970,12 +1970,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-30T22:27:36Z",
+  "pushed_at": "2026-10-31T05:53:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T22:27:35Z",
+    "last_commit": "2026-10-31T05:53:34Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -8935,14 +8935,14 @@
   "branches": []
  },
  "seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-29T20:06:30Z",
+  "pushed_at": "2026-10-31T11:23:32Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 320,
-    "behind": 15,
-    "files": 225,
-    "real_files": 221,
+    "ahead": 342,
+    "behind": 0,
+    "files": 256,
+    "real_files": 252,
     "dirs": [
      "NOTICE.md",
      "PORTABLE.md",
@@ -8955,16 +8955,16 @@
      "dm/tools",
      "tools/ohos"
     ],
-    "last_commit": "2026-10-29T20:05:09Z",
+    "last_commit": "2026-10-31T11:22:11Z",
     "subjects": [
-     "fix(os): guard 三函数 no_stack_protector 化（np517–519）——prologue canary 读不再炸未提交页",
-     "fix(locale): libdms2 自用 newlocale 的 GOT 改写（np514，dlsym 锚点自举）+ guard 修复真机验证生效（np515）",
-     "fix(os): newlocale NULL 兜底 + so 反汇编换算规则（np511–512）",
-     "fix(os): __cxa_guard_acquire/release 安全读写——主循环放出后守卫指针可能指向未提交的客体堆页（np509–510）",
-     "diag(oe): 事件脉冲=1 实测脉冲能到但需配套参数块（np503）——撤回全零保主循环健康",
-     "diag(oe): 双事件槽 pin（np501）——0x2d23e5a（1cf5a10 读）也是野指针，与 0x2d23e58 一起指向全零对象；np498 的 LockMutex(NULL) 由它造成。nn::util 链表崩（tag 0x2001）定性为 nn::oe 消息队列缺失，布局逆向切入点已记录（np502）",
-     "feat(audio/oe): 生命周期事件指针兜底 + 音频内存池三 API 接管（np497–np500）",
-     "diag(thread): 主线程 SleepThread 现场改周期打点，揪出\"卡在生命周期事件等待\"（np494–495）"
+     "harmony: 收编收尾——CMake 排除 OHOS 回放层 + 补回 widget 资源键",
+     "harmony: 收编活跃 OHOS 工程壳，消除孤本（np565）",
+     "merge: 并入上游 main 至 17f5c4e（v2.2.2，42 个提交）",
+     "host: 客体线程改在宿主栈上退出（照上游 955f274 移植，np562）",
+     "host: 0x1c/0x1d 交接取证（DM_CV_PROBE）+ 限流修正（np560）",
+     "host: 卡死取证仪器（wait-in / stall 快照）（np555–np559）",
+     "host: 栈区底部留 1 MiB 溢出余量（np553）",
+     "nvn: ProgramSetShadersExt 每阶段 0x18 字节，不是 0x10（np550）—— \"运行时变体\"的真相"
     ]
    }
   ]
@@ -9358,21 +9358,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-10-31T05:13:10Z",
+  "pushed_at": "2026-10-31T12:40:39Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T05:12:52Z",
+    "last_commit": "2026-10-31T12:40:38Z",
     "subjects": [
-     "Cheats on the iPhone: Documents/cheats, named by the game's build ID",
-     "Release notes: both sections in one numbered list, and the bookkeeping commits stay off the page",
-     "Release notes: the Chinese row for the base move to bfc70881",
-     "Base to bfc70881: the Unreal frame-limit variable reaches the host, and the packer's copies follow upstream",
-     "Base to 6d880d2: GPUs without BC textures are refused at start, and main.m needed a real merge",
-     "Base to 51904e7: Super Monkey Ball and Pokemon Violet, an IL2CPP symbolizer, and the per-build cuts moved into the SDK-wide rules",
-     "One backslash ate the closing quote of an echo, and a step died on a comment twenty lines below it",
-     "The fingerprint must run on the machine it runs on: sha256sum is not on macOS, and the annotator was one directory up"
+     "Sync the packer's copies with upstream",
+     "Cheats may write the game's code on the iPhone: the module image is anonymous memory",
+     "Sync the packer's copies with upstream",
+     "Cheats load when Play is pressed, not at launch",
+     "The rewriter's fork pool does not exist on Windows, so packing stopped at rewriting main",
+     "Base to 89074294: shaders compiled during the build, and two patched files moved under us",
+     "Cheats: the host reads the launcher's cheats.txt, so the codes load",
+     "Sync the packer's copies with upstream"
     ]
    }
   ]
@@ -9398,21 +9398,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-10-31T04:20:59Z",
+  "pushed_at": "2026-10-31T09:27:22Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T02:36:08Z",
+    "last_commit": "2026-10-31T09:27:17Z",
     "subjects": [
-     "Merge pull request #298 from LNPANDY/v0lumehi/launcher-perf-test",
-     "Launcher: performance test for tab switches, Options, Manage and redraw",
-     "Merge pull request #296 from LNPANDY/v0lumehi/same-size-primary-actions",
-     "Merge pull request #299 from LNPANDY/v0lumehi/ready-without-app",
-     "Qt front end: regenerate the strings for the shorter repo.adopt label",
-     "Launcher: a game without a Mac build is not read as the current folder",
-     "Launcher: every row control is one line high, tests cover every language and page",
-     "Merge pull request #297 from LNPANDY/v0lumehi/fast-tab-switch"
+     "v0.7.5",
+     "Metal row: a newer compiler of the lock's generation is not a warning",
+     "README: a prominent update notice for 0.7.3-and-older users (discussion #306 has the details)",
+     "v0.7.4",
+     "Relink the docs' upstream links to the bumped pin f11018a1f312 (tools/engine.py relink)",
+     "Engine step 2 cleanup: drop the vendored-tree files the #291 bump added that the #273 merge kept",
+     "Merge remote-tracking branch 'origin/v0lumehi/engine-step2'",
+     "Merge pull request #291 from LNPANDY/v0lumehi/bump-upstream-ef9f9bba"
     ]
    }
   ]
@@ -10366,21 +10366,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-10-30T19:29:21Z",
+  "pushed_at": "2026-10-31T10:46:31Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T18:55:14Z",
+    "last_commit": "2026-10-31T10:46:08Z",
     "subjects": [
-     "0.2.5-beta (versionCode 25)",
-     "Merge origin/main: #97 (framepace builds without FFmpeg), #103 (Turnip gpu_heap = auto on renamed Adreno 7xx)",
-     "Menus: Game Files' copy/in-place choice translated, and the 12 lines the other languages lacked",
-     "Movies: a missing one is stood in for by another of its folder, from its end (#113)",
-     "Shaders: an 8-bit value read back with x * 255 is rounded, not truncated (#112)",
-     "Vulkan: a surface lost while making the swapchain is made again at the next frame, no FATAL (#108)",
-     "Movies: one that can't be opened plays as an empty movie instead of crashing the game (#113)",
-     "Game Files: the DLC's romfs is no longer taken for the game's (#87)"
+     "0.2.6-beta (versionCode 26)",
+     "Kernel waits: an optional spin before sleeping (LARECOMP_KWAIT_SPIN_US, off); notes on the 31/10 frame-time work",
+     "Command recording: each command buffer keeps the shadow page it writes to, no lookup per record",
+     "Command recording: the shadow page lookup takes no lock; the render thread's frame count without calls",
+     "GMap tables of 32 ranges: the learned ones fit beside a draw's own (#89, #131)",
+     "Arena: learned ranges only in the table slots left free, and the upload ring gives idle chunks back (#89, #131)",
+     "Port notes: triage of 31/10 morning - Mali copy uploads blow up after a load (#89, #131), #121 confirmed, #130, #132",
+     "Fonts: Import fonts works on Android, and the Chinese and Korean fonts serve their own types (#122)"
     ]
    }
   ]
@@ -10582,21 +10582,21 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-10-31T05:42:35Z",
+  "pushed_at": "2026-10-31T12:37:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T05:20:31Z",
+    "last_commit": "2026-10-31T12:37:37Z",
     "subjects": [
-     "Raise the version to 0.1.9",
-     "Merge task/xboxprompts: Xbox button prompts layout, from pull request #126",
-     "Merge task/ultrawide: game resolutions wider than 16:9 on 1.4.3, from pull request #137 (#6)",
-     "Say that the Xbox prompts do not follow remapped buttons",
-     "Fall back to romfs-patches when romfs-patches-xbox fails its check at boot",
-     "Let the setup go on without the Xbox prompts, and put the Xbox prompts docs below the controls table",
-     "Add an Xbox prompts button layout: Switch positions with the A/B and X/Y prompts swapped to the Xbox labels",
-     "Document the ultrawide sizes, the fit default of aspect and the 1.4.3 limit"
+     "Pin the current appimagetool build in make_release_linux.py",
+     "Bump version",
+     "Give 1.2.1 the camera aspect ratio and the HUD layouts of other shapes",
+     "Set the probe's environment through plat_setenv so astc_probe.c builds on Linux",
+     "Lay the HUD out for 16:10 game resolutions on 1.4.3",
+     "Merge pull request #60: Linux port (AppImage) and Steam Deck support (wdiasjunior)",
+     "Offer the dynamic alpha to coverage switch in the menu and fix stale comments",
+     "Merge pull request #187: Offer the 32:9 sizes 3840x1080 and 5120x1440 with their HUD layout (Lucas-blip-png)"
     ]
    }
   ]
@@ -10838,12 +10838,12 @@
   ]
  },
  "slavich33/diablo-2-resurrected-native-ios": {
-  "pushed_at": "2026-10-30T23:05:16Z",
+  "pushed_at": "2026-10-31T12:20:31Z",
   "branches": [
    {
     "branch": "android-warm-seed-pack",
     "ahead": 1,
-    "behind": 22,
+    "behind": 33,
     "files": 6,
     "real_files": 4,
     "dirs": [
@@ -10857,26 +10857,26 @@
    },
    {
     "branch": "reimagined-ios-online",
-    "ahead": 9,
-    "behind": 16,
-    "files": 40,
-    "real_files": 38,
+    "ahead": 10,
+    "behind": 27,
+    "files": 45,
+    "real_files": 43,
     "dirs": [
      "dm/host",
      "dm/i18n",
      "dm/ios",
      "dm/online"
     ],
-    "last_commit": "2026-10-30T23:05:14Z",
+    "last_commit": "2026-10-31T12:20:26Z",
     "subjects": [
+     "Add incremental game packet decoding and native polling ABI",
      "Name and document the native Diablo II iOS source fork",
      "Inspect authenticated ladder policies and region availability",
      "Document native Reimagined fork and verified build status",
      "Validate native control codec against official encoder fixtures",
      "Implement loader control payloads and verify native engine inputs",
      "Add native TCP transport and game-session API contracts",
-     "Add native iOS Reimagined account and ladder screen",
-     "Add native PKCE login, Keychain sessions and D2EM envelope framing"
+     "Add native iOS Reimagined account and ladder screen"
     ]
    }
   ]
