@@ -1562,7 +1562,7 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-10-30T19:29:50Z",
+  "pushed_at": "2026-10-31T14:26:55Z",
   "branches": [
    {
     "branch": "main",
@@ -1582,21 +1582,21 @@
   ]
  },
  "d2r-mobile/d2r-mobile": {
-  "pushed_at": "2026-10-30T13:32:07Z",
+  "pushed_at": "2026-10-31T16:47:40Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T13:30:45Z",
+    "last_commit": "2026-10-31T16:39:21Z",
     "subjects": [
-     "Update Mac feature notes",
-     "Show rift progress on Mac",
-     "Check touch stick deflection",
-     "Clarify touch controls",
-     "Clarify older system requirements",
-     "Update Android to 2.2.0",
-     "Improve camera controls",
-     "Propagate driver check failures"
+     "Update Android to 2.2.2",
+     "Keep respec logs in the log path",
+     "Keep map labels apart",
+     "Describe map labels",
+     "Label map entrances and waypoints",
+     "Describe Akara respecs",
+     "Allow repeated respecs at Akara",
+     "Limit texture upload caches"
     ]
    }
   ]
@@ -1862,21 +1862,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-31T12:35:55Z",
+  "pushed_at": "2026-10-31T15:47:55Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T12:35:34Z",
+    "last_commit": "2026-10-31T15:47:26Z",
     "subjects": [
+     "Use the build's offline pipeline archive in benchmarks (#792)",
+     "Move AudioUnit diagnostics off the callback (#731)",
+     "Recognize guarded zero-extended jump-table indices (#778)",
+     "Restore Vorbis movie audio after Flush (#787)",
+     "Make polling tests independent of CI scheduling (#779)",
+     "Find iOS DLC in Documents and replace stale content (#486)",
      "Wait for Mac fullscreen readiness and retire startup retries (#665)",
-     "Report stale shader caches through build events (#490)",
-     "Show pipeline prebuild only when Metal 4 pipelines are enabled (#644)",
-     "Compile shared host shaders during builds",
-     "Parallelize rewriter scans and keep worker controls safe (#761)",
-     "Keep benchmark captures outside the measurement window (#754)",
-     "NVN: fix attachment capacity and combined depth/stencil pairing (PR #738)",
-     "Specialize render function constants through Metal 4 pipelines"
+     "Report stale shader caches through build events (#490)"
     ]
    }
   ]
@@ -1970,12 +1970,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-31T05:53:36Z",
+  "pushed_at": "2026-10-31T12:43:18Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T05:53:34Z",
+    "last_commit": "2026-10-31T12:43:17Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -3525,7 +3525,7 @@
   ]
  },
  "albionlee/d2r-mobile": {
-  "pushed_at": "2026-10-29T09:49:55Z",
+  "pushed_at": "2026-10-31T17:11:13Z",
   "branches": []
  },
  "donutnomad/d2r-mobile": {
@@ -4097,21 +4097,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-10-30T14:02:07Z",
+  "pushed_at": "2026-10-31T18:37:10Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T14:01:49Z",
+    "last_commit": "2026-10-31T18:36:51Z",
     "subjects": [
-     "fix: packaging unlinks a variant's staging files before translating it, so the translator never rewrites a cached file",
-     "fix: a broken shader is translated again instead of ending the game",
-     "data: shader list issues #1368-#1383 (TOTK 14,243 variants, 74,729 pipeline rows)",
-     "feat(mac): native 4K renders a 3840x2160 scene, and a Mac with 16 GB or more builds it by default (after PR #196)",
-     "Merge PR #196: feat: native 4K in the settings panel for 1.4.3, opt-in with build_app.py --native-4k",
-     "fix(gfx): no size limit on a memory pool's zero-copy GPU buffer (the 1 GiB one rested on a disproven hypothesis)",
-     "feat(mac): the FPS box's last line says how to open the settings panel",
-     "Merge remote-tracking branch 'origin/main' into claude/pr-1030b"
+     "fix: the character light has no switch any more; it is always drawn",
+     "Merge branch 'claude/pr-batch-1031': PR batch of 2026-10-31 and the Update page's button update",
+     "feat: a depth of field switch on the effects page (TOTK 1.4.3, Mac)",
+     "fix: the iOS export leaves out the LOD, render distance, FOV and shadow resolution patches",
+     "feat: the Update page shows the newest or each newer commit, and its button updates the app (after PR #1404)",
+     "fix: an app's designated requirement is its bundle ID, so a privacy grant outlives the next build or update",
+     "Merge PR #1404: feat: an Update tab in the settings panel",
+     "Merge PR #1418: feat: the ambient occlusion row serves TotK 1.2.1 (its AO shaders are the 1.4.3 pair's translations under new keys)"
     ]
    }
   ]
@@ -5040,7 +5040,7 @@
   ]
  },
  "oneincase/d2r-mobile": {
-  "pushed_at": "2026-10-24T12:51:13Z",
+  "pushed_at": "2026-10-31T14:23:41Z",
   "branches": []
  },
  "zJiaJun/d2r-mobile": {
@@ -7679,21 +7679,21 @@
   ]
  },
  "iceorange-dev/manosaba-ios": {
-  "pushed_at": "2026-10-30T14:52:16Z",
+  "pushed_at": "2026-10-31T19:11:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T14:45:06Z",
+    "last_commit": "2026-10-31T19:11:21Z",
     "subjects": [
+     "Plan batch 144: the setting \"Native\" kept on both of the iPhone Duo's displays; a stopped audio output releases its buffers (302)",
+     "Plan batch 143: manosaba on the iPhone Duo, measured on one; the refresh rate from the screen the game's window is on (302 part)",
      "Plan batch 142: nxnative's smaller fixes, and the virtual core given up while waiting (296, 297)",
      "Plan batch 141: the crash report with a time limit, texture reads of memory taken back guarded, quad strips drawn (298, 290, 291)",
      "Plan batch 140: a texture pool gone stays placed until the game gives its memory back, and nothing is copied out (301f part)",
      "Plan batch 139: manosaba's APK with its data, as the iPhone's IPA with it (301h)",
      "Plan batch 138: the settings panel on Android, as the iPhone's (301g)",
-     "Plan batch 137: the thermal state on Android, and 30 fps held when hot (301f part)",
-     "Plan batch 136: alias memory mapped and unmapped by runs of host pages (301f part)",
-     "Plan batch 135: texture pools made and dropped on Vulkan with fewer copies (301f part)"
+     "Plan batch 137: the thermal state on Android, and 30 fps held when hot (301f part)"
     ]
    }
   ]
@@ -8935,11 +8935,11 @@
   "branches": []
  },
  "seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-31T11:23:32Z",
+  "pushed_at": "2026-10-31T18:26:26Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 342,
+    "ahead": 354,
     "behind": 0,
     "files": 256,
     "real_files": 252,
@@ -8955,16 +8955,16 @@
      "dm/tools",
      "tools/ohos"
     ],
-    "last_commit": "2026-10-31T11:22:11Z",
+    "last_commit": "2026-10-31T18:20:17Z",
     "subjects": [
-     "harmony: 收编收尾——CMake 排除 OHOS 回放层 + 补回 widget 资源键",
-     "harmony: 收编活跃 OHOS 工程壳，消除孤本（np565）",
-     "merge: 并入上游 main 至 17f5c4e（v2.2.2，42 个提交）",
-     "host: 客体线程改在宿主栈上退出（照上游 955f274 移植，np562）",
-     "host: 0x1c/0x1d 交接取证（DM_CV_PROBE）+ 限流修正（np560）",
-     "host: 卡死取证仪器（wait-in / stall 快照）（np555–np559）",
-     "host: 栈区底部留 1 MiB 溢出余量（np553）",
-     "nvn: ProgramSetShadersExt 每阶段 0x18 字节，不是 0x10（np550）—— \"运行时变体\"的真相"
+     "host: lock_acquire_for 加退让上限（持 G 自旋根因，np584）",
+     "host: sampler 心跳行（每 500 轮，报 g_shead/送达数）",
+     "host: g_sig_seen 改 _Atomic（修原子类型错误）",
+     "host: [cv]直方图带 SIGUSR2 送达计数（区分递送失败与统计丢失，np580）",
+     "host: sampler 启动日志（排查 DM_SAMPLE 直方图 0 输出，np580）",
+     "host: [stall] 补 wseq/prio 字段（AB-BA 公平性取证用，np578）",
+     "host: [cv] 0x1d 补 lr 字段（np568 的修改漏打了这一处——signal 发起点反推用）",
+     "host: extern dm_guest_heap_lo 提升到文件级（修冲突声明）"
     ]
    }
   ]
@@ -9354,25 +9354,25 @@
   "branches": []
  },
  "Intorain/d2r-mobile": {
-  "pushed_at": "2026-10-26T15:35:26Z",
+  "pushed_at": "2026-10-31T18:32:57Z",
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-10-31T12:40:39Z",
+  "pushed_at": "2026-10-31T12:45:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T12:40:38Z",
+    "last_commit": "2026-10-31T12:45:36Z",
     "subjects": [
+     "Declare the mach_vm traps on the iPhone: its SDK drops the header, not the calls",
      "Sync the packer's copies with upstream",
      "Cheats may write the game's code on the iPhone: the module image is anonymous memory",
      "Sync the packer's copies with upstream",
      "Cheats load when Play is pressed, not at launch",
      "The rewriter's fork pool does not exist on Windows, so packing stopped at rewriting main",
      "Base to 89074294: shaders compiled during the build, and two patched files moved under us",
-     "Cheats: the host reads the launcher's cheats.txt, so the codes load",
-     "Sync the packer's copies with upstream"
+     "Cheats: the host reads the launcher's cheats.txt, so the codes load"
     ]
    }
   ]
@@ -9398,21 +9398,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-10-31T09:27:22Z",
+  "pushed_at": "2026-10-31T19:20:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T09:27:17Z",
+    "last_commit": "2026-10-31T19:20:56Z",
     "subjects": [
-     "v0.7.5",
-     "Metal row: a newer compiler of the lock's generation is not a warning",
-     "README: a prominent update notice for 0.7.3-and-older users (discussion #306 has the details)",
-     "v0.7.4",
-     "Relink the docs' upstream links to the bumped pin f11018a1f312 (tools/engine.py relink)",
-     "Engine step 2 cleanup: drop the vendored-tree files the #291 bump added that the #273 merge kept",
-     "Merge remote-tracking branch 'origin/v0lumehi/engine-step2'",
-     "Merge pull request #291 from LNPANDY/v0lumehi/bump-upstream-ef9f9bba"
+     "Merge pull request #345 from LNPANDY/v0lumehi/revert-0035-r-ring",
+     "Patch queue: drop 0036, the layout editor",
+     "Patch queue: drop 0035, the dashed R ring",
+     "Merge pull request #343 from LNPANDY/notes/swipe-hint-images",
+     "Merge pull request #332 from LNPANDY/v0lumehi/release-candidates",
+     "Notes: the swipe hint's mock-ups (English for the upstream PR, Chinese for ours)",
+     "Merge main: keep both the RELEASING.md pointer and the admin-merge rule",
+     "Merge pull request #337 from LNPANDY/v0lumehi/fix-patch-0036-export"
     ]
    }
   ]
@@ -10292,12 +10292,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-10-29T16:59:03Z",
+  "pushed_at": "2026-10-31T16:54:58Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T16:59:01Z",
+    "last_commit": "2026-10-31T16:54:57Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10582,41 +10582,41 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-10-31T12:37:46Z",
+  "pushed_at": "2026-10-31T18:30:12Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T12:37:37Z",
+    "last_commit": "2026-10-31T18:17:15Z",
     "subjects": [
-     "Pin the current appimagetool build in make_release_linux.py",
-     "Bump version",
-     "Give 1.2.1 the camera aspect ratio and the HUD layouts of other shapes",
-     "Set the probe's environment through plat_setenv so astc_probe.c builds on Linux",
-     "Lay the HUD out for 16:10 game resolutions on 1.4.3",
-     "Merge pull request #60: Linux port (AppImage) and Steam Deck support (wdiasjunior)",
-     "Offer the dynamic alpha to coverage switch in the menu and fix stale comments",
-     "Merge pull request #187: Offer the 32:9 sizes 3840x1080 and 5120x1440 with their HUD layout (Lucas-blip-png)"
+     "Raise the version to 0.2.8",
+     "Merge pull request #233: Add colour profiles and brightness, contrast, saturation and gamma for the picture (Lucas-blip-png)",
+     "Merge pull request #248: Add a field-of-view setting for 1.4.3 (Lucas-blip-png)",
+     "Say \"an update file other than the recorded one\" in the installer guide (#247)",
+     "Merge pull request #269: Trust the narrowed shader walk when it finds the version's shaders (shenjackyuanjie)",
+     "Merge pull request #220: Support the 1.1.1 update as a third game version (shenjackyuanjie)",
+     "Merge task/savecommit: no save or backup for a Commit that changed nothing, a short swap retry (#260, #263)",
+     "Skip the save and backup of a Commit that changed no byte, and retry the swap briefly"
     ]
    }
   ]
  },
  "Desm0nt/doom-port": {
-  "pushed_at": "2026-10-30T20:37:33Z",
+  "pushed_at": "2026-10-31T16:51:37Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T20:37:28Z",
+    "last_commit": "2026-10-31T16:51:21Z",
     "subjects": [
+     "Audio: no catch-up frames, fixes the 20 fps drop at video screens",
      "README: fast zlib loads",
      "Fast zlib and Turnip sysmem by default",
      "README: link the latest release",
      "README: 8 Gen 2 tested, current performance, memory advice, zlib-ng credit",
      "docs: zlib, memory and texture-discard notes, id Tech 6 resource research",
      "Memory: RAM-adaptive VRAM pool headroom, texture classification, optional guest-copy discard",
-     "Optional fast inflate: zlib-ng (NEON) behind the game's zlib 1.2.3",
-     "README: settings languages, FPS limit, shared dynamic resolution, drivers by GPU, other GPUs"
+     "Optional fast inflate: zlib-ng (NEON) behind the game's zlib 1.2.3"
     ]
    }
   ]
@@ -10838,7 +10838,7 @@
   ]
  },
  "slavich33/diablo-2-resurrected-native-ios": {
-  "pushed_at": "2026-10-31T12:20:31Z",
+  "pushed_at": "2026-10-31T18:58:58Z",
   "branches": [
    {
     "branch": "android-warm-seed-pack",
@@ -10857,26 +10857,27 @@
    },
    {
     "branch": "reimagined-ios-online",
-    "ahead": 10,
+    "ahead": 25,
     "behind": 27,
-    "files": 45,
-    "real_files": 43,
+    "files": 82,
+    "real_files": 79,
     "dirs": [
      "dm/host",
      "dm/i18n",
      "dm/ios",
-     "dm/online"
+     "dm/online",
+     "dm/tools"
     ],
-    "last_commit": "2026-10-31T12:20:26Z",
+    "last_commit": "2026-10-31T18:57:27Z",
     "subjects": [
-     "Add incremental game packet decoding and native polling ABI",
-     "Name and document the native Diablo II iOS source fork",
-     "Inspect authenticated ladder policies and region availability",
-     "Document native Reimagined fork and verified build status",
-     "Validate native control codec against official encoder fixtures",
-     "Implement loader control payloads and verify native engine inputs",
-     "Add native TCP transport and game-session API contracts",
-     "Add native iOS Reimagined account and ladder screen"
+     "Record verified signed package and game-save API reads on iPhone",
+     "Verify complete signed ladder packages and inspect native iPhone account APIs",
+     "Validate fresh native character headers and document iPhone sign-in",
+     "Document the verified iPhone update and native account screen",
+     "Add opt-in device diagnostics for the native account screen",
+     "Implement native player lobby and game endpoint resolution",
+     "Use native application identity and validate the live server-save list contract",
+     "Prepare native remote startup and refuse incomplete engine transitions"
     ]
    }
   ]
@@ -10903,6 +10904,47 @@
     "last_commit": "2026-10-31T00:03:55Z",
     "subjects": [
      "Initial commit"
+    ]
+   }
+  ]
+ },
+ "rhotov/d2r-mobile": {
+  "pushed_at": "2026-10-31T13:51:31Z",
+  "branches": [
+   {
+    "branch": "archive/local-ios-fixes-20261031",
+    "ahead": 1,
+    "behind": 102,
+    "files": 21,
+    "real_files": 21,
+    "dirs": [
+     "dm/PRODUCT",
+     "dm/gfx",
+     "dm/host",
+     "dm/ios",
+     "dm/tools",
+     "setup.sh"
+    ],
+    "last_commit": "2026-10-31T13:44:15Z",
+    "subjects": [
+     "Preserve local iOS bug fixes and regression tests on v1.0.1"
+    ]
+   },
+   {
+    "branch": "fix/ios-ui-bugfixes-20261031",
+    "ahead": 1,
+    "behind": 0,
+    "files": 16,
+    "real_files": 16,
+    "dirs": [
+     "dm/PRODUCT",
+     "dm/gfx",
+     "dm/host",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-31T13:51:21Z",
+    "subjects": [
+     "Fix inventory restore and native legend capacity; retry empty vault icons"
     ]
    }
   ]
