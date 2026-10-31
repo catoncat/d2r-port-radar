@@ -318,16 +318,16 @@
   ]
  },
  "n1zjqo/d2r-mobile": {
-  "pushed_at": "2026-10-30T07:21:22Z",
+  "pushed_at": "2026-10-31T03:08:52Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 11,
+    "ahead": 12,
     "behind": 0,
     "files": 1,
     "real_files": 0,
     "dirs": [],
-    "last_commit": "2026-10-30T07:21:21Z",
+    "last_commit": "2026-10-31T03:08:52Z",
     "subjects": [
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
@@ -335,8 +335,8 @@
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
-     "Merge pull request #1 from jhaizhou-ops/main",
-     "Merge branch 'jhaizhou-ops:main' into main"
+     "Merge branch 'jhaizhou-ops:main' into main",
+     "Merge pull request #1 from jhaizhou-ops/main"
     ]
    }
   ]
@@ -1394,7 +1394,7 @@
   "branches": []
  },
  "MichaelC001/d2r-mobile": {
-  "pushed_at": "2026-10-28T02:31:35Z",
+  "pushed_at": "2026-10-31T02:31:22Z",
   "branches": []
  },
  "tinytub/d2r-mobile": {
@@ -1661,21 +1661,21 @@
   ]
  },
  "wukongtime/d2r-mobile-build-backup": {
-  "pushed_at": "2026-10-29T02:01:53Z",
+  "pushed_at": "2026-10-31T01:59:37Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T01:43:27Z",
+    "last_commit": "2026-10-30T17:19:11Z",
     "subjects": [
-     "Support compatible Apple prepared inputs for upstream 2.0",
-     "Clarify the complete Mac resource folder required at startup",
-     "Reuse verified prepared inputs with compatible upstream generator updates",
-     "Show the iOS resource and Legacy folder layout",
-     "Package Mac apps without separate resource metadata",
-     "Simplify Mac setup with the complete Data resource archive",
-     "Refresh Mac build duration from the completed prepared-input build",
-     "Point Mac build inputs to the repaired prepared directory"
+     "Use a standalone minimal TV prepared input (#33)",
+     "Merge pull request #22 from jiayx/feat/tvos-build",
+     "Document verified experimental Apple TV release",
+     "Use verified recovered shader inputs for tvOS builds",
+     "Export verified shader inputs from recovered original Actions cache",
+     "Validate tvOS with refreshed Apple inputs and latest upstream release",
+     "Merge remote-tracking branch 'origin/main' into feat/tvos-build",
+     "Merge prepared metadata cleanup and verified Filebase inputs (#32)"
     ]
    }
   ]
@@ -1762,21 +1762,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-10-30T05:23:50Z",
+  "pushed_at": "2026-10-31T05:07:52Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T05:23:49Z",
+    "last_commit": "2026-10-31T05:07:51Z",
     "subjects": [
+     "radar 2026-10-31",
      "radar 2026-10-30",
      "radar 2026-10-29",
      "radar 2026-10-28",
      "radar 2026-10-27",
      "radar 2026-10-26",
      "radar 2026-10-25",
-     "radar 2026-10-24",
-     "radar 2026-10-23"
+     "radar 2026-10-24"
     ]
    }
   ]
@@ -1862,21 +1862,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-30T17:06:32Z",
+  "pushed_at": "2026-10-31T03:23:24Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T17:05:25Z",
+    "last_commit": "2026-10-31T03:23:13Z",
     "subjects": [
-     "Unreal's engine region given what the alias region has room for by the rewriter (ue_region.py); the 7 game_args rows and Pikmin 4's cut removed (issue #635)",
-     "Pokémon Legends: Z-A: depth_mode zero, so the pipeline bases made before the game runs are the ones it uses (GitHub issue #614)",
-     "A cube texture in a slot declared 2D binds its first face as a 2D view",
-     "Port Atelier Ryza: Ever Darkness & the Secret Hideout DX 1.2.0; Gust's chunked zlib .gz files read by the shader split",
-     "nv::GetGraphicsMemoryInfo writes the record of the game's SDK: 0x20 bytes on SDK 10 and older (GitHub issue #708, PR #709)",
-     "NSP script: --work-dir sets the build folder; the IPA, the provisional profile and the NSZ conversions follow it (PR #475)",
-     "iOS: the game on a connected TV or monitor (cable or AirPlay), picture capped at 1080p (PR #367, GitHub issue #705)",
-     "hid::IsVibrationDeviceMounted answered by the host: mounted when the channel has an output (GitHub issue #715)"
+     "Specialize render function constants through Metal 4 pipelines",
+     "tests: assert thread registration before reading poll backoffs",
+     "Correct offline archive depth for seven confirmed profiles",
+     "nvn: honor buffer offsets and sizes written by guest ring allocators",
+     "Fix Echoes of Wisdom archive depth and detect profile mismatches",
+     "Fix shared Python lint failures in Unreal engine-region rewriting",
+     "regress.py: variant reflections hashed without the chain stamps; manifests of the older hashing hashed again",
+     "Port Metroid Prime Remastered 1.0.0; little-endian RFRM forms read by the shader split, the pixel sample index and GLSLC's sample position table, and image stores kept under rasterizer discard"
     ]
    }
   ]
@@ -1902,21 +1902,21 @@
   ]
  },
  "HachiMiku39/pjdv_mega39s_ios": {
-  "pushed_at": "2026-10-29T16:45:32Z",
+  "pushed_at": "2026-10-31T04:52:07Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T16:45:30Z",
+    "last_commit": "2026-10-31T04:51:29Z",
     "subjects": [
+     "Add native multi-MOD loading, transactional selection and integrity recovery",
      "Add native prepared MOD imports and document M4 five-package validation",
      "Document New Classics foundation research and M4 combined MOD trial",
      "Document M4 iPad MOD samples and remaining compatibility gaps",
      "Prepare build19 lightweight macOS and iOS previews",
      "Add bounded MOD downloads/imports and documented local conversion trials",
      "Update README.md",
-     "Prepare build18 MOD manager preview and synchronize public sources",
-     "Publish audited build17 source archive and bilingual release guide"
+     "Prepare build18 MOD manager preview and synchronize public sources"
     ]
    }
   ]
@@ -1942,21 +1942,21 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-30T22:17:17Z",
+  "pushed_at": "2026-10-31T05:52:32Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T22:17:16Z",
+    "last_commit": "2026-10-31T05:52:31Z",
     "subjects": [
      "chore: 自动同步 Star 地图（193 个项目）",
-     "chore: 自动同步 Star 地图（192 个项目）",
-     "chore: 自动同步 Star 地图（191 个项目）",
-     "chore: 自动同步 Star 地图（190 个项目）",
-     "chore: 自动同步 Star 地图（190 个项目）",
-     "chore: 自动同步 Star 地图（189 个项目）",
-     "chore: 自动同步 Star 地图（189 个项目）",
-     "chore: 自动同步 Star 地图（189 个项目）"
+     "chore: 恢复完整分类映射（193 个项目全覆盖）",
+     "chore: 恢复完整分类映射（193 个项目全覆盖）",
+     "chore: 恢复完整分类映射（193 个项目全覆盖）",
+     "chore: 恢复完整分类映射（193 个项目全覆盖）",
+     "chore: 自动同步 Star 地图（193 个项目）",
+     "test: 触发含单引号的待归类场景",
+     "test: 触发含单引号的待归类场景"
     ]
    }
   ]
@@ -1970,12 +1970,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-30T18:04:34Z",
+  "pushed_at": "2026-10-30T22:27:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T18:04:33Z",
+    "last_commit": "2026-10-30T22:27:35Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2060,7 +2060,7 @@
   "branches": []
  },
  "hyhou/d2r-mobile": {
-  "pushed_at": "2026-10-29T01:39:48Z",
+  "pushed_at": "2026-10-31T01:45:11Z",
   "branches": []
  },
  "austery/d2r-mobile": {
@@ -3529,7 +3529,7 @@
   "branches": []
  },
  "donutnomad/d2r-mobile": {
-  "pushed_at": "2026-10-29T00:48:52Z",
+  "pushed_at": "2026-10-31T00:49:19Z",
   "branches": []
  },
  "funkhua/d2r-mobile": {
@@ -7814,21 +7814,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-10-29T21:59:38Z",
+  "pushed_at": "2026-10-31T02:55:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T21:59:36Z",
+    "last_commit": "2026-10-31T02:50:11Z",
     "subjects": [
+     "Sync NX runtime and tools; fix custom controller settings (v0.3.84 build 93)",
+     "Install LZ4 for cheat conversion regressions in release CI",
+     "Release 0.3.81: integrate upstream controls, cheats and TV output",
      "Keep launcher open when choosing an iCloud save folder (build 84)",
      "Refine release notes for 0.3.74",
      "Add optional iCloud save sharing and integrate verified fixes; release 0.3.74 (83)",
      "Integrate upstream alpha testing and texture fixes; release 0.3.69 (78)",
-     "Apply scoped upstream rendering, SDK and controller fixes (v0.3.68 build 77)",
-     "Add ACNH-scoped experimental LAN networking (v0.3.67 build 76)",
-     "Compile GPU regressions in CI and run them on the local Metal device",
-     "Add approved controller assignment and local frame diagnostics (v0.3.66 build 69)"
+     "Apply scoped upstream rendering, SDK and controller fixes (v0.3.68 build 77)"
     ]
    }
   ]
@@ -7979,21 +7979,21 @@
   ]
  },
  "MZhao-ouo/Touchable": {
-  "pushed_at": "2026-10-26T16:50:57Z",
+  "pushed_at": "2026-10-31T03:37:58Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-26T16:50:55Z",
+    "last_commit": "2026-10-31T03:37:44Z",
     "subjects": [
+     "Add world resolution, button style, and 90 Hz settings, and fix the pad press look",
+     "Add two-player touch, member setup by touch, and voice play to Rhythm Heaven",
      "Add render resolution, refresh rate, and enemy health bars to the Settings app page",
      "Put the D-pad at the height of the face buttons",
      "Merge the newer upstream Metal layer: translation thread and renderer optimizations",
      "Block Rhythm Heaven map touches during unlock transitions",
      "Record the Silksong build 33 install on the iPad mini",
-     "Use select-then-confirm on the level map and the save select",
-     "Add per-game improvement pages and a screenshot grid to the READMEs",
-     "Use the sketch controller layout, move controls nearer the edges, and end the press look at once"
+     "Use select-then-confirm on the level map and the save select"
     ]
    }
   ]
@@ -9358,21 +9358,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-10-30T11:04:54Z",
+  "pushed_at": "2026-10-31T05:13:10Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T10:45:16Z",
+    "last_commit": "2026-10-31T05:12:52Z",
     "subjects": [
+     "Cheats on the iPhone: Documents/cheats, named by the game's build ID",
+     "Release notes: both sections in one numbered list, and the bookkeeping commits stay off the page",
+     "Release notes: the Chinese row for the base move to bfc70881",
+     "Base to bfc70881: the Unreal frame-limit variable reaches the host, and the packer's copies follow upstream",
      "Base to 6d880d2: GPUs without BC textures are refused at start, and main.m needed a real merge",
      "Base to 51904e7: Super Monkey Ball and Pokemon Violet, an IL2CPP symbolizer, and the per-build cuts moved into the SDK-wide rules",
      "One backslash ate the closing quote of an echo, and a step died on a comment twenty lines below it",
-     "The fingerprint must run on the machine it runs on: sha256sum is not on macOS, and the annotator was one directory up",
-     "A nightly no longer publishes what it just published, and a failed build names the patch to fix",
-     "Sync the packer's copies with upstream",
-     "A package says which shell it came from, and three things that failed silently now do not",
-     "Base to 17f670a: SDK-wide 2 MB alignment, Unreal's texture pool, deferred encoding on its own thread"
+     "The fingerprint must run on the machine it runs on: sha256sum is not on macOS, and the annotator was one directory up"
     ]
    }
   ]
@@ -9398,21 +9398,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-10-30T22:22:25Z",
+  "pushed_at": "2026-10-31T04:20:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T22:22:25Z",
+    "last_commit": "2026-10-31T02:36:08Z",
     "subjects": [
-     "Merge pull request #279 from LNPANDY/v0lumehi/icloud-build-folder",
-     "Merge pull request #276 from LNPANDY/v0lumehi/issue-and-pr-forms",
-     "Merge pull request #277 from LNPANDY/v0lumehi/restart-and-wrapping",
-     "Stop a build whose folder is in iCloud Drive and explain why",
-     "Settings rows: wrap prose details, cut only paths in the middle, widen the language picker",
-     "Restart now: open the new copy from a helper once the old process has exited",
-     "PR template asks fix or feature as a question, ideas skip the problem form, triage reads fenced fields",
-     "v0.7.3"
+     "Merge pull request #298 from LNPANDY/v0lumehi/launcher-perf-test",
+     "Launcher: performance test for tab switches, Options, Manage and redraw",
+     "Merge pull request #296 from LNPANDY/v0lumehi/same-size-primary-actions",
+     "Merge pull request #299 from LNPANDY/v0lumehi/ready-without-app",
+     "Qt front end: regenerate the strings for the shorter repo.adopt label",
+     "Launcher: a game without a Mac build is not read as the current folder",
+     "Launcher: every row control is one line high, tests cover every language and page",
+     "Merge pull request #297 from LNPANDY/v0lumehi/fast-tab-switch"
     ]
    }
   ]
@@ -9679,7 +9679,7 @@
   ]
  },
  "augustxxx-debug/d2r-mobile-plus": {
-  "pushed_at": "2026-10-30T10:37:22Z",
+  "pushed_at": "2026-10-31T05:14:13Z",
   "branches": [
    {
     "branch": "android/v1.0.0",
@@ -9797,7 +9797,7 @@
    },
    {
     "branch": "main",
-    "ahead": 270,
+    "ahead": 271,
     "behind": 30,
     "files": 226,
     "real_files": 205,
@@ -9811,16 +9811,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-30T10:37:20Z",
+    "last_commit": "2026-10-31T05:14:13Z",
     "subjects": [
+     "Use bare hostname for community site",
      "README: Android 1.0.2 (android-v1.0.2 = 493daa3) replaces 1.0.1 as the current Android release",
      "docs: latest.json build 1793336710 (= package ed52d61, 1.0.0-rc1.2)",
      "Merge fork main (README Android 1.0.1 first release, latest.json RC1.1) into RC1.2",
      "CHANGELOG: RC1.2 entries for the on-device fixes (B057 / B064, B058, B062, B063)",
      "fix(pad): difficulty row re-takes the controller focus after touch -> pad and hands it back by row name (RC1.2 B064 follow-up)",
      "fix(freetp): portal badge counts only usable tomes / scrolls; auto-potion no longer overwrites a pending portal use (RC1.2 partial audit P2-1 / P2-2, B062 / B063)",
-     "fix(pad): Gameplay-page default focus survives tab switches, skips out-of-run, re-arms on mode switch (RC1.2 partial audit P2-3 / P2-4, B064)",
-     "README: Android 1.0.1 is the first public Android release (drop the withdrawn-1.0.0 note)"
+     "fix(pad): Gameplay-page default focus survives tab switches, skips out-of-run, re-arms on mode switch (RC1.2 partial audit P2-3 / P2-4, B064)"
     ]
    },
    {
@@ -10423,7 +10423,7 @@
   ]
  },
  "simipoB/PKShield-Android": {
-  "pushed_at": "2026-10-30T22:21:51Z",
+  "pushed_at": "2026-10-30T22:27:25Z",
   "branches": [
    {
     "branch": "main",
@@ -10582,21 +10582,21 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-10-30T18:05:58Z",
+  "pushed_at": "2026-10-31T05:42:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T15:05:56Z",
+    "last_commit": "2026-10-31T05:20:31Z",
     "subjects": [
-     "Update README.md",
-     "Bump the version to 0.1.1",
-     "Remap keys, mouse buttons and controller buttons from the Controls tab",
-     "Add a Planned section to the README and move the AI agents note to the end",
-     "Pick the gamepad button layout by the pad's labels, with a Button layout row on the Controls tab",
-     "List the performance and diagnostics keys in totk.ini.example with what each does and its default",
-     "Update README.md",
-     "Add a funding link to the DonationAlerts page"
+     "Raise the version to 0.1.9",
+     "Merge task/xboxprompts: Xbox button prompts layout, from pull request #126",
+     "Merge task/ultrawide: game resolutions wider than 16:9 on 1.4.3, from pull request #137 (#6)",
+     "Say that the Xbox prompts do not follow remapped buttons",
+     "Fall back to romfs-patches when romfs-patches-xbox fails its check at boot",
+     "Let the setup go on without the Xbox prompts, and put the Xbox prompts docs below the controls table",
+     "Add an Xbox prompts button layout: Switch positions with the A/B and X/Y prompts swapped to the Xbox labels",
+     "Document the ultrawide sizes, the fit default of aspect and the 1.4.3 limit"
     ]
    }
   ]
@@ -10797,5 +10797,114 @@
  "nx-ports/d2r-mobile": {
   "pushed_at": "2026-10-24T14:57:26Z",
   "branches": []
+ },
+ "fucknima/d2r-mobile": {
+  "pushed_at": "2026-10-31T02:49:08Z",
+  "branches": [
+   {
+    "branch": "android-warm-seed-pack",
+    "ahead": 1,
+    "behind": 22,
+    "files": 6,
+    "real_files": 4,
+    "dirs": [
+     "dm/android",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-26T22:09:46Z",
+    "subjects": [
+     "Android import pack: --warm-seed puts the pipeline warm-up seed into shaders/"
+    ]
+   },
+   {
+    "branch": "cheats",
+    "ahead": 4,
+    "behind": 16,
+    "files": 15,
+    "real_files": 15,
+    "dirs": [
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-10-31T02:48:56Z",
+    "subjects": [
+     "补生成的 i18n 表：满血钮文案（dmTcRefill）",
+     "满血钮挪到换组键外侧的弧上，避开右上角地图与物品名",
+     "修倍率行文字折行；主界面加满血钮（第 13 个圆钮，点一下补满）",
+     "单机增强：自定义页 11 项（无限金币/满血蓝耐/属性点/抗性/耐久/经验与掉落倍率）"
+    ]
+   }
+  ]
+ },
+ "slavich33/diablo-2-resurrected-native-ios": {
+  "pushed_at": "2026-10-30T23:05:16Z",
+  "branches": [
+   {
+    "branch": "android-warm-seed-pack",
+    "ahead": 1,
+    "behind": 22,
+    "files": 6,
+    "real_files": 4,
+    "dirs": [
+     "dm/android",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-26T22:09:46Z",
+    "subjects": [
+     "Android import pack: --warm-seed puts the pipeline warm-up seed into shaders/"
+    ]
+   },
+   {
+    "branch": "reimagined-ios-online",
+    "ahead": 9,
+    "behind": 16,
+    "files": 40,
+    "real_files": 38,
+    "dirs": [
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/online"
+    ],
+    "last_commit": "2026-10-30T23:05:14Z",
+    "subjects": [
+     "Name and document the native Diablo II iOS source fork",
+     "Inspect authenticated ladder policies and region availability",
+     "Document native Reimagined fork and verified build status",
+     "Validate native control codec against official encoder fixtures",
+     "Implement loader control payloads and verify native engine inputs",
+     "Add native TCP transport and game-session API contracts",
+     "Add native iOS Reimagined account and ladder screen",
+     "Add native PKCE login, Keychain sessions and D2EM envelope framing"
+    ]
+   }
+  ]
+ },
+ "sino2210/d2r-mobile-": {
+  "pushed_at": "2026-10-31T02:08:51Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-31T01:58:59Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "jim3788/d2r221": {
+  "pushed_at": "2026-10-31T00:10:52Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-10-31T00:03:55Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
  }
 }
