@@ -318,16 +318,16 @@
   ]
  },
  "n1zjqo/d2r-mobile": {
-  "pushed_at": "2026-10-31T03:08:52Z",
+  "pushed_at": "2026-11-01T02:38:45Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 12,
+    "ahead": 13,
     "behind": 0,
     "files": 1,
     "real_files": 0,
     "dirs": [],
-    "last_commit": "2026-10-31T03:08:52Z",
+    "last_commit": "2026-11-01T02:38:45Z",
     "subjects": [
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
@@ -336,7 +336,7 @@
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
-     "Merge pull request #1 from jhaizhou-ops/main"
+     "Merge branch 'jhaizhou-ops:main' into main"
     ]
    }
   ]
@@ -1394,7 +1394,7 @@
   "branches": []
  },
  "MichaelC001/d2r-mobile": {
-  "pushed_at": "2026-10-31T02:31:22Z",
+  "pushed_at": "2026-11-01T02:31:22Z",
   "branches": []
  },
  "tinytub/d2r-mobile": {
@@ -1661,7 +1661,7 @@
   ]
  },
  "wukongtime/d2r-mobile-build-backup": {
-  "pushed_at": "2026-10-31T01:59:37Z",
+  "pushed_at": "2026-11-01T02:03:49Z",
   "branches": [
    {
     "branch": "main",
@@ -1762,21 +1762,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-10-31T05:07:52Z",
+  "pushed_at": "2026-11-01T05:38:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T05:07:51Z",
+    "last_commit": "2026-11-01T05:38:57Z",
     "subjects": [
+     "radar 2026-11-01",
      "radar 2026-10-31",
      "radar 2026-10-30",
      "radar 2026-10-29",
      "radar 2026-10-28",
      "radar 2026-10-27",
      "radar 2026-10-26",
-     "radar 2026-10-25",
-     "radar 2026-10-24"
+     "radar 2026-10-25"
     ]
    }
   ]
@@ -1862,21 +1862,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-10-31T15:47:55Z",
+  "pushed_at": "2026-11-01T06:17:10Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T15:47:26Z",
+    "last_commit": "2026-11-01T06:17:03Z",
     "subjects": [
-     "Use the build's offline pipeline archive in benchmarks (#792)",
-     "Move AudioUnit diagnostics off the callback (#731)",
-     "Recognize guarded zero-extended jump-table indices (#778)",
-     "Restore Vorbis movie audio after Flush (#787)",
-     "Make polling tests independent of CI scheduling (#779)",
-     "Find iOS DLC in Documents and replace stale content (#486)",
-     "Wait for Mac fullscreen readiness and retire startup retries (#665)",
-     "Report stale shader caches through build events (#490)"
+     "Mac: game input hides the pointer over the picture until the mouse moves (#584, fixes #675)",
+     "nvn: shorter state and single texture bind records keep Super Mario Odyssey's display lists in their heap (#838)",
+     "Mac: HID gamepads that GameController does not list get a player slot (#669, #637)",
+     "nfc: Initialize, Finalize, GetState and IsNfcEnabled answered without nfc:user; NFC reads as switched off (#711)",
+     "fs: a save folder that cannot clone says it needs APFS; recursive deletes never enter symlinks (#661)",
+     "nvn: report a command buffer's control memory as free (#660)",
+     "iOS: the BC device check runs at Play, so the launcher's Performance HUD shows (GitHub issue #840)",
+     "NSP script: merged NSPs and XCIs count as each title they hold; --title-id picks one game of several (#842, #701)"
     ]
    }
   ]
@@ -1902,7 +1902,7 @@
   ]
  },
  "HachiMiku39/pjdv_mega39s_ios": {
-  "pushed_at": "2026-11-01T00:10:09Z",
+  "pushed_at": "2026-11-01T00:15:33Z",
   "branches": [
    {
     "branch": "main",
@@ -1942,21 +1942,21 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-10-31T21:31:53Z",
+  "pushed_at": "2026-11-01T06:00:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T21:31:52Z",
+    "last_commit": "2026-11-01T06:00:19Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 更新 sync-stars.yml",
      "chore: 更新 map_auto.py",
      "chore: 更新 stars_pending.json",
-     "chore: 更新 stars.json",
-     "chore: 更新 gen_readme.py"
+     "chore: 更新 stars.json"
     ]
    }
   ]
@@ -1970,12 +1970,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-10-31T19:22:03Z",
+  "pushed_at": "2026-11-01T00:11:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T19:22:02Z",
+    "last_commit": "2026-11-01T00:11:24Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2060,7 +2060,7 @@
   "branches": []
  },
  "hyhou/d2r-mobile": {
-  "pushed_at": "2026-10-31T01:45:11Z",
+  "pushed_at": "2026-11-01T02:15:40Z",
   "branches": []
  },
  "austery/d2r-mobile": {
@@ -3529,7 +3529,7 @@
   "branches": []
  },
  "donutnomad/d2r-mobile": {
-  "pushed_at": "2026-10-31T00:49:19Z",
+  "pushed_at": "2026-11-01T00:54:40Z",
   "branches": []
  },
  "funkhua/d2r-mobile": {
@@ -7814,21 +7814,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-10-31T23:51:04Z",
+  "pushed_at": "2026-11-01T03:22:19Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T23:45:45Z",
+    "last_commit": "2026-11-01T03:22:03Z",
     "subjects": [
+     "Recognize nested DLC folders and retain cache-key compatibility",
+     "Fix one-click DLC extraction and external resource delivery",
      "Sync NXNative runtime fixes and host shader pipeline for v0.3.86 (95)",
      "Sync NX runtime and tools; fix custom controller settings (v0.3.84 build 93)",
      "Install LZ4 for cheat conversion regressions in release CI",
      "Release 0.3.81: integrate upstream controls, cheats and TV output",
      "Keep launcher open when choosing an iCloud save folder (build 84)",
-     "Refine release notes for 0.3.74",
-     "Add optional iCloud save sharing and integrate verified fixes; release 0.3.74 (83)",
-     "Integrate upstream alpha testing and texture fixes; release 0.3.69 (78)"
+     "Refine release notes for 0.3.74"
     ]
    }
   ]
@@ -8935,11 +8935,11 @@
   "branches": []
  },
  "seeyajack/d2r-mobile": {
-  "pushed_at": "2026-10-31T18:26:26Z",
+  "pushed_at": "2026-11-01T06:00:07Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 354,
+    "ahead": 367,
     "behind": 0,
     "files": 256,
     "real_files": 252,
@@ -8955,16 +8955,16 @@
      "dm/tools",
      "tools/ohos"
     ],
-    "last_commit": "2026-10-31T18:20:17Z",
+    "last_commit": "2026-10-31T22:33:11Z",
     "subjects": [
-     "host: lock_acquire_for 加退让上限（持 G 自旋根因，np584）",
-     "host: sampler 心跳行（每 500 轮，报 g_shead/送达数）",
-     "host: g_sig_seen 改 _Atomic（修原子类型错误）",
-     "host: [cv]直方图带 SIGUSR2 送达计数（区分递送失败与统计丢失，np580）",
-     "host: sampler 启动日志（排查 DM_SAMPLE 直方图 0 输出，np580）",
-     "host: [stall] 补 wseq/prio 字段（AB-BA 公平性取证用，np578）",
-     "host: [cv] 0x1d 补 lr 字段（np568 的修改漏打了这一处——signal 发起点反推用）",
-     "host: extern dm_guest_heap_lo 提升到文件级（修冲突声明）"
+     "gfx: view nlevels=0 共用兜底 + skip 模式丢弃无 VS 的 draw（np598）",
+     "gfx: NVN 附件 levelCount=0 兜底 + SetLevels 取证（np597）",
+     "app: envs 开 DM_SHADER_SKIP 枚举缺失着色器（np596）",
+     "app: 解包器按 magic 严格判 ustar/GNU，并支持 base-256 大文件长度（np595）",
+     "app: 内容通道收敛成 tar 一条路（删\"选目录逐文件拷\"，np594）",
+     "app: 内容通道加 tar 入口——原生线程解包 + ArkTS 轮询进度（np593）",
+     "app: 内容通道——SAF 选目录 + 原生 copyFdToFile 拷进沙箱（np592）",
+     "app: 内容通道探针（App 能否直接读公共目录，np591）"
     ]
    }
   ]
@@ -9358,21 +9358,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-10-31T12:45:49Z",
+  "pushed_at": "2026-11-01T05:53:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T12:45:36Z",
+    "last_commit": "2026-11-01T05:53:14Z",
     "subjects": [
-     "Declare the mach_vm traps on the iPhone: its SDK drops the header, not the calls",
      "Sync the packer's copies with upstream",
-     "Cheats may write the game's code on the iPhone: the module image is anonymous memory",
+     "A {Name} entry really obeys its switch now: the pass gate skipped the check",
+     "The crash guard turns the switches off too, not just the host's copy",
+     "A run that dies within 30 s of starting with cheats on turns those entries off next time",
+     "Cheats: every entry is a switch, {Name} masters included, and the second patch area is refused",
+     "main.m: the memory line's newline was written as a real line break, so the string ended mid-quote",
      "Sync the packer's copies with upstream",
-     "Cheats load when Play is pressed, not at launch",
-     "The rewriter's fork pool does not exist on Windows, so packing stopped at rewriting main",
-     "Base to 89074294: shaders compiled during the build, and two patched files moved under us",
-     "Cheats: the host reads the launcher's cheats.txt, so the codes load"
+     "Fix the cheats panel's onAppear: the rename to applySaved left two stale calls"
     ]
    }
   ]
@@ -9398,21 +9398,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-01T00:10:07Z",
+  "pushed_at": "2026-11-01T06:07:54Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T00:10:07Z",
+    "last_commit": "2026-11-01T05:48:40Z",
     "subjects": [
-     "Merge pull request #353 from Dino0005/fix/engine-signing",
-     "Merge branch 'main' into fix/engine-signing",
-     "Merge pull request #360 from LNPANDY/fix/rebuild-duplicate-library-entry",
-     "Merge branch 'main' into fix/rebuild-duplicate-library-entry",
-     "Merge branch 'main' into fix/engine-signing",
-     "Merge pull request #356 from LNPANDY/fix/ascii-temp-test-on-mac",
-     "Replace the old library entry when a build finishes for a game already listed",
-     "Merge branch 'main' into fix/engine-signing"
+     "Merge pull request #393 from LNPANDY/fix/no-signature-days-beside-status",
+     "Merge branch 'main' into fix/no-signature-days-beside-status",
+     "Show only the status beside a game, not the signature days",
+     "Merge pull request #389 from LNPANDY/fix/relaunch-test-race",
+     "Merge branch 'main' into fix/relaunch-test-race",
+     "Merge pull request #390 from LNPANDY/ci/linux-jobs",
+     "Merge branch 'main' into ci/linux-jobs",
+     "Merge branch 'main' into fix/relaunch-test-race"
     ]
    }
   ]
@@ -9679,12 +9679,12 @@
   ]
  },
  "augustxxx-debug/d2r-mobile-plus": {
-  "pushed_at": "2026-10-31T05:14:13Z",
+  "pushed_at": "2026-11-01T05:54:22Z",
   "branches": [
    {
     "branch": "android/v1.0.0",
     "ahead": 180,
-    "behind": 30,
+    "behind": 41,
     "files": 300,
     "real_files": 297,
     "dirs": [
@@ -9713,7 +9713,7 @@
    {
     "branch": "android/v1.0.1",
     "ahead": 203,
-    "behind": 30,
+    "behind": 41,
     "files": 300,
     "real_files": 296,
     "dirs": [
@@ -9742,7 +9742,7 @@
    {
     "branch": "android/1.0.2-20261030",
     "ahead": 208,
-    "behind": 30,
+    "behind": 41,
     "files": 300,
     "real_files": 296,
     "dirs": [
@@ -9771,7 +9771,7 @@
    {
     "branch": "codex/plus",
     "ahead": 9,
-    "behind": 30,
+    "behind": 41,
     "files": 90,
     "real_files": 83,
     "dirs": [
@@ -9797,8 +9797,8 @@
    },
    {
     "branch": "main",
-    "ahead": 271,
-    "behind": 30,
+    "ahead": 272,
+    "behind": 41,
     "files": 226,
     "real_files": 205,
     "dirs": [
@@ -9811,22 +9811,22 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-10-31T05:14:13Z",
+    "last_commit": "2026-11-01T05:54:21Z",
     "subjects": [
+     "Restore canonical community site URL",
      "Use bare hostname for community site",
      "README: Android 1.0.2 (android-v1.0.2 = 493daa3) replaces 1.0.1 as the current Android release",
      "docs: latest.json build 1793336710 (= package ed52d61, 1.0.0-rc1.2)",
      "Merge fork main (README Android 1.0.1 first release, latest.json RC1.1) into RC1.2",
      "CHANGELOG: RC1.2 entries for the on-device fixes (B057 / B064, B058, B062, B063)",
      "fix(pad): difficulty row re-takes the controller focus after touch -> pad and hands it back by row name (RC1.2 B064 follow-up)",
-     "fix(freetp): portal badge counts only usable tomes / scrolls; auto-potion no longer overwrites a pending portal use (RC1.2 partial audit P2-1 / P2-2, B062 / B063)",
-     "fix(pad): Gameplay-page default focus survives tab switches, skips out-of-run, re-arms on mode switch (RC1.2 partial audit P2-3 / P2-4, B064)"
+     "fix(freetp): portal badge counts only usable tomes / scrolls; auto-potion no longer overwrites a pending portal use (RC1.2 partial audit P2-1 / P2-2, B062 / B063)"
     ]
    },
    {
     "branch": "rc1/rc1.2",
     "ahead": 262,
-    "behind": 30,
+    "behind": 41,
     "files": 223,
     "real_files": 202,
     "dirs": [
@@ -10312,21 +10312,37 @@
   ]
  },
  "kieusonlam/d2r-mobile": {
-  "pushed_at": "2026-10-28T04:52:43Z",
+  "pushed_at": "2026-11-01T03:19:22Z",
   "branches": [
    {
+    "branch": "android-warm-seed-pack",
+    "ahead": 1,
+    "behind": 33,
+    "files": 6,
+    "real_files": 4,
+    "dirs": [
+     "dm/android",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-26T22:09:46Z",
+    "subjects": [
+     "Android import pack: --warm-seed puts the pipeline warm-up seed into shaders/"
+    ]
+   },
+   {
     "branch": "rp5",
-    "ahead": 6,
+    "ahead": 7,
     "behind": 0,
-    "files": 9,
-    "real_files": 9,
+    "files": 6,
+    "real_files": 6,
     "dirs": [
      "dm/android",
      "dm/ios",
      "tools/rp5"
     ],
-    "last_commit": "2026-10-28T04:52:40Z",
+    "last_commit": "2026-11-01T03:09:01Z",
     "subjects": [
+     "Merge upstream v2.2.2 into rp5",
      "Options tabs: widened tab background to match the 340-wide tabs",
      "Options tabs: fit Gameplay / Settings on one line at font size 40",
      "Merge remote-tracking branch 'upstream/main' into rp5",
@@ -10799,12 +10815,12 @@
   "branches": []
  },
  "fucknima/d2r-mobile": {
-  "pushed_at": "2026-10-31T02:49:08Z",
+  "pushed_at": "2026-11-01T04:56:16Z",
   "branches": [
    {
     "branch": "android-warm-seed-pack",
     "ahead": 1,
-    "behind": 22,
+    "behind": 33,
     "files": 6,
     "real_files": 4,
     "dirs": [
@@ -10818,8 +10834,8 @@
    },
    {
     "branch": "cheats",
-    "ahead": 4,
-    "behind": 16,
+    "ahead": 5,
+    "behind": 0,
     "files": 15,
     "real_files": 15,
     "dirs": [
@@ -10827,8 +10843,9 @@
      "dm/i18n",
      "dm/ios"
     ],
-    "last_commit": "2026-10-31T02:48:56Z",
+    "last_commit": "2026-11-01T04:39:55Z",
     "subjects": [
+     "merge upstream v2.2.2",
      "补生成的 i18n 表：满血钮文案（dmTcRefill）",
      "满血钮挪到换组键外侧的弧上，避开右上角地图与物品名",
      "修倍率行文字折行；主界面加满血钮（第 13 个圆钮，点一下补满）",
@@ -10838,7 +10855,7 @@
   ]
  },
  "slavich33/diablo-2-resurrected-native-ios": {
-  "pushed_at": "2026-10-31T23:57:25Z",
+  "pushed_at": "2026-11-01T06:15:41Z",
   "branches": [
    {
     "branch": "android-warm-seed-pack",
@@ -10857,27 +10874,28 @@
    },
    {
     "branch": "reimagined-ios-online",
-    "ahead": 42,
+    "ahead": 53,
     "behind": 27,
-    "files": 150,
-    "real_files": 147,
+    "files": 187,
+    "real_files": 184,
     "dirs": [
      "dm/host",
      "dm/i18n",
      "dm/ios",
      "dm/online",
-     "dm/tools"
+     "dm/tools",
+     "dm/verify"
     ],
-    "last_commit": "2026-10-31T23:57:23Z",
+    "last_commit": "2026-11-01T06:14:38Z",
     "subjects": [
-     "Validate optional environment metadata and project native save records",
-     "Advance native save history and expose verified D2S completion events",
-     "Implement native v2 sidecar seals and persistent scoped signing keys",
-     "Capture loaded native ItemStatCost rows and names by generation",
-     "Reconstruct item and player stat descriptors from verified native table snapshots",
-     "Guard the complete original sidecar model in the reference verifier",
-     "Implement native version2 character sidecar file codec and original reference checks",
-     "Implement native character metadata transfer and D2S integrity binding"
+     "Port extended state receivers and scoped native size validation",
+     "Add scoped extended item prefix and small state readers",
+     "Preserve native join passwords and resume full server saves",
+     "Check advertised lobby level restrictions before native startup",
+     "Preserve loaded stat spelling for native ladder schemas",
+     "Fix native CASC resource selection, lengths and encoding offsets",
+     "Negotiate implemented native sidecar codec before game admission",
+     "Capture native ItemStatCost environment schemas with generation checks"
     ]
    }
   ]
@@ -10950,21 +10968,64 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-10-31T23:54:19Z",
+  "pushed_at": "2026-11-01T05:35:21Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-10-31T22:05:25Z",
+    "last_commit": "2026-11-01T05:35:19Z",
     "subjects": [
-     "Merge pull request #9 from jmars125/version-0.1.3",
-     "Version 0.1.3",
-     "Merge pull request #8 from jmars125/fix/soul-challenge-ring",
-     "Scale the Soul Challenge ring's per-frame shrink by the frame rate.",
-     "Merge pull request #7 from jmars125/cutscene-stock-30",
-     "Fix slow motion at 120 fps and lip sync in cutscenes",
-     "Merge pull request #6 from jmars125/version-0.1.2",
-     "Version 0.1.2"
+     "Merge pull request #26 from jmars125/realtime-step",
+     "Version 0.1.10",
+     "Scale the salvage hold by the frame rate",
+     "Scale the right-stick camera turn by the frame rate",
+     "2.0.0 steps the measured frame time, so the game keeps real time below the frame limit",
+     "Merge pull request #23 from jmars125/imported-saves",
+     "Version 0.1.9",
+     "Saves from a Switch or an emulator load: ClaimPeriodicBenefitWithUserSystemClock runs without the time service"
+    ]
+   }
+  ]
+ },
+ "zcyxsx001-afk/d2r-mobile": {
+  "pushed_at": "2026-11-01T03:30:10Z",
+  "branches": [
+   {
+    "branch": "launcher-v1",
+    "ahead": 3,
+    "behind": 0,
+    "files": 3,
+    "real_files": 3,
+    "dirs": [
+     "dm/ios"
+    ],
+    "last_commit": "2026-11-01T03:30:10Z",
+    "subjects": [
+     "launcher-v1: show LauncherVC first in boot mode, gate host_start on Play, fall back to AssetVC on missing assets",
+     "launcher-v1: add LauncherVC (left icon/name/version/Play, right fps/host-mode/upscaling/lang/fps-counter/controls; settings in dm_launcher.txt, host keys synced on Play only)",
+     "launcher-v1: add LauncherVC header (step 1, launcher UI + settings, no game pipeline change)"
+    ]
+   }
+  ]
+ },
+ "UncooleBen/d2r-mobile": {
+  "pushed_at": "2026-11-01T04:09:25Z",
+  "branches": []
+ },
+ "dipperc/d2r-mobile": {
+  "pushed_at": "2026-11-01T05:20:07Z",
+  "branches": []
+ },
+ "wonderwrz0606/D2R-Sam": {
+  "pushed_at": "2026-11-01T06:15:49Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-01T06:15:48Z",
+    "subjects": [
+     "Add iOS starter workflow for build and test",
+     "Initial commit"
     ]
    }
   ]
