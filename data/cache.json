@@ -1562,7 +1562,7 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-11-01T15:06:26Z",
+  "pushed_at": "2026-11-01T19:22:36Z",
   "branches": [
    {
     "branch": "main",
@@ -1862,21 +1862,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-01T15:41:10Z",
+  "pushed_at": "2026-11-01T16:25:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T15:40:49Z",
+    "last_commit": "2026-11-01T16:25:12Z",
     "subjects": [
+     "A damaged NSP lists all its files instead of crashing nx_extract; the image marks them and the host names them (#810)",
      "Hollow Knight plays on the Mac; libraries prefetched before the prewarm starts are kept",
      "The NSP script builds a game from a folder of its files, with no prod.keys",
      "README: acknowledgements keep the projects with a GitHub link, and Ryujinx",
      "C lint: t_image_attachment_store checks its DontCare-load program resolved before using it",
      "Boot no longer aborts in dispatch_once: the shader map is read once from any thread, the prewarm starts once outside it",
      "README: acknowledgements as one item per project, with MacNativeGames; the folder a Switch 2 game is packed from",
-     "README: acknowledgements before How to play, a Switch 2 line in the intro, Switch 2 games first in the gallery",
-     "CI lint: the HMMA rewrite's matches are checked, the geometry colour cache compares a byte key, and two tests guard their indices"
+     "README: acknowledgements before How to play, a Switch 2 line in the intro, Switch 2 games first in the gallery"
     ]
    }
   ]
@@ -1942,21 +1942,21 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-01T13:21:29Z",
+  "pushed_at": "2026-11-01T22:00:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T13:21:28Z",
+    "last_commit": "2026-11-01T22:00:05Z",
     "subjects": [
      "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
+     "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 更新 sync-stars.yml",
-     "chore: 更新 map_auto.py",
-     "chore: 更新 stars_pending.json"
+     "chore: 更新 map_auto.py"
     ]
    }
   ]
@@ -1970,12 +1970,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-01T06:18:00Z",
+  "pushed_at": "2026-11-01T16:06:12Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T06:17:59Z",
+    "last_commit": "2026-11-01T16:06:11Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4097,21 +4097,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-01T15:34:18Z",
+  "pushed_at": "2026-11-01T20:53:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T14:50:28Z",
+    "last_commit": "2026-11-01T20:53:46Z",
     "subjects": [
+     "feat(ios): Breath of the Wild's docked 1080p as on the Switch or HD, the iPad starts docked, and an install checks the device's pipelines",
+     "perf(ios): the device pipeline archive is made on the Mac on all warm-up threads",
+     "feat: native 4K for Breath of the Wild 1.6.0 and 1.9.0, built by default on 16 GB-plus Macs",
+     "fix: the builder offers native 2K for Breath of the Wild 1.9.0 too (after PR #440)",
+     "fix: Breath of the Wild 1.9.0 offers 720p as 1.6.0 and Tears of the Kingdom do; the docs list its resolutions (after PR #440)",
+     "Merge PR #440: feat: Breath of the Wild 1.9.0 switches to native sizes in play from the settings panel's Resolution row, up to the screen size (@liafonx)",
      "fix: build_app.py warns when --native-5k builds on a Mac with less than 32 GB (after PR #1515)",
-     "Merge PR #1515: feat: add opt-in native 5K for Tears of the Kingdom 1.4.3 (@chunye-shanhui)",
-     "Merge PR #1470: fix(mac): a 12 GiB guest for native 4K plus the 4K texture pack, on 16 GB-plus Macs (@peachtaozhutou)",
-     "fix: the scene follows the canvas only on 1.2.1 with the scene overlays; 1.0.0, 1.1.2 and older apps keep 1600x900 (after PR #1467)",
-     "Merge PR #1467: feat(mac): native 4K with the scene at the canvas, for TotK 1.2.1 (@peachtaozhutou)",
-     "fix: the phone's sensor and the input watch run only while the phone aims; French footer; no sensitivity file (after PR #569)",
-     "Merge PR #569: fix: the phone's gyro keeps aiming when a connected controller has none (one-owner hand-over) (@bs10081)",
-     "fix: the View menu uses the panel's frame lock choices and lock; one icon and one launcher check for every version (after PR #1473)"
+     "Merge PR #1515: feat: add opt-in native 5K for Tears of the Kingdom 1.4.3 (@chunye-shanhui)"
     ]
    }
   ]
@@ -7814,21 +7814,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-11-01T13:06:09Z",
+  "pushed_at": "2026-11-01T20:14:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T13:00:06Z",
+    "last_commit": "2026-11-01T20:07:33Z",
     "subjects": [
+     "Fix damaged NSP reporting and warm queue retention (0.3.90 build 99)",
      "Sync official tail-call proof and Heaps shader extraction (0.3.89 build 98)",
      "Adopt official cloud folder picker and publish only LAN host (0.3.88 build 97)",
      "Update audio-open regression for copied renderer event handles",
      "Sync NXNative runtime and Xcode 27.2 shader toolchain for v0.3.87 (96)",
      "Recognize nested DLC folders and retain cache-key compatibility",
      "Fix one-click DLC extraction and external resource delivery",
-     "Sync NXNative runtime fixes and host shader pipeline for v0.3.86 (95)",
-     "Sync NX runtime and tools; fix custom controller settings (v0.3.84 build 93)"
+     "Sync NXNative runtime fixes and host shader pipeline for v0.3.86 (95)"
     ]
    }
   ]
@@ -8935,12 +8935,12 @@
   "branches": []
  },
  "seeyajack/d2r-mobile": {
-  "pushed_at": "2026-11-01T14:52:42Z",
+  "pushed_at": "2026-11-01T18:51:32Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 391,
-    "behind": 10,
+    "ahead": 395,
+    "behind": 12,
     "files": 264,
     "real_files": 260,
     "dirs": [
@@ -8955,16 +8955,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-11-01T14:49:59Z",
+    "last_commit": "2026-11-01T18:48:49Z",
     "subjects": [
+     "gfx: 长宽限 + 切段重试 + fence 死等兜底（np632/np632b/np633）",
+     "gfx: 冷路径重试（指数退避）+ device lost 的完整定性（np631/np631b）",
+     "app: 实验② DM_SKIP_COMPUTE=78e80cf67d011b87（读数见下一提交的分析）",
+     "gfx: compute→图形依赖的两个对照开关（np630/np630b，离线备好待真机）",
      "app: DM_SPLIT_DRAWS 8000 → 4000（np629b 第二次对半）",
      "gfx: 提交二分仪器 + 第一份分界读数（np629/np629b-d）",
      "gfx: 悬空断言扩到图像资源（np628）—— \"资源提前释放\"假设整体排除",
-     "gfx: 跨槽引用悬空断言（np627）—— device lost 主嫌疑的第一份读数",
-     "gfx: 放行层叠渲染（2D_ARRAY 附件整段层）（np626）",
-     "tools: 合成脚本修两个\"大着色器必丢\"的缺陷（np625）",
-     "gfx: BC 解码源上的重解释视图放行 + dump 句柄按池 id 解槽（np622/np623）",
-     "tools: shader_replenish.py —— dump → 合成 → 翻译 → shaders_extra 的一键流水线（np621）"
+     "gfx: 跨槽引用悬空断言（np627）—— device lost 主嫌疑的第一份读数"
     ]
    }
   ]
@@ -9398,21 +9398,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-01T15:57:39Z",
+  "pushed_at": "2026-11-01T22:02:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T15:56:10Z",
+    "last_commit": "2026-11-01T22:02:25Z",
     "subjects": [
-     "Merge pull request #419 from LNPANDY/v0lumehi/shell-system-language",
-     "iOS shell: follow the system language, remove the language picker",
-     "Merge pull request #412 from LNPANDY/chore/version-1.0.0",
-     "v1.0.0: version bump, the changelog row of 0.8.0 becomes 1.0.0",
-     "Merge pull request #409 from LNPANDY/fix/shell-settings-off-switches",
-     "Merge branch 'main' into fix/shell-settings-off-switches",
-     "Merge pull request #407 from LNPANDY/fix/rc8-five-reports",
-     "A game can turn cloud saves off, and the shell folders can be removed"
+     "Merge pull request #452 from LNPANDY/v0lumehi/localizer-store",
+     "Move the language and the strings out of BuildModel into a Localizer store (#387)",
+     "Merge pull request #450 from LNPANDY/v0lumehi/stale-frameworks-prompt",
+     "Ask before the build when the shared app holds frameworks of an old shader chain (#449)",
+     "Merge pull request #420 from LNPANDY/v0lumehi/split-step1-targets",
+     "Split the launcher into NXCore, NXModel, NXLauncher and the NX2Apple app",
+     "Merge pull request #439 from LNPANDY/v0lumehi/outside-rule",
+     "Merge branch 'main' into v0lumehi/outside-rule"
     ]
    }
   ]
@@ -10493,11 +10493,11 @@
   ]
  },
  "tib-kpl/d2r-mobile": {
-  "pushed_at": "2026-10-30T18:28:20Z",
+  "pushed_at": "2026-11-01T17:39:48Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 17,
+    "ahead": 19,
     "behind": 0,
     "files": 68,
     "real_files": 61,
@@ -10512,16 +10512,16 @@
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-10-30T18:22:47Z",
+    "last_commit": "2026-11-01T17:32:21Z",
     "subjects": [
+     "Controller events: also require libraryLoaded, as upstream (#178)",
+     "Merge upstream/main (2.2.4) into fork: keep folder picker, CI versioning and French; take overlay variants, warm seed, exit labels",
      "Merge upstream map crash fix while preserving Android CI versioning",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge upstream controller and camera updates while preserving Android profiles",
      "Move FFmpeg notices to an optional Android licenses page",
      "Present fork features in an English README note",
-     "Load Android touch art from the selected game pack",
-     "Read Android game packs from SD filesystems without xattrs",
-     "Fetch pinned FFmpeg source from its official GitHub mirror"
+     "Load Android touch art from the selected game pack"
     ]
    }
   ]
@@ -10599,41 +10599,41 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-01T15:43:32Z",
+  "pushed_at": "2026-11-01T19:26:23Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T18:17:15Z",
+    "last_commit": "2026-11-01T15:17:27Z",
     "subjects": [
-     "Raise the version to 0.2.8",
-     "Merge pull request #233: Add colour profiles and brightness, contrast, saturation and gamma for the picture (Lucas-blip-png)",
-     "Merge pull request #248: Add a field-of-view setting for 1.4.3 (Lucas-blip-png)",
-     "Say \"an update file other than the recorded one\" in the installer guide (#247)",
-     "Merge pull request #269: Trust the narrowed shader walk when it finds the version's shaders (shenjackyuanjie)",
-     "Merge pull request #220: Support the 1.1.1 update as a third game version (shenjackyuanjie)",
-     "Merge task/savecommit: no save or backup for a Commit that changed nothing, a short swap retry (#260, #263)",
-     "Skip the save and backup of a Commit that changed no byte, and retry the swap briefly"
+     "Close the spawned child's descriptors only where glibc has posix_spawn_file_actions_addclosefrom_np",
+     "Use plat_setenv and strcasecmp where the stick dead zone code called Windows-only functions",
+     "Extract the RomFS again when its index on disk cannot be read",
+     "Merge task/prwave4: community pull requests #358, #365, #375, #354, #246 and #371",
+     "Merge pull request #371: Call the 1.1.0 update 1.1.0, not 1.1.1 (shenjackyuanjie)",
+     "Merge pull request #246: Cache the thread id per thread on Linux (SchulzCode)",
+     "Merge pull request #354: Build the runtime library without the generated chunk lists (shenjackyuanjie)",
+     "Merge pull request #375: Name a busy totk_xlate.exe in the prepare step instead of failing with an unexpected error (shenjackyuanjie)"
     ]
    }
   ]
  },
  "Desm0nt/doom-port": {
-  "pushed_at": "2026-10-31T20:42:59Z",
+  "pushed_at": "2026-11-01T20:44:02Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T20:42:57Z",
+    "last_commit": "2026-11-01T20:43:56Z",
     "subjects": [
-     "Research note: drop a local path",
-     "Remove leftover docs from other ports",
-     "Audio: no catch-up frames, fixes the 20 fps drop at video screens",
-     "README: fast zlib loads",
-     "Fast zlib and Turnip sysmem by default",
-     "README: link the latest release",
-     "README: 8 Gen 2 tested, current performance, memory advice, zlib-ng credit",
-     "docs: zlib, memory and texture-discard notes, id Tech 6 resource research"
+     "v0.4.4: shorter load hitches, translator CPU trims, working frame limit above 60",
+     "v0.4.3: round-3 GPU clean-ups on by default",
+     "v0.4.2: 3-slot submit ring by default, faded gear with opacity slider, perf switches (off)",
+     "Install guides: shorter step 1",
+     "Install guides: two ways to get the dump, no adb for players",
+     "Install guides: log via logcat; settings are translated",
+     "Setup for players: any order and container, auto deps, install guides",
+     "Research note: drop a local path"
     ]
    }
   ]
@@ -10990,21 +10990,21 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-01T15:41:16Z",
+  "pushed_at": "2026-11-01T21:25:27Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-01T06:57:40Z",
+    "last_commit": "2026-11-01T20:06:44Z",
     "subjects": [
-     "Merge pull request #36 from jmars125/version-0.1.11",
-     "Version 0.1.11",
-     "Merge pull request #35 from jmars125/cache-headers",
-     "Write pipeline-keys.bin and shader-prepared.bin with the header their readers check",
-     "Merge pull request #31 from jmars125/amd-rdna2",
-     "Merge pull request #26 from jmars125/realtime-step",
-     "Version 0.1.10",
-     "Scale the salvage hold by the frame rate"
+     "Merge pull request #45 from jmars125/task/ultrawide-ui",
+     "Merge master into the interface fit",
+     "Merge the wide size list into the interface fit",
+     "List wide sizes in the resolution options",
+     "Fit the interface to frames wider than 16:9",
+     "Merge pull request #44 from jmars125/version-0.1.12",
+     "Version 0.1.12",
+     "Merge pull request #41 from jmars125/linux-merge-signatures"
     ]
    }
   ]
