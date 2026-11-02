@@ -318,16 +318,16 @@
   ]
  },
  "n1zjqo/d2r-mobile": {
-  "pushed_at": "2026-11-01T02:38:45Z",
+  "pushed_at": "2026-11-02T02:43:27Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 13,
+    "ahead": 14,
     "behind": 0,
     "files": 1,
     "real_files": 0,
     "dirs": [],
-    "last_commit": "2026-11-01T02:38:45Z",
+    "last_commit": "2026-11-02T02:43:27Z",
     "subjects": [
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
@@ -825,7 +825,7 @@
   ]
  },
  "feiyunwill/d2r-mobile": {
-  "pushed_at": "2026-10-26T04:48:26Z",
+  "pushed_at": "2026-11-02T05:16:33Z",
   "branches": []
  },
  "mrggbond/d2r-mobile": {
@@ -1394,11 +1394,11 @@
   "branches": []
  },
  "MichaelC001/d2r-mobile": {
-  "pushed_at": "2026-11-01T02:31:22Z",
+  "pushed_at": "2026-11-02T02:31:21Z",
   "branches": []
  },
  "tinytub/d2r-mobile": {
-  "pushed_at": "2026-10-21T01:48:33Z",
+  "pushed_at": "2026-11-02T01:53:37Z",
   "branches": []
  },
  "yzxh24/d2r-mobile": {
@@ -1661,21 +1661,21 @@
   ]
  },
  "wukongtime/d2r-mobile-build-backup": {
-  "pushed_at": "2026-11-01T02:03:49Z",
+  "pushed_at": "2026-11-02T02:02:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-30T17:19:11Z",
+    "last_commit": "2026-11-01T15:06:13Z",
     "subjects": [
+     "Use verified stable Filebase IPNS prepared input URLs",
+     "Update Apple prepared input links after program regeneration",
+     "Refresh prepared product revisions with regenerated programs",
      "Use a standalone minimal TV prepared input (#33)",
      "Merge pull request #22 from jiayx/feat/tvos-build",
      "Document verified experimental Apple TV release",
      "Use verified recovered shader inputs for tvOS builds",
-     "Export verified shader inputs from recovered original Actions cache",
-     "Validate tvOS with refreshed Apple inputs and latest upstream release",
-     "Merge remote-tracking branch 'origin/main' into feat/tvos-build",
-     "Merge prepared metadata cleanup and verified Filebase inputs (#32)"
+     "Export verified shader inputs from recovered original Actions cache"
     ]
    }
   ]
@@ -1762,21 +1762,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-01T05:38:59Z",
+  "pushed_at": "2026-11-02T05:36:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T05:38:57Z",
+    "last_commit": "2026-11-02T05:36:24Z",
     "subjects": [
+     "radar 2026-11-02",
      "radar 2026-11-01",
      "radar 2026-10-31",
      "radar 2026-10-30",
      "radar 2026-10-29",
      "radar 2026-10-28",
      "radar 2026-10-27",
-     "radar 2026-10-26",
-     "radar 2026-10-25"
+     "radar 2026-10-26"
     ]
    }
   ]
@@ -1862,21 +1862,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-01T16:25:20Z",
+  "pushed_at": "2026-11-02T05:06:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T16:25:12Z",
+    "last_commit": "2026-11-02T05:06:40Z",
     "subjects": [
-     "A damaged NSP lists all its files instead of crashing nx_extract; the image marks them and the host names them (#810)",
-     "Hollow Knight plays on the Mac; libraries prefetched before the prewarm starts are kept",
-     "The NSP script builds a game from a folder of its files, with no prod.keys",
-     "README: acknowledgements keep the projects with a GitHub link, and Ryujinx",
-     "C lint: t_image_attachment_store checks its DontCare-load program resolved before using it",
-     "Boot no longer aborts in dispatch_once: the shader map is read once from any thread, the prewarm starts once outside it",
-     "README: acknowledgements as one item per project, with MacNativeGames; the folder a Switch 2 game is packed from",
-     "README: acknowledgements before How to play, a Switch 2 line in the intro, Switch 2 games first in the gallery"
+     "Movies: Vorbis outputs as long as the specification says at a window change (#893)",
+     "SUPER ROBOT WARS Y plays on the Mac",
+     "The shader split survives a translation-only update (#909)",
+     "Pipeline archives survive a chain update that leaves their libraries unchanged (#895)",
+     "H.264 loops keep presentation order when timestamps restart (#897)",
+     "unityfs: Unity 6000.3's ComputeShader layout, so stripped players keep GPU skinning (#857)",
+     "Memory tests follow mmap-based guest releases",
+     "Castlevania: Belmont's Curse plays on the Mac"
     ]
    }
   ]
@@ -1942,12 +1942,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-01T22:00:06Z",
+  "pushed_at": "2026-11-02T05:59:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T22:00:05Z",
+    "last_commit": "2026-11-02T05:59:20Z",
     "subjects": [
      "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
@@ -1955,8 +1955,8 @@
      "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
-     "chore: 更新 sync-stars.yml",
-     "chore: 更新 map_auto.py"
+     "chore: 自动同步 Star 地图（194 个项目）",
+     "chore: 更新 sync-stars.yml"
     ]
    }
   ]
@@ -1970,12 +1970,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-01T16:06:12Z",
+  "pushed_at": "2026-11-01T22:08:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T16:06:11Z",
+    "last_commit": "2026-11-01T22:08:25Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2060,7 +2060,7 @@
   "branches": []
  },
  "hyhou/d2r-mobile": {
-  "pushed_at": "2026-11-01T02:15:40Z",
+  "pushed_at": "2026-11-02T02:10:24Z",
   "branches": []
  },
  "austery/d2r-mobile": {
@@ -2439,7 +2439,7 @@
   ]
  },
  "yamoroc/d2r-mobile": {
-  "pushed_at": "2026-10-26T00:56:33Z",
+  "pushed_at": "2026-11-02T00:56:06Z",
   "branches": []
  },
  "x-omen-x/d2r-mobile": {
@@ -3529,7 +3529,7 @@
   "branches": []
  },
  "donutnomad/d2r-mobile": {
-  "pushed_at": "2026-11-01T00:54:40Z",
+  "pushed_at": "2026-11-02T00:49:59Z",
   "branches": []
  },
  "funkhua/d2r-mobile": {
@@ -4097,21 +4097,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-01T20:53:47Z",
+  "pushed_at": "2026-11-02T02:09:23Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T20:53:46Z",
+    "last_commit": "2026-11-02T02:09:21Z",
     "subjects": [
+     "feat: Zelda VR, Tears of the Kingdom 1.4.3 on a Meta Quest 3 with 6DoF (zeldaVR/)",
+     "docs: README: Mac up to native 4K (5K opt-in on 1.4.3), Breath of the Wild 1.6.0 on iPad too; the iPad starts docked at 1080p",
      "feat(ios): Breath of the Wild's docked 1080p as on the Switch or HD, the iPad starts docked, and an install checks the device's pipelines",
      "perf(ios): the device pipeline archive is made on the Mac on all warm-up threads",
      "feat: native 4K for Breath of the Wild 1.6.0 and 1.9.0, built by default on 16 GB-plus Macs",
      "fix: the builder offers native 2K for Breath of the Wild 1.9.0 too (after PR #440)",
      "fix: Breath of the Wild 1.9.0 offers 720p as 1.6.0 and Tears of the Kingdom do; the docs list its resolutions (after PR #440)",
-     "Merge PR #440: feat: Breath of the Wild 1.9.0 switches to native sizes in play from the settings panel's Resolution row, up to the screen size (@liafonx)",
-     "fix: build_app.py warns when --native-5k builds on a Mac with less than 32 GB (after PR #1515)",
-     "Merge PR #1515: feat: add opt-in native 5K for Tears of the Kingdom 1.4.3 (@chunye-shanhui)"
+     "Merge PR #440: feat: Breath of the Wild 1.9.0 switches to native sizes in play from the settings panel's Resolution row, up to the screen size (@liafonx)"
     ]
    }
   ]
@@ -9166,7 +9166,7 @@
   ]
  },
  "edison7719/d2r-mobile": {
-  "pushed_at": "2026-10-29T02:14:55Z",
+  "pushed_at": "2026-11-02T05:53:15Z",
   "branches": []
  },
  "epruseal/d2r-mobile": {
@@ -9398,21 +9398,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-01T22:02:25Z",
+  "pushed_at": "2026-11-02T06:18:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T22:02:25Z",
+    "last_commit": "2026-11-02T01:10:09Z",
     "subjects": [
+     "Merge pull request #468 from LNPANDY/v0lumehi/build-on-xcode-27",
+     "CI: the build job runs on the xcode-27 runner with Xcode 27.2",
      "Merge pull request #452 from LNPANDY/v0lumehi/localizer-store",
      "Move the language and the strings out of BuildModel into a Localizer store (#387)",
      "Merge pull request #450 from LNPANDY/v0lumehi/stale-frameworks-prompt",
      "Ask before the build when the shared app holds frameworks of an old shader chain (#449)",
      "Merge pull request #420 from LNPANDY/v0lumehi/split-step1-targets",
-     "Split the launcher into NXCore, NXModel, NXLauncher and the NX2Apple app",
-     "Merge pull request #439 from LNPANDY/v0lumehi/outside-rule",
-     "Merge branch 'main' into v0lumehi/outside-rule"
+     "Split the launcher into NXCore, NXModel, NXLauncher and the NX2Apple app"
     ]
    }
   ]
@@ -10107,21 +10107,21 @@
   "branches": []
  },
  "Xc1Ym/LumaNX": {
-  "pushed_at": "2026-11-01T14:22:46Z",
+  "pushed_at": "2026-11-02T05:21:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T14:22:45Z",
+    "last_commit": "2026-11-02T02:09:45Z",
     "subjects": [
+     "chore: prepare LumaNX 0.2.20 release",
+     "chore: sync tested nxnative snapshot",
      "Merge pull request #32 from Xc1Ym/codex/readme-release-cadence-build",
      "docs: explain weekly releases and complete source builds",
      "Merge pull request #31 from Xc1Ym/codex/sync-nxnative-controller-compat",
      "fix: restore daily nxnative sync and update engine snapshot",
      "docs: rewrite READMEs and refresh interface screenshots",
-     "docs: draft 0.2.19 release notes",
-     "Release LumaNX 0.2.19",
-     "Merge pull request #29 from Xc1Ym/codex/fix-oodle-and-engine-ci"
+     "docs: draft 0.2.19 release notes"
     ]
    }
   ]
@@ -10599,7 +10599,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-01T19:26:23Z",
+  "pushed_at": "2026-11-02T05:42:04Z",
   "branches": [
    {
     "branch": "main",
@@ -10619,21 +10619,21 @@
   ]
  },
  "Desm0nt/doom-port": {
-  "pushed_at": "2026-11-01T20:44:02Z",
+  "pushed_at": "2026-11-01T22:55:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T20:43:56Z",
+    "last_commit": "2026-11-01T22:55:40Z",
     "subjects": [
+     "v0.4.5: light mode, working 3D scale, DRS with target fps on our GPU timing, fast loads with high limits",
      "v0.4.4: shorter load hitches, translator CPU trims, working frame limit above 60",
      "v0.4.3: round-3 GPU clean-ups on by default",
      "v0.4.2: 3-slot submit ring by default, faded gear with opacity slider, perf switches (off)",
      "Install guides: shorter step 1",
      "Install guides: two ways to get the dump, no adb for players",
      "Install guides: log via logcat; settings are translated",
-     "Setup for players: any order and container, auto deps, install guides",
-     "Research note: drop a local path"
+     "Setup for players: any order and container, auto deps, install guides"
     ]
    }
   ]
@@ -10990,21 +10990,21 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-01T21:25:27Z",
+  "pushed_at": "2026-11-02T04:59:48Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-01T20:06:44Z",
+    "last_commit": "2026-11-02T04:59:46Z",
     "subjects": [
+     "Merge pull request #48 from jmars125/task/save-thumbnails",
+     "Merge pull request #53 from jmars125/version-0.1.13",
+     "Version 0.1.13.",
+     "Merge pull request #47 from jmars125/linux-fiber-stack",
+     "Save thumbnails to their storage so they are not black.",
+     "Align Linux fiber stacks and keep copied builds off a missing profile path (#39).",
      "Merge pull request #45 from jmars125/task/ultrawide-ui",
-     "Merge master into the interface fit",
-     "Merge the wide size list into the interface fit",
-     "List wide sizes in the resolution options",
-     "Fit the interface to frames wider than 16:9",
-     "Merge pull request #44 from jmars125/version-0.1.12",
-     "Version 0.1.12",
-     "Merge pull request #41 from jmars125/linux-merge-signatures"
+     "Merge master into the interface fit"
     ]
    }
   ]
