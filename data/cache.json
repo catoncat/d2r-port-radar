@@ -1520,12 +1520,12 @@
   ]
  },
  "Kamisorara/d2r-mobile": {
-  "pushed_at": "2026-10-17T14:10:08Z",
+  "pushed_at": "2026-11-03T13:40:55Z",
   "branches": [
    {
     "branch": "face-buttons-by-printed-glyph",
     "ahead": 7,
-    "behind": 1,
+    "behind": 65,
     "files": 0,
     "real_files": 0,
     "dirs": [],
@@ -1534,25 +1534,6 @@
      "Merge remote-tracking branch 'upstream/main' into face-buttons-by-printed-glyph",
      "Merge remote-tracking branch 'upstream/main' into face-buttons-by-printed-glyph",
      "Face buttons follow the printed glyph: Switch pads had A/B and X/Y swapped",
-     "Merge remote-tracking branch 'upstream/main'",
-     "Merge remote-tracking branch 'upstream/main'",
-     "Guest dylib: write an ad-hoc signature with room to re-sign (LiveContainer signs guests on device and fails on a never-signed binary)",
-     "Unrecognized gamepads default to the Nintendo (Switch) face-button layout; Xbox / PS / MFi keep the positional layout by explicit name match"
-    ]
-   },
-   {
-    "branch": "main",
-    "ahead": 4,
-    "behind": 12,
-    "files": 4,
-    "real_files": 4,
-    "dirs": [
-     "dm/host",
-     "dm/ios",
-     "dm/tools"
-    ],
-    "last_commit": "2026-10-15T11:03:49Z",
-    "subjects": [
      "Merge remote-tracking branch 'upstream/main'",
      "Merge remote-tracking branch 'upstream/main'",
      "Guest dylib: write an ad-hoc signature with room to re-sign (LiveContainer signs guests on device and fails on a never-signed binary)",
@@ -1862,21 +1843,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-03T10:40:33Z",
+  "pushed_at": "2026-11-03T19:28:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-03T10:40:10Z",
+    "last_commit": "2026-11-03T19:28:24Z",
     "subjects": [
-     "The shader builder reads each record from its package when needed instead of keeping 4.4 GB of packages in memory: Pokopia's builds run their workers in parallel again (#1036)",
-     "The TXQ type test checks its InstTable match before indexing it: lint-python's pyright no longer finds a subscript of None",
-     "An uncompressed 3D texture the CPU wrote is taken from its storage at first use (#1050)",
-     "The strap guide's SDK 22 overload, with a StrapGuideArg, is answered like the other",
-     "Fire Emblem Fortune's Weave: 60 fps through the game's own target frame rate, found by its readers",
-     "A read-only image load of a colour attachment reads the same-pass snapshot: Xenoblade Chronicles 3's cutscenes no longer alternate brightness every frame (#1025)",
-     "An AudioOut keeps releasing buffers on the silent sink while a host worker starts its device: a blocked AudioOutputUnitStart no longer freezes the game (#1030)",
-     "A finalized program leaves every queue's bindings: Fire Emblem Fortune's Weave crashed in keys_hash at the title's hand-over to the opening demo (#1046)"
+     "LDC with its bank in the address register (.IS) reads the bank chosen at run time: Hyrule Warriors: Age of Imprisonment's last two untranslated shaders, one of them also Pokopia's (chain 316fb82e2f22)",
+     "Tests check the Metal buffers, bitmaps and events they make before using them: lint-c's ratchet passes again (seven nullability findings from #1086, #1084 and #1073, whose own runs were cancelled)",
+     "iOS in-game menu: one compact text size whatever the system text size, no section headings or value lines",
+     "iOS Xcode builds: the first copy of the game's files into the app is an APFS clone (cp -c), so a fresh BotW build no longer writes its 16.5 GB again (#1124)",
+     "Indirect-count multi-draws of more than 1,024 draws are recorded as one range and replayed whole: MIO's GPU-driven scene (maxima 4,594 and 8,192) lost every draw past the first 1,024 (#1062)",
+     "Snapshot acquires paced by the display link, an upsample pass reads the level its sampler pins, and a submission's segment count starts with it (from #1073)",
+     "The barrier moves around warp shuffles (Ampere 0xf55 / 0xf56) are no-ops: two of Hyrule Warriors: Age of Imprisonment's pixel shaders translate (chain 95ba69b5403e)",
+     "Hyrule Warriors: Age of Imprisonment: its playtests' 15,445 shader keys for a partial Mac library, and why every boot starts at the first-run settings"
     ]
    }
   ]
@@ -1942,16 +1923,16 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-03T00:56:50Z",
+  "pushed_at": "2026-11-03T14:11:10Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-03T00:56:49Z",
+    "last_commit": "2026-11-03T14:11:09Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（197 个项目）",
      "chore: 自动同步 Star 地图（195 个项目）",
      "chore: 自动同步 Star 地图（195 个项目）",
-     "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
@@ -1970,12 +1951,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-03T02:57:15Z",
+  "pushed_at": "2026-11-03T10:59:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-03T02:57:13Z",
+    "last_commit": "2026-11-03T10:59:31Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2204,12 +2185,12 @@
   ]
  },
  "vickwv/d2r-mobile": {
-  "pushed_at": "2026-10-25T15:41:16Z",
+  "pushed_at": "2026-11-03T12:43:13Z",
   "branches": [
    {
     "branch": "android/adreno-740-750-rewrites",
     "ahead": 1,
-    "behind": 0,
+    "behind": 53,
     "files": 6,
     "real_files": 4,
     "dirs": [
@@ -2222,9 +2203,24 @@
     ]
    },
    {
+    "branch": "android/foldable-fullscreen",
+    "ahead": 1,
+    "behind": 0,
+    "files": 11,
+    "real_files": 11,
+    "dirs": [
+     "dm/android",
+     "dm/gfx"
+    ],
+    "last_commit": "2026-11-03T12:42:31Z",
+    "subjects": [
+     "Android: true fullscreen on screens narrower than 16:9 (foldable inner panels)"
+    ]
+   },
+   {
     "branch": "android-integration",
     "ahead": 200,
-    "behind": 7,
+    "behind": 60,
     "files": 151,
     "real_files": 131,
     "dirs": [
@@ -3601,7 +3597,7 @@
   "branches": []
  },
  "kaskabayev/d2r-mobile": {
-  "pushed_at": "2026-10-21T05:57:38Z",
+  "pushed_at": "2026-11-03T13:08:47Z",
   "branches": []
  },
  "maxshine/d2r-mobile": {
@@ -4097,21 +4093,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-03T10:36:45Z",
+  "pushed_at": "2026-11-03T15:16:22Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-03T10:21:42Z",
+    "last_commit": "2026-11-03T15:09:13Z",
     "subjects": [
-     "fix(settings): settings_read_number for every version, so Breath of the Wild 1.9.0 can read sharpening with it (after PR #1637)",
-     "refactor(gfx): one narrowing, vfmt_fit's; #1635's lane analysis decides when (after PR #1635)",
-     "Merge pull request #1635 from jayqizone/fix/ios-vertex-tail-pipelines",
-     "fix(pokesv): translator source matches its binary, frame lock starts at 30, macOS 26 (after PR #1655)",
-     "Merge pull request #1655 from djgerry300/pokesv-violet",
-     "fix(botw): #1637's FXAA-off / sharpening pass only on the Mac, and sharpening read as 1.4.3 reads it (after PR #1637)",
-     "Merge pull request #1637 from Legend-of-Link-27/pr/botw190-fxaa-sharpen",
-     "docs: #1643's two comments in English (after PR #1643)"
+     "Merge ns2: the first Switch 2 games on the TotK runtime (experimental)",
+     "fix(gfx): a patched fragment function's source is noted once and read under a lock",
+     "docs: README: Pokopia's status: boots, early",
+     "docs: README: Bananza's status: playable, early, not fully tested",
+     "docs: README: a shorter Ryujinx acknowledgement",
+     "docs: README: a shorter nxnative acknowledgement",
+     "docs: README: shorter Switch 2 acknowledgements",
+     "docs: README: the main table is the Switch 1 games; the Switch 2 rows are in their own table only"
     ]
    }
   ]
@@ -5067,7 +5063,7 @@
   ]
  },
  "oneincase/d2r-mobile": {
-  "pushed_at": "2026-10-31T14:23:41Z",
+  "pushed_at": "2026-11-03T13:17:05Z",
   "branches": []
  },
  "zJiaJun/d2r-mobile": {
@@ -7841,21 +7837,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-11-03T05:43:48Z",
+  "pushed_at": "2026-11-03T14:15:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-03T05:29:41Z",
+    "last_commit": "2026-11-03T14:13:19Z",
     "subjects": [
+     "Mix iOS game audio with background music and add volume control (0.3.113 build 122)",
+     "Improve portrait companion loading and launcher updates (0.3.112 build 121)",
      "Allow companion UI localization in internal shell audit",
      "Release v0.3.109 (118): portrait companion, adaptive UI fixes and NX maintenance",
      "Sync official runtime fixes and adaptive UI corrections (0.3.99 build 108)",
      "Fix damaged NSP reporting and warm queue retention (0.3.90 build 99)",
      "Sync official tail-call proof and Heaps shader extraction (0.3.89 build 98)",
-     "Adopt official cloud folder picker and publish only LAN host (0.3.88 build 97)",
-     "Update audio-open regression for copied renderer event handles",
-     "Sync NXNative runtime and Xcode 27.2 shader toolchain for v0.3.87 (96)"
+     "Adopt official cloud folder picker and publish only LAN host (0.3.88 build 97)"
     ]
    }
   ]
@@ -8962,11 +8958,11 @@
   "branches": []
  },
  "seeyajack/d2r-mobile": {
-  "pushed_at": "2026-11-03T04:07:18Z",
+  "pushed_at": "2026-11-03T17:47:38Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 408,
+    "ahead": 414,
     "behind": 12,
     "files": 264,
     "real_files": 260,
@@ -8982,16 +8978,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-11-03T00:35:41Z",
+    "last_commit": "2026-11-03T17:40:35Z",
     "subjects": [
+     "gfx: 裁剪空间修正 —— GL/NVN 的 z=-w 不再被 Vulkan 裁掉（np691–np694，画面首次出现游戏内容）",
+     "gfx: 顶点流/顶点布局 dump（np687–np690）",
+     "gfx: 绘制状态一次性体检（np686）——掩码/深度/视口都正常，合成 draw 是 6 索引全屏 quad",
+     "gfx: 窗口 pass 内涂蓝判别（np682–np685）——画面链路全通，锁定客体的 draw 不产生像素",
+     "gfx: 上屏旁证读回 + 绘制落点镜像对比 + 帧中自检（默认关，np673–np681）",
+     "gfx: 上屏源图自检 + 上屏填充对照 + 绘制落点记账（np665–np672，画面验证定谳）",
      "gfx: 冷却默认 2500→8000ms（np662 实测驱动恢复窗口变宽）",
-     "gfx: 切后台不挂死 + DrawArraysInstanced 真实现 + 2 个留痕 stub（np662）",
-     "gfx: np659/660 device-lost 冷却退避 + SetDepthClamp stub（打穿 306 秒天花板）",
-     "ohos: 死亡笔记补 pc 处 16 字节指令码（np657 SEGV 取证）",
-     "harmony: A/B 定谳——DM_NVN_SYNC=1（同步翻译）环等消失、fps +61%，暂为 np657 默认（np657）",
-     "tools: dmsh_vk cs 的 uniform_pointer 特例上界含端点 0x310（np654 遗留失败键）",
-     "gfx: 择取上游 fec76d1 pipeline guard——上次死时有在建管线，本次串行建（np655）",
-     "harmony: 看门狗 DM_WATCH_STALL 30→90 秒（np654）"
+     "gfx: 切后台不挂死 + DrawArraysInstanced 真实现 + 2 个留痕 stub（np662）"
     ]
    }
   ]
@@ -9385,21 +9381,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-11-02T15:47:28Z",
+  "pushed_at": "2026-11-03T19:26:15Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T15:35:53Z",
+    "last_commit": "2026-11-03T18:57:40Z",
     "subjects": [
      "Sync the packer's copies with upstream",
      "Release notes: the table's row for this release",
-     "Base to 0a759de7: Fire Emblem Fortune's Weave joins, and the rewriter reads register writes by kind",
+     "The pad layout keeps its first-launch override: upstream's swap control is gone",
      "Release notes: the table's rows for this release",
-     "The packer exe: a download that breaks is tried again, and nothing looks for a source asset",
-     "Release notes: the table's row for this release",
-     "The packer's source stays the tag archive: the broken download was the network",
-     "Sync the packer's copies with upstream"
+     "Sync the packer's copies with upstream",
+     "Base to c7ba23df: an in-game menu on iOS, MetalFX for a game's own upscaler, and a new Switch 2 title",
+     "The packer: read the chain version after the tool lock is registered, and check what it made",
+     "The packer: a shader build of another chain version is not 'already there'"
     ]
    }
   ]
@@ -9425,21 +9421,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-03T10:51:03Z",
+  "pushed_at": "2026-11-03T19:30:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-03T10:29:57Z",
+    "last_commit": "2026-11-03T19:30:43Z",
     "subjects": [
-     "Merge pull request #548 from Haseenesss/fix/shell-install-framework-path",
-     "Merge pull request #541 from Dino0005/l10n/italian-export",
-     "Merge pull request #560 from LNPANDY/v0lumehi/v1.0.2-notes-shared-app",
-     "v1.0.2 notes: the game data is outside the IPA only with the shared app",
-     "Merge pull request #546 from LNPANDY/v0lumehi/v1.0.2-docs",
-     "v1.0.2 notes: one IPA per game with its data inside (#542) and the cut-off framework delete fix (#539)",
-     "Shell install: take the framework the build wrote, not one named after the build key (#515)",
-     "Merge pull request #542 from LNPANDY/v0lumehi/one-game-ipa"
+     "Merge pull request #598 from LNPANDY/v0lumehi/engine-bump-1.1.0",
+     "Merge origin/main into v0lumehi/engine-bump-1.1.0",
+     "Merge pull request #612 from LNPANDY/docs/games-readme-sync",
+     "Docs: the games pages track the 130 profiles, and the README drops the verified badge and the shard stat",
+     "Merge pull request #602 from LNPANDY/win/recover-first-sync",
+     "Merge pull request #601 from LNPANDY/v0lumehi/ios-quit-menu",
+     "Windows: recover a failed first engine sync and repair the cached SDK's .tbd stubs",
+     "iOS shell: pass the quit prompt's texts to the engine (#421)"
     ]
    }
   ]
@@ -10114,21 +10110,21 @@
   "branches": []
  },
  "Xc1Ym/LumaNX": {
-  "pushed_at": "2026-11-02T06:56:32Z",
+  "pushed_at": "2026-11-03T11:31:24Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T06:56:26Z",
+    "last_commit": "2026-11-03T11:23:11Z",
     "subjects": [
+     "Merge pull request #35 from Xc1Ym/codex/fix-sync-and-controller-layouts",
+     "fix: guard SDK 27 MetalFX APIs and persist controller layouts",
      "chore: prepare LumaNX 0.3.0 release",
      "Merge pull request #33 from Xc1Ym/codex/switch2-incremental-builds",
      "Fix incremental stage dependencies and recursive dump import",
      "feat: support Switch 2 dumps and incremental preparation",
      "chore: prepare LumaNX 0.2.20 release",
-     "chore: sync tested nxnative snapshot",
-     "Merge pull request #32 from Xc1Ym/codex/readme-release-cadence-build",
-     "docs: explain weekly releases and complete source builds"
+     "chore: sync tested nxnative snapshot"
     ]
    }
   ]
@@ -10299,12 +10295,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-11-02T20:20:20Z",
+  "pushed_at": "2026-11-03T15:54:08Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T20:20:19Z",
+    "last_commit": "2026-11-03T15:54:06Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10390,21 +10386,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-03T03:40:50Z",
+  "pushed_at": "2026-11-03T11:13:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-03T03:40:31Z",
+    "last_commit": "2026-11-03T11:13:41Z",
     "subjects": [
+     "README: credits for the contributions merged from pull requests (#97, #103, #187, #96)",
+     "SDL: an AAudio stream disconnected while in the background is reopened on resume, not left silent (#96)",
+     "settings: handle CRLF line endings when parsing configuration (#187)",
      "0.2.13-beta (versionCode 33)",
      "Vulkan: linear render targets up to 1 MB written back - no stray leaves on the ground (#168)",
      "Video: changing the frame rate keeps the game's clock and frame loop together",
      "Diagnosis: transform feedback calls logged; a three-finger tap dumps a debug frame",
-     "Video: 20 fps holds the game's frame loop at interval 3",
-     "Video: a 20 fps frame rate",
-     "Controls: the drag sensitivity with the action layout too, up to 400% (#199)",
-     "Touch icons: Magnesis's d-pad, simple controls in talks, a bow / throw cancel, parry by a slide"
+     "Video: 20 fps holds the game's frame loop at interval 3"
     ]
    }
   ]
@@ -10606,21 +10602,21 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-03T09:07:57Z",
+  "pushed_at": "2026-11-03T19:02:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T15:01:26Z",
+    "last_commit": "2026-11-03T17:56:36Z",
     "subjects": [
-     "Up version 0.3.4",
-     "Merge task/amiibodir: the Amiibo tab picks its folder with the host's dialog and holds the reader on searching across the game's detection restarts",
-     "Hold the amiibo reader on searching across the game's detection restarts",
-     "Choose the amiibo folder with the host's folder dialog",
-     "Merge task/prwave6: community pull requests #501, #495, #485, #486 and #446, and the runtime part of #489",
-     "Size the scene by a DLSS mode only where DLSS can run, and log whether fxaa = 0 found the game's FXAA",
-     "Skip the game's scaling draw over DLSS's picture again",
-     "Keep the scene at render_scale when DLSS cannot run"
+     "Show the game and port versions in the Discord status",
+     "Use the project's own Discord application for Rich Presence",
+     "Merge task/surround51: 5.1 surround output (#438), stereo by default",
+     "Keep stereo as the default speaker output",
+     "Merge pull request #438: 5.1 surround output (Specht2010)",
+     "Keep the console at start: until the game window opens it shows the shader prewarm",
+     "Up version 0.3.7",
+     "Ask for the save and input recording in the crash template itself"
     ]
    }
   ]
@@ -10721,12 +10717,12 @@
   ]
  },
  "Zhuxy/d2r-mobile": {
-  "pushed_at": "2026-11-01T11:10:58Z",
+  "pushed_at": "2026-11-03T13:15:47Z",
   "branches": [
    {
     "branch": "custom",
-    "ahead": 5,
-    "behind": 10,
+    "ahead": 6,
+    "behind": 0,
     "files": 27,
     "real_files": 26,
     "dirs": [
@@ -10734,8 +10730,9 @@
      "dm/i18n",
      "dm/ios"
     ],
-    "last_commit": "2026-11-01T10:25:22Z",
+    "last_commit": "2026-11-03T13:15:39Z",
     "subjects": [
+     "Merge upstream v2.2.4",
      "Merge upstream v2.2.2",
      "Add combined Teleport / town-portal touch button",
      "Add optional in-game belt potion refill",
@@ -10746,7 +10743,7 @@
    {
     "branch": "feature/global-monster-spawn-rate",
     "ahead": 1,
-    "behind": 23,
+    "behind": 25,
     "files": 14,
     "real_files": 14,
     "dirs": [
@@ -10762,7 +10759,7 @@
    {
     "branch": "feature/tap-corner-open-minimap",
     "ahead": 2,
-    "behind": 23,
+    "behind": 25,
     "files": 17,
     "real_files": 17,
     "dirs": [
@@ -10997,21 +10994,21 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-03T03:46:54Z",
+  "pushed_at": "2026-11-03T17:58:20Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-02T16:30:10Z",
+    "last_commit": "2026-11-03T16:48:30Z",
     "subjects": [
+     "Merge pull request #55 from jmars125/task/ultrawide-fit2",
+     "Fit the charge rings, Soul Challenge circle and frosted pane blur on wide screens",
      "Merge pull request #60 from jmars125/task/text-entry",
      "Merge pull request #49 from jmars125/task/exposure",
      "Merge pull request #61 from jmars125/version-0.1.14",
      "Version 0.1.14.",
      "Merge pull request #56 from jmars125/task/shadow-merge",
-     "Ask for the player's name in the game window on SDL hosts",
-     "Merge pull request #48 from jmars125/task/save-thumbnails",
-     "Merge branch 'master' into task/exposure"
+     "Ask for the player's name in the game window on SDL hosts"
     ]
    }
   ]
@@ -11313,6 +11310,39 @@
     "last_commit": "2026-11-03T04:51:39Z",
     "subjects": [
      "init"
+    ]
+   }
+  ]
+ },
+ "lindaiyu0224/d2r-mobile-build": {
+  "pushed_at": "2026-11-03T17:18:42Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-03T17:03:16Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "xFractals/pokopia-native": {
+  "pushed_at": "2026-11-03T18:12:02Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-03T18:09:47Z",
+    "subjects": [
+     "README: how to open the Mac app the first time from a browser download",
+     "The Mac app opens: its launcher is executable",
+     "Icons, Pokédex pictures and habitat pictures no longer show another item's picture (#1)",
+     "Update README.md",
+     "2.0.1 on the iPhone from both builders; its own run-time shaders; refresh keeps the Xcode project's team",
+     "Windows builder works: signing fix, the Windows IPA's icon, the first-run steps",
+     "Sign the IPA without Xcode: nxs2.py sign --p12 --profile (rcodesign, fetched by setup on Windows), Sign IPA in the window on Windows",
+     "Windows: pack the IPA whole (pack_ipa.py's reuse path needs os.pread), retry the shader step once on Python's intermittent regex error"
     ]
    }
   ]
