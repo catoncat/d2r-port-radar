@@ -583,12 +583,12 @@
   "branches": []
  },
  "tkcoliver-glitch/d2r-mobile": {
-  "pushed_at": "2026-10-30T10:43:34Z",
+  "pushed_at": "2026-11-03T02:15:47Z",
   "branches": [
    {
     "branch": "dev",
     "ahead": 7,
-    "behind": 30,
+    "behind": 53,
     "files": 21,
     "real_files": 21,
     "dirs": [
@@ -1862,21 +1862,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-02T16:26:52Z",
+  "pushed_at": "2026-11-03T02:54:19Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T16:25:37Z",
+    "last_commit": "2026-11-03T02:54:18Z",
     "subjects": [
-     "AV1 movies decode with dav1d where VideoToolbox has no AV1 decoder",
-     "dav1d 1.5.4 vendored: the arm64 sources, unmodified, for AV1 movies where VideoToolbox has none",
-     "Primitive ID pipelines: a GPU test, and their pairs left out of the prebuild and the offline archive",
-     "Loader: the image the game's module sections are read from can be set (#729)",
-     "Front ends: an app that hosts the game view can draw the prepare step's progress itself (#742)",
-     "jump_offsets refuses a site whose index changes after its check",
-     "Fire Emblem Fortune's Weave plays on the Mac",
-     "Jump-table walks see overwritten indices and every write of a table base"
+     "Sampled depth attachments read through red texture views of the same depth storage (#988)",
+     "fs::ReadFile with read options and no byte count is hooked, and must read in full (#947)",
+     "Unreal's host heap keeps 64 KiB alignment for span-sized blocks (#1006)",
+     "CI lint: the logic operation rewrite's joined text has its own name, a LINKDATA job stops when its index is gone, the geometry hazards test checks its readback buffer (chain 16dec73a79e7)",
+     "Pokémon Pokopia plays on the Mac",
+     "The shader split reads each SARC member's name up to its own NUL (#968)",
+     "The Legend of Zelda: Skyward Sword HD plays on the Mac; logic operations on normalized targets; encrypted .vert / .frag files are no run-time GLSL",
+     "AV1 movies decode with dav1d where VideoToolbox has no AV1 decoder"
     ]
    }
   ]
@@ -1942,15 +1942,15 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-02T15:47:33Z",
+  "pushed_at": "2026-11-03T00:56:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T15:47:31Z",
+    "last_commit": "2026-11-03T00:56:49Z",
     "subjects": [
      "chore: 自动同步 Star 地图（195 个项目）",
-     "chore: 自动同步 Star 地图（194 个项目）",
+     "chore: 自动同步 Star 地图（195 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
      "chore: 自动同步 Star 地图（194 个项目）",
@@ -1970,12 +1970,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-02T06:19:52Z",
+  "pushed_at": "2026-11-02T19:34:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T06:19:51Z",
+    "last_commit": "2026-11-02T19:34:13Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4097,21 +4097,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-02T16:09:29Z",
+  "pushed_at": "2026-11-03T00:07:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T16:09:22Z",
+    "last_commit": "2026-11-03T00:04:55Z",
     "subjects": [
-     "feat(vr): stereo for the Quest 3 by rendering the eyes in turn, off by default, with an eye distance setting",
-     "feat: Zelda VR, Tears of the Kingdom 1.4.3 on a Meta Quest 3 with 6DoF (zeldaVR/)",
-     "docs: README: Mac up to native 4K (5K opt-in on 1.4.3), Breath of the Wild 1.6.0 on iPad too; the iPad starts docked at 1080p",
-     "feat(ios): Breath of the Wild's docked 1080p as on the Switch or HD, the iPad starts docked, and an install checks the device's pipelines",
-     "perf(ios): the device pipeline archive is made on the Mac on all warm-up threads",
-     "feat: native 4K for Breath of the Wild 1.6.0 and 1.9.0, built by default on 16 GB-plus Macs",
-     "fix: the builder offers native 2K for Breath of the Wild 1.9.0 too (after PR #440)",
-     "fix: Breath of the Wild 1.9.0 offers 720p as 1.6.0 and Tears of the Kingdom do; the docs list its resolutions (after PR #440)"
+     "fix(ios): link the .NET runtime's start-up object as a file, so the device translator's first call finds a runtime",
+     "feat(ios): the device translates a shader variant its startup shaders lack, with the Mac's own translator (not yet tested on a device)",
+     "fix(odyssey): the settings panel port without the per-size tables, the bow triggers or copied credits (after PR #1564)",
+     "fix(odyssey): before play wait for the warm-up lists, not the whole translation cache (after PR #1562)",
+     "Merge PR #1562: warm Odyssey recorded pipelines before gameplay",
+     "Merge PR #1564: port the complete Mac settings panel to Odyssey",
+     "test: the attachment capacity probe checks array bounds with UBSan, not AddressSanitizer (after PR #1587)",
+     "Merge PR #1587: size attachment tracking buffers for depth and stencil"
     ]
    }
   ]
@@ -9424,21 +9424,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-02T19:27:08Z",
+  "pushed_at": "2026-11-02T23:58:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T18:57:05Z",
+    "last_commit": "2026-11-02T23:58:59Z",
     "subjects": [
-     "Merge pull request #526 from LNPANDY/v0lumehi/ci-parent-on-open",
-     "Re-evaluate the parent when a child PR is opened or reopened",
-     "Merge pull request #519 from LNPANDY/v0lumehi/patch-padded-tail-calls",
-     "Merge branch 's-pfs0' into s-tail",
-     "Merge remote-tracking branch 'origin/main' into s-tail",
-     "Merge branch 's-exfat' into s-pfs0",
-     "Merge remote-tracking branch 'origin/main' into s-pfs0",
-     "Merge branch 's-folder' into s-exfat"
+     "Merge pull request #546 from LNPANDY/v0lumehi/v1.0.2-docs",
+     "v1.0.2 notes: one IPA per game with its data inside (#542) and the cut-off framework delete fix (#539)",
+     "Merge pull request #542 from LNPANDY/v0lumehi/one-game-ipa",
+     "Export: one IPA per game with the game data inside (#540)",
+     "Shell export test: a stopped build's half framework is left out of the next game's shared app",
+     "Shared app: a cut-off framework delete no longer breaks the next build",
+     "Merge pull request #538 from LNPANDY/v0lumehi/version-1.0.2",
+     "v1.0.2: version bump, changelog and release notes"
     ]
    }
   ]
@@ -10318,12 +10318,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-10-31T16:54:58Z",
+  "pushed_at": "2026-11-02T20:20:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T16:54:57Z",
+    "last_commit": "2026-11-02T20:20:19Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10409,21 +10409,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-02T15:55:34Z",
+  "pushed_at": "2026-11-03T02:50:19Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T15:53:35Z",
+    "last_commit": "2026-11-03T02:47:45Z",
     "subjects": [
-     "0.2.11-beta (versionCode 31)",
-     "Gyro aim with a controller: sticks never under an 8% dead zone (#149 #175 #78)",
-     "Mods: a mod imported in place can be turned off again (#167 #190)",
-     "0.2.10-beta (versionCode 30)",
-     "Terrain \"curtains\" after a fast travel or a tower: linear textures checked for CPU changes every frame",
-     "0.2.9-beta (versionCode 29)",
-     "Mali: BC1 textures as ASTC 4x4 instead of RGBA8 - 1.1 GB of textures down to 300 MB (#143 #155 #162)",
-     "ADPF: Frame rate 30 (fixed) asks for 30 fps's budget; LARECOMP_LOG_POWER"
+     "Diagnosis: transform feedback calls logged; a three-finger tap dumps a debug frame",
+     "Video: 20 fps holds the game's frame loop at interval 3",
+     "Video: a 20 fps frame rate",
+     "Controls: the drag sensitivity with the action layout too, up to 400% (#199)",
+     "Touch icons: Magnesis's d-pad, simple controls in talks, a bow / throw cancel, parry by a slide",
+     "Touch HUD: the minimap group up only while the minimap shows; a talk's box stays whole (#200)",
+     "Unlocked aspect: the map fills the screen, its markers on their places",
+     "README: the aim sensitivity"
     ]
    }
   ]
@@ -11148,6 +11148,59 @@
     "last_commit": "2026-11-02T10:28:37Z",
     "subjects": [
      "Vulkan: fall back to NEAREST sampling when the driver omits the linear-filter format bit"
+    ]
+   }
+  ]
+ },
+ "N1v0k/d2r-mobile": {
+  "pushed_at": "2026-11-02T23:54:15Z",
+  "branches": [
+   {
+    "branch": "feat/german-dede",
+    "ahead": 4,
+    "behind": 0,
+    "files": 24,
+    "real_files": 21,
+    "dirs": [
+     "dm/android",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-11-02T22:27:57Z",
+    "subjects": [
+     "Docs: German in the language lists (README in three languages, dm/i18n)",
+     "German (deDE) as a sixth language: string table column, language switch, voice-over, touch wording and map name plates (#208)",
+     "Custom page: the controller A button cycles the language row again",
+     "dm_untag: also skip the [ns] / [pl] name markers that German and Russian use"
+    ]
+   },
+   {
+    "branch": "fix/android-padmode-rebuild-world",
+    "ahead": 1,
+    "behind": 0,
+    "files": 2,
+    "real_files": 2,
+    "dirs": [
+     "dm/android"
+    ],
+    "last_commit": "2026-11-02T23:53:29Z",
+    "subjects": [
+     "Android: skill buttons find the HUD again after a controller / touch layout rebuild"
+    ]
+   },
+   {
+    "branch": "fix/runeword-ladder-offline",
+    "ahead": 1,
+    "behind": 0,
+    "files": 5,
+    "real_files": 5,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-11-02T23:53:29Z",
+    "subjects": [
+     "Runeword helper: Mosaic is listed offline; lock bits and seasons follow the server's rule"
     ]
    }
   ]
