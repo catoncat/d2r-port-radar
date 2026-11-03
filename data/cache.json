@@ -1762,21 +1762,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-02T05:36:25Z",
+  "pushed_at": "2026-11-03T06:16:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T05:36:24Z",
+    "last_commit": "2026-11-03T06:16:15Z",
     "subjects": [
+     "radar 2026-11-03",
      "radar 2026-11-02",
      "radar 2026-11-01",
      "radar 2026-10-31",
      "radar 2026-10-30",
      "radar 2026-10-29",
      "radar 2026-10-28",
-     "radar 2026-10-27",
-     "radar 2026-10-26"
+     "radar 2026-10-27"
     ]
    }
   ]
@@ -1862,21 +1862,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-03T02:54:19Z",
+  "pushed_at": "2026-11-03T10:40:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-03T02:54:18Z",
+    "last_commit": "2026-11-03T10:40:10Z",
     "subjects": [
-     "Sampled depth attachments read through red texture views of the same depth storage (#988)",
-     "fs::ReadFile with read options and no byte count is hooked, and must read in full (#947)",
-     "Unreal's host heap keeps 64 KiB alignment for span-sized blocks (#1006)",
-     "CI lint: the logic operation rewrite's joined text has its own name, a LINKDATA job stops when its index is gone, the geometry hazards test checks its readback buffer (chain 16dec73a79e7)",
-     "Pokémon Pokopia plays on the Mac",
-     "The shader split reads each SARC member's name up to its own NUL (#968)",
-     "The Legend of Zelda: Skyward Sword HD plays on the Mac; logic operations on normalized targets; encrypted .vert / .frag files are no run-time GLSL",
-     "AV1 movies decode with dav1d where VideoToolbox has no AV1 decoder"
+     "The shader builder reads each record from its package when needed instead of keeping 4.4 GB of packages in memory: Pokopia's builds run their workers in parallel again (#1036)",
+     "The TXQ type test checks its InstTable match before indexing it: lint-python's pyright no longer finds a subscript of None",
+     "An uncompressed 3D texture the CPU wrote is taken from its storage at first use (#1050)",
+     "The strap guide's SDK 22 overload, with a StrapGuideArg, is answered like the other",
+     "Fire Emblem Fortune's Weave: 60 fps through the game's own target frame rate, found by its readers",
+     "A read-only image load of a colour attachment reads the same-pass snapshot: Xenoblade Chronicles 3's cutscenes no longer alternate brightness every frame (#1025)",
+     "An AudioOut keeps releasing buffers on the silent sink while a host worker starts its device: a blocked AudioOutputUnitStart no longer freezes the game (#1030)",
+     "A finalized program leaves every queue's bindings: Fire Emblem Fortune's Weave crashed in keys_hash at the title's hand-over to the opening demo (#1046)"
     ]
    }
   ]
@@ -1970,12 +1970,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-02T19:34:14Z",
+  "pushed_at": "2026-11-03T02:57:15Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T19:34:13Z",
+    "last_commit": "2026-11-03T02:57:13Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2714,7 +2714,7 @@
   ]
  },
  "leixinggong/d2r-mobile": {
-  "pushed_at": "2026-10-21T06:04:16Z",
+  "pushed_at": "2026-11-03T04:12:15Z",
   "branches": []
  },
  "SepheTT/d2r-mobile": {
@@ -4097,21 +4097,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-03T00:07:25Z",
+  "pushed_at": "2026-11-03T10:36:45Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-03T00:04:55Z",
+    "last_commit": "2026-11-03T10:21:42Z",
     "subjects": [
-     "fix(ios): link the .NET runtime's start-up object as a file, so the device translator's first call finds a runtime",
-     "feat(ios): the device translates a shader variant its startup shaders lack, with the Mac's own translator (not yet tested on a device)",
-     "fix(odyssey): the settings panel port without the per-size tables, the bow triggers or copied credits (after PR #1564)",
-     "fix(odyssey): before play wait for the warm-up lists, not the whole translation cache (after PR #1562)",
-     "Merge PR #1562: warm Odyssey recorded pipelines before gameplay",
-     "Merge PR #1564: port the complete Mac settings panel to Odyssey",
-     "test: the attachment capacity probe checks array bounds with UBSan, not AddressSanitizer (after PR #1587)",
-     "Merge PR #1587: size attachment tracking buffers for depth and stencil"
+     "fix(settings): settings_read_number for every version, so Breath of the Wild 1.9.0 can read sharpening with it (after PR #1637)",
+     "refactor(gfx): one narrowing, vfmt_fit's; #1635's lane analysis decides when (after PR #1635)",
+     "Merge pull request #1635 from jayqizone/fix/ios-vertex-tail-pipelines",
+     "fix(pokesv): translator source matches its binary, frame lock starts at 30, macOS 26 (after PR #1655)",
+     "Merge pull request #1655 from djgerry300/pokesv-violet",
+     "fix(botw): #1637's FXAA-off / sharpening pass only on the Mac, and sharpening read as 1.4.3 reads it (after PR #1637)",
+     "Merge pull request #1637 from Legend-of-Link-27/pr/botw190-fxaa-sharpen",
+     "docs: #1643's two comments in English (after PR #1643)"
     ]
    }
   ]
@@ -4659,7 +4659,7 @@
   ]
  },
  "n2ray/d2r-mobile": {
-  "pushed_at": "2026-11-02T15:19:22Z",
+  "pushed_at": "2026-11-03T10:08:54Z",
   "branches": [
    {
     "branch": "archive/android-legacy-20261023",
@@ -4844,27 +4844,28 @@
    },
    {
     "branch": "main",
-    "ahead": 723,
-    "behind": 45,
-    "files": 35,
-    "real_files": 32,
+    "ahead": 738,
+    "behind": 0,
+    "files": 43,
+    "real_files": 40,
     "dirs": [
      "dm/android",
      "dm/gfx",
      "dm/harmony",
      "dm/host",
+     "dm/i18n",
      "dm/ios"
     ],
-    "last_commit": "2026-10-26T16:52:34Z",
+    "last_commit": "2026-11-02T15:17:05Z",
     "subjects": [
-     "Merge upstream Android 2.0.1 and controller UI fixes",
-     "fix(touch): release virtual menu commands after one input sample",
-     "Merge upstream map state restoration",
-     "docs: make upstream-based Android the active fork baseline",
-     "chore: retain legacy Android history under upstream-based main",
-     "android: expose parked-game launcher for Android Auto",
-     "android: guard controller startup and release input on lifecycle changes",
-     "android: physical controller support (dm_pad_set + controller/touch layout switch)"
+     "Sync Android customization to upstream 2.2.4",
+     "Sync upstream 2.2.1 and restore upstream map behavior",
+     "fix: unblock crash watchdog for alarm signal",
+     "Merge remote-tracking branch 'upstream/review-183' into review/upstream-183",
+     "Threads: log when a guest thread exits through the host-stack path (first 20, then every 50th)",
+     "Crash handling: a crash can no longer hang the game; guest threads exit on the host stack",
+     "Merge remote-tracking branch 'upstream/main' into sync/upstream-android-2.1.0",
+     "docs: record upstream Android 2.0.2 sync"
     ]
    },
    {
@@ -7840,21 +7841,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-11-02T11:45:44Z",
+  "pushed_at": "2026-11-03T05:43:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T11:30:55Z",
+    "last_commit": "2026-11-03T05:29:41Z",
     "subjects": [
+     "Allow companion UI localization in internal shell audit",
+     "Release v0.3.109 (118): portrait companion, adaptive UI fixes and NX maintenance",
      "Sync official runtime fixes and adaptive UI corrections (0.3.99 build 108)",
      "Fix damaged NSP reporting and warm queue retention (0.3.90 build 99)",
      "Sync official tail-call proof and Heaps shader extraction (0.3.89 build 98)",
      "Adopt official cloud folder picker and publish only LAN host (0.3.88 build 97)",
      "Update audio-open regression for copied renderer event handles",
-     "Sync NXNative runtime and Xcode 27.2 shader toolchain for v0.3.87 (96)",
-     "Recognize nested DLC folders and retain cache-key compatibility",
-     "Fix one-click DLC extraction and external resource delivery"
+     "Sync NXNative runtime and Xcode 27.2 shader toolchain for v0.3.87 (96)"
     ]
    }
   ]
@@ -8084,7 +8085,7 @@
   ]
  },
  "bakaku/ewen": {
-  "pushed_at": "2026-10-20T08:09:09Z",
+  "pushed_at": "2026-11-03T10:37:37Z",
   "branches": [
    {
     "branch": "main",
@@ -8961,11 +8962,11 @@
   "branches": []
  },
  "seeyajack/d2r-mobile": {
-  "pushed_at": "2026-11-02T17:09:35Z",
+  "pushed_at": "2026-11-03T04:07:18Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 399,
+    "ahead": 408,
     "behind": 12,
     "files": 264,
     "real_files": 260,
@@ -8981,16 +8982,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-11-02T17:05:00Z",
+    "last_commit": "2026-11-03T00:35:41Z",
     "subjects": [
-     "harmony: 工程壳入口补齐上游鸿蒙缺省值块（np653）—— preflight=0 消掉 236ms/帧 fence 全排空",
-     "gfx: device lost 不再当场 FATAL（present 重试/丢帧，fence 等待按未完成返回）—— np651",
-     "gfx: 反馈读不再补 pass 内屏障 —— GPU 388→261 ms（np648）",
-     "gfx: 反馈读不再断 pass —— 每段 pass 221→22~43、GPU/帧 1.1~1.6s→0.21~0.44s（np634–np647）",
-     "gfx: 长宽限 + 切段重试 + fence 死等兜底（np632/np632b/np633）",
-     "gfx: 冷路径重试（指数退避）+ device lost 的完整定性（np631/np631b）",
-     "app: 实验② DM_SKIP_COMPUTE=78e80cf67d011b87（读数见下一提交的分析）",
-     "gfx: compute→图形依赖的两个对照开关（np630/np630b，离线备好待真机）"
+     "gfx: 冷却默认 2500→8000ms（np662 实测驱动恢复窗口变宽）",
+     "gfx: 切后台不挂死 + DrawArraysInstanced 真实现 + 2 个留痕 stub（np662）",
+     "gfx: np659/660 device-lost 冷却退避 + SetDepthClamp stub（打穿 306 秒天花板）",
+     "ohos: 死亡笔记补 pc 处 16 字节指令码（np657 SEGV 取证）",
+     "harmony: A/B 定谳——DM_NVN_SYNC=1（同步翻译）环等消失、fps +61%，暂为 np657 默认（np657）",
+     "tools: dmsh_vk cs 的 uniform_pointer 特例上界含端点 0x310（np654 遗留失败键）",
+     "gfx: 择取上游 fec76d1 pipeline guard——上次死时有在建管线，本次串行建（np655）",
+     "harmony: 看门狗 DM_WATCH_STALL 30→90 秒（np654）"
     ]
    }
   ]
@@ -9424,21 +9425,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-02T23:58:59Z",
+  "pushed_at": "2026-11-03T10:51:03Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T23:58:59Z",
+    "last_commit": "2026-11-03T10:29:57Z",
     "subjects": [
+     "Merge pull request #548 from Haseenesss/fix/shell-install-framework-path",
+     "Merge pull request #541 from Dino0005/l10n/italian-export",
+     "Merge pull request #560 from LNPANDY/v0lumehi/v1.0.2-notes-shared-app",
+     "v1.0.2 notes: the game data is outside the IPA only with the shared app",
      "Merge pull request #546 from LNPANDY/v0lumehi/v1.0.2-docs",
      "v1.0.2 notes: one IPA per game with its data inside (#542) and the cut-off framework delete fix (#539)",
-     "Merge pull request #542 from LNPANDY/v0lumehi/one-game-ipa",
-     "Export: one IPA per game with the game data inside (#540)",
-     "Shell export test: a stopped build's half framework is left out of the next game's shared app",
-     "Shared app: a cut-off framework delete no longer breaks the next build",
-     "Merge pull request #538 from LNPANDY/v0lumehi/version-1.0.2",
-     "v1.0.2: version bump, changelog and release notes"
+     "Shell install: take the framework the build wrote, not one named after the build key (#515)",
+     "Merge pull request #542 from LNPANDY/v0lumehi/one-game-ipa"
     ]
    }
   ]
@@ -9939,21 +9940,21 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-10-30T00:09:49Z",
+  "pushed_at": "2026-11-03T09:45:28Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-29T23:40:49Z",
+    "last_commit": "2026-11-03T09:45:24Z",
     "subjects": [
-     "fix(tools): a crash read in before a step's mark failed no step",
-     "perf(gfx): specialise SMAA's shaders on the HDR switch (-0.53 ms GPU per frame)",
-     "fix(gfx): compile shaders with -fpreserve-invariance (black grass flashes)",
-     "iCloud merge: its post-commit hook takes a free slot, not dm_engine's",
-     "Merge the iCloud sync and merge fixes (F-SAVE-3/4/5/7/10/11 and the merge halves of F-SAVE-1/2/15/16)",
-     "fix(cloud): merge keeps unproven returns, settles only landed commits",
-     "fix(cloud): idempotent stash inbox, atomic chronicle write-back, safer deletes",
-     "passgpu_top: skip a partial last row"
+     "docs: README rewritten for players; screenshots at this Mac's picture",
+     "mac: Recommended from the chip's generation, GPU cores and screen",
+     "mac: a Mac on an iPhone chip (MacBook Neo) gets the iPhone's Recommended",
+     "third_party: the vendored Ryujinx code is Ryubing Canary-1.3.351, not 1.3.2",
+     "licenses: ship the full nxnative and deko3d texts with the adapted code",
+     "launcher: lay out the release notes' Markdown (headings, lists, tables)",
+     "docs: the README shows the PC mode",
+     "Merge branch 'pc-mode': PC mouse and keyboard controls on the Mac"
     ]
    }
   ]
@@ -10022,28 +10023,8 @@
   ]
  },
  "cxu/d2r-mobile": {
-  "pushed_at": "2026-10-28T02:24:12Z",
-  "branches": [
-   {
-    "branch": "local-fixes",
-    "ahead": 4,
-    "behind": 0,
-    "files": 5,
-    "real_files": 5,
-    "dirs": [
-     "dm/android",
-     "dm/gfx",
-     "dm/host"
-    ],
-    "last_commit": "2026-10-28T02:22:32Z",
-    "subjects": [
-     "Merge remote-tracking branch 'upstream/main' into local-fixes",
-     "Merge remote-tracking branch 'upstream/main' into local-fixes",
-     "Pura 适配：sdcardfs 存档事务降级（互换 EINVAL→三步式 rename；EPERM→删旧+整树复制；xattr EOPNOTSUPP 忽略）",
-     "Pura 适配：跳过 subgroup 校验 + 存档外置公共目录"
-    ]
-   }
-  ]
+  "pushed_at": "2026-11-03T08:55:39Z",
+  "branches": []
  },
  "oneforoneofone/d2r-mobile": {
   "pushed_at": "2026-10-26T10:15:01Z",
@@ -10409,21 +10390,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-03T02:50:19Z",
+  "pushed_at": "2026-11-03T03:40:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-03T02:47:45Z",
+    "last_commit": "2026-11-03T03:40:31Z",
     "subjects": [
+     "0.2.13-beta (versionCode 33)",
+     "Vulkan: linear render targets up to 1 MB written back - no stray leaves on the ground (#168)",
+     "Video: changing the frame rate keeps the game's clock and frame loop together",
      "Diagnosis: transform feedback calls logged; a three-finger tap dumps a debug frame",
      "Video: 20 fps holds the game's frame loop at interval 3",
      "Video: a 20 fps frame rate",
      "Controls: the drag sensitivity with the action layout too, up to 400% (#199)",
-     "Touch icons: Magnesis's d-pad, simple controls in talks, a bow / throw cancel, parry by a slide",
-     "Touch HUD: the minimap group up only while the minimap shows; a talk's box stays whole (#200)",
-     "Unlocked aspect: the map fills the screen, its markers on their places",
-     "README: the aim sensitivity"
+     "Touch icons: Magnesis's d-pad, simple controls in talks, a bow / throw cancel, parry by a slide"
     ]
    }
   ]
@@ -10625,7 +10606,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-02T15:56:58Z",
+  "pushed_at": "2026-11-03T09:07:57Z",
   "branches": [
    {
     "branch": "main",
@@ -10645,21 +10626,21 @@
   ]
  },
  "Desm0nt/doom-port": {
-  "pushed_at": "2026-11-02T11:41:12Z",
+  "pushed_at": "2026-11-03T07:41:39Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-02T11:41:11Z",
+    "last_commit": "2026-11-03T07:41:37Z",
     "subjects": [
+     "setup: keep the window open, run under sh/CRLF, venv without ensurepip, early key/ticket check",
      "Docs: swipe-look tested on the phone",
      "v0.4.8: swipe-look through the game's gyro-aim channel",
      "Menus follow real time at 60 fps",
      "Menus back at 60 (owner)",
      "v0.4.7: Vulkan record thread, real-time game speed, menus at 30, optional GSR upscale",
      "Design note: drop a local path",
-     "v0.4.6: translator trims, present thread, -O3 engine, smarter dynamic resolution",
-     "v0.4.5: light mode, working 3D scale, DRS with target fps on our GPU timing, fast loads with high limits"
+     "v0.4.6: translator trims, present thread, -O3 engine, smarter dynamic resolution"
     ]
    }
   ]
@@ -11016,7 +10997,7 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-02T16:30:12Z",
+  "pushed_at": "2026-11-03T03:46:54Z",
   "branches": [
    {
     "branch": "master",
@@ -11153,10 +11134,10 @@
   ]
  },
  "N1v0k/d2r-mobile": {
-  "pushed_at": "2026-11-02T23:54:15Z",
+  "pushed_at": "2026-11-03T09:06:52Z",
   "branches": [
    {
-    "branch": "feat/german-dede",
+    "branch": "feat/german-language",
     "ahead": 4,
     "behind": 0,
     "files": 24,
@@ -11167,16 +11148,30 @@
      "dm/i18n",
      "dm/ios"
     ],
-    "last_commit": "2026-11-02T22:27:57Z",
+    "last_commit": "2026-11-03T08:31:08Z",
     "subjects": [
      "Docs: German in the language lists (README in three languages, dm/i18n)",
      "German (deDE) as a sixth language: string table column, language switch, voice-over, touch wording and map name plates (#208)",
      "Custom page: the controller A button cycles the language row again",
-     "dm_untag: also skip the [ns] / [pl] name markers that German and Russian use"
+     "dm_untag: also skip the [ns], [pl] and [nl] name markers (Russian, German, Polish)"
     ]
    },
    {
-    "branch": "fix/android-padmode-rebuild-world",
+    "branch": "fix/android-import-marker-last",
+    "ahead": 1,
+    "behind": 0,
+    "files": 1,
+    "real_files": 1,
+    "dirs": [
+     "dm/android"
+    ],
+    "last_commit": "2026-11-03T08:24:27Z",
+    "subjects": [
+     "Android: the import marker pack_info.txt goes in after the optional overlay_variants, so a stopped import is redone"
+    ]
+   },
+   {
+    "branch": "fix/android-skill-buttons-layout-switch",
     "ahead": 1,
     "behind": 0,
     "files": 2,
@@ -11184,13 +11179,69 @@
     "dirs": [
      "dm/android"
     ],
-    "last_commit": "2026-11-02T23:53:29Z",
+    "last_commit": "2026-11-03T08:24:01Z",
     "subjects": [
      "Android: skill buttons find the HUD again after a controller / touch layout rebuild"
     ]
    },
    {
-    "branch": "fix/runeword-ladder-offline",
+    "branch": "fix/belt-drink-sound",
+    "ahead": 1,
+    "behind": 0,
+    "files": 1,
+    "real_files": 1,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-11-03T08:55:55Z",
+    "subjects": [
+     "Belt: drinking from the belt plays the item's use sound, as the game's belt code does"
+    ]
+   },
+   {
+    "branch": "fix/custom-lang-row-pad-a",
+    "ahead": 1,
+    "behind": 0,
+    "files": 1,
+    "real_files": 1,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-11-03T08:22:27Z",
+    "subjects": [
+     "Custom page: the controller A button cycles the language row again"
+    ]
+   },
+   {
+    "branch": "fix/map-plate-name-markers",
+    "ahead": 1,
+    "behind": 0,
+    "files": 1,
+    "real_files": 1,
+    "dirs": [
+     "dm/ios"
+    ],
+    "last_commit": "2026-11-03T08:25:53Z",
+    "subjects": [
+     "Map name plates: drop the grammar marker at the start of a name (Spanish \"[ms]Malaise horádrico\")"
+    ]
+   },
+   {
+    "branch": "fix/pouch-count-rebuild",
+    "ahead": 1,
+    "behind": 0,
+    "files": 1,
+    "real_files": 1,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-11-03T08:25:01Z",
+    "subjects": [
+     "Gem pouch: the count is filled in again after the inventory layout is rebuilt"
+    ]
+   },
+   {
+    "branch": "fix/runeword-mosaic-offline",
     "ahead": 1,
     "behind": 0,
     "files": 5,
@@ -11198,9 +11249,70 @@
     "dirs": [
      "dm/host"
     ],
-    "last_commit": "2026-11-02T23:53:29Z",
+    "last_commit": "2026-11-03T08:23:26Z",
     "subjects": [
      "Runeword helper: Mosaic is listed offline; lock bits and seasons follow the server's rule"
+    ]
+   },
+   {
+    "branch": "fix/shell-apk-size-linux",
+    "ahead": 1,
+    "behind": 0,
+    "files": 1,
+    "real_files": 1,
+    "dirs": [
+     "dm/android"
+    ],
+    "last_commit": "2026-11-03T08:35:59Z",
+    "subjects": [
+     "Android: shell_apk.sh reports the APK size with wc -c, so it also finishes on Linux"
+    ]
+   },
+   {
+    "branch": "fix/untag-name-markers",
+    "ahead": 1,
+    "behind": 0,
+    "files": 2,
+    "real_files": 2,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-11-03T08:22:05Z",
+    "subjects": [
+     "dm_untag: also skip the [ns], [pl] and [nl] name markers (Russian, German, Polish)"
+    ]
+   }
+  ]
+ },
+ "pahorema/kartnative": {
+  "pushed_at": "2026-11-02T02:05:59Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-02T02:05:52Z",
+    "subjects": [
+     "Leave DM_CAPTURE to the switch table",
+     "Record Mario Kart World's pop-in investigation so far",
+     "Add DM_CAPTURE: P captures a frame and its passes from the Mac window",
+     "Count GPU-written sparse tiles that lose their content on a remap",
+     "Bound t_audio_stream's playback by the time measured",
+     "Clone kartnative in the README's Mac steps",
+     "Build Mario Kart World's host and run the port's CPU tests in CI",
+     "Fix the pyright findings the Switch 2 port added"
+    ]
+   }
+  ]
+ },
+ "kirakira-dev/OunceNative": {
+  "pushed_at": "2026-11-03T04:55:37Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-03T04:51:39Z",
+    "subjects": [
+     "init"
     ]
    }
   ]
