@@ -332,18 +332,18 @@
   ]
  },
  "n1zjqo/d2r-mobile": {
-  "pushed_at": "2026-11-02T02:43:27Z",
+  "pushed_at": "2026-11-05T02:45:26Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 14,
+    "ahead": 15,
     "behind": 0,
     "files": 1,
     "real_files": 0,
     "dirs": [],
-    "last_commit": "2026-11-02T02:43:27Z",
+    "last_commit": "2026-11-05T02:45:15Z",
     "subjects": [
-     "Merge branch 'jhaizhou-ops:main' into main",
+     "Merge upstream v2.3.0 into main, preserving fork changes",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
@@ -597,12 +597,12 @@
   "branches": []
  },
  "tkcoliver-glitch/d2r-mobile": {
-  "pushed_at": "2026-11-03T02:15:47Z",
+  "pushed_at": "2026-11-05T02:00:31Z",
   "branches": [
    {
     "branch": "dev",
     "ahead": 7,
-    "behind": 53,
+    "behind": 63,
     "files": 21,
     "real_files": 21,
     "dirs": [
@@ -847,12 +847,12 @@
   "branches": []
  },
  "klacee/d2r-mobile": {
-  "pushed_at": "2026-11-02T10:29:38Z",
+  "pushed_at": "2026-11-05T10:18:29Z",
   "branches": [
    {
     "branch": "main",
     "ahead": 2,
-    "behind": 87,
+    "behind": 97,
     "files": 1,
     "real_files": 0,
     "dirs": [],
@@ -1408,7 +1408,7 @@
   "branches": []
  },
  "MichaelC001/d2r-mobile": {
-  "pushed_at": "2026-11-02T02:31:21Z",
+  "pushed_at": "2026-11-05T02:31:22Z",
   "branches": []
  },
  "tinytub/d2r-mobile": {
@@ -1757,21 +1757,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-04T05:52:06Z",
+  "pushed_at": "2026-11-05T06:13:18Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-04T05:52:05Z",
+    "last_commit": "2026-11-05T06:13:16Z",
     "subjects": [
+     "radar 2026-11-05",
      "radar 2026-11-04",
      "radar 2026-11-03",
      "radar 2026-11-02",
      "radar 2026-11-01",
      "radar 2026-10-31",
      "radar 2026-10-30",
-     "radar 2026-10-29",
-     "radar 2026-10-28"
+     "radar 2026-10-29"
     ]
    }
   ]
@@ -1857,21 +1857,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-05T01:13:39Z",
+  "pushed_at": "2026-11-05T09:59:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-05T00:59:02Z",
+    "last_commit": "2026-11-05T09:59:08Z",
     "subjects": [
-     "The shader builder's Python takes half the CPU: rewrites that tried every character of a large source find their text instead, and Pokopia's seen shaders build in 607 s, not 1,426 (#1036)",
-     "DRAGON QUEST BUILDERS 2 (010042000A986000, 1.7.3d, SDK 5.4.0, KTGL) plays on the Mac through character creation and the ship prologue at 60 fps; the fixes are general: ssl::Context::Create and Destroy succeed offline, and the shader split reads LINKDATA.IDX beside LINKDATA.BIN",
-     "120 fps on the Mac for Mario & Luigi: Brothership, the first Unreal game: the host's writes to t.MaxFPS and rhi.SyncInterval follow the frame step, so one profile line offers it",
-     "Yoshi and the Mysterious Book (Switch 2, 0400245021D2C000, Ver. 1.0.2, Unreal 5.4.4) plays on the Mac at 60 fps through the first habitat, a save and a reload; the fixes are general: 5.4's shaders, 32 vertex attributes, image and buffer texture handles in uniform buffers, guarded Ampere loads and writes (chain 3dd02e581c0c)",
-     "Mario Kart World's sky panels are checked on chain d5fe9ae8bfba: none at Crown City, with no measurable frame cost (#1186)",
-     "Task and mesh storage buffer tables are at c0 0x670 and 0x770: Mario Kart World's sky panels came from draws reading the dummy buffer (#1186)",
-     "README: Fire Emblem Fortune's Weave runs at up to 120 fps, in no particular version: the host finds its frame rate in the game's code (v131072 is the one tested)",
-     "120 fps on the Mac, Fire Emblem Fortune's Weave first: a profile's fps_max 120 offers it, and the target follows the frames that fit, so a game that steps by its target keeps its speed"
+     "Handles built under a guard the read's guard cannot be tied to: Yoshi's 130 deleted reads translate and the pool's water on Chapter 1's page comes back, and reads that bound a texture word with no sampler word get both",
+     "lint-python is green again: pack_quiet's days is declared a float, as it is used, and the work-folder test patches NSP_FOLDER instead of leaving it set",
+     "A NUP or a dump of a game with no profile is surveyed and gets a provisional profile, and a derived profile adds a module main imports that moved to another slot",
+     "Trinity's rendezvous no longer loses its release on Apple cores: the rewriter puts a barrier between the completer's flag store and its load of the state word",
+     "A game's work folder stops growing: regress.py keeps the 3 chain builds used last, and a hand-made folder untouched for 14 days becomes one tar",
+     "A pak naming the global shader cache counts as inline only when the containers in its folder hold export bundles and no shader libraries, so FINAL FANTASY RESONANCE's libraries are decoded again (issue #1277)",
+     "CI is green again on tests, lint-python and lint-c: three tool test files follow ed3c93ee's rewrites, and the new clang-tidy and Python findings are fixed",
+     "A game's build folder keeps its compile cache and Xcode's derived data as one uncompressed tar each between builds, so Metroid Dread's 84,541 cache files and Xcode's thousand become two files"
     ]
    }
   ]
@@ -1965,12 +1965,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-04T19:51:28Z",
+  "pushed_at": "2026-11-05T01:30:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-04T19:51:26Z",
+    "last_commit": "2026-11-05T01:30:05Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2055,7 +2055,7 @@
   "branches": []
  },
  "hyhou/d2r-mobile": {
-  "pushed_at": "2026-11-02T02:10:24Z",
+  "pushed_at": "2026-11-05T02:20:46Z",
   "branches": []
  },
  "austery/d2r-mobile": {
@@ -4112,21 +4112,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-04T21:04:45Z",
+  "pushed_at": "2026-11-05T08:39:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-04T21:02:44Z",
+    "last_commit": "2026-11-04T21:50:36Z",
     "subjects": [
-     "feat: 支持旷野 1.6 和 1.9 原生 5K 输出",
-     "chore: collect shader contributions for four games",
-     "chore: integrate current main before syncing community game ports",
-     "feat: 高清材质默认关闭并仅允许启动时手动启用",
-     "fix: restore the selected Tomodachi compatibility scheme (after PR #1505)",
-     "docs: list community game ports and verify artifact path isolation",
-     "fix: keep XCX artifacts external and retain complete mip chains (after PR #1282)",
-     "fix: require Metal 4 and isolate unresolved Tomodachi experiments (after PR #1505)"
+     "fix: complete launcher integration and regression coverage (after PR #785, #307, #1359, #1678)",
+     "fix: isolate synced saves and state by game user (after PR #785)",
+     "Merge PR #785: chore: merge #784 (with main) into icloud-saves",
+     "fix: derive BotW mod reservations from current runtime sources (after PR #307)",
+     "Merge PR #307: fix: the 1.9.0 reserved sites cover the whole docked branch that the native-size patch checks (main+0x12660bc..0x126610c)",
+     "fix: invalidate timed-out screenshot requests without reusing generations (after PR #1359)",
+     "Merge PR #1359: fix: the screenshot folder is set next to controls.txt, not in the working directory",
+     "fix: validate shader provenance and copy aligned vertices on GPU (after PR #1678)"
     ]
    }
   ]
@@ -7856,21 +7856,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-11-04T22:33:57Z",
+  "pushed_at": "2026-11-05T04:54:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-04T22:33:57Z",
+    "last_commit": "2026-11-05T04:54:36Z",
     "subjects": [
+     "chore: update published release index to v0.3.124",
+     "Release v0.3.124: restore exclusive iOS audio",
+     "chore: update published release index to v0.3.123",
+     "Release v0.3.123: improve iOS audio recovery",
      "chore: update published release index to v0.3.122",
      "Release v0.3.122: fix Mac app replacement and uppercase input extensions",
      "chore: update published release index to v0.3.121",
-     "Release v0.3.121: fix DS4 reconnect rumble and renderer allocation failures",
-     "chore: update published release index to v0.3.120",
-     "Release v0.3.120: restore companion footer taps",
-     "chore: update published release index to v0.3.119",
-     "Release v0.3.119: sync NX fixes and restore adaptive landscape layouts"
+     "Release v0.3.121: fix DS4 reconnect rumble and renderer allocation failures"
     ]
    }
   ]
@@ -8977,11 +8977,11 @@
   "branches": []
  },
  "seeyajack/d2r-mobile": {
-  "pushed_at": "2026-11-04T19:23:18Z",
+  "pushed_at": "2026-11-05T09:00:22Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 427,
+    "ahead": 429,
     "behind": 22,
     "files": 267,
     "real_files": 263,
@@ -8997,16 +8997,16 @@
      "dm/ohos",
      "dm/tools"
     ],
-    "last_commit": "2026-11-04T18:18:32Z",
+    "last_commit": "2026-11-04T20:49:59Z",
     "subjects": [
+     "gfx: 阴影分辨率开关 DM_GFX_SHADOW_SCALE（np713，实验默认关）——低分辨率渲染 + 象限拷贝放大",
+     "gfx: 屏障站点标注 + 冗余屏障跳过（np712）——屏障人口普查：780/帧游戏屏障 + 392/帧采样可见性",
      "host: hle_hid 手柄链路可观测性（np710b）——游戏取手柄计数周期留痕 + 手柄键到达 1Hz 留痕",
      "app: 起客后焦点归还手柄区 + 已映射键消费（np710）——真手柄实测起客后按键变成 UI 遍历",
      "tools: dmsh_vk cs 槽位修正（np709）——dbf7008 的含端点 0x310 被真机验证推翻",
      "tools: shader_replenish 的 PY 解析修复（np708）——.workbuddy python 已不存在，改候选列表探测",
      "gfx: 丢段路径确定性自检钩子（np705）——DM_SPLIT_DROP_TEST 把 np703 判据验证从等运气变成分钟级",
-     "gfx: 丢段路径 reset 失败不再自爆（np703b）——vkResetCommandBuffer 在 device lost 窗口合法地可能返回失败，check() 一律 FATAL 会让 np703 恰好死在不想死的地方",
-     "gfx: 切段丢段重建（np703）——重试全败不再 FATAL，连续丢段到上限判队列死并落盘证据",
-     "gfx: deathguard 自死锁修复 + 封存序号修正（np702 自检轮首跑学费）"
+     "gfx: 丢段路径 reset 失败不再自爆（np703b）——vkResetCommandBuffer 在 device lost 窗口合法地可能返回失败，check() 一律 FATAL 会让 np703 恰好死在不想死的地方"
     ]
    }
   ]
@@ -9400,21 +9400,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-11-04T19:38:48Z",
+  "pushed_at": "2026-11-05T04:25:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-04T19:38:45Z",
+    "last_commit": "2026-11-05T04:15:32Z",
     "subjects": [
+     "Sync the packer's copies with upstream",
      "Merge remote-tracking branch 'origin/main'",
      "Release notes: the table's rows for this release",
      "A RomFS image reads on Windows: three Windows-only gaps in dm/tools/romfs.py",
      "A .nup now follows upstream's shape: the RomFS stays an image, and Windows can read one",
      "Sync the packer's copies with upstream",
      "Release notes: the table's row for this release",
-     "A .nup packs on Windows: the container is written out as a dump folder, and nothing else changes",
-     "Release notes: the table's row for this release"
+     "A .nup packs on Windows: the container is written out as a dump folder, and nothing else changes"
     ]
    }
   ]
@@ -9440,21 +9440,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-04T21:56:17Z",
+  "pushed_at": "2026-11-05T11:04:34Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-04T21:07:12Z",
+    "last_commit": "2026-11-05T10:57:57Z",
     "subjects": [
+     "launcher: let Mac app builds on non-APFS volumes reach swap_by_moves (#742) (#743)",
      "Merge pull request #706 from LNPANDY/v0lumehi/release-notes-1-1-1-dotnet",
      "Release notes v1.1.1: the .NET check and the Italian engine wording",
      "Merge pull request #342 from oliphantaaron/fix/dotnet-detection",
      "Merge pull request #704 from Dino0005/l10n/italian-engine",
      "Merge branch 'main' into l10n/italian-engine",
      "Merge branch 'main' into fix/dotnet-detection",
-     "Merge pull request #703 from LNPANDY/v0lumehi/release-notes-1-1-1-engine",
-     "it: \"engine\", not \"motore\", in the Switch 2 texts"
+     "Merge pull request #703 from LNPANDY/v0lumehi/release-notes-1-1-1-engine"
     ]
    }
   ]
@@ -9956,21 +9956,21 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-11-04T20:36:22Z",
+  "pushed_at": "2026-11-05T10:01:01Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-04T20:36:17Z",
+    "last_commit": "2026-11-05T10:01:00Z",
     "subjects": [
-     "Merge motion vectors and MetalFX Temporal",
-     "Golden: the temporal sets record 10 shots, 6 of them for the noise",
-     "Picture sets: only the temporal ones pin DM_MFXT; seed matrix test at 28 rows",
-     "Temporal at every 3D Resolution; label, sharpen, tests and docs",
-     "Upscaling: MetalFX Temporal, a temporal scaler for the 3D pass",
-     "Motion vectors for the 3D picture (off unless DM_MV=1)",
-     "Merge rem/graphics-audit: the graphics audit remediation (waves 0-5)",
-     "docs: environment and Ultra shadow costs re-measured with today's shadow maps"
+     "Merge fg/solid: moving things stay solid in generated frames",
+     "Motion gate: judge moving things by their pixels, not by edge energy",
+     "Frame generation: moving things stay solid, with no pale copy",
+     "Merge fg/quality: sharper generated frames, and the 3D brightening gone",
+     "Golden shots: the conv and phone sets take 10 record shots",
+     "CLAUDE.md: brightening gone, picture sets as they are now",
+     "Remove the 3D picture brightening and its Extras switch",
+     "Frame generation: even out sharpness between generated and real frames"
     ]
    }
   ]
@@ -10039,7 +10039,7 @@
   ]
  },
  "cxu/d2r-mobile": {
-  "pushed_at": "2026-11-03T08:55:39Z",
+  "pushed_at": "2026-11-05T01:37:46Z",
   "branches": []
  },
  "oneforoneofone/d2r-mobile": {
@@ -10315,12 +10315,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-11-04T09:45:05Z",
+  "pushed_at": "2026-11-05T10:04:32Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-04T09:45:02Z",
+    "last_commit": "2026-11-05T10:04:31Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10622,7 +10622,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-04T19:42:06Z",
+  "pushed_at": "2026-11-05T08:29:26Z",
   "branches": [
    {
     "branch": "main",
@@ -10688,12 +10688,27 @@
   ]
  },
  "richardyangran/d2r-mobile": {
-  "pushed_at": "2026-10-30T15:04:25Z",
+  "pushed_at": "2026-11-05T07:13:26Z",
   "branches": [
+   {
+    "branch": "android-warm-seed-pack",
+    "ahead": 1,
+    "behind": 55,
+    "files": 6,
+    "real_files": 4,
+    "dirs": [
+     "dm/android",
+     "dm/tools"
+    ],
+    "last_commit": "2026-10-26T22:09:46Z",
+    "subjects": [
+     "Android import pack: --warm-seed puts the pipeline warm-up seed into shaders/"
+    ]
+   },
    {
     "branch": "codex/free-skill-reset",
     "ahead": 1,
-    "behind": 2,
+    "behind": 35,
     "files": 10,
     "real_files": 9,
     "dirs": [
@@ -10704,6 +10719,20 @@
     "last_commit": "2026-10-30T14:52:40Z",
     "subjects": [
      "add a button reset skills"
+    ]
+   },
+   {
+    "branch": "codex/keyless-chests",
+    "ahead": 1,
+    "behind": 0,
+    "files": 8,
+    "real_files": 6,
+    "dirs": [
+     "dm/ios"
+    ],
+    "last_commit": "2026-11-05T07:12:22Z",
+    "subjects": [
+     "Make ordinary chests keyless and remove consumable drops"
     ]
    }
   ]
@@ -11015,21 +11044,21 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-05T00:29:16Z",
+  "pushed_at": "2026-11-05T05:20:27Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-05T00:28:55Z",
+    "last_commit": "2026-11-05T05:20:24Z",
     "subjects": [
-     "Merge pull request #93 from jmars125/task/focus-pause",
-     "Pause the game's audio and the movie clock while the window is out of focus.",
-     "Merge pull request #81 from jmars125/task/menu-dt",
-     "Merge master into task/menu-dt, keeping the jump and menu step sites.",
-     "Merge pull request #62 from jmars125/task/older-cpus",
-     "Merge pull request #67 from jmars125/task/exposure-meter",
-     "Merge pull request #74 from jmars125/task/replay-async-bound",
-     "Merge pull request #69 from jmars125/task/bind-reset"
+     "Merge pull request #92 from jmars125/version-0.1.15",
+     "Merge master into version-0.1.15 for the focus and salvage tick fixes",
+     "Merge pull request #97 from jmars125/task/run-in-background",
+     "Keep the game running when its window loses focus",
+     "Merge pull request #96 from jmars125/task/salvage-tick",
+     "Tick the salvage hold's sound by real time instead of every 10 frames",
+     "Merge master into version-0.1.15 for the focus fix.",
+     "Merge pull request #93 from jmars125/task/focus-pause"
     ]
    }
   ]
@@ -11369,21 +11398,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-05T01:25:11Z",
+  "pushed_at": "2026-11-05T03:57:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-04T23:01:46Z",
+    "last_commit": "2026-11-05T03:57:48Z",
     "subjects": [
-     "Merge pull request #38 from AksharDP/task/version-0.1.9",
-     "Version 0.1.9.",
-     "Merge pull request #37 from AksharDP/task/release-step-timeouts",
-     "Bound the Windows release step, so a hang fails with a log instead of running for six hours.",
-     "Merge pull request #36 from AksharDP/task/issue-template-save",
-     "Make the bug report's save file optional, and say a save is still very much appreciated.",
-     "Ask bug reports for a save file standing where the problem shows.",
-     "Merge pull request #35 from AksharDP/task/version-0.1.8"
+     "Merge pull request #45 from AksharDP/claude/jiggle-physics-60fps-499359",
+     "Merge remote-tracking branch 'origin/main' into claude/jiggle-physics-60fps-499359",
+     "Keep jiggle bones, hair and cloth from going flat and losing their bounce above 30 fps.",
+     "Merge pull request #44 from AksharDP/task/version-0.1.10",
+     "Version 0.1.10.",
+     "Merge pull request #42 from AksharDP/claude/jp-version-patches-25bf0a",
+     "Name the update of each release in the README, and keep the XCX RomFS patch step out of the XC2 build instructions.",
+     "Merge remote-tracking branch 'origin/main' into claude/jp-version-patches-25bf0a"
     ]
    }
   ]
@@ -11504,21 +11533,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-04T15:31:33Z",
+  "pushed_at": "2026-11-05T06:38:40Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-04T15:31:32Z",
+    "last_commit": "2026-11-05T06:07:32Z",
     "subjects": [
-     "docs(readme): add the Ko-fi support button",
-     "docs(readme): label the window averages in the performance table",
-     "docs(readme): per-device setup times and what the fps columns mean",
-     "docs(readme): measured setup time and the release file name",
-     "docs(readme): rewrite the README for players",
-     "docs: move technical sections into docs/",
-     "feat(bench): the frequency-limit tooling, tests and skill for c9895bd",
-     "feat(bench): frequency limits, per-signature baselines and the e2e Thor run"
+     "fix(android): keep a running update's files when another menu sweeps leftovers",
+     "fix(android): authorize and bound automatic update installation",
+     "fix(android): close APK session streams before committing installation",
+     "fix(android): establish update dialog controller focus after attachment",
+     "fix(android): count Updates in setup completion rail",
+     "fix(android): constrain update switch layout and show its state",
+     "fix(android): use supported file APIs for update state",
+     "feat(android): check, download and install app updates safely"
     ]
    }
   ]
@@ -11537,21 +11566,72 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-04T19:37:01Z",
+  "pushed_at": "2026-11-05T06:30:15Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-04T19:37:00Z",
+    "last_commit": "2026-11-05T06:30:13Z",
     "subjects": [
-     "Handoff: v0.40 pulled",
-     "Handoff: v0.40 pulled, the flash fix to test",
-     "Split submissions cut only between passes (white flashes in Sword)",
-     "Split submissions cut only between passes: a pass cut and opened again flashed white in Sword (v0.40, pulled)",
-     "Handoff: a takeover checklist",
-     "Handoff: a takeover checklist, v0.40 released",
-     "Split submissions and wait timers from Paldea Native",
-     "Submissions go to the GPU in parts of 150 draws while the rest is replayed: Scarlet outdoors 70 to 33 ms a frame (DM_VK_SPLIT, 0 = off)"
+     "Scarlet / Violet RomFS mods work from the Mods menu",
+     "Trinity RomFS mods as loose files (dm/tools/trinity_mod.py)",
+     "Scarlet / Violet: 2K shadows removed from Auto and the menu",
+     "60 fps mode: a 30 fps floor, 60 when frames fit; frame start recorded again",
+     "Violet's ID photo: copies into a linear texture also reach its memory",
+     "Handoff: a measured gate for the black ID photo",
+     "Handoff: the ID photo is a GPU render, not a camera capture",
+     "Handoff: tonight's state, the black ID photo, crowd flicker, Arceus purple; diagnostics"
+    ]
+   }
+  ]
+ },
+ "gosail/d2r-mobile": {
+  "pushed_at": "2026-11-05T10:57:34Z",
+  "branches": [
+   {
+    "branch": "feat/portable-mouse-and-world-hover-20261105",
+    "ahead": 4,
+    "behind": 0,
+    "files": 22,
+    "real_files": 22,
+    "dirs": [
+     "dm/android",
+     "dm/host",
+     "dm/ios",
+     "dm/tools"
+    ],
+    "last_commit": "2026-11-05T10:57:29Z",
+    "subjects": [
+     "fix(ipad): use native HUD/inventory gestures for pointer clicks and support hostile hover",
+     "fix(ios): retain localized NPC hover when prepared CI omits generated name header",
+     "fix(ios): enable indirect mouse touch events and preserve hover click state",
+     "feat(mouse): unify world hover and iPad/Android external mouse input"
+    ]
+   }
+  ]
+ },
+ "anoylin/d2r-mobile-build": {
+  "pushed_at": "2026-11-05T06:42:26Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-05T06:32:46Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "RogErz81/D2R": {
+  "pushed_at": "2026-11-05T08:44:07Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-05T08:44:06Z",
+    "subjects": [
+     "Initial commit"
     ]
    }
   ]
