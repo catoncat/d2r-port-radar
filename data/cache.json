@@ -1857,21 +1857,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-05T16:47:42Z",
+  "pushed_at": "2026-11-06T01:04:41Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-05T16:47:32Z",
+    "last_commit": "2026-11-06T01:04:27Z",
     "subjects": [
+     "The Mac's alias region is the Switch's 64 GB, so a game can lay out its regions past the iPhone-sized profile value; heap and stacks now sit before it in the guest block",
      "A game whose memory pool does not fit the iPhone's memory limit keeps its guest memory in files, out of the footprint iOS ends an app at (PR #1315, issue #1184)",
      "Pokémon Legends: Arceus: the capture demo returns its empty result when its weak reference is unset or dead, instead of a null read at main+0x16e34fc (a function-matched workaround; the cause is open, issue #712)",
      "Unreal's NVN dynamic buffers keep 4 copies instead of 3, so a write lock is less likely to come round to a copy queued draws still read (issue #1040)",
      "The compile cache is one file read and written in place, with nothing unpacked for a build, and one tool venv serves every game",
      "A game's shader libraries are one file the host and the tools read in place, and an iPhone build no longer compiles pulling libraries nothing reads",
      "Sparse 3D textures take the standard 3D tile, and a 32-bit integer texture in a slot declared float reads through the float view of the same size (issue #783)",
-     "VOTEU (0x886) writes the uniform predicate its destination names and leaves the lane predicate alone: an unwritten UP read false, so its uniform guards never held",
-     "The pipeline prebuild tool takes Metal's concurrent compile count: it had 1 worker on an M6 and 4 on an M5 Pro, because hw.perflevel0 is only the Super cores on chips with three core levels"
+     "VOTEU (0x886) writes the uniform predicate its destination names and leaves the lane predicate alone: an unwritten UP read false, so its uniform guards never held"
     ]
    }
   ]
@@ -1965,12 +1965,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-05T11:06:03Z",
+  "pushed_at": "2026-11-05T20:03:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-05T11:06:02Z",
+    "last_commit": "2026-11-05T20:03:10Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4112,21 +4112,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-05T08:39:33Z",
+  "pushed_at": "2026-11-05T23:40:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-04T21:50:36Z",
+    "last_commit": "2026-11-05T23:40:17Z",
     "subjects": [
+     "fix(vr): serialize source startup and residency transactions",
+     "fix(vr): unify BotW output and preserve cached stereo UI",
+     "feat(vr): integrate BotW stereo rendering and live Quest render sizing",
      "fix: complete launcher integration and regression coverage (after PR #785, #307, #1359, #1678)",
      "fix: isolate synced saves and state by game user (after PR #785)",
      "Merge PR #785: chore: merge #784 (with main) into icloud-saves",
      "fix: derive BotW mod reservations from current runtime sources (after PR #307)",
-     "Merge PR #307: fix: the 1.9.0 reserved sites cover the whole docked branch that the native-size patch checks (main+0x12660bc..0x126610c)",
-     "fix: invalidate timed-out screenshot requests without reusing generations (after PR #1359)",
-     "Merge PR #1359: fix: the screenshot folder is set next to controls.txt, not in the working directory",
-     "fix: validate shader provenance and copy aligned vertices on GPU (after PR #1678)"
+     "Merge PR #307: fix: the 1.9.0 reserved sites cover the whole docked branch that the native-size patch checks (main+0x12660bc..0x126610c)"
     ]
    }
   ]
@@ -7856,21 +7856,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-11-05T11:56:47Z",
+  "pushed_at": "2026-11-06T00:13:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-05T11:54:29Z",
+    "last_commit": "2026-11-06T00:13:42Z",
     "subjects": [
+     "chore: update published release index to v0.3.125",
+     "Sync NX Metal pipeline prebuild worker selection",
      "Enable automatic BC texture compatibility for ACNH",
      "Adopt NX offline pipeline archive batching and fallback",
      "chore: update published release index to v0.3.124",
      "Release v0.3.124: restore exclusive iOS audio",
      "chore: update published release index to v0.3.123",
-     "Release v0.3.123: improve iOS audio recovery",
-     "chore: update published release index to v0.3.122",
-     "Release v0.3.122: fix Mac app replacement and uppercase input extensions"
+     "Release v0.3.123: improve iOS audio recovery"
     ]
    }
   ]
@@ -9468,21 +9468,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-05T20:00:02Z",
+  "pushed_at": "2026-11-06T01:13:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-05T19:58:01Z",
+    "last_commit": "2026-11-06T01:01:31Z",
     "subjects": [
-     "Merge pull request #773 from LNPANDY/docs/changelog-release-notes-1-2-0",
-     "Changelog and release notes v1.2.0: fold 1.1.1 into 1.2.0 and add latest entries",
-     "Windows: chain venv setup on Python install and support 1.2 engine modules (#772)",
-     "Merge pull request #770 from LNPANDY/fix/joycon-split-pingpong",
-     "Merge pull request #771 from LNPANDY/ci/windows-zip-name-only",
-     "Windows CI: publish only NX2Apple-windows-x64.zip",
-     "Console: fix split Joy-Con P1/P2 ping-pong freeze and rotate sideways menu input (#740)",
-     "Merge pull request #767 from LNPANDY/v0lumehi/nxbuild-pin-0-2-0"
+     "Merge pull request #785 from LNPANDY/v0lumehi/release-1-2-1",
+     "Release notes v1.2.1: Steam Controller known issues as reviewed",
+     "Release notes v1.2.1: add the changes merged since, Qt launcher and #757 known issues",
+     "Merge remote-tracking branch 'origin/main' into v0lumehi/release-1-2-1",
+     "Merge pull request #731 from thehobbit85/codex/steam-controller-221",
+     "Merge main into the branch",
+     "Merge pull request #786 from LNPANDY/v0lumehi/cognate-120-fps",
+     "Shell strings test: list \"120 fps\" as a cognate in German, Swedish and Italian"
     ]
    }
   ]
@@ -9984,21 +9984,21 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-11-05T16:30:01Z",
+  "pushed_at": "2026-11-05T21:04:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-05T16:29:59Z",
+    "last_commit": "2026-11-05T21:04:04Z",
     "subjects": [
-     "Merge clock/float-time: poses no longer freeze on the fixed clock",
-     "Fixed clock: poses no longer freeze, the jump at game start was the cause",
-     "Merge pace/real60: the display link trace and what it found",
-     "DM_LINK_TRACE: why a frame misses a refresh at real 60",
-     "Merge rec/fg-model: Recommended counts what Frame Generation costs",
-     "Recommended: Frame Generation where the full picture fits with what it costs",
-     "Merge world/detail: the Environment Detail row",
-     "Environment Detail: the game's own decals, terrain and effect lights"
+     "Merge fix/upload-heap: a big crowd no longer crashes the game",
+     "Tests follow the memory layout; the row needs hardware ray tracing; a chat line stops failing the crypt picture",
+     "A big crowd no longer crashes the game: upload heap 400 -> 640 MiB",
+     "Ray tracing for the phone: half-resolution occlusion, hero only, and a playtest settings file",
+     "Phone: room for the ray-traced planes when DM_RT asks for them",
+     "Merge rt/option: first ray tracing, a Mac Video row off by default",
+     "Ray Tracing row on the Mac's Video tab, live and off by default",
+     "Ray tracing, first version behind a test switch: key-light shadows and ambient occlusion"
     ]
    }
   ]
@@ -10158,21 +10158,21 @@
   "branches": []
  },
  "Xc1Ym/LumaNX": {
-  "pushed_at": "2026-11-05T00:25:20Z",
+  "pushed_at": "2026-11-06T00:11:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-05T00:25:15Z",
+    "last_commit": "2026-11-06T00:11:23Z",
     "subjects": [
+     "chore: sync tested nxnative snapshot",
      "chore: sync tested nxnative snapshot",
      "chore: sync tested nxnative snapshot",
      "Merge pull request #36 from Xc1Ym/codex/fix-nxnative-metalfx-sync",
      "fix: support deferred MetalFX offsets in engine sync",
      "Merge pull request #35 from Xc1Ym/codex/fix-sync-and-controller-layouts",
      "fix: guard SDK 27 MetalFX APIs and persist controller layouts",
-     "chore: prepare LumaNX 0.3.0 release",
-     "Merge pull request #33 from Xc1Ym/codex/switch2-incremental-builds"
+     "chore: prepare LumaNX 0.3.0 release"
     ]
    }
   ]
@@ -11020,7 +11020,7 @@
   ]
  },
  "jim3788/d2r221": {
-  "pushed_at": "2026-10-31T00:10:52Z",
+  "pushed_at": "2026-11-06T00:58:45Z",
   "branches": [
    {
     "branch": "main",
@@ -11033,12 +11033,12 @@
   ]
  },
  "rhotov/d2r-mobile": {
-  "pushed_at": "2026-10-31T13:51:31Z",
+  "pushed_at": "2026-11-06T00:02:11Z",
   "branches": [
    {
     "branch": "archive/local-ios-fixes-20261031",
     "ahead": 1,
-    "behind": 102,
+    "behind": 124,
     "files": 21,
     "real_files": 21,
     "dirs": [
@@ -11057,7 +11057,7 @@
    {
     "branch": "fix/ios-ui-bugfixes-20261031",
     "ahead": 1,
-    "behind": 0,
+    "behind": 22,
     "files": 16,
     "real_files": 16,
     "dirs": [
@@ -11074,7 +11074,7 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-05T17:59:44Z",
+  "pushed_at": "2026-11-06T01:05:58Z",
   "branches": [
    {
     "branch": "master",
@@ -11428,21 +11428,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-05T19:03:52Z",
+  "pushed_at": "2026-11-05T23:42:23Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-05T15:53:59Z",
+    "last_commit": "2026-11-05T21:06:48Z",
     "subjects": [
+     "Merge pull request #57 from AksharDP/task/flight-dir-in-install",
+     "Create the flight folder inside the install folder, next to xc2.exe, rather than in its parent.",
      "Merge pull request #52 from AksharDP/task/version-0.1.11",
      "Version 0.1.11.",
      "Merge pull request #51 from AksharDP/task/issue-39-feedback-snap",
      "Read a target a draw samples in the same pass from a copy taken before the draw, as Maxwell's texture cache does; this stops the thin lines that flicker in XC2's cloud sea on AMD GPUs (issue 39).",
      "Merge pull request #45 from AksharDP/claude/jiggle-physics-60fps-499359",
-     "Merge remote-tracking branch 'origin/main' into claude/jiggle-physics-60fps-499359",
-     "Keep jiggle bones, hair and cloth from going flat and losing their bounce above 30 fps.",
-     "Merge pull request #44 from AksharDP/task/version-0.1.10"
+     "Merge remote-tracking branch 'origin/main' into claude/jiggle-physics-60fps-499359"
     ]
    }
   ]
@@ -11596,21 +11596,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-05T19:51:21Z",
+  "pushed_at": "2026-11-05T23:56:38Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-05T19:44:50Z",
+    "last_commit": "2026-11-05T23:53:58Z",
     "subjects": [
-     "Custom border colours only where the driver takes them without a format; VK_INCOMPLETE pipelines kept",
-     "Adreno: texture gathers nudged by 1/512 of a texel",
-     "Performance hints include the game's frame workers",
-     "dma-buf pools: a driver crash or failed submission sends the next start back to the old route",
-     "Mali: pools backed by dma-bufs from Android's heap, imported into the driver (#47, #53, #55)",
-     "Xclipse: a split pool mapping goes back to the driver piece by piece (#54)",
-     "Setup resumes after Android stops it; Mali tries the dma-buf route",
-     "Scarlet / Violet RomFS mods work from the Mods menu"
+     "BC layer: one small pipeline per kind and mode; a crash's log reaches Download/",
+     "GameActivity: android.os.Build spelled out (the exit-reason lines did not compile)",
+     "Turnip on older Android starts; Xclipse without export takes the dma-buf heap route; the log says why Android ended the last run",
+     "Frame capture for bug reports: one frame, pass by pass, as pictures and notes in a ZIP",
+     "Mali: a BC texture viewed as another BC kind gets the blocks converted for that kind",
+     "Save import takes saves from anywhere; the setup screen shows that a long step is alive",
+     "BC layer in the engine: BC textures converted on the GPU where it has no BC (Mali)",
+     "BC layer: BC1-BC7 decode and BC to ETC2 / EAC / B10G11R11 / ASTC transcode on the GPU (compute)"
     ]
    }
   ]
@@ -11716,5 +11716,45 @@
  "jeff92002/d2r-mobile": {
   "pushed_at": "2026-11-05T17:03:16Z",
   "branches": []
+ },
+ "Desm0nt/diablo3-port": {
+  "pushed_at": "2026-11-05T20:48:36Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-05T20:48:34Z",
+    "subjects": [
+     "d3 0.2.1: cosmetic item packs (30th Anniversary, Prime Evil Collection, Heritage of Arreat: AOC 100..102, entitlement markers NX64_AOC_*.data) mounted like the language packs; setup extracts them",
+     "App version from dm/android/<game>/VERSION (D3 0.2.0, versionCode 100200) instead of d2r-mobile's 2.0.1, as the DOOM port does; above 20001 so earlier D3 APKs upgrade in place",
+     "Install guides: the release APK names (Diablo3-Mobile-v<version>-arm64[-android10].apk) from the latest release page",
+     "docs: drop the 'repository is private' remark",
+     "README: Mali / PowerVR / Xclipse untested - open an issue and attach crash.txt and boot.log (EN / RU)",
+     "docs: what came over from the DOOM 2016 port - README (EN / RU) supported GPUs and Android versions, driver choice per GPU, other GPUs, ARMv8.0 CPUs, logs and crash reports (Download/Diablo3Mobile/logs/crash.txt); install guides (Android 10 APK, crash report for bug reports); THIRD_PARTY (Granite decode shaders, DOOM Mobile); docs/d3/DOOM_PORTS.md (DOOM commit -> D3 commit, switches, skipped items); journal entry",
+     "d3: idle-retire breadcrumbs: 'NVN idle retire: first submission retired by the translate thread' once, and a submission still unsignalled after 2 s of idle polling is named once (GPU busy or hung) - nothing per frame",
+     "d3: cheaper texture dirty checks (DM_DIRTY_BLOCKS, default 1, from DOOM 2016 8ca23ae): a per-64-page summary of the newest page generation, raised wherever D3's tracker raises a page generation (unprotect runs, GEN_STICKY after a failed protect), lets nvn_dirty_since skip clean 256 KB blocks; the same answers as the page scan (a summary is never below its pages), DM_DIRTY_BLOCKS=0 restores the plain scan. D3's block unprotect (DM_DIRTY_UNPROT_KB=64), VMA relief and sticky pages are unchanged"
+    ]
+   }
+  ]
+ },
+ "ShawndYang/AnimalDuo": {
+  "pushed_at": "2026-11-03T16:06:48Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-03T16:06:42Z",
+    "subjects": [
+     "docs: point source downloads to AnimalDuo 1.0",
+     "release: publish reviewed AnimalDuo 3.0.51 source",
+     "release: prepare reviewed AnimalDuo 3.0.51 publication",
+     "docs: align English README with the Chinese project introduction",
+     "docs: refresh Chinese AnimalDuo project introduction",
+     "Trim AnimalDuo to the complete Animal Crossing source profile",
+     "Add Simplified Chinese project and build documentation",
+     "Remove the completed one-time tag publication task"
+    ]
+   }
+  ]
  }
 }
