@@ -1857,21 +1857,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-06T17:45:05Z",
+  "pushed_at": "2026-11-07T00:56:55Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T17:44:49Z",
+    "last_commit": "2026-11-07T00:55:02Z",
     "subjects": [
-     "Sonic Superstars plays on the Mac from its provisional profile: the intro, the title, Story Mode and Bridge Island Act 1 at 60 fps with sound and no red line; stdalloc_cap gives StandardAllocator 1.5 GB of its 3.12 GB request, so Unity's own regions fit the iPhone's alias region (profile 01008F701C074000, note, games table row, gallery)",
-     "A damaged file in a NUP or a dump stops the build: each extracted image's .zs files must start with a zstd frame, as an NSP's files must pass the NCA's hashes; a contributor's Ocarina of Time NUP held three .zs textures beginning with zeros, which its background loader reloaded for ever (412% CPU, PR #1530)",
-     "Probes: DM_PROBE_EVERY=N counts every hit and prints every N-th, its # the true hit count (rates of a loop's branches without a line per hit) (from PR #1530)",
-     "A pool table takes again only the IDs a change reaches instead of being walked whole: registrations, memory pool changes, retired IDs at a new submission and storage takeovers each leave a note; Ocarina of Time's village walk builds its 33,025-entry table 16 times instead of over 4,000 (PR #1489)",
-     "An input stream that never opened answers every call: Ocarina of Time no longer crashes at the first note of the ocarina (PR #1527, issue #1525)",
-     "Fire Emblem: Three Houses' shader tables are split again with the current shader_split.py, so the NSP script builds it instead of stopping on a table difference: its 29 run-time GLSLC rows now name DATA1.bin entry 2391 as where each key first appears (was 2392); the keys and facts are unchanged, all 1,372 shaders build",
-     "Bound render targets outlive their command recordings: the queue keeps its own copy of the bound colour and depth descriptions at the end of each submission, so a game reusing completed command memory no longer turns them into command bytes; Rhythm Heaven Groove's frog stage no longer crashes in nvn_sparse_pool (PR #1502)",
-     "Graphics tests that include hle_nvn.c link again: a weak dm_vi_frame_queued stands in for hle_vi.c's frame history, which 51cc8bce made the present call"
+     "An HMMA outside a chain no longer overwrites the accumulator a chain holds: Ocarina of Time's dotted rows across fog and light are gone (chain d866f9700d78, issue #1537)",
+     "I2F and F2F apply their directed rounding (.RM / .RP / .RZ): the compiler's 32-bit integer division gets the reciprocal estimate it was written for (chain 23cc82c3c300, PR #1411)",
+     "Half pairs: a constant operand's swizzle, .F32, and HSETP2 / HSET2 .FTZ as Ampere reads them (chain 9776347fc0a7, PR #1410)",
+     "Ampere ALU: IADD3's carry predicates, PLOP3's second result, POPC / FLO immediates, LEA.SX32 and LEA's negated B as the hardware computes them (chain d8b43fd2152e, PR #1329, issue #1328)",
+     "ATOMS.INC / ATOMS.DEC are a compare-and-swap loop, and ATOMS.CAS gives the old value: shared-memory counters move as on Ampere (chain 1ddb83a9817a, PR #1413)",
+     "MUFU.SIN and MUFU.COS of a large number of turns keep their fraction before Metal's fast sin / cos: Donkey Kong Bananza's SSAO no longer loses its ambient occlusion in the lower right (chain 05b67a35081d, PR #1234)",
+     "LDSM is fenced by subgroup barriers: Ocarina of Time's Kokiri Forest no longer whites out through the game's own upscaler, whose LDSMs read rows other lanes had not finished storing (chain fbd67412d49d, PR #1376, issue #1537)",
+     "A jump table's bound is the compare a branch acts on: jump_offsets and jump_adr_offsets took the nearest cmp of the index, whatever followed it (issue #977, PR #1515)"
     ]
    }
   ]
@@ -1965,12 +1965,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-06T11:02:52Z",
+  "pushed_at": "2026-11-06T19:30:07Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T11:02:51Z",
+    "last_commit": "2026-11-06T19:30:05Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -7856,21 +7856,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-11-06T09:40:22Z",
+  "pushed_at": "2026-11-06T23:57:40Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T09:40:22Z",
+    "last_commit": "2026-11-06T23:57:39Z",
     "subjects": [
+     "chore: update published release index to v0.3.132",
+     "Fix iPad portrait framing and lower-screen controls",
+     "chore: update published release index to v0.3.129",
+     "Sync NX Metal pipeline and texture lifetime fixes",
      "chore: update published release index to v0.3.126",
      "Sync NX texture views, event storage, audio locks and RomFS reuse",
      "chore: update published release index to v0.3.125",
-     "Sync NX Metal pipeline prebuild worker selection",
-     "Enable automatic BC texture compatibility for ACNH",
-     "Adopt NX offline pipeline archive batching and fallback",
-     "chore: update published release index to v0.3.124",
-     "Release v0.3.124: restore exclusive iOS audio"
+     "Sync NX Metal pipeline prebuild worker selection"
     ]
    }
   ]
@@ -9468,21 +9468,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-06T19:28:33Z",
+  "pushed_at": "2026-11-07T00:10:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T16:41:01Z",
+    "last_commit": "2026-11-06T22:26:48Z",
     "subjects": [
-     "Merge pull request #815 from thehobbit85/codex/issue-814-windows-libhac",
-     "Merge pull request #821 from thehobbit85/codex/issue-710-mac-title-picker",
-     "Merge pull request #824 from thehobbit85/codex/issue-688-library-find",
-     "Merge pull request #825 from LNPANDY/docs/readme-windows-and-147-games",
-     "Merge pull request #830 from LNPANDY/v0lumehi/nxbuild-0.6.3",
-     "PR number in the release notes",
-     "Pin nxbuild 0.6.3: own front end without verdicts, launcher needs 0.6.3",
-     "Merge pull request #826 from LNPANDY/v0lumehi/release-1.2.3"
+     "Merge pull request #819 from thehobbit85/codex/issue-261-transfer-prompt",
+     "Merge pull request #853 from thehobbit85/codex/688-focus-running-build",
+     "Announce running setup disclosure state and wait for rendered controls",
+     "Merge main and preserve the library activity bar beside the artwork editor",
+     "Merge pull request #798 from Koshindai/feat/artwork-editor",
+     "Merge pull request #845 from thehobbit85/codex/issue-376-qt-multigame",
+     "Merge pull request #852 from thehobbit85/codex/issue-688-topbar-fit",
+     "Merge pull request #857 from thehobbit85/codex/issue-854-library-test-timeout"
     ]
    }
   ]
@@ -9749,7 +9749,7 @@
   ]
  },
  "augustxxx-debug/d2r-mobile-plus": {
-  "pushed_at": "2026-11-06T16:09:27Z",
+  "pushed_at": "2026-11-06T23:09:54Z",
   "branches": [
    {
     "branch": "android/v1.0.0",
@@ -9838,7 +9838,7 @@
    },
    {
     "branch": "main",
-    "ahead": 273,
+    "ahead": 274,
     "behind": 63,
     "files": 300,
     "real_files": 296,
@@ -9854,16 +9854,16 @@
      "dm/data",
      "dm/gfx"
     ],
-    "last_commit": "2026-11-06T15:33:39Z",
+    "last_commit": "2026-11-06T23:09:26Z",
     "subjects": [
+     "docs: 1.1.0 — Android download link and update manifest (docs/latest.json mirrors the official manifest)",
      "D2R Mobile Plus 1.1.0 (RC2.1) source release",
      "Restore canonical community site URL",
      "Use bare hostname for community site",
      "README: Android 1.0.2 (android-v1.0.2 = 493daa3) replaces 1.0.1 as the current Android release",
      "docs: latest.json build 1793336710 (= package ed52d61, 1.0.0-rc1.2)",
      "Merge fork main (README Android 1.0.1 first release, latest.json RC1.1) into RC1.2",
-     "CHANGELOG: RC1.2 entries for the on-device fixes (B057 / B064, B058, B062, B063)",
-     "fix(pad): difficulty row re-takes the controller focus after touch -> pad and hands it back by row name (RC1.2 B064 follow-up)"
+     "CHANGELOG: RC1.2 entries for the on-device fixes (B057 / B064, B058, B062, B063)"
     ]
    },
    {
@@ -9986,21 +9986,21 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-11-06T13:36:23Z",
+  "pushed_at": "2026-11-06T23:49:03Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T13:16:58Z",
+    "last_commit": "2026-11-06T23:48:56Z",
     "subjects": [
-     "Docs: what every chip gets for ray tracing",
-     "Merge pace/present: Apple's present method on the Mac, and ray tracing by chip",
-     "README: ray tracing, and the Mac's pictures retaken at the new Recommended",
-     "Scenarios: this M6 now starts with rays on, so Frame Drops starts at Lower",
-     "Recommended: ray tracing by chip, and Off / Light / Standard / Full on the row",
-     "Mac: frame generation presents without the display link, as Apple's guide does",
-     "Merge video/streamline: Temporal and Frame Generation always on, simpler Video page",
-     "Scenario native_2940_mac: reach Native through the ladder for chips with no Frame Generation"
+     "Merge README: clips at real speed in Safari",
+     "README: clips play at real speed in Safari",
+     "README: take the MP4 clips back out",
+     "Merge README: dark places lead the clips, at speed on phones",
+     "README: dark, damp places lead the clips, which now play at speed on phones",
+     "Merge README: the app icon's look, clips, dense device tables",
+     "README: the app icon's look, clips of the game in motion, dense device tables",
+     "README wording; t_svc_mem: either Map may win the race"
     ]
    }
   ]
@@ -10160,21 +10160,21 @@
   "branches": []
  },
  "Xc1Ym/LumaNX": {
-  "pushed_at": "2026-11-06T10:26:15Z",
+  "pushed_at": "2026-11-06T23:57:54Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T10:26:12Z",
+    "last_commit": "2026-11-06T23:57:51Z",
     "subjects": [
+     "chore: sync tested nxnative snapshot",
      "chore: prepare LumaNX 0.4.0 release",
      "Merge pull request #37 from Xc1Ym/codex/switch2-nup-runtime-20261106",
      "fix: harden NUP imports after app review",
      "feat: adapt Switch 2 NUP imports and resource images",
      "chore: sync tested nxnative snapshot",
      "chore: sync tested nxnative snapshot",
-     "chore: sync tested nxnative snapshot",
-     "Merge pull request #36 from Xc1Ym/codex/fix-nxnative-metalfx-sync"
+     "chore: sync tested nxnative snapshot"
     ]
    }
   ]
@@ -10672,21 +10672,21 @@
   ]
  },
  "Desm0nt/doom-port": {
-  "pushed_at": "2026-11-06T14:53:16Z",
+  "pushed_at": "2026-11-06T21:26:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T14:53:05Z",
+    "last_commit": "2026-11-06T21:26:36Z",
     "subjects": [
+     "v0.4.17: Samsung S23 crash fixes (thread exit on the host stack, AAudio stall recovery + AudioOut close), crash log stack-overflow/PAC, clip distances within the device limit, landscape aspect at start",
      "v0.4.16: real-time gameplay after loading a save (allowHzChange), Mali/PowerVR: BC6H GPU decode fix + self-test, AFBC-friendly images, STORE_OP_NONE/DONT_CARE, noload back on",
      "setup: point to the latest release page (the unversioned APK link no longer exists)",
      "v0.4.15: CPU placement by core capacity (weak big.LITTLE SoCs), tile-GPU render-pass tweaks for Mali/PowerVR",
      "v0.4.14: game folder on SD card / custom path (issue #11), real app version instead of d2r's 2.0.1",
      "v0.4.13: run on ARMv8.0 CPUs (issue #10): NVN thunks and HLE counters pick LSE or a v8.0 variant by HWCAP_ATOMICS at boot",
      "v0.4.12: Mali fixes (chunked uploads, GPU BC decode, setup ASTC/EAC overlay), verified custom drivers on non-Adreno, boot.log next to crash.txt",
-     "v0.4.11: touch pad no longer hidden by built-in pseudo gamepads (issue #5), Grouped / Separate layout editor toggle (issue #9)",
-     "Start screens name Download/DOOM Mobile, not d2r's Download/S2X/D2R Mobile (missing files, permission; 13 languages)"
+     "v0.4.11: touch pad no longer hidden by built-in pseudo gamepads (issue #5), Grouped / Separate layout editor toggle (issue #9)"
     ]
    }
   ]
@@ -11142,7 +11142,7 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-06T03:49:28Z",
+  "pushed_at": "2026-11-06T23:03:47Z",
   "branches": [
    {
     "branch": "master",
@@ -11496,21 +11496,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-06T17:35:28Z",
+  "pushed_at": "2026-11-07T00:23:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-05T21:06:48Z",
+    "last_commit": "2026-11-07T00:23:46Z",
     "subjects": [
+     "Update README to request AMD GPU testing contributions",
      "Merge pull request #57 from AksharDP/task/flight-dir-in-install",
      "Create the flight folder inside the install folder, next to xc2.exe, rather than in its parent.",
      "Merge pull request #52 from AksharDP/task/version-0.1.11",
      "Version 0.1.11.",
      "Merge pull request #51 from AksharDP/task/issue-39-feedback-snap",
      "Read a target a draw samples in the same pass from a copy taken before the draw, as Maxwell's texture cache does; this stops the thin lines that flicker in XC2's cloud sea on AMD GPUs (issue 39).",
-     "Merge pull request #45 from AksharDP/claude/jiggle-physics-60fps-499359",
-     "Merge remote-tracking branch 'origin/main' into claude/jiggle-physics-60fps-499359"
+     "Merge pull request #45 from AksharDP/claude/jiggle-physics-60fps-499359"
     ]
    }
   ]
@@ -11631,21 +11631,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-06T04:39:21Z",
+  "pushed_at": "2026-11-07T00:50:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-05T09:16:30Z",
+    "last_commit": "2026-11-06T19:03:48Z",
     "subjects": [
-     "fix(android): scope gpu feed default to elite chips",
-     "perf(runtime): reuse presented frame samples in the watchdog",
-     "fix(runtime): retain the missing control file directory watch",
-     "perf(runtime): make the logcat mirror opt-in",
-     "test(android): preserve 1.0.1 settings and pause contracts",
-     "feat(gfx): add opt-in vertex position precision",
-     "perf(runtime): wake virtual core waiters at host return",
-     "fix(runtime): leave thermal work absent from default launches"
+     "merge(bench): integrate uncapped throughput analysis mode",
+     "merge(test): integrate deterministic profiler cancellation fixture",
+     "test(gfx): isolate profiler lease cancellation from optional admission",
+     "fix(bench): compare uncapped throughput without dip classification",
+     "merge(gfx): integrate profiler retirement and disabled path cleanup",
+     "perf(gfx): remove disabled gpu profiler recorder bookkeeping",
+     "fix(gfx): account gpu profile query retirement at close",
+     "merge(runtime): retain narrow absent control file watches"
     ]
    }
   ]
@@ -11664,21 +11664,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-06T19:21:00Z",
+  "pushed_at": "2026-11-06T19:34:52Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T19:19:52Z",
+    "last_commit": "2026-11-06T19:34:51Z",
     "subjects": [
+     "The setup points Xclipse phones on Android 14+ to RADV for Xclipse (experimental)",
      "Every submission ends with a barrier that makes the GPU's writes visible to the CPU",
      "Mali white: tests players can switch from the menu; the GPU's limits in the log",
      "The dma-buf heap marker is dropped when the start without the route crashes too",
      "Saves on storage without xattrs; the heap marker after 20 s of real play; no PanVK hint for Valhall",
      "Float controls on Vulkan 1.1 drivers too (older Mali-G52 / G72 / G76)",
      "Float controls self-test: vkDestroyPipelineLayout through vkGetDeviceProcAddr (the build broke)",
-     "Float controls: a start-up self-test; the capture header says whether they are on",
-     "Mali white: ARM's driver gets every shader with SignedZeroInfNanPreserve"
+     "Float controls: a start-up self-test; the capture header says whether they are on"
     ]
    }
   ]
@@ -11786,21 +11786,21 @@
   "branches": []
  },
  "Desm0nt/diablo3-port": {
-  "pushed_at": "2026-11-06T15:08:41Z",
+  "pushed_at": "2026-11-06T20:43:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T14:47:41Z",
+    "last_commit": "2026-11-06T20:36:11Z",
     "subjects": [
+     "Shader translation runs without SPIRV-Tools as setup promises: no spirv-opt -> py_trim (the NDK one never had --trim-capabilities, same output), no spirv-val -> the per-shader check is skipped; was FileNotFoundError at stage 'translating to SPIR-V bundles' on PCs without an Android NDK (issue #2)",
      "VERSION 0.2.4-debug: vertex input retype off Adreno",
      "Vertex inputs take their attribute format's scalar type off Adreno (DM_GFX_VTX_RETYPE): a float input over UINT/SINT data (or the reverse) is declared with the format's type and every load is bitcast back, so the shader sees the raw bits as on the Switch; Mali converts the value to the declared type, which broke the UVs of D3's full-screen passes (Mali-G57 0.2.3-debug: black level under the HUD); module variants per shader and retype code, refused rewrites keep the base module; default on off Adreno, Adreno unchanged",
      "VERSION 0.2.3-debug: self-test, open-pass depth reads end the pass off Adreno, NVN GVAL pass values with the auto diagnostics",
      "NVN GVAL pass values off Adreno: on each pass-profiled frame, right after every render pass, a 64-thread compute probe (xbg_pass_values.comp) reads a 32x18 texel grid of each color and depth attachment (exact level/layer) and logs nan/inf/zero/neg counts and per-channel mean/max (depth min/max/mean/at0/at1) with the image serial after the GPASS lines; kind=reads lists sampled render-target serials per pass, kind=present the shown image; read-only (barriers only, no layout change, no extra pass splits), int/MSAA/3D skipped with a reason; DM_GFX_PASS_VALUES=0 off, default on with DM_GFX_PASS_PROF",
      "0.2.3: off Adreno an open-pass depth attachment read by a shader ends the pass (DM_GFX_DEPTH_FEEDBACK default 0 off Adreno; feedback loop undefined in Vulkan, Mali-G57 black level did ~12 a frame); VERSION 0.2.3",
      "GPU self-test of the five d3-perf switches off Adreno: at engine init, before the first frame, one short device test (in-pass occlusion reports, load-op clears for 1.0/LEQUAL and reverse-Z 0.0/GEQUAL, NaN-saturate, float-to-int without trunc, canonical LDC via the engine's own rewrites) turns off each one that fails; Adreno unchanged with no checks; DM_GFX_SELFTEST=1/0, DM_GFX_SELFTEST_FORCE_FAIL, explicit DM_GFX_* env wins; one [selftest] line in boot.log; occlusion result copies with WAIT_BIT off Adreno (DM_GFX_QUERY_WAIT)",
-     "0.2.2-debug: the build with the safe automatic diagnostics on non-Adreno GPUs; VERSION may carry a suffix (versionCode from the numeric part)",
-     "Fix: boot crash on Mali in 0.2.1 - the automatic diagnostics turned on DM_NVN_TRACE, whose wrapper takes the slot from x16 (set only by guest thunks) and crashed on NVN functions the host calls through a slot pointer; auto diagnostics now NVN calls of 120 frames + pass profile only (GPU crumbs off until checked on D3)"
+     "0.2.2-debug: the build with the safe automatic diagnostics on non-Adreno GPUs; VERSION may carry a suffix (versionCode from the numeric part)"
     ]
    }
   ]
