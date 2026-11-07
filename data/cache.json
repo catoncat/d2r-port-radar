@@ -259,7 +259,7 @@
   ]
  },
  "dormonbear/d2r-mobile": {
-  "pushed_at": "2026-11-04T06:43:58Z",
+  "pushed_at": "2026-11-07T05:21:14Z",
   "branches": [
    {
     "branch": "feat/webdav-save-sync",
@@ -313,6 +313,20 @@
     "subjects": [
      "fix(ui): preserve immediate loading-screen lift reconciliation",
      "Fix minimap lift accumulation during layout rebuilds"
+    ]
+   },
+   {
+    "branch": "fix/nvn-upload-block-reuse",
+    "ahead": 1,
+    "behind": 0,
+    "files": 1,
+    "real_files": 1,
+    "dirs": [
+     "dm/gfx"
+    ],
+    "last_commit": "2026-11-07T05:21:11Z",
+    "subjects": [
+     "Metal upload staging: reuse the 32 MB blocks instead of allocating one per flush"
     ]
    },
    {
@@ -1656,7 +1670,7 @@
   ]
  },
  "wukongtime/d2r-mobile-build-backup": {
-  "pushed_at": "2026-11-02T02:02:14Z",
+  "pushed_at": "2026-11-07T01:59:58Z",
   "branches": [
    {
     "branch": "main",
@@ -1757,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-06T06:07:13Z",
+  "pushed_at": "2026-11-07T05:38:31Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T06:07:12Z",
+    "last_commit": "2026-11-07T05:38:29Z",
     "subjects": [
+     "radar 2026-11-07",
      "radar 2026-11-06",
      "radar 2026-11-05",
      "radar 2026-11-04",
      "radar 2026-11-03",
      "radar 2026-11-02",
      "radar 2026-11-01",
-     "radar 2026-10-31",
-     "radar 2026-10-30"
+     "radar 2026-10-31"
     ]
    }
   ]
@@ -1857,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-07T00:56:55Z",
+  "pushed_at": "2026-11-07T08:08:37Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T00:55:02Z",
+    "last_commit": "2026-11-07T08:08:20Z",
     "subjects": [
-     "An HMMA outside a chain no longer overwrites the accumulator a chain holds: Ocarina of Time's dotted rows across fog and light are gone (chain d866f9700d78, issue #1537)",
-     "I2F and F2F apply their directed rounding (.RM / .RP / .RZ): the compiler's 32-bit integer division gets the reciprocal estimate it was written for (chain 23cc82c3c300, PR #1411)",
-     "Half pairs: a constant operand's swizzle, .F32, and HSETP2 / HSET2 .FTZ as Ampere reads them (chain 9776347fc0a7, PR #1410)",
-     "Ampere ALU: IADD3's carry predicates, PLOP3's second result, POPC / FLO immediates, LEA.SX32 and LEA's negated B as the hardware computes them (chain d8b43fd2152e, PR #1329, issue #1328)",
-     "ATOMS.INC / ATOMS.DEC are a compare-and-swap loop, and ATOMS.CAS gives the old value: shared-memory counters move as on Ampere (chain 1ddb83a9817a, PR #1413)",
-     "MUFU.SIN and MUFU.COS of a large number of turns keep their fraction before Metal's fast sin / cos: Donkey Kong Bananza's SSAO no longer loses its ambient occlusion in the lower right (chain 05b67a35081d, PR #1234)",
-     "LDSM is fenced by subgroup barriers: Ocarina of Time's Kokiri Forest no longer whites out through the game's own upscaler, whose LDSMs read rows other lanes had not finished storing (chain fbd67412d49d, PR #1376, issue #1537)",
-     "A jump table's bound is the compare a branch acts on: jump_offsets and jump_adr_offsets took the nearest cmp of the index, whatever followed it (issue #977, PR #1515)"
+     "Mesh outputs are declared as wide as their pixel shaders read: Ocarina of Time's foliage mesh 626fbf48041cb82b fits a Metal mesh's 32 KB and its pipeline builds (chain 3ee493b2c3a4)",
+     "Writes beside a registered texture in a shared host page no longer make it CPU-written: The Great Ace Attorney Chronicles' window textures and render targets were all marked at the first tex_dirty_upload poll, and the present thread then re-uploaded one (abort about a second into boot, up_begin called on thread 'nvn-present')",
+     "Press a button to join (DM_PAD_PRESS_TO_JOIN): a controller becomes a player at its first button press, the lowest player free, on the Mac and on iOS (PR #1596)",
+     "Mesh shaders get the outputs their paired pixel shaders read but they do not write, as (0,0,0,1) as a vertex shader does: Ocarina of Time's foliage point meshes build their pipelines again (chain 5616dbb62ec3, from PR #1590)",
+     "Mac: identical pads that GameController lists fewer of than IOKit has are each a player of their own, two Pro Controllers over USB among them (PR #1595)",
+     "Resolution families take every GPU-written compressible 2D image, not only COMPRESSIBLE|IMAGE: Ocarina of Time's dynamic-resolution depth buffer (COMPRESSIBLE alone, in a virtual pool) kept 15-16 live sizes at one offset as separate 14.5 MB Metal textures (PR #1557)",
+     "An encoder's end barrier flushes to the device only; the start barriers carry the resource-alias flush: Ocarina of Time's main submission's command allocators no longer grow to 36-80 MB each (PR #1556)",
+     "Ocarina of Time: a prewarm seed list, so a first start prepares its pipelines before the first frame instead of building them at the title and in play (PRs #1493, #1488)"
     ]
    }
   ]
@@ -1937,21 +1951,21 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-06T19:23:27Z",
+  "pushed_at": "2026-11-07T05:56:32Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T19:23:26Z",
+    "last_commit": "2026-11-07T05:56:32Z",
     "subjects": [
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
+     "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（197 个项目）",
-     "chore: 自动同步 Star 地图（197 个项目）",
-     "chore: 自动同步 Star 地图（195 个项目）"
+     "chore: 自动同步 Star 地图（197 个项目）"
     ]
    }
   ]
@@ -1965,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-06T19:30:07Z",
+  "pushed_at": "2026-11-07T00:58:40Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T19:30:05Z",
+    "last_commit": "2026-11-07T00:58:39Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -7856,21 +7870,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-11-06T23:57:40Z",
+  "pushed_at": "2026-11-07T08:18:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T23:57:39Z",
+    "last_commit": "2026-11-07T08:18:47Z",
     "subjects": [
+     "chore: update published release index to v0.3.133",
+     "Sync NX texture view lifetime and uniform lookup fixes",
      "chore: update published release index to v0.3.132",
      "Fix iPad portrait framing and lower-screen controls",
      "chore: update published release index to v0.3.129",
      "Sync NX Metal pipeline and texture lifetime fixes",
      "chore: update published release index to v0.3.126",
-     "Sync NX texture views, event storage, audio locks and RomFS reuse",
-     "chore: update published release index to v0.3.125",
-     "Sync NX Metal pipeline prebuild worker selection"
+     "Sync NX texture views, event storage, audio locks and RomFS reuse"
     ]
    }
   ]
@@ -9468,21 +9482,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-07T00:10:25Z",
+  "pushed_at": "2026-11-07T10:16:31Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T22:26:48Z",
+    "last_commit": "2026-11-07T09:00:13Z",
     "subjects": [
-     "Merge pull request #819 from thehobbit85/codex/issue-261-transfer-prompt",
-     "Merge pull request #853 from thehobbit85/codex/688-focus-running-build",
-     "Announce running setup disclosure state and wait for rendered controls",
-     "Merge main and preserve the library activity bar beside the artwork editor",
-     "Merge pull request #798 from Koshindai/feat/artwork-editor",
-     "Merge pull request #845 from thehobbit85/codex/issue-376-qt-multigame",
-     "Merge pull request #852 from thehobbit85/codex/issue-688-topbar-fit",
-     "Merge pull request #857 from thehobbit85/codex/issue-854-library-test-timeout"
+     "Merge pull request #888 from class-undefined/fix/a15-decoded-bc-uploads-views",
+     "Merge pull request #890 from Dino0005/l10n/italian-controller-buttons",
+     "it: review notes of #789 on the controller texts",
+     "Merge pull request #882 from Stellarznith/fix/win-shared-framework-symbols",
+     "patches: fix CPU-decoded BC uploads and format views",
+     "Fix IPA reveal fallbacks by exported app kind",
+     "Merge pull request #881 from Haseenesss/fix/873-translocated-update",
+     "Merge pull request #790 from Haseenesss/feat/708-reuse-romfs"
     ]
    }
   ]
@@ -9681,22 +9695,23 @@
   ]
  },
  "doctormajid7-ux/d2r-mobile-french": {
-  "pushed_at": "2026-10-24T17:37:08Z",
+  "pushed_at": "2026-11-07T01:42:35Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 1,
+    "ahead": 2,
     "behind": 0,
-    "files": 14,
-    "real_files": 10,
+    "files": 21,
+    "real_files": 15,
     "dirs": [
      "dm/android",
      "dm/host",
      "dm/i18n",
      "dm/ios"
     ],
-    "last_commit": "2026-10-24T17:36:22Z",
+    "last_commit": "2026-11-07T01:42:24Z",
     "subjects": [
+     "Merge remote-tracking branch 'upstream/main'",
      "French: full game text, a sixth language in the custom page, French voices when the voice chunk is present, and README.fr.md"
     ]
    }
@@ -9986,21 +10001,21 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-11-06T23:49:03Z",
+  "pushed_at": "2026-11-07T05:22:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T23:48:56Z",
+    "last_commit": "2026-11-07T05:22:10Z",
     "subjects": [
-     "Merge README: clips at real speed in Safari",
-     "README: clips play at real speed in Safari",
-     "README: take the MP4 clips back out",
-     "Merge README: dark places lead the clips, at speed on phones",
-     "README: dark, damp places lead the clips, which now play at speed on phones",
-     "Merge README: the app icon's look, clips, dense device tables",
-     "README: the app icon's look, clips of the game in motion, dense device tables",
-     "README wording; t_svc_mem: either Map may win the race"
+     "Rays: every trace first, one barrier, then the blurs; the rays' blocks timed under DM_NVN_PASSGPU",
+     "Bench: a Cathedral route, and the UB line counts argument-buffer encodes",
+     "README: back to 'not yet' for ray tracing on iPhone and iPad",
+     "Merge README: ray tracing is Mac only",
+     "README: ray tracing is a Mac feature, not a pending iPhone one",
+     "Merge README: the Mac grid by what the chip decides",
+     "README: the Mac grid says what the chip decides, not what screen I assumed",
+     "Merge docs review"
     ]
    }
   ]
@@ -10345,12 +10360,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-11-06T09:56:17Z",
+  "pushed_at": "2026-11-07T09:42:45Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T09:56:15Z",
+    "last_commit": "2026-11-07T09:42:44Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10436,21 +10451,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-04T14:03:45Z",
+  "pushed_at": "2026-11-07T03:19:08Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-04T14:03:35Z",
+    "last_commit": "2026-11-07T03:19:06Z",
     "subjects": [
+     "Donations: Ko-fi and Buy Me a Coffee next to GitHub Sponsors",
      "0.3.1-beta (versionCode 35)",
      "Vulkan: the shared-file game memory tries a dma-buf where the opaque file takes no memory the CPU can use; the probe tests both (#234)",
      "Crash handler: the game's code reading the null page gets zero and goes on, in both modes (#247 #235 #241)",
      "Native code: the tag check's guard takes any target outside the game's memory, -1 too (#247)",
      "Unlocked aspect: the weather forecast goes out with the minimap's group again - the prompts' row kept for panes below -316.5 (#243)",
      "Tests: test_nvn_lifetime links and runs again (#245)",
-     "Motion: the phone's sensors like the Switch's screen, an option (#211 #247); the log says why the shared-file memory isn't used (#249 #234)",
-     "Log: the memory mappings split by whose - the game's memory, the GPU driver's, the most frequent others (#249)"
+     "Motion: the phone's sensors like the Switch's screen, an option (#211 #247); the log says why the shared-file memory isn't used (#249 #234)"
     ]
    }
   ]
@@ -10652,7 +10667,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-06T18:30:07Z",
+  "pushed_at": "2026-11-07T09:52:00Z",
   "branches": [
    {
     "branch": "main",
@@ -10672,21 +10687,21 @@
   ]
  },
  "Desm0nt/doom-port": {
-  "pushed_at": "2026-11-06T21:26:47Z",
+  "pushed_at": "2026-11-07T05:41:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T21:26:36Z",
+    "last_commit": "2026-11-07T05:41:44Z",
     "subjects": [
+     "v0.4.18-test1 (pre-release): dirty tracker re-maps fragmented zero-copy chunks in place, ENOMEM fallback and honest crash instead of a fault loop, memory map counts in the perf line and crash.txt (refs #21); experimental bones-via-SSBO for the stock Adreno 740 driver, off by default",
      "v0.4.17: Samsung S23 crash fixes (thread exit on the host stack, AAudio stall recovery + AudioOut close), crash log stack-overflow/PAC, clip distances within the device limit, landscape aspect at start",
      "v0.4.16: real-time gameplay after loading a save (allowHzChange), Mali/PowerVR: BC6H GPU decode fix + self-test, AFBC-friendly images, STORE_OP_NONE/DONT_CARE, noload back on",
      "setup: point to the latest release page (the unversioned APK link no longer exists)",
      "v0.4.15: CPU placement by core capacity (weak big.LITTLE SoCs), tile-GPU render-pass tweaks for Mali/PowerVR",
      "v0.4.14: game folder on SD card / custom path (issue #11), real app version instead of d2r's 2.0.1",
      "v0.4.13: run on ARMv8.0 CPUs (issue #10): NVN thunks and HLE counters pick LSE or a v8.0 variant by HWCAP_ATOMICS at boot",
-     "v0.4.12: Mali fixes (chunked uploads, GPU BC decode, setup ASTC/EAC overlay), verified custom drivers on non-Adreno, boot.log next to crash.txt",
-     "v0.4.11: touch pad no longer hidden by built-in pseudo gamepads (issue #5), Grouped / Separate layout editor toggle (issue #9)"
+     "v0.4.12: Mali fixes (chunked uploads, GPU BC decode, setup ASTC/EAC overlay), verified custom drivers on non-Adreno, boot.log next to crash.txt"
     ]
    }
   ]
@@ -11684,30 +11699,31 @@
   ]
  },
  "gosail/d2r-mobile": {
-  "pushed_at": "2026-11-06T14:00:00Z",
+  "pushed_at": "2026-11-07T08:54:01Z",
   "branches": [
    {
     "branch": "feat/pc-mouse-controls-parity-20261105",
-    "ahead": 286,
+    "ahead": 382,
     "behind": 0,
-    "files": 58,
-    "real_files": 55,
+    "files": 65,
+    "real_files": 62,
     "dirs": [
      "dm/android",
      "dm/host",
+     "dm/i18n",
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-11-06T13:59:59Z",
+    "last_commit": "2026-11-07T08:54:00Z",
     "subjects": [
-     "fix: keep second-set key phases within unsigned char range",
-     "docs: record native six-slot mapping and second-set timing evidence",
-     "fix: match original six controller skill slots and ZL-before-cast timing",
-     "docs: clarify runtime-only keyboard bridge on macOS",
-     "test: include native .key codec in runtime bridge regression",
-     "test/docs: enforce no private keyboard profile and retain native controller bridge",
-     "ui: use native .key editor without legacy keyboard sidecar",
-     "refactor: use original .key/.ctl without private keyboard sidecar"
+     "docs(controls): single native action list with independent .key/.ctl and immutable builder bundle ID",
+     "test(controls): assert native KeyBindingPanel retains .ctl buttons beside independent .key columns",
+     "test(controls): enforce one game-native Controls editor rather than OS overlays",
+     "fix(native-controls): include original keyfile/profile declarations for new input bridge",
+     "fix(native-controls): include original keyfile/profile declarations for new input bridge",
+     "fix(mac-controls): disable separate AppKit editor overlay in favor of native controls",
+     "fix(ios-controls): use original guest controls tab; disable extra UIKit overlay",
+     "fix(android-controls): retire external two-device overlay; use native KeyBindingMenuHD"
     ]
    },
    {
@@ -11806,21 +11822,21 @@
   ]
  },
  "ShawndYang/AnimalDuo": {
-  "pushed_at": "2026-11-06T06:43:41Z",
+  "pushed_at": "2026-11-07T07:40:37Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T06:43:15Z",
+    "last_commit": "2026-11-07T07:33:43Z",
     "subjects": [
+     "release: publish AnimalDuo 1.2 source (build 3.0.68)",
      "fix: restore AnimalDuo hosted build and test checks",
      "release: publish AnimalDuo 1.1 source (build 3.0.59)",
      "docs: point source downloads to AnimalDuo 1.0",
      "release: publish reviewed AnimalDuo 3.0.51 source",
      "release: prepare reviewed AnimalDuo 3.0.51 publication",
      "docs: align English README with the Chinese project introduction",
-     "docs: refresh Chinese AnimalDuo project introduction",
-     "Trim AnimalDuo to the complete Animal Crossing source profile"
+     "docs: refresh Chinese AnimalDuo project introduction"
     ]
    }
   ]
@@ -11854,6 +11870,40 @@
      "Find uv in its default install folder when it is not on the PATH",
      "Ship hostmem.py with the release and prove the lift from the release folder",
      "Skip the shader probe without the TotK census"
+    ]
+   }
+  ]
+ },
+ "terry7seven/d2r-mobile": {
+  "pushed_at": "2026-11-07T02:54:40Z",
+  "branches": []
+ },
+ "xyzl1789/d2r-mobile": {
+  "pushed_at": "2026-11-07T07:54:18Z",
+  "branches": []
+ },
+ "myzzzqqwa/private4": {
+  "pushed_at": "2026-11-07T06:45:53Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-07T06:39:14Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "phung11272-cell/Diablo": {
+  "pushed_at": "2026-11-07T01:22:45Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-07T01:22:45Z",
+    "subjects": [
+     "Initial commit"
     ]
    }
   ]
