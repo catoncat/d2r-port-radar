@@ -1951,12 +1951,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-07T12:58:08Z",
+  "pushed_at": "2026-11-07T21:48:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T12:58:07Z",
+    "last_commit": "2026-11-07T21:48:15Z",
     "subjects": [
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
@@ -1965,7 +1965,7 @@
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
-     "chore: 自动同步 Star 地图（197 个项目）"
+     "chore: 自动同步 Star 地图（198 个项目）"
     ]
    }
   ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-07T10:22:48Z",
+  "pushed_at": "2026-11-07T17:46:28Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T10:22:47Z",
+    "last_commit": "2026-11-07T17:46:27Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -7870,21 +7870,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-11-07T08:18:47Z",
+  "pushed_at": "2026-11-07T20:15:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T08:18:47Z",
+    "last_commit": "2026-11-07T20:15:57Z",
     "subjects": [
+     "chore: update published release index to v0.3.134",
+     "Sync NX wait ownership, frame pacing and tool fixes",
      "chore: update published release index to v0.3.133",
      "Sync NX texture view lifetime and uniform lookup fixes",
      "chore: update published release index to v0.3.132",
      "Fix iPad portrait framing and lower-screen controls",
      "chore: update published release index to v0.3.129",
-     "Sync NX Metal pipeline and texture lifetime fixes",
-     "chore: update published release index to v0.3.126",
-     "Sync NX texture views, event storage, audio locks and RomFS reuse"
+     "Sync NX Metal pipeline and texture lifetime fixes"
     ]
    }
   ]
@@ -8991,14 +8991,14 @@
   "branches": []
  },
  "seeyajack/d2r-mobile": {
-  "pushed_at": "2026-11-07T13:44:28Z",
+  "pushed_at": "2026-11-07T19:19:03Z",
   "branches": [
    {
     "branch": "harmony",
-    "ahead": 461,
+    "ahead": 465,
     "behind": 22,
-    "files": 269,
-    "real_files": 265,
+    "files": 273,
+    "real_files": 269,
     "dirs": [
      "NOTICE.md",
      "PORTABLE.md",
@@ -9011,16 +9011,16 @@
      "dm/ohos",
      "dm/third_party"
     ],
-    "last_commit": "2026-11-07T13:01:21Z",
+    "last_commit": "2026-11-07T19:17:03Z",
     "subjects": [
+     "gfx: np809-810 TIC0 绑定语义修复 + 闪退修复。导出器 decode_tex 不再把 HandleIndex 当池 id(np755 证伪),改产出 handle_decode.indirect(tbi/sbi/word/type);pack_game_shaders 用 flags bit24 标记、sampler_slot 打包 word|index|type(XGS1 结构不变,旧包行为零变化);引擎 descriptors 按 Ryujinx ReadPackedId 从 guest cbuf 读句柄、失败回退并打日志,含16槽UBO探测+按stage缓存与 DM_TEX_CBUF_INDEX 开关。全量重出 15662/15662,42528 个纹理绑定 100% bit24,同导出器 A/B SPIR-V 3/3 相同。两轮纯日志确认轮:np809 闪退=FATAL Sampler slot out of range(回退分支把打包 sampler_slot 当 NVN 槽,已修条件为 !(flags&bit24));np810 不闪退、门0-3 全PASS、收轮0残留,但 cbuf 命中0/回退12(boundUBO=2,packed=0)=>guest UBO 假设证伪,槽表 s8 有效=>立即数即 TIC 槽号,下一步按日报 §21 方案B 改绑 state.tex[ns][word]",
+     "app: np807 重建并入库两份孤本源——np806 镜像删除误删 front_ohos_min.c/botw_d2r_feature_stubs.c(np565 起 CMake 引用却从未入库)。依据 3 份幸存 .o 的 DWARF(函数清单/签名/decl_line/局部变量)+完整反汇编+compile_commands.json 精确编译命令+旧构建日志源码行(37/47 行 pthread_getattr_np 警告与 DWARF 吻合)重建;tools/verify_orphan_rebuild.py 判据:重编后 11+43 个 .text 节逐字节一致、重定位一致、符号表一致(行为零变化),front 0 warning/stubs 37/47 两条 implicit 警告与原版一致。两文件是 OHOS 构建必备项,真正闭合孤本缺口",
+     "app: np803 清理 v3——对账式+rename 熔断。np792 学费:主线程 unlinkSync 15,732 个=20s⇒THREAD_BLOCK_6S 看门狗杀进程(里程碑轮闪退根因,铁律47 unlink 红线);np800 日志实证清理本身成功(spv=1 ovr=15732 全清)但主线程冻结被杀。v3:随包名单外才算残留;>200 个 rename 整目录(单次元数据操作瞬时,旧目录留沙箱成孤儿=永不 purge 精神);≤200 逐个 unlink;spv-override 非空即 rename;正常随包态零开销;自报行 np803 清理: rename=N kill=N mk=N",
+     "app: np792 启动清理 v2——清空两条覆盖通道(spv-override/*.spv + shaders-override-b/*)后再解 rawfile,覆盖态每启动收敛到随包态(铁律23 结构性根治);np790 定谳 186 词手写 ecb4242e 双通道污染(np789 ovr=1 346 键含 186 词版,skip-if-exists 使换包失效),只清其一不够;清理带自报行(np792 清理: spv=N ovr=N mk=N)作轮次正面读数;odir 用同一变量,改名自动跟随",
      "app: np789 一次性沙箱清理——启动时删 np786-789 会话误留的 spv-override/*.spv 与缓存禁用 marker(gfx-no-descmemo/gfx-no-imgcache,关缓存饿死提交路径;重装不删=铁律23 残副本);try/catch 包裹正常路径零行为变化。背景:np786-789 会话仪器在游戏线程日志量违反铁律32(标题相位回归,黑底红字消失),运行时已回退 np759 基线(739726e);会话仪器存 stash 'np786 session instruments' 与悬空提交 418fd7e/8b7fa5d,判因结果出来前不捞回",
      "gfx: np759 池双缓冲对账仪器——①xbg_register_texture_now 打 1600×900 类 id→serial 迁移(【池迁移】) ②【2791合成】行尾带 三维:g_probe_3d_serial(拷贝源 vs 场景真身同刻对照)。读数:池**零迁移**(id 配对固定,场景目标每帧滚动分配 13838→13840→13844,拷贝采固定对 13836/13838);3D目标探针读最新 serial=时机错位读到刚清空的下一帧目标(黑),np758b 的绿色=时机对齐。⇒ 陈旧黑 = 帧图(resolve/配对)契约级缺口,需帧图 RE(11-07 文件 §7④ 已记)",
      "gfx/app/host: np757-758 三件——①改写器接管表建 **1.6.0 载荷桶**(moduleid 8e9978d5…;此前 CUTS 只有 1.0.0 桶,鸿蒙 1.6.0 从未应用过地址级接管,cuts.tsv 一直只有头),首条=svc #0x90 Atk 每帧更新接管(main+0x1835694 bl 0x1c81da0,hle_audio.c svc_atk_update,DM_ATK_UPDATE_SKIP 门控;指纹受控更新);②hle_tact svc_host_call 放行 BotW 专属号(0x90 只由改写器打给 BotW 产品,无碰撞面;此前 !dm_game_is_d2r() 把 0x80+ 全挡掉);③覆盖目录换名通道(-b)。真机判读:np757d 接管命中自报 ✓ 但 **skip 连初始化一起废=自造冻结**(铁律9学费,回退);np757g 实锤 **EVERY_MS=10000 探针 cadence=开机冻结元凶**(30s 则跑通世界相位,39k GPASS——铁律21 仪器动的手再验一次);np758b 拷贝 pass 真值(rt==cls0 gate 命中,rt=13568 shader=d14b1c38):**拷贝采槽 0=13390,而场景真身=13396(3D 目标,绿色 98.5%)⇒ 采到双缓冲陈旧一侧,np753 的 id→serial 解析滞后坐实,与 np727j 池键随 off 移动旧案同族**。剩余修复=池双缓冲解析(ping-pong 登记/绑定对账仪器)+audren 反馈模拟(死亡根),另 attn:10s 探针 cadence 禁用",
-     "gfx/app: np752-756 画面与稳定性四件——①引擎 shader 加载加 **覆盖目录**(DM_SHADER_OVERRIDE_DIR 里同名 .xgs 优先,ovr=%d 进加载日志):修正包与陈旧包常同尺寸(绑定表只改值),沙箱 skip-if-exists 吞换包,np754b 实测 27k 次 unlinkSync=30 分钟级冻死进程后改新目录零 unlink;②shaders_extra 增量解压改解到覆盖目录+尺寸比对覆盖;③【2791合成】槽表加每槽 gw、cls0 登记只认 slot 0(按面积取最大被 s6/s8 深度缓冲顶掉,np754 实证)、日志带 rt、gate 扩到 rt==cls0(拷贝 pass 真值);④hle_thread 死亡转储对 wkind=0 且 addr≠0 的线程也解码锁字+打印对象体(主线程用户态自旋时 wkind=0,持锁者不可见,np752 实证)。真机判读:np752 旁证·3D目标=绿色场景内容(白模假设撤销);np755 全量修正包部署后合成趟 slot=8 采到 1x1 黑图 ⇒ **Ryujinx handle 8/10 是翻译器资源编号不是游戏单元号,旧导出器 slot=0 才是对的**(np738_full_out 的绑定表改写为错,不可部署);np756 冻结现场=主线程等 Atk(音频)区条件变量(main+0x1c8xxxx,经作业系统) ⇒ 2.9 分钟死亡=音频初始化死等链(帮 purview:np467 假音频时钟只覆盖 SystemEvent 等待,更深一级的 condvar 等待未覆盖)",
-     "gfx/app: np751 仪器三件——①【2791合成】槽表每槽 gw + 合成大源(全表最大面积)运行期登记 ②present_probe_other_serials 抽 helper、旁证行补 gw/lw、登记大源同刻读回(env 列表未设也读)③env DM_PRESENT_PROBE=1600(present 计数≈22min,历史各轮从未触发过)→ DM_PRESENT_PROBE_EVERY_MS=30000(16 次/30s)。真机读数:大源 13872 gw=1 但内容黑(非黑 0%,lw 涨到 1090万);2791 有内容(字节均值 255/207/175,⚠ fmt=0x3d RGB10A2 读回按 RGBA8 解读存疑);窗口唯 blit(直绘窗口 1028 pass 全部 FS=ecb4242e/每 pass 1 draw/clear 只打 2791);合成采样 1600×900(s0=13872 每帧 1draw3vert 黑;s6/s8=13692 全日志 0 pass 写过)≠ 3D 大 pass 目标(13700/13718,draws≥1000 最大 26,272)。仪器三盲区入账:槽表按源去重+16 上限 ⇒ 22:58:36 后零观测;大源登记严格大于 ⇒ 同尺寸第二张永不顶替;旁证读回不按 fmt 解读。0 CRASH;force-stop+0 残留",
-     "xlate: np736/737 优化器交换序补丁——EliminateMultiplyByFragmentCoordW 只匹配 attrMul*reciprocal、不匹配 commutative 形 (1/w)*(x*w)(BotW blit FS 正是后者),交换律缺失让 w 乘除对留在 4,905 个 FS;先换序再走原有严格检查,非透视乘除不会误折叠。np737 A/B 同条件定谳(FDiv1/FMul4→0/0);np738 全量重出 15,661/15,662 变 242 包。⚠ np739 真机证伪其与米白的因果(A3 无效),保留作通用修复",
-     "gfx: np731b/732 仪器收口——①窗口趟绑定 dump 升级为全成员偏移（SPIR-V 反汇编：set0 binding0 UBO 1392B 成员 0/16/144/160/176/192/1360/1376 与 binding6 64KB storage 同缓冲；旧 (stage,index) 键让两者互相覆盖）+ 键加 addr；②OP_DRAW 加窗口绘制槽表 dump（限 200 行）。np732b 教训：同款 dump 加到 OP_DRAW_IDX 即复现布局敏感早期崩溃（SIGBUS 堆基址+2），已撤下——该崩溃与代码量增减严格相关，根因走离线 SDK 反汇编（sdk+0x8b334 调用点）。真机：np731b 97s 净 / np732 122s 净 / 回退态 26s 净",
-     "gfx: np730 两仪器——①plan_walk 顶点缓冲内容指纹折进内容累加器（治合成趟误跳的 C1 盲区：渐变走 CPU 直写 vertex buffer 绕过 UPDATE_UB/UBO 指纹）②窗口趟绑定内容带出（RT=窗口时 UBO 头 64B 指纹+前 4 float 变化即打，限流 160/80 行）。真机读数：窗口 UBO 活着但 160s 仅变 3 次后停更（f=[0.25 0.165 0.75 -0.835] 固定），VBUF=标准全屏矩形不变；窗口亮度渐变与 2791 内容变化仍在继续 ⇒ blit 实际使用的更新通道在头部 64B 之外，塌缩收窄为 UBO 深处固定错误值 / 描述符视图脱钩二选一，待反汇编 blit 顶点着色器定偏移"
+     "gfx/app: np752-756 画面与稳定性四件——①引擎 shader 加载加 **覆盖目录**(DM_SHADER_OVERRIDE_DIR 里同名 .xgs 优先,ovr=%d 进加载日志):修正包与陈旧包常同尺寸(绑定表只改值),沙箱 skip-if-exists 吞换包,np754b 实测 27k 次 unlinkSync=30 分钟级冻死进程后改新目录零 unlink;②shaders_extra 增量解压改解到覆盖目录+尺寸比对覆盖;③【2791合成】槽表加每槽 gw、cls0 登记只认 slot 0(按面积取最大被 s6/s8 深度缓冲顶掉,np754 实证)、日志带 rt、gate 扩到 rt==cls0(拷贝 pass 真值);④hle_thread 死亡转储对 wkind=0 且 addr≠0 的线程也解码锁字+打印对象体(主线程用户态自旋时 wkind=0,持锁者不可见,np752 实证)。真机判读:np752 旁证·3D目标=绿色场景内容(白模假设撤销);np755 全量修正包部署后合成趟 slot=8 采到 1x1 黑图 ⇒ **Ryujinx handle 8/10 是翻译器资源编号不是游戏单元号,旧导出器 slot=0 才是对的**(np738_full_out 的绑定表改写为错,不可部署);np756 冻结现场=主线程等 Atk(音频)区条件变量(main+0x1c8xxxx,经作业系统) ⇒ 2.9 分钟死亡=音频初始化死等链(帮 purview:np467 假音频时钟只覆盖 SystemEvent 等待,更深一级的 condvar 等待未覆盖)"
     ]
    }
   ]
@@ -9438,25 +9438,25 @@
   "branches": []
  },
  "Intorain/d2r-mobile": {
-  "pushed_at": "2026-10-31T18:32:57Z",
+  "pushed_at": "2026-11-07T18:13:49Z",
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-11-07T17:38:47Z",
+  "pushed_at": "2026-11-07T21:50:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T17:38:34Z",
+    "last_commit": "2026-11-07T21:50:33Z",
     "subjects": [
-     "The packer exe: rebuilt from toolsrc/nxn-packer",
-     "The packer exe: rebuilt from toolsrc/nxn-packer",
-     "shell: the cheats page has no title either",
-     "shell: settings are one flat list, the picked value is white, and the cheats bar is gone",
-     "shell: bold white text instead of dark panels, and no title bar on a game's page",
-     "shell: the cheats page is readable and one size bigger",
-     "shell: a game's page reads clearly, and its picture has no frame",
-     "release: the shell is also published as an .ipa"
+     "The shader library is one .img now: ship it instead of rebuilding it from a directory",
+     "Reapply \"Move the patch base to bd979ced (86 commits) and take upstream's data with it\"",
+     "Revert \"Move the patch base to bd979ced (86 commits) and take upstream's data with it\"",
+     "Take the iOS chain's argv too: -sdk's value and the tool word are not input files",
+     "The shim check runs inside the assembled tree, where scripts/ and dm/ actually are",
+     "Catch a broken shim before the smoke pack, not fifteen minutes into it",
+     "docs: a pack makes two things now, and adding a game touches both",
+     "Answer the two xcrun probes upstream's dmsh_build now makes at import time"
     ]
    }
   ]
@@ -9482,21 +9482,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-07T17:42:44Z",
+  "pushed_at": "2026-11-07T21:40:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T17:16:02Z",
+    "last_commit": "2026-11-07T20:44:40Z",
     "subjects": [
-     "Merge pull request #910 from LNPANDY/fix/shellui-typecheck",
-     "Merge pull request #909 from LNPANDY/v0lumehi/changelog-1-3-0-787",
-     "frontend-ios: split TouchLayoutEditorView accessibility element modifier chain",
-     "Changelog v1.3.0: add the readable Mac app names (#846) and setup without keys (#822)",
-     "Merge main into the branch",
-     "Merge pull request #822 from thehobbit85/codex/issue-696-optional-setup-keys",
-     "Merge pull request #846 from thehobbit85/codex/404-readable-mac-apps",
-     "Changelog v1.3.0: add the native iPhone and iPad navigation (#787)"
+     "frontend-qt: align RomFS archive, input staging and IPA packing with Mac launcher (#930)",
+     "frontend: refresh shell project package and engine links before re-signing (#915)",
+     "Merge pull request #921 from LNPANDY/v0lumehi/nxkit-pin-0-9-1",
+     "Merge pull request #919 from LNPANDY/ci/skip-mac-launcher-for-qt-only",
+     "Merge pull request #883 from thehobbit85/codex/issue-691-release-tools-age",
+     "Merge pull request #867 from thehobbit85/codex/issue-862-nonblocking-shader-rebuild",
+     "Merge pull request #879 from thehobbit85/codex/issue-865-health-toolchain",
+     "Merge pull request #911 from LNPANDY/fix/oot-ndve-movie"
     ]
    }
   ]
@@ -10001,21 +10001,21 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-11-07T05:22:11Z",
+  "pushed_at": "2026-11-07T20:23:24Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T05:22:10Z",
+    "last_commit": "2026-11-07T20:23:22Z",
     "subjects": [
+     "Environment Detail High: decal copies no longer read past their source",
      "Rays: every trace first, one barrier, then the blurs; the rays' blocks timed under DM_NVN_PASSGPU",
      "Bench: a Cathedral route, and the UB line counts argument-buffer encodes",
      "README: back to 'not yet' for ray tracing on iPhone and iPad",
      "Merge README: ray tracing is Mac only",
      "README: ray tracing is a Mac feature, not a pending iPhone one",
      "Merge README: the Mac grid by what the chip decides",
-     "README: the Mac grid says what the chip decides, not what screen I assumed",
-     "Merge docs review"
+     "README: the Mac grid says what the chip decides, not what screen I assumed"
     ]
    }
   ]
@@ -10451,21 +10451,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-07T03:19:08Z",
+  "pushed_at": "2026-11-07T21:43:58Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T03:19:06Z",
+    "last_commit": "2026-11-07T21:43:56Z",
     "subjects": [
+     "Adreno 840 and up: IR3_SHADER_DEBUG=nouboopt by default, the red shadows (#32); Mali: the shared-file heap's refused buffer logged, a dma-buf tried (#264 #277)",
      "Donations: Ko-fi and Buy Me a Coffee next to GitHub Sponsors",
      "0.3.1-beta (versionCode 35)",
      "Vulkan: the shared-file game memory tries a dma-buf where the opaque file takes no memory the CPU can use; the probe tests both (#234)",
      "Crash handler: the game's code reading the null page gets zero and goes on, in both modes (#247 #235 #241)",
      "Native code: the tag check's guard takes any target outside the game's memory, -1 too (#247)",
      "Unlocked aspect: the weather forecast goes out with the minimap's group again - the prompts' row kept for panes below -316.5 (#243)",
-     "Tests: test_nvn_lifetime links and runs again (#245)",
-     "Motion: the phone's sensors like the Switch's screen, an option (#211 #247); the log says why the shared-file memory isn't used (#249 #234)"
+     "Tests: test_nvn_lifetime links and runs again (#245)"
     ]
    }
   ]
@@ -10687,21 +10687,21 @@
   ]
  },
  "Desm0nt/doom-port": {
-  "pushed_at": "2026-11-07T15:58:32Z",
+  "pushed_at": "2026-11-07T20:56:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T15:58:30Z",
+    "last_commit": "2026-11-07T20:56:50Z",
     "subjects": [
+     "v0.4.20: ASTC overlay: sanitize error / all-zero ASTC blocks also in the direct full-upload path (the decal atlas, ~4.8M never-written blocks, loads through it), fixes the remaining Mali black squares near bright lights (refs #28, #7, #14, #25); BC-path census and per-serial bisection switches (off by default)",
+     "v0.4.19: ASTC overlay: error / all-zero ASTC LDR blocks (never-written atlas areas) replaced by transparent black at upload, fixes the Mali black squares and the white glows with the astc folder (refs #7, #14, #25, #28), BC6H kept on the BC path by default, ASTC HDR self-test; PowerVR: fence guard and recovery from driver fence errors instead of a false GPU-hang abort, better hang diagnostics; clip/cull fix only on capable GPUs (refs #25, #26, #27, #28)",
      "README: banner at the top about the astc texture cache for Mali / PowerVR / Xclipse phones (since v0.4.12)",
      "v0.4.18-test2 (pre-release): clip/cull distance shader fix only on GPUs that support clip and cull distances, fixes the start-up crash on Mali-G615 / Mali-G57 (refs #25, #26); draw probe and depth debug switches for the stock Adreno 740 bones-via-SSBO investigation",
      "v0.4.18-test1 (pre-release): dirty tracker re-maps fragmented zero-copy chunks in place, ENOMEM fallback and honest crash instead of a fault loop, memory map counts in the perf line and crash.txt (refs #21); experimental bones-via-SSBO for the stock Adreno 740 driver, off by default",
      "v0.4.17: Samsung S23 crash fixes (thread exit on the host stack, AAudio stall recovery + AudioOut close), crash log stack-overflow/PAC, clip distances within the device limit, landscape aspect at start",
      "v0.4.16: real-time gameplay after loading a save (allowHzChange), Mali/PowerVR: BC6H GPU decode fix + self-test, AFBC-friendly images, STORE_OP_NONE/DONT_CARE, noload back on",
-     "setup: point to the latest release page (the unversioned APK link no longer exists)",
-     "v0.4.15: CPU placement by core capacity (weak big.LITTLE SoCs), tile-GPU render-pass tweaks for Mali/PowerVR",
-     "v0.4.14: game folder on SD card / custom path (issue #11), real app version instead of d2r's 2.0.1"
+     "setup: point to the latest release page (the unversioned APK link no longer exists)"
     ]
    }
   ]
@@ -11511,7 +11511,7 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-07T16:59:38Z",
+  "pushed_at": "2026-11-07T20:57:16Z",
   "branches": [
    {
     "branch": "main",
@@ -11646,21 +11646,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-07T17:34:35Z",
+  "pushed_at": "2026-11-07T19:16:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T16:44:12Z",
+    "last_commit": "2026-11-07T19:14:08Z",
     "subjects": [
+     "fix(gfx): retain gpu producers across alias remaps",
+     "fix(bench): recognize the 40 fps menu target",
+     "fix(android): preserve 40 fps safety and refresh floors",
      "test(android): match per-line developer override logs",
      "feat(android): offer display-aware 40 fps gameplay",
      "feat(android): add validated opt-in surface rate override",
      "merge(bench): integrate uncapped throughput analysis mode",
-     "merge(test): integrate deterministic profiler cancellation fixture",
-     "test(gfx): isolate profiler lease cancellation from optional admission",
-     "fix(bench): compare uncapped throughput without dip classification",
-     "merge(gfx): integrate profiler retirement and disabled path cleanup"
+     "merge(test): integrate deterministic profiler cancellation fixture"
     ]
    }
   ]
