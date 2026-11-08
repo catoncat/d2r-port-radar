@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-08T05:41:39Z",
+  "pushed_at": "2026-11-08T11:47:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T05:41:29Z",
+    "last_commit": "2026-11-08T11:47:36Z",
     "subjects": [
-     "Reads through a uniform buffer's handle table are no longer marked as texture pool reads: the mark went through the bitmap address in the table's header, which htab_gpu leaves 0, and Fire Emblem Fortune's Weave's lighting pass at Alcineus Bridge took 196.7 ms a frame on an M1 Pro (4 fps); a table's index is its element, not a texture ID, and the host has made every texture the table names (chain c096b1d1dc53; found by HammerChain in PR #1738)",
-     "A pipeline archive flush period is handed over at its 2,000th capture, during a compacting prewarm too, and a pipeline the capture refuses is built by the plain compiler: one period of 8,693 bases filled Metal's archiver store (MDB_MAP_FULL, a 10 MB LMDB map per serializer) and Ocarina of Time's Kakariko Village lost 1,502 pipelines at 30-70 ms a frame",
-     "The Rogue Prince of Persia plays on the Mac (1.1.0, Unity 6000.0.64f1 IL2CPP, from the provisional profile unchanged in its keys): the title, the first-run options, the opening narration and movie, the first level with running, jumping, climbing, the weapon and the wall run; 30 fps as the game asks, sound in the game's mix, no host change",
-     "Ocarina of Time and Mario Kart World no longer play in slow motion when frames run long: their frame step is the host's (fps_target 60), from stubs placed by the function they patch on any build that keeps it (MATCH_FRAME_STEP, nso_match.locate_stub), a game binding where frame-step stubs were build-bound; Ocarina's frame ratio is the host's step x its base rate / 60, Mario Kart World's interval the step (at most 2) unless its own 30 fps mode is set (both places named by Lichii, facts only)",
-     "Honor NVN queue dependencies and preserve conditional state across continuations",
-     "Colour targets are write-masked per component by the pixel shader's output map (SPH word 18, now in the reflection's raster facts): the translator stores only the mapped components and Metal wrote the rest of the attachment undefined; a target's load is skipped only when the map covers every channel its format stores (chain 094f939bfef9; reported by Lichii on Ocarina of Time's depth pass, not reproduced here)",
-     "ROMANCE OF THE THREE KINGDOMS XIV: Diplomacy and Strategy Expansion Pack plays on the Mac (1.0.10 with its DLC, from the provisional profile unchanged); the deferred-release drain no longer reads entries it has handed back to the queue: with g_smu busy it sorted its list again after returning the retired resources, and another drain could free them in between (a crash in class_conformsToProtocol from a completion handler, the game's main menu)",
-     "Pikmin 4 plays at 60 fps and up to 120 on the Mac: Unreal's fixed frame rate takes GEngine from where FEngineLoop::Init makes the engine, in any Unreal 4.22 to 5 build, and the host writes it only while the engine's bUseFixedFrameRate is set"
+     "Fix loop capture in frame-step registry test",
+     "Ocarina of Time runs at full resolution, and its dynamic resolution no longer sits at its floor: 128-bit raw global loads are one vector load (GPU 16.3 -> 12.6 ms on an M4 Pro), occlusion conditions are read once landed (-0.6 ms), a frame-start timestamp from a slot its encoder never wrote is dropped, and a wait on a queued WRITE event signal is released at encode (chain 89f44f9b6bb0)",
+     "An IPA can carry the shader library as its separate files, for install tools that cannot copy a large file: --shader-files in the NSP script (SHADER_FILES, DM_SHADER_FILES=1 for build_ipa.sh, pack_ipa.py --shader-files), off by default. AltServer copies each file to the device with one afc_file_write, which libimobiledevice sends with one send() returning an int, so Tears of the Kingdom 1.4.3's 2.10 GiB b-<chain>.img failed to install (#1688); the host reads a library folder before an image (PR #1697)",
+     "Fix patch registry test namespace types and shrink the lint baseline",
+     "The HMMA rewrite finds each function's opening and end once: Ocarina of Time's 71 HMMA shaders took 932 s of CPU in hmma_msl, now 3.5 s, with byte-identical output (chain 579d06bf3932; PR #1711)",
+     "The Rogue Prince of Persia plays at 60 fps and up to 120 on the Mac: Unity's QualitySettings.vSyncCount and Application.targetFrameRate are found through the engine's internal-call table in any Unity build that keeps it (unity_fps.py; Unity 6000.0 and 2021.3 read), and the host writes them; the display's vsync event runs at 120 Hz while 120 fps holds, as Unity's NVN device waits for each vblank (Sparking! ZERO and Pikmin 4 unchanged at 120)",
+     "Mac: one Pro Controller is one pad: IOHIDManager hands a device over once per matching dictionary it meets, so the HID reader knows a pad by its I/O Registry entry, not by its IOHIDDeviceRef (PR #1722)",
+     "Reads through a uniform buffer's handle table are no longer marked as texture pool reads: the mark went through the bitmap address in the table's header, which htab_gpu leaves 0, and Fire Emblem Fortune's Weave's lighting pass at Alcineus Bridge took 196.7 ms a frame on an M1 Pro (4 fps); a table's index is its element, not a texture ID, and the host has made every texture the table names (chain c096b1d1dc53; found by HammerChain in PR #1738)"
     ]
    }
   ]
@@ -1951,12 +1951,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-08T05:58:35Z",
+  "pushed_at": "2026-11-08T13:22:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T05:58:34Z",
+    "last_commit": "2026-11-08T13:22:46Z",
     "subjects": [
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-07T21:57:23Z",
+  "pushed_at": "2026-11-08T06:13:28Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T21:57:22Z",
+    "last_commit": "2026-11-08T06:13:27Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -7735,21 +7735,21 @@
   ]
  },
  "iceorange-dev/manosaba-ios": {
-  "pushed_at": "2026-10-31T20:10:00Z",
+  "pushed_at": "2026-11-08T11:57:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-31T19:50:01Z",
+    "last_commit": "2026-11-08T11:46:02Z",
     "subjects": [
+     "Plan batch 147: TotK above 100 fps, virtual core moves, fewer pipeline guesses, WaitSynchronization ended by its signal (304, 306, 307, 312)",
+     "Plan batch 146: correctness fixes from the eleventh review (303)",
+     "Plan: the eleventh review (2026-11-08), items 303-313",
      "Plan batch 145: the picture moved clear of the iPhone Duo's outer front camera within its bars, at its size (302)",
      "Plan batch 144: the setting \"Native\" kept on both of the iPhone Duo's displays; a stopped audio output releases its buffers (302)",
      "Plan batch 143: manosaba on the iPhone Duo, measured on one; the refresh rate from the screen the game's window is on (302 part)",
      "Plan batch 142: nxnative's smaller fixes, and the virtual core given up while waiting (296, 297)",
-     "Plan batch 141: the crash report with a time limit, texture reads of memory taken back guarded, quad strips drawn (298, 290, 291)",
-     "Plan batch 140: a texture pool gone stays placed until the game gives its memory back, and nothing is copied out (301f part)",
-     "Plan batch 139: manosaba's APK with its data, as the iPhone's IPA with it (301h)",
-     "Plan batch 138: the settings panel on Android, as the iPhone's (301g)"
+     "Plan batch 141: the crash report with a time limit, texture reads of memory taken back guarded, quad strips drawn (298, 290, 291)"
     ]
    }
   ]
@@ -7870,21 +7870,21 @@
   ]
  },
  "huajiaoshu520/acnh-mobile": {
-  "pushed_at": "2026-11-07T20:15:57Z",
+  "pushed_at": "2026-11-08T13:21:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T20:15:57Z",
+    "last_commit": "2026-11-08T13:21:42Z",
     "subjects": [
+     "chore: update published release index to v0.3.140",
+     "Release ACNH Mobile v0.3.140 (build 163)",
+     "chore: update published release index to v0.3.137",
+     "Keep the generic landscape stick clear of the directional pad",
+     "chore: update published release index to v0.3.136",
+     "Sync NX HID identity and render state, and preserve landscape controls",
      "chore: update published release index to v0.3.134",
-     "Sync NX wait ownership, frame pacing and tool fixes",
-     "chore: update published release index to v0.3.133",
-     "Sync NX texture view lifetime and uniform lookup fixes",
-     "chore: update published release index to v0.3.132",
-     "Fix iPad portrait framing and lower-screen controls",
-     "chore: update published release index to v0.3.129",
-     "Sync NX Metal pipeline and texture lifetime fixes"
+     "Sync NX wait ownership, frame pacing and tool fixes"
     ]
    }
   ]
@@ -9442,21 +9442,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-11-07T22:53:21Z",
+  "pushed_at": "2026-11-08T13:31:54Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T22:53:10Z",
+    "last_commit": "2026-11-08T13:31:46Z",
     "subjects": [
-     "Say where the folder goes: the root of the Files app, and reinstall for each new game",
-     "Say the two steps and stop there",
-     "Drop the 'the package holds code only, tens of MB' aside",
-     "The packer exe: rebuilt from toolsrc/nxn-packer",
-     "Keep the library screenshot in the repo, not among the downloads",
-     "Say how adding a game actually works: both halves, or the library lies",
-     "Stop publishing an empty shell .ipa",
-     "The shader library is one .img now: ship it instead of rebuilding it from a directory"
+     "Point the new test at its own directory",
+     "Read a child's output as UTF-8, and print only ASCII in the shim",
+     "Compile the unit too, and never hand metallib a source file",
+     "Use Apple's compiler when the machine has it, and only then",
+     "Retry the two tool downloads: GitHub answered 503 twice in a row",
+     "The button said package, but it writes an IPA",
+     "Shorten the prepare page: two lines instead of five",
+     "\".metallib\" is nine characters, and the image scan read ten"
     ]
    }
   ]
@@ -9482,21 +9482,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-07T23:46:11Z",
+  "pushed_at": "2026-11-08T13:25:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T22:18:06Z",
+    "last_commit": "2026-11-08T11:27:04Z",
     "subjects": [
+     "ci: retry transient HTTP 504 errors on GitHub release downloads (#960)",
+     "Normalize Windows RomFS identity output to LF before packing (#956)",
+     "frontend-qt: allow Windows builds for Unreal games with Zlib/LZ4 inline shaders (#932)",
      "Merge pull request #925 from LNPANDY/fix/mesh-grid-1024",
      "frontend-qt: align RomFS archive, input staging and IPA packing with Mac launcher (#930)",
      "frontend: refresh shell project package and engine links before re-signing (#915)",
      "Mark patch 0096 as forwarded to seedds/nxnative#1708",
-     "Merge pull request #921 from LNPANDY/v0lumehi/nxkit-pin-0-9-1",
-     "Split mesh draws with no task shader into grids of at most 1024 (patch 0096)",
-     "Merge pull request #919 from LNPANDY/ci/skip-mac-launcher-for-qt-only",
-     "Merge pull request #883 from thehobbit85/codex/issue-691-release-tools-age"
+     "Merge pull request #921 from LNPANDY/v0lumehi/nxkit-pin-0-9-1"
     ]
    }
   ]
@@ -10356,7 +10356,7 @@
   ]
  },
  "pojoker/d2r-mobile": {
-  "pushed_at": "2026-10-27T17:26:31Z",
+  "pushed_at": "2026-11-08T12:03:45Z",
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
@@ -10451,21 +10451,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-08T04:57:52Z",
+  "pushed_at": "2026-11-08T12:55:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T04:57:42Z",
+    "last_commit": "2026-11-08T12:55:53Z",
     "subjects": [
+     "Low RAM: below 6 GB, 16 MB ring chunks (2 kept) and a buffer cache of a twelfth of the RAM; the memory log names textures, render targets, ring and cache",
      "0.3.2-beta (versionCode 36)",
      "Recompiled mode: a call through a null function pointer returns 0, as the null reads do - taking photos with the Slate's camera ended in \"no function at 0\" (#300)",
      "Donations: the monthly Claude Code Max goal badge, shared with the other projects",
      "Donations: a monthly Claude Code Max goal badge, read from .github/donation-goal.json",
      "Controls: \"Minimap at the top\" - off keeps the minimap in its usual place with the touch controls (#254)",
      "Unlocked aspect: the inventory's sides no longer flash (#195)",
-     "Unlocked aspect: the scope's view in the middle 16:9 part with bars - the world showed past its frame's sides (#262)",
-     "Merge branch 'pr278' into test-278"
+     "Unlocked aspect: the scope's view in the middle 16:9 part with bars - the world showed past its frame's sides (#262)"
     ]
    }
   ]
@@ -11116,7 +11116,7 @@
   ]
  },
  "rhotov/d2r-mobile": {
-  "pushed_at": "2026-11-06T00:02:11Z",
+  "pushed_at": "2026-11-08T11:57:35Z",
   "branches": [
    {
     "branch": "archive/local-ios-fixes-20261031",
@@ -11135,6 +11135,21 @@
     "last_commit": "2026-10-31T13:44:15Z",
     "subjects": [
      "Preserve local iOS bug fixes and regression tests on v1.0.1"
+    ]
+   },
+   {
+    "branch": "fix/area-resource-page-crash",
+    "ahead": 1,
+    "behind": 0,
+    "files": 2,
+    "real_files": 2,
+    "dirs": [
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-11-08T11:57:33Z",
+    "subjects": [
+     "Fix a resource lookup crash after area transitions"
     ]
    },
    {
@@ -11157,21 +11172,21 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-08T02:51:37Z",
+  "pushed_at": "2026-11-08T08:08:41Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-06T03:49:26Z",
+    "last_commit": "2026-11-08T07:04:30Z",
     "subjects": [
-     "Merge pull request #98 from jmars125/task/cloud-step",
-     "Scale only the sky's cloud turn and fade by the frame rate so water keeps its speed",
-     "Step the render scene's frame step by the frame rate so clouds keep their speed",
-     "Merge pull request #92 from jmars125/version-0.1.15",
-     "Merge master into version-0.1.15 for the focus and salvage tick fixes",
-     "Merge pull request #97 from jmars125/task/run-in-background",
-     "Keep the game running when its window loses focus",
-     "Merge pull request #96 from jmars125/task/salvage-tick"
+     "Merge pull request #115 from jmars125/version-0.1.16",
+     "Version 0.1.16.",
+     "Merge pull request #114 from jmars125/task/uw-side",
+     "Merge pull request #94 from jmars125/task/dlss",
+     "Decide an interface node's ultrawide side from its last frame instead of from every frame so far.",
+     "Merge master into task/dlss for HDR, the ultrawide menus, the save commit and the screen saver fix.",
+     "Merge master into task/dlss for the cloud step and 0.1.15 fixes.",
+     "Give moving objects their own DLSS motion vectors, keep the menu model's backdrop, and jitter the grass."
     ]
    }
   ]
