@@ -1307,7 +1307,7 @@
   "branches": []
  },
  "liimyauk/d2r-mobile": {
-  "pushed_at": "2026-11-02T12:59:48Z",
+  "pushed_at": "2026-11-08T06:01:25Z",
   "branches": []
  },
  "adm1n007/d2r-mobile": {
@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-07T05:38:31Z",
+  "pushed_at": "2026-11-08T05:39:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T05:38:29Z",
+    "last_commit": "2026-11-08T05:39:48Z",
     "subjects": [
+     "radar 2026-11-08",
      "radar 2026-11-07",
      "radar 2026-11-06",
      "radar 2026-11-05",
      "radar 2026-11-04",
      "radar 2026-11-03",
      "radar 2026-11-02",
-     "radar 2026-11-01",
-     "radar 2026-10-31"
+     "radar 2026-11-01"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-07T17:43:39Z",
+  "pushed_at": "2026-11-08T05:41:39Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T17:43:15Z",
+    "last_commit": "2026-11-08T05:41:29Z",
     "subjects": [
-     "Pikmin 4 plays at 60 fps and up to 120 on the Mac: Unreal's fixed frame rate takes GEngine from where FEngineLoop::Init makes the engine, in any Unreal 4.22 to 5 build, and the host writes it only while the engine's bUseFixedFrameRate is set",
-     "A counter report's time comes from Metal's paired CPU sample projected onto the guest clock, not from a later guest clock read: a delay between the sample and that read no longer enters the timestamp (PR #1676)",
-     "Unreal's fixed frame rate takes GEngine only from a store of the property through a global: a load alone named another object on Pikmin 4 (a gravity of -980 at UEngine::FixedFrameRate's offset), which the host's range check refused, so a game whose such object held a value in range could have had it overwritten; the NSP script's rewrite key covers fps_target.py and ue_fixed_rate.py",
-     "Mesh shaders' position is invariant, as a vertex shader's: Ocarina of Time's foliage no longer flashes white for single frames (chain 3ee52af3ca18, PR #1673)",
-     "Program keys are found by the program's serial, so a copy of an NVNprogram finds them: Ori and the Will of the Wisps draws its loading screen instead of grey noise (PR #1521)",
-     "DRAGON BALL: Sparking! ZERO plays on the Mac, at 60 fps and up to 120 on the Mac: Unreal's fixed frame rate is written at fps_target, found by its reflection entry in any build; encrypted Unreal paks and IoStore containers with the shaders inline are read with main's key; every call of FMallocBinned3's constructor is cut",
-     "WaitSynchronization retains the objects it waits on and records the signal that completed it, as Horizon's KSynchronizationObject::Wait: a signal followed by a clear before the waiter resumed timed out the wait, a closed and reused handle redirected it, and a wait on a thread whose handle was closed never completed; every handle is validated up front (more than 64 is out of range, the pseudo-handle and an event's write end are invalid), a ready object and a zero-time poll precede a pending cancellation, the retained list lives in the thread's record, and ResetSignal on a thread is an invalid handle (PR #1284)",
-     "The controller applet waits for players: with a window, a game that asks for more players than it sees gets a prompt over the game that holds its thread until enough controllers have joined (a first button with Press a button to join, a connection without) or the player closes it, as the Switch's player screen; without a window or with DM_KEYS / DM_CTL it is canceled at once as before"
+     "Reads through a uniform buffer's handle table are no longer marked as texture pool reads: the mark went through the bitmap address in the table's header, which htab_gpu leaves 0, and Fire Emblem Fortune's Weave's lighting pass at Alcineus Bridge took 196.7 ms a frame on an M1 Pro (4 fps); a table's index is its element, not a texture ID, and the host has made every texture the table names (chain c096b1d1dc53; found by HammerChain in PR #1738)",
+     "A pipeline archive flush period is handed over at its 2,000th capture, during a compacting prewarm too, and a pipeline the capture refuses is built by the plain compiler: one period of 8,693 bases filled Metal's archiver store (MDB_MAP_FULL, a 10 MB LMDB map per serializer) and Ocarina of Time's Kakariko Village lost 1,502 pipelines at 30-70 ms a frame",
+     "The Rogue Prince of Persia plays on the Mac (1.1.0, Unity 6000.0.64f1 IL2CPP, from the provisional profile unchanged in its keys): the title, the first-run options, the opening narration and movie, the first level with running, jumping, climbing, the weapon and the wall run; 30 fps as the game asks, sound in the game's mix, no host change",
+     "Ocarina of Time and Mario Kart World no longer play in slow motion when frames run long: their frame step is the host's (fps_target 60), from stubs placed by the function they patch on any build that keeps it (MATCH_FRAME_STEP, nso_match.locate_stub), a game binding where frame-step stubs were build-bound; Ocarina's frame ratio is the host's step x its base rate / 60, Mario Kart World's interval the step (at most 2) unless its own 30 fps mode is set (both places named by Lichii, facts only)",
+     "Honor NVN queue dependencies and preserve conditional state across continuations",
+     "Colour targets are write-masked per component by the pixel shader's output map (SPH word 18, now in the reflection's raster facts): the translator stores only the mapped components and Metal wrote the rest of the attachment undefined; a target's load is skipped only when the map covers every channel its format stores (chain 094f939bfef9; reported by Lichii on Ocarina of Time's depth pass, not reproduced here)",
+     "ROMANCE OF THE THREE KINGDOMS XIV: Diplomacy and Strategy Expansion Pack plays on the Mac (1.0.10 with its DLC, from the provisional profile unchanged); the deferred-release drain no longer reads entries it has handed back to the queue: with g_smu busy it sorted its list again after returning the retired resources, and another drain could free them in between (a crash in class_conformsToProtocol from a completion handler, the game's main menu)",
+     "Pikmin 4 plays at 60 fps and up to 120 on the Mac: Unreal's fixed frame rate takes GEngine from where FEngineLoop::Init makes the engine, in any Unreal 4.22 to 5 build, and the host writes it only while the engine's bUseFixedFrameRate is set"
     ]
    }
   ]
@@ -1951,12 +1951,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-07T21:48:16Z",
+  "pushed_at": "2026-11-08T05:58:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T21:48:15Z",
+    "last_commit": "2026-11-08T05:58:34Z",
     "subjects": [
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-07T17:46:28Z",
+  "pushed_at": "2026-11-07T21:57:23Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T17:46:27Z",
+    "last_commit": "2026-11-07T21:57:22Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -9442,21 +9442,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-11-07T21:50:49Z",
+  "pushed_at": "2026-11-07T22:53:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T21:50:33Z",
+    "last_commit": "2026-11-07T22:53:10Z",
     "subjects": [
-     "The shader library is one .img now: ship it instead of rebuilding it from a directory",
-     "Reapply \"Move the patch base to bd979ced (86 commits) and take upstream's data with it\"",
-     "Revert \"Move the patch base to bd979ced (86 commits) and take upstream's data with it\"",
-     "Take the iOS chain's argv too: -sdk's value and the tool word are not input files",
-     "The shim check runs inside the assembled tree, where scripts/ and dm/ actually are",
-     "Catch a broken shim before the smoke pack, not fifteen minutes into it",
-     "docs: a pack makes two things now, and adding a game touches both",
-     "Answer the two xcrun probes upstream's dmsh_build now makes at import time"
+     "Say where the folder goes: the root of the Files app, and reinstall for each new game",
+     "Say the two steps and stop there",
+     "Drop the 'the package holds code only, tens of MB' aside",
+     "The packer exe: rebuilt from toolsrc/nxn-packer",
+     "Keep the library screenshot in the repo, not among the downloads",
+     "Say how adding a game actually works: both halves, or the library lies",
+     "Stop publishing an empty shell .ipa",
+     "The shader library is one .img now: ship it instead of rebuilding it from a directory"
     ]
    }
   ]
@@ -9482,21 +9482,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-07T21:40:44Z",
+  "pushed_at": "2026-11-07T23:46:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T20:44:40Z",
+    "last_commit": "2026-11-07T22:18:06Z",
     "subjects": [
+     "Merge pull request #925 from LNPANDY/fix/mesh-grid-1024",
      "frontend-qt: align RomFS archive, input staging and IPA packing with Mac launcher (#930)",
      "frontend: refresh shell project package and engine links before re-signing (#915)",
+     "Mark patch 0096 as forwarded to seedds/nxnative#1708",
      "Merge pull request #921 from LNPANDY/v0lumehi/nxkit-pin-0-9-1",
+     "Split mesh draws with no task shader into grids of at most 1024 (patch 0096)",
      "Merge pull request #919 from LNPANDY/ci/skip-mac-launcher-for-qt-only",
-     "Merge pull request #883 from thehobbit85/codex/issue-691-release-tools-age",
-     "Merge pull request #867 from thehobbit85/codex/issue-862-nonblocking-shader-rebuild",
-     "Merge pull request #879 from thehobbit85/codex/issue-865-health-toolchain",
-     "Merge pull request #911 from LNPANDY/fix/oot-ndve-movie"
+     "Merge pull request #883 from thehobbit85/codex/issue-691-release-tools-age"
     ]
    }
   ]
@@ -10001,21 +10001,21 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-11-07T20:23:24Z",
+  "pushed_at": "2026-11-08T04:49:38Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T20:23:22Z",
+    "last_commit": "2026-11-08T04:49:37Z",
     "subjects": [
-     "Environment Detail High: decal copies no longer read past their source",
-     "Rays: every trace first, one barrier, then the blurs; the rays' blocks timed under DM_NVN_PASSGPU",
-     "Bench: a Cathedral route, and the UB line counts argument-buffer encodes",
-     "README: back to 'not yet' for ray tracing on iPhone and iPad",
-     "Merge README: ray tracing is Mac only",
-     "README: ray tracing is a Mac feature, not a pending iPhone one",
-     "Merge README: the Mac grid by what the chip decides",
-     "README: the Mac grid says what the chip decides, not what screen I assumed"
+     "Gate lint: an ignored build output may be missing",
+     "Engine map: replay-layer files need a row; the switch scanner says what it reads",
+     "A release needs a gate run that passed on its commit; CI runs every tool test",
+     "Scenarios without frame generation run in front: a background window stalled them",
+     "Gate: host code runs full, every exit prints the verdict, expected unavailable items by name",
+     "Gate: auto picks the tiers a change needs; touch cases three at a time",
+     "Environment Detail High: the authored ground, material arrays at the assets' size",
+     "Switch registry for the replayer's DM_RT; the map notes the Switch's hidden decals"
     ]
    }
   ]
@@ -10451,21 +10451,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-07T21:43:58Z",
+  "pushed_at": "2026-11-08T04:57:52Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-07T21:43:56Z",
+    "last_commit": "2026-11-08T04:57:42Z",
     "subjects": [
-     "Adreno 840 and up: IR3_SHADER_DEBUG=nouboopt by default, the red shadows (#32); Mali: the shared-file heap's refused buffer logged, a dma-buf tried (#264 #277)",
-     "Donations: Ko-fi and Buy Me a Coffee next to GitHub Sponsors",
-     "0.3.1-beta (versionCode 35)",
-     "Vulkan: the shared-file game memory tries a dma-buf where the opaque file takes no memory the CPU can use; the probe tests both (#234)",
-     "Crash handler: the game's code reading the null page gets zero and goes on, in both modes (#247 #235 #241)",
-     "Native code: the tag check's guard takes any target outside the game's memory, -1 too (#247)",
-     "Unlocked aspect: the weather forecast goes out with the minimap's group again - the prompts' row kept for panes below -316.5 (#243)",
-     "Tests: test_nvn_lifetime links and runs again (#245)"
+     "0.3.2-beta (versionCode 36)",
+     "Recompiled mode: a call through a null function pointer returns 0, as the null reads do - taking photos with the Slate's camera ended in \"no function at 0\" (#300)",
+     "Donations: the monthly Claude Code Max goal badge, shared with the other projects",
+     "Donations: a monthly Claude Code Max goal badge, read from .github/donation-goal.json",
+     "Controls: \"Minimap at the top\" - off keeps the minimap in its usual place with the touch controls (#254)",
+     "Unlocked aspect: the inventory's sides no longer flash (#195)",
+     "Unlocked aspect: the scope's view in the middle 16:9 part with bars - the world showed past its frame's sides (#262)",
+     "Merge branch 'pr278' into test-278"
     ]
    }
   ]
@@ -11157,7 +11157,7 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-06T23:03:47Z",
+  "pushed_at": "2026-11-08T02:51:37Z",
   "branches": [
    {
     "branch": "master",
@@ -11930,5 +11930,58 @@
  "lucienlmy/d2r-mobile": {
   "pushed_at": "2026-11-07T11:37:57Z",
   "branches": []
+ },
+ "Gu3hi/gushi-apps": {
+  "pushed_at": "2026-11-08T05:06:43Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-08T05:06:42Z",
+    "subjects": [
+     "update icons/d2r.png",
+     "update icons/ddys.png",
+     "update README.md",
+     "update index.html",
+     "update apps.json",
+     "update icons/d2r.png",
+     "update icons/ddys.png",
+     "update README.md"
+    ]
+   }
+  ]
+ },
+ "Poshandka/AnimalDuo": {
+  "pushed_at": "2026-11-08T05:21:52Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-08T05:16:02Z",
+    "subjects": [
+     "release: publish AnimalDuo 1.3 source (build 3.0.76)",
+     "release: publish AnimalDuo 1.2 source (build 3.0.68)",
+     "fix: restore AnimalDuo hosted build and test checks",
+     "release: publish AnimalDuo 1.1 source (build 3.0.59)",
+     "docs: point source downloads to AnimalDuo 1.0",
+     "release: publish reviewed AnimalDuo 3.0.51 source",
+     "release: prepare reviewed AnimalDuo 3.0.51 publication",
+     "docs: align English README with the Chinese project introduction"
+    ]
+   }
+  ]
+ },
+ "niceblack2/myd2r": {
+  "pushed_at": "2026-11-08T03:21:51Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-08T03:12:35Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
  }
 }
