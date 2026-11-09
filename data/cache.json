@@ -1871,27 +1871,27 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-09T11:42:23Z",
+  "pushed_at": "2026-11-09T17:04:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T11:41:47Z",
+    "last_commit": "2026-11-09T17:04:43Z",
     "subjects": [
-     "t_render_counter_overlap prints the bytes a GPU copy reads after a report as OPEN lines instead of checking them: the host writes reports on the CPU when the submission completes, so a later GPU read can see the bytes from before the report, and the check failed on that race in 3 of 60 runs (the predicates, which the host's encode-time values decide, stay checked). Reports written on the GPU in command order were built and measured (correct bytes in every case, about 0.5 to 0.7 ms more GPU a frame on Ocarina of Time, no game symptom traced to the order) and not landed; rendering.md records it, and that both conditional-rendering tests turn render_cond on themselves",
-     "nn::ndve's movie network runs as the host's own Metal kernels, on by default: Ocarina of Time's title movie takes 6.77 ms of GPU a frame on an M4 Pro instead of 12.78, the output the game's network gives (issue #1375, PR #1894)",
-     "A read of a game uniform slot past the size the game bound gives 0, as Maxwell's constant buffers do: Metal has no bounds of its own, so Paper Mario: The Thousand-Year Door's forward shader read its light count past a 16-byte binding and the GPU hung in Peach's invisibility-potion scene (chain 3510ea767778, issue #1860)",
-     "H.264 movie packets are read as Annex B only: a 4-byte NAL length from 256 to 511 begins 00 00 01, so the length-prefixed fallback could not be told from a start code (issue #629)",
-     "A Core Haptics engine that stops under a call raises an NSException: the rumble adapter drops it as a failed engine instead of ending the app (PR #1694)",
-     "A program's DLC are numbered from the application's title ID: a program packed alone (--program N) or with its launcher had every DLC image N below its index, so METAL GEAR SOLID: Peace Walker - Master Collection Version's program 1 mounted the Pre-Order Bonus where it asked for the Multilingual Pack and ended at start (PR #1874)",
-     "A folder whose name has brackets no longer hides files from the tools that search it: the rewriter loaded no game's patches.py (no cuts, observation gates or frame-step stubs, and no error), the matcher found no registered cuts, a provisional profile was guessed with no host hooks, and the shader split found no NRO captured from a boot (PR #1826)",
-     "The samples-passed counter is one running total in queue order: a game that never resets it reads its occlusion queries again (Red Dead Redemption's distant characters had no bodies), and a report a submission after its reset no longer reads slots a later submission overwrote (PR #1867)"
+     "Pool marks test their bit with a plain load: an atomic load, even relaxed, is served by the GPU's shared cache, and a pass's pixels name a few IDs, so they queued on the same bitmap word. A 1536x864 pass of 16 marks a pixel on one word took 2.60 ms against 0.34 ms with the plain load (0.18 with no mark, Apple M6); chain 39eb2f781d07 (discussion #1789)",
+     "The depth attachment sampled in its own pass follows the colour rule: a draw that writes depth and samples it reads a copy, one after a depth write of its pass ends the pass first, in depth-only passes too. Ocarina of Time's light-blue dashes over the rock at Death Mountain Trail's cave entrance and Red Dead Redemption's 8x8 sky blocks over the trees are gone (PR #1917, PR #1866)",
+     "Guest files give the disk back what the game gives back, and stop on the room left after dirty pages (2 GB, counting purgeable space): an iPad stopped Ocarina of Time at 5.0 GB free with 6.6 GB of files (PR #1492)",
+     "A presented texture is resolved on the submit thread, and the present thread never uploads: present_enqueue resolved only a texture already taken from its storage, so one whose first use was the present had its first-use decision (tex_cpu_content) and upload on the present thread, and an uploaded one whose pages changed after the queue was uploaded again there; both aborted in up_owner_check (t_nvn since c06d1e79, whose window textures nothing draws into)",
+     "A linear texture no view can take is uploaded from its storage while the GPU has not written there, whatever its IMAGE or LINEAR_RENDER_TARGET flag: those flags say only that the GPU may write it. Hades II decodes its Bink movies on the CPU into 736x480 IMAGE | LINEAR R8 planes that it only samples; iOS wants 64-byte rows for a view, so they were private textures filled once, and its title screen was grey and flickering and its options menu showed green and magenta blocks on an iPhone. The GPU writes the commands record (gws_owned) decide instead, and a GPU write after the first use makes the texture a GPU texture (cpu_unc_take / cpu_unc_drop); ReadTexels follows the same state. t_linear_readback checks it with DM_TBUF_ALIGN=64. The NSP script takes only files from its .nro glob (a RomFS folder may end in .nro, as in The Binding of Isaac: Afterbirth+) (issue #1956)",
+     "HMMA with an f16 accumulator rounds once per 8 products, as Ampere does, instead of after every product: the translated helper and the host's NDVE network sum each block of 8 in f32 and round it to f16, which matches 5,000 of 5,000 recorded A100 cases (per-product rounding 2,420) and 99.97 % of a Jetson Orin's outputs (34.9 %); chain 0c434f1b68df (PR #1897)",
+     "The graphics tests' guest clock is the Mach clock, as the host's with no pause: the weak guest_ns and guest_ns_at_host_time returned 0, so every counter report mapped its GPU timestamp or feedback time to 0 and took the time its completion handler wrote it. t_feedback's \"two reports in one command buffer read two times\" then compared two CLOCK_MONOTONIC reads made one after the other and failed whenever both fell in one microsecond (7 of 12 runs on main; 30 of 30 pass now, through the boundaries' GPU timestamps)",
+     "A pool buffer's protected pages are opened, not counted as written: nvn_dirty_open hashes each and makes it writable, nvn_dirty_close protects them again and counts only the pages whose bytes changed meanwhile. Counting every opened page as written (2d544e0d) read their textures again though nothing wrote them: 34 on Ocarina of Time's village walk (0 now), 4,038 in its first load on a contributor's build that makes chunks there, and LEGO Star Wars' 3D picture black from GPU-drawn storage taken from stale guest memory (issue #1591)"
     ]
    }
   ]
  },
  "ForceMind/Game2Mobile": {
-  "pushed_at": "2026-10-20T10:29:12Z",
+  "pushed_at": "2026-11-09T18:24:12Z",
   "branches": [
    {
     "branch": "main",
@@ -1951,15 +1951,15 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-09T06:23:51Z",
+  "pushed_at": "2026-11-09T22:19:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T06:23:50Z",
+    "last_commit": "2026-11-09T22:19:58Z",
     "subjects": [
      "chore: 自动同步 Star 地图（200 个项目）",
-     "chore: 自动同步 Star 地图（198 个项目）",
+     "chore: 自动同步 Star 地图（200 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-09T00:58:15Z",
+  "pushed_at": "2026-11-09T11:44:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T00:58:14Z",
+    "last_commit": "2026-11-09T11:44:32Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4126,21 +4126,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-06T07:36:14Z",
+  "pushed_at": "2026-11-09T22:02:02Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T07:34:59Z",
+    "last_commit": "2026-11-09T21:57:44Z",
     "subjects": [
-     "feat: adapt TotK VR to calibrated Quest stereo rendering",
-     "fix(vr): serialize source startup and residency transactions",
-     "fix(vr): unify BotW output and preserve cached stereo UI",
-     "feat(vr): integrate BotW stereo rendering and live Quest render sizing",
-     "fix: complete launcher integration and regression coverage (after PR #785, #307, #1359, #1678)",
-     "fix: isolate synced saves and state by game user (after PR #785)",
-     "Merge PR #785: chore: merge #784 (with main) into icloud-saves",
-     "fix: derive BotW mod reservations from current runtime sources (after PR #307)"
+     "chore: merge the remaining shader list issues (TotK +365 variants, Pokopia +139)",
+     "fix: a shader file whose known rows are one game's gives it the rest; Pokopia has its own list; the merge reports what it took",
+     "docs(xc3): the translator is PR #1917's build, replay-checked against a source rebuild (after PR #1917)",
+     "chore: merge the players' shader list issues (TotK +1,469 variants, BotW +3,226 pipelines, first Bananza list)",
+     "fix: a shader issue whose title names a game owns the rows no seed knows; Bananza gets its own list",
+     "test: the running-app check follows the pid and command-line process query (after PR #1795)",
+     "fix: the prompt texture lookup is built for every TotK version on the Mac, as 1.4.3 shares that object (after PR #1940)",
+     "Merge PR #1833, #1834: fix: iCloud conflict copies no longer make a complete synced save look incomplete, and are cleaned up (LENG-ZECHEN)"
     ]
    }
   ]
@@ -7735,21 +7735,21 @@
   ]
  },
  "iceorange-dev/manosaba-ios": {
-  "pushed_at": "2026-11-09T10:02:47Z",
+  "pushed_at": "2026-11-09T20:38:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T10:00:04Z",
+    "last_commit": "2026-11-09T20:38:33Z",
     "subjects": [
-     "Plan batch 162: the install without local.env, renewal by signing again, data pushed by content (319)",
-     "Plan batch 161: a probe of the GPU's sampler LOD bias and min / max reduction (318)",
-     "Plan batch 160: MetricKit's reports kept and named, the signature's expiry in the app (317a, 317b)",
-     "Plan batch 159: sleeps within 20 us of their deadline sleep once (316b)",
-     "Plan batch 158: runs of short sleeps backed off (316)",
-     "Plan batch 157: on-demand virtual cores and the half-float NaNs measured, nothing changed (315f, 315g)",
-     "Plan batch 156: half-float rounding measured (315d), the on-screen stick and camera ring as layers (315e)",
-     "Plan batch 155: mid-submission commits held while the GPU is busy, uploads from a pool not resident through their own pages (315b, 315c)"
+     "Plan: what the logs show of the iPhone started hot (324)",
+     "Plan batch 183: the scene size from dropped frames, measured on the iPhone Air (190; 229's A/B)",
+     "Plan batch 182: fade steps above 63.5 fps, the resolution tier held, BRX as sequential branches (292, 294, 295; chain ba6c7622e044)",
+     "Plan batch 181: the sampler LOD bias in the shader where the GPU ignores it (318)",
+     "Plan batch 180: the shaders the translator warned about, looked at (322)",
+     "Plan batch 179: the translator's own warnings in the reflections (317c, chain 47b5de2aa276)",
+     "Plan batch 178: the frame step's window and probes (321)",
+     "Plan batch 177: the edge push in y for screens taller than 16:9 (320g, chain 1f985598396c)"
     ]
    }
   ]
@@ -9442,21 +9442,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-11-08T20:02:14Z",
+  "pushed_at": "2026-11-09T19:48:18Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T19:02:28Z",
+    "last_commit": "2026-11-09T19:20:30Z",
     "subjects": [
-     "Build iPhone shader libraries only: the macOS half never reached a package",
-     "Hand the build chain bytes, never str: a str in dmsh_pch killed a pack ten thousand shaders in",
-     "Build the precompiled Metal header on Windows too: 22% off every compile",
-     "Give a non-ASCII work folder an ASCII name (a junction) instead of copying libraries about",
-     "Translate shaders on twice the cores: the compile step waits on processes, not only on the CPU",
-     "Keep the compiled libraries in the shader cache: this replacement used to skip it",
-     "Link Metal libraries through an ASCII folder: metallib cannot open a path with Chinese in it",
-     "Say plainly that the side-library patch is applied whether or not the tools are there"
+     "Sync the packer's copies with upstream",
+     "Base to 04811a63: one upstream commit (pool marks test their bit with a plain load) right after the last move, so the push run's check_tree stays green",
+     "Take a space in the work path as seriously as a Chinese character, and let a refused unit keep its source as the library: Big Brain Academy lost every vertex library to Apple's metal splitting an argument at the space",
+     "Put needs_mac_shaders back on the five Oodle/LZ5 profiles: the base move brought upstream's copies without it, and the restore step reads HEAD",
+     "Base to 81906931: the depth attachment sampled in its own pass, one upstream commit after the last move",
+     "Release notes: 17 Chinese rows for the commits this release lists",
+     "Base to 8d5d4f1b: the guest-file disk policy, the occlusion-query rework, mesh pipeline keys, uniform bounds, and the pipeline archive (69 upstream commits)",
+     "Link the RomFS image into the app tree instead of copying it (29 s of assemble on Tears of the Kingdom), and print a reused library's counts from the cache instead of reading 2.6 GB back"
     ]
    }
   ]
@@ -9482,21 +9482,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-09T11:21:26Z",
+  "pushed_at": "2026-11-09T22:18:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T23:23:04Z",
+    "last_commit": "2026-11-09T22:16:55Z",
     "subjects": [
-     "Merge pull request #1001 from LNPANDY/fix/hero-bottom-seam",
-     "Library: eliminate 1px bright seam at the bottom edge of the hero banner",
-     "Merge pull request #993 from LNPANDY/v0lumehi/nxbuild-feature-toggle",
-     "Hide the experimental builder behind a feature toggle, off for now",
-     "docs: sync v1.3.0 Chinese changelog with PR #982 (#983)",
-     "Merge pull request #982 from LNPANDY/v0lumehi/nxb-experimental-again",
-     "Make nxb an experimental builder again",
-     "docs: update v1.3.0 changelog and bilingual release notes title template (#980)"
+     "frontend: show iPhone activity title and preserve library state during iOS re-sign (#1028)",
+     "hid: report vibration device info for startup handles and route iOS haptics on slot attach (#1072)",
+     "patches: align 0074 Joy-Con 1 split/grip driver with upstream pad_hid and dm_joy APIs (#1074)",
+     "Refresh patches 0053 and 0103 for upstream 8190693 (#1075)",
+     "Merge pull request #1068 from LNPANDY/v0lumehi/short-issue-and-pr-texts",
+     "Merge pull request #1063 from LNPANDY/v0lumehi/engine-bump-8190693",
+     "Run the checks again",
+     "patches: add Switch 2 test stubs in 0081 and stdatomic header in 0103"
     ]
    }
   ]
@@ -10001,21 +10001,21 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-11-09T07:03:30Z",
+  "pushed_at": "2026-11-09T21:30:18Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T06:20:47Z",
+    "last_commit": "2026-11-09T20:59:10Z",
     "subjects": [
+     "Live hooks: hook the running game's code from the control port, a few ns a hit",
+     "Hang recorder: a GPU hang now leaves a record of what the GPU was on",
      "GPU watchdog: a GPU that stops taking work no longer freezes the Mac",
      "Mac: presents back on the game's queue; a second queue hung the GPU for 4 s",
      "Golden: the Blood Moor picture leaves out the hero's entering line; switch registry",
      "Gate: Quick Restart scenario on touch backends only; a quit stall joins the intermittent table",
      "uireg mapf: trigger at frame 1200; the phone measurement of the overlay",
-     "iOS: touch overlay and skill-button hook stop redoing work every move",
-     "Controller legend: never a ninth entry (host call 0x8f, product r53)",
-     "Map: tapping the ground no longer leaves the full-screen map"
+     "iOS: touch overlay and skill-button hook stop redoing work every move"
     ]
    }
   ]
@@ -10667,7 +10667,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-09T11:40:18Z",
+  "pushed_at": "2026-11-09T16:57:08Z",
   "branches": [
    {
     "branch": "main",
@@ -10687,21 +10687,21 @@
   ]
  },
  "Desm0nt/doom-port": {
-  "pushed_at": "2026-11-09T11:29:18Z",
+  "pushed_at": "2026-11-09T21:35:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T18:40:19Z",
+    "last_commit": "2026-11-09T21:34:52Z",
     "subjects": [
+     "v0.5.1: Mali with a read-only dma-buf (MediaTek gralloc): auto zero-copy tries the fd view only again, the vkmap view crashed every start (driver touches its moved mapping; refs #46)",
+     "v0.5.0: PowerVR driver crash inside a render pass: crash report names the pass and its pipelines, later starts turn on workarounds step by step (DM_PVR_LADDER); FPS counter clear of rounded screen corners; release of the 0.5.0 test builds",
+     "v0.5.0-test3: zero-copy on Mali where the dma-buf cannot be mapped (vkMapMemory view moved with mremap, DM_GFX_ZC_MAP, refs #3); log-only cached-pages self-test, NVN flush counter, GPU time without timestamps; floating move stick and finger-rotated 3D map (refs #40)",
+     "v0.5.0-test2: Mali / PowerVR optimizations adapted (zero-copy auto with write-combined coherent memory behind a self-test, UBO dynamic 2 for read blocks, fence trylock, crumbs after a GPU hang); intro audio crackling: slow first callback bridged instead of a fallback to NONE, NONE streams with 10 ms callbacks (refs #32)",
+     "v0.5.0-test1: PowerVR anisotropy fallback and driver compile lock; intro audio crackling (audren 8 buffers, audio thread priority, 32 ms AAudio floor, diagnostics, refs #32); on-screen pad drawn on its own surface + frame stall watch (ANR); pipeguard v2 (two deaths in a row, per-driver lists, v1 lists set aside); DIM_FIX for 3D samplers; ETR CPU fixes (REPORT_FAST, CPU_FIX, FAST_LOOKUPS, DIAG auto; DISPATCH_RUNS / RP_DEPS off); gear moved to the shared front end (DoomGear); old game files detected by the loaded patches",
      "v0.4.22: weapon wheel with touch controls: while R is held its finger (and a free finger) steers the right stick (refs #34); auto aspect uses the display's real size while the view has none (16:9 on a 20:9 phone when started with the screen off); update notices: new release once at start with its changelog, 'Check for updates' in the pause menu, setup stamp dm/setup-stamp.json and a one-time re-run-setup notice",
      "v0.4.21: settings are saved now (the profile save gate profile_requireSaveExplanation is off, the game skipped every profile save on fresh profiles), Motion Aiming / sensitivity / Aim Assist in the gear synced with the game menu (refs #31); several Vulkan driver packages in the APK, installed by GPU family, and a driver manager in the gear: GitHub releases from drivers/sources.json, SHA-256 check, zip install, delete (refs #30)",
-     "v0.4.20: ASTC overlay: sanitize error / all-zero ASTC blocks also in the direct full-upload path (the decal atlas, ~4.8M never-written blocks, loads through it), fixes the remaining Mali black squares near bright lights (refs #28, #7, #14, #25); BC-path census and per-serial bisection switches (off by default)",
-     "v0.4.19: ASTC overlay: error / all-zero ASTC LDR blocks (never-written atlas areas) replaced by transparent black at upload, fixes the Mali black squares and the white glows with the astc folder (refs #7, #14, #25, #28), BC6H kept on the BC path by default, ASTC HDR self-test; PowerVR: fence guard and recovery from driver fence errors instead of a false GPU-hang abort, better hang diagnostics; clip/cull fix only on capable GPUs (refs #25, #26, #27, #28)",
-     "README: banner at the top about the astc texture cache for Mali / PowerVR / Xclipse phones (since v0.4.12)",
-     "v0.4.18-test2 (pre-release): clip/cull distance shader fix only on GPUs that support clip and cull distances, fixes the start-up crash on Mali-G615 / Mali-G57 (refs #25, #26); draw probe and depth debug switches for the stock Adreno 740 bones-via-SSBO investigation",
-     "v0.4.18-test1 (pre-release): dirty tracker re-maps fragmented zero-copy chunks in place, ENOMEM fallback and honest crash instead of a fault loop, memory map counts in the perf line and crash.txt (refs #21); experimental bones-via-SSBO for the stock Adreno 740 driver, off by default",
-     "v0.4.17: Samsung S23 crash fixes (thread exit on the host stack, AAudio stall recovery + AudioOut close), crash log stack-overflow/PAC, clip distances within the device limit, landscape aspect at start"
+     "v0.4.20: ASTC overlay: sanitize error / all-zero ASTC blocks also in the direct full-upload path (the decal atlas, ~4.8M never-written blocks, loads through it), fixes the remaining Mali black squares near bright lights (refs #28, #7, #14, #25); BC-path census and per-serial bisection switches (off by default)"
     ]
    }
   ]
@@ -11187,7 +11187,7 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-08T21:08:07Z",
+  "pushed_at": "2026-11-09T22:26:52Z",
   "branches": [
    {
     "branch": "master",
@@ -11676,21 +11676,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-09T09:26:03Z",
+  "pushed_at": "2026-11-09T21:15:55Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T09:22:41Z",
+    "last_commit": "2026-11-09T21:00:37Z",
     "subjects": [
+     "feat(bench): flag restart quartets whose arms ran at different GPU clocks",
      "fix(gfx): initialize the png crc table once",
      "fix(test): restore android backend fixture build support",
      "fix(test): avoid libc poll collision in pool finalization fixture",
      "fix(bench): correct KGSL memory accounting",
      "perf(android): enable frame lag for odin native 60 fps",
      "test(bench): separate pan release timing from host teardown",
-     "feat(gfx): add opt-in system telemetry to the overlay",
-     "docs(android): record unlimited host qualification boundary"
+     "feat(gfx): add opt-in system telemetry to the overlay"
     ]
    }
   ]
@@ -11832,21 +11832,21 @@
   "branches": []
  },
  "Desm0nt/diablo3-port": {
-  "pushed_at": "2026-11-06T20:43:57Z",
+  "pushed_at": "2026-11-09T13:09:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T20:36:11Z",
+    "last_commit": "2026-11-09T13:09:39Z",
     "subjects": [
+     "VERSION 0.2.5",
+     "VERSION 0.2.5-debug: stick base under the finger, FPS counter clear of the screen corner",
+     "Stick: a touch near the home puts the base under the finger like the floating zone does; tilting from the home centre made a touch beside the knob start at full tilt in a seemingly random direction (issue #6)",
+     "FPS counter clears the screen's real rounded top left corner and cutout (WindowInsets RoundedCorner, Android 12+) instead of a fixed 18 dp sized for the Mi 14 Ultra; a bigger corner radius cut it off (issue #1, Poco F8 Ultra)",
      "Shader translation runs without SPIRV-Tools as setup promises: no spirv-opt -> py_trim (the NDK one never had --trim-capabilities, same output), no spirv-val -> the per-shader check is skipped; was FileNotFoundError at stage 'translating to SPIR-V bundles' on PCs without an Android NDK (issue #2)",
      "VERSION 0.2.4-debug: vertex input retype off Adreno",
      "Vertex inputs take their attribute format's scalar type off Adreno (DM_GFX_VTX_RETYPE): a float input over UINT/SINT data (or the reverse) is declared with the format's type and every load is bitcast back, so the shader sees the raw bits as on the Switch; Mali converts the value to the declared type, which broke the UVs of D3's full-screen passes (Mali-G57 0.2.3-debug: black level under the HUD); module variants per shader and retype code, refused rewrites keep the base module; default on off Adreno, Adreno unchanged",
-     "VERSION 0.2.3-debug: self-test, open-pass depth reads end the pass off Adreno, NVN GVAL pass values with the auto diagnostics",
-     "NVN GVAL pass values off Adreno: on each pass-profiled frame, right after every render pass, a 64-thread compute probe (xbg_pass_values.comp) reads a 32x18 texel grid of each color and depth attachment (exact level/layer) and logs nan/inf/zero/neg counts and per-channel mean/max (depth min/max/mean/at0/at1) with the image serial after the GPASS lines; kind=reads lists sampled render-target serials per pass, kind=present the shown image; read-only (barriers only, no layout change, no extra pass splits), int/MSAA/3D skipped with a reason; DM_GFX_PASS_VALUES=0 off, default on with DM_GFX_PASS_PROF",
-     "0.2.3: off Adreno an open-pass depth attachment read by a shader ends the pass (DM_GFX_DEPTH_FEEDBACK default 0 off Adreno; feedback loop undefined in Vulkan, Mali-G57 black level did ~12 a frame); VERSION 0.2.3",
-     "GPU self-test of the five d3-perf switches off Adreno: at engine init, before the first frame, one short device test (in-pass occlusion reports, load-op clears for 1.0/LEQUAL and reverse-Z 0.0/GEQUAL, NaN-saturate, float-to-int without trunc, canonical LDC via the engine's own rewrites) turns off each one that fails; Adreno unchanged with no checks; DM_GFX_SELFTEST=1/0, DM_GFX_SELFTEST_FORCE_FAIL, explicit DM_GFX_* env wins; one [selftest] line in boot.log; occlusion result copies with WAIT_BIT off Adreno (DM_GFX_QUERY_WAIT)",
-     "0.2.2-debug: the build with the safe automatic diagnostics on non-Adreno GPUs; VERSION may carry a suffix (versionCode from the numeric part)"
+     "VERSION 0.2.3-debug: self-test, open-pass depth reads end the pass off Adreno, NVN GVAL pass values with the auto diagnostics"
     ]
    }
   ]
@@ -12015,21 +12015,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-09T11:44:00Z",
+  "pushed_at": "2026-11-09T22:18:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T11:41:31Z",
+    "last_commit": "2026-11-09T22:06:02Z",
     "subjects": [
-     "Merge commit 'f464f3dc6370833e77467a1d632ed0d96d8f470d' into HEAD",
-     "Merge branch 'fix/gfx-flaky-1109' into HEAD",
-     "出包清理等早装收尾；Windows 短入口扫掉残留 .pid、查不到进程不再误拆（审计 P1-146 / P2-217）",
-     "Merge branch 'fix/rewrite-speed' into HEAD",
-     "Merge branch 'fix/updater-rollback-resume' into HEAD",
-     "更新器：中断后再试不删回滚副本，跨进程重试接着下（审计 P1-147 / P2-220）",
-     "Merge branch 'docs/vk-image-pit' into HEAD",
-     "坑记录：Vulkan 测试镜像标签随镜像源内容变，改了要重新 prepare.sh"
+     "Merge commit '578b453ab2a06939f0419bdcde6bf6184e4c3a21' into HEAD",
+     "Merge branch 'fix/gate-remote-warn' into HEAD",
+     "Merge branch 'contrib/pr318' into HEAD",
+     "门禁把远端同步阶段的【黄】remote：行抄进日志，末行在「应跑 N 步」后点「同步缺 N 项」（列车回执、守望都读末行）",
+     "Merge branch 'contrib/pr323' into HEAD",
+     "Merge branch 'contrib/pr322' into HEAD",
+     "Merge branch 'feat/gate-stop' into HEAD",
+     "public_repo_scan_test：git 调用 stdin 接空（hash-object --stdin 读继承来的标准输入，调用方给不关的管道时挂到超时 124）"
     ]
    }
   ]
