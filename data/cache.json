@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-08T05:39:49Z",
+  "pushed_at": "2026-11-09T05:49:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T05:39:48Z",
+    "last_commit": "2026-11-09T05:49:56Z",
     "subjects": [
+     "radar 2026-11-09",
      "radar 2026-11-08",
      "radar 2026-11-07",
      "radar 2026-11-06",
      "radar 2026-11-05",
      "radar 2026-11-04",
      "radar 2026-11-03",
-     "radar 2026-11-02",
-     "radar 2026-11-01"
+     "radar 2026-11-02"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-09T00:37:52Z",
+  "pushed_at": "2026-11-09T11:42:23Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T00:37:51Z",
+    "last_commit": "2026-11-09T11:41:47Z",
     "subjects": [
-     "Every exclusive access gets ordering: the rewriter sets bit 15 of each ldxr* / ldxp and stxr* / stxp (acquire on the load, release on the store), by encoding in every module of every game, instead of acquire for one lock shape alone, which matched none of the 123 modules on the game drives. On an Apple M6 a plain store published with stxr or stxp was read stale 12,858 and 10,961 times in 100 million rounds, never with stlxr or stlxp, and an atomic increment cost the same either way. Rewriting all 123 modules with and without the rule changes only those bits (1,045,422 in 78 modules, plus 1,499 copies in exclusive windows); Fire Emblem Engage and Super Mario Odyssey run the same with the modules swapped. The words stay out of changed.tsv, so cheats may still write them (first reported by the S2Arm project)",
-     "Native task / mesh pipelines are recorded, prewarmed and kept in the pipeline archive: Ocarina of Time's foliage, shadows and enemies no longer stall at their first draw (59.5 s of builds at the Kokiri Forest entry on an M5 Max with a cold Metal cache, one frame of 42.9 s), and its profile seeds 123 of them (PR #1368)",
-     "Remove the three patches.py files the engine-wide rules of 2c2c5491 replaced (Subnautica, Subnautica: Below Zero, FINAL FANTASY CRYSTAL CHRONICLES Remastered Edition), left out of that commit (issue #635)",
-     "Engine-wide rewriter rules replace three games' build cuts: Unity 2019's ALLOC_BUCKET block limit found by the allocator's name (unity_bucket.py; Subnautica and Below Zero), and Unity 2018's ThreadedStreamBuffer load-acquires matched by function in any main (engine_patches.py, loaded like sdk_patches.py; FINAL FANTASY CRYSTAL CHRONICLES 1.0.0 and 1.0.3, Raging Loop) (issue #635)",
-     "Fix CI lint and fixture failures after the queue and shader updates",
-     "The last four SDK rows give way to the SDK-wide rules: Ace Attorney Investigations Collection's (311deab1), Brain Memory Training Academy's (12f16103) and Patrick's Parabox's (9c73fb73) builds now take the 2 MB alignment beside the node area cut, and Hollow Knight: Silksong's (e01950c5) rewrites byte-identical; only SDK 4.4.0's row is left (issue #635)",
-     "A sampler keeps its state from byte 8 on: Super Mario Odyssey's sampler cache (main+0x980e20, 1.4.1) keys its entries by a CRC-16 (0xA001) of bytes 8 to 0x5f of the NVNsampler alone, and the filter and wrap modes at bytes 4 to 7 made samplers that differ only in them one entry; from the regress route's save it registered 168 states 3,368 to 5,737 times instead of 168 (151,626 of 276,480 initializations met a CRC another state had, none now). nvnSamplerInitialize writes every byte of the record; t_nvn.c checks equal states give equal bytes and filter or wrap alone a different CRC (first reported by the S2Arm project)",
-     "Render targets in a GPU-only pool are placed in heaps of their own, and a freed target's heap waits resident for the next target it fits: Ocarina of Time's dynamic resolution, free to move since 04419bc2, made about 3 new Metal textures a frame in its 305 MB target pool; on an M6 (16 GB), alternating the switch every 300 frames while the resolution moved, the target site added 455-521 MB to the residency set per 300 frames off and 27-37 MB on, frame p90 33-50 ms against 17-18 ms (issue #1831)"
+     "t_render_counter_overlap prints the bytes a GPU copy reads after a report as OPEN lines instead of checking them: the host writes reports on the CPU when the submission completes, so a later GPU read can see the bytes from before the report, and the check failed on that race in 3 of 60 runs (the predicates, which the host's encode-time values decide, stay checked). Reports written on the GPU in command order were built and measured (correct bytes in every case, about 0.5 to 0.7 ms more GPU a frame on Ocarina of Time, no game symptom traced to the order) and not landed; rendering.md records it, and that both conditional-rendering tests turn render_cond on themselves",
+     "nn::ndve's movie network runs as the host's own Metal kernels, on by default: Ocarina of Time's title movie takes 6.77 ms of GPU a frame on an M4 Pro instead of 12.78, the output the game's network gives (issue #1375, PR #1894)",
+     "A read of a game uniform slot past the size the game bound gives 0, as Maxwell's constant buffers do: Metal has no bounds of its own, so Paper Mario: The Thousand-Year Door's forward shader read its light count past a 16-byte binding and the GPU hung in Peach's invisibility-potion scene (chain 3510ea767778, issue #1860)",
+     "H.264 movie packets are read as Annex B only: a 4-byte NAL length from 256 to 511 begins 00 00 01, so the length-prefixed fallback could not be told from a start code (issue #629)",
+     "A Core Haptics engine that stops under a call raises an NSException: the rumble adapter drops it as a failed engine instead of ending the app (PR #1694)",
+     "A program's DLC are numbered from the application's title ID: a program packed alone (--program N) or with its launcher had every DLC image N below its index, so METAL GEAR SOLID: Peace Walker - Master Collection Version's program 1 mounted the Pre-Order Bonus where it asked for the Multilingual Pack and ended at start (PR #1874)",
+     "A folder whose name has brackets no longer hides files from the tools that search it: the rewriter loaded no game's patches.py (no cuts, observation gates or frame-step stubs, and no error), the matcher found no registered cuts, a provisional profile was guessed with no host hooks, and the shader split found no NRO captured from a boot (PR #1826)",
+     "The samples-passed counter is one running total in queue order: a game that never resets it reads its occlusion queries again (Red Dead Redemption's distant characters had no bodies), and a report a submission after its reset no longer reads slots a later submission overwrote (PR #1867)"
     ]
    }
   ]
@@ -1951,14 +1951,14 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-08T22:02:30Z",
+  "pushed_at": "2026-11-09T06:23:51Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T22:02:29Z",
+    "last_commit": "2026-11-09T06:23:50Z",
     "subjects": [
-     "chore: 自动同步 Star 地图（198 个项目）",
+     "chore: 自动同步 Star 地图（200 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-08T19:45:00Z",
+  "pushed_at": "2026-11-09T00:58:15Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T19:44:59Z",
+    "last_commit": "2026-11-09T00:58:14Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2468,7 +2468,7 @@
   ]
  },
  "yamoroc/d2r-mobile": {
-  "pushed_at": "2026-11-02T00:56:06Z",
+  "pushed_at": "2026-11-09T01:00:12Z",
   "branches": []
  },
  "x-omen-x/d2r-mobile": {
@@ -7735,21 +7735,21 @@
   ]
  },
  "iceorange-dev/manosaba-ios": {
-  "pushed_at": "2026-11-08T19:30:01Z",
+  "pushed_at": "2026-11-09T10:02:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T19:26:17Z",
+    "last_commit": "2026-11-09T10:00:04Z",
     "subjects": [
-     "Plan batch 151: the eleventh review's decisions measured again (313)",
-     "Plan batch 150: the translation chain's next change from the eleventh review (311b, 64g)",
-     "Plan batch 149: the translation chain's change from the eleventh review (311a)",
-     "Plan batch 148: the Vulkan backend from the eleventh review, on the K100 (308, 309)",
-     "Plan batch 147: TotK above 100 fps, virtual core moves, fewer pipeline guesses, WaitSynchronization ended by its signal (304, 306, 307, 312)",
-     "Plan batch 146: correctness fixes from the eleventh review (303)",
-     "Plan: the eleventh review (2026-11-08), items 303-313",
-     "Plan batch 145: the picture moved clear of the iPhone Duo's outer front camera within its bars, at its size (302)"
+     "Plan batch 162: the install without local.env, renewal by signing again, data pushed by content (319)",
+     "Plan batch 161: a probe of the GPU's sampler LOD bias and min / max reduction (318)",
+     "Plan batch 160: MetricKit's reports kept and named, the signature's expiry in the app (317a, 317b)",
+     "Plan batch 159: sleeps within 20 us of their deadline sleep once (316b)",
+     "Plan batch 158: runs of short sleeps backed off (316)",
+     "Plan batch 157: on-demand virtual cores and the half-float NaNs measured, nothing changed (315f, 315g)",
+     "Plan batch 156: half-float rounding measured (315d), the on-screen stick and camera ring as layers (315e)",
+     "Plan batch 155: mid-submission commits held while the GPU is busy, uploads from a pool not resident through their own pages (315b, 315c)"
     ]
    }
   ]
@@ -9482,7 +9482,7 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-08T23:23:04Z",
+  "pushed_at": "2026-11-09T11:21:26Z",
   "branches": [
    {
     "branch": "main",
@@ -10001,21 +10001,21 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-11-09T00:26:45Z",
+  "pushed_at": "2026-11-09T07:03:30Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T23:42:47Z",
+    "last_commit": "2026-11-09T06:20:47Z",
     "subjects": [
+     "GPU watchdog: a GPU that stops taking work no longer freezes the Mac",
      "Mac: presents back on the game's queue; a second queue hung the GPU for 4 s",
      "Golden: the Blood Moor picture leaves out the hero's entering line; switch registry",
      "Gate: Quick Restart scenario on touch backends only; a quit stall joins the intermittent table",
      "uireg mapf: trigger at frame 1200; the phone measurement of the overlay",
      "iOS: touch overlay and skill-button hook stop redoing work every move",
      "Controller legend: never a ninth entry (host call 0x8f, product r53)",
-     "Map: tapping the ground no longer leaves the full-screen map",
-     "Map: never switch the map outside a run; reopen it after a cutscene on touch"
+     "Map: tapping the ground no longer leaves the full-screen map"
     ]
    }
   ]
@@ -10175,21 +10175,21 @@
   "branches": []
  },
  "Xc1Ym/LumaNX": {
-  "pushed_at": "2026-11-06T23:57:54Z",
+  "pushed_at": "2026-11-09T02:59:22Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-06T23:57:51Z",
+    "last_commit": "2026-11-09T02:59:18Z",
     "subjects": [
+     "chore: prepare LumaNX 0.4.1 release",
+     "Merge pull request #38 from Xc1Ym/codex/fix-nxnative-sync-controller-20261109",
+     "fix: stub controller applet service in native input harness",
      "chore: sync tested nxnative snapshot",
      "chore: prepare LumaNX 0.4.0 release",
      "Merge pull request #37 from Xc1Ym/codex/switch2-nup-runtime-20261106",
      "fix: harden NUP imports after app review",
-     "feat: adapt Switch 2 NUP imports and resource images",
-     "chore: sync tested nxnative snapshot",
-     "chore: sync tested nxnative snapshot",
-     "chore: sync tested nxnative snapshot"
+     "feat: adapt Switch 2 NUP imports and resource images"
     ]
    }
   ]
@@ -10360,12 +10360,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-11-08T15:46:51Z",
+  "pushed_at": "2026-11-09T11:14:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T15:46:49Z",
+    "last_commit": "2026-11-09T11:14:19Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10667,7 +10667,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-08T18:14:36Z",
+  "pushed_at": "2026-11-09T11:40:18Z",
   "branches": [
    {
     "branch": "main",
@@ -10687,7 +10687,7 @@
   ]
  },
  "Desm0nt/doom-port": {
-  "pushed_at": "2026-11-08T21:11:23Z",
+  "pushed_at": "2026-11-09T11:29:18Z",
   "branches": [
    {
     "branch": "main",
@@ -11541,21 +11541,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-09T00:39:28Z",
+  "pushed_at": "2026-11-09T01:32:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T00:35:40Z",
+    "last_commit": "2026-11-09T01:32:20Z",
     "subjects": [
+     "Remember installer paths between releases (#81)",
      "Version 0.1.12. (#80)",
      "Resolve the portable profile directory correctly (#79)",
      "Update README to request AMD GPU testing contributions",
      "Merge pull request #57 from AksharDP/task/flight-dir-in-install",
      "Create the flight folder inside the install folder, next to xc2.exe, rather than in its parent.",
      "Merge pull request #52 from AksharDP/task/version-0.1.11",
-     "Version 0.1.11.",
-     "Merge pull request #51 from AksharDP/task/issue-39-feedback-snap"
+     "Version 0.1.11."
     ]
    }
   ]
@@ -11676,21 +11676,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-08T22:31:30Z",
+  "pushed_at": "2026-11-09T09:26:03Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T22:28:20Z",
+    "last_commit": "2026-11-09T09:22:41Z",
     "subjects": [
+     "fix(gfx): initialize the png crc table once",
+     "fix(test): restore android backend fixture build support",
+     "fix(test): avoid libc poll collision in pool finalization fixture",
+     "fix(bench): correct KGSL memory accounting",
      "perf(android): enable frame lag for odin native 60 fps",
      "test(bench): separate pan release timing from host teardown",
      "feat(gfx): add opt-in system telemetry to the overlay",
-     "docs(android): record unlimited host qualification boundary",
-     "docs(android): correct measured frame step bounds",
-     "feat(android): add unlimited frame rate choice",
-     "fix(bench): tolerate partial UTF-8 at the warm-up log tail",
-     "docs(gfx): limit qualified pipeline captures to 30 fps"
+     "docs(android): record unlimited host qualification boundary"
     ]
    }
   ]
@@ -11709,21 +11709,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-08T20:56:59Z",
+  "pushed_at": "2026-11-09T08:11:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T18:49:59Z",
+    "last_commit": "2026-11-09T08:10:45Z",
     "subjects": [
-     "Merge pull request #94 from simipoB/stock-driver-default",
-     "Sword / Shield: a lighter picture through the game's own 3D render scale; Lowest graphics",
-     "Merge pull request #93 from simipoB/stock-driver-default",
-     "Draws to a render target with no format run; the replay's cost measured where it goes",
-     "Deswizzle GOB by GOB: texture uploads about 25 times faster",
-     "Stock drivers without fallbacks needed, frame pacing, a 30 fps guard",
-     "Probe: GPU self-tests with synthetic data, safe to run on shared phones",
-     "The setup points Xclipse phones on Android 14+ to RADV for Xclipse (experimental)"
+     "Merge pull request #107 from simipoB/mali-ubo-ladder",
+     "Merge pull request #106 from simipoB/fallback-fb-cache",
+     "Safe starts: copied uniform buffers as level 2 (#105)",
+     "Keep render pass framebuffers on drivers without dynamic rendering (#99); log what ends passes",
+     "Merge pull request #104 from simipoB/xclipse-pool-giveback",
+     "Log only the extensions a Vulkan 1.1 device has (#99)",
+     "Give a pool's pages back to the game without a gap (#54, Xclipse)",
+     "Merge pull request #95 from simipoB/crash-record-first-line"
     ]
    }
   ]
@@ -12015,21 +12015,38 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-09T00:53:10Z",
+  "pushed_at": "2026-11-09T11:44:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T00:53:10Z",
+    "last_commit": "2026-11-09T11:41:31Z",
     "subjects": [
-     "launchers: silent self-update with delta packages and rollback (#16)",
-     "文档：写明 S2A_FPS 只是上限，NVN 游戏 120 与不限效果相同（#37）",
-     "docs(readme): 为联合开发者添加 GitHub 主页链接 (#45)",
-     "macos: map Switch Pro controller buttons by face label (#42)",
-     "fix(pack): 命令行出完包也写 <输出>/shell.id，Mac 前端才认这份产物 (#35)",
-     "修 #36：Mac 打包只有本体的游戏不再因缺内容版本被拒 (#39)",
-     "修 #32：Windows 清理保留 work/ 的产物根，链接只删自身 (#33)",
-     "fix(build): opus 构建脚本兼容 macOS 自带 bash 3.2 的空数组展开 (#31)"
+     "Merge commit 'f464f3dc6370833e77467a1d632ed0d96d8f470d' into HEAD",
+     "Merge branch 'fix/gfx-flaky-1109' into HEAD",
+     "出包清理等早装收尾；Windows 短入口扫掉残留 .pid、查不到进程不再误拆（审计 P1-146 / P2-217）",
+     "Merge branch 'fix/rewrite-speed' into HEAD",
+     "Merge branch 'fix/updater-rollback-resume' into HEAD",
+     "更新器：中断后再试不删回滚副本，跨进程重试接着下（审计 P1-147 / P2-220）",
+     "Merge branch 'docs/vk-image-pit' into HEAD",
+     "坑记录：Vulkan 测试镜像标签随镜像源内容变，改了要重新 prepare.sh"
+    ]
+   }
+  ]
+ },
+ "neohob/d2r-mobile": {
+  "pushed_at": "2026-11-09T06:06:53Z",
+  "branches": []
+ },
+ "Diablo-chia619/d2r-mobile-evidence": {
+  "pushed_at": "2026-11-09T02:20:07Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-09T02:19:46Z",
+    "subjects": [
+     "top-band flicker: frame comparison (Adreno 830)"
     ]
    }
   ]
