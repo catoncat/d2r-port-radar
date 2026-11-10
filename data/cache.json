@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-10T17:06:16Z",
+  "pushed_at": "2026-11-10T23:22:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T17:05:57Z",
+    "last_commit": "2026-11-10T23:22:03Z",
     "subjects": [
+     "With present snapshots on, a swapchain texture is the game's again only once its snapshot's copy has run on the GPU: a snapshot present keeps its ticket and the queue's receipt carries the copy (mtl_present's copy), so the acquire of that texture waits for it in the game's order (mtl_present_wait_texture), without waiting for the screen, instead of getting ticket 0 and being paced only by the ring slot, which is counted per present and only when the queue worker replays it. Xenoblade Chronicles 3 ran more frames ahead of the GPU than its swapchain holds and rewrote per-frame uniform data queued draws still read: its 3D scene was one flat colour in 32 of 80 captures with 2 ring slots and 49 of 80 with 4, 0 of 80 after (Apple M2, measured by the PR's author on their version of the wait; LNPANDY/NX2Apple#1117). nvnQueueFinish after a snapshot present waits for the copy too, not for the display link by the ticket (1 ms against 405 ms with the display stalled for 400 ms). t_present_snap ticket checks the tickets, the receipt's copy, both acquires and the finish with 4 ring slots and 2 window textures (PR #2153)",
+     "A NaN or infinite colour under a zero source blend weight adds nothing, as on the console: NVN's driver sets the float blender's \"zero times anything is zero\" option (the command word for SET_BLEND_FLOAT_OPTION is in the sdk module), while Apple's blender stores NaN for 0 x NaN and 0 x Inf. Every pixel shader with a float4 colour output ends in a guard that reads a word from the host (fragment buffer 28, two bits per colour output), and the host sets an output's bits only where its state can have that weight: blending on, a floating-point target, a sum or difference, a source colour factor of SRC_ALPHA (zero at alpha 0) or ONE_MINUS_SRC_ALPHA (zero at alpha 1) and a destination factor that does not read the source colour. Every other draw returns its colour as it is; a factor of ZERO needs nothing, since Apple's blender leaves that term out. Ocarina of Time's mist shader divides by zero at alpha 0 and blends into an RGBA16F target with SRC_ALPHA / ONE_MINUS_SRC_ALPHA, which the bloom spreads into white clouds; they did not show on the Mac route run here, with the rule on or off, so the game itself awaits a retest. t_blend_zero draws NaN, +Inf, -Inf and 2 at alpha 0 and 1 under seven blend states and reads the target back, with the rule and with DM_NVN_BLEND_ZERO=0 (Apple's blender as it is). Ocarina of Time's 42,848 shaders build; standing in Kokiri Forest GPU p50 10.86 -> 10.95 ms, within the spread between runs, 60 fps both (Apple M6). Open: NaN already in the target under a zero destination weight, a non-finite weight on a colour of 0, the alpha channel's own weights, the Vulkan and OpenGL paths, and the iOS libraries were not run (PR #2030, issue #1839)",
+     "Vulkan layer: attachments opened with LOAD_OP_DONT_CARE are loaded, colour, depth and stencil alike, instead of opened with Metal's DontCare, which starts Apple's tile memory without the image. Vulkan leaves those contents undefined; the Switch keeps them: NVIDIA's driver (subsdk1, 421.03, read statically) does no colour discard at render-pass begin or end, the macro it runs there is a no-op, and for depth it only drops the ZCULL hints (its submit-time processing is not decoded). Re:ZERO's post chain blends its effects layer and HUD over targets it opens with DONT_CARE and samples a half-res depth that an empty DONT_CARE pass stored again, which gave a black 3D world under the HUD. In Re:ZERO the loads cost about 0.24 ms of GPU time a frame on an M4 Pro, frame time unchanged; iPhone not measured. t_vk_dontcare pins the layer's policy for colour, depth and stencil under MTL_DEBUG_LAYER_VALIDATE_LOAD_ACTIONS (PR #1500)",
+     "New multisample colour textures start as zero: tex_zero_fill clears them in a render pass in the upload batch, per layer, as it does depth and stencil (a buffer copy cannot write samples), instead of returning and leaving Metal's undefined content where a new Switch pool reads 0. Rune Factory 5 loads its new 1920×1080 two-sample RG11B10F scene target without a colour clear and blends into it, which gave a green background that kept the silhouettes of moving characters. t_clear_msaa fills a multisample texture with a colour, calls the initializer and reads every sample on the GPU (RGBA8, RG11B10Float, RGBA16Float at two and four samples); the log names the first such texture once (PR #1760)",
+     "The gfx tests build again: t_gl_imports defines g_key18, which hle.c's counter gate writes since f3ec8fc8 and loader.c (not linked by the test) defines, and the tests' Makefile regenerates game_profile.h on every make as the host's and the host tests' do, so a header from an older game.py no longer stops the suite on undeclared DM_GAME_* defines (game.py writes it only when it changes)",
+     "A counter report of a running submission refuses a uniform shadow only over its own 16 bytes, not its whole 4 KB page: the host writes reports (and samples-passed results, which counted nowhere before) on the CPU when their submission completes, so they are kept by address in a ring with their fence (hw_note, hw_live), behind a page table that skips the ring for every other page, and go into the page tables as before only when they do not fit. Ori and the Will of the Wisps writes two timestamp reports a frame into the page of its uniform blocks; on its route into Swallow's Nest the by-page refusal gave 625,330 refusals in 15,000 frames and about 15 s at 25-28 ms a frame (GPU 26 ms), the exact check none, frame time p50 16.67 ms throughout (Apple M6). The residency line counts them as \"a report still to land\"; DM_NVN_REPORT_EXACT=0 refuses by page as before (issue #1660)",
      "Timestamp reports record their segment's GPU time for every game, without the GPU's idle time between a submission's command buffers: a report takes the GPU start or end of the segment it was encoded in, as hardware records it, instead of one time for the whole submission, which made a game that times its GPU work between two reports read about 0 (the profile key gpu_timestamps, set by five games, is removed; DM_NVN_GPU_TS=submission / segment_gaps for A/B runs). The gaps where the GPU waits at a commit for the host's translation are left out (seg_idle_before over the submission's real commits), and the boundaries' counter heap serves the encode thread too, so iPhone games no longer commit at every 64-draw boundary (PRs #1350, #1229, issues #1290, #1064)",
-     "A pipeline base the archives lack is remembered for the run: a later ask for it skips the search, a non-compiling one returning nil and a compiling one going straight to the compiler. With the build table full, every draw of a pipeline whose build it refused searched every archive file again; Ocarina of Time's castle town market fell from about 114 to 6.4 ms of CPU translation a frame (PR #1825)",
-     "Short sleeps are polls: a SleepThread from 20 µs up to the yield back-off's longest sleep (250 µs; DM_YIELD_BACKOFF sets both) continues the run of yields as a short timed wait does, and once the run has lasted 2 ms it sleeps the back-off's length when that is longer. Hollow Knight: Silksong's idle Unity job workers sleep 25 µs between looks at their queue (main+0xbd99e0, SleepThread of a global, or YieldThread by another global), about 25,000 host wakeups a second, which kept a performance core awake: on an iPhone Duo CPU energy 0.63 → 0.09 W and wakeups 37,700 → 14,700 a second at 60 fps, the work moved to efficiency cores; on the Mac wakeups 29,000 → 8,000 a second, CPU energy 0.47 → 0.32 W. t_pollwait checks that 25 µs sleeps back off at 2 ms and not before, that 300 µs sleeps keep their length (but back off under a 500 µs cap), that nothing backs off with the back-off off, and that sleeps between 30 µs of work keep their length (PR #1975)",
-     "A system register access whose register is x18 goes through the thread slot K18: mrs x18, tpidr_el0 / tpidrro_el0 copies KTLS / KTLR into K18, msr tpidr_el0, x18 copies K18 into KTLS, and the counter gate writes K18 for mrs x18, cntpct_el0. The Hinokami Chronicles 2 no longer reads a stale K18 and faults 2 s in (issue #2123)",
-     "An argument block whose only change is what its uniform slots point at is patched instead of encoded again: a uniform binding, or an inline update deferred over one, rewrites the uniform slots and their size table in a copy of the shader's block, and every texture, sampler, image and storage slot stays as it was (PR #1611)",
-     "DLSS scalers outlive the submissions that encoded them: a replaced scaler is held until its submission completes, a new network takes the slot used least recently, and a network is named by a serial of its own instead of its address (PR #1479)",
-     "A uniform read at a fixed offset is bounded once a binding, by the host, instead of at every read in the shader: a game uniform slot bound shorter than its shader reads it at fixed offsets is encoded with zeros up to there, and only reads at computed offsets keep the comparison with the size table, which only their shaders declare. The comparisons took a fifth of the GPU's time in Donkey Kong Bananza (chain bc8830d4ba5a, issue #2066)",
-     "Bounded uniform reads are written as select(0, read, cond), the translator's own load and choice, not a branch for each: OCTOPATH TRAVELER's dither-fading trees no longer show blue, green and white blocks on an M1 (chain eaa843a79149, PR #2127)"
+     "A pipeline base the archives lack is remembered for the run: a later ask for it skips the search, a non-compiling one returning nil and a compiling one going straight to the compiler. With the build table full, every draw of a pipeline whose build it refused searched every archive file again; Ocarina of Time's castle town market fell from about 114 to 6.4 ms of CPU translation a frame (PR #1825)"
     ]
    }
   ]
@@ -1951,17 +1951,17 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-10T07:15:32Z",
+  "pushed_at": "2026-11-10T19:42:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T07:15:31Z",
+    "last_commit": "2026-11-10T19:42:25Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（200 个项目）",
      "chore: 自动同步 Star 地图（200 个项目）",
-     "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-10T07:27:10Z",
+  "pushed_at": "2026-11-10T17:07:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T07:27:09Z",
+    "last_commit": "2026-11-10T17:07:28Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4126,21 +4126,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-10T17:00:07Z",
+  "pushed_at": "2026-11-10T21:13:39Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T16:54:58Z",
+    "last_commit": "2026-11-10T21:13:37Z",
     "subjects": [
-     "fix(vr): TotK 1.4.3 VR starts again: one table for the text padding after the code",
-     "fix(vr): TotK VR draws one picture for both eyes; the second render run (B2) is removed",
-     "fix(oot): probe-fs checks a voice line of OoT's own RomFS, as the game asks for it (after PR #2035)",
-     "chore(oot): DM_NVN_UPTIME, a per-step timing line for slow texture uploads (diagnostic, off by default)",
-     "fix(oot): the Ounce vibration answer is unconditional and logs its first call (after PR #2030)",
-     "Merge PR #2017: OOT recorded shader variants and warm-up rows",
-     "Merge PR #2035: OOT opens voice streams whose path has a double slash",
-     "Merge PR #2030: OOT answers nn::hid::IsOunceVibrationDeviceMounted, so the ocarina does not stop the process"
+     "fix(oot): a compute shader whose float adds this Mac's compiler cannot build is built with them lowered (#2070)",
+     "fix(oot): a compute pipeline this Mac cannot build is named on the ERROR line (#2070)",
+     "Merge PR #2062: docs: how to use an iCloud Drive folder for save sync (#882)",
+     "Merge PR #2067: fix: restore BotW handheld frame interpolation",
+     "Merge PR #2065: fix(ios): French for the settings pane's shader contribution switch",
+     "Merge PR #2069: test: the settings panel probe follows the shader tab (after 585d0734)",
+     "fix(oot): every dump of update 131072 builds: the RomFS is checked file by file, work paths with spaces, the Update page, the updater",
+     "fix(vr): the headset reprojects a picture for the head's turn only, not for the game camera's"
     ]
    }
   ]
@@ -7735,21 +7735,21 @@
   ]
  },
  "iceorange-dev/manosaba-ios": {
-  "pushed_at": "2026-11-10T16:41:53Z",
+  "pushed_at": "2026-11-10T20:28:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T16:41:51Z",
+    "last_commit": "2026-11-10T20:28:47Z",
     "subjects": [
+     "Docs: the plan as two short files, one record a finished item; DEVELOPMENT.md without its log",
      "Plan batch 194: a shrine across the game's resolution steps, nothing flashes (305); manosaba's memory with the rewrites on and off (219)",
      "Plan: manosaba's pass rewrites measured on the map save too; left on (219)",
      "Plan: what the pass rewrites give manosaba now (219)",
      "Plan batch 193: manosaba's validity ledger off by default (280's finding)",
      "Plan batch 192: the registries' header, the LOD bias variants a translation unit (264)",
      "Plan batch 191: a uniform block's pool looked up only when needed; the translation thread profiled again (271)",
-     "Plan batch 190: the on-screen statistics after discarded presents; the Mac's window checks (71b, 53, 123)",
-     "Plan batch 189: the encoder layer's header, the texture dumps a translation unit (264)"
+     "Plan batch 190: the on-screen statistics after discarded presents; the Mac's window checks (71b, 53, 123)"
     ]
    }
   ]
@@ -9442,21 +9442,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-11-10T15:52:40Z",
+  "pushed_at": "2026-11-10T19:09:19Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T15:36:50Z",
+    "last_commit": "2026-11-10T18:56:39Z",
     "subjects": [
+     "Rewrite cache keeps every table the rewriter writes: a repacked game loads with its gate table (issue #13)",
+     "nvn_mtl: drop the library-wide layer scan the reflection replaced",
      "Base to f02d0474: 29 upstream commits, chiefly the graphics layer's memory and shader work",
      "Cheats: hide instruction patches instead of offering them, and drop the start-up delay",
      "Cheats: drop the JIT write window, which iOS does not have",
      "Cheats: write a code page inside the JIT write window",
      "Cheats: say whether the gate held the cheats back, and on which condition",
-     "Cheats: write only after nnMain and a while into the main loop",
-     "Cheats: apply nothing before the game's first frame",
-     "Cheats: log main's region boundaries, and say when a code write lands in data"
+     "Cheats: write only after nnMain and a while into the main loop"
     ]
    }
   ]
@@ -9482,7 +9482,7 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-10T16:56:34Z",
+  "pushed_at": "2026-11-10T22:50:41Z",
   "branches": [
    {
     "branch": "main",
@@ -10001,21 +10001,21 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-11-10T14:48:33Z",
+  "pushed_at": "2026-11-10T23:23:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T14:48:32Z",
+    "last_commit": "2026-11-10T23:23:43Z",
     "subjects": [
-     "Hang recorder: an end mark can come early; the record names both suspects",
-     "Live analysis: close the gaps left by the seven additions",
-     "Live analysis: names for what each draw is tied to",
-     "Live hooks: tag=set marks draws item by item inside a tagged call",
-     "Live analysis harness: draw tags, experiment hooks, call cost, warps, standing checks, replay, feature map",
-     "Gate: a change runs quick and unit plus the checks it touches",
-     "Merge lights-reader: the frame's lights read from the game's component pools",
-     "The frame's lights, read from the game's component pools"
+     "Hang record: a mark before every pass names the pass the GPU is on",
+     "Recorder: repeated buffer and sampler binds are not recorded",
+     "Launch: the host learns its boot list, so the pre-decode before the menu runs at last",
+     "Replay: a faster scan of each submission; once-only red lines get their own flags",
+     "Docs: audit fixes across the guides, the engine-changes map and the READMEs",
+     "Replay: pools a thread remembers, driver-segment blocks reused, repeated table writes skipped",
+     "Hang record: marks around MetalFX and frame generation; the scaler's own buffers kept resident",
+     "Replay: an effect draw waits for its pipeline off the frame"
     ]
    }
   ]
@@ -11187,21 +11187,21 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-10T00:06:42Z",
+  "pushed_at": "2026-11-10T21:52:55Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-08T18:12:11Z",
+    "last_commit": "2026-11-10T21:52:53Z",
     "subjects": [
+     "Lua mod support (#119)",
+     "Feature: Button Icons/Controls (#118)",
+     "Feature/naming and controller keyboard (#117)",
+     "Merge pull request #124 from jmars125/task/artifact-retention",
+     "Keep the release workflow's package artifacts for 7 days instead of 90.",
      "Merge pull request #120 from jmars125/task/benefit-claim",
      "Mark clock snapshots as made so Division Rewards can be claimed once per period.",
-     "Merge pull request #115 from jmars125/version-0.1.16",
-     "Version 0.1.16.",
-     "Merge pull request #114 from jmars125/task/uw-side",
-     "Merge pull request #94 from jmars125/task/dlss",
-     "Decide an interface node's ultrawide side from its last frame instead of from every frame so far.",
-     "Merge master into task/dlss for HDR, the ultrawide menus, the save commit and the screen saver fix."
+     "Merge pull request #115 from jmars125/version-0.1.16"
     ]
    }
   ]
@@ -11676,21 +11676,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-09T21:15:55Z",
+  "pushed_at": "2026-11-10T19:00:19Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T21:00:37Z",
+    "last_commit": "2026-11-10T17:20:38Z",
     "subjects": [
+     "feat(runtime): pin effective clock for benchmark arms",
      "feat(bench): flag restart quartets whose arms ran at different GPU clocks",
      "fix(gfx): initialize the png crc table once",
      "fix(test): restore android backend fixture build support",
      "fix(test): avoid libc poll collision in pool finalization fixture",
      "fix(bench): correct KGSL memory accounting",
      "perf(android): enable frame lag for odin native 60 fps",
-     "test(bench): separate pan release timing from host teardown",
-     "feat(gfx): add opt-in system telemetry to the overlay"
+     "test(bench): separate pan release timing from host teardown"
     ]
    }
   ]
@@ -11709,21 +11709,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-09T08:11:14Z",
+  "pushed_at": "2026-11-10T23:04:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T08:10:45Z",
+    "last_commit": "2026-11-10T06:47:52Z",
     "subjects": [
-     "Merge pull request #107 from simipoB/mali-ubo-ladder",
-     "Merge pull request #106 from simipoB/fallback-fb-cache",
-     "Safe starts: copied uniform buffers as level 2 (#105)",
-     "Keep render pass framebuffers on drivers without dynamic rendering (#99); log what ends passes",
-     "Merge pull request #104 from simipoB/xclipse-pool-giveback",
-     "Log only the extensions a Vulkan 1.1 device has (#99)",
-     "Give a pool's pages back to the game without a gap (#54, Xclipse)",
-     "Merge pull request #95 from simipoB/crash-record-first-line"
+     "Merge pull request #134 from simipoB/fps-live",
+     "Merge pull request #136 from simipoB/mali-nan-select",
+     "Merge pull request #135 from simipoB/engine-perf",
+     "Mali white screen: the NaN rule of min / max / saturate written out with isnan (#111, #128)",
+     "Engine: less driver memory churn on Adreno; a profileable test build",
+     "Frame rate: 30 / 60 switch while playing, the crowd fix, a steadier fps guard",
+     "Merge pull request #133 from simipoB/hd-textures",
+     "Merge remote-tracking branch 'origin/main' into hd-textures"
     ]
    }
   ]
@@ -12015,21 +12015,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-10T17:05:39Z",
+  "pushed_at": "2026-11-10T23:13:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T16:49:06Z",
+    "last_commit": "2026-11-10T23:06:06Z",
     "subjects": [
-     "Merge branch 'contrib/pr443' into HEAD",
-     "Merge branch 'feat/ps-face-letter' into HEAD",
-     "Merge commit '6bb56ecf86b2913fbfb3169395cef33a9c99a6f8' into HEAD",
-     "Merge branch 'fix/lang-unknown-host' into HEAD",
-     "Merge commit '78ba5c37eb7aa3365540e0de969904e5989863ca' into HEAD",
-     "feat(input): PlayStation 手柄缺省 × 确认、○ 返回（同 Xbox 位置），三端一致（#466）",
-     "fix(services): Switch 2 游戏支持语言未知时按宿主主语言，不写死英语（#465）",
-     "Merge branch 'fix/nup-same-sha-bytes-444' into HEAD"
+     "Merge branch 'fix/direct-batch-alias' into HEAD",
+     "Merge commit '6b6a571553f7a687af46e03e2cdbf8ef4d77f335' into HEAD",
+     "Merge branch 'contrib/pr499' into HEAD",
+     "Merge branch 'fix/direct-space-extrapolate' into HEAD",
+     "perf(direct): 出库临时数据里的源码文本逐段压缩，大款翻译阶段的盘峰值约降到 1/4",
+     "Merge branch 'ops/android-gate-pre-when-touched' into HEAD",
+     "门禁分层：改成「合入后（路由命中时合入前也跑）」，按现有路由表判定，不另列前缀",
+     "Merge branch 'quality/82-position-precise' into HEAD"
     ]
    }
   ]
@@ -12083,21 +12083,21 @@
   ]
  },
  "jmars125/xc3-recomp": {
-  "pushed_at": "2026-11-10T10:21:45Z",
+  "pushed_at": "2026-11-10T21:20:07Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-10T09:18:58Z",
+    "last_commit": "2026-11-10T21:13:29Z",
     "subjects": [
+     "Merge pull request #37 from jmars125/task/keep-shader-cache",
+     "Keep the shader cache on an update when the translator identity is unchanged",
      "Merge pull request #33 from jmars125/task/ultrawide",
      "Fit the interface to ultrawide frames",
      "Merge pull request #27 from jmars125/task/issues-24-25-26",
      "Keep DLAA from smoothing a half-size scene after a switch to it while the game runs",
      "Replay submissions on their own thread by default",
-     "Add a GPU time per kind of pass for diagnosis (XC3_GPU_PASSES=1)",
-     "Make the window acquire wait for the image's previous frame with the asynchronous replay",
-     "Keep the asynchronous replay one frame behind and in step with slot registrations"
+     "Add a GPU time per kind of pass for diagnosis (XC3_GPU_PASSES=1)"
     ]
    }
   ]
@@ -12131,6 +12131,70 @@
      "README: step-by-step setup, build, play and troubleshooting",
      "Package the Mac ZIP without macOS metadata entries",
      "Add GreenKid-MV 0.1.0-preview source"
+    ]
+   }
+  ]
+ },
+ "EvilToasterDBU/d2r-mobile": {
+  "pushed_at": "2026-11-10T22:44:35Z",
+  "branches": [
+   {
+    "branch": "armada/linux-sdl-port",
+    "ahead": 3,
+    "behind": 0,
+    "files": 28,
+    "real_files": 27,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/linux",
+     "dm/tools"
+    ],
+    "last_commit": "2026-11-10T22:44:24Z",
+    "subjects": [
+     "Add controller glyph selector to settings",
+     "Build stable ARM64 AppImage releases in Actions",
+     "Linux: bundle private runtime in AppImage"
+    ]
+   }
+  ]
+ },
+ "hwl513782273/d2r-mobile": {
+  "pushed_at": "2026-11-10T20:18:53Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 1,
+    "behind": 96,
+    "files": 1,
+    "real_files": 0,
+    "dirs": [],
+    "last_commit": "2026-10-14T06:34:19Z",
+    "subjects": [
+     "添加 Release 搬运脚本"
+    ]
+   }
+  ]
+ },
+ "Desm0nt/torchlight2-port": {
+  "pushed_at": "2026-11-10T18:54:24Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-10T18:54:22Z",
+    "subjects": [
+     "TL2_PORT.md: weapon swap button verified on the device",
+     "v0.1.1: mods override the game's files (mod packs listed first, later mods win), mod manager in the pause menu with a restart offer, weapon swap button (d-pad left), character-creation spinner taps + gender guard, touch overlay redraws only on change, idle job workers back off",
+     "README: screenshots (title, main menu, Temple Steppes, combat, inventory, stats, pause menu, mod manager)",
+     "README: handheld mode not tested yet; PC mods experimental, which kinds of mods cannot work",
+     ".gitignore: the TL2 launcher icon is tracked now (original artwork, no longer the game's icon)",
+     "TL2 gear: the game-language note says all languages are built in (the Diablo III note asked for language-pack DLC in aoc/)",
+     "Docs for publication: README (EN / RU), INSTALL guides with FAQ and PC mods, docs/tl2/GAME_FILES.md and DERIVED.md, THIRD_PARTY Torchlight II section, drivers README and LICENSE for TL2; Diablo III screenshots removed",
+     "Repository layout for publication: setup for Torchlight II (tools/setup_tl2.py via setup.bat / setup.sh: base 010090400D366000 + update v327680 + prod.keys -> ExeFS, patch main / sdk, equiv check, RomFS, tl2_shader_jobs + dmsh_vk_xc2 -> work/Torchlight2Mobile/{romfs, dm/out, dm/shaders, mods}; DLC skipped), put-game-files-here README, build.bat / build_apk.ps1 for DM_GAME=tl2, push_phone.sh on the setup layout, VERSION 0.1.0, original launcher icon (no game artwork)"
     ]
    }
   ]
