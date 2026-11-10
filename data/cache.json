@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-09T05:49:59Z",
+  "pushed_at": "2026-11-10T06:55:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T05:49:56Z",
+    "last_commit": "2026-11-10T06:55:56Z",
     "subjects": [
+     "radar 2026-11-10",
      "radar 2026-11-09",
      "radar 2026-11-08",
      "radar 2026-11-07",
      "radar 2026-11-06",
      "radar 2026-11-05",
      "radar 2026-11-04",
-     "radar 2026-11-03",
-     "radar 2026-11-02"
+     "radar 2026-11-03"
     ]
    }
   ]
@@ -1871,41 +1871,41 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-09T17:04:57Z",
+  "pushed_at": "2026-11-10T06:59:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T17:04:43Z",
+    "last_commit": "2026-11-10T06:59:23Z",
     "subjects": [
-     "Pool marks test their bit with a plain load: an atomic load, even relaxed, is served by the GPU's shared cache, and a pass's pixels name a few IDs, so they queued on the same bitmap word. A 1536x864 pass of 16 marks a pixel on one word took 2.60 ms against 0.34 ms with the plain load (0.18 with no mark, Apple M6); chain 39eb2f781d07 (discussion #1789)",
-     "The depth attachment sampled in its own pass follows the colour rule: a draw that writes depth and samples it reads a copy, one after a depth write of its pass ends the pass first, in depth-only passes too. Ocarina of Time's light-blue dashes over the rock at Death Mountain Trail's cave entrance and Red Dead Redemption's 8x8 sky blocks over the trees are gone (PR #1917, PR #1866)",
-     "Guest files give the disk back what the game gives back, and stop on the room left after dirty pages (2 GB, counting purgeable space): an iPad stopped Ocarina of Time at 5.0 GB free with 6.6 GB of files (PR #1492)",
-     "A presented texture is resolved on the submit thread, and the present thread never uploads: present_enqueue resolved only a texture already taken from its storage, so one whose first use was the present had its first-use decision (tex_cpu_content) and upload on the present thread, and an uploaded one whose pages changed after the queue was uploaded again there; both aborted in up_owner_check (t_nvn since c06d1e79, whose window textures nothing draws into)",
-     "A linear texture no view can take is uploaded from its storage while the GPU has not written there, whatever its IMAGE or LINEAR_RENDER_TARGET flag: those flags say only that the GPU may write it. Hades II decodes its Bink movies on the CPU into 736x480 IMAGE | LINEAR R8 planes that it only samples; iOS wants 64-byte rows for a view, so they were private textures filled once, and its title screen was grey and flickering and its options menu showed green and magenta blocks on an iPhone. The GPU writes the commands record (gws_owned) decide instead, and a GPU write after the first use makes the texture a GPU texture (cpu_unc_take / cpu_unc_drop); ReadTexels follows the same state. t_linear_readback checks it with DM_TBUF_ALIGN=64. The NSP script takes only files from its .nro glob (a RomFS folder may end in .nro, as in The Binding of Isaac: Afterbirth+) (issue #1956)",
-     "HMMA with an f16 accumulator rounds once per 8 products, as Ampere does, instead of after every product: the translated helper and the host's NDVE network sum each block of 8 in f32 and round it to f16, which matches 5,000 of 5,000 recorded A100 cases (per-product rounding 2,420) and 99.97 % of a Jetson Orin's outputs (34.9 %); chain 0c434f1b68df (PR #1897)",
-     "The graphics tests' guest clock is the Mach clock, as the host's with no pause: the weak guest_ns and guest_ns_at_host_time returned 0, so every counter report mapped its GPU timestamp or feedback time to 0 and took the time its completion handler wrote it. t_feedback's \"two reports in one command buffer read two times\" then compared two CLOCK_MONOTONIC reads made one after the other and failed whenever both fell in one microsecond (7 of 12 runs on main; 30 of 30 pass now, through the boundaries' GPU timestamps)",
-     "A pool buffer's protected pages are opened, not counted as written: nvn_dirty_open hashes each and makes it writable, nvn_dirty_close protects them again and counts only the pages whose bytes changed meanwhile. Counting every opened page as written (2d544e0d) read their textures again though nothing wrote them: 34 on Ocarina of Time's village walk (0 now), 4,038 in its first load on a contributor's build that makes chunks there, and LEGO Star Wars' 3D picture black from GPU-drawn storage taken from stale guest memory (issue #1591)"
+     "Red Dead Redemption (01007820196A6000) plays on the Mac: its profile and note, and the shader split's readers for Rockstar's RPF6 archives, RAGE rgxd effects and Double Eleven packs (PR #2005)",
+     "Building no longer needs .NET: the shader translator and nx_extract are committed as native universal executables (NativeAOT, arm64 and x86_64), with output byte-identical to the .NET builds",
+     "nn::hid's Home button protection is answered by the host: Drag x Drive no longer crashes at sdk+0x63ce10 as player 1's Joy-Con 2 joins, and Nintendo Switch Sports Resort no longer aborts at boot (PR #1921)",
+     "What the GPU writes into a GPU texture in storage the CPU can read is written into that storage on the GPU, in the same submission: Ocarina of Time's terrain no longer turns to crossing stripes (\"plaid\") after dungeon entries and exits (PR #2077)",
+     "Ocarina of Time's prewarm list gets the pipelines of first looks at new places and of an iPad's own lists: on iOS, where each pipeline no list names is built at its first draw (0.1-0.9 s on an iPad Pro M5), Hyrule Field built 344 render pipelines in play and the forest bridge 362 with the iPad's lists alone; on a Mac with the rows 0 and 5",
+     "Hades II's render size is found as the one caller of nn::vi::CreateLayer, not by per-build fingerprints: an update that touches the init function elsewhere keeps its larger sizes",
+     "Keep the HMMA parenthesis counter separate from the depth function; fix Python CI",
+     "A pool texture the walk leaves out holds a stand-in of its own colours until its first read: Ocarina of Time's cliff beside the castle town wall, and other streamed scenery, no longer draws dark for one frame when the game gives it a sharper texture (PR #2075)"
     ]
    }
   ]
  },
  "ForceMind/Game2Mobile": {
-  "pushed_at": "2026-11-09T18:24:12Z",
+  "pushed_at": "2026-11-10T04:51:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-20T10:29:12Z",
+    "last_commit": "2026-11-10T04:51:57Z",
     "subjects": [
+     "Initialize NVN dirty tracking hooks once for concurrent pool registration",
+     "Add atomic private M1 job progress and safe read-only operator status",
+     "Fix Metal dirty-page pool cache identity and strengthen Apple race tests",
+     "Enforce safe NSO rewriting and test ARM64 encoding boundaries",
+     "Add boot diagnostics, build identity validation, and read-only operator CLI",
      "Merge pull request #14 from ForceMind/fix/device-run-evidence-20261020",
      "fix(ios): preserve explicit watchdog log-collection workflows",
-     "fix(ios): bind device-run completion to the launched process and fresh logs",
-     "Merge pull request #13 from ForceMind/fix/product-cache-20261020",
-     "fix(build): reject incomplete or stale rewritten-module caches",
-     "Merge pull request #12 from ForceMind/fix/ios-build-staging-20261020",
-     "fix(ios): stop on staging failures and support portable resource copies",
-     "Merge pull request #11 from ForceMind/fix/m1-input-provenance-20261019"
+     "fix(ios): bind device-run completion to the launched process and fresh logs"
     ]
    }
   ]
@@ -1951,16 +1951,16 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-09T22:19:59Z",
+  "pushed_at": "2026-11-10T07:15:32Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T22:19:58Z",
+    "last_commit": "2026-11-10T07:15:31Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（200 个项目）",
      "chore: 自动同步 Star 地图（200 个项目）",
-     "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-09T11:44:33Z",
+  "pushed_at": "2026-11-09T22:28:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T11:44:32Z",
+    "last_commit": "2026-11-09T22:28:28Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4126,21 +4126,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-09T22:02:02Z",
+  "pushed_at": "2026-11-10T01:56:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T21:57:44Z",
+    "last_commit": "2026-11-10T01:55:40Z",
     "subjects": [
-     "chore: merge the remaining shader list issues (TotK +365 variants, Pokopia +139)",
-     "fix: a shader file whose known rows are one game's gives it the rest; Pokopia has its own list; the merge reports what it took",
-     "docs(xc3): the translator is PR #1917's build, replay-checked against a source rebuild (after PR #1917)",
-     "chore: merge the players' shader list issues (TotK +1,469 variants, BotW +3,226 pipelines, first Bananza list)",
-     "fix: a shader issue whose title names a game owns the rows no seed knows; Bananza gets its own list",
-     "test: the running-app check follows the pid and command-line process query (after PR #1795)",
-     "fix: the prompt texture lookup is built for every TotK version on the Mac, as 1.4.3 shares that object (after PR #1940)",
-     "Merge PR #1833, #1834: fix: iCloud conflict copies no longer make a complete synced save look incomplete, and are cleaned up (LENG-ZECHEN)"
+     "fix(oot): contribute shaders and use the warm-up lists like every other game",
+     "feat(oot): a memory classification diagnostic for the phone (OOT_MEM_CLASSES)",
+     "feat(oot): the phone never compiles a mesh pipeline; it skips those draws",
+     "feat(oot): the phone offers the Mac's resolution entries 0-3, the lowest by default",
+     "fix(oot): the iPhone build names every shader its pipeline rows use",
+     "docs: Ocarina of Time in the README, install pages and acknowledgements",
+     "merge codex/oot-native: Ocarina of Time (Switch 2) native port into main",
+     "docs(oot): the install page asks for about 40 GB of free disk space"
     ]
    }
   ]
@@ -7735,21 +7735,21 @@
   ]
  },
  "iceorange-dev/manosaba-ios": {
-  "pushed_at": "2026-11-09T20:38:35Z",
+  "pushed_at": "2026-11-10T07:24:07Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T20:38:33Z",
+    "last_commit": "2026-11-10T07:24:06Z",
     "subjects": [
+     "Plan: the iPhone Air measured with 324, 325 and 326; 325's phone numbers corrected",
+     "Plan: what the TBDR rewrites give Great Sky Island now that the tile reads work (219)",
+     "Plan batch 186: readable-tile versions for five to eight colour outputs and a depth output (326, chain 5a7de6a8fef9)",
+     "Plan batch 185: the decals read the tile again (325, a regression of batch 172; chain fd1036a8b871); 218 looked at",
+     "Plan batch 184: the 30 Hz link only for frames of whole ticks, one present rate under the hold; sample_compare's LOD bias (324, 318)",
      "Plan: what the logs show of the iPhone started hot (324)",
      "Plan batch 183: the scene size from dropped frames, measured on the iPhone Air (190; 229's A/B)",
-     "Plan batch 182: fade steps above 63.5 fps, the resolution tier held, BRX as sequential branches (292, 294, 295; chain ba6c7622e044)",
-     "Plan batch 181: the sampler LOD bias in the shader where the GPU ignores it (318)",
-     "Plan batch 180: the shaders the translator warned about, looked at (322)",
-     "Plan batch 179: the translator's own warnings in the reflections (317c, chain 47b5de2aa276)",
-     "Plan batch 178: the frame step's window and probes (321)",
-     "Plan batch 177: the edge push in y for screens taller than 16:9 (320g, chain 1f985598396c)"
+     "Plan batch 182: fade steps above 63.5 fps, the resolution tier held, BRX as sequential branches (292, 294, 295; chain ba6c7622e044)"
     ]
    }
   ]
@@ -9430,7 +9430,7 @@
   "branches": []
  },
  "clinkhome-boop/d2r-mobile": {
-  "pushed_at": "2026-10-23T13:38:40Z",
+  "pushed_at": "2026-11-10T05:47:43Z",
   "branches": []
  },
  "owllyi/d2r-mobile": {
@@ -9482,21 +9482,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-09T22:18:49Z",
+  "pushed_at": "2026-11-10T02:55:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T22:16:55Z",
+    "last_commit": "2026-11-10T02:31:09Z",
     "subjects": [
-     "frontend: show iPhone activity title and preserve library state during iOS re-sign (#1028)",
-     "hid: report vibration device info for startup handles and route iOS haptics on slot attach (#1072)",
-     "patches: align 0074 Joy-Con 1 split/grip driver with upstream pad_hid and dm_joy APIs (#1074)",
-     "Refresh patches 0053 and 0103 for upstream 8190693 (#1075)",
-     "Merge pull request #1068 from LNPANDY/v0lumehi/short-issue-and-pr-texts",
-     "Merge pull request #1063 from LNPANDY/v0lumehi/engine-bump-8190693",
-     "Run the checks again",
-     "patches: add Switch 2 test stubs in 0081 and stdatomic header in 0103"
+     "Merge pull request #1097 from LNPANDY/v0lumehi/ui-overhaul",
+     "Credit the contributors whose code is in the UI overhaul",
+     "Merge remote-tracking branch 'origin/main' into v0lumehi/ui-overhaul",
+     "Console mode: readable top bar, darker tiles and real hint glyphs on bright art",
+     "Console prompts over the desktop follow the app appearance",
+     "Console mode: home rows, game pages, search, builds and a paused game",
+     "Console mode: Home menu texts and the launcher's hooks for a paused game",
+     "Merge branch 'v0lumehi/ui-home-menu' into v0lumehi/ui-overhaul"
     ]
    }
   ]
@@ -10001,21 +10001,21 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-11-09T21:30:18Z",
+  "pushed_at": "2026-11-10T06:15:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T20:59:10Z",
+    "last_commit": "2026-11-10T06:15:33Z",
     "subjects": [
-     "Live hooks: hook the running game's code from the control port, a few ns a hit",
-     "Hang recorder: a GPU hang now leaves a record of what the GPU was on",
-     "GPU watchdog: a GPU that stops taking work no longer freezes the Mac",
-     "Mac: presents back on the game's queue; a second queue hung the GPU for 4 s",
-     "Golden: the Blood Moor picture leaves out the hero's entering line; switch registry",
-     "Gate: Quick Restart scenario on touch backends only; a quit stall joins the intermittent table",
-     "uireg mapf: trigger at frame 1200; the phone measurement of the overlay",
-     "iOS: touch overlay and skill-button hook stop redoing work every move"
+     "Gate: a change runs quick and unit plus the checks it touches",
+     "Merge lights-reader: the frame's lights read from the game's component pools",
+     "The frame's lights, read from the game's component pools",
+     "Merge warm-warps: 43 warp stops in the pipeline warm-up seed",
+     "Pipeline warm-up: 43 warp stops, 202 rows the seed lacked",
+     "DM_STREAMLOG: what the game inflates and decodes, for the whole run",
+     "Engine changes: three record-path ideas tried and rejected",
+     "Engine changes: name the pipeline-set commit"
     ]
    }
   ]
@@ -10175,21 +10175,21 @@
   "branches": []
  },
  "Xc1Ym/LumaNX": {
-  "pushed_at": "2026-11-09T02:59:22Z",
+  "pushed_at": "2026-11-10T07:20:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T02:59:18Z",
+    "last_commit": "2026-11-10T07:20:30Z",
     "subjects": [
+     "Merge pull request #39 from Xc1Ym/codex/fix-switch2-controller-harness-20261110",
+     "fix: cover Switch 2 services in native controller harness",
      "chore: prepare LumaNX 0.4.1 release",
      "Merge pull request #38 from Xc1Ym/codex/fix-nxnative-sync-controller-20261109",
      "fix: stub controller applet service in native input harness",
      "chore: sync tested nxnative snapshot",
      "chore: prepare LumaNX 0.4.0 release",
-     "Merge pull request #37 from Xc1Ym/codex/switch2-nup-runtime-20261106",
-     "fix: harden NUP imports after app review",
-     "feat: adapt Switch 2 NUP imports and resource images"
+     "Merge pull request #37 from Xc1Ym/codex/switch2-nup-runtime-20261106"
     ]
    }
   ]
@@ -10667,7 +10667,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-09T16:57:08Z",
+  "pushed_at": "2026-11-10T06:14:23Z",
   "branches": [
    {
     "branch": "main",
@@ -11187,7 +11187,7 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-09T22:26:52Z",
+  "pushed_at": "2026-11-10T00:06:42Z",
   "branches": [
    {
     "branch": "master",
@@ -12015,21 +12015,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-09T22:18:57Z",
+  "pushed_at": "2026-11-10T07:19:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T22:06:02Z",
+    "last_commit": "2026-11-10T07:18:10Z",
     "subjects": [
-     "Merge commit '578b453ab2a06939f0419bdcde6bf6184e4c3a21' into HEAD",
-     "Merge branch 'fix/gate-remote-warn' into HEAD",
-     "Merge branch 'contrib/pr318' into HEAD",
-     "门禁把远端同步阶段的【黄】remote：行抄进日志，末行在「应跑 N 步」后点「同步缺 N 项」（列车回执、守望都读末行）",
-     "Merge branch 'contrib/pr323' into HEAD",
-     "Merge branch 'contrib/pr322' into HEAD",
-     "Merge branch 'feat/gate-stop' into HEAD",
-     "public_repo_scan_test：git 调用 stdin 接空（hash-object --stdin 读继承来的标准输入，调用方给不关的管道时挂到超时 124）"
+     "问题回报模板：标题只留「[问题] 」前缀，S2Arm 版本与设备改必填",
+     "Merge commit 'd2d2acf6a869c79b3c8bb51441102cb2558f36ab' into HEAD",
+     "Merge branch 'fix/vpad-ipad-save-372' into HEAD",
+     "Merge branch 'contrib/pr377' into HEAD",
+     "在 #365 的基础上补：恢复前剩余空间量这款所在的盘，备份不许落进这款的存放位置",
+     "修复：第二存放位置的款恢复存档不结束",
+     "fix(ios): iPad 上游戏内调整按键位置 / 外观存不上；去掉没接线的游戏库触屏设置（#372）",
+     "Merge branch 'fix/rm-enotempty-os-junk' into HEAD"
     ]
    }
   ]
@@ -12047,6 +12047,89 @@
     "last_commit": "2026-11-09T02:19:46Z",
     "subjects": [
      "top-band flicker: frame comparison (Adreno 830)"
+    ]
+   }
+  ]
+ },
+ "nkhdo/d2r-mobile": {
+  "pushed_at": "2026-11-10T07:24:14Z",
+  "branches": [
+   {
+    "branch": "thor/phase1-deck",
+    "ahead": 10,
+    "behind": 0,
+    "files": 23,
+    "real_files": 18,
+    "dirs": [
+     "GLOSSARY.md",
+     "dm/android",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/tools"
+    ],
+    "last_commit": "2026-11-10T07:24:10Z",
+    "subjects": [
+     "README: mention the dual-screen Deck (AYN Thor) added in this fork",
+     "Thor note: verified with a real import pack and APK from this branch",
+     "Thor: English-only comments and logs in the Deck code",
+     "Thor docs: hand checks done; direct page jump",
+     "Android Deck: open menu pages with a direct page jump instead of stepping with R",
+     "Thor note: 2-minute fight frame times, Deck on vs off",
+     "Android Deck: fit long labels, drop deprecated call; THOR.md player doc",
+     "Android Deck: bottom-screen companion for dual-screen handhelds (AYN Thor)"
+    ]
+   }
+  ]
+ },
+ "jmars125/xc3-recomp": {
+  "pushed_at": "2026-11-10T06:58:28Z",
+  "branches": [
+   {
+    "branch": "master",
+    "mirror": false,
+    "last_commit": "2026-11-10T05:58:03Z",
+    "subjects": [
+     "Merge pull request #27 from jmars125/task/issues-24-25-26",
+     "Keep DLAA from smoothing a half-size scene after a switch to it while the game runs",
+     "Replay submissions on their own thread by default",
+     "Add a GPU time per kind of pass for diagnosis (XC3_GPU_PASSES=1)",
+     "Make the window acquire wait for the image's previous frame with the asynchronous replay",
+     "Keep the asynchronous replay one frame behind and in step with slot registrations",
+     "Hash each fragment shader once for the upscaler's draw check",
+     "Start with a re-signed main.npdm"
+    ]
+   }
+  ]
+ },
+ "harmssi/thor-d3": {
+  "pushed_at": "2026-11-06T20:25:32Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-06T20:24:44Z",
+    "subjects": [
+     "Thor Edition for D3 v0.1.0"
+    ]
+   }
+  ]
+ },
+ "adi0900/GreenKid-MV": {
+  "pushed_at": "2026-11-09T19:44:07Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-09T19:44:03Z",
+    "subjects": [
+     "README: link the 0.2.0-preview download and update status and credits",
+     "GreenKid-MV 0.2.0-preview: engine moved to upstream nxnative main with Ocarina of Time fixes",
+     "README: step-by-step setup, build, play and troubleshooting",
+     "Package the Mac ZIP without macOS metadata entries",
+     "Add GreenKid-MV 0.1.0-preview source",
+     "Enhance README with project details and instructions",
+     "Initial commit"
     ]
    }
   ]
