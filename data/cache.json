@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-10T06:55:57Z",
+  "pushed_at": "2026-11-11T05:46:05Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T06:55:56Z",
+    "last_commit": "2026-11-11T05:46:03Z",
     "subjects": [
+     "radar 2026-11-11",
      "radar 2026-11-10",
      "radar 2026-11-09",
      "radar 2026-11-08",
      "radar 2026-11-07",
      "radar 2026-11-06",
      "radar 2026-11-05",
-     "radar 2026-11-04",
-     "radar 2026-11-03"
+     "radar 2026-11-04"
     ]
    }
   ]
@@ -1871,41 +1871,41 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-10T23:22:29Z",
+  "pushed_at": "2026-11-11T06:25:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T23:22:03Z",
+    "last_commit": "2026-11-11T06:25:17Z",
     "subjects": [
-     "With present snapshots on, a swapchain texture is the game's again only once its snapshot's copy has run on the GPU: a snapshot present keeps its ticket and the queue's receipt carries the copy (mtl_present's copy), so the acquire of that texture waits for it in the game's order (mtl_present_wait_texture), without waiting for the screen, instead of getting ticket 0 and being paced only by the ring slot, which is counted per present and only when the queue worker replays it. Xenoblade Chronicles 3 ran more frames ahead of the GPU than its swapchain holds and rewrote per-frame uniform data queued draws still read: its 3D scene was one flat colour in 32 of 80 captures with 2 ring slots and 49 of 80 with 4, 0 of 80 after (Apple M2, measured by the PR's author on their version of the wait; LNPANDY/NX2Apple#1117). nvnQueueFinish after a snapshot present waits for the copy too, not for the display link by the ticket (1 ms against 405 ms with the display stalled for 400 ms). t_present_snap ticket checks the tickets, the receipt's copy, both acquires and the finish with 4 ring slots and 2 window textures (PR #2153)",
-     "A NaN or infinite colour under a zero source blend weight adds nothing, as on the console: NVN's driver sets the float blender's \"zero times anything is zero\" option (the command word for SET_BLEND_FLOAT_OPTION is in the sdk module), while Apple's blender stores NaN for 0 x NaN and 0 x Inf. Every pixel shader with a float4 colour output ends in a guard that reads a word from the host (fragment buffer 28, two bits per colour output), and the host sets an output's bits only where its state can have that weight: blending on, a floating-point target, a sum or difference, a source colour factor of SRC_ALPHA (zero at alpha 0) or ONE_MINUS_SRC_ALPHA (zero at alpha 1) and a destination factor that does not read the source colour. Every other draw returns its colour as it is; a factor of ZERO needs nothing, since Apple's blender leaves that term out. Ocarina of Time's mist shader divides by zero at alpha 0 and blends into an RGBA16F target with SRC_ALPHA / ONE_MINUS_SRC_ALPHA, which the bloom spreads into white clouds; they did not show on the Mac route run here, with the rule on or off, so the game itself awaits a retest. t_blend_zero draws NaN, +Inf, -Inf and 2 at alpha 0 and 1 under seven blend states and reads the target back, with the rule and with DM_NVN_BLEND_ZERO=0 (Apple's blender as it is). Ocarina of Time's 42,848 shaders build; standing in Kokiri Forest GPU p50 10.86 -> 10.95 ms, within the spread between runs, 60 fps both (Apple M6). Open: NaN already in the target under a zero destination weight, a non-finite weight on a colour of 0, the alpha channel's own weights, the Vulkan and OpenGL paths, and the iOS libraries were not run (PR #2030, issue #1839)",
-     "Vulkan layer: attachments opened with LOAD_OP_DONT_CARE are loaded, colour, depth and stencil alike, instead of opened with Metal's DontCare, which starts Apple's tile memory without the image. Vulkan leaves those contents undefined; the Switch keeps them: NVIDIA's driver (subsdk1, 421.03, read statically) does no colour discard at render-pass begin or end, the macro it runs there is a no-op, and for depth it only drops the ZCULL hints (its submit-time processing is not decoded). Re:ZERO's post chain blends its effects layer and HUD over targets it opens with DONT_CARE and samples a half-res depth that an empty DONT_CARE pass stored again, which gave a black 3D world under the HUD. In Re:ZERO the loads cost about 0.24 ms of GPU time a frame on an M4 Pro, frame time unchanged; iPhone not measured. t_vk_dontcare pins the layer's policy for colour, depth and stencil under MTL_DEBUG_LAYER_VALIDATE_LOAD_ACTIONS (PR #1500)",
-     "New multisample colour textures start as zero: tex_zero_fill clears them in a render pass in the upload batch, per layer, as it does depth and stencil (a buffer copy cannot write samples), instead of returning and leaving Metal's undefined content where a new Switch pool reads 0. Rune Factory 5 loads its new 1920×1080 two-sample RG11B10F scene target without a colour clear and blends into it, which gave a green background that kept the silhouettes of moving characters. t_clear_msaa fills a multisample texture with a colour, calls the initializer and reads every sample on the GPU (RGBA8, RG11B10Float, RGBA16Float at two and four samples); the log names the first such texture once (PR #1760)",
-     "The gfx tests build again: t_gl_imports defines g_key18, which hle.c's counter gate writes since f3ec8fc8 and loader.c (not linked by the test) defines, and the tests' Makefile regenerates game_profile.h on every make as the host's and the host tests' do, so a header from an older game.py no longer stops the suite on undeclared DM_GAME_* defines (game.py writes it only when it changes)",
-     "A counter report of a running submission refuses a uniform shadow only over its own 16 bytes, not its whole 4 KB page: the host writes reports (and samples-passed results, which counted nowhere before) on the CPU when their submission completes, so they are kept by address in a ring with their fence (hw_note, hw_live), behind a page table that skips the ring for every other page, and go into the page tables as before only when they do not fit. Ori and the Will of the Wisps writes two timestamp reports a frame into the page of its uniform blocks; on its route into Swallow's Nest the by-page refusal gave 625,330 refusals in 15,000 frames and about 15 s at 25-28 ms a frame (GPU 26 ms), the exact check none, frame time p50 16.67 ms throughout (Apple M6). The residency line counts them as \"a report still to land\"; DM_NVN_REPORT_EXACT=0 refuses by page as before (issue #1660)",
-     "Timestamp reports record their segment's GPU time for every game, without the GPU's idle time between a submission's command buffers: a report takes the GPU start or end of the segment it was encoded in, as hardware records it, instead of one time for the whole submission, which made a game that times its GPU work between two reports read about 0 (the profile key gpu_timestamps, set by five games, is removed; DM_NVN_GPU_TS=submission / segment_gaps for A/B runs). The gaps where the GPU waits at a commit for the host's translation are left out (seg_idle_before over the submission's real commits), and the boundaries' counter heap serves the encode thread too, so iPhone games no longer commit at every 64-draw boundary (PRs #1350, #1229, issues #1290, #1064)",
-     "A pipeline base the archives lack is remembered for the run: a later ask for it skips the search, a non-compiling one returning nil and a compiling one going straight to the compiler. With the build table full, every draw of a pipeline whose build it refused searched every archive file again; Ocarina of Time's castle town market fell from about 114 to 6.4 ms of CPU translation a frame (PR #1825)"
+     "Switch 2 controllers with Press a button to join: a controller that connects waits for its first button press instead of being let go: with DM_PAD_PRESS_TO_JOIN=1 the front end gives a new pad no player until its first button (s2pad_attach, then s2pad_read through pad_join), and the transport took no player after attach for no free player and dropped the controller (attachPad, pad_switch2_apple.m), so no Joy-Con 2 or Pro Controller 2 could be used with the setting on; a press only woke it to be dropped again. The front end's attach now returns whether it keeps the pad (pad_switch2_apple.h): 1 with a player or waiting for its first press, 0 with no free player, and only 0 lets the controller go; a Joy-Con split off a pair (SL + SR held) is kept the same way, and goes back into the pair only with no free player. A pad that gets its player later gets its Joy-Con styles (dm_joy_attach through s2_sync_sides) and its player lights then: playerSync, after each read() of the front end, in report: and in leavePair, where the held SL + SR are that press and read() makes the Joy-Con a player at once. PR #1907 made that check in report: only, after leavePair had already noted the new player, so a split-off Joy-Con never got its single Joy-Con style with the setting on. The log says a player once a button is pressed for a pad that waits. Checked here: the Mac host builds and the host tests pass (t_switch2 among them; none covers the Objective-C transport). The author's runs, with the PR's form: on the Mac (M1 Pro) Nintendo Switch 2 Welcome Tour with a left and a right Joy-Con 2, both stayed connected and joined as player 1 at the first press, with rumble and the mouse; on an iPhone 17 with PR #1900's wiring, Super Mario Galaxy, the same, and a split made player 2 at once. Not run: any Switch 2 controller with this form, so the split-off Joy-Con's style is unchecked; the Pro Controller 2; more than two controllers waiting; lint_c.py; regress.py (the reach is the Switch 2 transport, off by default). Open: a waiting pad's lights show player 1's pattern (PR #1907)",
+     "Touch screen states are numbered from one count in docked and handheld mode, so a game started docked takes touches after leaving the dock: GetTouchScreenState(s) numbered a docked read's empty state from the npad sampling counter (from 65536, touch_read in hle_hid.c) and a handheld read's state from hle_touch.c's own count (from 1). Unity's touch reader takes a state only if its sampling number is above the last one it took, empty states included (the PR author's reading of Aokana - Four Rhythms Across the Blue, Unity 2018.4.22f1: the compare at main+0xd2bde0), so after one docked read every handheld state was below it and was dropped: started docked and switched to handheld in the in-game menu on the iPad, no tap reached the game, and the same after handheld, docked and handheld again. hle_touch.c now numbers both: touch_read always calls touch_fill_n, with points 0 in console mode, which gives an empty state with the next number and leaves the fingers, their Start and End, for the next handheld read; DM_TOUCH_LOG prints the number the game sees. PR #2244 numbered both modes from the npad counter by writing over hle_touch.c's number; its diagnosis, its t_hid test and its reference entry are kept, the count moved to the one place. Checked: t_touch (2 new checks: a console-mode read between handheld reads is empty, takes the next number and keeps a pressed finger's Start), t_hid (t_touch_sampling: every read reaches touch_fill_n, points asked for in handheld mode only; with the PR's test alone on main 2 checks failed), t_gesture, test_docs. The author's Aokana runs on the Mac (M4 Pro, headless, a tap every 1.5 s) were with the PR's form: started docked and switched at 12 s, 270 reads with touch points and the opening movie played on before, the first tap stops it after. Not run: Aokana or any game with this form, the iPad, regress.py (the reach is the touch read path only) (issue #2243, PR #2244)",
+     "Unused border corrections are compiled out of pipelines that bind no sampler with a twin: every pixel shader with border-colour corrections declares the function constant dm_border_off (DMSH_BORDER_FC, 216) and tests it before the mask bit in dm_bs, and the host specializes each function with it true when no sampler bound to the draw's stages has a border twin (border_need, pso_key.border), so the branch and the registers it kept live across every sample are gone from the pipeline instead of skipped per pixel. The mask branch made Apple's compiler keep the sample's operands for the correction that never ran, which spilled registers in shaders with many samples. A pipeline builder takes an explicit off flag from the draw's key (pso_build, pso_build_ex, pso_build_dev, pso_desc4, pbase_key, cps_new_b, the mesh and capture pipelines, the prewarm and pso_offline.py's archives), and the specialized function is found there (fn_off, fn4_of_b, fn_dev_b); descriptors hold only real Metal functions. A draw compares its stages' need with the bound pipeline's (prog_border), so a sampler with a twin bound after the pipeline was picked gets the correcting pipeline. DM_NVN_BORDER_KEEP=1 keeps the corrections in every pipeline and =ab alternates by DM_AB phases. Ocarina of Time standing on the forest deck, in-process A/B on an Apple M6: GPU p50 10.66-10.88 ms without the corrections, 11.01-11.26 ms with them, frame time 16.67 ms both. Compiled for the M1's GPU (applegpu_g13g, 300 of its pixel shaders): mean code 16,232 -> 14,531 bytes, per-thread scratch lower in 77 shaders, higher in 11, the worst 240-352 bytes -> 0. AdyaGMD's measurement of the side-library form on an M1, Splatoon Raiders: 31.6 -> 19.8 ms a frame; not reproduced here. t_border (113 checks), the 136 gfx suites, test_dmsh_border, test_pso_offline, test_docs pass; regress.py check on Bastion and NieR:Automata: 60 fps, every shader builds, no new red line. The side library of PR #1203 is not taken: it compiles every pixel shader with corrections twice. Not run: Tears of the Kingdom (the one known game that binds a twin; its build is not on hand), the iPhone, an M1. The function constant is FeReuss's design and code (PR #1929); the diagnosis of the spill and the M1 numbers are AdyaGMD's (PRs #1203, #1032); the need for a per-draw choice is givethesourceplox's finding (PR #1073)",
+     "Textures that dynamic resolution resizes take their memory from the recycled heaps instead of new Metal memory each time: every GPU-only texture the churn makes (render targets, with or without COMPRESSIBLE, the heaps of resolution families, feedback snapshots) comes from one free list whose heaps stay in the residency set. A heap is made an eighth larger than its texture and a waiting heap serves textures up to a third smaller (smallest fit first), so a target that grows by one of Metal's size steps (about 10% near 2 MB) fits the heap it freed; family heaps go back to the list after their last texture instead of being freed; block-compressed formats keep exact allocations. Since its timestamps became real (ea0c98df, 3304d6a0), Mario Kart World resizes its targets nearly every frame under GPU load, and before this each new size made a new heap or texture: per 300 frames of a race about 1,200 new family heaps, 1,000 unrecycled render targets, 500 list misses and 250 snapshots. In one run alternating the two every 600 frames (two outside GPU loads so the resolution moves, Apple M6): residency commits 970 -> 272 (137 -> 26 ms), texture memory added 1.8 -> 0.34 GB, replay CPU 6.94 -> 6.36 ms a frame, frame time p50 / p95 16.7 / 24 ms and GPU time unchanged. t_rt_recycle checks growth by one size step, the eighth of headroom, block-compressed assets and snapshots; t_image_alias the family heap's capacity and its wait in the list; both pass with DM_NVN_RT_RECYCLE on and 0 (the old behaviour). Open: the M4 where the 30 fps was reported was not measured, the 256 MB cap still drops 120-380 heaps per 300 frames, and the rest of a resize's cost (new texture objects, fills, takeovers) (issue #1823)",
+     "Metroid Prime 4: Beyond (Switch, 1.1.0) plays on the Mac: its profile is the provisional one plus dual_want.tsv, with no host change and no rewriter patch; boot, the opening movie, the title, the menus, a new game's real-time opening and the first area of Tanamaar at 60 fps (frame time p50 16.67 ms, GPU about 5 ms at 1600x900, about 4.0 GB resident, Apple M6). The shader split read none of its shaders: Retro's packs have 60-byte ADIR entries here, and the program records and the packs' MTRL forms are zstd streams where Tropical Freeze's and Metroid Prime Remastered's are zlib; rfrm_shaders and snvn_records read both, and the packs (up to 3.9 GB) are mapped instead of read. 259,989 shaders, all built. The reader had also passed over, without a word, every program record whose control length is not a multiple of 0x40 (a stage's 12-byte entries after its section, the next section starting on 16 bytes): Metroid Prime Remastered's map lacked 28,479 of its 68,962 shaders since its bring-up. Its tables are regenerated (every old key kept); all 68,962 build on the current chain and the game boots and runs its menus at 60 fps on them, not played further. test_snvn_records covers zlib and zstd records with such lengths on synthetic chunks. Open: the iPhone, play past the first minute, runs of 32 ms frames after a long frame, Tropical Freeze's files not on hand to split again",
+     "The CPU conversion of vertex attributes takes ranges up to 64 MiB and keeps a conversion while its source is unchanged: a stream of more than 262,144 elements was left unconverted (vconv_bind refused a range above its 4 MiB staging, red line 90), so a stadium of EA SPORTS FC 27 (the Estadio da Luz at 1.8d.6523: 915,138 UI16 x2 vertices into a float input) drew its stands and roof as streaks; and every conversion was made again in every submission, which for that stadium is 7.65 million vertices, 122 MB written a frame, 26.8 ms of the submitting thread on an M4 (the PR author's measurements). The staging limit is 64 MiB (PR #1726). A conversion is now made once into a buffer of its own and bound again in later submissions (vk_get, nvn_mtl.m): a key (range, format, layout) is noted at its first submission with 64 samples of its source and kept from the next one that finds them unchanged; the pages wholly inside the source are write-protected (nvn_dirty_protect, as a kept index range) and the bytes in pages it shares with other data are compared with a copy, so a neighbour written every frame neither drops it nor takes a fault; a GPU write queued on the source (copy, update, fill, transform feedback, writable storage binding: vk_gpu_write from pend_add and sbw_note) drops it, and none may be queued or in flight when it is made. A changed source releases its buffer after the submissions that read it and is tried again after 32 submissions, doubling. Not kept: ranges below 4,096 vertices, sources outside tracked pools, anything while the game has sparse mappings, more than 256 MB in all; DM_NVN_VCONV_KEEP=0 turns it off, and the vertex conversion line reports the kept, made and dropped conversions by cause. PR #1727's conversion on every core (26.8 to 10.6-12.7 ms there) is not taken: it still writes the 122 MB every frame. Checked: t_vconv_keep (new, 123 checks: the content against vconv_elem, each way a conversion is dropped or left), t_vin, t_float_pad, t_pull, test_docs. Fire Emblem: Three Houses on the Mac (M4 Pro, DM_NVN_VCONV_CPU=1, new game into the prologue battle), before the samples were added: 1.8 of the battle's 2.0 million vertices a submission bound from 144 kept conversions (18 MB), frame time p50 16.68 ms with and without, the same picture. Not run: the form with the samples in a game, EA SPORTS FC 27 (no files of that update here, so the stadium's frame time is open), a float input fed integers, regress.py, iOS (PR #1726, PR #1727)",
+     "The prediction makes no pulling stand-in for a proposed pipeline key whose base is made: after a submission's first pipeline miss, pso_predict_rest_ proposes each remaining draw's key and that key without its depth / stencil attachment, and with hybrid pipelines it made the pulling stand-in of every proposed key to learn whether its draw would wait, an archive lookup of the pulling base on the submit thread each, outside its budget of 2 builds. A Metal 4 base does not depend on the depth and stencil formats (pbase_key, pso_desc4), and a draw asks for its own pipeline without compiling before any stand-in (pso_build_ex(..., 0)), so a key whose base is made is one specialization away and its stand-in was never used; the attachment-free keys are rarely drawn, never enter the pipeline cache or a prewarm list, and were proposed again in every run. The prediction now asks first whether the key's base is made (pso_base_made): such a key gets no stand-in and no background build and is left out of later predictions' candidates (g_pp_easy). Without Metal 4 bases nothing changes; with DM_PSO_HYBRID=0 such a key is specialized by its draw instead of in the background. The author's measurement, Ocarina of Time v131072 entering Hyrule Castle Town on an M4 Pro, one run a side on a host from 8db5dd45: the three predictions 30.8 / 104.4 / 54.5 ms -> 0.5 / 2.0 / 1.4 ms on the submit thread, pulling pipelines made 244 -> 1. On main: t_pso_depth_stencil (new case prediction_made_base; 293 / 296 / 293 / 296 checks), t_pso_pending, t_pso_archive, t_pull, t_pso_warm, t_pso_stall, t_pso_bundle, t_pull_inv and test_docs pass and the host builds; no game run and no regress run on main. Open: a proposed key with no base made still gets its stand-in lookup on the submit thread (PR #2262)",
+     "A uniform slot is bounded at its bound size rounded up to 256 bytes, the size the console's driver gives the GPU, not at the exact size: nvnCommandBufferBindUniformBuffer writes (size + 0xff) & ~0xff in NVN1's driver (method 0x8e0; Sonic Superstars' sdk, 0x467170) and ((size + 0xff) >> 8) << 20 in NVN2's (method 0xe02; Ocarina of Time's sdk, 0x67bc80), so a read between the bound size and the next multiple of 256 gives the memory there, where the host gave 0. ub_bound (nvn_mtl.m) rounds the size for both parts of the bound: the padded copy of a binding shorter than its fixed-offset reads carries the memory's own bytes up to the rounded size (the exact size where the pool ends before it) and zeros after, and the size table for reads at computed offsets holds the rounded size. Ocarina of Time binds 16, 64, 144, 192, 464, 976, 16,960 and 41,600 bytes; Paper Mario's 16-byte binding read at 0x900 still gives 0. On the Mac, Ocarina of Time with the slingshot aimed at Link's house draws as before with no new red line, and logs slot 3 bound with 192 bytes, 256 readable, read up to byte 684. Open: the streaks and flicker of issue #2218 did not appear here with the exact size either (that scene, the ReDeads of adult Castle Town), so whether this clears them awaits the reporters' retest; what an Ampere GPU returns past the rounded size is not measured; no test covers the padded copy or the size table; no Switch 1 game and no regress run (issue #2218, PR #2219)"
     ]
    }
   ]
  },
  "ForceMind/Game2Mobile": {
-  "pushed_at": "2026-11-10T04:51:57Z",
+  "pushed_at": "2026-11-11T05:08:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T04:51:57Z",
+    "last_commit": "2026-11-11T05:08:35Z",
     "subjects": [
+     "Fix Darwin process cleanup and keep native test outputs out of M1 source checks",
+     "Harden runtime boundaries and complete local build reliability tools",
      "Initialize NVN dirty tracking hooks once for concurrent pool registration",
      "Add atomic private M1 job progress and safe read-only operator status",
      "Fix Metal dirty-page pool cache identity and strengthen Apple race tests",
      "Enforce safe NSO rewriting and test ARM64 encoding boundaries",
      "Add boot diagnostics, build identity validation, and read-only operator CLI",
-     "Merge pull request #14 from ForceMind/fix/device-run-evidence-20261020",
-     "fix(ios): preserve explicit watchdog log-collection workflows",
-     "fix(ios): bind device-run completion to the launched process and fresh logs"
+     "Merge pull request #14 from ForceMind/fix/device-run-evidence-20261020"
     ]
    }
   ]
@@ -1951,18 +1951,18 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-10T19:42:26Z",
+  "pushed_at": "2026-11-11T06:14:40Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T19:42:25Z",
+    "last_commit": "2026-11-11T06:14:39Z",
     "subjects": [
      "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（202 个项目）",
+     "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（200 个项目）",
      "chore: 自动同步 Star 地图（200 个项目）",
-     "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）"
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-10T17:07:29Z",
+  "pushed_at": "2026-11-10T23:28:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T17:07:28Z",
+    "last_commit": "2026-11-10T23:28:43Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -9482,7 +9482,7 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-10T22:50:41Z",
+  "pushed_at": "2026-11-11T06:06:19Z",
   "branches": [
    {
     "branch": "main",
@@ -11187,21 +11187,21 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-10T21:52:55Z",
+  "pushed_at": "2026-11-11T06:18:40Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-10T21:52:53Z",
+    "last_commit": "2026-11-11T06:18:38Z",
     "subjects": [
-     "Lua mod support (#119)",
-     "Feature: Button Icons/Controls (#118)",
-     "Feature/naming and controller keyboard (#117)",
-     "Merge pull request #124 from jmars125/task/artifact-retention",
-     "Keep the release workflow's package artifacts for 7 days instead of 90.",
-     "Merge pull request #120 from jmars125/task/benefit-claim",
-     "Mark clock snapshots as made so Division Rewards can be claimed once per period.",
-     "Merge pull request #115 from jmars125/version-0.1.16"
+     "Merge pull request #135 from jmars125/version-0.1.18",
+     "Version 0.1.18.",
+     "Merge pull request #134 from jmars125/task/mod-manager",
+     "Install, update, switch and remove library mods from the F1 menu's Mods tab, and give XCX Setup the F1 menu's look.",
+     "Add a mod manager to XCX Setup that installs from the xcx-recomp-mods library.",
+     "Load loose RomFS mod files in place of sts.ard entries, switchable while the game runs.",
+     "Merge pull request #133 from jmars125/task/tip-speed-116",
+     "Merge remote-tracking branch 'origin/master' into task/tip-speed"
     ]
    }
   ]
@@ -11709,21 +11709,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-10T23:04:26Z",
+  "pushed_at": "2026-11-11T06:26:19Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T06:47:52Z",
+    "last_commit": "2026-11-11T06:26:19Z",
     "subjects": [
-     "Merge pull request #134 from simipoB/fps-live",
-     "Merge pull request #136 from simipoB/mali-nan-select",
-     "Merge pull request #135 from simipoB/engine-perf",
-     "Mali white screen: the NaN rule of min / max / saturate written out with isnan (#111, #128)",
-     "Engine: less driver memory churn on Adreno; a profileable test build",
-     "Frame rate: 30 / 60 switch while playing, the crowd fix, a steadier fps guard",
-     "Merge pull request #133 from simipoB/hd-textures",
-     "Merge remote-tracking branch 'origin/main' into hd-textures"
+     "Merge pull request #149 from simipoB/intro-30fps",
+     "Merge pull request #148 from simipoB/movie-audio-split",
+     "Merge pull request #147 from simipoB/lsfg",
+     "Merge pull request #140 from simipoB/framegen",
+     "Stadium crowd at 30 fps: the new-game intro no longer flickers at 60",
+     "Frame generation: display times asked even one refresh apart; Auto 4x on 5 refreshes",
+     "Frame generation follows the game's measured frame time, not its target",
+     "Lossless Scaling frame generation: 3x and 4x, and drivers without float controls"
     ]
    }
   ]
@@ -12015,21 +12015,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-10T23:13:21Z",
+  "pushed_at": "2026-11-11T06:35:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T23:06:06Z",
+    "last_commit": "2026-11-11T06:31:56Z",
     "subjects": [
-     "Merge branch 'fix/direct-batch-alias' into HEAD",
-     "Merge commit '6b6a571553f7a687af46e03e2cdbf8ef4d77f335' into HEAD",
-     "Merge branch 'contrib/pr499' into HEAD",
-     "Merge branch 'fix/direct-space-extrapolate' into HEAD",
-     "perf(direct): 出库临时数据里的源码文本逐段压缩，大款翻译阶段的盘峰值约降到 1/4",
-     "Merge branch 'ops/android-gate-pre-when-touched' into HEAD",
-     "门禁分层：改成「合入后（路由命中时合入前也跑）」，按现有路由表判定，不另列前缀",
-     "Merge branch 'quality/82-position-precise' into HEAD"
+     "Merge commit 'ef9f6b727c3f5b3e639a0d910ddb5018e4887d38' into HEAD",
+     "Merge branch 'quality/gl-core-safe-stub' into HEAD",
+     "Merge branch 'android/host-apksigner-jdk' into HEAD",
+     "android: 验签前找 JDK 的那次调用加 30 秒超时（同 java_runtime_ok），起不来或超时按原环境走",
+     "Merge branch 'contrib/pr564' into HEAD",
+     "Merge branch 'contrib/pr563' into HEAD",
+     "Merge branch 'contrib/pr560' into HEAD",
+     "Merge branch 'contrib/pr559' into HEAD"
     ]
    }
   ]
@@ -12083,7 +12083,7 @@
   ]
  },
  "jmars125/xc3-recomp": {
-  "pushed_at": "2026-11-10T21:20:07Z",
+  "pushed_at": "2026-11-11T02:15:10Z",
   "branches": [
    {
     "branch": "master",
@@ -12195,6 +12195,134 @@
      "TL2 gear: the game-language note says all languages are built in (the Diablo III note asked for language-pack DLC in aoc/)",
      "Docs for publication: README (EN / RU), INSTALL guides with FAQ and PC mods, docs/tl2/GAME_FILES.md and DERIVED.md, THIRD_PARTY Torchlight II section, drivers README and LICENSE for TL2; Diablo III screenshots removed",
      "Repository layout for publication: setup for Torchlight II (tools/setup_tl2.py via setup.bat / setup.sh: base 010090400D366000 + update v327680 + prod.keys -> ExeFS, patch main / sdk, equiv check, RomFS, tl2_shader_jobs + dmsh_vk_xc2 -> work/Torchlight2Mobile/{romfs, dm/out, dm/shaders, mods}; DLC skipped), put-game-files-here README, build.bat / build_apk.ps1 for DM_GAME=tl2, push_phone.sh on the setup layout, VERSION 0.1.0, original launcher icon (no game artwork)"
+    ]
+   }
+  ]
+ },
+ "GulmalLo/d2r-mobile": {
+  "pushed_at": "2026-11-11T05:47:08Z",
+  "branches": [
+   {
+    "branch": "lootfilter",
+    "ahead": 5,
+    "behind": 0,
+    "files": 2,
+    "real_files": 2,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-11-11T05:47:08Z",
+    "subjects": [
+     "loot filter: keep goldFilterValue in the generated blobs",
+     "loot filter: regenerate blobs with Meng3c",
+     "loot filter: embed and default to the imported Meng3c profile",
+     "loot filter: generated rule blobs",
+     "loot filter: six embedded profiles, pinned profile file, strict tier"
+    ]
+   }
+  ]
+ },
+ "icechriszen/d2r-mobile": {
+  "pushed_at": "2026-11-11T02:58:14Z",
+  "branches": [
+   {
+    "branch": "codex/readme-r2-guide-20261111",
+    "ahead": 9,
+    "behind": 0,
+    "files": 86,
+    "real_files": 84,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/sync",
+     "services/save-sync"
+    ],
+    "last_commit": "2026-11-11T02:57:06Z",
+    "subjects": [
+     "docs: surface cross-platform R2 save setup in project READMEs",
+     "Merge upstream r45 with R2 save sync and unified cloud UI",
+     "Give language restart hints readable spacing",
+     "Fix language grid alignment and full-row focus bounds",
+     "Stop controller auto-scroll from undoing manual Custom page scrolling",
+     "Fix Portuguese options, document private R2 setup and isolate device tests",
+     "Restore graphics test linking after upstream camera additions",
+     "Merge upstream r45 updates with R2 saves and device compatibility"
+    ]
+   },
+   {
+    "branch": "codex/upstream-merge-20261111",
+    "ahead": 7,
+    "behind": 0,
+    "files": 84,
+    "real_files": 84,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/sync",
+     "services/save-sync"
+    ],
+    "last_commit": "2026-11-11T02:05:47Z",
+    "subjects": [
+     "Give language restart hints readable spacing",
+     "Fix language grid alignment and full-row focus bounds",
+     "Stop controller auto-scroll from undoing manual Custom page scrolling",
+     "Fix Portuguese options, document private R2 setup and isolate device tests",
+     "Restore graphics test linking after upstream camera additions",
+     "Merge upstream r45 updates with R2 saves and device compatibility",
+     "Add cross-platform R2 saves, in-game cloud UI and Android compatibility"
+    ]
+   },
+   {
+    "branch": "main",
+    "ahead": 10,
+    "behind": 0,
+    "files": 86,
+    "real_files": 84,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/sync",
+     "services/save-sync"
+    ],
+    "last_commit": "2026-11-11T02:58:14Z",
+    "subjects": [
+     "Merge pull request #2 from icechriszen/codex/readme-r2-guide-20261111",
+     "docs: surface cross-platform R2 save setup in project READMEs",
+     "Merge upstream r45 with R2 save sync and unified cloud UI",
+     "Give language restart hints readable spacing",
+     "Fix language grid alignment and full-row focus bounds",
+     "Stop controller auto-scroll from undoing manual Custom page scrolling",
+     "Fix Portuguese options, document private R2 setup and isolate device tests",
+     "Restore graphics test linking after upstream camera additions"
+    ]
+   }
+  ]
+ },
+ "kayochiaradia/mtf-recomp": {
+  "pushed_at": "2026-11-11T00:09:25Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-11T00:04:26Z",
+    "subjects": [
+     "Replay: less driver work per draw",
+     "Released textures: a cap in bytes",
+     "Per-object motion: a fragment shader that is valid SPIR-V 1.0",
+     "Laptops: the dedicated GPU, and no Windows power throttling",
+     "Lifted code: cheaper FPCR checks in the FP helpers",
+     "Device loss: objects and shader memory a submission still uses stay valid",
+     "Reflections: the game's probes are sampled as cubes",
+     "Setup and exe: no folder of the machine that built or ran them"
     ]
    }
   ]
