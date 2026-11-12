@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-11T17:00:43Z",
+  "pushed_at": "2026-11-12T00:32:34Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T17:00:35Z",
+    "last_commit": "2026-11-12T00:32:17Z",
     "subjects": [
-     "An OpenGL shader deleted while attached is only flagged and goes with its last attachment, and the current program deleted stays in use until another is made current, so a link after glDeleteShader no longer finds no shader or another one: glDeleteShader freed the shader at once and its name went to the next glCreateShader, while a program keeps its shaders by name, so a later link found nothing (its draws skipped) or a shader of the other stage (a fragment shader as the vertex stage); glDeleteProgram freed the current program and made none current, so the draws after it were skipped, where GL keeps it in use until the next glUseProgram. Now hle_gl.m counts each shader's attachments (shader_t.refs; one shader per stage, a new one replaces and releases the old), glDeleteShader of an attached shader sets deleted and shader_release frees it with its last attachment (glDetachShader, new; a replacing attach; the program's end), glDeleteProgram of the current program sets prog_t.deleted and glUseProgram of another frees it (prog_free, which releases its shaders), and both GL_DELETE_STATUS queries report the flag; DM_GL_LOG=1 logs the deletes. A linked program already held what its link took, so it draws as linked whatever happens to its shaders. No game shows the symptom: Balatro takes the path (LÖVE deletes its first default programs' shaders while attached, then the programs, when it makes its window again) but never links after deleting a shader. New reference entry (GL shaders and programs deleted while in use). Checked: t_gl_imports with new cases (the reported sequence, a flagged shader keeping its name and stage, a replacing attach, detach, a shader shared by two programs, the current program deleted, used again, then switched away), in both stub modes; with main's code the shader part fails at the first new check, and with the old glDeleteProgram / glUseProgram the program part fails; test_docs; lint_c.py tidy on hle_gl.m (nothing above the baseline). Balatro (built from its NSPs, M6), main's host against this one, 75 s headless each with the note's touch route: both to frame 4,200, no red line, the title and tutorial frames the same but for the animated background and particles; a first run of main's host at about 20 fps was machine load (a rerun ran at 60). Not run: regress.py (it does not cover GL games), Digimon and Well Dweller (no builds here), iOS",
-     "A JIT plugin loads again from its data as rewritten and a zero bss, so a second CreateJitEnvironment after DestroyJitEnvironment no longer crashes: NRO data snapshots are lazy since the FFX/X-2 port (preload_nros records only pristine_len; the first load copies the initialized data), and nro_load took that copy, but nro_load_alone (the JIT plugin's load, hle_jit.c) did not, so its reload copied from a null pointer (SIGSEGV in nro_load_alone at load 2); its reload also left the bss as the previous environment had left it, while the jit service loads the plugin fresh for each environment. Now both loads start with nro_reset_data (loader.c): the first load snapshots the initialized data only, and a reload restores it and zeroes the bss; each keeps its own symbol binding (nro_load into the game's lookups, nro_load_alone against the module itself). No game has been seen to create a second environment; Super Mario 64 (3D All-Stars) is the one that takes this path. New reference entry (A JIT plugin loaded a second time crashed). Checked: t_nro with a new case (load alone, dirty the data, bss and relocation slots, mark unloaded as h_jit_Destroy does, load alone again: data and bss as rewritten, slots relocated against the module); without the fix it fails at the first load (no snapshot); test_docs; lint_c.py tidy on loader.c (nothing above the baseline). Not run: the full Mac host build, any game, regress.py (one helper on the NRO load paths, the linked load unchanged)",
-     "Automated host runs keep cloud saves off, so a regression, benchmark or NSP build run no longer syncs its scratch save with the player's cloud save: regress.py (run_env), bench.py (run_one) and the NSP script's host runs (tool_env: the NRO, glslc, Oodle, JIT and shader captures, the heap and region checks, the pipeline prebuild) copied the caller's environment and replaced only DM_SAVE. With DM_SAVE_SYNC exported in the shell, the host synced the scratch save through <folder>/<title ID>/save.dmsync, the player's own file for that game: a save=new route started with the player's cloud save (only in the cloud: pulled in), and its first commit, the newer save, was sent over it; the cloud save it replaced was kept in <DM_SAVE>-backups inside the run folder, which the next run deletes. Now each sets DM_SAVE_SYNC=0 after its overrides (tool_env for the NSP script, and the prebuild after the environment file's switches, which are the player's); regress.py --env and a bench.py variant or --env naming a cloud folder are refused (0 or empty still pass). regress.py leaves DM_SAVE_SYNC* out of a baseline's context, since no run reads them. The play command the NSP script prints is unchanged. New reference entry (Automated runs synced their scratch save with the player's cloud save); env_switches.tsv's DM_SAVE_SYNC row says who sets 0. Checked: test_bench, test_regress, test_nsp_env_checks (new cases: with a cloud folder exported each run gets 0, an explicit folder is refused, an explicit 0 passes), test_docs: 93 tests; lint_python.py: the one new finding is dmsh_entry.py's, on main before this. Not run: regress.py check (only the tools' environment changes, and no route syncs), the report's end-to-end repro (DM_SAVE_SYNC=0 turns sync off in cloud_path)",
-     "A cloud-save pull swaps each of the cloud's folders in from this device's backup folder, so the staging folder never holds this device's save and a failed pull puts it back whole: pull (save_sync.c) unpacked the cloud's save into <save>.sync-tmp/in, swapped each folder with the live one, and only then moved the swapped-out folder, this device's, into <save>-backups. When that move failed, mount_once logged \"playing on with this device's\" while the cloud's save was in place, and its rm_tree of <save>.sync-tmp deleted this device's save; an app killed between the swap and the move lost it the same way, since every start clears that folder, and a failure at save_device after save had swapped left a save half the cloud's. Now the backup folder is made before anything moves, each of the cloud's folders is renamed into it and swapped from there with the live one (one renamex_np both puts the cloud's in place and leaves this device's in the backups), and a folder the cloud's save does not have is moved to the backups. pull records what it did to each folder (act[]) and on a failure undoes it in reverse order, so the save is this device's again and the empty backup folder goes (-1, and the log line is true); if a step of undoing fails, nothing is deleted, pull returns -2 and the red line names the backup folder holding what is not in place. The errno logged is the first failure's. New reference entry (A failed pull deleted this device's save). Checked: t_save_sync_metadata 102 checks, with rename and renamex_np faults: nothing fails, with and without the cloud's device save; the move into the backups fails (the report's case); save_device's swap fails and save is swapped back; save_device's move to the backups fails; that swap back fails too; after every rename and swap the staging folder holds nothing of this device's save; the old pull fails 22 of them, the reported loss among them. A fault-injection repro through save_sync_mount (EIO on the move into the backups, the player's choice of the cloud's) loses the save before and keeps it after. t_save_sync 101 checks, lint_c.py tidy on both changed files (0 findings), test_docs. Not run: an iPhone or a real iCloud pull, regress.py (no route turns cloud saves on). Open: backup_dir prunes the oldest local backup beyond 10 before the pull is known to succeed, as before",
-     "oe::RequestToRelaunchApplication ends the application and starts it again from its first program, so Super Smash Bros. Ultimate no longer crashes after a language change: Options > Language > Yes (\"the software will restart\") saves the new language and calls it, the host did not hook it, and the SDK's version reads through the am application proxy, which the host never opens (CRASH sig=11 addr=0 at sdk+0x804c8, applet::RequestToLaunchApplication+0x98, 13.0.5, 2 of 2 runs). On Horizon the call ends the application and starts its first program with no launch parameter (oe::GetPreviousProgramIndex -1, as from HOME) and does not return. It is now the start oe::ExecuteProgram makes, for program 0 (oe_start in hle_oe.c; oe_plan and prog_plan_make make the Mac's plan, prog_exec the execve after the graceful exit): a multi-program application (DM_PROGRAMS) starts its first program's row, a program run by itself execves its own host with its own arguments, and either gets this environment less DM_LAUNCH_PARAM and DM_PREV_PROGRAM, plus DM_RELAUNCH=1, with which DM_CTL resumes at the end of its file instead of replaying the presses that led there. ExecuteProgram of a program's own index, with no table, now also starts its host again with the parameters, as on Horizon (it ended the program before); another program still cannot start. On the iPhone an app holding several programs records program 0 (DM_EXEC_OUT); an app of one program cannot start itself again, so the front end asks the player on screen for 3 s to open it again and the app ends (front_program_handoff with no DM_EXEC_OUT), and a multi-program app whose player refused notifications now asks the same instead of quitting silently. New reference entry (oe::RequestToRelaunchApplication: the application starts again); the ExecuteProgram entry, front.h, env_switches.tsv (DM_RELAUNCH) and the Smash note follow. The diagnosis, the hook and the Smash test are PR #2156's: French to English and back on a Mac mini M4 (13.0.5, a program run by itself), menus in the new language, no crash, no red line. Changed here: the relaunch folded into ExecuteProgram's start (the PR read the table and filtered the environment a second time), the self start for ExecuteProgram, the iPhone notice, t_oe's plan checks. Checked here (M6): t_oe 70 checks (10 new: the plans with and without a table, the keys dropped and added, the parameters file, a missing row), t_hid 251, test_docs, the Mac host for Smash, hle_oe.c and front_ios.m compiled for iOS with no warnings, lint_c.py tidy on hle_oe.c and hle_hid.c (nothing above the baseline). Bastion run by itself on the Mac with stale DM_LAUNCH_PARAM / DM_PREV_PROGRAM, DM_CTL \"program 0\" once at the title: the same process boots again (a second build: line, graceful exit 0.000 s), DM_CTL does not replay the line and takes the next screenshot, the title draws, no red line. Not run: Smash here (its shader libraries are an old chain), a multi-program application (t_oe does not link with 3D All-Stars' profile, as on main), any iPhone, regress.py check (no route restarts or changes program) (PR #2156)",
-     "WriteTexels writes a linear texture by rows of its stride, so a native-texture movie into a LINEAR texture is no longer black: write_texels wrote every texture by block-linear address, nvn_deswizzle_geom refuses a LINEAR or LINEAR_RENDER_TARGET layout, so write_region_bl failed, and the whole-level fallback's nvn_swizzle refused it too with its result ignored: the storage kept what it held, with no log line for a whole-texture write. The host's native-texture movie output (nvn_host_write_texture) goes through it, so TSUKIHIME -A piece of blue glass moon- (01001DC01486A000, no profile in the repository) drew its title backdrop, a 1920x1080 RGBA8 LINEAR | VIDEO_DECODE movie texture, black. Now a linear texture is one 2D level of rows of its stride (tex_linear_row, the stride GetStorageSize counts, now shared by ReadTexels, the upload, gsb_geom and linear_fit), written as ReadTexels reads it; a region outside those rows, another target or level, or a block-compressed format is refused with a [RED] line, as is a block-linear write nvn_swizzle refuses. mtl_tex_linear_cpu_written leaves a texture viewed on its pool's buffer (linear_fit) as that view, which reads the storage itself (made CPU-written it would be uploaded whole at each write); any other is taken from its storage as tex_mtl_ takes one at first use. The diagnosis is PR #1983's (the probe showing each title-movie frame in the source and not in the storage, and the author's Mac run of the title, the opening movie, event movies and gallery CGs with the fix); changed here: the PR's write_region_mirror no longer exists on main (ab41d6a1), LINEAR_RENDER_TARGET is covered too, the buffer view is no longer made CPU-written, the DM_MOVIE_DBG probe is left out for the [RED] lines. New reference entry (WriteTexels into a linear texture dropped the write); movies.md no longer says the output is always block-linear. Checked: t_nvn 311 checks with the new 6c2b (a 37x5 LINEAR | VIDEO_DECODE texture of stride 256 and a 16x16 LINEAR_RENDER_TARGET of stride 128, four regions each, some with a padded source stride: storage byte for byte with the row padding and the bytes after, a region past the last row refused, ReadTexels back, no CPU-written texture added for the buffer views; without the linear branch 3 fail, with mtl_tex_cpu_written in place of the view rule the last fails), t_linear_readback 61 cases, t_cpu_storage 135, t_cpu_tex 23, t_direct_upload 26,384, t_partial_upload 3,585, test_docs; lint_c.py tidy on the changed sources: nothing above main's own count (nvn_mtl.m's nullability pair is 18 on main as here). Not run: any game (Tsukihime is not here), the full Mac host build, iOS, regress.py (only linear textures change, which were not written before). Open: a LINEAR_RENDER_TARGET or IMAGE linear texture the GPU drew into as a private texture and the CPU then partly writes is uploaded from its storage, as a block-linear one is (PR #1983)",
-     "A packaged texture's layout keeps its width alignment, so a texture whose width is not a whole number of tiles is padded as the game laid it out: SetPackagedTextureLayout was kept only as byte 0 (block height and depth) in the texture description, and byte 1's low nibble, log2 of a width alignment in GOBs, was dropped. With it the levels at least one tile in size are padded to whole tiles, as a sparse texture's are to its 64 KB tiles, the mip tail is packed as before, and a layered texture's layers align to the whole block times that width, whether or not the texture is SPARSE. Bayonetta Origins: Cereza and the Lost Demon (0100CF5010FEC000, 1.0.0, no profile in the repository) has a 2052x1026 ASTC 6x6 tutorial-card background with byte 0 3 and width 4: 96 GOBs wide and 0x120000 bytes, laid out 86 GOBs wide (0x102000), so its rows from y 384 on read ten GOB columns of padding, all-zero blocks that ASTC decodes as magenta (a fixed 240-pixel-wide magenta rectangle). nvn_texdesc.pkg_block_h is now pkg_layout (byte 0 and the width nibble, + 1); packaged_width_log2 feeds level_walk and layer_bytes, and every row-pitch consumer (the GPU and CPU deswizzles, WriteTexels) takes it through nvn_tex_level_gobs. A layout with a width nibble of 0 is laid out exactly as before; the packaged layouts logged in nine other games' runs on disk (Metroid Dread, DKC Returns HD, Fire Emblem Engage, Super Mario RPG, TUNIC and four more, 1,086 lines) all have byte 1 = 0. Flags and the sparse tile layout the game reads are unchanged. The [nvn] packaged texture log line prints the width alignment. New reference entry (Packaged textures carry width alignment as well as height and depth). The code, diagnosis, tests and checks are PR #2268's: the fix confirmed on an iPhone on the tutorial card, the layout compared with the SDK's own arithmetic on 37,296 shapes and the game's texture replayed on the GPU (neither in the repository: they need the game's files), and regress.py check on five games (Bayonetta Origins, Yoshi's Crafted World, OCTOPATH TRAVELER, Metroid Prime Remastered, Rhythm Heaven Groove), all passing after a rerun of one moving-camera screenshot. Added here: the field's rename, the comments and the log line, the entry trimmed. Checked here on 68dde14b: t_tex_layout 28 of 28 shapes (the width-4 ones fail without the fix), t_sparse_layout 28, t_nvn 304, t_partial_upload 3,585, t_tex 5,382, test_docs, lint_c.py tidy on the changed C sources (no finding above the baseline). Not run: regress.py check here (no logged layout sets the width nibble), any game. Open: a level exactly one tile high is padded (as the sparse rule does); a width nibble together with SPARSE, or with a block depth, has no test (PR #2268)",
-     "Cloud saves: the launchers ask which save to keep when both changed, and wait for a cloud save iCloud has only listed: with both saves changed since the last sync, the host kept the one with the newest file date, so a new game's first save written 45 s after a 54-minute save replaced it in the cloud (Cadence of Hyrule, 01000B900D8B0000 1.5.0, an iPhone and a Mac mini M2 Pro; the real save survived only in the phone's save-backups/<date> cloud). The host could ask instead (ss_decide's SS_ASK, DM_SAVE_SYNC_CHOICE in docs/frontends.md), but neither launcher set it. Now save_sync_report(save, title, folder, wait_ms, out, n) answers, before the start, one line about the two saves as the game's first mount will see them: hashes, dates, file counts, sizes (ss_meta.bytes), the cloud's device and whether both changed. It finds the cloud's file with the mount's own rules (cloud_path: DM_SAVE_SYNC, icloud, a folder named after the game) and fetches it through the same front-end call, into a file of its own under <save>.sync-tmp. Both launchers call it at Play through SaveSyncReport.swift (shared; pack_app.py builds it into the Mac launcher): on a conflict they show both saves with their date and size, since the newer is not always the one with progress (no default button on the Mac), and pass local:<hash> or cloud:<hash>; with nothing to choose, ask; a cloud save that did not come in a minute is said so, with this device's save (offline: the mount does not wait again), another try or Cancel; while it downloads, Play Without It goes on at once. The Mac launcher sets DM_SAVE before its window (launcher.c set it after, so the check could not read the save) and checks with the window off too; the iPhone launcher names the cloud file with dm_save_title() (hle_fs.c) and DM_SAVE_SYNC from dm_cloud_saves_env(). On the iPhone, front_save_sync_fetch asks iCloud for a save it has only listed and waits for the file until it is there or NSURLUbiquitousItemDownloadingErrorKey reports a failure, so an offline fetch ends at once; a refused request falls through to the coordinated read as before. The mount's own wait stays 10 s. With no launcher (DM_LAUNCHER=0, an iPhone app without launcher.json) the newer save still wins. The diagnosis, the report and the launcher prompts are PR #2180's; changed here: the report finds the cloud file itself (the PR's launchers built the path, which missed the game's own folder and icloud: such a start passed ask with nothing compared and synced neither side from then on), the Mac's DM_SAVE order (its prompt never showed), sizes in the dialog, offline instead of ask when the cloud was not read (the PR's start waited 20 s in the report and 20 s more at the mount), the download wait stopping on iCloud's error, the shared Swift file; the PR's iOS folder picker rewrite is left out (issue #1148, its own change). Reference entries: Both saves changed is the player's choice, not the newest file's; The cloud's save is listed but not downloaded. Checked: t_save_sync 101 checks (section 15: nothing anywhere, a save only here, in step, the game's own folder, only in the cloud, both changed with the new save the newer and the smaller, the cloud unreadable, sync off, DM_SAVE_SYNC when no folder is given, nothing left behind), t_save_sync_metadata 41, t_fs 146, test_docs, test_nsp_mac_app, test_launcher_storage; the Mac launcher compiles and links as pack_app.py builds it, the iPhone's Swift sources and SaveSync.m compile against the iOS SDK; lint_c.py tidy on the changed C files: nothing above the baseline. Not run: either dialog by hand, an iPhone (a listed save, an offline start, a reconnect), regress.py (no route turns cloud saves on). lint_python.py's one new finding is dmsh_entry.py's, on main before this"
+     "Diablo II: Resurrected (0100726014352000, update 1.0.34.0 = v2228224, SDK 11.4.3, Blizzard's D2R engine, NVN) plays on the Mac, and the shader split reads Blizzard's CASC storage, so its 6,931 shaders are found: the game keeps its files in data/*.data archives listed only by text manifests (build_key.txt names the current build's config key, build_manifest.psv lists each file's archive, offset in the encoded key's last five bytes, stored and decoded length and encoding: zlib, stored or BLTE), and its shaders are SHADSHAD containers there (data/hd/shaders/*.bin, one stage per file, permutations as BTCD chunks under PRM[), each record {u32 5, control length, code length + 0xc, code length, u32 4} + code area + control section; main holds 10 more records of that form, which its code points at by their start, so raw_shaders found no code area for them. New dm/gfx/tools/casc.py reads the manifest with the current config key and decodes a file by its encoding, checking its decoded length; shader_split.py reads every current file by archive in ranges (casc_jobs, casc_shaders) and scans it like a loose file, scan_blob reads a SHADSHAD chunk tree (shad_shaders, every record's lengths checked against its chunk), raw_shaders takes the code area before a control section when a record header there gives exactly that section and main points at the record (a relocation or adrp + add); '#SHAD@' keys are single-stage programs. The game allows offline play only within 30 days of a Battle.net login (main+0x1978ac reads the saved \"User Last Online\" and sets the offline-allowed flag), so with an offline host the title looped on \"Failed to authenticate\"; no nifm or account answer passes it, it is the game's own policy. A rewriter cut sets the flag (CUTS for 1.0.34.0, and the same cut as a MATCH_CUTS rule on the 316-byte function for other builds: binding game); the base game v0 has no such check (it only writes the time after a login) and needs none. The check was first described in d2r-mobile's notes on a community offline fix; the cut is this repository's own, no bytes taken. New profile dm/games/0100726014352000 (the survey's memory guesses held; present_interval display: the game asks for interval 2, and the same 3 s walk ends at the same place at 30 and 60 fps), its note, smoke.tsv and games-table row; new reference entries (Blizzard's CASC storage and SHAD containers; \"Failed to authenticate\" at the title). Checked: test_split_casc (new: shaders in z, n and BLTE files, another config key and a key naming another archive refused, a record whose lengths do not add up named, BLTE lengths, main's records through a relocation and an adrp + add, one nothing points at named), all test_split_*, test_game_profile, test_fuzz_corpus, test_profile_guess, test_docs, test_patches, test_nso_match, test_nro_pack; lint_python.py: the two new findings are dmsh_entry.py's, not touched here. A copy of 1.0.34.0's main with another build ID rewrites byte for byte as the registered build, both cuts [function match]. The NSP script on the NSPs: 6,931 shaders (2,344 vertex, 4,559 pixel, 26 compute, 1 hull, 1 domain) from 132,413 files in 12 s, all 38 programs dumped up to the title among them, Mac shaders 6,931/6,931. On the Mac about ten minutes from a fresh save: the logo movie, the title, the calibration screens, the Act I cinematic, the main menu, Offline, hero class selection, naming, the Rogue Encampment as a Barbarian (walking, the automap, the camp's gate), 60 fps (CPU 65 % of one core, GPU 6 to 7 ms), sound, no red line, 2.79 GB physical footprint. Not run: the iPhone, a fight, the base game v0, regress.py (the readers run only on files and records of these forms). Open: about six long frames a minute in the camp (80 to 105 ms of the game's own CPU work)",
+     "iOS app builds link again: probe_atrace is built on iOS too",
+     "The Mac compile of a game's shaders, MAC_METAL, is defined in dmsh_chain.py, which imports without running a build, so tests compile with the build's own command instead of evaluating a line of dmsh_build.py or copying its flags: dmsh_build.py reads its arguments and starts a build when imported, so test_dmsh_gather_offsets, test_dmsh_wrapv and test_dmsh_raw_last took the MAC_METAL line out of its source and evaluated it (broken when the line came to name dmsh_chain.MAC_MIN_FLAG, f75ac06e; patched in ccd834e0 by evaluating it with dmsh_chain in scope), and three others compiled with flags the build does not use: test_dmsh_tg_fence without -fwrapv and the deployment target, test_image_atomic_bounds without -O1, -fwrapv and the deployment target, test_shader_pch with a hand copy. Now MAC_METAL sits beside MAC_MIN_FLAG with each flag's reason; dmsh_build.py's record (MAC_RECORD) and direct run (MAC_RUN) take dmsh_chain.MAC_METAL; the six tests take it too, and test_image_atomic_bounds takes ios_metal.METAL for the iPhone. The command is unchanged word for word. New test_mac_metal.py: the command and its order, the deployment target from dm/mac/min_os.mk, and no copy left in dmsh_build.py. Comments in ios_metal.py, vk_shaders.py and gl_shaders.py name the new place. pr_areas.py still runs main's dmsh_chain.py for its file list (it reads only files). New reference entry (Tests compiled with copies of the Mac compile).",
+     "Fix the shader entry-point lint failures",
+     "The NSP script replaces an output by renaming the old one aside before the new one goes in, so a stop or a failure while it replaces one no longer leaves that output half deleted: swap_in deleted the old output in place (rmtree(dst)) and only then renamed the staged one (<dst>.partial) in, though its comment said the old one was untouched on failure; an interrupt, a SIGTERM or a failed delete left a half-deleted folder at the real path (reproduced with fault injection), which a reuse check that looks for a few files (extract's: ExeFS/main, RomFS.img, the RomFS marker) could take for a finished output (inferred, not reproduced). Its callers write their completion stamps only after the swap, so the old output was stale whenever it was replaced: the loss was the half-deleted folder, not the old contents. Now swap_in deletes an aside folder an earlier run left (<dst>.old.partial, a name the build ignores as it does every .partial folder), renames the old output there, renames the new one in, and only then deletes the old one; a failure or an interrupt before the new one is in renames the old one back. The output is always the whole old one, the whole new one, or absent. Recoverable, not atomic: a SIGKILL between the two renames leaves no output (the old one aside), which the next run rebuilds; a delete stopped after the new one is in leaves the aside folder's remains until that output is replaced again (disk space only); a failed delete still fails the step, after the new one is in. The 14 callers are unchanged. New reference entry (Stopping a build while it replaced an output left that output half deleted). Checked: test_nsp_swap_in, 9 tests, each swap_in call in a process of its own (fixtures/swap_in_run.py, the fault injected into its renames or unlinks, or a SIGKILL): no old output, an existing one, a symlinked one (the link replaced, its target untouched), a failed and an interrupted rename, an interrupted and a failed delete, an earlier run's aside folder whose delete is interrupted, a SIGKILL between the renames, the failure cases followed by a rerun; against main's swap_in 6 fail. test_nsp_incremental, test_nsp_work_dir, test_nsp_external_drive, test_nsp_build_folder, test_nsp_space, test_nsp_romfs, test_nsp_dump, test_nsp_mac, test_nsp_mac_app, test_nsp_nup, test_nsp_scan, test_nsp_alias, test_nsp_chain, test_nsp_progress, test_nsp_env_checks, test_nsp_nsz, test_nsp_aarch64, test_proc_group, test_docs; lint_python.py: the one new finding is dmsh_entry.py's, on main before this. Not run: a game build (one helper, covered by the process tests), an exFAT drive, a Spyder session",
+     "Diablo III: Eternal Collection (01001B300B9BE000, update 2.7.7.92380 = v1441792, SDK 8.2.0, Blizzard's engine, NVN) plays on the Mac, and the shader split reads Diablo III's console packages, so its 1,324 shaders are found: the game's .cpk files are not CRI's CPK (cpk.py rejected them and the split found no shader) but Blizzard's console packages (magic D4 C3 B2 A1, version 7, bit-packed tables, 64 KiB sectors), where each file is stored or one zlib stream behind {u32 decoded length, u16 stored length}, and the game's SNO assets are such streams with each shader program as an NVN control section (0x850 bytes) directly followed by its code area. New dm/gfx/tools/d3cpk.py finds the streams (a zlib header after a record whose stored length and decoded length the stream matches exactly, ending at its own end); shader_split.py's d3cpk_jobs splits every file with the magic into byte ranges and d3cpk_shaders takes each control section with its code area from the streams, a section whose code area is not in the same stream left out with a red line naming it (none in 2.7.7); '#D3@' keys are single-stage programs (SINGLE_STAGE). The archive's own tables are not read. New profile dm/games/01001B300B9BE000 (the provisional profile's guesses held: 5 GB layout with a large alias region for its address regions, 16 MB system resource, depth_mode zero; no patches.py), its note, smoke.tsv and games-table row; new reference entry (Diablo III's console packages). Checked: test_split_d3cpk (new: streams among stored data and a false zlib header, any range cut giving the same keys, a cut code area named in a red line, a wrong decoded length not taken, the magic), all test_split_*, test_game_profile, test_fuzz_corpus, test_profile_guess, test_docs: 143 tests; lint_python.py: the one new finding is dmsh_entry.py's, on main before this. The NSP script on the NSPs: 1,324 shaders split from 16 GB in 26 s, all 34 programs dumped on the way to the first menus among them, Mac shaders 1,324/1,324. On the Mac about seven minutes of play from a fresh save: notices, hero creation, naming, the Act I cinematic, New Tristram's road as a Wizard (walking, Magic Missile, a zombie killed), 60 fps (p95 17.0 ms, GPU 5.4 ms), sound, no red line, 2.09 to 2.13 GB resident. Not run: the iPhone, the base game v0, regress.py (the reader runs only on files with this magic). Open: about four long frames a minute in New Tristram (65 to 131 ms of the game's CPU work)",
+     "Port PRAGMATA (0400C76024710000, Switch 2, RE Engine): it plays on the Mac from the title into the station's first rooms, and 36,778 of its 36,779 shaders build",
+     "A tool the NSP script or regress.py runs leads a process group of its own, stopped whole on an interrupt, a SIGTERM or an error, so stopping a build no longer leaves the tool's descendants running: run (build_ipa_from_nsp.py) started each tool in the script's own group and on an interrupt terminated only the tool, then waited without a limit; Spyder's interrupt reaches only its kernel and nothing handled SIGTERM, so a shader build's workers or xcodebuild went on writing into the build folder (reproduced: an interrupt raised in run's progress callback, after which the tool's child wrote its marker). run_heavy (regress.py) had its own group, but its fallback after 10 s killed only the direct child without reaping it, and a child left after the job's exit went unseen; run read the output to its end, so a descendant holding it kept the step waiting after the tool had exited. Now both go through dm/tools/proc_group.py: the tool leads a new session and group; on an exception the group gets SIGINT for an interrupt, else SIGTERM, after a SIGCONT for a group a pause left stopped, and what is left after 5 s is killed and the tool reaped (a second interrupt goes straight to the kill); a process of the group still running 5 s after the tool's normal exit, holding the output or not, is stopped, named, and fails the step as an exit code would (an exit code in ok does not pass it; fatal=False returns 1); the tool's exit is seen while its output is read. Members are listed by group through libproc, never by name. run_heavy keeps its pause accounting (also when the job ends while paused) and sees the job's exit at once instead of at its next 2 s look. The NSP script's cli turns SIGTERM into exit code 143 (Stopped, a BaseException, so no except Exception keeps it), with the handler set only while cli runs, in the main thread, and given back in its finally (Spyder's kernel keeps its own); 130 for an interrupt is unchanged. patch_nso.py's forked worker pool stays outside: its SIGTERM handler ends the pool, which stops and reaps the workers. boot_mac, the rewrite pool, regress.py's game runs and bench.py still stop their direct child only (a separate change). New reference entry (Stopping a build left its tools running); frontends.md lists 143. Checked: test_proc_group, 15 tests on real process trees (fixtures/proc_tree.py: the child writes its pid to a fresh marker, then tells the wrapper, which only then prints READY): an interrupt raised in the real progress callback, SIGTERM, a log that cannot be written, a child ignoring both signals, children left with and without the output, normal completion, exit codes in and out of ok, the handler given back after success, error, interrupt and SIGTERM, a cancel while paused (the child's handler records the signal: resumed first), the paused seconds, a second interrupt, an error after the tool exited; each checks that the group is empty and the child gone. Against main's two scripts the interrupt, SIGTERM, log, ignored-signal and leftover cases fail and three hang (main's run waits on a descendant holding the pipe). test_regress (its mocked run_heavy case replaced by the real one), test_nsp_progress, test_nsp_chain, test_nsp_alias, test_nsp_env_checks, test_nsp_nsz, test_nsp_mac_app, test_nsp_mac, test_nsp_incremental, test_nsp_scan, test_nsp_nup, test_bench, test_rewrite_parallel, test_docs; lint_python.py: the one new finding is dmsh_entry.py's, on main before this, and two of run's are gone from the baseline. Bastion from its NSP into throwaway build folders: a Mac build, exit 0 in 43 s; SIGINT to the script alone during the shader split (its group 14 processes): exit 130 in 0.6 s, none left; SIGTERM there: 143 in 0.1 s, none left; an iOS build, exit 0 in 54 s, xcodebuild's 265 steps under the new run with BUILD SUCCEEDED and nothing left over. Not run: regress.py check (tooling only, covered by the process tests and the Bastion builds), a Mac-app build, a Spyder session, Linux"
     ]
    }
   ]
@@ -1951,20 +1951,20 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-11T14:26:35Z",
+  "pushed_at": "2026-11-12T00:41:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T14:26:34Z",
+    "last_commit": "2026-11-12T00:41:34Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（204 个项目）",
      "chore: 自动同步 Star 地图（203 个项目）",
      "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（200 个项目）",
      "chore: 自动同步 Star 地图（200 个项目）",
-     "chore: 自动同步 Star 地图（198 个项目）",
      "chore: 自动同步 Star 地图（198 个项目）"
     ]
    }
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-11T06:38:03Z",
+  "pushed_at": "2026-11-11T17:14:51Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T06:38:02Z",
+    "last_commit": "2026-11-11T17:14:49Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4126,21 +4126,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-11T15:46:10Z",
+  "pushed_at": "2026-11-11T23:28:01Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T15:46:08Z",
+    "last_commit": "2026-11-11T23:27:58Z",
     "subjects": [
-     "fix: the game slot counts Pokopia's and Bananza's Apps as games (after e9dd55cf)",
-     "fix: every game's runtime starts only the native shader translator (after 505b3b97)",
-     "fix: TotK's game slot defaults to the App's folder and knows every App's game (after b87f027d)",
-     "perf(oot): raw reads coalesced in every shader stage, not only mesh shaders (chain v26)",
-     "fix: TotK's runtime starts only the native shader translator; the removed Python service is no fallback",
-     "fix(oot): one game slot for the packaging, the scripts and the game; Ocarina of Time's processes count as games",
-     "fix: every game warms up fully before the title, pipeline archive complete or not",
-     "chore: Makefile targets whose scripts are gone removed; unused imports and locals"
+     "feat: 访问主页 on every settings page, the contributors list, the screenshot folder on the 截图分享 page",
+     "Merge pull request #1547: fix: separate Odyssey controllers for two-player mode",
+     "Merge pull request #2098: fix: BOTW typed text keeps its shipped speed at the CJK font raster",
+     "Merge pull request #2102: fix(mkw): keep a stuck left stick's raw input once it is confirmed",
+     "feat: a drag-and-drop builder app: choose the game, choose the keys, build and play, with the progress the whole way",
+     "perf: a full build takes the verified game data from the app it replaces, an update build extracts no 1.0.0 RomFS, and every long step that is done again says why",
+     "feat: 查看排名 on the shader contribution page opens the site's contributors with the player's pseudonym",
+     "feat: 查看排名 on the ranking page opens the site's board with the player's anonymous code"
     ]
    }
   ]
@@ -9482,21 +9482,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-11T17:05:16Z",
+  "pushed_at": "2026-11-12T00:39:07Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T16:07:46Z",
+    "last_commit": "2026-11-12T00:33:52Z",
     "subjects": [
-     "Merge pull request #1181 from LNPANDY/fix/ci-patch-queue-ripgrep-mirror",
-     "CI: install pinned ripgrep release with SHA-256 verification in patch-queue",
-     "ci: fall back to Azure Ubuntu mirror when installing ripgrep in patch-queue",
-     "Merge pull request #1172 from LNPANDY/feat/mac-library-visibility-and-diagnostics",
-     "Merge pull request #1170 from LNPANDY/feat/mac-preflight-guards-and-error-ux",
-     "Merge pull request #1166 from LNPANDY/fix/mac-library-generations-and-keys",
-     "Merge pull request #1160 from LNPANDY/fix/mac-shell-install-progress-and-rollback",
-     "Merge pull request #1159 from LNPANDY/fix/mac-process-utf8-and-save-env"
+     "Merge pull request #1193 from LNPANDY/sync/upstream-ccd834e0",
+     "Merge pull request #1196 from LNPANDY/fix/follow-up-ccd834e0",
+     "Merge pull request #1195 from LNPANDY/feat/launcher-ui-polish",
+     "Launchers: follow up on the ccd834e06a39 engine bump",
+     "Mac launcher: polish Light appearance, settings controls, unbuilt versions, and supported covers",
+     "Engine: bump the pin to ccd834e0",
+     "Merge pull request #1190 from LNPANDY/fix/win-big-result-cleanup",
+     "Merge pull request #1189 from LNPANDY/feat/mac-game-mode-option"
     ]
    }
   ]
@@ -11187,21 +11187,21 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-11T16:42:19Z",
+  "pushed_at": "2026-11-11T23:00:25Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-11T16:42:16Z",
+    "last_commit": "2026-11-11T21:33:51Z",
     "subjects": [
+     "Merge pull request #149 from jmars125/task/bug-report",
+     "Mask every path, name and network address in the bug report zip's text files.",
+     "Keep eight crash reports and mask the user's home folder, user name and computer name in the bug report zip.",
+     "Add a bug report zip to the F1 menu and write richer crash reports to crash.txt.",
      "Merge pull request #143 from jmars125/task/glyph-speed",
      "Merge pull request #145 from jmars125/version-0.1.19",
      "Write the DNS-over-HTTPS addresses of Ubuntu's hosts before apt runs, the Azure mirror's host included.",
-     "When Ubuntu's hosts do not resolve on the runner, take their addresses from Cloudflare's DNS over HTTPS.",
-     "Retry the Linux runner's apt install against archive.ubuntu.com when its Azure mirror fails.",
-     "Make the button icon checks cheap and default to Automatic icons again (#136).",
-     "Version 0.1.19.",
-     "Merge pull request #141 from jmars125/task/glyph-default"
+     "When Ubuntu's hosts do not resolve on the runner, take their addresses from Cloudflare's DNS over HTTPS."
     ]
    }
   ]
@@ -11541,7 +11541,7 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-11T17:05:38Z",
+  "pushed_at": "2026-11-11T22:39:50Z",
   "branches": [
    {
     "branch": "main",
@@ -11709,21 +11709,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-11T14:23:33Z",
+  "pushed_at": "2026-11-12T00:04:15Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T14:23:33Z",
+    "last_commit": "2026-11-12T00:04:15Z",
     "subjects": [
-     "Merge pull request #164 from simipoB/fix-swapchain-images",
-     "Fix the Mali crash a few frames in: room for every swapchain image",
-     "Merge pull request #160 from simipoB/docs-devices",
-     "Compatible devices page (docs/DEVICES.md)",
-     "Merge pull request #149 from simipoB/intro-30fps",
-     "Merge pull request #148 from simipoB/movie-audio-split",
-     "Merge pull request #147 from simipoB/lsfg",
-     "Merge pull request #140 from simipoB/framegen"
+     "Merge pull request #182 from simipoB/log-ownership",
+     "Logs in Download: a file name this install may write (logs stayed days old after a reinstall)",
+     "Merge pull request #178 from simipoB/engine-upgrade",
+     "Merge remote-tracking branch 'origin/main' into engine-upgrade",
+     "Merge remote-tracking branch 'origin/mali-fmz' into engine-upgrade",
+     "Merge pull request #180 from simipoB/mali-fmz",
+     "Adreno: target changes keep the open pass and missing pipelines are built in the background, by default (Mali and the rest unchanged; DM_VK_PASS_DEFER / DM_VK_ASYNC_PSO =0|1 override)",
+     "README: LTO gain not yet measured"
     ]
    }
   ]
@@ -12015,21 +12015,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-11T17:07:45Z",
+  "pushed_at": "2026-11-12T00:32:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T17:00:54Z",
+    "last_commit": "2026-11-11T23:29:28Z",
     "subjects": [
-     "NUP 解包：本体与更新内容相同的文件只真写一份，其余克隆 / 硬链接（解包峰值不再近两倍）",
-     "Merge branch 'android/pr511-merged' into HEAD",
-     "Merge commit '30120167ab3b9cefbbfe2167226384ae5842c552' into HEAD",
-     "Merge commit '5b3154bcf03b717a4b7aa2dece4251ba95c7d504' into HEAD",
-     "Merge branch 'contrib/pr504' into HEAD",
-     "Merge branch 'contrib/pr600' into HEAD",
-     "Merge remote-tracking branch 'origin/main' into android/pr511-merged",
-     "Merge branch 'fix/gate-precheck-always' into HEAD"
+     "本地化 / 体验表内重复键检查（tools/l10n_dupkeys.py + l10n_dupkey_lint_test，名字带 lint 进入队确定性快检查）：重复当场拒收，点名表、键、第几项",
+     "Merge branch 'quality/frame-bench' into HEAD",
+     "Merge branch 'contrib/pr555' into HEAD",
+     "Merge branch 'feat/ios-img-install-ui' into HEAD",
+     "Merge branch 'feat/local-players' into HEAD",
+     "Merge branch 'launcher/razor-m9-m10' into HEAD",
+     "Merge branch 'contrib/pr356-fix' into HEAD",
+     "Merge branch 'contrib/pr300-m' into HEAD"
     ]
    }
   ]
@@ -12328,21 +12328,60 @@
   ]
  },
  "simipoB/Arceus-Native-Android": {
-  "pushed_at": "2026-11-11T14:30:05Z",
+  "pushed_at": "2026-11-12T00:03:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T14:29:42Z",
+    "last_commit": "2026-11-12T00:03:11Z",
     "subjects": [
-     "Comments: describe the borrowed performance ideas without naming their source",
-     "B button no longer flips look when pressed",
-     "Touch controls: a button over the game's bottom-right HUD keeps only its rim and label",
-     "Touch controls back to the frosted grey of v0.13 / v0.14",
-     "Skipped attachment stores off by default (grey boxes over a battle effect)",
-     "Touch controls as clear glass: what is under a button keeps its colours",
-     "Device memory given back after a load burst",
-     "Arceus: memory and clock work from the Galar engine branch (no old frame generation)"
+     "Logs in Download: a file name this install may write (logs stayed days old after a reinstall; Galar Native #155)",
+     "README: v0.23 (speed-ups on for Adreno, link-time optimization)",
+     "Adreno: target changes keep the open pass and missing pipelines are built in the background, by default (Mali and the rest unchanged; DM_VK_PASS_DEFER / DM_VK_ASYNC_PSO =0|1 override)",
+     "README: what's new in v0.21 / v0.22 (Mali crash fix, multiply by zero test, CPU pinning, two speed tests)",
+     "CPU pinning: never fewer cores than the threads pinned (a hot Flip5 put both frame threads on one throttled core)",
+     "Target changes that need no new pass keep it open (DM_VK_PASS_DEFER=1); pipelines the lists did not have built in the background (DM_VK_ASYNC_PSO=1); both opt-in until measured on a phone",
+     "Mali tests: multiply by zero as on the Switch (FMZ, DM_VK_FMZ=1)",
+     "Swapchain: room for every image the driver makes, and a composite alpha mode the surface lists"
+    ]
+   }
+  ]
+ },
+ "Pampattitude/d2r-mobile": {
+  "pushed_at": "2026-11-11T18:05:54Z",
+  "branches": [
+   {
+    "branch": "adreno-6xx",
+    "ahead": 1,
+    "behind": 0,
+    "files": 10,
+    "real_files": 8,
+    "dirs": [
+     ".vscode/settings.json",
+     "dm/android",
+     "dm/gfx"
+    ],
+    "last_commit": "2026-11-11T14:03:33Z",
+    "subjects": [
+     "Add opt-in Adreno 650 subgroup rewrite"
+    ]
+   },
+   {
+    "branch": "adreno-6xx-lsfg",
+    "ahead": 3,
+    "behind": 0,
+    "files": 13,
+    "real_files": 10,
+    "dirs": [
+     ".vscode/settings.json",
+     "dm/android",
+     "dm/gfx"
+    ],
+    "last_commit": "2026-11-11T18:05:47Z",
+    "subjects": [
+     "Document Windows Android build and GPU profiling",
+     "minor optims",
+     "Add opt-in Adreno 650 subgroup rewrite"
     ]
    }
   ]
