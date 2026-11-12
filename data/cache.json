@@ -1571,21 +1571,21 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-11-06T13:43:10Z",
+  "pushed_at": "2026-11-12T16:03:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-01T15:06:13Z",
+    "last_commit": "2026-11-12T16:03:34Z",
     "subjects": [
+     "Allow reviewed diagnostic-only program generator update",
      "Use verified stable Filebase IPNS prepared input URLs",
      "Update Apple prepared input links after program regeneration",
      "Refresh prepared product revisions with regenerated programs",
      "Use a standalone minimal TV prepared input (#33)",
      "Merge pull request #22 from jiayx/feat/tvos-build",
      "Document verified experimental Apple TV release",
-     "Use verified recovered shader inputs for tvOS builds",
-     "Export verified shader inputs from recovered original Actions cache"
+     "Use verified recovered shader inputs for tvOS builds"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-12T10:53:27Z",
+  "pushed_at": "2026-11-12T18:02:07Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T10:53:19Z",
+    "last_commit": "2026-11-12T18:01:54Z",
     "subjects": [
-     "nvn/dispatch: order compute dispatches by the game's barriers (PR #2250)",
-     "docs: commit messages open with an area from pr_areas.py",
-     "The OpenGL layer keeps GL's error flag: glGetError returned 0 always, so a game's misuse (a shader attached twice, a deleted name used) went unreported. Now the shader and program calls (glShaderSource, glCompileShader, glGetShaderiv, glDeleteShader, glAttachShader, glDetachShader, glLinkProgram, glBindAttribLocation, glGetProgramiv, glDeleteProgram, glUseProgram, glGetAttribLocation) record GL_INVALID_VALUE for a name with no object (and a negative count, an attribute index past 16) and GL_INVALID_OPERATION for a name of the other kind, a shader attached twice or detached when not attached; 0 stays silently ignored where GL ignores it, and a call that errs changes nothing (the current program included). glGetError returns the first error since it was last called and clears it, another not being recorded while one is pending (one flag, as GL allows). Recorded only where GL requires an error and the layer does what GL does: a call or a value it does not implement keeps its red line and records nothing, and a link the library cannot serve still reports success (GL_LINK_STATUS), so no game is told of the host's own gaps. The first 8 errors are logged with the call that recorded them (a game's misuse: not a red line). The GL reference entry says so. Also in t_gl_imports, two analyzer findings fixed in their code: the error checks compare one call with two results in two asserts (misc-redundant-expression), and 34608c72's depth-texture case compares the four floats by value instead of memcmp (bugprone-suspicious-memory-comparison), which had put lint-c above its baseline on main. Checked: make gl-imports with DM_GL_STUBS=0 and 1 (each error case, the first of two errors kept, the read clearing it, calls that succeed leaving it clear, the link case's deliberate second attach now recording GL_INVALID_OPERATION), lint_c.py tidy on the changed files (at the baseline), test_docs; Balatro (LÖVE, GL) with this host from a fresh save through the note's taps into the tutorial's blind selection, headless, 75 s to frame 4,200: no GL error recorded, so its glGetError answered 0 as on main, no red line, the screen right. Not run: Digimon and Well Dweller (no game files here), the iPhone",
-     "A movie decoder keeps input buffers sent after end of stream instead of decoding them, as ACodec does (PR #1938): Tied Together's Unity player acquires all four inputs and sends each one marked end of stream. in_eos only stopped new acquisitions (h_movie_AcqIn), so the three buffers the client already held were queued and decoded too, four end-of-stream outputs came back, and the game's first completion handler freed the event list the later ones still walked. h_movie_SendIn now returns a client-held input sent after an accepted end-of-stream packet once, with no decode and no signal, whether or not it carries the flag; an input that is queued or being decoded is refused, and one a Flush already returned is not put on the free list twice. The duplicate and full-queue checks now come before any change of ownership, and only an accepted packet sets in_eos: before, a refused end-of-stream packet still closed the stream. Flush and Stop still open a new stream. New reference entry (Input buffers already held when end of stream arrives), symptom index regenerated. t_movie_avc feeds four held inputs through SendInputBufferForDecode and drains them (one end-of-stream output), and covers late ordinary data, duplicate and invalid sends, an input being decoded and held inputs sent after a Flush. Checked on 0f19bdf7 (M4 Pro): t_movie_avc three runs; the PR's fixture against the previous hle_movie.c fails (four packets queued, line 176); the host tests' run list; test_docs. The PR's author: Tied Together 1.0.2 reached its title menu on an older base. Not run: Tied Together on this revision (not on a drive here), another movie game (none built here; Fire Emblem Engage's Unity player would be the nearest), regress.py (low reach: only refused sends and sends after end of stream change), the iPhone",
-     "The shader chain's configuration imports without reading anything, and the iPhone's deployment target has one place: an import of dmsh_chain.py read dm/mac/min_os.mk (MAC_MIN at module level), so pr_areas.py ran main's dmsh_chain.py with runpy for its file list and test_pr_areas.py copied min_os.mk into its fixture to let it (a workaround), and the iPhone's -mios-version-min=18.0 with -fmetal-math-mode=relaxed was written out in ios_metal.py, vk_shaders.py, gl_shaders.py, test_dmsh_blend_zero.py and test_dmsh_side.py. MAC_MIN, MAC_MIN_FLAG and MAC_METAL are now dmsh_chain's module attributes (__getattr__, PEP 562) read from min_os.mk when used, so every consumer is unchanged and an import needs only FILES; pr_areas.py imports main's file for FILES instead of running it, and its test no longer copies min_os.mk; ios_metal.py exports IOS_FLAGS (IOS_MIN_FLAG and the math mode), which its METAL, vk_shaders.py, gl_shaders.py and the two tests take. The commands are unchanged word for word. Both files are in the chain version: DMSH_CHAIN 3856a9225d68 → 94ec9a118fb3, dmsh_chain.h regenerated. The reference entry (Tests compiled with copies of the Mac compile) says what changed. Found in the step 15 audit of the review's step 08 (the handoff's import-safe interface, deployment target read by explicit calls). Checked: every Python test file in its own process (189 files, 2,120 tests, none failed), test_mac_metal's new case (dmsh_chain.py imported alone with no min_os.mk: FILES there, the flags raise), test_pr_areas, test_nsp_chain, the GPU shader runs (test_image_atomic_bounds on macosx and iphoneos, test_dmsh_side and test_dmsh_blend_zero with DMSH_TEST_METAL and DMSH_TEST_GPU), lint_python.py (nothing new); regress.py check against 3f10d4ff on the new chain (headless, M6): Bastion 72 / 72 shaders and Obra Dinn 1,272 / 1,272, 0 changed MSL on either, 59.5 / 59.6 and 59.5 / 59.8 fps, no new red line (Obra Dinn PASS; Bastion's flag is its screenshots, 19533b1a); the NSP script's iOS build of Bastion on the new chain (72 of 72 iOS shaders compiled, the IPA packed). Not run: a Vulkan or OpenGL game's shader build (vk_shaders.py and gl_shaders.py take the same flags from ios_metal.py; no such game on a drive here), the iPhone",
-     "A screenshot of a window the game crops is the picture as presented: the present pass draws the crop at the window texture's own size, as DM_NVN_SHOT_OUT draws it at a size of its own, so the size stays the same when a dynamic resolution moves the crop; an uncropped window is still saved as its texture's own pixels. A shot (DM_NVN_SHOT, DM_CTL shot) saved the window texture whole, and outside the crop it holds whatever it held before: Bastion crops its 1920x1080 window textures to 1600x900 (WindowCrop 0,0 1600x900), and the strip outside, black in some runs and purple (68, 34, 136) in others, on baseline runs as well as candidates, made regress.py flag its 70 and 78 s shots as a REGRESSION (RGB about 30) with the game's picture the same. New reference entry (Screenshots of a cropped window held what lay outside the crop), Bastion's note lists it, DM_NVN_SHOT's row says so, symptom index regenerated. Until a regression baseline includes this, a check of a cropping game against an older revision compares two kinds of shot. Found in the step 15 audit. Checked: regress.py check against 3f10d4ff (headless, M6): Bastion 59.5 / 59.6 fps, frame 5,235, no new red line, its shots the full presented picture (flagged against the older baseline's raw texture, as expected for this change), Obra Dinn PASS (it does not crop: shots RGB 0.5 / 0.77 from the baseline's), the gfx fixtures through nvn_mtl.m (t_srgb_alias), test_docs. Not run: a game whose crop moves with a dynamic resolution, the iPhone",
-     "Retirement is tested across threads, as the host runs it: t_cpu_tex --metal's retire_across_threads runs the deferred-release drain and the fences on one thread (a completion handler's drain, with its try of g_smu) while the other puts and removes entries 4,000 times (the texture, views of it, a finalized serial's ghost entry), with one live entry holding a view of the texture throughout. Whatever the interleaving, the texture must never leave the residency set while that entry holds it, and once the entry goes the owner hands it back and it leaves after the next fence; the owner's counts and waiting objects agree with its tables at the end. The step 14 report and the step 15 audit named the drain against another thread's changes as untested. The retirement reference entry lists the case. Checked: t_cpu_tex --metal (87, three runs), a TSan build of it (no report), and with own_retire_locked taking every retirement as eligible the case fails (the texture left the residency set mid-churn); test_docs. Not run: a game (a test)",
-     "t_pso_skey's four remaining byte comparisons of a pso_skey carry the same justified suppression as its other four, and its baseline entry goes: be23843f gave four of the eight memcmp comparisons a NOLINT with the reason (a pso_skey is its bytes: pso_skey_from zeroes it, pso_skey_hex writes them, the maps key on them) and left the other four, the same comparison for the same reason, as a baseline entry of 4, so one file handled one finding two ways. The baseline shrinks from 215 to 211. Found in the step 15 audit of the analyzer step. Checked: lint_c.py tidy on the file (0 above or below the new baseline), test_lint_c, t_pso_skey. Not run: a game (a test's annotations)"
+     "nvn/residency: res_add and res_remove queue their change; commits hold a lock of their own (PR #2379)",
+     "gfx/cra: read the older layout of Camelot's archive, Mario Golf: Super Rush's (PR #2216)",
+     "chain: move buffer image coordinates by the view's offset (PR #1399)",
+     "nvn/upload: a staged upload from a large pool makes its second source buffer only when its batch changed (PR #2378)",
+     "packing/nsp: a provisional profile's build row names every module it lists (PR #2215)",
+     "gfx/dmsh_reflect: a SeparateSamplerId (handle type 2) sampler reads its raw ID from a uniform-buffer word (PR #2428)",
+     "nvn/stencil: send the back face's stencil reference to Metal (PR #2351)",
+     "vulkan: make 1D images one-row 2D textures (PR #1977)"
     ]
    }
   ]
@@ -1951,21 +1951,21 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-12T00:41:35Z",
+  "pushed_at": "2026-11-12T15:12:40Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T00:41:34Z",
+    "last_commit": "2026-11-12T15:12:39Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（204 个项目）",
      "chore: 自动同步 Star 地图（203 个项目）",
      "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（200 个项目）",
-     "chore: 自动同步 Star 地图（200 个项目）",
-     "chore: 自动同步 Star 地图（198 个项目）"
+     "chore: 自动同步 Star 地图（200 个项目）"
     ]
    }
   ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-12T00:49:00Z",
+  "pushed_at": "2026-11-12T11:26:28Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T00:48:59Z",
+    "last_commit": "2026-11-12T11:26:27Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2536,14 +2536,14 @@
   ]
  },
  "4ppp44/d2r-mobile-ios17": {
-  "pushed_at": "2026-10-26T05:42:30Z",
+  "pushed_at": "2026-11-12T16:26:35Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 6,
-    "behind": 28,
-    "files": 116,
-    "real_files": 109,
+    "ahead": 7,
+    "behind": 90,
+    "files": 166,
+    "real_files": 157,
     "dirs": [
      "CHANGELOG.md",
      "dm/gfx",
@@ -2552,8 +2552,9 @@
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-10-26T02:27:10Z",
+    "last_commit": "2026-11-12T16:26:24Z",
     "subjects": [
+     "Sync iOS17 host through1202 and document remaining cold-compile stalls",
      "Sync iOS17 runtime through build2026102501: GPU-gated DRS, 0.60 floor, speculative compile limiter, cross-pass args reuse; update README with How-to-Use guide",
      "Sync iOS17 runtime through build2026102406: 0.55 scale floor, precise driver-segment fill, lock-free pool lookup with first-touch fix; bump to 1.0.18",
      "Backport reviewed upstream layout/audio fixes and timing-report regression",
@@ -3634,7 +3635,7 @@
   "branches": []
  },
  "maxshine/d2r-mobile": {
-  "pushed_at": "2026-10-27T01:51:06Z",
+  "pushed_at": "2026-11-12T12:31:06Z",
   "branches": []
  },
  "hzdlive/d2r-mobile": {
@@ -4126,21 +4127,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-12T11:00:11Z",
+  "pushed_at": "2026-11-12T17:01:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T11:00:02Z",
+    "last_commit": "2026-11-12T17:01:39Z",
     "subjects": [
-     "chore: shader contributions merged (inbox + #2110–#2130): TOTK 18,236 variants, OOT 10,418",
-     "feat: shader contributions carry the board id, so the contributors show the nickname and the board's code",
-     "feat: 访问主页 on every settings page, the contributors list, the screenshot folder on the 截图分享 page",
-     "Merge pull request #1547: fix: separate Odyssey controllers for two-player mode",
-     "Merge pull request #2098: fix: BOTW typed text keeps its shipped speed at the CJK font raster",
-     "Merge pull request #2102: fix(mkw): keep a stuck left stick's raw input once it is confirmed",
-     "feat: a drag-and-drop builder app: choose the game, choose the keys, build and play, with the progress the whole way",
-     "perf: a full build takes the verified game data from the app it replaces, an update build extracts no 1.0.0 RomFS, and every long step that is done again says why"
+     "feat: MNG Launcher opens with the first built game chosen, and Start game is its one way to start",
+     "feat: a big green Start game at the top right of a game's card actions",
+     "test: the work folder default test follows update_runtime's one name for every game",
+     "fix: Switch 2 shader keys ignore the control words a game writes again",
+     "feat: Bananza and Pokopia have the express and fast updates",
+     "feat: MNG Launcher opens on the games, as cards with their own pictures, and its own icon",
+     "feat: the Launcher's pages show what the game uses, measure on request and find the built games in a second",
+     "feat: a diagnostic that dumps the shaders a Switch 2 game sets outside its game files"
     ]
    }
   ]
@@ -9442,21 +9443,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-11-11T15:12:15Z",
+  "pushed_at": "2026-11-12T15:29:19Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T15:12:09Z",
+    "last_commit": "2026-11-12T15:29:13Z",
     "subjects": [
+     "Revert the mesh-library counter: a local check, not something the repository carries",
+     "check_mesh_libs: count a package's mesh libraries, the thing issue #14 came down to",
+     "Base to 034e91a8: 68 upstream commits, the NVN resource owner and conditional rendering for every game",
      "docs: the library's new layout, for the release page to show",
      "dmsh_build: Windows finishes its shaders in threads, because there is no fork to make a worker",
      "nvn_mtl.m: the base move left the old pso_build definition beside the new one",
      "Base to e2df31ca: 45 upstream commits, chiefly the graphics layer's upload and residency work",
-     "Library: the strip follows the finger, the text picks black or white, and the name goes to the top",
-     "Library: three icons across, sliding over each other, with the name at the top and the buttons at the bottom",
-     "Library: swipe anywhere on the backdrop to switch, and the icon strip is a strip",
-     "shell_game_pack: drop the cover picture, which nothing ever showed"
+     "Library: the strip follows the finger, the text picks black or white, and the name goes to the top"
     ]
    }
   ]
@@ -9482,21 +9483,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-12T10:59:00Z",
+  "pushed_at": "2026-11-12T19:45:01Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T10:55:54Z",
+    "last_commit": "2026-11-12T16:46:05Z",
     "subjects": [
+     "Merge pull request #1219 from LNPANDY/docs/v1.4.0-release-notes",
+     "Merge pull request #1220 from LNPANDY/fix/smp-post-ring-and-joycon-main",
+     "Docs: drop unmerged #1214..#1217 from v1.4.0 notes and reference #1220",
+     "Fix post ring overwrite, paired Joy-Con haptics, and obsolete split toggle",
+     "Docs: update v1.4.0 release notes and changelogs through #1218",
      "Merge pull request #1212 from LNPANDY/fix/rc4-ui-feedback",
      "Merge pull request #1211 from LNPANDY/fix/batch-build-and-install-built",
-     "Launcher: drop redundant shader not-cached count and keep ETA visible",
-     "Mac launcher: stage batch builds manually, install iOS batches once, and add Install built games",
-     "Launcher: allow dismissing skipped-files library banner per session",
-     "Merge pull request #1193 from LNPANDY/sync/upstream-ccd834e0",
-     "Merge pull request #1196 from LNPANDY/fix/follow-up-ccd834e0",
-     "Merge pull request #1195 from LNPANDY/feat/launcher-ui-polish"
+     "Launcher: drop redundant shader not-cached count and keep ETA visible"
     ]
    }
   ]
@@ -10001,7 +10002,7 @@
   ]
  },
  "PowerBeef/d2r-metal": {
-  "pushed_at": "2026-11-11T13:41:26Z",
+  "pushed_at": "2026-11-12T16:03:31Z",
   "branches": [
    {
     "branch": "main",
@@ -10667,7 +10668,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-12T06:29:53Z",
+  "pushed_at": "2026-11-12T17:39:02Z",
   "branches": [
    {
     "branch": "main",
@@ -11116,12 +11117,12 @@
   ]
  },
  "rhotov/d2r-mobile": {
-  "pushed_at": "2026-11-08T13:37:30Z",
+  "pushed_at": "2026-11-12T13:59:50Z",
   "branches": [
    {
     "branch": "archive/local-ios-fixes-20261031",
     "ahead": 1,
-    "behind": 124,
+    "behind": 130,
     "files": 21,
     "real_files": 21,
     "dirs": [
@@ -11140,7 +11141,7 @@
    {
     "branch": "fix/area-resource-page-crash",
     "ahead": 1,
-    "behind": 0,
+    "behind": 6,
     "files": 2,
     "real_files": 2,
     "dirs": [
@@ -11155,7 +11156,7 @@
    {
     "branch": "fix/effect-age-index-crash",
     "ahead": 1,
-    "behind": 0,
+    "behind": 6,
     "files": 2,
     "real_files": 2,
     "dirs": [
@@ -11170,7 +11171,7 @@
    {
     "branch": "fix/ios-ui-bugfixes-20261031",
     "ahead": 1,
-    "behind": 22,
+    "behind": 28,
     "files": 16,
     "real_files": 16,
     "dirs": [
@@ -11183,25 +11184,40 @@
     "subjects": [
      "Fix inventory restore and native legend capacity; retry empty vault icons"
     ]
+   },
+   {
+    "branch": "fix/throne-transition-crash",
+    "ahead": 1,
+    "behind": 6,
+    "files": 2,
+    "real_files": 2,
+    "dirs": [
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-11-12T13:59:37Z",
+    "subjects": [
+     "Guard resource release and particle state after area transitions"
+    ]
    }
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-12T11:03:22Z",
+  "pushed_at": "2026-11-12T17:04:25Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-12T10:14:30Z",
+    "last_commit": "2026-11-12T14:35:28Z",
     "subjects": [
+     "Merge pull request #157 from jmars125/task/installer-inputs",
+     "Size each NCZ as its NCA when the setup reads NSZ headers in place",
+     "Report Recomp Achievements events to RecompLauncher",
+     "Accept NSZ/XCZ files and extracted game folders in the setup",
      "Merge pull request #156 from jmars125/version-0.1.21",
      "Treat empty --dlc and --dlss-file values as not given",
      "Version 0.1.21.",
-     "Merge pull request #140 from Xarishark/recomplauncher-support",
-     "Check the hash of the DLL --dlss-file gives",
-     "Merge pull request #154 from jmars125/version-0.1.20",
-     "Version 0.1.20.",
-     "Merge pull request #146 from jmars125/task/cheats"
+     "Merge pull request #140 from Xarishark/recomplauncher-support"
     ]
    }
   ]
@@ -11495,14 +11511,21 @@
   ]
  },
  "kirakira-dev/OunceNative": {
-  "pushed_at": "2026-11-03T04:55:37Z",
+  "pushed_at": "2026-11-12T17:11:09Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-03T04:51:39Z",
+    "last_commit": "2026-11-12T17:11:07Z",
     "subjects": [
-     "init"
+     "Enable virtual motion in headless control sessions",
+     "Add frame-stepped control for headless gameplay validation",
+     "Add 921 Raiders archive shaders with runtime dimension queries",
+     "Normalize empty context in texture query patch",
+     "Resolve native texture dimension queries from live bindings",
+     "Add missing Piel combat shader and recorded pipeline variants",
+     "Update runtime texture validation and archive coverage notes",
+     "Expand Raiders archive coverage to 19,258 shader programs"
     ]
    }
   ]
@@ -11541,7 +11564,7 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-12T06:26:31Z",
+  "pushed_at": "2026-11-12T17:17:39Z",
   "branches": [
    {
     "branch": "main",
@@ -11709,7 +11732,7 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-12T09:36:01Z",
+  "pushed_at": "2026-11-12T15:33:41Z",
   "branches": [
    {
     "branch": "main",
@@ -12015,21 +12038,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-12T11:22:58Z",
+  "pushed_at": "2026-11-12T20:00:54Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T11:12:15Z",
+    "last_commit": "2026-11-12T19:49:56Z",
     "subjects": [
-     "Merge branch 'fix/v032-audit-saves' into HEAD",
-     "Merge branch 'quality/v032-audit-150-176' into HEAD",
-     "Merge branch 'fix/v032-audit-packapply' into HEAD",
-     "没玩过的游戏导入存档：每一类都灌进去才删待放入的种子（审计 P1-156）",
-     "fix(direct): 热缓存不再被连败熔断停掉；Mac / iPhone 两个目标各记各的编不过（审计 P1-150 / P1-176）",
-     "Merge branch 'contrib/pr742' into HEAD",
-     "资源包迁移遇到新推送时三步改名，失败不丢已能玩的新位置（审计 P1-169）",
-     "Merge remote-tracking branch 'origin/main' into contrib/pr742"
+     "Merge branch 'fix/dsh-ast-occurrences' into HEAD",
+     "翻译器：AST 传播改动登进 Ryujinx 补丁 series，重编 dmsh_xlate_bin、更新 dmsh_chain.lock",
+     "安卓新图形层：平台日志在调试入口开着时同时写进本局宿主日志文件",
+     "Merge remote-tracking branch 'origin/main' into fix/dsh-ast-occurrences",
+     "Merge commit '139ea80c4a9b1bb4b47413c5ca04c3b475210d21' into HEAD",
+     "Merge commit '429ee8517e424d0940f5bf1743c872f9886f6072' into HEAD",
+     "翻译器：AST 传播按出现次数算「只用一次」、传播到多处各处一份拷贝——修编批一支着色器 SPIR-V 指数膨胀（几十 GB）",
+     "Windows 装机：同一台手机第二次装时 plumesign 认不出已登记的设备（35），改成只签名再装（#800）"
     ]
    }
   ]
@@ -12039,13 +12062,17 @@
   "branches": []
  },
  "Diablo-chia619/d2r-mobile-evidence": {
-  "pushed_at": "2026-11-12T10:38:14Z",
+  "pushed_at": "2026-11-12T16:09:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T10:37:52Z",
+    "last_commit": "2026-11-12T16:09:14Z",
     "subjects": [
+     "issue 256: issue256_turnip_upstream_ab.png",
+     "issue 256: issue256_turnip_upstream_ice.png",
+     "issue 256: issue256_turnip_upstream_lava.png",
+     "issue 256: same-device driver A/B (system Adreno vs Turnip T30) at the River of Flame waypoint",
      "issue 256: black tiles in top four tile rows (Adreno 830 / Ace 5 Pro) + ice-spire black blocks",
      "top-band flicker: frame comparison (Adreno 830)"
     ]
@@ -12084,21 +12111,21 @@
   ]
  },
  "jmars125/xc3-recomp": {
-  "pushed_at": "2026-11-12T09:53:38Z",
+  "pushed_at": "2026-11-12T19:49:22Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-12T05:35:46Z",
+    "last_commit": "2026-11-12T17:18:53Z",
     "subjects": [
+     "Merge pull request #59 from jmars125/task/perf-36",
+     "Merge pull request #58 from jmars125/task/scene-corner",
+     "Merge pull request #53 from jmars125/task/dlaa-freeze",
+     "Compute fused multiply-add without the C library on builds without FMA.",
+     "Scale the 3D scene from the frame size each time the game applies the render scale, so it no longer shrinks into the top left corner after cutscenes.",
+     "Write the upscaler's result into the game's reconstruction target on the scaled path too.",
      "Merge pull request #43 from jmars125/task/cpu-v2",
-     "Merge pull request #42 from jmars125/task/uw-menu",
-     "Build for CPUs without AVX2 (x86-64-v2) when the setup finds no AVX2.",
-     "Leave the interface elements drawn through a perspective camera as the game places them on a wide frame.",
-     "Merge pull request #41 from jmars125/task/triage-1111",
-     "Add each picked add-on file to the list instead of replacing it.",
-     "Merge remote-tracking branches 'origin/task/issue-30' and 'origin/task/fencesync-grow' into task/triage-1111",
-     "Merge master into task/issue-30"
+     "Merge pull request #42 from jmars125/task/uw-menu"
     ]
    }
   ]
@@ -12329,47 +12356,31 @@
   ]
  },
  "simipoB/Arceus-Native-Android": {
-  "pushed_at": "2026-11-12T08:49:47Z",
+  "pushed_at": "2026-11-12T15:13:34Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T08:46:11Z",
+    "last_commit": "2026-11-12T15:12:31Z",
     "subjects": [
+     "Movement and camera sensitivity as sliders (#9)",
+     "Saves -> Save folder: the save in Documents/NXNative/<title id>/save for sync tools (#8)",
+     "Arm's driver: log vertex-shader store support; check that transform feedback captures write (#6)",
+     "Movement stick sensitivity (#9), L3 / R3 follow their sticks, a freeze report in the log (#3)",
      "Multiply by zero (FMZ) no longer reads past a shader's end (Galar #202)",
      "Touch gestures option: Off leaves the screen to the camera (#5)",
      "Gyro aiming, button size, easier resizing, the same strength for every touch control",
-     "Legends: Arceus: Faster rendering off (it crashed the game at loading screens, #3)",
-     "Legends: Arceus: back to the fixed 60 only",
-     "Legends: Arceus: remove Far draw distance",
-     "Legends: Arceus: Draw distance Far only when chosen; no black bars in battle by default; stamina left out",
-     "Legends: Arceus: Dynamic FPS on Auto, Level of Detail + QOL settings"
+     "Legends: Arceus: Faster rendering off (it crashed the game at loading screens, #3)"
     ]
    }
   ]
  },
  "Pampattitude/d2r-mobile": {
-  "pushed_at": "2026-11-11T18:05:54Z",
+  "pushed_at": "2026-11-12T17:08:18Z",
   "branches": [
    {
     "branch": "adreno-6xx",
-    "ahead": 1,
-    "behind": 0,
-    "files": 10,
-    "real_files": 8,
-    "dirs": [
-     ".vscode/settings.json",
-     "dm/android",
-     "dm/gfx"
-    ],
-    "last_commit": "2026-11-11T14:03:33Z",
-    "subjects": [
-     "Add opt-in Adreno 650 subgroup rewrite"
-    ]
-   },
-   {
-    "branch": "adreno-6xx-lsfg",
-    "ahead": 3,
+    "ahead": 7,
     "behind": 0,
     "files": 13,
     "real_files": 10,
@@ -12378,9 +12389,13 @@
      "dm/android",
      "dm/gfx"
     ],
-    "last_commit": "2026-11-11T18:05:47Z",
+    "last_commit": "2026-11-12T17:08:12Z",
     "subjects": [
+     "Merge branch 'adreno-6xx' of https://github.com/Pampattitude/d2r-mobile into adreno-6xx",
+     "Merge pull request #4 from Pampattitude/adreno-6xx-lsfg",
      "Document Windows Android build and GPU profiling",
+     "minor optims",
+     "Merge branch 'jhaizhou-ops:main' into adreno-6xx",
      "minor optims",
      "Add opt-in Adreno 650 subgroup rewrite"
     ]
@@ -12406,5 +12421,66 @@
     ]
    }
   ]
+ },
+ "Diablo-chia619/d2r-mobile": {
+  "pushed_at": "2026-11-12T17:12:37Z",
+  "branches": [
+   {
+    "branch": "android/turnip-and-stick",
+    "ahead": 7,
+    "behind": 6,
+    "files": 20,
+    "real_files": 18,
+    "dirs": [
+     "NOTICE.md",
+     "OWN-CHANGES.zh-CN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/ios"
+    ],
+    "last_commit": "2026-11-12T17:12:30Z",
+    "subjects": [
+     "Launcher name back to the original: the side-by-side build no longer appends a suffix",
+     "Document the fork's changes: driver, chronicle import, stick feel, side-by-side install",
+     "Add NOTICE: what the published APK contains (no game content) and the third-party licences",
+     "Touch stick: reach full speed in half the travel (feel profile A)",
+     "Android save-import: carry the chronicle sidecar and merge the Elysium list",
+     "Android GPU driver: make the bundled Turnip actually load",
+     "Android: runtime Vulkan driver selection (system / bundled Turnip via adrenotools)"
+    ]
+   },
+   {
+    "branch": "main",
+    "ahead": 7,
+    "behind": 6,
+    "files": 20,
+    "real_files": 18,
+    "dirs": [
+     "NOTICE.md",
+     "OWN-CHANGES.zh-CN.md",
+     "dm/android",
+     "dm/gfx",
+     "dm/ios"
+    ],
+    "last_commit": "2026-11-12T17:12:30Z",
+    "subjects": [
+     "Launcher name back to the original: the side-by-side build no longer appends a suffix",
+     "Document the fork's changes: driver, chronicle import, stick feel, side-by-side install",
+     "Add NOTICE: what the published APK contains (no game content) and the third-party licences",
+     "Touch stick: reach full speed in half the travel (feel profile A)",
+     "Android save-import: carry the chronicle sidecar and merge the Elysium list",
+     "Android GPU driver: make the bundled Turnip actually load",
+     "Android: runtime Vulkan driver selection (system / bundled Turnip via adrenotools)"
+    ]
+   }
+  ]
+ },
+ "miupha/d2r-mobile": {
+  "pushed_at": "2026-11-12T17:56:31Z",
+  "branches": []
+ },
+ "skybrim/d2r-mobile": {
+  "pushed_at": "2026-11-12T15:13:49Z",
+  "branches": []
  }
 }
