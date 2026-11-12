@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-11T05:46:05Z",
+  "pushed_at": "2026-11-12T06:52:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T05:46:03Z",
+    "last_commit": "2026-11-12T06:52:18Z",
     "subjects": [
+     "radar 2026-11-12",
      "radar 2026-11-11",
      "radar 2026-11-10",
      "radar 2026-11-09",
      "radar 2026-11-08",
      "radar 2026-11-07",
      "radar 2026-11-06",
-     "radar 2026-11-05",
-     "radar 2026-11-04"
+     "radar 2026-11-05"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-12T00:32:34Z",
+  "pushed_at": "2026-11-12T10:53:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T00:32:17Z",
+    "last_commit": "2026-11-12T10:53:19Z",
     "subjects": [
-     "Diablo II: Resurrected (0100726014352000, update 1.0.34.0 = v2228224, SDK 11.4.3, Blizzard's D2R engine, NVN) plays on the Mac, and the shader split reads Blizzard's CASC storage, so its 6,931 shaders are found: the game keeps its files in data/*.data archives listed only by text manifests (build_key.txt names the current build's config key, build_manifest.psv lists each file's archive, offset in the encoded key's last five bytes, stored and decoded length and encoding: zlib, stored or BLTE), and its shaders are SHADSHAD containers there (data/hd/shaders/*.bin, one stage per file, permutations as BTCD chunks under PRM[), each record {u32 5, control length, code length + 0xc, code length, u32 4} + code area + control section; main holds 10 more records of that form, which its code points at by their start, so raw_shaders found no code area for them. New dm/gfx/tools/casc.py reads the manifest with the current config key and decodes a file by its encoding, checking its decoded length; shader_split.py reads every current file by archive in ranges (casc_jobs, casc_shaders) and scans it like a loose file, scan_blob reads a SHADSHAD chunk tree (shad_shaders, every record's lengths checked against its chunk), raw_shaders takes the code area before a control section when a record header there gives exactly that section and main points at the record (a relocation or adrp + add); '#SHAD@' keys are single-stage programs. The game allows offline play only within 30 days of a Battle.net login (main+0x1978ac reads the saved \"User Last Online\" and sets the offline-allowed flag), so with an offline host the title looped on \"Failed to authenticate\"; no nifm or account answer passes it, it is the game's own policy. A rewriter cut sets the flag (CUTS for 1.0.34.0, and the same cut as a MATCH_CUTS rule on the 316-byte function for other builds: binding game); the base game v0 has no such check (it only writes the time after a login) and needs none. The check was first described in d2r-mobile's notes on a community offline fix; the cut is this repository's own, no bytes taken. New profile dm/games/0100726014352000 (the survey's memory guesses held; present_interval display: the game asks for interval 2, and the same 3 s walk ends at the same place at 30 and 60 fps), its note, smoke.tsv and games-table row; new reference entries (Blizzard's CASC storage and SHAD containers; \"Failed to authenticate\" at the title). Checked: test_split_casc (new: shaders in z, n and BLTE files, another config key and a key naming another archive refused, a record whose lengths do not add up named, BLTE lengths, main's records through a relocation and an adrp + add, one nothing points at named), all test_split_*, test_game_profile, test_fuzz_corpus, test_profile_guess, test_docs, test_patches, test_nso_match, test_nro_pack; lint_python.py: the two new findings are dmsh_entry.py's, not touched here. A copy of 1.0.34.0's main with another build ID rewrites byte for byte as the registered build, both cuts [function match]. The NSP script on the NSPs: 6,931 shaders (2,344 vertex, 4,559 pixel, 26 compute, 1 hull, 1 domain) from 132,413 files in 12 s, all 38 programs dumped up to the title among them, Mac shaders 6,931/6,931. On the Mac about ten minutes from a fresh save: the logo movie, the title, the calibration screens, the Act I cinematic, the main menu, Offline, hero class selection, naming, the Rogue Encampment as a Barbarian (walking, the automap, the camp's gate), 60 fps (CPU 65 % of one core, GPU 6 to 7 ms), sound, no red line, 2.79 GB physical footprint. Not run: the iPhone, a fight, the base game v0, regress.py (the readers run only on files and records of these forms). Open: about six long frames a minute in the camp (80 to 105 ms of the game's own CPU work)",
-     "iOS app builds link again: probe_atrace is built on iOS too",
-     "The Mac compile of a game's shaders, MAC_METAL, is defined in dmsh_chain.py, which imports without running a build, so tests compile with the build's own command instead of evaluating a line of dmsh_build.py or copying its flags: dmsh_build.py reads its arguments and starts a build when imported, so test_dmsh_gather_offsets, test_dmsh_wrapv and test_dmsh_raw_last took the MAC_METAL line out of its source and evaluated it (broken when the line came to name dmsh_chain.MAC_MIN_FLAG, f75ac06e; patched in ccd834e0 by evaluating it with dmsh_chain in scope), and three others compiled with flags the build does not use: test_dmsh_tg_fence without -fwrapv and the deployment target, test_image_atomic_bounds without -O1, -fwrapv and the deployment target, test_shader_pch with a hand copy. Now MAC_METAL sits beside MAC_MIN_FLAG with each flag's reason; dmsh_build.py's record (MAC_RECORD) and direct run (MAC_RUN) take dmsh_chain.MAC_METAL; the six tests take it too, and test_image_atomic_bounds takes ios_metal.METAL for the iPhone. The command is unchanged word for word. New test_mac_metal.py: the command and its order, the deployment target from dm/mac/min_os.mk, and no copy left in dmsh_build.py. Comments in ios_metal.py, vk_shaders.py and gl_shaders.py name the new place. pr_areas.py still runs main's dmsh_chain.py for its file list (it reads only files). New reference entry (Tests compiled with copies of the Mac compile).",
-     "Fix the shader entry-point lint failures",
-     "The NSP script replaces an output by renaming the old one aside before the new one goes in, so a stop or a failure while it replaces one no longer leaves that output half deleted: swap_in deleted the old output in place (rmtree(dst)) and only then renamed the staged one (<dst>.partial) in, though its comment said the old one was untouched on failure; an interrupt, a SIGTERM or a failed delete left a half-deleted folder at the real path (reproduced with fault injection), which a reuse check that looks for a few files (extract's: ExeFS/main, RomFS.img, the RomFS marker) could take for a finished output (inferred, not reproduced). Its callers write their completion stamps only after the swap, so the old output was stale whenever it was replaced: the loss was the half-deleted folder, not the old contents. Now swap_in deletes an aside folder an earlier run left (<dst>.old.partial, a name the build ignores as it does every .partial folder), renames the old output there, renames the new one in, and only then deletes the old one; a failure or an interrupt before the new one is in renames the old one back. The output is always the whole old one, the whole new one, or absent. Recoverable, not atomic: a SIGKILL between the two renames leaves no output (the old one aside), which the next run rebuilds; a delete stopped after the new one is in leaves the aside folder's remains until that output is replaced again (disk space only); a failed delete still fails the step, after the new one is in. The 14 callers are unchanged. New reference entry (Stopping a build while it replaced an output left that output half deleted). Checked: test_nsp_swap_in, 9 tests, each swap_in call in a process of its own (fixtures/swap_in_run.py, the fault injected into its renames or unlinks, or a SIGKILL): no old output, an existing one, a symlinked one (the link replaced, its target untouched), a failed and an interrupted rename, an interrupted and a failed delete, an earlier run's aside folder whose delete is interrupted, a SIGKILL between the renames, the failure cases followed by a rerun; against main's swap_in 6 fail. test_nsp_incremental, test_nsp_work_dir, test_nsp_external_drive, test_nsp_build_folder, test_nsp_space, test_nsp_romfs, test_nsp_dump, test_nsp_mac, test_nsp_mac_app, test_nsp_nup, test_nsp_scan, test_nsp_alias, test_nsp_chain, test_nsp_progress, test_nsp_env_checks, test_nsp_nsz, test_nsp_aarch64, test_proc_group, test_docs; lint_python.py: the one new finding is dmsh_entry.py's, on main before this. Not run: a game build (one helper, covered by the process tests), an exFAT drive, a Spyder session",
-     "Diablo III: Eternal Collection (01001B300B9BE000, update 2.7.7.92380 = v1441792, SDK 8.2.0, Blizzard's engine, NVN) plays on the Mac, and the shader split reads Diablo III's console packages, so its 1,324 shaders are found: the game's .cpk files are not CRI's CPK (cpk.py rejected them and the split found no shader) but Blizzard's console packages (magic D4 C3 B2 A1, version 7, bit-packed tables, 64 KiB sectors), where each file is stored or one zlib stream behind {u32 decoded length, u16 stored length}, and the game's SNO assets are such streams with each shader program as an NVN control section (0x850 bytes) directly followed by its code area. New dm/gfx/tools/d3cpk.py finds the streams (a zlib header after a record whose stored length and decoded length the stream matches exactly, ending at its own end); shader_split.py's d3cpk_jobs splits every file with the magic into byte ranges and d3cpk_shaders takes each control section with its code area from the streams, a section whose code area is not in the same stream left out with a red line naming it (none in 2.7.7); '#D3@' keys are single-stage programs (SINGLE_STAGE). The archive's own tables are not read. New profile dm/games/01001B300B9BE000 (the provisional profile's guesses held: 5 GB layout with a large alias region for its address regions, 16 MB system resource, depth_mode zero; no patches.py), its note, smoke.tsv and games-table row; new reference entry (Diablo III's console packages). Checked: test_split_d3cpk (new: streams among stored data and a false zlib header, any range cut giving the same keys, a cut code area named in a red line, a wrong decoded length not taken, the magic), all test_split_*, test_game_profile, test_fuzz_corpus, test_profile_guess, test_docs: 143 tests; lint_python.py: the one new finding is dmsh_entry.py's, on main before this. The NSP script on the NSPs: 1,324 shaders split from 16 GB in 26 s, all 34 programs dumped on the way to the first menus among them, Mac shaders 1,324/1,324. On the Mac about seven minutes of play from a fresh save: notices, hero creation, naming, the Act I cinematic, New Tristram's road as a Wizard (walking, Magic Missile, a zombie killed), 60 fps (p95 17.0 ms, GPU 5.4 ms), sound, no red line, 2.09 to 2.13 GB resident. Not run: the iPhone, the base game v0, regress.py (the reader runs only on files with this magic). Open: about four long frames a minute in New Tristram (65 to 131 ms of the game's CPU work)",
-     "Port PRAGMATA (0400C76024710000, Switch 2, RE Engine): it plays on the Mac from the title into the station's first rooms, and 36,778 of its 36,779 shaders build",
-     "A tool the NSP script or regress.py runs leads a process group of its own, stopped whole on an interrupt, a SIGTERM or an error, so stopping a build no longer leaves the tool's descendants running: run (build_ipa_from_nsp.py) started each tool in the script's own group and on an interrupt terminated only the tool, then waited without a limit; Spyder's interrupt reaches only its kernel and nothing handled SIGTERM, so a shader build's workers or xcodebuild went on writing into the build folder (reproduced: an interrupt raised in run's progress callback, after which the tool's child wrote its marker). run_heavy (regress.py) had its own group, but its fallback after 10 s killed only the direct child without reaping it, and a child left after the job's exit went unseen; run read the output to its end, so a descendant holding it kept the step waiting after the tool had exited. Now both go through dm/tools/proc_group.py: the tool leads a new session and group; on an exception the group gets SIGINT for an interrupt, else SIGTERM, after a SIGCONT for a group a pause left stopped, and what is left after 5 s is killed and the tool reaped (a second interrupt goes straight to the kill); a process of the group still running 5 s after the tool's normal exit, holding the output or not, is stopped, named, and fails the step as an exit code would (an exit code in ok does not pass it; fatal=False returns 1); the tool's exit is seen while its output is read. Members are listed by group through libproc, never by name. run_heavy keeps its pause accounting (also when the job ends while paused) and sees the job's exit at once instead of at its next 2 s look. The NSP script's cli turns SIGTERM into exit code 143 (Stopped, a BaseException, so no except Exception keeps it), with the handler set only while cli runs, in the main thread, and given back in its finally (Spyder's kernel keeps its own); 130 for an interrupt is unchanged. patch_nso.py's forked worker pool stays outside: its SIGTERM handler ends the pool, which stops and reaps the workers. boot_mac, the rewrite pool, regress.py's game runs and bench.py still stop their direct child only (a separate change). New reference entry (Stopping a build left its tools running); frontends.md lists 143. Checked: test_proc_group, 15 tests on real process trees (fixtures/proc_tree.py: the child writes its pid to a fresh marker, then tells the wrapper, which only then prints READY): an interrupt raised in the real progress callback, SIGTERM, a log that cannot be written, a child ignoring both signals, children left with and without the output, normal completion, exit codes in and out of ok, the handler given back after success, error, interrupt and SIGTERM, a cancel while paused (the child's handler records the signal: resumed first), the paused seconds, a second interrupt, an error after the tool exited; each checks that the group is empty and the child gone. Against main's two scripts the interrupt, SIGTERM, log, ignored-signal and leftover cases fail and three hang (main's run waits on a descendant holding the pipe). test_regress (its mocked run_heavy case replaced by the real one), test_nsp_progress, test_nsp_chain, test_nsp_alias, test_nsp_env_checks, test_nsp_nsz, test_nsp_mac_app, test_nsp_mac, test_nsp_incremental, test_nsp_scan, test_nsp_nup, test_bench, test_rewrite_parallel, test_docs; lint_python.py: the one new finding is dmsh_entry.py's, on main before this, and two of run's are gone from the baseline. Bastion from its NSP into throwaway build folders: a Mac build, exit 0 in 43 s; SIGINT to the script alone during the shader split (its group 14 processes): exit 130 in 0.6 s, none left; SIGTERM there: 143 in 0.1 s, none left; an iOS build, exit 0 in 54 s, xcodebuild's 265 steps under the new run with BUILD SUCCEEDED and nothing left over. Not run: regress.py check (tooling only, covered by the process tests and the Bastion builds), a Mac-app build, a Spyder session, Linux"
+     "nvn/dispatch: order compute dispatches by the game's barriers (PR #2250)",
+     "docs: commit messages open with an area from pr_areas.py",
+     "The OpenGL layer keeps GL's error flag: glGetError returned 0 always, so a game's misuse (a shader attached twice, a deleted name used) went unreported. Now the shader and program calls (glShaderSource, glCompileShader, glGetShaderiv, glDeleteShader, glAttachShader, glDetachShader, glLinkProgram, glBindAttribLocation, glGetProgramiv, glDeleteProgram, glUseProgram, glGetAttribLocation) record GL_INVALID_VALUE for a name with no object (and a negative count, an attribute index past 16) and GL_INVALID_OPERATION for a name of the other kind, a shader attached twice or detached when not attached; 0 stays silently ignored where GL ignores it, and a call that errs changes nothing (the current program included). glGetError returns the first error since it was last called and clears it, another not being recorded while one is pending (one flag, as GL allows). Recorded only where GL requires an error and the layer does what GL does: a call or a value it does not implement keeps its red line and records nothing, and a link the library cannot serve still reports success (GL_LINK_STATUS), so no game is told of the host's own gaps. The first 8 errors are logged with the call that recorded them (a game's misuse: not a red line). The GL reference entry says so. Also in t_gl_imports, two analyzer findings fixed in their code: the error checks compare one call with two results in two asserts (misc-redundant-expression), and 34608c72's depth-texture case compares the four floats by value instead of memcmp (bugprone-suspicious-memory-comparison), which had put lint-c above its baseline on main. Checked: make gl-imports with DM_GL_STUBS=0 and 1 (each error case, the first of two errors kept, the read clearing it, calls that succeed leaving it clear, the link case's deliberate second attach now recording GL_INVALID_OPERATION), lint_c.py tidy on the changed files (at the baseline), test_docs; Balatro (LÖVE, GL) with this host from a fresh save through the note's taps into the tutorial's blind selection, headless, 75 s to frame 4,200: no GL error recorded, so its glGetError answered 0 as on main, no red line, the screen right. Not run: Digimon and Well Dweller (no game files here), the iPhone",
+     "A movie decoder keeps input buffers sent after end of stream instead of decoding them, as ACodec does (PR #1938): Tied Together's Unity player acquires all four inputs and sends each one marked end of stream. in_eos only stopped new acquisitions (h_movie_AcqIn), so the three buffers the client already held were queued and decoded too, four end-of-stream outputs came back, and the game's first completion handler freed the event list the later ones still walked. h_movie_SendIn now returns a client-held input sent after an accepted end-of-stream packet once, with no decode and no signal, whether or not it carries the flag; an input that is queued or being decoded is refused, and one a Flush already returned is not put on the free list twice. The duplicate and full-queue checks now come before any change of ownership, and only an accepted packet sets in_eos: before, a refused end-of-stream packet still closed the stream. Flush and Stop still open a new stream. New reference entry (Input buffers already held when end of stream arrives), symptom index regenerated. t_movie_avc feeds four held inputs through SendInputBufferForDecode and drains them (one end-of-stream output), and covers late ordinary data, duplicate and invalid sends, an input being decoded and held inputs sent after a Flush. Checked on 0f19bdf7 (M4 Pro): t_movie_avc three runs; the PR's fixture against the previous hle_movie.c fails (four packets queued, line 176); the host tests' run list; test_docs. The PR's author: Tied Together 1.0.2 reached its title menu on an older base. Not run: Tied Together on this revision (not on a drive here), another movie game (none built here; Fire Emblem Engage's Unity player would be the nearest), regress.py (low reach: only refused sends and sends after end of stream change), the iPhone",
+     "The shader chain's configuration imports without reading anything, and the iPhone's deployment target has one place: an import of dmsh_chain.py read dm/mac/min_os.mk (MAC_MIN at module level), so pr_areas.py ran main's dmsh_chain.py with runpy for its file list and test_pr_areas.py copied min_os.mk into its fixture to let it (a workaround), and the iPhone's -mios-version-min=18.0 with -fmetal-math-mode=relaxed was written out in ios_metal.py, vk_shaders.py, gl_shaders.py, test_dmsh_blend_zero.py and test_dmsh_side.py. MAC_MIN, MAC_MIN_FLAG and MAC_METAL are now dmsh_chain's module attributes (__getattr__, PEP 562) read from min_os.mk when used, so every consumer is unchanged and an import needs only FILES; pr_areas.py imports main's file for FILES instead of running it, and its test no longer copies min_os.mk; ios_metal.py exports IOS_FLAGS (IOS_MIN_FLAG and the math mode), which its METAL, vk_shaders.py, gl_shaders.py and the two tests take. The commands are unchanged word for word. Both files are in the chain version: DMSH_CHAIN 3856a9225d68 → 94ec9a118fb3, dmsh_chain.h regenerated. The reference entry (Tests compiled with copies of the Mac compile) says what changed. Found in the step 15 audit of the review's step 08 (the handoff's import-safe interface, deployment target read by explicit calls). Checked: every Python test file in its own process (189 files, 2,120 tests, none failed), test_mac_metal's new case (dmsh_chain.py imported alone with no min_os.mk: FILES there, the flags raise), test_pr_areas, test_nsp_chain, the GPU shader runs (test_image_atomic_bounds on macosx and iphoneos, test_dmsh_side and test_dmsh_blend_zero with DMSH_TEST_METAL and DMSH_TEST_GPU), lint_python.py (nothing new); regress.py check against 3f10d4ff on the new chain (headless, M6): Bastion 72 / 72 shaders and Obra Dinn 1,272 / 1,272, 0 changed MSL on either, 59.5 / 59.6 and 59.5 / 59.8 fps, no new red line (Obra Dinn PASS; Bastion's flag is its screenshots, 19533b1a); the NSP script's iOS build of Bastion on the new chain (72 of 72 iOS shaders compiled, the IPA packed). Not run: a Vulkan or OpenGL game's shader build (vk_shaders.py and gl_shaders.py take the same flags from ios_metal.py; no such game on a drive here), the iPhone",
+     "A screenshot of a window the game crops is the picture as presented: the present pass draws the crop at the window texture's own size, as DM_NVN_SHOT_OUT draws it at a size of its own, so the size stays the same when a dynamic resolution moves the crop; an uncropped window is still saved as its texture's own pixels. A shot (DM_NVN_SHOT, DM_CTL shot) saved the window texture whole, and outside the crop it holds whatever it held before: Bastion crops its 1920x1080 window textures to 1600x900 (WindowCrop 0,0 1600x900), and the strip outside, black in some runs and purple (68, 34, 136) in others, on baseline runs as well as candidates, made regress.py flag its 70 and 78 s shots as a REGRESSION (RGB about 30) with the game's picture the same. New reference entry (Screenshots of a cropped window held what lay outside the crop), Bastion's note lists it, DM_NVN_SHOT's row says so, symptom index regenerated. Until a regression baseline includes this, a check of a cropping game against an older revision compares two kinds of shot. Found in the step 15 audit. Checked: regress.py check against 3f10d4ff (headless, M6): Bastion 59.5 / 59.6 fps, frame 5,235, no new red line, its shots the full presented picture (flagged against the older baseline's raw texture, as expected for this change), Obra Dinn PASS (it does not crop: shots RGB 0.5 / 0.77 from the baseline's), the gfx fixtures through nvn_mtl.m (t_srgb_alias), test_docs. Not run: a game whose crop moves with a dynamic resolution, the iPhone",
+     "Retirement is tested across threads, as the host runs it: t_cpu_tex --metal's retire_across_threads runs the deferred-release drain and the fences on one thread (a completion handler's drain, with its try of g_smu) while the other puts and removes entries 4,000 times (the texture, views of it, a finalized serial's ghost entry), with one live entry holding a view of the texture throughout. Whatever the interleaving, the texture must never leave the residency set while that entry holds it, and once the entry goes the owner hands it back and it leaves after the next fence; the owner's counts and waiting objects agree with its tables at the end. The step 14 report and the step 15 audit named the drain against another thread's changes as untested. The retirement reference entry lists the case. Checked: t_cpu_tex --metal (87, three runs), a TSan build of it (no report), and with own_retire_locked taking every retirement as eligible the case fails (the texture left the residency set mid-churn); test_docs. Not run: a game (a test)",
+     "t_pso_skey's four remaining byte comparisons of a pso_skey carry the same justified suppression as its other four, and its baseline entry goes: be23843f gave four of the eight memcmp comparisons a NOLINT with the reason (a pso_skey is its bytes: pso_skey_from zeroes it, pso_skey_hex writes them, the maps key on them) and left the other four, the same comparison for the same reason, as a baseline entry of 4, so one file handled one finding two ways. The baseline shrinks from 215 to 211. Found in the step 15 audit of the analyzer step. Checked: lint_c.py tidy on the file (0 above or below the new baseline), test_lint_c, t_pso_skey. Not run: a game (a test's annotations)"
     ]
    }
   ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-11T17:14:51Z",
+  "pushed_at": "2026-11-12T00:49:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T17:14:49Z",
+    "last_commit": "2026-11-12T00:48:59Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4126,21 +4126,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-11T23:28:01Z",
+  "pushed_at": "2026-11-12T11:00:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T23:27:58Z",
+    "last_commit": "2026-11-12T11:00:02Z",
     "subjects": [
+     "chore: shader contributions merged (inbox + #2110–#2130): TOTK 18,236 variants, OOT 10,418",
+     "feat: shader contributions carry the board id, so the contributors show the nickname and the board's code",
      "feat: 访问主页 on every settings page, the contributors list, the screenshot folder on the 截图分享 page",
      "Merge pull request #1547: fix: separate Odyssey controllers for two-player mode",
      "Merge pull request #2098: fix: BOTW typed text keeps its shipped speed at the CJK font raster",
      "Merge pull request #2102: fix(mkw): keep a stuck left stick's raw input once it is confirmed",
      "feat: a drag-and-drop builder app: choose the game, choose the keys, build and play, with the progress the whole way",
-     "perf: a full build takes the verified game data from the app it replaces, an update build extracts no 1.0.0 RomFS, and every long step that is done again says why",
-     "feat: 查看排名 on the shader contribution page opens the site's contributors with the player's pseudonym",
-     "feat: 查看排名 on the ranking page opens the site's board with the player's anonymous code"
+     "perf: a full build takes the verified game data from the app it replaces, an update build extracts no 1.0.0 RomFS, and every long step that is done again says why"
     ]
    }
   ]
@@ -9482,21 +9482,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-12T00:39:07Z",
+  "pushed_at": "2026-11-12T10:59:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T00:33:52Z",
+    "last_commit": "2026-11-12T10:55:54Z",
     "subjects": [
+     "Merge pull request #1212 from LNPANDY/fix/rc4-ui-feedback",
+     "Merge pull request #1211 from LNPANDY/fix/batch-build-and-install-built",
+     "Launcher: drop redundant shader not-cached count and keep ETA visible",
+     "Mac launcher: stage batch builds manually, install iOS batches once, and add Install built games",
+     "Launcher: allow dismissing skipped-files library banner per session",
      "Merge pull request #1193 from LNPANDY/sync/upstream-ccd834e0",
      "Merge pull request #1196 from LNPANDY/fix/follow-up-ccd834e0",
-     "Merge pull request #1195 from LNPANDY/feat/launcher-ui-polish",
-     "Launchers: follow up on the ccd834e06a39 engine bump",
-     "Mac launcher: polish Light appearance, settings controls, unbuilt versions, and supported covers",
-     "Engine: bump the pin to ccd834e0",
-     "Merge pull request #1190 from LNPANDY/fix/win-big-result-cleanup",
-     "Merge pull request #1189 from LNPANDY/feat/mac-game-mode-option"
+     "Merge pull request #1195 from LNPANDY/feat/launcher-ui-polish"
     ]
    }
   ]
@@ -10360,12 +10360,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-11-11T10:23:17Z",
+  "pushed_at": "2026-11-12T10:42:37Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T10:23:15Z",
+    "last_commit": "2026-11-12T10:42:36Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10659,7 +10659,7 @@
   "branches": []
  },
  "EthanMYX/d2r-mobile": {
-  "pushed_at": "2026-10-29T01:23:41Z",
+  "pushed_at": "2026-11-12T09:11:29Z",
   "branches": []
  },
  "DQGX5BP/d2r-mobile": {
@@ -10667,7 +10667,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-11T12:55:22Z",
+  "pushed_at": "2026-11-12T06:29:53Z",
   "branches": [
    {
     "branch": "main",
@@ -11187,21 +11187,21 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-11T23:00:25Z",
+  "pushed_at": "2026-11-12T11:03:22Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-11T21:33:51Z",
+    "last_commit": "2026-11-12T10:14:30Z",
     "subjects": [
-     "Merge pull request #149 from jmars125/task/bug-report",
-     "Mask every path, name and network address in the bug report zip's text files.",
-     "Keep eight crash reports and mask the user's home folder, user name and computer name in the bug report zip.",
-     "Add a bug report zip to the F1 menu and write richer crash reports to crash.txt.",
-     "Merge pull request #143 from jmars125/task/glyph-speed",
-     "Merge pull request #145 from jmars125/version-0.1.19",
-     "Write the DNS-over-HTTPS addresses of Ubuntu's hosts before apt runs, the Azure mirror's host included.",
-     "When Ubuntu's hosts do not resolve on the runner, take their addresses from Cloudflare's DNS over HTTPS."
+     "Merge pull request #156 from jmars125/version-0.1.21",
+     "Treat empty --dlc and --dlss-file values as not given",
+     "Version 0.1.21.",
+     "Merge pull request #140 from Xarishark/recomplauncher-support",
+     "Check the hash of the DLL --dlss-file gives",
+     "Merge pull request #154 from jmars125/version-0.1.20",
+     "Version 0.1.20.",
+     "Merge pull request #146 from jmars125/task/cheats"
     ]
    }
   ]
@@ -11541,21 +11541,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-11T22:39:50Z",
+  "pushed_at": "2026-11-12T06:26:31Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T01:32:20Z",
+    "last_commit": "2026-11-12T06:26:31Z",
     "subjects": [
-     "Remember installer paths between releases (#81)",
-     "Version 0.1.12. (#80)",
-     "Resolve the portable profile directory correctly (#79)",
-     "Update README to request AMD GPU testing contributions",
-     "Merge pull request #57 from AksharDP/task/flight-dir-in-install",
-     "Create the flight folder inside the install folder, next to xc2.exe, rather than in its parent.",
-     "Merge pull request #52 from AksharDP/task/version-0.1.11",
-     "Version 0.1.11."
+     "Merge pull request #111 from AksharDP/claude/fix-capture-folder-open",
+     "Show the folder buttons as copy buttons where the shell cannot open folders. A process at low integrity gets ERROR_ACCESS_DENIED from ShellExecuteW, and on the machine where this was found the game runs at low integrity when it is started from under D:\\switch. plat_folder_can_open reads the process's integrity level; then the capture and log folder buttons say Copy capture folder path or Copy log folder path, copy the path to the clipboard and say Copied. Elsewhere they open the folder as before. The Linux comment now sits above its own function.",
+     "Open folders on Windows with a path the shell parses. The game joins its folders with a slash, so the captures folder was ...\\build\\v301/captures, which the shell does not parse: Open capture folder opened nothing while plat_open_folder still reported success. plat_open_folder now normalises the path with GetFullPathNameW, which turns every separator into a backslash, so the log, mods and capture folders all open.",
+     "Merge pull request #110 from AksharDP/claude/renderer-code-review-fe9933",
+     "Copy a texel region that ends inside the last blocks of a compressed level with its extent cut at the level's edge, rather than refusing it: the game may give whole blocks of a small level (4x4 texels of a 2x2 one), which the storage path accepts by counting blocks.",
+     "Present the whole image when the crop starts outside it: the clamp left a width or height of zero or less, and the blit took it as its extent.",
+     "Refuse a ReadTexels or WriteTexels region that leaves its level, its layers or its depth planes, or that names a multisampled image, instead of recording the copy: the region comes from the game, and such a copy is not valid Vulkan. The refusal is logged and a read returns zeros, as for the other texels that cannot be copied. The lists these copies and a pool's end allocate are checked too.",
+     "Leave the capture's page map alone when the heap shrinks and no capture runs: the next capture clears the map before it uses it, and the loop cleared one bit per decommitted page under the memory lock."
     ]
    }
   ]
@@ -11676,21 +11676,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-10T19:00:19Z",
+  "pushed_at": "2026-11-12T07:59:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T17:20:38Z",
+    "last_commit": "2026-11-12T07:59:08Z",
     "subjects": [
+     "docs(changelog): record the shared shader list refresh",
+     "feat(shaders): refresh applicable 1.4.3 shared variants",
      "feat(runtime): pin effective clock for benchmark arms",
      "feat(bench): flag restart quartets whose arms ran at different GPU clocks",
      "fix(gfx): initialize the png crc table once",
      "fix(test): restore android backend fixture build support",
      "fix(test): avoid libc poll collision in pool finalization fixture",
-     "fix(bench): correct KGSL memory accounting",
-     "perf(android): enable frame lag for odin native 60 fps",
-     "test(bench): separate pan release timing from host teardown"
+     "fix(bench): correct KGSL memory accounting"
     ]
    }
   ]
@@ -11709,21 +11709,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-12T00:04:15Z",
+  "pushed_at": "2026-11-12T09:36:01Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T00:04:15Z",
+    "last_commit": "2026-11-12T08:52:02Z",
     "subjects": [
+     "Merge pull request #202 from simipoB/fix-fmz-overread",
+     "Mali: multiply by zero (FMZ) no longer reads past a shader's end",
+     "Merge pull request #192 from simipoB/mali-panvk-faux",
+     "Merge pull request #191 from simipoB/mali-fmz-default",
+     "Mali: suggest and verify faux123's PanVK on the CSF Malis (G610 / G615 / G710 / G720 / G925)",
+     "Mali: multiply by zero as on the Switch (FMZ) on by default",
      "Merge pull request #182 from simipoB/log-ownership",
-     "Logs in Download: a file name this install may write (logs stayed days old after a reinstall)",
-     "Merge pull request #178 from simipoB/engine-upgrade",
-     "Merge remote-tracking branch 'origin/main' into engine-upgrade",
-     "Merge remote-tracking branch 'origin/mali-fmz' into engine-upgrade",
-     "Merge pull request #180 from simipoB/mali-fmz",
-     "Adreno: target changes keep the open pass and missing pipelines are built in the background, by default (Mali and the rest unchanged; DM_VK_PASS_DEFER / DM_VK_ASYNC_PSO =0|1 override)",
-     "README: LTO gain not yet measured"
+     "Logs in Download: a file name this install may write (logs stayed days old after a reinstall)"
     ]
    }
   ]
@@ -12015,21 +12015,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-12T00:32:59Z",
+  "pushed_at": "2026-11-12T11:22:58Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T23:29:28Z",
+    "last_commit": "2026-11-12T11:12:15Z",
     "subjects": [
-     "本地化 / 体验表内重复键检查（tools/l10n_dupkeys.py + l10n_dupkey_lint_test，名字带 lint 进入队确定性快检查）：重复当场拒收，点名表、键、第几项",
-     "Merge branch 'quality/frame-bench' into HEAD",
-     "Merge branch 'contrib/pr555' into HEAD",
-     "Merge branch 'feat/ios-img-install-ui' into HEAD",
-     "Merge branch 'feat/local-players' into HEAD",
-     "Merge branch 'launcher/razor-m9-m10' into HEAD",
-     "Merge branch 'contrib/pr356-fix' into HEAD",
-     "Merge branch 'contrib/pr300-m' into HEAD"
+     "Merge branch 'fix/v032-audit-saves' into HEAD",
+     "Merge branch 'quality/v032-audit-150-176' into HEAD",
+     "Merge branch 'fix/v032-audit-packapply' into HEAD",
+     "没玩过的游戏导入存档：每一类都灌进去才删待放入的种子（审计 P1-156）",
+     "fix(direct): 热缓存不再被连败熔断停掉；Mac / iPhone 两个目标各记各的编不过（审计 P1-150 / P1-176）",
+     "Merge branch 'contrib/pr742' into HEAD",
+     "资源包迁移遇到新推送时三步改名，失败不丢已能玩的新位置（审计 P1-169）",
+     "Merge remote-tracking branch 'origin/main' into contrib/pr742"
     ]
    }
   ]
@@ -12039,13 +12039,14 @@
   "branches": []
  },
  "Diablo-chia619/d2r-mobile-evidence": {
-  "pushed_at": "2026-11-09T02:20:07Z",
+  "pushed_at": "2026-11-12T10:38:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-09T02:19:46Z",
+    "last_commit": "2026-11-12T10:37:52Z",
     "subjects": [
+     "issue 256: black tiles in top four tile rows (Adreno 830 / Ace 5 Pro) + ice-spire black blocks",
      "top-band flicker: frame comparison (Adreno 830)"
     ]
    }
@@ -12083,21 +12084,21 @@
   ]
  },
  "jmars125/xc3-recomp": {
-  "pushed_at": "2026-11-11T08:14:56Z",
+  "pushed_at": "2026-11-12T09:53:38Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-11T07:10:42Z",
+    "last_commit": "2026-11-12T05:35:46Z",
     "subjects": [
+     "Merge pull request #43 from jmars125/task/cpu-v2",
+     "Merge pull request #42 from jmars125/task/uw-menu",
+     "Build for CPUs without AVX2 (x86-64-v2) when the setup finds no AVX2.",
+     "Leave the interface elements drawn through a perspective camera as the game places them on a wide frame.",
      "Merge pull request #41 from jmars125/task/triage-1111",
      "Add each picked add-on file to the list instead of replacing it.",
      "Merge remote-tracking branches 'origin/task/issue-30' and 'origin/task/fencesync-grow' into task/triage-1111",
-     "Merge master into task/issue-30",
-     "Merge pull request #37 from jmars125/task/keep-shader-cache",
-     "Keep the shader cache on an update when the translator identity is unchanged",
-     "Log the ether orb count of each push, and pick the slot in the host.",
-     "Merge pull request #33 from jmars125/task/ultrawide"
+     "Merge master into task/issue-30"
     ]
    }
   ]
@@ -12180,21 +12181,21 @@
   ]
  },
  "Desm0nt/torchlight2-port": {
-  "pushed_at": "2026-11-11T08:56:01Z",
+  "pushed_at": "2026-11-12T08:24:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T08:55:59Z",
+    "last_commit": "2026-11-12T08:24:02Z",
     "subjects": [
+     "Launcher icon: redrawn Torchlight II Mobile art (night, moon, title with a MOBILE plaque, new hero line-up; generated, no game artwork)",
      "setup: patch check no longer runs out of memory (issue #1)",
      "TL2_PORT.md: weapon swap button verified on the device",
      "v0.1.1: mods override the game's files (mod packs listed first, later mods win), mod manager in the pause menu with a restart offer, weapon swap button (d-pad left), character-creation spinner taps + gender guard, touch overlay redraws only on change, idle job workers back off",
      "README: screenshots (title, main menu, Temple Steppes, combat, inventory, stats, pause menu, mod manager)",
      "README: handheld mode not tested yet; PC mods experimental, which kinds of mods cannot work",
      ".gitignore: the TL2 launcher icon is tracked now (original artwork, no longer the game's icon)",
-     "TL2 gear: the game-language note says all languages are built in (the Diablo III note asked for language-pack DLC in aoc/)",
-     "Docs for publication: README (EN / RU), INSTALL guides with FAQ and PC mods, docs/tl2/GAME_FILES.md and DERIVED.md, THIRD_PARTY Torchlight II section, drivers README and LICENSE for TL2; Diablo III screenshots removed"
+     "TL2 gear: the game-language note says all languages are built in (the Diablo III note asked for language-pack DLC in aoc/)"
     ]
    }
   ]
@@ -12328,21 +12329,21 @@
   ]
  },
  "simipoB/Arceus-Native-Android": {
-  "pushed_at": "2026-11-12T00:03:14Z",
+  "pushed_at": "2026-11-12T08:49:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T00:03:11Z",
+    "last_commit": "2026-11-12T08:46:11Z",
     "subjects": [
-     "Logs in Download: a file name this install may write (logs stayed days old after a reinstall; Galar Native #155)",
-     "README: v0.23 (speed-ups on for Adreno, link-time optimization)",
-     "Adreno: target changes keep the open pass and missing pipelines are built in the background, by default (Mali and the rest unchanged; DM_VK_PASS_DEFER / DM_VK_ASYNC_PSO =0|1 override)",
-     "README: what's new in v0.21 / v0.22 (Mali crash fix, multiply by zero test, CPU pinning, two speed tests)",
-     "CPU pinning: never fewer cores than the threads pinned (a hot Flip5 put both frame threads on one throttled core)",
-     "Target changes that need no new pass keep it open (DM_VK_PASS_DEFER=1); pipelines the lists did not have built in the background (DM_VK_ASYNC_PSO=1); both opt-in until measured on a phone",
-     "Mali tests: multiply by zero as on the Switch (FMZ, DM_VK_FMZ=1)",
-     "Swapchain: room for every image the driver makes, and a composite alpha mode the surface lists"
+     "Multiply by zero (FMZ) no longer reads past a shader's end (Galar #202)",
+     "Touch gestures option: Off leaves the screen to the camera (#5)",
+     "Gyro aiming, button size, easier resizing, the same strength for every touch control",
+     "Legends: Arceus: Faster rendering off (it crashed the game at loading screens, #3)",
+     "Legends: Arceus: back to the fixed 60 only",
+     "Legends: Arceus: remove Far draw distance",
+     "Legends: Arceus: Draw distance Far only when chosen; no black bars in battle by default; stamina left out",
+     "Legends: Arceus: Dynamic FPS on Auto, Level of Detail + QOL settings"
     ]
    }
   ]
@@ -12382,6 +12383,26 @@
      "Document Windows Android build and GPU profiling",
      "minor optims",
      "Add opt-in Adreno 650 subgroup rewrite"
+    ]
+   }
+  ]
+ },
+ "STS78721/MKW-THWOMP": {
+  "pushed_at": "2026-11-12T10:07:54Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-12T10:07:50Z",
+    "subjects": [
+     "README: new front page with highlights, status, quick start and how it works",
+     "Fix phantom trees and blinking foliage: keep warp operations in place",
+     "Fix phantom trees (base instance), full-res sparse terrain, BC7, diagnostics",
+     "Foliage/texture pipeline fixes, integer-sampled textures, stability work",
+     "Fix heap starvation: bind symbols in load order like rtld",
+     "Fix black cacti: FMZ rewrite on every shader stage; Phase 1 diagnostics",
+     "Foliage pop-in Phase 0: repeatable scene, flicker detector, mesh count fix",
+     "Mario Kart World PC: standalone project"
     ]
    }
   ]
