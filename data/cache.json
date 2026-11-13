@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-13T11:08:10Z",
+  "pushed_at": "2026-11-13T18:51:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T11:08:07Z",
+    "last_commit": "2026-11-13T18:51:04Z",
     "subjects": [
-     "host/save_sync: packing walks the save without a callback",
-     "host/fs: the overlay snapshot drops repeated names with one sort, not a scan per name",
-     "host/fs: a folder whose reading fails is a failure, not the end of its listing",
-     "host/fs: a rename between two mounts is refused before either is touched, as Horizon refuses it",
-     "games/0400921025B32000: Sonic Frontiers Definitive Edition plays on the Mac (PR #2553)",
-     "docs/shaders: Hyrule Warriors: Age of Imprisonment's shaders do not read the primitive ID after tessellation either; PRAGMATA is not checked",
-     "chain/dmsh_build: a staged shader's files leave the disk only once their batch has committed, and a write the cache cannot take fails its whole batch",
-     "nvn/archive: a period's archive write and the pipeline compiles do not overlap, which Metal crashed on"
+     "gfx/nvn: a submission's commit reads only the storage-write pages it noted, not all 16,384 slots",
+     "gfx/nvn: float colours go into normalized targets rounded as NVIDIA's colour unit rounds them",
+     "docs: PR #1541's in-place read was ordered in games by the frame's last encoder",
+     "gfx/nvn: a lent command memory segment is freed when its list is written over, not when memory over it is granted",
+     "host/fs: rename's rollback calls save_txn_from_path directly",
+     "gfx/nvn: every MetalFX scaler waits behind a blit, and the next draw pass behind the scaler",
+     "gfx/nvn: a dirty-page miss names its changed pages and what the tracker and the kernel hold for each",
+     "packing/nup: a NUP whose folder contains itself is refused"
     ]
    }
   ]
@@ -1951,19 +1951,19 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-13T06:42:41Z",
+  "pushed_at": "2026-11-13T19:40:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T06:42:40Z",
+    "last_commit": "2026-11-13T19:40:03Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（204 个项目）",
      "chore: 自动同步 Star 地图（203 个项目）",
-     "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（202 个项目）"
     ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-13T01:54:19Z",
+  "pushed_at": "2026-11-13T11:10:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T01:54:18Z",
+    "last_commit": "2026-11-13T11:10:02Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4127,21 +4127,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-13T10:56:59Z",
+  "pushed_at": "2026-11-13T18:19:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T10:56:49Z",
+    "last_commit": "2026-11-13T14:16:34Z",
     "subjects": [
-     "perf(oot ios): fewer open pipeline archives and a warm-up on several threads",
-     "perf(ios): device pipeline archives in 10 merged files; the Mac pipeline cache is checked, not thrown away",
-     "fix(oot): the work copy's sync keeps the iOS build's compiled libraries",
-     "feat: check and update only an app's shaders and pipelines from the game's newest list (MNG Launcher)",
-     "fix(build): the work folder's source sync keeps the iOS build's output",
-     "fix(gfx): a seed run keeps the listed variants a translation cache already holds",
-     "feat(launcher): Ocarina of Time gets the Controls, Storage and Saves pages",
-     "fix(launcher): a second click on a game card keeps it chosen"
+     "feat(oot): quick build with only the title's shaders (OOT_SHADERS=title)",
+     "feat(oot): title rows recorded (TOTK_PSO_CAPTURE) and marked in the shared list",
+     "test(oot): the build and its opening overlay run no ffmpeg (the #2070 check outlived ffmpeg)",
+     "refactor: the settings panel has no Update page; apps update through MNG Launcher",
+     "test: the one-folder plan test checks the folder, the OOT build checks stay in their own test",
+     "fix(gfx): a pipeline archive is mapped, not read into memory, from an external drive",
+     "fix(oot): the update plan says full build when the express update would refuse",
+     "fix(oot): a zero blend weight zeroes a non-finite colour, as NVIDIA's blender does (full-screen white light)"
     ]
    }
   ]
@@ -5097,7 +5097,7 @@
   ]
  },
  "oneincase/d2r-mobile": {
-  "pushed_at": "2026-11-04T18:31:26Z",
+  "pushed_at": "2026-11-13T13:48:13Z",
   "branches": []
  },
  "zJiaJun/d2r-mobile": {
@@ -9443,21 +9443,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-11-13T11:09:28Z",
+  "pushed_at": "2026-11-13T12:28:32Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T11:09:03Z",
+    "last_commit": "2026-11-13T12:28:26Z",
     "subjects": [
+     "nvn_mtl.m, nvn_rec.h: residency changes queue; the commit holds a lock of its own",
+     "nvn_mtl.m: a stride does not lengthen a chunk it borrowed from an earlier stride",
+     "nvn_mtl.m: a large pool reuses a chunk that already reaches past this stride",
      "nvn_mtl.m: the memory readout says how the residency set is spent, by kind",
      "Revert the mesh-library counter: a local check, not something the repository carries",
      "check_mesh_libs: count a package's mesh libraries, the thing issue #14 came down to",
      "Base to 034e91a8: 68 upstream commits, the NVN resource owner and conditional rendering for every game",
-     "docs: the library's new layout, for the release page to show",
-     "dmsh_build: Windows finishes its shaders in threads, because there is no fork to make a worker",
-     "nvn_mtl.m: the base move left the old pso_build definition beside the new one",
-     "Base to e2df31ca: 45 upstream commits, chiefly the graphics layer's upload and residency work"
+     "docs: the library's new layout, for the release page to show"
     ]
    }
   ]
@@ -9483,21 +9483,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-13T01:08:03Z",
+  "pushed_at": "2026-11-13T19:25:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T23:16:12Z",
+    "last_commit": "2026-11-13T14:19:51Z",
     "subjects": [
+     "feat(ios): claim loose RomFS images in Documents by identity (#1229)",
      "chore(release): prepare v1.5.0 (#1228)",
      "fix(engine): inherit aliased virtual pool flags and bound sampler pool IDs (#1227)",
      "chore(engine): sync upstream to 0c078130f6db (#1226)",
      "Merge pull request #1217 from LNPANDY/feat/ios-hot-framework-load",
      "Merge pull request #1216 from LNPANDY/feat/shared-ipa-repack-and-ext-msl",
      "Merge pull request #1215 from LNPANDY/refactor/patch-slim-phase2",
-     "Merge pull request #1214 from LNPANDY/refactor/patch-slim-phase1",
-     "ShellHost & Launcher: hot-load signed game frameworks from Documents/Frameworks"
+     "Merge pull request #1214 from LNPANDY/refactor/patch-slim-phase1"
     ]
    }
   ]
@@ -10452,21 +10452,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-10T16:28:48Z",
+  "pushed_at": "2026-11-13T18:05:01Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T16:28:45Z",
+    "last_commit": "2026-11-13T18:04:59Z",
     "subjects": [
-     "donations: update goal to POCO X7 Pro () Mali test device",
-     "donations: update monthly Claude Code Max goal to  (+ from 50 BRL donation)",
-     "docs: add Pix donation key to README",
-     "0.3.4-beta (versionCode 38)",
-     "Limit low-RAM profile to 4 GB devices",
-     "docs: link temporary support notice",
-     "0.3.3-beta (versionCode 37)",
-     "Mali: textures the GPU can't filter linearly sampled nearest (#307 black grass); Native mode: a call to a null function pointer returns 0 (#305)"
+     "README: the week's notice removed (ended on November 13, 0.4.0 is out)",
+     "0.4.0-beta instead of 0.3.5 (frame generation and the new overlay): versionName, README",
+     "Motion: LARECOMP_PAD_GYRO=a,b,c reorders a controller's sensor axes (driver variables, no build), and the log names the controller and its SDL path (#338)",
+     "Touch controls: the up / down arrows with the camera rune selected, for its zoom (#202)",
+     "Unlocked aspect: the map fills the screen again (its frame's bars passed for the scope's, #349); a message box in the middle keeps its rounded ends (#304)",
+     "0.3.5-beta (versionCode 39): README links and status line",
+     "Crash report installed when the guest window is set up, before Vulkan starts: a custom driver (RADV on an Xclipse, #234 #345 #383) crashed in the first frames and the log just stopped",
+     "Frame pacing: back from a slower interval once a frame's work fits the faster one for 2 s (#339 #374)"
     ]
    }
   ]
@@ -10668,7 +10668,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-13T05:49:29Z",
+  "pushed_at": "2026-11-13T15:08:27Z",
   "branches": [
    {
     "branch": "main",
@@ -11564,7 +11564,7 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-13T07:58:43Z",
+  "pushed_at": "2026-11-13T15:59:26Z",
   "branches": [
    {
     "branch": "main",
@@ -11699,21 +11699,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-13T08:59:35Z",
+  "pushed_at": "2026-11-13T18:14:41Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T08:59:30Z",
+    "last_commit": "2026-11-13T18:14:39Z",
     "subjects": [
+     "docs(changelog): record integer-fold Thor and Odin speed checks",
      "docs(changelog): record integer-fold device checks",
      "fix(gfx): preserve decorated shader proofs and cache arms",
      "perf(gfx): enable exact integer shader folding by default",
      "test(shader): omit unused Float64 capability from gather fixture",
      "fix(shader): lower runtime gather offsets before SPIR-V emission",
      "perf(companion): enable built-in display cover by default",
-     "docs(changelog): record one-primary experiment results",
-     "perf(vulkan): defer immediate section commands into slot arenas"
+     "docs(changelog): record one-primary experiment results"
     ]
    }
   ]
@@ -11732,7 +11732,7 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-13T05:53:50Z",
+  "pushed_at": "2026-11-13T17:02:15Z",
   "branches": [
    {
     "branch": "main",
@@ -11855,21 +11855,21 @@
   "branches": []
  },
  "Desm0nt/diablo3-port": {
-  "pushed_at": "2026-11-13T08:52:20Z",
+  "pushed_at": "2026-11-13T19:24:02Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T08:52:03Z",
+    "last_commit": "2026-11-13T19:23:25Z",
     "subjects": [
-     "VERSION 0.2.11: mods / cheats and offline seasons (d3hack), ASTC texture cache for GPUs without BC, update notices",
-     "Merge branch 'wt/mem20'",
-     "d3 ASTC cache round 4: the engine serves a partial cache (d3-astc.pack.part + .journal-phone: only complete journal lines inside the part file at the snapshot, 'using partial ... N of M textures committed'), a fresh conversion makes a new part file instead of truncating the one a game may have open, '#total' journal line; the conversion always holds the game (nativeHold) and the game does not start while the start dialog is up or the conversion runs; [astc] lines logged once",
-     "Merge branch 'rel/0.2.10-upd'",
-     "d3 ASTC cache round 3: on-phone builder (dm/android/astc_convert.cpp: native CPK reader, the engine's deswizzle and BC decoder, ARM astc-encoder 5.7.0 with NEON in dm/third_party/astcenc, big cores at nice 10, journaled resume, same pack / keys / manifest as the PC tool) and its UI (D3Textures: start dialog with a time estimate, pause-menu row 'Prepare textures' via FrontMenu.Host.hasTextures, full-screen progress with Cancel, thermal slow-down, up front only); both paths: -fast first and every cached texture >= 42 dB (BC1 6x6/5x5/4x4 fast, 4x4 medium, thorough; BC2/BC3 4x4 fast, medium, thorough), the rest stays BC; quality.tsv with block / preset / steps / dB; index order (crc, adler, bytes, format, w, h, levels)",
-     "d3: \"a new version is out\" check from DOOM 2016 (UpdateNotice: GitHub releases/latest of Desm0nt/diablo3-port once per start after the first frames, a one-time dialog with the release notes) and the pause menu's \"Check for updates\" (FrontMenu.R_UPDATES)",
-     "Merge commit '78e6500' into wt/mem20",
-     "d3 ASTC texture cache built by setup (issue #20, owner round 2): tools/d3_astc_cache.py encodes every BC texture of the merged RomFS view and the language packs once (NVN packaged .tex storage deswizzled and decoded as the engine does, BC2/BC3 -> ASTC 4x4, BC1 -> 6x6/5x5/4x4 by the 42 dB rule, zero blocks -> void extent) into astc/d3-astc.pack; setup step 9 and 'setup astc'; the engine keys each BC texture by its storage (CRC-32 + Adler-32, size, format, levels) at image creation and creates it in ASTC from the pack, else the BC decoder (DM_GFX_ASTC_CACHE, DM_ASTC_CACHE_PATH); BC1 16-bit decode and idle eviction removed; arena trimming, memory tiers and the [mem] census kept"
+     "VERSION 0.2.13: local wireless play over Wi-Fi (issues #13, #16): nn::ldn emulated over the LAN (UDP discovery + TCP session, ldn_mitm-compatible), Horizon socket semantics while local play is on, AutoClear state event, local friends play-history key, heap buffers for scan / connect",
+     "ldn: scan / private connect / connect buffers (~22 KB / 5 KB / 7 KB) moved from the stack to the heap: TL2's Pia job thread runs ldn::Scan on the game's small stack and overflowed it (CRASH sig=11 pc=ldn_scan+0x24 on the Mi 13 at 'Join local game'); loopback test passes",
+     "local play: friends::GetPlayHistoryRegistrationKey gives a key (derived from the uid, never registered) while local play is on - TL2's Pia needs one per local player before it builds its mesh (CreateMeshJob::SetupLocalPlayerInfo, main 0x1bf33b0: a failure is 0x10c08 and LocalMatchCreateSessionJob destroys the new network two frames after it came up); on a console the key needs no network",
+     "ldn: the state change event is bound AutoClear, as the SDK attaches it (TL2's Pia only TryWaits on it, main 0x1bcb7e0, never clears: a manual-clear binding stayed signalled after the first change); trace: TL2 Pia's LDN network object (x20 at its GetIpv4Address call, main 0x1bcd5b8) - own / host station address (+0x2a0 / +0x2c0, what WaitCreateNetworkEvent compares), descriptions and states - logged when they change",
+     "local play trace: game backtrace at close / DestroyNetwork / Disconnect, nifm IsNetworkAvailable / HandleNetworkRequestErrorResult calls, and (TL2) Pia's session state words (session at main+0x92c74e0: +0xd4 / +0xd8 / result +0xdc / +0x158) whenever they change",
+     "local play: DM_NET_TRACE=1 (or DM_LDN_TRACE=1) logs every ldn and socket call with its arguments, result, the errno the game gets and the game's caller (repeats folded), and each state change event signal - to pin the call after which TL2's Pia gives up its new network",
+     "d3 local play: Horizon socket semantics from ldn::Initialize (the local session's UDP transport socket is created right after it and came out blocking: Fcntl 0x800 was read as FreeBSD), a scan no longer lists the phone's own network (every local D3 party hosts while it scans); how D3 reaches host / scan / join written down in hle_ldn.c",
+     "d3 multiplayer (issues #13, #16): local wireless play over the LAN and local co-op with several controllers"
     ]
    }
   ]
@@ -12005,21 +12005,21 @@
   ]
  },
  "Poshandka/AnimalDuo": {
-  "pushed_at": "2026-11-08T05:21:52Z",
+  "pushed_at": "2026-11-13T17:29:32Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T05:16:02Z",
+    "last_commit": "2026-11-13T17:29:32Z",
     "subjects": [
+     "Merge pull request #3 from lucaszhongsj/fix/phone-shoulder-layout",
+     "fix(ios): mirror the left shoulders on regular phones",
      "release: publish AnimalDuo 1.3 source (build 3.0.76)",
      "release: publish AnimalDuo 1.2 source (build 3.0.68)",
      "fix: restore AnimalDuo hosted build and test checks",
      "release: publish AnimalDuo 1.1 source (build 3.0.59)",
      "docs: point source downloads to AnimalDuo 1.0",
-     "release: publish reviewed AnimalDuo 3.0.51 source",
-     "release: prepare reviewed AnimalDuo 3.0.51 publication",
-     "docs: align English README with the Chinese project introduction"
+     "release: publish reviewed AnimalDuo 3.0.51 source"
     ]
    }
   ]
@@ -12038,21 +12038,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-13T11:09:39Z",
+  "pushed_at": "2026-11-13T19:39:30Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T11:02:39Z",
+    "last_commit": "2026-11-13T19:29:24Z",
     "subjects": [
-     "Merge branch 'contrib/pr302-r' into HEAD",
-     "Merge commit '69689b7b61f8fedf58a6d0ab5cbbadedc425f29f' into HEAD",
-     "Merge branch 'docs/ab-pin-fps-switches' into HEAD",
-     "Merge branch 'docs/pit-zsh-source-devices' into HEAD",
-     "坑记录：对照局要显式写死所有影响帧率的开关",
-     "docs: 坑记录补 zsh 下 source devices.sh 找不到本机设备名单",
-     "Merge branch 'fix/devlock-own-path-same-lock' into HEAD",
-     "Merge branch 'contrib/pr869' into HEAD"
+     "Merge commit 'f2e7929287d6095e2970ac1ab141daa199e198c9' into HEAD",
+     "Merge commit 'c9302217d1058a762acbf6792d6b3f3e595fbae0' into HEAD",
+     "Merge branch 'fix/unknown-gpu-not-block-pack' into HEAD",
+     "Merge commit 'f01922c39056de7cf268f5081c71565fef35f118' into HEAD",
+     "Merge commit '2ce47632d3a1ccf9be700f5316107a36440a34c8' into HEAD",
+     "Merge commit '2ce47632d3a1ccf9be700f5316107a36440a34c8' into HEAD",
+     "Merge branch 'fix/aoc-cache-prune' into HEAD",
+     "Merge branch 'fix/680-nostall-windows-io' into HEAD"
     ]
    }
   ]
@@ -12062,33 +12062,34 @@
   "branches": []
  },
  "Diablo-chia619/d2r-mobile-evidence": {
-  "pushed_at": "2026-11-13T08:22:01Z",
+  "pushed_at": "2026-11-13T14:47:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T08:22:00Z",
+    "last_commit": "2026-11-13T14:47:20Z",
     "subjects": [
+     "Add ammo-skill-buttons-full-2026-11-13.png",
+     "Add ammo-skill-buttons-closeup-2026-11-13.png",
      "PR #268 verification: three places, stock driver, rows 0-3 clean",
      "issue 256: issue256_turnip_upstream_ab.png",
      "issue 256: issue256_turnip_upstream_ice.png",
      "issue 256: issue256_turnip_upstream_lava.png",
      "issue 256: same-device driver A/B (system Adreno vs Turnip T30) at the River of Flame waypoint",
-     "issue 256: black tiles in top four tile rows (Adreno 830 / Ace 5 Pro) + ice-spire black blocks",
-     "top-band flicker: frame comparison (Adreno 830)"
+     "issue 256: black tiles in top four tile rows (Adreno 830 / Ace 5 Pro) + ice-spire black blocks"
     ]
    }
   ]
  },
  "nkhdo/d2r-mobile": {
-  "pushed_at": "2026-11-10T10:34:13Z",
+  "pushed_at": "2026-11-13T17:03:08Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 33,
-    "behind": 0,
-    "files": 43,
-    "real_files": 38,
+    "ahead": 40,
+    "behind": 7,
+    "files": 72,
+    "real_files": 67,
     "dirs": [
      "GLOSSARY.md",
      "dm/android",
@@ -12097,16 +12098,16 @@
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-11-10T10:30:19Z",
+    "last_commit": "2026-11-13T17:02:33Z",
     "subjects": [
-     "Merge pull request #2 from nkhdo/thor/phase2-panels",
-     "Merge pull request #1 from nkhdo/thor/phase1-deck",
-     "Merge pull request #3 from nkhdo/thor/phase2-bag",
-     "Merge pull request #4 from nkhdo/thor/phase2-actions",
-     "Merge pull request #5 from nkhdo/thor/phase2-look",
-     "Deck: frames per second in the info bar",
-     "Docs: the Deck's new Main layout and portals on the Map tab",
-     "Deck: town and red portals on the Map tab; marks on the real exit or waypoint"
+     "Thor Deck: read the Build tab's base stats by their real ids",
+     "Thor: launcher title \"D2R Thor\"; pack through the usual import folder",
+     "Merge pull request #7 from nkhdo/thor/more-builds",
+     "Merge pull request #6 from nkhdo/thor/build-tab",
+     "Thor Deck: number the Build tab's skill steps",
+     "Thor Deck: a second build for every class",
+     "Thor Deck: Build tab with per-class build guides",
+     "Merge pull request #2 from nkhdo/thor/phase2-panels"
     ]
    }
   ]
@@ -12209,21 +12210,21 @@
   ]
  },
  "Desm0nt/torchlight2-port": {
-  "pushed_at": "2026-11-12T08:24:04Z",
+  "pushed_at": "2026-11-13T19:27:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T08:24:02Z",
+    "last_commit": "2026-11-13T19:26:42Z",
     "subjects": [
+     "v0.1.2: local multiplayer over Wi-Fi (the game's local wireless play via Pia over nn::ldn, carried over the LAN)",
      "Launcher icon: redrawn Torchlight II Mobile art (night, moon, title with a MOBILE plaque, new hero line-up; generated, no game artwork)",
      "setup: patch check no longer runs out of memory (issue #1)",
      "TL2_PORT.md: weapon swap button verified on the device",
      "v0.1.1: mods override the game's files (mod packs listed first, later mods win), mod manager in the pause menu with a restart offer, weapon swap button (d-pad left), character-creation spinner taps + gender guard, touch overlay redraws only on change, idle job workers back off",
      "README: screenshots (title, main menu, Temple Steppes, combat, inventory, stats, pause menu, mod manager)",
      "README: handheld mode not tested yet; PC mods experimental, which kinds of mods cannot work",
-     ".gitignore: the TL2 launcher icon is tracked now (original artwork, no longer the game's icon)",
-     "TL2 gear: the game-language note says all languages are built in (the Diablo III note asked for language-pack DLC in aoc/)"
+     ".gitignore: the TL2 launcher icon is tracked now (original artwork, no longer the game's icon)"
     ]
    }
   ]
@@ -12357,21 +12358,21 @@
   ]
  },
  "simipoB/Arceus-Native-Android": {
-  "pushed_at": "2026-11-13T05:02:09Z",
+  "pushed_at": "2026-11-13T17:04:41Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T04:56:57Z",
+    "last_commit": "2026-11-13T16:59:47Z",
     "subjects": [
-     "Android 12: GameState in a class of its own (the app closed at the Game Freak logo, #19)",
-     "Ghost presses, controller diagonals, the layout reset",
-     "Arm's driver: a start-up test of transform feedback captures, and a working Off for the uniform snapshot",
-     "WIP: the upload worker batches its textures (one submission and one wait for up to 16)",
-     "Movement and camera sensitivity as sliders (#9)",
-     "Saves -> Save folder: the save in Documents/NXNative/<title id>/save for sync tools (#8)",
-     "Arm's driver: log vertex-shader store support; check that transform feedback captures write (#6)",
-     "Movement stick sensitivity (#9), L3 / R3 follow their sticks, a freeze report in the log (#3)"
+     "Touch camera: its own sensitivity, a stick mode, and the right stick can be hidden (#28)",
+     "Touch: focus lost before the first touch counts no fingers (the log said 10)",
+     "Mali test: R11G11B10F drawn and sampled as RGBA16F (DM_VK_B10_AS_RGBA16, the menu's Mali tests)",
+     "PowerVR: pipelines whose render pass has an unused colour slot are made without the pipeline cache",
+     "MapPhysicalMemory over a GPU driver mapping: made writable piece by piece instead of stopping (PowerVR, Arceus #22)",
+     "Pools: a freed pool's GPU memory is checked before reuse (SIGSEGV in memcpy after 80 min on Turnip, #240)",
+     "Frame capture: DM_VK_CAPTURE_SIZE=<w>x<h> for bigger pictures (up to 960x540)",
+     "Style move effects off by default: no more grey boxes as strong / agile style moves start (#14 #15 #20)"
     ]
    }
   ]
@@ -12404,32 +12405,68 @@
   ]
  },
  "STS78721/MKW-THWOMP": {
-  "pushed_at": "2026-11-13T09:42:55Z",
+  "pushed_at": "2026-11-13T15:32:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T09:42:50Z",
+    "last_commit": "2026-11-13T15:07:49Z",
     "subjects": [
+     "Cheaper pointer-table scans; store shader inputs on cache hits (pop-in)",
      "Write back storage images in CPU-readable pools; collision investigation tools",
      "Fix Crown City blue sheets and invisible pedestrians: write back large CPU-cached targets",
      "Crown City skinning diagnostics, handover notes, and pending runtime work",
      "README: new front page with highlights, status, quick start and how it works",
      "Fix phantom trees and blinking foliage: keep warp operations in place",
      "Fix phantom trees (base instance), full-res sparse terrain, BC7, diagnostics",
-     "Foliage/texture pipeline fixes, integer-sampled textures, stability work",
-     "Fix heap starvation: bind symbols in load order like rtld"
+     "Foliage/texture pipeline fixes, integer-sampled textures, stability work"
     ]
    }
   ]
  },
  "Diablo-chia619/d2r-mobile": {
-  "pushed_at": "2026-11-13T06:21:20Z",
+  "pushed_at": "2026-11-13T14:48:53Z",
   "branches": [
+   {
+    "branch": "ammo-2.3.1",
+    "ahead": 1,
+    "behind": 1,
+    "files": 8,
+    "real_files": 8,
+    "dirs": [
+     "dm/android",
+     "dm/host"
+    ],
+    "last_commit": "2026-11-13T14:47:53Z",
+    "subjects": [
+     "Skill buttons: show the remaining ammo of the equipped quiver / throwing weapon"
+    ]
+   },
+   {
+    "branch": "ammo-guard",
+    "ahead": 5,
+    "behind": 0,
+    "files": 24,
+    "real_files": 22,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/ios"
+    ],
+    "last_commit": "2026-11-13T19:49:11Z",
+    "subjects": [
+     "Pouch: rejuvenation potions join the pouch (belt-full pickup, tap the icon to refill the belt)",
+     "Skill buttons: the ammo count now covers every quiver in the backpack",
+     "Skill buttons: show remaining ammo for the equipped quiver / throwing weapon",
+     "Touch stick: reach full speed in half the travel (feel profile A)",
+     "Adreno 8xx: compute shaders return at once outside the dispatched range (#256)"
+    ]
+   },
    {
     "branch": "android/turnip-and-stick",
     "ahead": 7,
-    "behind": 6,
+    "behind": 7,
     "files": 20,
     "real_files": 18,
     "dirs": [
@@ -12453,7 +12490,7 @@
    {
     "branch": "android-import-vault",
     "ahead": 2,
-    "behind": 6,
+    "behind": 7,
     "files": 7,
     "real_files": 5,
     "dirs": [
@@ -12470,7 +12507,7 @@
    {
     "branch": "main",
     "ahead": 7,
-    "behind": 6,
+    "behind": 7,
     "files": 20,
     "real_files": 18,
     "dirs": [
@@ -12494,7 +12531,7 @@
    {
     "branch": "touch-stick-travel",
     "ahead": 2,
-    "behind": 0,
+    "behind": 1,
     "files": 5,
     "real_files": 5,
     "dirs": [
@@ -12571,5 +12608,9 @@
     ]
    }
   ]
+ },
+ "MrLiunxj/d2r-mobile": {
+  "pushed_at": "2026-11-13T16:48:20Z",
+  "branches": []
  }
 }
