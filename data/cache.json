@@ -1295,7 +1295,7 @@
   "branches": []
  },
  "chenbincb/d2r-mobile": {
-  "pushed_at": "2026-10-19T22:54:36Z",
+  "pushed_at": "2026-11-12T22:45:44Z",
   "branches": []
  },
  "1lifedo1thing/d2r-mobile": {
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-12T18:02:07Z",
+  "pushed_at": "2026-11-12T23:12:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T18:01:54Z",
+    "last_commit": "2026-11-12T23:11:55Z",
     "subjects": [
+     "games/0100C9C00E25C000: Mario Golf: Super Rush 4.0.0 plays on the Mac",
      "nvn/residency: res_add and res_remove queue their change; commits hold a lock of their own (PR #2379)",
      "gfx/cra: read the older layout of Camelot's archive, Mario Golf: Super Rush's (PR #2216)",
      "chain: move buffer image coordinates by the view's offset (PR #1399)",
      "nvn/upload: a staged upload from a large pool makes its second source buffer only when its batch changed (PR #2378)",
      "packing/nsp: a provisional profile's build row names every module it lists (PR #2215)",
      "gfx/dmsh_reflect: a SeparateSamplerId (handle type 2) sampler reads its raw ID from a uniform-buffer word (PR #2428)",
-     "nvn/stencil: send the back face's stencil reference to Metal (PR #2351)",
-     "vulkan: make 1D images one-row 2D textures (PR #1977)"
+     "nvn/stencil: send the back face's stencil reference to Metal (PR #2351)"
     ]
    }
   ]
@@ -1951,20 +1951,20 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-12T15:12:40Z",
+  "pushed_at": "2026-11-12T23:37:31Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T15:12:39Z",
+    "last_commit": "2026-11-12T23:37:29Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（204 个项目）",
      "chore: 自动同步 Star 地图（203 个项目）",
      "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（202 个项目）",
-     "chore: 自动同步 Star 地图（200 个项目）",
      "chore: 自动同步 Star 地图（200 个项目）"
     ]
    }
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-12T11:26:28Z",
+  "pushed_at": "2026-11-12T20:02:28Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T11:26:27Z",
+    "last_commit": "2026-11-12T20:02:27Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4127,21 +4127,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-12T17:01:57Z",
+  "pushed_at": "2026-11-13T01:17:01Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T17:01:39Z",
+    "last_commit": "2026-11-13T01:14:54Z",
     "subjects": [
-     "feat: MNG Launcher opens with the first built game chosen, and Start game is its one way to start",
-     "feat: a big green Start game at the top right of a game's card actions",
-     "test: the work folder default test follows update_runtime's one name for every game",
-     "fix: Switch 2 shader keys ignore the control words a game writes again",
-     "feat: Bananza and Pokopia have the express and fast updates",
-     "feat: MNG Launcher opens on the games, as cards with their own pictures, and its own icon",
-     "feat: the Launcher's pages show what the game uses, measure on request and find the built games in a second",
-     "feat: a diagnostic that dumps the shaders a Switch 2 game sets outside its game files"
+     "Merge remote-tracking branch 'origin/main' into claude/gfx-unify",
+     "fix(build): TOTK's graphics objects are rebuilt when an .inc file they include changes",
+     "fix: the work folder's source copy mirrors the checkout, so a file the checkout no longer has is not built",
+     "fix(build): TOTK's graphics objects are rebuilt when an .inc file they include changes",
+     "fix(gfx): a guest thread gives its virtual core back while the queue ordering replays on it",
+     "fix(gfx): a released command copy waits for the queued submissions that still read it",
+     "perf(gfx): storage aliasing is on by default only in Ocarina of Time",
+     "fix: the work folder's source copy mirrors the checkout, so a file the checkout no longer has is not built"
     ]
    }
   ]
@@ -9483,21 +9483,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-12T19:45:01Z",
+  "pushed_at": "2026-11-13T01:08:03Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T16:46:05Z",
+    "last_commit": "2026-11-12T23:16:12Z",
     "subjects": [
-     "Merge pull request #1219 from LNPANDY/docs/v1.4.0-release-notes",
-     "Merge pull request #1220 from LNPANDY/fix/smp-post-ring-and-joycon-main",
-     "Docs: drop unmerged #1214..#1217 from v1.4.0 notes and reference #1220",
-     "Fix post ring overwrite, paired Joy-Con haptics, and obsolete split toggle",
-     "Docs: update v1.4.0 release notes and changelogs through #1218",
-     "Merge pull request #1212 from LNPANDY/fix/rc4-ui-feedback",
-     "Merge pull request #1211 from LNPANDY/fix/batch-build-and-install-built",
-     "Launcher: drop redundant shader not-cached count and keep ETA visible"
+     "chore(release): prepare v1.5.0 (#1228)",
+     "fix(engine): inherit aliased virtual pool flags and bound sampler pool IDs (#1227)",
+     "chore(engine): sync upstream to 0c078130f6db (#1226)",
+     "Merge pull request #1217 from LNPANDY/feat/ios-hot-framework-load",
+     "Merge pull request #1216 from LNPANDY/feat/shared-ipa-repack-and-ext-msl",
+     "Merge pull request #1215 from LNPANDY/refactor/patch-slim-phase2",
+     "Merge pull request #1214 from LNPANDY/refactor/patch-slim-phase1",
+     "ShellHost & Launcher: hot-load signed game frameworks from Documents/Frameworks"
     ]
    }
   ]
@@ -10176,21 +10176,21 @@
   "branches": []
  },
  "Xc1Ym/LumaNX": {
-  "pushed_at": "2026-11-10T07:20:46Z",
+  "pushed_at": "2026-11-13T01:51:32Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T07:20:30Z",
+    "last_commit": "2026-11-13T01:51:29Z",
     "subjects": [
+     "Merge pull request #41 from Xc1Ym/codex/fix-nxnative-extract-sync-20261113",
+     "fix: tolerate nxnative extraction API updates",
      "Merge pull request #39 from Xc1Ym/codex/fix-switch2-controller-harness-20261110",
      "fix: cover Switch 2 services in native controller harness",
      "chore: prepare LumaNX 0.4.1 release",
      "Merge pull request #38 from Xc1Ym/codex/fix-nxnative-sync-controller-20261109",
      "fix: stub controller applet service in native input harness",
-     "chore: sync tested nxnative snapshot",
-     "chore: prepare LumaNX 0.4.0 release",
-     "Merge pull request #37 from Xc1Ym/codex/switch2-nup-runtime-20261106"
+     "chore: sync tested nxnative snapshot"
     ]
    }
   ]
@@ -11203,7 +11203,7 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-12T17:04:25Z",
+  "pushed_at": "2026-11-13T00:50:38Z",
   "branches": [
    {
     "branch": "master",
@@ -11564,21 +11564,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-12T17:17:39Z",
+  "pushed_at": "2026-11-12T20:07:39Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T06:26:31Z",
+    "last_commit": "2026-11-12T20:07:39Z",
     "subjects": [
+     "Merge pull request #98 from Xarishark/recomplauncher-support",
      "Merge pull request #111 from AksharDP/claude/fix-capture-folder-open",
      "Show the folder buttons as copy buttons where the shell cannot open folders. A process at low integrity gets ERROR_ACCESS_DENIED from ShellExecuteW, and on the machine where this was found the game runs at low integrity when it is started from under D:\\switch. plat_folder_can_open reads the process's integrity level; then the capture and log folder buttons say Copy capture folder path or Copy log folder path, copy the path to the clipboard and say Copied. Elsewhere they open the folder as before. The Linux comment now sits above its own function.",
      "Open folders on Windows with a path the shell parses. The game joins its folders with a slash, so the captures folder was ...\\build\\v301/captures, which the shell does not parse: Open capture folder opened nothing while plat_open_folder still reported success. plat_open_folder now normalises the path with GetFullPathNameW, which turns every separator into a backslash, so the log, mods and capture folders all open.",
      "Merge pull request #110 from AksharDP/claude/renderer-code-review-fe9933",
      "Copy a texel region that ends inside the last blocks of a compressed level with its extent cut at the level's edge, rather than refusing it: the game may give whole blocks of a small level (4x4 texels of a 2x2 one), which the storage path accepts by counting blocks.",
      "Present the whole image when the crop starts outside it: the clamp left a width or height of zero or less, and the blit took it as its extent.",
-     "Refuse a ReadTexels or WriteTexels region that leaves its level, its layers or its depth planes, or that names a multisampled image, instead of recording the copy: the region comes from the game, and such a copy is not valid Vulkan. The refusal is logged and a read returns zeros, as for the other texels that cannot be copied. The lists these copies and a pool's end allocate are checked too.",
-     "Leave the capture's page map alone when the heap shrinks and no capture runs: the next capture clears the map before it uses it, and the loop cleared one bit per decommitted page under the memory lock."
+     "Refuse a ReadTexels or WriteTexels region that leaves its level, its layers or its depth planes, or that names a multisampled image, instead of recording the copy: the region comes from the game, and such a copy is not valid Vulkan. The refusal is logged and a read returns zeros, as for the other texels that cannot be copied. The lists these copies and a pool's end allocate are checked too."
     ]
    }
   ]
@@ -11647,7 +11647,7 @@
   ]
  },
  "lliilliilliillii/d2r-mobile": {
-  "pushed_at": "2026-11-04T02:33:37Z",
+  "pushed_at": "2026-11-13T00:14:10Z",
   "branches": []
  },
  "dikoweii/d2r-mobile": {
@@ -11699,21 +11699,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-12T07:59:16Z",
+  "pushed_at": "2026-11-13T01:03:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T07:59:08Z",
+    "last_commit": "2026-11-13T01:00:10Z",
     "subjects": [
-     "docs(changelog): record the shared shader list refresh",
-     "feat(shaders): refresh applicable 1.4.3 shared variants",
-     "feat(runtime): pin effective clock for benchmark arms",
-     "feat(bench): flag restart quartets whose arms ran at different GPU clocks",
-     "fix(gfx): initialize the png crc table once",
-     "fix(test): restore android backend fixture build support",
-     "fix(test): avoid libc poll collision in pool finalization fixture",
-     "fix(bench): correct KGSL memory accounting"
+     "test(shader): omit unused Float64 capability from gather fixture",
+     "fix(shader): lower runtime gather offsets before SPIR-V emission",
+     "perf(companion): enable built-in display cover by default",
+     "docs(changelog): record one-primary experiment results",
+     "perf(vulkan): defer immediate section commands into slot arenas",
+     "test(gfx): cover lazy walker dynamic-state routing",
+     "perf(gfx): bypass section routing in recorder workers",
+     "test(gfx): account for random event-only statistics queries"
     ]
    }
   ]
@@ -11732,21 +11732,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-12T15:33:41Z",
+  "pushed_at": "2026-11-12T22:08:41Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T08:52:02Z",
+    "last_commit": "2026-11-12T20:55:30Z",
     "subjects": [
+     "Merge pull request #216 from simipoB/mali-probe",
+     "Mali: the multiply fix (FMZ) on by default for PanVK only; a white-screen probe",
      "Merge pull request #202 from simipoB/fix-fmz-overread",
      "Mali: multiply by zero (FMZ) no longer reads past a shader's end",
      "Merge pull request #192 from simipoB/mali-panvk-faux",
      "Merge pull request #191 from simipoB/mali-fmz-default",
      "Mali: suggest and verify faux123's PanVK on the CSF Malis (G610 / G615 / G710 / G720 / G925)",
-     "Mali: multiply by zero as on the Switch (FMZ) on by default",
-     "Merge pull request #182 from simipoB/log-ownership",
-     "Logs in Download: a file name this install may write (logs stayed days old after a reinstall)"
+     "Mali: multiply by zero as on the Switch (FMZ) on by default"
     ]
    }
   ]
@@ -11981,7 +11981,7 @@
   ]
  },
  "lucienlmy/d2r-mobile": {
-  "pushed_at": "2026-11-07T11:37:57Z",
+  "pushed_at": "2026-11-12T22:14:52Z",
   "branches": []
  },
  "Gu3hi/gushi-apps": {
@@ -12038,27 +12038,27 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-12T20:00:54Z",
+  "pushed_at": "2026-11-13T01:48:55Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T19:49:56Z",
+    "last_commit": "2026-11-13T01:32:20Z",
     "subjects": [
-     "Merge branch 'fix/dsh-ast-occurrences' into HEAD",
-     "翻译器：AST 传播改动登进 Ryujinx 补丁 series，重编 dmsh_xlate_bin、更新 dmsh_chain.lock",
-     "安卓新图形层：平台日志在调试入口开着时同时写进本局宿主日志文件",
-     "Merge remote-tracking branch 'origin/main' into fix/dsh-ast-occurrences",
-     "Merge commit '139ea80c4a9b1bb4b47413c5ca04c3b475210d21' into HEAD",
-     "Merge commit '429ee8517e424d0940f5bf1743c872f9886f6072' into HEAD",
-     "翻译器：AST 传播按出现次数算「只用一次」、传播到多处各处一份拷贝——修编批一支着色器 SPIR-V 指数膨胀（几十 GB）",
-     "Windows 装机：同一台手机第二次装时 plumesign 认不出已登记的设备（35），改成只签名再装（#800）"
+     "Merge branch 'feat/update-flow' into HEAD",
+     "Merge branch 'contrib/pr654-merged' into HEAD",
+     "Merge branch 'contrib/pr677' into HEAD",
+     "Merge branch 'contrib/pr666' into HEAD",
+     "合入外部 #654：安卓出包的资源包向上一个 release 取只读文件的硬链接",
+     "Merge commit 'bdf733dff281918bce32eae0d9f576fcf70f9da2' into HEAD",
+     "启动器更新流程：打开时只给最新一期（有新版弹窗 / 这版更新了什么 / 重要公告 / 消息）",
+     "Merge branch 'contrib/pr664' into HEAD"
     ]
    }
   ]
  },
  "neohob/d2r-mobile": {
-  "pushed_at": "2026-11-09T06:06:53Z",
+  "pushed_at": "2026-11-13T01:23:07Z",
   "branches": []
  },
  "Diablo-chia619/d2r-mobile-evidence": {
@@ -12111,21 +12111,21 @@
   ]
  },
  "jmars125/xc3-recomp": {
-  "pushed_at": "2026-11-12T19:49:22Z",
+  "pushed_at": "2026-11-13T00:31:44Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-12T17:18:53Z",
+    "last_commit": "2026-11-12T23:45:50Z",
     "subjects": [
+     "Merge pull request #28 from jmars125/task/deck-shadow-writeback",
+     "Merge pull request #62 from jmars125/task/amd-d24",
+     "Vertex streams are realigned only when an attribute's component size needs it. The first test build repacked every stride that was not a multiple of 4, including XC3's stride-10 tree meshes of 16-bit attributes, which AMD reads correctly as they are, and that drew black streaks through the canopy (#45). Attribute offsets past the stride move with a repacked stream, the first repacked layouts are logged, and XC3_VB_REALIGN=0/1 turns the realignment or the repack off for testing.",
+     "Merge remote-tracking branch 'origin/master' into task/deck-audio",
+     "Try PulseAudio before PipeWire for SDL audio on Linux.",
      "Merge pull request #59 from jmars125/task/perf-36",
      "Merge pull request #58 from jmars125/task/scene-corner",
-     "Merge pull request #53 from jmars125/task/dlaa-freeze",
-     "Compute fused multiply-add without the C library on builds without FMA.",
-     "Scale the 3D scene from the frame size each time the game applies the render scale, so it no longer shrinks into the top left corner after cutscenes.",
-     "Write the upscaler's result into the game's reconstruction target on the scaled path too.",
-     "Merge pull request #43 from jmars125/task/cpu-v2",
-     "Merge pull request #42 from jmars125/task/uw-menu"
+     "Merge pull request #53 from jmars125/task/dlaa-freeze"
     ]
    }
   ]
@@ -12403,27 +12403,27 @@
   ]
  },
  "STS78721/MKW-THWOMP": {
-  "pushed_at": "2026-11-12T10:07:54Z",
+  "pushed_at": "2026-11-12T23:02:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T10:07:50Z",
+    "last_commit": "2026-11-12T23:02:01Z",
     "subjects": [
+     "Crown City skinning diagnostics, handover notes, and pending runtime work",
      "README: new front page with highlights, status, quick start and how it works",
      "Fix phantom trees and blinking foliage: keep warp operations in place",
      "Fix phantom trees (base instance), full-res sparse terrain, BC7, diagnostics",
      "Foliage/texture pipeline fixes, integer-sampled textures, stability work",
      "Fix heap starvation: bind symbols in load order like rtld",
      "Fix black cacti: FMZ rewrite on every shader stage; Phase 1 diagnostics",
-     "Foliage pop-in Phase 0: repeatable scene, flicker detector, mesh count fix",
-     "Mario Kart World PC: standalone project"
+     "Foliage pop-in Phase 0: repeatable scene, flicker detector, mesh count fix"
     ]
    }
   ]
  },
  "Diablo-chia619/d2r-mobile": {
-  "pushed_at": "2026-11-12T17:12:37Z",
+  "pushed_at": "2026-11-13T01:37:00Z",
   "branches": [
    {
     "branch": "android/turnip-and-stick",
@@ -12447,6 +12447,23 @@
      "Android save-import: carry the chronicle sidecar and merge the Elysium list",
      "Android GPU driver: make the bundled Turnip actually load",
      "Android: runtime Vulkan driver selection (system / bundled Turnip via adrenotools)"
+    ]
+   },
+   {
+    "branch": "android-import-vault",
+    "ahead": 2,
+    "behind": 6,
+    "files": 7,
+    "real_files": 5,
+    "dirs": [
+     "dm/android",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-11-06T22:33:12Z",
+    "subjects": [
+     "Save import: bring back the Chronicle stash's items (#241)",
+     "Save import: a Settings-only save-import is accepted, and an import that fails halfway takes back what it added (#213 follow-ups)"
     ]
    },
    {
