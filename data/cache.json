@@ -1571,21 +1571,21 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-11-12T16:03:44Z",
+  "pushed_at": "2026-11-14T14:01:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T16:03:34Z",
+    "last_commit": "2026-11-14T14:01:17Z",
     "subjects": [
+     "Document unavailable community resources and reuse of existing Data",
+     "Document unavailable community resources and reuse of existing Data",
      "Allow reviewed diagnostic-only program generator update",
      "Use verified stable Filebase IPNS prepared input URLs",
      "Update Apple prepared input links after program regeneration",
      "Refresh prepared product revisions with regenerated programs",
      "Use a standalone minimal TV prepared input (#33)",
-     "Merge pull request #22 from jiayx/feat/tvos-build",
-     "Document verified experimental Apple TV release",
-     "Use verified recovered shader inputs for tvOS builds"
+     "Merge pull request #22 from jiayx/feat/tvos-build"
     ]
    }
   ]
@@ -1871,41 +1871,41 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-14T10:21:14Z",
+  "pushed_at": "2026-11-14T18:09:31Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T10:21:10Z",
+    "last_commit": "2026-11-14T18:09:18Z",
     "subjects": [
-     "host/time: the network clock reads the host's clock in every reader, so saves dated by it are no longer dated 1969 (PR #2359)",
-     "chain/translator: a stage that writes the viewport index keeps it in its compute records (PR #1018)",
-     "nvn/sparse: GPU writes into a sparse pool's textures reach the memory behind them, uploads gather it on the GPU, and copies name NVN's levels (issue #2350)",
-     "host/svc: SetHeapSize charges the used memory GetInfo reports, so a heap of total − used always fits; the NSP script no longer sets mem_used",
-     "chain/nvn: a storage buffer by address reads 0 past the memory bound there, as on the Switch (issue #2618)",
-     "game: Fast Fusion plays on Mac",
-     "chain/nvn2: map indexed compute texture handles to driver tables",
-     "chain/nvn2: decode subword task and mesh payload accesses"
+     "nvn/pso: an archive's libraries are read ahead of Metal's open, so a cold bundled archive opens 3-6x faster (PR #2657)",
+     "game: port Divinity Original Sin 2",
+     "packing/shaders: the shader step keys the translator by its bytes alone (PR #2496)",
+     "mac/pack_app: the game's large files in signed data bundles, so a pack that changes only the host signs in a second (PR #2673)",
+     "packing: the c1 and uniform extent tables reuse each shader's answer (PR #2682)",
+     "gfx/nvn: same-pass feedback takes a texture named by one uniform-buffer handle (PR #2528)",
+     "packing/shaders: key the shader step on the profile's shader inputs",
+     "packing/derive: keep the split's tables when only other files change"
     ]
    }
   ]
  },
  "ForceMind/Game2Mobile": {
-  "pushed_at": "2026-11-11T14:13:20Z",
+  "pushed_at": "2026-11-14T14:25:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-11T14:13:20Z",
+    "last_commit": "2026-11-14T14:25:36Z",
     "subjects": [
+     "Add read-only M1 toolchain doctor and local macOS engineering DMG",
      "Add native macOS SwiftUI M1 engineering operator and Apple tests",
      "Fix Darwin process cleanup and keep native test outputs out of M1 source checks",
      "Harden runtime boundaries and complete local build reliability tools",
      "Initialize NVN dirty tracking hooks once for concurrent pool registration",
      "Add atomic private M1 job progress and safe read-only operator status",
      "Fix Metal dirty-page pool cache identity and strengthen Apple race tests",
-     "Enforce safe NSO rewriting and test ARM64 encoding boundaries",
-     "Add boot diagnostics, build identity validation, and read-only operator CLI"
+     "Enforce safe NSO rewriting and test ARM64 encoding boundaries"
     ]
    }
   ]
@@ -1951,21 +1951,21 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-14T06:19:45Z",
+  "pushed_at": "2026-11-14T17:59:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T06:19:44Z",
+    "last_commit": "2026-11-14T17:59:13Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（204 个项目）",
-     "chore: 自动同步 Star 地图（203 个项目）",
-     "chore: 自动同步 Star 地图（202 个项目）"
+     "chore: 自动同步 Star 地图（203 个项目）"
     ]
    }
   ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-14T01:29:16Z",
+  "pushed_at": "2026-11-14T10:36:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T01:29:15Z",
+    "last_commit": "2026-11-14T10:36:46Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2057,7 +2057,7 @@
   "branches": []
  },
  "humfz2000-ai/d2r-mobile": {
-  "pushed_at": "2026-11-04T08:56:13Z",
+  "pushed_at": "2026-11-14T15:36:18Z",
   "branches": []
  },
  "zlinoliver/d2r-mobile": {
@@ -4127,21 +4127,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-14T09:23:50Z",
+  "pushed_at": "2026-11-14T12:07:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T09:23:40Z",
+    "last_commit": "2026-11-14T12:07:12Z",
     "subjects": [
+     "fix: release retired argument arenas held by shaders",
+     "fix: support confined pipeline builds and game monitoring",
      "chore: collect 53 shader variants and 6069 pipelines from web inbox",
      "fix: use pinned permissive UI reconstruction dependencies (after PR #608)",
      "feat: merge deterministic UI texture pack tools (PR #608)",
      "test: verify scaled texture copy pixels on Metal 4 (after PR #2160)",
      "fix: merge scaled texture copies (PR #2160)",
-     "fix: preserve screenshot crop and complete failed captures (after PR #2168)",
-     "fix: merge native game-frame screenshots (PR #2168)",
-     "fix: integrate native port packaging and updates (after PR #2144 and #2176)"
+     "fix: preserve screenshot crop and complete failed captures (after PR #2168)"
     ]
    }
   ]
@@ -9443,21 +9443,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-11-14T06:16:09Z",
+  "pushed_at": "2026-11-14T15:57:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T06:03:17Z",
+    "last_commit": "2026-11-14T15:43:15Z",
     "subjects": [
-     "Base to e19bcd69: 121 upstream commits, the residency commit among them",
-     "nvn_mtl.m, nvn_rec.h: residency changes queue; the commit holds a lock of its own",
-     "nvn_mtl.m: a stride does not lengthen a chunk it borrowed from an earlier stride",
-     "nvn_mtl.m: a large pool reuses a chunk that already reaches past this stride",
-     "nvn_mtl.m: the memory readout says how the residency set is spent, by kind",
-     "Revert the mesh-library counter: a local check, not something the repository carries",
-     "check_mesh_libs: count a package's mesh libraries, the thing issue #14 came down to",
-     "Base to 034e91a8: 68 upstream commits, the NVN resource owner and conditional rendering for every game"
+     "Base to ce370e12: 15 upstream commits, the render-target reclaim and the storage bound among them",
+     "nvn_mtl.m: the upload keeps borrowing a temporary; fa3e5db made the black block permanent",
+     "nvn_mtl.m: an upload borrows a temporary only while that stride is not resident",
+     "nvn_mtl.m: S2Arm's pool model taken whole - 4 MB windows over a 2 MB stride, every pool over 4 MB windowed, plus what its probes measure",
+     "nvn_mtl.m: the 4 MB window over a 2 MB stride, the file this time",
+     "nvn_mtl.m: a large pool's windows and stride take S2Arm's sizes, 4 MB over 2 MB",
+     "nvn_mtl.m: DM_NVN_POOL_WIN sets how far past an address a lookup that does not say how far it reads reaches",
+     "Base to e19bcd69: 121 upstream commits, the residency commit among them"
     ]
    }
   ]
@@ -9483,21 +9483,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-14T10:28:18Z",
+  "pushed_at": "2026-11-14T17:34:09Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T10:03:34Z",
+    "last_commit": "2026-11-14T15:00:52Z",
     "subjects": [
-     "feat(ios): allow mixing game audio with other apps via DM_AUDIO_MIX (#1300)",
-     "docs: record Fire Emblem Fortune's Weave verified on iPhone 18 Pro Max (#1143) (#1278)",
-     "feat(ios): claim loose RomFS images in Documents by identity (#1229)",
-     "chore(release): prepare v1.5.0 (#1228)",
-     "fix(engine): inherit aliased virtual pool flags and bound sampler pool IDs (#1227)",
-     "chore(engine): sync upstream to 0c078130f6db (#1226)",
-     "Merge pull request #1217 from LNPANDY/feat/ios-hot-framework-load",
-     "Merge pull request #1216 from LNPANDY/feat/shared-ipa-repack-and-ext-msl"
+     "chore(engine): sync upstream to 5a4e23a2e952 (#1312)",
+     "Console mode: Build or Add to queue on the page of a game that is not built (#1111) (#1292)",
+     "Console mode: a click selects a tile first, and the wheel moves between rows (#1104) (#1289)",
+     "Settings: choose the display a game opens on (#1092) (#1283)",
+     "Qt: deleting a game takes it out of the shared iPhone app (#1221) (#1253)",
+     "Launcher: a failed build notifies again, and in front too (#1100)",
+     "Qt: Copy diagnostics names each dependency (#1183) (#1249)",
+     "Merge pull request #1296 from LNPANDY/feat/fast-refresh-build-cache"
     ]
    }
   ]
@@ -10452,21 +10452,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-14T03:22:36Z",
+  "pushed_at": "2026-11-14T16:37:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T03:18:34Z",
+    "last_commit": "2026-11-14T16:04:02Z",
     "subjects": [
+     "Background: the game stops at its present while the app is away, a save in progress finished first",
+     "Thermal cap: 60 (or 40 / 45) fps drop to 30 while Android says the phone is too hot, back after 30 s cool",
+     "Ports from TOTKDroid: global memory merged before the pass (gres_premerge), TMML's LOD as unsigned 24.8",
+     "Vibration: the game's rumble on a controller's motors, or the phone's own motor (Controls > Vibration)",
+     "Log: the first line names the build and the phone (version, versionCode, model, Android)",
+     "Start screen: a banner above the version, put up or taken down from banner/banner.json in main, without a release",
      "RADV (Xclipse): the game's memory never through the exported file - SIGBUS at its first access (#234 #383 #387)",
-     "Unlocked aspect on screens narrower than 16:9 (4:3, 16:10): the 16:9 image with bars above and below, not squeezed",
-     "CLAUDE.md: model routing for subagents",
-     "Low RAM (4 GB): ~5 -> ~11 fps on a Galaxy Tab A9+, no low-memory kills; the missing ground and the menus' flickering letters fixed",
-     "README: the week's notice removed (ended on November 13, 0.4.0 is out)",
-     "0.4.0-beta instead of 0.3.5 (frame generation and the new overlay): versionName, README",
-     "Motion: LARECOMP_PAD_GYRO=a,b,c reorders a controller's sensor axes (driver variables, no build), and the log names the controller and its SDL path (#338)",
-     "Touch controls: the up / down arrows with the camera rune selected, for its zoom (#202)"
+     "Unlocked aspect on screens narrower than 16:9 (4:3, 16:10): the 16:9 image with bars above and below, not squeezed"
     ]
    }
   ]
@@ -10542,21 +10542,21 @@
   ]
  },
  "gt-del/d2r-build-tmp": {
-  "pushed_at": "2026-10-28T11:07:55Z",
+  "pushed_at": "2026-11-14T06:30:58Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-10-23T01:43:27Z",
+    "last_commit": "2026-11-12T16:03:34Z",
     "subjects": [
-     "Support compatible Apple prepared inputs for upstream 2.0",
-     "Clarify the complete Mac resource folder required at startup",
-     "Reuse verified prepared inputs with compatible upstream generator updates",
-     "Show the iOS resource and Legacy folder layout",
-     "Package Mac apps without separate resource metadata",
-     "Simplify Mac setup with the complete Data resource archive",
-     "Refresh Mac build duration from the completed prepared-input build",
-     "Point Mac build inputs to the repaired prepared directory"
+     "Allow reviewed diagnostic-only program generator update",
+     "Use verified stable Filebase IPNS prepared input URLs",
+     "Update Apple prepared input links after program regeneration",
+     "Refresh prepared product revisions with regenerated programs",
+     "Use a standalone minimal TV prepared input (#33)",
+     "Merge pull request #22 from jiayx/feat/tvos-build",
+     "Document verified experimental Apple TV release",
+     "Use verified recovered shader inputs for tvOS builds"
     ]
    }
   ]
@@ -10668,7 +10668,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-14T10:10:59Z",
+  "pushed_at": "2026-11-14T17:05:24Z",
   "branches": [
    {
     "branch": "main",
@@ -11732,21 +11732,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-14T04:29:53Z",
+  "pushed_at": "2026-11-14T17:18:10Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T03:58:10Z",
+    "last_commit": "2026-11-14T16:05:34Z",
     "subjects": [
-     "Merge pull request #243 from simipoB/pool-reuse-check",
-     "Colour: Natural / Vibrant / Cinematic, graded in the upscaler's last shader (☰ -> Colour)",
-     "Upscaling: AMD FidelityFX Super Resolution 1 built in (☰ -> Upscaling -> FSR)",
-     "Layout editor: Back saves and leaves it; the layout is saved at every lift (Galar #200)",
-     "Mali test: R11G11B10F drawn and sampled as RGBA16F (DM_VK_B10_AS_RGBA16, the menu's Mali tests)",
-     "PowerVR: pipelines whose render pass has an unused colour slot are made without the pipeline cache",
-     "MapPhysicalMemory over a GPU driver mapping: made writable piece by piece instead of stopping (PowerVR, Arceus #22)",
-     "Pools: a freed pool's GPU memory is checked before reuse (SIGSEGV in memcpy after 80 min on Turnip, #240)"
+     "Merge pull request #260 from simipoB/release-085",
+     "Merge remote-tracking branch 'origin/fmz-per-instruction' into release-085",
+     "Back to v0.82's shader translation (chain bebeadf4ac3b): text was missing in v0.83",
+     "Merge pull request #259 from simipoB/release-083",
+     "Merge branch 'pr218' into release-083",
+     "Merge pull request #258 from simipoB/release-083",
+     "Merge remote-tracking branch 'origin/fmz-per-instruction' into release-083",
+     "Merge branch 'pr197' into release-083"
     ]
    }
   ]
@@ -12038,21 +12038,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-14T10:31:14Z",
+  "pushed_at": "2026-11-14T18:07:07Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T10:27:33Z",
+    "last_commit": "2026-11-14T17:59:46Z",
     "subjects": [
-     "Merge commit 'd0fbd7f0cbd0c5bf12c5fe7ab10972a846302b02' into HEAD",
-     "Merge branch 'fix/ccshim-atomic-link' into HEAD",
-     "编译缓存替身链接：已指对就不重建，要改也先建临时链接再原子覆盖（门禁同树并行几步都 source cc_cache.sh，ln -sfn 先删后建那一瞬别的步找不到 clang）",
-     "Merge branch 'fix/av1-skip-frameless-packet' into HEAD",
-     "Merge branch 'contrib/pr974-batch' into HEAD",
-     "Merge branch 'fix/pr983-reserved-samplers' into HEAD",
-     "fix(diag): game.title_id 只认导出请求带的游戏号，不再拿最近任务猜",
-     "fix(diag): Mac / Windows 诊断包 manifest 写 game.title_id，报告级程序号不再是「-」"
+     "Merge commit '6d2f4007a' into HEAD",
+     "Merge commit '4a5a6cab7ba76d87f8faa1e3a4c3e81d6ae6204e' into HEAD",
+     "Merge commit '61543ddae' into HEAD",
+     "Merge commit '867dfe28b' into HEAD",
+     "Merge commit 'a77369ff1' into HEAD",
+     "Merge commit '6cb1f7ae8dab69a546f438495e3279bf273b8dab' into HEAD",
+     "Merge commit '4dc0cae71' into HEAD",
+     "Merge commit '207987a288c24c30bc8e471352308f6e803d159b' into HEAD"
     ]
    }
   ]
@@ -12146,21 +12146,21 @@
   ]
  },
  "adi0900/GreenKid-MV": {
-  "pushed_at": "2026-11-10T14:06:14Z",
+  "pushed_at": "2026-11-14T15:30:30Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T14:05:55Z",
+    "last_commit": "2026-11-14T15:30:30Z",
     "subjects": [
+     "Merge pull request #6 from LeoGeneret/patch-1",
+     "Revise GreenKid-MV installation steps order in README",
      "GreenKid-MV 0.3.0-preview: version, README and credits for the release",
      "GreenKid-MV icon: the green hat, in the README header and as the builder app's icon",
      "GreenKid-MV 0.2.1-preview: engine moved to upstream nxnative main ab41d6a1 (issue #1)",
      "README: link the 0.2.0-preview download and update status and credits",
      "GreenKid-MV 0.2.0-preview: engine moved to upstream nxnative main with Ocarina of Time fixes",
-     "README: step-by-step setup, build, play and troubleshooting",
-     "Package the Mac ZIP without macOS metadata entries",
-     "Add GreenKid-MV 0.1.0-preview source"
+     "README: step-by-step setup, build, play and troubleshooting"
     ]
    }
   ]
@@ -12210,21 +12210,21 @@
   ]
  },
  "Desm0nt/torchlight2-port": {
-  "pushed_at": "2026-11-13T19:27:11Z",
+  "pushed_at": "2026-11-14T16:56:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T19:26:42Z",
+    "last_commit": "2026-11-14T16:56:25Z",
     "subjects": [
+     "gfx: fix memo key gen for non-dynamic driver blocks (DRIVER0=buf_gen, DRIVER2=tex_gen)",
      "v0.1.2: local multiplayer over Wi-Fi (the game's local wireless play via Pia over nn::ldn, carried over the LAN)",
      "Launcher icon: redrawn Torchlight II Mobile art (night, moon, title with a MOBILE plaque, new hero line-up; generated, no game artwork)",
      "setup: patch check no longer runs out of memory (issue #1)",
      "TL2_PORT.md: weapon swap button verified on the device",
      "v0.1.1: mods override the game's files (mod packs listed first, later mods win), mod manager in the pause menu with a restart offer, weapon swap button (d-pad left), character-creation spinner taps + gender guard, touch overlay redraws only on change, idle job workers back off",
      "README: screenshots (title, main menu, Temple Steppes, combat, inventory, stats, pause menu, mod manager)",
-     "README: handheld mode not tested yet; PC mods experimental, which kinds of mods cannot work",
-     ".gitignore: the TL2 launcher icon is tracked now (original artwork, no longer the game's icon)"
+     "README: handheld mode not tested yet; PC mods experimental, which kinds of mods cannot work"
     ]
    }
   ]
@@ -12425,7 +12425,7 @@
   ]
  },
  "Diablo-chia619/d2r-mobile": {
-  "pushed_at": "2026-11-13T21:27:13Z",
+  "pushed_at": "2026-11-14T16:19:21Z",
   "branches": [
    {
     "branch": "ammo-2.3.1",
@@ -12529,6 +12529,31 @@
      "README: fork enhancement list at the top (bilingual, updated with every new feature)",
      "Pouch: rejuvenation potions join the pouch (belt-full pickup, tap the icon to refill the belt)",
      "Skill buttons: the ammo count now covers every quiver in the backpack"
+    ]
+   },
+   {
+    "branch": "runeup",
+    "ahead": 29,
+    "behind": 0,
+    "files": 34,
+    "real_files": 30,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios"
+    ],
+    "last_commit": "2026-11-14T16:19:18Z",
+    "subjects": [
+     "符文合成取料链修通：成叠用原版 0x39d724 取 1 件到光标（0x19 对页4无效）；st2 改为背包按 id 找（成叠取件落背包不落光标，原来只等光标→只进2个就超时）；3bdb10 输出缓冲加大到 u64[4]；rc_pump 控件树虚表校验 + 合成途中面板关闭立刻中止（2.3.0 起点空白即关面板，关后面板后摸物品链表会崩进程）",
+     "符文合成：两列排版（每列16行、行高84）；按钮改 140x44 修正 250x38 塞 3:1 原图导致叠成一团；列表数量改递归展开（目标号自身不卡瓶颈，0 颗现货也能合）",
+     "符文合成修三个坑：make_plan 补 build_cls_cache（列表能合、点了说缺料）；去掉 ButtonWidget 的 scale（32 行坐标被压成一团）；行按钮换原版 FrontEnd_ButtonSmall（九宫格边角太薄字透出来）；按钮 841/1121 200x80、弹框 1189/29 575x1457",
+     "符文合成列表：按逐层缺口算（现货能抵下层需求），20# 这类「手上已有两颗 19#」的号不再被误判为合不了",
+     "符文合成：弹框往右(760)、按钮缩小上移(938,1252,210x62)、去掉关闭按钮；数量改按整条链展开算，和 make_plan 判定一致（13# 说没料的问题）",
+     "符文合成弹框：页脚按钮点开，12 行「N# ×数量」+ 合成按钮，点行合一个（ours 白名单加 TouchRc*）；文案 dmRcMake/dmRcClose",
+     "符文合成按钮：储藏箱页脚（金币框右边）加 TouchRuneCraft，点击列出每号还能合几个；布局生成链路打通（DM_DESWIZZLE_LIB=03/bl.dll）",
+     "回退：服务端队列里的紫瓶检查（物品 id 失效时读物品码崩在 dm_pouch_srv_tick+0x1eb0）；拆掉符文页点空格入口，改用按钮"
     ]
    },
    {
