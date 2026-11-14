@@ -346,20 +346,20 @@
   ]
  },
  "n1zjqo/d2r-mobile": {
-  "pushed_at": "2026-11-13T02:45:30Z",
+  "pushed_at": "2026-11-14T03:25:20Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 16,
+    "ahead": 17,
     "behind": 0,
     "files": 1,
     "real_files": 0,
     "dirs": [],
-    "last_commit": "2026-11-13T02:45:22Z",
+    "last_commit": "2026-11-14T03:25:12Z",
     "subjects": [
+     "Merge upstream v2.3.2 into main, preserving fork changes",
      "Merge upstream v2.3.1 into main, preserving fork changes",
      "Merge upstream v2.3.0 into main, preserving fork changes",
-     "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
@@ -861,12 +861,12 @@
   "branches": []
  },
  "klacee/d2r-mobile": {
-  "pushed_at": "2026-11-13T10:29:03Z",
+  "pushed_at": "2026-11-14T09:47:05Z",
   "branches": [
    {
     "branch": "main",
     "ahead": 2,
-    "behind": 103,
+    "behind": 104,
     "files": 1,
     "real_files": 0,
     "dirs": [],
@@ -1299,7 +1299,7 @@
   "branches": []
  },
  "1lifedo1thing/d2r-mobile": {
-  "pushed_at": "2026-11-13T11:06:00Z",
+  "pushed_at": "2026-11-14T10:32:40Z",
   "branches": []
  },
  "lcr1017/d2r-mobile": {
@@ -1422,7 +1422,7 @@
   "branches": []
  },
  "MichaelC001/d2r-mobile": {
-  "pushed_at": "2026-11-13T02:31:26Z",
+  "pushed_at": "2026-11-14T02:31:24Z",
   "branches": []
  },
  "tinytub/d2r-mobile": {
@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-13T06:10:58Z",
+  "pushed_at": "2026-11-14T05:56:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T06:10:57Z",
+    "last_commit": "2026-11-14T05:55:59Z",
     "subjects": [
+     "radar 2026-11-14",
      "radar 2026-11-13",
      "radar 2026-11-12",
      "radar 2026-11-11",
      "radar 2026-11-10",
      "radar 2026-11-09",
      "radar 2026-11-08",
-     "radar 2026-11-07",
-     "radar 2026-11-06"
+     "radar 2026-11-07"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-13T20:22:20Z",
+  "pushed_at": "2026-11-14T10:21:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T20:21:26Z",
+    "last_commit": "2026-11-14T10:21:10Z",
     "subjects": [
-     "gfx/nvn: an acquire thread declares on its own and is retired (PR #2137)",
-     "gfx/nvn: replay and encode threads declare the frame deadline (PR #2569)",
-     "gfx/nvn: a frame fits the shorter hold while the hold's mean does (PR #2367)",
-     "gfx/nvn: a submission's commit reads only the storage-write pages it noted, not all 16,384 slots",
-     "gfx/nvn: float colours go into normalized targets rounded as NVIDIA's colour unit rounds them",
-     "docs: PR #1541's in-place read was ordered in games by the frame's last encoder",
-     "gfx/nvn: a lent command memory segment is freed when its list is written over, not when memory over it is granted",
-     "host/fs: rename's rollback calls save_txn_from_path directly"
+     "host/time: the network clock reads the host's clock in every reader, so saves dated by it are no longer dated 1969 (PR #2359)",
+     "chain/translator: a stage that writes the viewport index keeps it in its compute records (PR #1018)",
+     "nvn/sparse: GPU writes into a sparse pool's textures reach the memory behind them, uploads gather it on the GPU, and copies name NVN's levels (issue #2350)",
+     "host/svc: SetHeapSize charges the used memory GetInfo reports, so a heap of total − used always fits; the NSP script no longer sets mem_used",
+     "chain/nvn: a storage buffer by address reads 0 past the memory bound there, as on the Switch (issue #2618)",
+     "game: Fast Fusion plays on Mac",
+     "chain/nvn2: map indexed compute texture handles to driver tables",
+     "chain/nvn2: decode subword task and mesh payload accesses"
     ]
    }
   ]
@@ -1951,20 +1951,20 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-13T19:40:04Z",
+  "pushed_at": "2026-11-14T06:19:45Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T19:40:03Z",
+    "last_commit": "2026-11-14T06:19:44Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（204 个项目）",
      "chore: 自动同步 Star 地图（203 个项目）",
-     "chore: 自动同步 Star 地图（202 个项目）",
      "chore: 自动同步 Star 地图（202 个项目）"
     ]
    }
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-13T19:49:57Z",
+  "pushed_at": "2026-11-14T01:29:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T19:49:56Z",
+    "last_commit": "2026-11-14T01:29:15Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2069,7 +2069,7 @@
   "branches": []
  },
  "hyhou/d2r-mobile": {
-  "pushed_at": "2026-11-13T02:20:27Z",
+  "pushed_at": "2026-11-14T02:10:29Z",
   "branches": []
  },
  "austery/d2r-mobile": {
@@ -4127,21 +4127,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-14T01:27:42Z",
+  "pushed_at": "2026-11-14T09:23:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T01:25:37Z",
+    "last_commit": "2026-11-14T09:23:40Z",
     "subjects": [
-     "fix: separate local Launcher builds from private release signing",
-     "feat: distribute a portable MNG Launcher through GitHub Releases",
-     "fix: update OOT shader builds and runtime cache handling",
-     "feat(oot): quick build with only the title's shaders (OOT_SHADERS=title)",
-     "feat(oot): title rows recorded (TOTK_PSO_CAPTURE) and marked in the shared list",
-     "test(oot): the build and its opening overlay run no ffmpeg (the #2070 check outlived ffmpeg)",
-     "refactor: the settings panel has no Update page; apps update through MNG Launcher",
-     "test: the one-folder plan test checks the folder, the OOT build checks stay in their own test"
+     "chore: collect 53 shader variants and 6069 pipelines from web inbox",
+     "fix: use pinned permissive UI reconstruction dependencies (after PR #608)",
+     "feat: merge deterministic UI texture pack tools (PR #608)",
+     "test: verify scaled texture copy pixels on Metal 4 (after PR #2160)",
+     "fix: merge scaled texture copies (PR #2160)",
+     "fix: preserve screenshot crop and complete failed captures (after PR #2168)",
+     "fix: merge native game-frame screenshots (PR #2168)",
+     "fix: integrate native port packaging and updates (after PR #2144 and #2176)"
     ]
    }
   ]
@@ -7736,21 +7736,21 @@
   ]
  },
  "iceorange-dev/manosaba-ios": {
-  "pushed_at": "2026-11-10T20:28:49Z",
+  "pushed_at": "2026-11-14T10:19:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T20:28:47Z",
+    "last_commit": "2026-11-14T10:19:31Z",
     "subjects": [
+     "t_crash_stderr: the counted control the same on every machine (CI red in 28 of the last 40 runs)",
      "Docs: the plan as two short files, one record a finished item; DEVELOPMENT.md without its log",
      "Plan batch 194: a shrine across the game's resolution steps, nothing flashes (305); manosaba's memory with the rewrites on and off (219)",
      "Plan: manosaba's pass rewrites measured on the map save too; left on (219)",
      "Plan: what the pass rewrites give manosaba now (219)",
      "Plan batch 193: manosaba's validity ledger off by default (280's finding)",
      "Plan batch 192: the registries' header, the LOD bias variants a translation unit (264)",
-     "Plan batch 191: a uniform block's pool looked up only when needed; the translation thread profiled again (271)",
-     "Plan batch 190: the on-screen statistics after discarded presents; the Mac's window checks (71b, 53, 123)"
+     "Plan batch 191: a uniform block's pool looked up only when needed; the translation thread profiled again (271)"
     ]
    }
   ]
@@ -9443,21 +9443,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-11-13T12:28:32Z",
+  "pushed_at": "2026-11-14T06:16:09Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T12:28:26Z",
+    "last_commit": "2026-11-14T06:03:17Z",
     "subjects": [
+     "Base to e19bcd69: 121 upstream commits, the residency commit among them",
      "nvn_mtl.m, nvn_rec.h: residency changes queue; the commit holds a lock of its own",
      "nvn_mtl.m: a stride does not lengthen a chunk it borrowed from an earlier stride",
      "nvn_mtl.m: a large pool reuses a chunk that already reaches past this stride",
      "nvn_mtl.m: the memory readout says how the residency set is spent, by kind",
      "Revert the mesh-library counter: a local check, not something the repository carries",
      "check_mesh_libs: count a package's mesh libraries, the thing issue #14 came down to",
-     "Base to 034e91a8: 68 upstream commits, the NVN resource owner and conditional rendering for every game",
-     "docs: the library's new layout, for the release page to show"
+     "Base to 034e91a8: 68 upstream commits, the NVN resource owner and conditional rendering for every game"
     ]
    }
   ]
@@ -9483,21 +9483,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-13T20:59:42Z",
+  "pushed_at": "2026-11-14T10:28:18Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T14:19:51Z",
+    "last_commit": "2026-11-14T10:03:34Z",
     "subjects": [
+     "feat(ios): allow mixing game audio with other apps via DM_AUDIO_MIX (#1300)",
+     "docs: record Fire Emblem Fortune's Weave verified on iPhone 18 Pro Max (#1143) (#1278)",
      "feat(ios): claim loose RomFS images in Documents by identity (#1229)",
      "chore(release): prepare v1.5.0 (#1228)",
      "fix(engine): inherit aliased virtual pool flags and bound sampler pool IDs (#1227)",
      "chore(engine): sync upstream to 0c078130f6db (#1226)",
      "Merge pull request #1217 from LNPANDY/feat/ios-hot-framework-load",
-     "Merge pull request #1216 from LNPANDY/feat/shared-ipa-repack-and-ext-msl",
-     "Merge pull request #1215 from LNPANDY/refactor/patch-slim-phase2",
-     "Merge pull request #1214 from LNPANDY/refactor/patch-slim-phase1"
+     "Merge pull request #1216 from LNPANDY/feat/shared-ipa-repack-and-ext-msl"
     ]
    }
   ]
@@ -10361,12 +10361,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-11-13T06:28:52Z",
+  "pushed_at": "2026-11-14T09:06:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T06:28:50Z",
+    "last_commit": "2026-11-14T09:05:59Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10452,21 +10452,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-13T18:05:01Z",
+  "pushed_at": "2026-11-14T03:22:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T18:04:59Z",
+    "last_commit": "2026-11-14T03:18:34Z",
     "subjects": [
+     "RADV (Xclipse): the game's memory never through the exported file - SIGBUS at its first access (#234 #383 #387)",
+     "Unlocked aspect on screens narrower than 16:9 (4:3, 16:10): the 16:9 image with bars above and below, not squeezed",
+     "CLAUDE.md: model routing for subagents",
+     "Low RAM (4 GB): ~5 -> ~11 fps on a Galaxy Tab A9+, no low-memory kills; the missing ground and the menus' flickering letters fixed",
      "README: the week's notice removed (ended on November 13, 0.4.0 is out)",
      "0.4.0-beta instead of 0.3.5 (frame generation and the new overlay): versionName, README",
      "Motion: LARECOMP_PAD_GYRO=a,b,c reorders a controller's sensor axes (driver variables, no build), and the log names the controller and its SDL path (#338)",
-     "Touch controls: the up / down arrows with the camera rune selected, for its zoom (#202)",
-     "Unlocked aspect: the map fills the screen again (its frame's bars passed for the scope's, #349); a message box in the middle keeps its rounded ends (#304)",
-     "0.3.5-beta (versionCode 39): README links and status line",
-     "Crash report installed when the guest window is set up, before Vulkan starts: a custom driver (RADV on an Xclipse, #234 #345 #383) crashed in the first frames and the log just stopped",
-     "Frame pacing: back from a slower interval once a frame's work fits the faster one for 2 s (#339 #374)"
+     "Touch controls: the up / down arrows with the camera rune selected, for its zoom (#202)"
     ]
    }
   ]
@@ -10668,7 +10668,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-13T15:08:27Z",
+  "pushed_at": "2026-11-14T10:10:59Z",
   "branches": [
    {
     "branch": "main",
@@ -11203,7 +11203,7 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-13T09:46:57Z",
+  "pushed_at": "2026-11-14T07:02:11Z",
   "branches": [
    {
     "branch": "master",
@@ -11564,21 +11564,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-14T01:17:47Z",
+  "pushed_at": "2026-11-14T09:00:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T01:10:18Z",
+    "last_commit": "2026-11-14T08:46:31Z",
     "subjects": [
-     "Merge pull request #114 from AksharDP/claude/renderer-review-verify-c88587",
-     "Check in a probe submission that an alias copies the newest GPU write of its storage range",
-     "Clear the staging setting in the cfg probe before it checks the default",
-     "Take an alias copy from the candidate with the newest GPU write",
-     "Compare mip levels and layers before an alias copies another texture",
-     "Register XC2_STG_LAZY in the settings table so an integrated GPU does not hit a fatal lookup",
-     "Hash the blend and alpha state before the dump entry lookup and list every bound target",
-     "Bound the probe pair walk by the pair count and check indirect draws against the hit pair"
+     "Merge pull request #124 from AksharDP/claude/feedback-path-perf-plan-7e2768",
+     "Give the 8, 12 and 16 byte colour formats their real texel size",
+     "Merge main into the feedback path branch",
+     "Merge pull request #125 from AksharDP/t3/perf-copy-pool-o2",
+     "Merge pull request #122 from AksharDP/t3/perf-bottlenecks-fps-lows",
+     "Count every sampled slot of a copied image as covered by its copy",
+     "Keep one copy per source image in the feedback snapshot",
+     "Merge pull request #126 from AksharDP/claude/alias-write-back-gap"
     ]
    }
   ]
@@ -11679,7 +11679,7 @@
   ]
  },
  "cheemu21/plumber-racer-2": {
-  "pushed_at": "2026-11-04T09:53:46Z",
+  "pushed_at": "2026-11-14T08:35:00Z",
   "branches": [
    {
     "branch": "main",
@@ -11732,21 +11732,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-13T22:27:33Z",
+  "pushed_at": "2026-11-14T04:29:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T20:55:30Z",
+    "last_commit": "2026-11-14T03:58:10Z",
     "subjects": [
-     "Merge pull request #216 from simipoB/mali-probe",
-     "Mali: the multiply fix (FMZ) on by default for PanVK only; a white-screen probe",
-     "Merge pull request #202 from simipoB/fix-fmz-overread",
-     "Mali: multiply by zero (FMZ) no longer reads past a shader's end",
-     "Merge pull request #192 from simipoB/mali-panvk-faux",
-     "Merge pull request #191 from simipoB/mali-fmz-default",
-     "Mali: suggest and verify faux123's PanVK on the CSF Malis (G610 / G615 / G710 / G720 / G925)",
-     "Mali: multiply by zero as on the Switch (FMZ) on by default"
+     "Merge pull request #243 from simipoB/pool-reuse-check",
+     "Colour: Natural / Vibrant / Cinematic, graded in the upscaler's last shader (☰ -> Colour)",
+     "Upscaling: AMD FidelityFX Super Resolution 1 built in (☰ -> Upscaling -> FSR)",
+     "Layout editor: Back saves and leaves it; the layout is saved at every lift (Galar #200)",
+     "Mali test: R11G11B10F drawn and sampled as RGBA16F (DM_VK_B10_AS_RGBA16, the menu's Mali tests)",
+     "PowerVR: pipelines whose render pass has an unused colour slot are made without the pipeline cache",
+     "MapPhysicalMemory over a GPU driver mapping: made writable piece by piece instead of stopping (PowerVR, Arceus #22)",
+     "Pools: a freed pool's GPU memory is checked before reuse (SIGSEGV in memcpy after 80 min on Turnip, #240)"
     ]
    }
   ]
@@ -12038,21 +12038,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-14T01:27:31Z",
+  "pushed_at": "2026-11-14T10:31:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T01:13:59Z",
+    "last_commit": "2026-11-14T10:27:33Z",
     "subjects": [
-     "Merge branch 'android/no-gate-3' into HEAD",
-     "Merge remote-tracking branch 'pr/960' into contrib/pr960",
-     "不堵门（九）用例：exit_order 夹具的 GameActivity 替身补 SWITCH_EXTRA",
-     "不堵门（九）：一款游戏在跑时点另一款，改为确认「结束它（照常保存）并启动另一款」，不再报 launch refused；同一款还在启动时等它，不报错",
-     "Merge branch 'contrib/pr958-merged' into HEAD",
-     "docs(坑记录): GPU 写记账逐 GOB 读没写过的渲染目标存储的缺页与做法（#674）",
-     "test(nvn): GPU 写记账不读没碰过的页，陈旧判定不变（#674）",
-     "perf(nvn): GPU 写记账取 GOB 哈希时不读游戏没碰过的页（#674）"
+     "Merge commit 'd0fbd7f0cbd0c5bf12c5fe7ab10972a846302b02' into HEAD",
+     "Merge branch 'fix/ccshim-atomic-link' into HEAD",
+     "编译缓存替身链接：已指对就不重建，要改也先建临时链接再原子覆盖（门禁同树并行几步都 source cc_cache.sh，ln -sfn 先删后建那一瞬别的步找不到 clang）",
+     "Merge branch 'fix/av1-skip-frameless-packet' into HEAD",
+     "Merge branch 'contrib/pr974-batch' into HEAD",
+     "Merge branch 'fix/pr983-reserved-samplers' into HEAD",
+     "fix(diag): game.title_id 只认导出请求带的游戏号，不再拿最近任务猜",
+     "fix(diag): Mac / Windows 诊断包 manifest 写 game.title_id，报告级程序号不再是「-」"
     ]
    }
   ]
@@ -12113,21 +12113,21 @@
   ]
  },
  "jmars125/xc3-recomp": {
-  "pushed_at": "2026-11-13T07:43:15Z",
+  "pushed_at": "2026-11-14T03:15:01Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-12T23:45:50Z",
+    "last_commit": "2026-11-14T01:30:09Z",
     "subjects": [
+     "Merge pull request #73 from jmars125/task/scene69",
+     "Merge pull request #70 from jmars125/task/uw-fade",
+     "Stretch the scaled scene over the frame in cutscenes and Event Theater menus.",
+     "Screen fades and dim layers keep covering the whole frame at ultrawide sizes. They are quads of the whole 16:9 canvas in canvas units with their origin at its top left corner, so the rule that narrows the minimap's ring from its origin also narrowed them from the left edge, and the right side of a wide frame stayed lit while a cutscene faded to or from black (#68).",
      "Merge pull request #28 from jmars125/task/deck-shadow-writeback",
      "Merge pull request #62 from jmars125/task/amd-d24",
      "Vertex streams are realigned only when an attribute's component size needs it. The first test build repacked every stride that was not a multiple of 4, including XC3's stride-10 tree meshes of 16-bit attributes, which AMD reads correctly as they are, and that drew black streaks through the canopy (#45). Attribute offsets past the stride move with a repacked stream, the first repacked layouts are logged, and XC3_VB_REALIGN=0/1 turns the realignment or the repack off for testing.",
-     "Merge remote-tracking branch 'origin/master' into task/deck-audio",
-     "Try PulseAudio before PipeWire for SDL audio on Linux.",
-     "Merge pull request #59 from jmars125/task/perf-36",
-     "Merge pull request #58 from jmars125/task/scene-corner",
-     "Merge pull request #53 from jmars125/task/dlaa-freeze"
+     "Merge remote-tracking branch 'origin/master' into task/deck-audio"
     ]
    }
   ]
@@ -12358,21 +12358,21 @@
   ]
  },
  "simipoB/Arceus-Native-Android": {
-  "pushed_at": "2026-11-13T22:13:08Z",
+  "pushed_at": "2026-11-14T04:19:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T22:04:53Z",
+    "last_commit": "2026-11-14T04:19:17Z",
     "subjects": [
+     "README: v0.39 changes",
+     "README: AI disclaimer",
+     "Note once when the game uses scaled vertex formats and whether the driver lists them (Qualcomm reads them wrong, per Eden)",
+     "Old Qualcomm drivers (Vulkan 1.1): vertex strides built into each pipeline (exploded polygons, #34)",
+     "Graphics glitches: async pipelines off, relaxed barriers on Adreno only, PowerVR's BC on the CPU",
+     "Colour: Natural / Vibrant / Cinematic, graded in the upscaler's last shader (☰ -> Colour)",
      "Upscaling: AMD FidelityFX Super Resolution 1 built in (☰ -> Upscaling -> FSR)",
-     "Layout editor: Back saves and leaves it; the layout is saved at every lift (Galar #200)",
-     "Touch: Right stick on screen -> Hide really hides it (the layout left it shown)",
-     "Touch camera: its own sensitivity, a stick mode, and the right stick can be hidden (#28)",
-     "Touch: focus lost before the first touch counts no fingers (the log said 10)",
-     "Mali test: R11G11B10F drawn and sampled as RGBA16F (DM_VK_B10_AS_RGBA16, the menu's Mali tests)",
-     "PowerVR: pipelines whose render pass has an unused colour slot are made without the pipeline cache",
-     "MapPhysicalMemory over a GPU driver mapping: made writable piece by piece instead of stopping (PowerVR, Arceus #22)"
+     "Layout editor: Back saves and leaves it; the layout is saved at every lift (Galar #200)"
     ]
    }
   ]
@@ -12628,6 +12628,10 @@
  },
  "MrLiunxj/d2r-mobile": {
   "pushed_at": "2026-11-13T16:48:20Z",
+  "branches": []
+ },
+ "soyan1999/d2r-mobile": {
+  "pushed_at": "2026-11-14T05:09:08Z",
   "branches": []
  }
 }
