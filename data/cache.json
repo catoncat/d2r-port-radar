@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-13T18:51:11Z",
+  "pushed_at": "2026-11-13T20:22:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T18:51:04Z",
+    "last_commit": "2026-11-13T20:21:26Z",
     "subjects": [
+     "gfx/nvn: an acquire thread declares on its own and is retired (PR #2137)",
+     "gfx/nvn: replay and encode threads declare the frame deadline (PR #2569)",
+     "gfx/nvn: a frame fits the shorter hold while the hold's mean does (PR #2367)",
      "gfx/nvn: a submission's commit reads only the storage-write pages it noted, not all 16,384 slots",
      "gfx/nvn: float colours go into normalized targets rounded as NVIDIA's colour unit rounds them",
      "docs: PR #1541's in-place read was ordered in games by the frame's last encoder",
      "gfx/nvn: a lent command memory segment is freed when its list is written over, not when memory over it is granted",
-     "host/fs: rename's rollback calls save_txn_from_path directly",
-     "gfx/nvn: every MetalFX scaler waits behind a blit, and the next draw pass behind the scaler",
-     "gfx/nvn: a dirty-page miss names its changed pages and what the tracker and the kernel hold for each",
-     "packing/nup: a NUP whose folder contains itself is refused"
+     "host/fs: rename's rollback calls save_txn_from_path directly"
     ]
    }
   ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-13T11:10:04Z",
+  "pushed_at": "2026-11-13T19:49:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T11:10:02Z",
+    "last_commit": "2026-11-13T19:49:56Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4127,21 +4127,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-13T18:19:53Z",
+  "pushed_at": "2026-11-14T01:27:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T14:16:34Z",
+    "last_commit": "2026-11-14T01:25:37Z",
     "subjects": [
+     "fix: separate local Launcher builds from private release signing",
+     "feat: distribute a portable MNG Launcher through GitHub Releases",
+     "fix: update OOT shader builds and runtime cache handling",
      "feat(oot): quick build with only the title's shaders (OOT_SHADERS=title)",
      "feat(oot): title rows recorded (TOTK_PSO_CAPTURE) and marked in the shared list",
      "test(oot): the build and its opening overlay run no ffmpeg (the #2070 check outlived ffmpeg)",
      "refactor: the settings panel has no Update page; apps update through MNG Launcher",
-     "test: the one-folder plan test checks the folder, the OOT build checks stay in their own test",
-     "fix(gfx): a pipeline archive is mapped, not read into memory, from an external drive",
-     "fix(oot): the update plan says full build when the express update would refuse",
-     "fix(oot): a zero blend weight zeroes a non-finite colour, as NVIDIA's blender does (full-screen white light)"
+     "test: the one-folder plan test checks the folder, the OOT build checks stay in their own test"
     ]
    }
   ]
@@ -9483,7 +9483,7 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-13T19:25:33Z",
+  "pushed_at": "2026-11-13T20:59:42Z",
   "branches": [
    {
     "branch": "main",
@@ -10176,21 +10176,21 @@
   "branches": []
  },
  "Xc1Ym/LumaNX": {
-  "pushed_at": "2026-11-13T07:24:06Z",
+  "pushed_at": "2026-11-14T00:29:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T07:23:47Z",
+    "last_commit": "2026-11-14T00:29:36Z",
     "subjects": [
+     "chore: sync tested nxnative snapshot",
      "chore: prepare LumaNX 0.4.2 release",
      "chore: sync tested nxnative snapshot",
      "Merge pull request #43 from Xc1Ym/codex/fix-nxnative-nativeaot-reader-20261113",
      "fix: disable NativeAOT for adapted reader",
      "Merge pull request #42 from Xc1Ym/codex/fix-nxnative-virtual-mac-sync-test-20261113",
      "fix: accept virtual Mac in synced engine tests",
-     "Merge pull request #41 from Xc1Ym/codex/fix-nxnative-extract-sync-20261113",
-     "fix: tolerate nxnative extraction API updates"
+     "Merge pull request #41 from Xc1Ym/codex/fix-nxnative-extract-sync-20261113"
     ]
    }
   ]
@@ -10562,14 +10562,14 @@
   ]
  },
  "tib-kpl/d2r-mobile": {
-  "pushed_at": "2026-11-04T15:20:26Z",
+  "pushed_at": "2026-11-13T20:04:17Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 21,
+    "ahead": 23,
     "behind": 0,
-    "files": 68,
-    "real_files": 61,
+    "files": 69,
+    "real_files": 62,
     "dirs": [
      "VERSION",
      "ci/test_version.py",
@@ -10581,16 +10581,16 @@
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-11-04T15:13:29Z",
+    "last_commit": "2026-11-13T19:58:03Z",
     "subjects": [
+     "i18n gate: whitelist the S2Arm pack unpacker's log text and pack folder name (never shown on screen)",
+     "Merge remote-tracking branch 'upstream/main'",
      "Merge upstream 2.3.0 and isolate CI version overrides",
      "Merge upstream/main while preserving French and folder selection",
      "Controller events: also require libraryLoaded, as upstream (#178)",
      "Merge upstream/main (2.2.4) into fork: keep folder picker, CI versioning and French; take overlay variants, warm seed, exit labels",
      "Merge upstream map crash fix while preserving Android CI versioning",
-     "Merge branch 'jhaizhou-ops:main' into main",
-     "Merge upstream controller and camera updates while preserving Android profiles",
-     "Move FFmpeg notices to an optional Android licenses page"
+     "Merge branch 'jhaizhou-ops:main' into main"
     ]
    }
   ]
@@ -11564,21 +11564,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-13T15:59:26Z",
+  "pushed_at": "2026-11-14T01:17:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T20:07:39Z",
+    "last_commit": "2026-11-14T01:10:18Z",
     "subjects": [
-     "Merge pull request #98 from Xarishark/recomplauncher-support",
-     "Merge pull request #111 from AksharDP/claude/fix-capture-folder-open",
-     "Show the folder buttons as copy buttons where the shell cannot open folders. A process at low integrity gets ERROR_ACCESS_DENIED from ShellExecuteW, and on the machine where this was found the game runs at low integrity when it is started from under D:\\switch. plat_folder_can_open reads the process's integrity level; then the capture and log folder buttons say Copy capture folder path or Copy log folder path, copy the path to the clipboard and say Copied. Elsewhere they open the folder as before. The Linux comment now sits above its own function.",
-     "Open folders on Windows with a path the shell parses. The game joins its folders with a slash, so the captures folder was ...\\build\\v301/captures, which the shell does not parse: Open capture folder opened nothing while plat_open_folder still reported success. plat_open_folder now normalises the path with GetFullPathNameW, which turns every separator into a backslash, so the log, mods and capture folders all open.",
-     "Merge pull request #110 from AksharDP/claude/renderer-code-review-fe9933",
-     "Copy a texel region that ends inside the last blocks of a compressed level with its extent cut at the level's edge, rather than refusing it: the game may give whole blocks of a small level (4x4 texels of a 2x2 one), which the storage path accepts by counting blocks.",
-     "Present the whole image when the crop starts outside it: the clamp left a width or height of zero or less, and the blit took it as its extent.",
-     "Refuse a ReadTexels or WriteTexels region that leaves its level, its layers or its depth planes, or that names a multisampled image, instead of recording the copy: the region comes from the game, and such a copy is not valid Vulkan. The refusal is logged and a read returns zeros, as for the other texels that cannot be copied. The lists these copies and a pool's end allocate are checked too."
+     "Merge pull request #114 from AksharDP/claude/renderer-review-verify-c88587",
+     "Check in a probe submission that an alias copies the newest GPU write of its storage range",
+     "Clear the staging setting in the cfg probe before it checks the default",
+     "Take an alias copy from the candidate with the newest GPU write",
+     "Compare mip levels and layers before an alias copies another texture",
+     "Register XC2_STG_LAZY in the settings table so an integrated GPU does not hit a fatal lookup",
+     "Hash the blend and alpha state before the dump entry lookup and list every bound target",
+     "Bound the probe pair walk by the pair count and check indirect draws against the hit pair"
     ]
    }
   ]
@@ -11732,7 +11732,7 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-13T17:02:15Z",
+  "pushed_at": "2026-11-13T22:27:33Z",
   "branches": [
    {
     "branch": "main",
@@ -11981,7 +11981,7 @@
   ]
  },
  "lucienlmy/d2r-mobile": {
-  "pushed_at": "2026-11-12T22:14:52Z",
+  "pushed_at": "2026-11-13T21:59:49Z",
   "branches": []
  },
  "Gu3hi/gushi-apps": {
@@ -12038,27 +12038,27 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-13T19:39:30Z",
+  "pushed_at": "2026-11-14T01:27:31Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T19:29:24Z",
+    "last_commit": "2026-11-14T01:13:59Z",
     "subjects": [
-     "Merge commit 'f2e7929287d6095e2970ac1ab141daa199e198c9' into HEAD",
-     "Merge commit 'c9302217d1058a762acbf6792d6b3f3e595fbae0' into HEAD",
-     "Merge branch 'fix/unknown-gpu-not-block-pack' into HEAD",
-     "Merge commit 'f01922c39056de7cf268f5081c71565fef35f118' into HEAD",
-     "Merge commit '2ce47632d3a1ccf9be700f5316107a36440a34c8' into HEAD",
-     "Merge commit '2ce47632d3a1ccf9be700f5316107a36440a34c8' into HEAD",
-     "Merge branch 'fix/aoc-cache-prune' into HEAD",
-     "Merge branch 'fix/680-nostall-windows-io' into HEAD"
+     "Merge branch 'android/no-gate-3' into HEAD",
+     "Merge remote-tracking branch 'pr/960' into contrib/pr960",
+     "不堵门（九）用例：exit_order 夹具的 GameActivity 替身补 SWITCH_EXTRA",
+     "不堵门（九）：一款游戏在跑时点另一款，改为确认「结束它（照常保存）并启动另一款」，不再报 launch refused；同一款还在启动时等它，不报错",
+     "Merge branch 'contrib/pr958-merged' into HEAD",
+     "docs(坑记录): GPU 写记账逐 GOB 读没写过的渲染目标存储的缺页与做法（#674）",
+     "test(nvn): GPU 写记账不读没碰过的页，陈旧判定不变（#674）",
+     "perf(nvn): GPU 写记账取 GOB 哈希时不读游戏没碰过的页（#674）"
     ]
    }
   ]
  },
  "neohob/d2r-mobile": {
-  "pushed_at": "2026-11-13T01:23:07Z",
+  "pushed_at": "2026-11-14T01:23:34Z",
   "branches": []
  },
  "Diablo-chia619/d2r-mobile-evidence": {
@@ -12082,11 +12082,11 @@
   ]
  },
  "nkhdo/d2r-mobile": {
-  "pushed_at": "2026-11-13T17:03:08Z",
+  "pushed_at": "2026-11-14T01:25:34Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 40,
+    "ahead": 41,
     "behind": 7,
     "files": 72,
     "real_files": 67,
@@ -12098,16 +12098,16 @@
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-11-13T17:02:33Z",
+    "last_commit": "2026-11-14T01:25:18Z",
     "subjects": [
+     "Thor Deck: show the runes behind every runeword in the Build tab",
      "Thor Deck: read the Build tab's base stats by their real ids",
      "Thor: launcher title \"D2R Thor\"; pack through the usual import folder",
      "Merge pull request #7 from nkhdo/thor/more-builds",
      "Merge pull request #6 from nkhdo/thor/build-tab",
      "Thor Deck: number the Build tab's skill steps",
      "Thor Deck: a second build for every class",
-     "Thor Deck: Build tab with per-class build guides",
-     "Merge pull request #2 from nkhdo/thor/phase2-panels"
+     "Thor Deck: Build tab with per-class build guides"
     ]
    }
   ]
@@ -12358,21 +12358,21 @@
   ]
  },
  "simipoB/Arceus-Native-Android": {
-  "pushed_at": "2026-11-13T17:04:41Z",
+  "pushed_at": "2026-11-13T22:13:08Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T16:59:47Z",
+    "last_commit": "2026-11-13T22:04:53Z",
     "subjects": [
+     "Upscaling: AMD FidelityFX Super Resolution 1 built in (☰ -> Upscaling -> FSR)",
+     "Layout editor: Back saves and leaves it; the layout is saved at every lift (Galar #200)",
+     "Touch: Right stick on screen -> Hide really hides it (the layout left it shown)",
      "Touch camera: its own sensitivity, a stick mode, and the right stick can be hidden (#28)",
      "Touch: focus lost before the first touch counts no fingers (the log said 10)",
      "Mali test: R11G11B10F drawn and sampled as RGBA16F (DM_VK_B10_AS_RGBA16, the menu's Mali tests)",
      "PowerVR: pipelines whose render pass has an unused colour slot are made without the pipeline cache",
-     "MapPhysicalMemory over a GPU driver mapping: made writable piece by piece instead of stopping (PowerVR, Arceus #22)",
-     "Pools: a freed pool's GPU memory is checked before reuse (SIGSEGV in memcpy after 80 min on Turnip, #240)",
-     "Frame capture: DM_VK_CAPTURE_SIZE=<w>x<h> for bigger pictures (up to 960x540)",
-     "Style move effects off by default: no more grey boxes as strong / agile style moves start (#14 #15 #20)"
+     "MapPhysicalMemory over a GPU driver mapping: made writable piece by piece instead of stopping (PowerVR, Arceus #22)"
     ]
    }
   ]
@@ -12425,7 +12425,7 @@
   ]
  },
  "Diablo-chia619/d2r-mobile": {
-  "pushed_at": "2026-11-13T14:48:53Z",
+  "pushed_at": "2026-11-13T21:27:13Z",
   "branches": [
    {
     "branch": "ammo-2.3.1",
@@ -12444,23 +12444,26 @@
    },
    {
     "branch": "ammo-guard",
-    "ahead": 5,
+    "ahead": 13,
     "behind": 0,
-    "files": 24,
-    "real_files": 22,
+    "files": 27,
+    "real_files": 23,
     "dirs": [
      "dm/android",
      "dm/gfx",
      "dm/host",
      "dm/ios"
     ],
-    "last_commit": "2026-11-13T19:49:11Z",
+    "last_commit": "2026-11-13T21:25:29Z",
     "subjects": [
-     "Pouch: rejuvenation potions join the pouch (belt-full pickup, tap the icon to refill the belt)",
-     "Skill buttons: the ammo count now covers every quiver in the backpack",
-     "Skill buttons: show remaining ammo for the equipped quiver / throwing weapon",
-     "Touch stick: reach full speed in half the travel (feel profile A)",
-     "Adreno 8xx: compute shaders return at once outside the dispatched range (#256)"
+     "清理：删掉最后一条遗留的诊断日志（百宝囊界面刷新），包里现在零测试代码",
+     "README.zh-CN：功能清单补上编年史自动比较（测试中）",
+     "清理发布版：删掉我们加的测试探针（DM_DEBUG_AMMO 的 ammo_probe / ammo_ok），发布版不留任何测试代码",
+     "编年史：同款暗金/套装逐条比较，新的更好则替换并把旧件退回背包（差的不替换）；清理测试代码（暗金 dump、复制物品、诊断日志）",
+     "README.zh-CN: same bilingual enhancement list at the top",
+     "README: the Adreno fix is a community contribution (PR #268 by yyan160), we only verified it",
+     "README: the pouch is one feature, not three",
+     "README: fork enhancement list at the top (bilingual, updated with every new feature)"
     ]
    },
    {
@@ -12506,26 +12509,26 @@
    },
    {
     "branch": "main",
-    "ahead": 7,
-    "behind": 7,
-    "files": 20,
-    "real_files": 18,
+    "ahead": 11,
+    "behind": 0,
+    "files": 26,
+    "real_files": 22,
     "dirs": [
-     "NOTICE.md",
-     "OWN-CHANGES.zh-CN.md",
      "dm/android",
      "dm/gfx",
+     "dm/host",
      "dm/ios"
     ],
-    "last_commit": "2026-11-12T17:12:30Z",
+    "last_commit": "2026-11-13T21:20:21Z",
     "subjects": [
-     "Launcher name back to the original: the side-by-side build no longer appends a suffix",
-     "Document the fork's changes: driver, chronicle import, stick feel, side-by-side install",
-     "Add NOTICE: what the published APK contains (no game content) and the third-party licences",
-     "Touch stick: reach full speed in half the travel (feel profile A)",
-     "Android save-import: carry the chronicle sidecar and merge the Elysium list",
-     "Android GPU driver: make the bundled Turnip actually load",
-     "Android: runtime Vulkan driver selection (system / bundled Turnip via adrenotools)"
+     "README: 功能清单补上编年史自动比较（测试中）",
+     "README: 功能清单补上编年史自动比较（测试中）",
+     "README.zh-CN: same bilingual enhancement list at the top",
+     "README: the Adreno fix is a community contribution (PR #268 by yyan160), we only verified it",
+     "README: the pouch is one feature, not three",
+     "README: fork enhancement list at the top (bilingual, updated with every new feature)",
+     "Pouch: rejuvenation potions join the pouch (belt-full pickup, tap the icon to refill the belt)",
+     "Skill buttons: the ammo count now covers every quiver in the backpack"
     ]
    },
    {
@@ -12542,6 +12545,20 @@
     "subjects": [
      "Touch stick: fix the joy_travel expectations for the 30-point square-root curve",
      "Touch stick: reach full speed in half the travel (feel profile A)"
+    ]
+   },
+   {
+    "branch": "vault-compare",
+    "ahead": 1,
+    "behind": 0,
+    "files": 2,
+    "real_files": 2,
+    "dirs": [
+     "dm/host"
+    ],
+    "last_commit": "2026-11-13T21:27:09Z",
+    "subjects": [
+     "编年史：存入同款暗金/套装时逐条比较，新的更好则替换、旧件退回背包（差的不替换）"
     ]
    }
   ]
@@ -12590,21 +12607,21 @@
   ]
  },
  "jaigner-hub/metroid-prime-4-recomp": {
-  "pushed_at": "2026-11-13T06:19:45Z",
+  "pushed_at": "2026-11-13T20:27:26Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-13T06:08:40Z",
+    "last_commit": "2026-11-13T20:24:01Z",
     "subjects": [
+     "Version 0.4.11: the mouse can aim through the motion sensor, PrimeHack style, with keys for the game's motion layout (#17)",
+     "Let the mouse aim through the motion sensor, with keys for the game's motion layout (#17)",
      "Version 0.4.10: the setup runs under Proton 10.0, the default Proton on a Steam Deck, and shows its hash check instead of seeming to hang",
      "Skip building the pipelines at shader preparation on a CPU Vulkan device",
      "Show the hash check before the update merge, and end a cancelled run that outlives its Ctrl+Break",
      "Under Wine, call clang-<n> directly and run Ninja again when a compiler failed to start",
      "Fill in the C runtime functions Proton 10.0 leaves as stubs before numpy loads, so translating the game code works under it",
-     "Version 0.4.9: under Proton the setup's logs now include Wine's own messages, the Wine build and the host's memory",
-     "Under Wine or Proton, run the setup's tools through /bin/sh so that Wine's own messages reach the step log, and log the Wine build and the host's memory",
-     "Version 0.4.8: the setup accepts trimmed XCI dumps instead of calling them damaged"
+     "Version 0.4.9: under Proton the setup's logs now include Wine's own messages, the Wine build and the host's memory"
     ]
    }
   ]
