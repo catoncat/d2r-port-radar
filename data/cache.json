@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-15T16:08:27Z",
+  "pushed_at": "2026-11-15T17:42:58Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T16:07:18Z",
+    "last_commit": "2026-11-15T17:42:20Z",
     "subjects": [
+     "nvn/dlss: pass the game's bias mask to MetalFX as its reactive mask (PR #1904)",
+     "game: Sid Meier's Civilization VI reaches the Mac map",
+     "packing: read NVBC-wrapped CIVBSF shader records",
+     "nvn: resolve descriptor handles against the execution pools",
+     "chain: preserve both words of buffer texture handles",
+     "packing: another edition's files keep a RomFS marker they hold (PR #1882)",
      "gfx/nvn: return stored sampler builder state from five getters (PR #2115)",
-     "nvn/fault: name every GPU address below 1 MB the host hands Metal (issue #1289)",
-     "packing: one obsolete/ folder for unused build and pipeline archive files",
-     "packing: one compile cache file per shader chain version",
-     "host/audren: serve audren:u for SDK 1, whose renderer is only its client; Rayman Legends: Definitive Edition plays with sound (PR #1540)",
-     "rewriter/jump: guarded runs proved over control flow; Tied Together's masked tables rewrite (PR #1937)",
-     "host/svc: count the host's memory beside the pool when choosing guest files",
-     "host/memstat: start DM_MEMSTAT and DM_THRCPU after the iOS env files"
+     "nvn/fault: name every GPU address below 1 MB the host hands Metal (issue #1289)"
     ]
    }
   ]
@@ -1951,19 +1951,19 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-15T06:27:54Z",
+  "pushed_at": "2026-11-15T18:49:55Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T06:27:53Z",
+    "last_commit": "2026-11-15T18:49:54Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
-     "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）"
     ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-15T06:44:20Z",
+  "pushed_at": "2026-11-15T16:26:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T06:44:19Z",
+    "last_commit": "2026-11-15T16:26:03Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4127,21 +4127,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-15T16:05:24Z",
+  "pushed_at": "2026-11-15T22:54:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T16:05:20Z",
+    "last_commit": "2026-11-15T22:54:45Z",
     "subjects": [
-     "test: game tests start the quick app by default, without background translation; OOT build checks running games with libproc",
-     "fix(totk): a GPU probe takes a version only with its game data, and checks before anything builds",
-     "fix(totk): the GPU probes run the version whose game code is on this Mac, not 1.0.0 only",
-     "feat(launcher): quick start, diagnostic mode and an AI helper terminal",
-     "fix(build): waiting for a running game uses libproc, not ps; tests write under TMPDIR",
-     "fix(oot): an iOS test close waits for the save writer, and a session counts as passed only after a save-safe close",
-     "fix(gfx): a texture upload reserves its source and both scratch buffers in one batch; iOS warm-up keeps only the title and local lists",
-     "test: the archive prune probe writes under TMPDIR, as archive_map_probe does"
+     "fix(shaders): this device's warm-up rows are put on the app's variants a draw takes now",
+     "fix(sign): Ocarina of Time and the MNG Launcher are signed with their bundle ID as requirement",
+     "fix(shaders): the app's own variant of a shader comes first; the device's collected list is not an app list",
+     "Merge PR #2208 follow-up: icon and gauge panes stay as shipped (#2208, liafonx)",
+     "Merge remote-tracking branch 'origin/main' into claude/pr-batch-1115",
+     "fix(archive): a new translation chain keeps the pipeline archive; only changed pipelines are compiled again",
+     "feat(launcher): no separate diagnostic mode; quick start always records diagnostics",
+     "fix(ios): app icons are resized with AppKit, not sips"
     ]
    }
   ]
@@ -9483,21 +9483,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-15T16:00:21Z",
+  "pushed_at": "2026-11-15T22:14:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T16:00:19Z",
+    "last_commit": "2026-11-15T22:13:48Z",
     "subjects": [
-     "Merge pull request #1355 from LNPANDY/fix/win-missing-deps-and-defender",
-     "Windows: diagnose stripped Defender and missing VC++ / shader prereqs",
-     "Merge pull request #1344 from LNPANDY/fix/remove-touch-toggle-keys",
-     "ios: remove touch controls hold and toggle mode",
-     "Merge pull request #1329 from LNPANDY/stack/ios-rt-recycle-adaptive",
-     "Merge pull request #1330 from LNPANDY/stack/ci-main-concurrency-cancel",
-     "patches: add 0055 adaptive iOS recycled render-target heap convergence",
-     "ci: coalesce superseded main runs while keeping tags and dispatch isolated"
+     "Merge pull request #1365 from LNPANDY/fix/971-ios-phone-gyro-fallback",
+     "patches: renumber #975 for iOS controller gyro fallback (#971)",
+     "Merge pull request #1361 from LNPANDY/sync/upstream-94a0944755da",
+     "chore(engine): sync upstream to 94a0944755da",
+     "Merge pull request #1281 from Haseenesss/fix/1265-shader-library-disk-full",
+     "Merge pull request #1255 from Haseenesss/fix/1254-qt-delete-to-trash",
+     "Merge pull request #1257 from Haseenesss/fix/1243-free-space-rebuild",
+     "Merge pull request #1256 from Haseenesss/fix/1115-stage-names-language"
     ]
    }
   ]
@@ -10688,21 +10688,21 @@
   ]
  },
  "Desm0nt/doom-port": {
-  "pushed_at": "2026-11-15T15:56:44Z",
+  "pushed_at": "2026-11-15T18:48:12Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T15:56:40Z",
+    "last_commit": "2026-11-15T18:47:59Z",
     "subjects": [
+     "v0.5.4-test1: RADV-Xclipse loads with RADV_XCLIPSE_NO_BC_EMU=1, BC4-BC7 decoded by the port like on the stock driver (refs #45)",
      "v0.5.3: descriptor memo keeps sets with dynamic or empty uniform buffers (VK-UBO-MEMO refinement)",
      "v0.5.3: socket Close(0) no longer closes the process's stdin (Couldn't get file size!, refs #52); no cutout strip on Android 11-14 (refs #38); Adreno 8xx keeps the warp32 / quad-derivative rewrites off like 740-799 (refs #39 #47); Mali auto zero-copy off when only our write-combined dma-buf passes (refs #3 #27); zero-copy mode 3 (cached pages + cache maintenance) for non-coherent GPUs; descriptor memo keys fixed for UBO_DYNAMIC=0; PanVK window buffers without AFBC (refs #33); driver fallback dialog (refs #45); Glory Kill highlight setting logged (refs #42)",
      "v0.5.2: safe mode for Mali / PowerVR (graphics crashes counted, steps applied at the next start with a notice, live fallbacks with a message, crash guard process relaunch or notification, gear option); zero-copy with our own writable dma-buf (Vulkan export / dma-heap) where gralloc fds are read-only (refs #3 #27 #46); custom Vulkan driver init failure falls back to the system driver in-process (refs #33); last 3 logs kept plus one log per driver",
      "v0.5.1: Mali with a read-only dma-buf (MediaTek gralloc): auto zero-copy tries the fd view only again, the vkmap view crashed every start (driver touches its moved mapping; refs #46)",
      "v0.5.0: PowerVR driver crash inside a render pass: crash report names the pass and its pipelines, later starts turn on workarounds step by step (DM_PVR_LADDER); FPS counter clear of rounded screen corners; release of the 0.5.0 test builds",
      "v0.5.0-test3: zero-copy on Mali where the dma-buf cannot be mapped (vkMapMemory view moved with mremap, DM_GFX_ZC_MAP, refs #3); log-only cached-pages self-test, NVN flush counter, GPU time without timestamps; floating move stick and finger-rotated 3D map (refs #40)",
-     "v0.5.0-test2: Mali / PowerVR optimizations adapted (zero-copy auto with write-combined coherent memory behind a self-test, UBO dynamic 2 for read blocks, fence trylock, crumbs after a GPU hang); intro audio crackling: slow first callback bridged instead of a fallback to NONE, NONE streams with 10 ms callbacks (refs #32)",
-     "v0.5.0-test1: PowerVR anisotropy fallback and driver compile lock; intro audio crackling (audren 8 buffers, audio thread priority, 32 ms AAudio floor, diagnostics, refs #32); on-screen pad drawn on its own surface + frame stall watch (ANR); pipeguard v2 (two deaths in a row, per-driver lists, v1 lists set aside); DIM_FIX for 3D samplers; ETR CPU fixes (REPORT_FAST, CPU_FIX, FAST_LOOKUPS, DIAG auto; DISPATCH_RUNS / RP_DEPS off); gear moved to the shared front end (DoomGear); old game files detected by the loaded patches"
+     "v0.5.0-test2: Mali / PowerVR optimizations adapted (zero-copy auto with write-combined coherent memory behind a self-test, UBO dynamic 2 for read blocks, fence trylock, crumbs after a GPU hang); intro audio crackling: slow first callback bridged instead of a fallback to NONE, NONE streams with 10 ms callbacks (refs #32)"
     ]
    }
   ]
@@ -11564,21 +11564,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-15T08:02:09Z",
+  "pushed_at": "2026-11-15T18:26:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T08:02:09Z",
+    "last_commit": "2026-11-15T18:26:05Z",
     "subjects": [
-     "Merge pull request #118 from azlekayn/linux-igpu-shadow-perf",
-     "Merge pull request #117 from azlekayn/cloud-sea-quad-split",
-     "Let one caller write the Linux profile and clear the shadow write-back list at shutdown",
-     "Merge main into linux-igpu-shadow-perf",
-     "Refuse quad splits when the position stream has a divisor",
-     "Merge remote-tracking branch 'origin/main' into pr117-fix",
-     "Restore the builtin input gate and the XC2_QUAD_SPLIT setting changes",
-     "Merge pull request #146 from AksharDP/t3/test-build-single-zip"
+     "Merge pull request #149 from AksharDP/t3/fix-power-throttling-decl",
+     "Look up SetProcessInformation at run time. MinGW headers declare it only when _WIN32_WINNT names Windows 8 or later, and the release build's toolchain names Windows 7, so the Windows release build failed with an undeclared function since the power-throttling opt-out. plat_no_power_throttling now finds it in kernel32 and does nothing when it is missing. win32.c compiles with _WIN32_WINNT=0x0601, where it failed before, and with 0x0A00.",
+     "Merge pull request #148 from AksharDP/t3/flight-recorder-slow-frames",
+     "Drop a thread's cycles from before the TSC rate is known. A thread's cycle count starts from its value at registration, and the cycles it runs in the first 50 ms, before the rate is measured, are dropped: kept, they all landed in the first frame measured after it. On one rec4 run no frame's presenting-thread CPU time exceeded its interval.",
+     "Close races and a rescaling error in the slow-frame log and the texture jobs. A thread's CPU time now adds its cycles since the last query at the rate of the moment, so a refined TSC rate no longer rescales the cycles counted before it, and the reference pair the rate is measured from is set once under plat_once. The exit dump and the render thread fill and read a record's gpu_us through atomics. vk_texture_range_gone waits for the deferred deswizzles under tex_lock, which every upload holds, so none can be queued between the wait and the storage going back to the guest; the jobs never take tex_lock. tools/flight_slow.py takes CPU shares of the wall interval when --clock scales interval_ms, and pools logs with and without the CPU columns. On one rec4 run the presenting thread's CPU time was 10.8 ms per frame, as before.",
+     "Keep the glow check's answer per block and snapshot generation. glow_c4 read the 264 bytes of a c4 block from the uniform snapshot for every vertex-stage c4 binding on a target half the output, and the snapshot arena is device memory the CPU reads uncached through the BAR: in frames over 15 ms on the rec4 recording the replay thread spent 1.6 ms in those reads. The answer is now kept per block address and vk_usnap_gen, which changes at every submission and every GPU write that drops snapshot bytes; a block the snapshot lacks is read from guest memory each time and not kept. A cross-check that read the block again on every kept answer compared 131072 of them in a rec4 run with none differing. In a profile of the frames over 15 ms the replay's prepare_draw went from 7.0 to 4.9 ms and the snapshot reads left it. In 8 interleaved rounds per arm the mean frame at full clock (flight_slow.py --clock) had a median of 9.81 against 10.04 ms, lower in 4 rounds, higher in 2; one round with the change ran with every thread using half again as much CPU at the same clock and is not counted.",
+     "Use a saved PGO profile by default. A v301 build that names no profile and passes no --no-pgo now compiles the generated C with build/pgo/default.profdata when that file exists, and says so, so a profile trained on the player's own play stays on through every rebuild instead of needing --pgo-use each time. On a held-out recording of the user's play, 8 interleaved rounds, a profile of three other recordings ran 0.63 ms faster per frame (se 0.25) at equal machine speed. Release and CI builds have no such file and build as before.",
+     "Judge slow frames at full clock. A laptop's core clock follows its power budget, and on the same build and route the CPU time of the presenting thread rose from run to run as much as the frame time did, while other programs took a steady 12 to 13 % of the interval; neither wall time nor CPU time tells a slower build from a slower machine. The slow-frame log now has a probe_us column: at each kept frame's end the presenting thread times a fixed chain of 8000 dependent multiply-adds, the best of three, which takes about 10 us and is inversely the core clock. tools/flight_slow.py --clock scales each interval by the fastest probe of the logs read (their 5th percentile) over the frame's own, and reports and splits on that. On six rec4 runs, frames over 15 ms ran at a clock 6 % lower than the rest, and their share went from 3.6 to 10.2 % per run in wall time to 1.2 to 3.6 % at full clock."
     ]
    }
   ]
@@ -11732,21 +11732,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-15T12:18:48Z",
+  "pushed_at": "2026-11-15T22:30:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T12:18:48Z",
+    "last_commit": "2026-11-15T17:19:16Z",
     "subjects": [
+     "Merge pull request #303 from simipoB/res720",
+     "Balance: Auto starts at 85 % and settles, heat stops at 720p; pipelines wait up to 8 ms a frame with 3 workers; save leftovers moved aside",
      "Merge pull request #296 from simipoB/gate-host-stack-v92",
      "A fatal Vulkan error (device lost) counts as a crash for the next start (#280)",
      "Gates run on the thread's own host stack, not the game's (Arceus #46)",
      "Merge pull request #295 from simipoB/release-092",
      "Merge remote-tracking branch 'origin/setup-pack-speed' into release-092",
-     "Merge pull request #294 from simipoB/release-091",
-     "Merge remote-tracking branch 'origin/render-scale' into release-091",
-     "Merge remote-tracking branch 'origin/controller-stays' into release-091"
+     "Merge pull request #294 from simipoB/release-091"
     ]
    }
   ]
@@ -11855,21 +11855,21 @@
   "branches": []
  },
  "Desm0nt/diablo3-port": {
-  "pushed_at": "2026-11-15T14:50:48Z",
+  "pushed_at": "2026-11-15T18:32:05Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T14:50:20Z",
+    "last_commit": "2026-11-15T17:07:43Z",
     "subjects": [
-     "VERSION 0.2.15: start check of the game archives (issue #26); the passed-set marker is compared without its line end (it never matched: every start re-checked, 10-70 ms)",
-     "Start check of the game archives (issue #26): a *.cpk cut short by an interrupted copy stops the start with a screen naming the files (13 languages) instead of a crash after the hero is chosen; any language pack, no size list (the name table must line up at the real length, d3_cpk_check.h; PC test tools/test_cpk_check.c: 53 archives pass, every truncation caught); a passed set is remembered by name / size / mtime; DM_CPK_CHECK=0 logs only. fs ReadFile refuses an impossible size / offset instead of the FORTIFY abort",
-     "VERSION 0.2.14: Vulkan drivers as in DOOM 2016 (issue #25: PanVK / RADV bundled, driver manager, in-process fallback, PanVK window buffers without AFBC), pad editor stand-alone L3 / R3 and Name..., PowerVR driver-block memo key fix",
-     "Pad editor: stand-alone L3 / R3 buttons (hidden until Add..., both layouts) and Name... (the player's own button label) in D3's layout editor, as DOS2 02a3c83 (PadEdit.java dialogs); sticks and touch handling unchanged; old layouts load as before; shared DoomPadView synced with frontend-common (+ PadSurface.java)",
-     "Vulkan drivers as in DOOM 2016 (issue #25): PanVK JimVulkan / zenith and RADV-Xclipse bundled next to the Turnip builds and copied only to a phone they fit (GPU family, glibc, minApi; .dm_origin: replaced after an APK update), DOOM's driver code and menus (frontend-common VkDrivers / DriverManager / GearText through a D3 GearHost subset: start checks, crash guard, fallback dialog, Manage drivers: list, delete, install from zip, Download from drivers/sources.json), vk_driver.c synced (MESA_GRALLOC_LINEAR for Mali packages), in-process fallback to the system driver when Vulkan init fails with a custom driver (restart through DmRestart when the engine had started); system driver stays the default on Mali / PowerVR / Xclipse, issue #9 pruning kept",
-     "xbg: memo key of a non-dynamic driver block used the wrong generation (DRIVER0 = SSBO table built from buf_gen, DRIVER2 = handles from tex_gen); stale baked offsets with DM_GFX_UBO_DYNAMIC=0 (PowerVR default)",
-     "VERSION 0.2.13: local wireless play over Wi-Fi (issues #13, #16): nn::ldn emulated over the LAN (UDP discovery + TCP session, ldn_mitm-compatible), Horizon socket semantics while local play is on, AutoClear state event, local friends play-history key, heap buffers for scan / connect",
-     "ldn: scan / private connect / connect buffers (~22 KB / 5 KB / 7 KB) moved from the stack to the heap: TL2's Pia job thread runs ldn::Scan on the game's small stack and overflowed it (CRASH sig=11 pc=ldn_scan+0x24 on the Mi 13 at 'Join local game'); loopback test passes"
+     "VERSION 0.2.16: PowerVR exploded models (issue #22, VK-UBO-MEMO), CPU cores / boost hints / cutout strip (issue #23), sharper picture options (anisotropy x4, native screen resolution with font fit, FSR 1 upscale)",
+     "Upscale: FSR 1 on every GPU, GSR dropped from the choices (on the Mi 14 SGSR 1 'mobile' looked softer than the display hardware scaler at +2.3 ms GPU); gear text 'On (AMD FSR 1)'",
+     "cpu-place: the main thread's host tid is recorded too (svc_thread_main_init never runs thread_main, so 'main' was never placed and the 'placed' line never came); guest threads get their guest names as host names (comm, 15 chars) and up to three '[cpu] guest threads' lines list them",
+     "Native screen resolution: text at 1080 lines (DM_D3_HEIGHT != 900). The Switch fonts are bitmaps baked only for the 720 and 900 line classes; the point-size lookup main+0x276a10 picks the class from the window height (1080 -> class 8, none in the data) and returned nothing, so every UI text was skipped. DM_D3_FONT_FIT=near (default, only with DM_D3_HEIGHT != 900): the lookup is replaced by the same search over every baked size of any class (exact, else the next larger up to +5 %, else the next smaller); =up: game code only, every class + the game's next-larger fallback; =0: off",
+     "Merge branch 'wt/adpf' into wt/sharp",
+     "CPU boost hints (issue #23): ADPF with a fixed frame budget (from DOOM Eternal PERF-E14), workload-increase / reset hints, GameManager.setGameState from the loading screen and the scene",
+     "Window without decor fitting on Android 11+ and a black window background (issue #23: a strip stayed at the camera cutout on MIUI 13 / Android 12), as DOOM 2016 (its issue #38, KB APP-13)",
+     "Sharper picture, three gear options (EN+RU): anisotropic filtering x4 (DM_GFX_ANISO, default off, live: forced on samplers that minify linearly from mipmaps, only with the device's samplerAnisotropy; aniso_poll at the next present drops the derived samplers and the descriptor memo), native screen resolution (experimental, DM_D3_HEIGHT=native, next launch: the init site's height movk + aspect patched, the width keeps the picture shape, 2000x900 -> 2400x1080), upscale to the screen (DM_GFX_UPSCALE=0|auto|gsr|fsr, default off, live: window-size swapchain and our pass instead of the compositor stretch; auto = GSR (from DOOM 2016) on Adreno, FSR 1 EASU (+RCAS with Sharpening) elsewhere; FidelityFX FSR 1 headers vendored unmodified, MIT); gear \"CPU cores\" marked \"may not work\""
     ]
    }
   ]
@@ -12038,21 +12038,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-15T16:21:20Z",
+  "pushed_at": "2026-11-15T22:53:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T16:18:57Z",
+    "last_commit": "2026-11-15T22:49:50Z",
     "subjects": [
-     "Merge fix/build-mk-uname-standalone into main（gate2）",
-     "runtime/build.mk：单独 make -f 引用时自己补 S2A_UNAME，上屏三项单测的弱链接放行参数不再为空",
-     "Merge contrib/pr1190-r into main（gate2）",
-     "Merge ux/ios-game-volume-1186 into main（gate2）",
-     "Merge contrib/pr1189 into main（gate2）",
-     "游戏库按游戏设置加「声音 → 游戏音量」五档（#1186，同齿轮菜单）",
-     "iOS 齿轮菜单加「声音」：游戏音量五档（静音 / 25% / 50% / 75% / 100%），按游戏记、当场生效（#1186 界面）",
-     "Merge feat/game-volume-host into main（gate2）"
+     "Merge contrib/pr1215-r into main（gate2）",
+     "Merge contrib/pr1210-r into main（gate2）",
+     "Merge android/libpack-fix-r into main（gate2）",
+     "回放单测放行参数改成用到才求值：nvn_replay.mk 随总 make 引入，立即求值会让 iOS 出壳去扫安卓源码（壳输入闭包报 112 个表外文件）",
+     "Merge fix/p1-166-win-batch-create-reply into main（gate2）",
+     "Merge fix/p1-173-swap-old-name into main（gate2）",
+     "Merge fix/p1-183-pack-rename-race into main（gate2）",
+     "Merge fix/p1-171-convert-index-first into main（gate2）"
     ]
    }
   ]
@@ -12210,21 +12210,21 @@
   ]
  },
  "Desm0nt/torchlight2-port": {
-  "pushed_at": "2026-11-15T16:19:01Z",
+  "pushed_at": "2026-11-15T20:58:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T16:18:59Z",
+    "last_commit": "2026-11-15T20:58:47Z",
     "subjects": [
+     "nvn: command-memory host segments live until the game reuses the range, working AddControlMemory (port-common nvn-ctlmem, HLE-38; DM_NVN_CTLMEM=0 = old model)",
+     "gfx: scaled vertex formats (NVN *_UI2F/*_I2F -> USCALED/SSCALED, integer + shader conversion without VERTEX_BUFFER; port-common vtx-scaled, XCL-07)",
      "android: draw under the display cutout on API 30+ (setDecorFitsSystemWindows(false), black window background; APP-13)",
      "gfx: VK-UBO-MEMO guard only for non-dynamic, non-empty UBOs (keep memo for size-0 binds in dynamic mode)",
      "gfx: never memoize sets with a non-dynamic guest UBO snapshot (VK-UBO-MEMO, port-common desc-memo-keys); version 0.1.3",
      "gfx: fix memo key gen for non-dynamic driver blocks (DRIVER0=buf_gen, DRIVER2=tex_gen)",
      "v0.1.2: local multiplayer over Wi-Fi (the game's local wireless play via Pia over nn::ldn, carried over the LAN)",
-     "Launcher icon: redrawn Torchlight II Mobile art (night, moon, title with a MOBILE plaque, new hero line-up; generated, no game artwork)",
-     "setup: patch check no longer runs out of memory (issue #1)",
-     "TL2_PORT.md: weapon swap button verified on the device"
+     "Launcher icon: redrawn Torchlight II Mobile art (night, moon, title with a MOBILE plaque, new hero line-up; generated, no game artwork)"
     ]
    }
   ]
@@ -12358,21 +12358,21 @@
   ]
  },
  "simipoB/Arceus-Native-Android": {
-  "pushed_at": "2026-11-15T12:32:47Z",
+  "pushed_at": "2026-11-15T22:31:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T12:20:14Z",
+    "last_commit": "2026-11-15T16:52:25Z",
     "subjects": [
-     "README: v0.42",
-     "A fatal Vulkan error (device lost) counts as a crash for the next start (#280)",
-     "Merge remote-tracking branch 'arceusrepo/arceus-gate-host-stack' into arceus",
-     "README: v0.41 vertex canary",
-     "Vertex canary at start: two squares drawn with per-draw vertex sizes and read back; a driver that gets them wrong gets the draw state built into each pipeline",
-     "README: v0.41",
-     "Menu: Model tests (Adreno) → Copy shared data on the GPU (DM_VK_SSBO_GPU_COPY), a test for exploding polygons (#34 #46)",
-     "1440p off for now: the game crashed at start with it (DM_ARC_RES=1440 ignored)"
+     "README: v0.44",
+     "Arceus: keep the Java side of e44fa24 out (it relies on Galar's shaders-only update, which Arceus doesn't have); the capture fix stays",
+     "Setup: Keep the phone cooler (half the workers), for phones that run hot through a long setup (#262)",
+     "Setup: compress the shader pack at zlib level 6 on every core (#262)",
+     "Setup: an unreadable captured shader is left out, not fatal; stale shaders go through setup (#215)",
+     "Setup workers: the cap by total memory applies with the memory gate too (4 GB phones: 2, not 8; #215)",
+     "Setup: a captured shader that is also in the game files no longer stops it (#261)",
+     "Point pipelines only with the point route on: a recorded one built ahead without it crashed Adreno"
     ]
    }
   ]
