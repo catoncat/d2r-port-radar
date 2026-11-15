@@ -1670,21 +1670,21 @@
   ]
  },
  "wukongtime/d2r-mobile-build-backup": {
-  "pushed_at": "2026-11-13T02:02:43Z",
+  "pushed_at": "2026-11-15T02:05:09Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T16:03:34Z",
+    "last_commit": "2026-11-14T14:01:17Z",
     "subjects": [
+     "Document unavailable community resources and reuse of existing Data",
+     "Document unavailable community resources and reuse of existing Data",
      "Allow reviewed diagnostic-only program generator update",
      "Use verified stable Filebase IPNS prepared input URLs",
      "Update Apple prepared input links after program regeneration",
      "Refresh prepared product revisions with regenerated programs",
      "Use a standalone minimal TV prepared input (#33)",
-     "Merge pull request #22 from jiayx/feat/tvos-build",
-     "Document verified experimental Apple TV release",
-     "Use verified recovered shader inputs for tvOS builds"
+     "Merge pull request #22 from jiayx/feat/tvos-build"
     ]
    }
   ]
@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-14T05:56:00Z",
+  "pushed_at": "2026-11-15T05:57:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T05:55:59Z",
+    "last_commit": "2026-11-15T05:57:32Z",
     "subjects": [
+     "radar 2026-11-15",
      "radar 2026-11-14",
      "radar 2026-11-13",
      "radar 2026-11-12",
      "radar 2026-11-11",
      "radar 2026-11-10",
      "radar 2026-11-09",
-     "radar 2026-11-08",
-     "radar 2026-11-07"
+     "radar 2026-11-08"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-14T19:03:56Z",
+  "pushed_at": "2026-11-15T05:50:24Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T19:03:43Z",
+    "last_commit": "2026-11-15T05:49:58Z",
     "subjects": [
-     "game: port FINAL FANTASY XII THE ZODIAC AGE; VBF blocks read as raw LZ4, and raw_shaders takes the code area that ends at a control section nothing references (PR #2528)",
-     "nvn/textures: ReadTexels of a CPU-written block-linear IMAGE texture deswizzles it instead of copying linear rows (PR #2032)",
-     "gfx/nvn: gate alpha comparisons on the original alpha export",
-     "nvn/geometry: mesh runs take fragment shaders that only read, and mesh libraries follow the pairs a game draws, recorded as G rows (PR #2641)",
-     "host/build: dm/host's Makefile builds one object per source on every core, and rebuilds only what an edit reaches (PR #2644)",
-     "nvn/pso: an archive's libraries are read ahead of Metal's open, so a cold bundled archive opens 3-6x faster (PR #2657)",
-     "game: port Divinity Original Sin 2",
-     "packing/shaders: the shader step keys the translator by its bytes alone (PR #2496)"
+     "nvn: a feedback draw gets the levels its sampler's clamp reads (PR #1004)",
+     "nvn/resolve: implement tiled downsample commands (PR #2703)",
+     "nvn: check resource setup and fix analyzer findings in fixtures",
+     "host/tests: observe polling sleeps without waiting on a frozen clock",
+     "packing/shaders: reject malformed NARC layouts with their diagnosis",
+     "host/font: track and release enlarged engine work buffers (PR #2707)",
+     "host/pad: original Joy-Cons are read wholly from their HID reports on the Mac",
+     "nvn: the look-ahead admits every later draw's pipeline (PR #1344)"
     ]
    }
   ]
@@ -1951,21 +1951,21 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-14T22:22:42Z",
+  "pushed_at": "2026-11-15T06:27:54Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T22:22:41Z",
+    "last_commit": "2026-11-15T06:27:53Z",
     "subjects": [
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
+     "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）",
-     "chore: 自动同步 Star 地图（205 个项目）",
-     "chore: 自动同步 Star 地图（204 个项目）"
+     "chore: 自动同步 Star 地图（205 个项目）"
     ]
    }
   ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-14T18:13:54Z",
+  "pushed_at": "2026-11-14T22:32:40Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T18:13:53Z",
+    "last_commit": "2026-11-14T22:32:39Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2281,7 +2281,7 @@
   ]
  },
  "XiongDax1a/d2r-mobile": {
-  "pushed_at": "2026-10-24T17:30:40Z",
+  "pushed_at": "2026-11-15T05:38:38Z",
   "branches": []
  },
  "pinemilk/d2r-mobile": {
@@ -9483,21 +9483,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-14T21:55:52Z",
+  "pushed_at": "2026-11-15T00:29:24Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T21:55:51Z",
+    "last_commit": "2026-11-15T00:29:19Z",
     "subjects": [
-     "Merge pull request #1316 from gxt43/lunar-multi-program-header-fix",
-     "Merge pull request #1315 from 1804328/pr/win-toolchain-fixes",
-     "Merge pull request #1325 from LNPANDY/fix/ios-settings-animation",
-     "fix(ios): stabilize game settings segmented and switch transitions",
-     "Merge pull request #1317 from LNPANDY/fix/win-defender-elevation",
-     "fix(qt): preserve caller read ACL on elevated Defender IPC files",
-     "fix(qt): avoid locking Defender temp dir as CWD and retry rmdir cleanup",
-     "fix(qt): run Windows Defender elevation via BOM script and strip CLIXML progress"
+     "Merge pull request #1329 from LNPANDY/stack/ios-rt-recycle-adaptive",
+     "Merge pull request #1330 from LNPANDY/stack/ci-main-concurrency-cancel",
+     "patches: add 0055 adaptive iOS recycled render-target heap convergence",
+     "ci: coalesce superseded main runs while keeping tags and dispatch isolated",
+     "Merge pull request #1322 from LNPANDY/stack/v150-rc3-3-refresh-ux-and-l10n",
+     "Merge pull request #1323 from LNPANDY/stack/v150-rc3-2-catalog-and-ios-refresh-fixes",
+     "Merge pull request #1324 from LNPANDY/stack/v150-rc3-1-hid-forced-vib-dedup",
+     "Merge pull request #1316 from gxt43/lunar-multi-program-header-fix"
     ]
    }
   ]
@@ -10452,21 +10452,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-14T20:49:35Z",
+  "pushed_at": "2026-11-15T02:42:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T20:48:47Z",
+    "last_commit": "2026-11-15T02:42:31Z",
     "subjects": [
+     "0.4.2-beta (versionCode 41): READMEs note the release",
+     "Turnip: GPU progress through a fence per submission, the timeline no longer signalled - Tab A9+ ~15 -> ~19 fps",
+     "Output resolution Auto: 720p with RAM saving on (weak GPUs), 1080p elsewhere as before",
+     "run_shots.sh: a config's own LARECOMP_INPUT is kept (the default A presses only when it has none)",
+     "README.pt-BR: 0.4.1-beta, as in the English README",
+     "Video > RAM saving: Automatic / On / Off for the low-RAM mode, with a restart button when it changes",
      "0.4.1-beta (versionCode 40): README notes the release",
-     "Background: the game stops at its present while the app is away, a save in progress finished first",
-     "Thermal cap: 60 (or 40 / 45) fps drop to 30 while Android says the phone is too hot, back after 30 s cool",
-     "Ports from TOTKDroid: global memory merged before the pass (gres_premerge), TMML's LOD as unsigned 24.8",
-     "Vibration: the game's rumble on a controller's motors, or the phone's own motor (Controls > Vibration)",
-     "Log: the first line names the build and the phone (version, versionCode, model, Android)",
-     "Start screen: a banner above the version, put up or taken down from banner/banner.json in main, without a release",
-     "RADV (Xclipse): the game's memory never through the exported file - SIGBUS at its first access (#234 #383 #387)"
+     "Background: the game stops at its present while the app is away, a save in progress finished first"
     ]
    }
   ]
@@ -11203,7 +11203,7 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-14T07:02:11Z",
+  "pushed_at": "2026-11-15T06:38:14Z",
   "branches": [
    {
     "branch": "master",
@@ -11564,21 +11564,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-14T22:30:07Z",
+  "pushed_at": "2026-11-15T05:26:05Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T22:18:10Z",
+    "last_commit": "2026-11-15T05:26:05Z",
     "subjects": [
-     "Merge pull request #133 from AksharDP/t3/pgo-generated-code",
-     "Refuse --pgo-generate with --runtime-lib. A prebuilt runtime library was compiled without XC2_PGO_GENERATE, so its plat_exit never writes the profile and the training run would end without one.",
-     "Merge pull request #132 from AksharDP/t3/recording-handover",
-     "Merge pull request #131 from AksharDP/t3/thinlto-generated-code",
-     "Merge pull request #129 from AksharDP/t3/perf-frametime-instrumentation",
-     "Merge pull request #127 from AksharDP/t3/perf-host-counters",
-     "Read the flight ring's record count once at exit, and record the present spans on their failure paths. The exit dump read the count on every copy, so a frame that the render thread finished during the copy shifted the records; it now copies the records the count named when the dump began, and leaves out the oldest slot of a full ring, which the next record overwrites. A fence wait that timed out and a swapchain re-creation that failed left their span out, so the stalls the pres_fence and pres_acq columns are there to show were missing from them.",
-     "Hand a large command recording's buffer over as its handle instead of copying it at EndRecording. The recording buffer now keeps room for the copy prefix in front of the records, so a recording that fills at least half of its buffer becomes the handle's block as it is, and the command buffer records on in a block of the same size from the copy cache. Smaller recordings are still copied into a block of their size, so the many small handles a frame keeps alive do not each hold a large buffer. On the presenting thread in frames over 10 ms, EndRecording fell from 5.4 to 2.8 % of the samples (about 0.4 ms of a 15 ms frame). Pooled over 16 interleaved replays of a recording, the mean went from 84.9 to 86.3 fps and the 1% low from 36.8 to 37.8 fps, inside the run-to-run spread. --selftest and --probe-nvn pass."
+     "Merge pull request #146 from AksharDP/t3/test-build-single-zip",
+     "The test build uploads the windows release folder instead of its zip. upload-artifact zips whatever it is given, so the zip was coming out as a zip inside the download. Under build/release/** the download's top folder is XC2-Setup, as the release zip's is. release.yml still writes the zip, which RecompLauncher reads.",
+     "Merge pull request #144 from AksharDP/t3/install-inflate",
+     "Ship ov_inflate.c with the Windows release. make_release.py copied a fixed list of the per-install runtime sources, romfs.c, patches.c and ov_zstd.c, which predates ov_inflate.c, so the test build's install compiled the xc2zlib patch into main but not the host inflate_fast it calls, and the game stopped in rt_dispatch at the patch page (main+0x15eefd0, from main+0x8abc74). The copy now takes build_game.py INSTALL_SIDE, as make_release_linux.py already did, and an install build with one of those sources missing stops with an error instead of linking a game that crashes.",
+     "Merge pull request #143 from AksharDP/t3/xfb-log-once",
+     "Merge pull request #142 from AksharDP/t3/mirror-lazy",
+     "Merge pull request #141 from AksharDP/t3/native-inflate",
+     "Merge pull request #140 from AksharDP/t3/memcpy-fanout"
     ]
    }
   ]
@@ -11732,21 +11732,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-14T21:45:23Z",
+  "pushed_at": "2026-11-15T06:34:02Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T21:44:46Z",
+    "last_commit": "2026-11-15T06:28:38Z",
     "subjects": [
+     "Merge pull request #286 from simipoB/shaders-update-msg",
+     "Setup: the automatic shader update says what it is (#276 #278 #279)",
+     "Merge pull request #284 from simipoB/capture-skip-bad",
+     "Setup: an unreadable captured shader is left out, not fatal; stale shaders go through setup (#215)",
      "Merge pull request #275 from simipoB/release-088",
      "Setup: Keep the phone cooler (half the workers), for phones that run hot through a long setup (#262)",
      "Setup workers: the cap by total memory applies with the memory gate too (4 GB phones: 2, not 8; #215)",
-     "Shaders: v0.83's faster translation, with its text bug fixed (chain bc2f6b2e5f0d)",
-     "Shaders: FMZ per instruction in the translator, its optimizer on (chain 300f1183ed07)",
-     "Setup --shaders-only: no keys path without --keys (tested end to end on a mini game folder)",
-     "Setup: the compressed pack is written beside the old one and swapped in when complete",
-     "Updates no longer ask for the game files: a new shader translation is done in place"
+     "Shaders: v0.83's faster translation, with its text bug fixed (chain bc2f6b2e5f0d)"
     ]
    }
   ]
@@ -11932,7 +11932,7 @@
   "branches": []
  },
  "xyzl1789/d2r-mobile": {
-  "pushed_at": "2026-11-07T07:54:18Z",
+  "pushed_at": "2026-11-15T05:55:47Z",
   "branches": []
  },
  "myzzzqqwa/private4": {
@@ -12038,21 +12038,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-14T22:27:47Z",
+  "pushed_at": "2026-11-15T06:28:08Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T22:19:19Z",
+    "last_commit": "2026-11-15T06:27:05Z",
     "subjects": [
-     "Merge commit '55389293636423e1c5c4aad3f78f79624a2c3c03' into HEAD",
-     "Merge commit '0707b94c3e72be49c3fbe380e3c6c70d01c79e54' into HEAD",
-     "Merge commit '8ae95f027' into HEAD",
-     "Merge commit '67296ae83821da290f0926c30a6b0b0a08ed623e' into HEAD",
-     "Merge commit '2d3fc8bf6' into HEAD",
-     "Merge commit '5bce85bcf' into HEAD",
-     "Merge commit '56288f2f90b973868a949f8dfdba4e3765bc3d13' into HEAD",
-     "Merge commit '697e2d9840047739bb42a3104475d6d699b64221' into HEAD"
+     "Merge commit 'ef5e4fa39ce95ece4482ddf42f886c122720dd6d' into HEAD",
+     "Merge commit '725b5fd82858026248d361ec17fd01645a109894' into HEAD",
+     "Merge commit 'd0a7559e5' into HEAD",
+     "Merge commit 'a64974510bace636386cf5021bab81872fb72eb5' into HEAD",
+     "Merge commit '5b83d2ef4' into HEAD",
+     "Merge commit '21bcddb28' into HEAD",
+     "Merge commit '7a700bf87' into HEAD",
+     "Merge commit '24eb88875b69910ff7c32ac8f45c4aa17ebd3b94' into HEAD"
     ]
    }
   ]
@@ -12113,21 +12113,21 @@
   ]
  },
  "jmars125/xc3-recomp": {
-  "pushed_at": "2026-11-14T03:15:01Z",
+  "pushed_at": "2026-11-15T03:47:45Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-14T01:30:09Z",
+    "last_commit": "2026-11-14T23:59:51Z",
     "subjects": [
+     "Merge pull request #76 from jmars125/task/hdr-ui",
+     "Merge remote-tracking branch 'origin/master' into task/hdr-ui",
      "Merge pull request #73 from jmars125/task/scene69",
      "Merge pull request #70 from jmars125/task/uw-fade",
+     "Fade the HDR highlight expansion with the interface's estimated coverage instead of switching it off wherever the interface differs from the bare picture, so faint HUD shadows and menu gradients no longer leave flat grey regions with hard edges.",
      "Stretch the scaled scene over the frame in cutscenes and Event Theater menus.",
      "Screen fades and dim layers keep covering the whole frame at ultrawide sizes. They are quads of the whole 16:9 canvas in canvas units with their origin at its top left corner, so the rule that narrows the minimap's ring from its origin also narrowed them from the left edge, and the right side of a wide frame stayed lit while a cutscene faded to or from black (#68).",
-     "Merge pull request #28 from jmars125/task/deck-shadow-writeback",
-     "Merge pull request #62 from jmars125/task/amd-d24",
-     "Vertex streams are realigned only when an attribute's component size needs it. The first test build repacked every stride that was not a multiple of 4, including XC3's stride-10 tree meshes of 16-bit attributes, which AMD reads correctly as they are, and that drew black streaks through the canopy (#45). Attribute offsets past the stride move with a repacked stream, the first repacked layouts are logged, and XC3_VB_REALIGN=0/1 turns the realignment or the repack off for testing.",
-     "Merge remote-tracking branch 'origin/master' into task/deck-audio"
+     "Merge pull request #28 from jmars125/task/deck-shadow-writeback"
     ]
    }
   ]
@@ -12358,21 +12358,21 @@
   ]
  },
  "simipoB/Arceus-Native-Android": {
-  "pushed_at": "2026-11-14T20:47:00Z",
+  "pushed_at": "2026-11-15T06:21:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T20:39:38Z",
+    "last_commit": "2026-11-15T06:21:09Z",
     "subjects": [
+     "README: v0.41 vertex canary",
+     "Vertex canary at start: two squares drawn with per-draw vertex sizes and read back; a driver that gets them wrong gets the draw state built into each pipeline",
+     "README: v0.41",
+     "Menu: Model tests (Adreno) → Copy shared data on the GPU (DM_VK_SSBO_GPU_COPY), a test for exploding polygons (#34 #46)",
+     "1440p off for now: the game crashed at start with it (DM_ARC_RES=1440 ignored)",
      "README: v0.40 changes",
      "Graphics → Resolution: 1440p for Legends: Arceus (off by default), the TV-mode render size at its five places",
-     "Menu: Barriers between passes (Auto / Fewer / Every pass), for GPUs where a full barrier each pass costs the frame rate (#48)",
-     "Controls stay alive when Graphics Auto changes the mode: the controller is chosen once, at start (#49)",
-     "Widescreen for Legends: Arceus (Picture → Widescreen, off by default): the screen's own aspect for the cameras, the HUD kept 16:9 in the middle; mods' code in the data area runs",
-     "Mods that keep their variables in their own code (Fl4sh's Dynamic FPS): the pages a .pchtxt patched stay writable; 60 fps leaves the frame time to that mod",
-     "README: v0.39 changes",
-     "README: AI disclaimer"
+     "Menu: Barriers between passes (Auto / Fewer / Every pass), for GPUs where a full barrier each pass costs the frame rate (#48)"
     ]
    }
   ]
@@ -12425,7 +12425,7 @@
   ]
  },
  "Diablo-chia619/d2r-mobile": {
-  "pushed_at": "2026-11-14T16:19:21Z",
+  "pushed_at": "2026-11-15T02:52:20Z",
   "branches": [
    {
     "branch": "ammo-2.3.1",
@@ -12533,10 +12533,10 @@
    },
    {
     "branch": "runeup",
-    "ahead": 29,
+    "ahead": 31,
     "behind": 0,
-    "files": 34,
-    "real_files": 30,
+    "files": 35,
+    "real_files": 31,
     "dirs": [
      "dm/android",
      "dm/gfx",
@@ -12544,16 +12544,16 @@
      "dm/i18n",
      "dm/ios"
     ],
-    "last_commit": "2026-11-14T16:19:18Z",
+    "last_commit": "2026-11-15T02:51:44Z",
     "subjects": [
+     "符文合成：改为模拟点游戏自己的「重塑」按钮（不再手拼 0x20）",
+     "符文合成：0x20 包类型补 p[0]=0x20（memset 后漏设→服务端收到类型0的包直接崩）；页改真机实测的 0；成叠批量取件 0x39d9e0；st2 改背包按类号找；dump_pkt 发包前写 hex 到文件；diag 打印真机原始包 hex；rc_show/rc_pump 控件树校验 + 面板关闭中止",
      "符文合成取料链修通：成叠用原版 0x39d724 取 1 件到光标（0x19 对页4无效）；st2 改为背包按 id 找（成叠取件落背包不落光标，原来只等光标→只进2个就超时）；3bdb10 输出缓冲加大到 u64[4]；rc_pump 控件树虚表校验 + 合成途中面板关闭立刻中止（2.3.0 起点空白即关面板，关后面板后摸物品链表会崩进程）",
      "符文合成：两列排版（每列16行、行高84）；按钮改 140x44 修正 250x38 塞 3:1 原图导致叠成一团；列表数量改递归展开（目标号自身不卡瓶颈，0 颗现货也能合）",
      "符文合成修三个坑：make_plan 补 build_cls_cache（列表能合、点了说缺料）；去掉 ButtonWidget 的 scale（32 行坐标被压成一团）；行按钮换原版 FrontEnd_ButtonSmall（九宫格边角太薄字透出来）；按钮 841/1121 200x80、弹框 1189/29 575x1457",
      "符文合成列表：按逐层缺口算（现货能抵下层需求），20# 这类「手上已有两颗 19#」的号不再被误判为合不了",
      "符文合成：弹框往右(760)、按钮缩小上移(938,1252,210x62)、去掉关闭按钮；数量改按整条链展开算，和 make_plan 判定一致（13# 说没料的问题）",
-     "符文合成弹框：页脚按钮点开，12 行「N# ×数量」+ 合成按钮，点行合一个（ours 白名单加 TouchRc*）；文案 dmRcMake/dmRcClose",
-     "符文合成按钮：储藏箱页脚（金币框右边）加 TouchRuneCraft，点击列出每号还能合几个；布局生成链路打通（DM_DESWIZZLE_LIB=03/bl.dll）",
-     "回退：服务端队列里的紫瓶检查（物品 id 失效时读物品码崩在 dm_pouch_srv_tick+0x1eb0）；拆掉符文页点空格入口，改用按钮"
+     "符文合成弹框：页脚按钮点开，12 行「N# ×数量」+ 合成按钮，点行合一个（ours 白名单加 TouchRc*）；文案 dmRcMake/dmRcClose"
     ]
    },
    {
@@ -12632,21 +12632,21 @@
   ]
  },
  "jaigner-hub/metroid-prime-4-recomp": {
-  "pushed_at": "2026-11-14T21:55:29Z",
+  "pushed_at": "2026-11-15T06:34:14Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-14T21:53:16Z",
+    "last_commit": "2026-11-15T06:28:29Z",
     "subjects": [
+     "Version 0.4.13: the setup prepares the shaders in about a minute instead of most of an hour under Proton (#11)",
+     "Start Linux programs from the setup without \"Invalid handle\" tracebacks under Wine (#11)",
+     "Keep loose shader cache files in 256 subfolders so lookups under Wine stay fast (#11)",
      "Version 0.4.12: the game no longer loses its graphics device in the first frames under Proton on a Steam Deck (#11)",
      "Keep moved stack sources accessible and idle regions unfrozen under Wine (#11)",
      "Version 0.4.11: the mouse can aim through the motion sensor, PrimeHack style, with keys for the game's motion layout (#17)",
      "Let the mouse aim through the motion sensor, with keys for the game's motion layout (#17)",
-     "Version 0.4.10: the setup runs under Proton 10.0, the default Proton on a Steam Deck, and shows its hash check instead of seeming to hang",
-     "Skip building the pipelines at shader preparation on a CPU Vulkan device",
-     "Show the hash check before the update merge, and end a cancelled run that outlives its Ctrl+Break",
-     "Under Wine, call clang-<n> directly and run Ninja again when a compiler failed to start"
+     "Version 0.4.10: the setup runs under Proton 10.0, the default Proton on a Steam Deck, and shows its hash check instead of seeming to hang"
     ]
    }
   ]
@@ -12658,5 +12658,37 @@
  "soyan1999/d2r-mobile": {
   "pushed_at": "2026-11-14T05:09:08Z",
   "branches": []
+ },
+ "alexmeng629/d2r-mobile-build": {
+  "pushed_at": "2026-11-15T00:43:08Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-15T00:34:02Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "Desm0nt/pillars-of-eternity-port": {
+  "pushed_at": "2026-11-12T20:06:17Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-12T19:18:55Z",
+    "subjects": [
+     "Docs: also tested on Xiaomi 13 Pro (Snapdragon 8 Gen 2)",
+     "Fix a start-up hang: lost wake-up in Unity's ThreadedStreamBuffer",
+     "Update README.md",
+     "README: rewrite after the sibling ports, add screenshots",
+     "Launcher icon: Pillars of Eternity Mobile art (generated, no game artwork); two- and three-finger gestures in the docs",
+     "README, install guides (EN/RU); touch help text without the selection box; setup help numbers",
+     "Pillars of Eternity Mobile: setup from the player's dump, APK build, docs"
+    ]
+   }
+  ]
  }
 }
