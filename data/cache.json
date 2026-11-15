@@ -1571,21 +1571,21 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-11-14T14:01:26Z",
+  "pushed_at": "2026-11-15T08:56:07Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T14:01:17Z",
+    "last_commit": "2026-11-15T08:54:52Z",
     "subjects": [
+     "Align release resource instructions with current availability",
      "Document unavailable community resources and reuse of existing Data",
      "Document unavailable community resources and reuse of existing Data",
      "Allow reviewed diagnostic-only program generator update",
      "Use verified stable Filebase IPNS prepared input URLs",
      "Update Apple prepared input links after program regeneration",
      "Refresh prepared product revisions with regenerated programs",
-     "Use a standalone minimal TV prepared input (#33)",
-     "Merge pull request #22 from jiayx/feat/tvos-build"
+     "Use a standalone minimal TV prepared input (#33)"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-15T05:50:24Z",
+  "pushed_at": "2026-11-15T16:08:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T05:49:58Z",
+    "last_commit": "2026-11-15T16:07:18Z",
     "subjects": [
-     "nvn: a feedback draw gets the levels its sampler's clamp reads (PR #1004)",
-     "nvn/resolve: implement tiled downsample commands (PR #2703)",
-     "nvn: check resource setup and fix analyzer findings in fixtures",
-     "host/tests: observe polling sleeps without waiting on a frozen clock",
-     "packing/shaders: reject malformed NARC layouts with their diagnosis",
-     "host/font: track and release enlarged engine work buffers (PR #2707)",
-     "host/pad: original Joy-Cons are read wholly from their HID reports on the Mac",
-     "nvn: the look-ahead admits every later draw's pipeline (PR #1344)"
+     "gfx/nvn: return stored sampler builder state from five getters (PR #2115)",
+     "nvn/fault: name every GPU address below 1 MB the host hands Metal (issue #1289)",
+     "packing: one obsolete/ folder for unused build and pipeline archive files",
+     "packing: one compile cache file per shader chain version",
+     "host/audren: serve audren:u for SDK 1, whose renderer is only its client; Rayman Legends: Definitive Edition plays with sound (PR #1540)",
+     "rewriter/jump: guarded runs proved over control flow; Tied Together's masked tables rewrite (PR #1937)",
+     "host/svc: count the host's memory beside the pool when choosing guest files",
+     "host/memstat: start DM_MEMSTAT and DM_THRCPU after the iOS env files"
     ]
    }
   ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-14T22:32:40Z",
+  "pushed_at": "2026-11-15T06:44:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T22:32:39Z",
+    "last_commit": "2026-11-15T06:44:19Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4127,21 +4127,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-14T12:07:21Z",
+  "pushed_at": "2026-11-15T16:05:24Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T12:07:12Z",
+    "last_commit": "2026-11-15T16:05:20Z",
     "subjects": [
-     "fix: release retired argument arenas held by shaders",
-     "fix: support confined pipeline builds and game monitoring",
-     "chore: collect 53 shader variants and 6069 pipelines from web inbox",
-     "fix: use pinned permissive UI reconstruction dependencies (after PR #608)",
-     "feat: merge deterministic UI texture pack tools (PR #608)",
-     "test: verify scaled texture copy pixels on Metal 4 (after PR #2160)",
-     "fix: merge scaled texture copies (PR #2160)",
-     "fix: preserve screenshot crop and complete failed captures (after PR #2168)"
+     "test: game tests start the quick app by default, without background translation; OOT build checks running games with libproc",
+     "fix(totk): a GPU probe takes a version only with its game data, and checks before anything builds",
+     "fix(totk): the GPU probes run the version whose game code is on this Mac, not 1.0.0 only",
+     "feat(launcher): quick start, diagnostic mode and an AI helper terminal",
+     "fix(build): waiting for a running game uses libproc, not ps; tests write under TMPDIR",
+     "fix(oot): an iOS test close waits for the save writer, and a session counts as passed only after a save-safe close",
+     "fix(gfx): a texture upload reserves its source and both scratch buffers in one batch; iOS warm-up keeps only the title and local lists",
+     "test: the archive prune probe writes under TMPDIR, as archive_map_probe does"
     ]
    }
   ]
@@ -5097,7 +5097,7 @@
   ]
  },
  "oneincase/d2r-mobile": {
-  "pushed_at": "2026-11-13T13:48:13Z",
+  "pushed_at": "2026-11-15T10:33:30Z",
   "branches": []
  },
  "zJiaJun/d2r-mobile": {
@@ -9483,21 +9483,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-15T00:29:24Z",
+  "pushed_at": "2026-11-15T16:00:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T00:29:19Z",
+    "last_commit": "2026-11-15T16:00:19Z",
     "subjects": [
+     "Merge pull request #1355 from LNPANDY/fix/win-missing-deps-and-defender",
+     "Windows: diagnose stripped Defender and missing VC++ / shader prereqs",
+     "Merge pull request #1344 from LNPANDY/fix/remove-touch-toggle-keys",
+     "ios: remove touch controls hold and toggle mode",
      "Merge pull request #1329 from LNPANDY/stack/ios-rt-recycle-adaptive",
      "Merge pull request #1330 from LNPANDY/stack/ci-main-concurrency-cancel",
      "patches: add 0055 adaptive iOS recycled render-target heap convergence",
-     "ci: coalesce superseded main runs while keeping tags and dispatch isolated",
-     "Merge pull request #1322 from LNPANDY/stack/v150-rc3-3-refresh-ux-and-l10n",
-     "Merge pull request #1323 from LNPANDY/stack/v150-rc3-2-catalog-and-ios-refresh-fixes",
-     "Merge pull request #1324 from LNPANDY/stack/v150-rc3-1-hid-forced-vib-dedup",
-     "Merge pull request #1316 from gxt43/lunar-multi-program-header-fix"
+     "ci: coalesce superseded main runs while keeping tags and dispatch isolated"
     ]
    }
   ]
@@ -10361,12 +10361,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-11-14T09:06:00Z",
+  "pushed_at": "2026-11-15T15:25:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T09:05:59Z",
+    "last_commit": "2026-11-15T15:25:47Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10452,21 +10452,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-15T02:42:50Z",
+  "pushed_at": "2026-11-15T10:20:52Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T02:42:31Z",
+    "last_commit": "2026-11-15T10:20:41Z",
     "subjects": [
+     "0.4.3-beta (versionCode 42): READMEs note the release",
+     "Frame generation: the window asks for the refresh its frames need (60 fps x 2: 120 Hz); the menu says when none fit",
      "0.4.2-beta (versionCode 41): READMEs note the release",
      "Turnip: GPU progress through a fence per submission, the timeline no longer signalled - Tab A9+ ~15 -> ~19 fps",
      "Output resolution Auto: 720p with RAM saving on (weak GPUs), 1080p elsewhere as before",
      "run_shots.sh: a config's own LARECOMP_INPUT is kept (the default A presses only when it has none)",
      "README.pt-BR: 0.4.1-beta, as in the English README",
-     "Video > RAM saving: Automatic / On / Off for the low-RAM mode, with a restart button when it changes",
-     "0.4.1-beta (versionCode 40): README notes the release",
-     "Background: the game stops at its present while the app is away, a save in progress finished first"
+     "Video > RAM saving: Automatic / On / Off for the low-RAM mode, with a restart button when it changes"
     ]
    }
   ]
@@ -10668,41 +10668,41 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-14T20:29:17Z",
+  "pushed_at": "2026-11-15T16:21:28Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T16:25:38Z",
+    "last_commit": "2026-11-15T16:11:50Z",
     "subjects": [
-     "Up version 0.4.0",
-     "Turn the recorder thread on by default on AMD GPUs too; vk_recorder = 0 turns it off where the device is lost",
-     "Describe the profile-guided build in docs/pgo.md: where and how to train, free play, merge, measure",
-     "Merge pull request #1065: Xbox prompts at every game resolution the setup lays the UI out for (cdonatom, #378)",
-     "Merge pull request #1066: describe deswizzle, kspin_us, pcore, rec_async and rec_spin_us in docs/settings.md (itaskaev2)",
-     "Merge task/climb: Link climbs walls and ladders at full speed above 60 fps (#35, #276, #1001)",
-     "Extend the climb controller's frame-rate factor above 60 fps, so Link climbs walls and ladders at full speed (#35, #276, #1001)",
-     "Describe deswizzle, kspin_us, pcore, rec_async and rec_spin_us in docs/settings.md"
+     "Merge task/bindoff: TOTK_BIND_INC is off by default",
+     "TOTK_BIND_INC is off by default",
+     "Merge task/pjournal: a device loss logs the last descriptor pool events, and a pool with two owners is logged at once",
+     "A device loss logs the last descriptor pool events, and a pool with two owners is logged at once",
+     "Merge pull request #1207: the memory probe's test textures carry their pool flags, so --probe-vkmem passes again (shenjackyuanjie)",
+     "The memory probe's slot redirect check follows a texture of the slot's own format",
+     "Up version 0.4.1",
+     "Preserve pool flags in the Vulkan memory probe texture fixture"
     ]
    }
   ]
  },
  "Desm0nt/doom-port": {
-  "pushed_at": "2026-11-10T08:58:27Z",
+  "pushed_at": "2026-11-15T15:56:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-10T08:58:18Z",
+    "last_commit": "2026-11-15T15:56:40Z",
     "subjects": [
+     "v0.5.3: descriptor memo keeps sets with dynamic or empty uniform buffers (VK-UBO-MEMO refinement)",
+     "v0.5.3: socket Close(0) no longer closes the process's stdin (Couldn't get file size!, refs #52); no cutout strip on Android 11-14 (refs #38); Adreno 8xx keeps the warp32 / quad-derivative rewrites off like 740-799 (refs #39 #47); Mali auto zero-copy off when only our write-combined dma-buf passes (refs #3 #27); zero-copy mode 3 (cached pages + cache maintenance) for non-coherent GPUs; descriptor memo keys fixed for UBO_DYNAMIC=0; PanVK window buffers without AFBC (refs #33); driver fallback dialog (refs #45); Glory Kill highlight setting logged (refs #42)",
      "v0.5.2: safe mode for Mali / PowerVR (graphics crashes counted, steps applied at the next start with a notice, live fallbacks with a message, crash guard process relaunch or notification, gear option); zero-copy with our own writable dma-buf (Vulkan export / dma-heap) where gralloc fds are read-only (refs #3 #27 #46); custom Vulkan driver init failure falls back to the system driver in-process (refs #33); last 3 logs kept plus one log per driver",
      "v0.5.1: Mali with a read-only dma-buf (MediaTek gralloc): auto zero-copy tries the fd view only again, the vkmap view crashed every start (driver touches its moved mapping; refs #46)",
      "v0.5.0: PowerVR driver crash inside a render pass: crash report names the pass and its pipelines, later starts turn on workarounds step by step (DM_PVR_LADDER); FPS counter clear of rounded screen corners; release of the 0.5.0 test builds",
      "v0.5.0-test3: zero-copy on Mali where the dma-buf cannot be mapped (vkMapMemory view moved with mremap, DM_GFX_ZC_MAP, refs #3); log-only cached-pages self-test, NVN flush counter, GPU time without timestamps; floating move stick and finger-rotated 3D map (refs #40)",
      "v0.5.0-test2: Mali / PowerVR optimizations adapted (zero-copy auto with write-combined coherent memory behind a self-test, UBO dynamic 2 for read blocks, fence trylock, crumbs after a GPU hang); intro audio crackling: slow first callback bridged instead of a fallback to NONE, NONE streams with 10 ms callbacks (refs #32)",
-     "v0.5.0-test1: PowerVR anisotropy fallback and driver compile lock; intro audio crackling (audren 8 buffers, audio thread priority, 32 ms AAudio floor, diagnostics, refs #32); on-screen pad drawn on its own surface + frame stall watch (ANR); pipeguard v2 (two deaths in a row, per-driver lists, v1 lists set aside); DIM_FIX for 3D samplers; ETR CPU fixes (REPORT_FAST, CPU_FIX, FAST_LOOKUPS, DIAG auto; DISPATCH_RUNS / RP_DEPS off); gear moved to the shared front end (DoomGear); old game files detected by the loaded patches",
-     "v0.4.22: weapon wheel with touch controls: while R is held its finger (and a free finger) steers the right stick (refs #34); auto aspect uses the display's real size while the view has none (16:9 on a 20:9 phone when started with the screen off); update notices: new release once at start with its changelog, 'Check for updates' in the pause menu, setup stamp dm/setup-stamp.json and a one-time re-run-setup notice",
-     "v0.4.21: settings are saved now (the profile save gate profile_requireSaveExplanation is off, the game skipped every profile save on fresh profiles), Motion Aiming / sensitivity / Aim Assist in the gear synced with the game menu (refs #31); several Vulkan driver packages in the APK, installed by GPU family, and a driver manager in the gear: GitHub releases from drivers/sources.json, SHA-256 check, zip install, delete (refs #30)"
+     "v0.5.0-test1: PowerVR anisotropy fallback and driver compile lock; intro audio crackling (audren 8 buffers, audio thread priority, 32 ms AAudio floor, diagnostics, refs #32); on-screen pad drawn on its own surface + frame stall watch (ANR); pipeguard v2 (two deaths in a row, per-driver lists, v1 lists set aside); DIM_FIX for 3D samplers; ETR CPU fixes (REPORT_FAST, CPU_FIX, FAST_LOOKUPS, DIAG auto; DISPATCH_RUNS / RP_DEPS off); gear moved to the shared front end (DoomGear); old game files detected by the loaded patches"
     ]
    }
   ]
@@ -11564,21 +11564,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-15T05:26:05Z",
+  "pushed_at": "2026-11-15T08:02:09Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T05:26:05Z",
+    "last_commit": "2026-11-15T08:02:09Z",
     "subjects": [
-     "Merge pull request #146 from AksharDP/t3/test-build-single-zip",
-     "The test build uploads the windows release folder instead of its zip. upload-artifact zips whatever it is given, so the zip was coming out as a zip inside the download. Under build/release/** the download's top folder is XC2-Setup, as the release zip's is. release.yml still writes the zip, which RecompLauncher reads.",
-     "Merge pull request #144 from AksharDP/t3/install-inflate",
-     "Ship ov_inflate.c with the Windows release. make_release.py copied a fixed list of the per-install runtime sources, romfs.c, patches.c and ov_zstd.c, which predates ov_inflate.c, so the test build's install compiled the xc2zlib patch into main but not the host inflate_fast it calls, and the game stopped in rt_dispatch at the patch page (main+0x15eefd0, from main+0x8abc74). The copy now takes build_game.py INSTALL_SIDE, as make_release_linux.py already did, and an install build with one of those sources missing stops with an error instead of linking a game that crashes.",
-     "Merge pull request #143 from AksharDP/t3/xfb-log-once",
-     "Merge pull request #142 from AksharDP/t3/mirror-lazy",
-     "Merge pull request #141 from AksharDP/t3/native-inflate",
-     "Merge pull request #140 from AksharDP/t3/memcpy-fanout"
+     "Merge pull request #118 from azlekayn/linux-igpu-shadow-perf",
+     "Merge pull request #117 from azlekayn/cloud-sea-quad-split",
+     "Let one caller write the Linux profile and clear the shadow write-back list at shutdown",
+     "Merge main into linux-igpu-shadow-perf",
+     "Refuse quad splits when the position stream has a divisor",
+     "Merge remote-tracking branch 'origin/main' into pr117-fix",
+     "Restore the builtin input gate and the XC2_QUAD_SPLIT setting changes",
+     "Merge pull request #146 from AksharDP/t3/test-build-single-zip"
     ]
    }
   ]
@@ -11732,21 +11732,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-15T06:34:02Z",
+  "pushed_at": "2026-11-15T12:18:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T06:28:38Z",
+    "last_commit": "2026-11-15T12:18:48Z",
     "subjects": [
-     "Merge pull request #286 from simipoB/shaders-update-msg",
-     "Setup: the automatic shader update says what it is (#276 #278 #279)",
-     "Merge pull request #284 from simipoB/capture-skip-bad",
-     "Setup: an unreadable captured shader is left out, not fatal; stale shaders go through setup (#215)",
-     "Merge pull request #275 from simipoB/release-088",
-     "Setup: Keep the phone cooler (half the workers), for phones that run hot through a long setup (#262)",
-     "Setup workers: the cap by total memory applies with the memory gate too (4 GB phones: 2, not 8; #215)",
-     "Shaders: v0.83's faster translation, with its text bug fixed (chain bc2f6b2e5f0d)"
+     "Merge pull request #296 from simipoB/gate-host-stack-v92",
+     "A fatal Vulkan error (device lost) counts as a crash for the next start (#280)",
+     "Gates run on the thread's own host stack, not the game's (Arceus #46)",
+     "Merge pull request #295 from simipoB/release-092",
+     "Merge remote-tracking branch 'origin/setup-pack-speed' into release-092",
+     "Merge pull request #294 from simipoB/release-091",
+     "Merge remote-tracking branch 'origin/render-scale' into release-091",
+     "Merge remote-tracking branch 'origin/controller-stays' into release-091"
     ]
    }
   ]
@@ -11855,21 +11855,21 @@
   "branches": []
  },
  "Desm0nt/diablo3-port": {
-  "pushed_at": "2026-11-13T19:24:02Z",
+  "pushed_at": "2026-11-15T14:50:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-13T19:23:25Z",
+    "last_commit": "2026-11-15T14:50:20Z",
     "subjects": [
+     "VERSION 0.2.15: start check of the game archives (issue #26); the passed-set marker is compared without its line end (it never matched: every start re-checked, 10-70 ms)",
+     "Start check of the game archives (issue #26): a *.cpk cut short by an interrupted copy stops the start with a screen naming the files (13 languages) instead of a crash after the hero is chosen; any language pack, no size list (the name table must line up at the real length, d3_cpk_check.h; PC test tools/test_cpk_check.c: 53 archives pass, every truncation caught); a passed set is remembered by name / size / mtime; DM_CPK_CHECK=0 logs only. fs ReadFile refuses an impossible size / offset instead of the FORTIFY abort",
+     "VERSION 0.2.14: Vulkan drivers as in DOOM 2016 (issue #25: PanVK / RADV bundled, driver manager, in-process fallback, PanVK window buffers without AFBC), pad editor stand-alone L3 / R3 and Name..., PowerVR driver-block memo key fix",
+     "Pad editor: stand-alone L3 / R3 buttons (hidden until Add..., both layouts) and Name... (the player's own button label) in D3's layout editor, as DOS2 02a3c83 (PadEdit.java dialogs); sticks and touch handling unchanged; old layouts load as before; shared DoomPadView synced with frontend-common (+ PadSurface.java)",
+     "Vulkan drivers as in DOOM 2016 (issue #25): PanVK JimVulkan / zenith and RADV-Xclipse bundled next to the Turnip builds and copied only to a phone they fit (GPU family, glibc, minApi; .dm_origin: replaced after an APK update), DOOM's driver code and menus (frontend-common VkDrivers / DriverManager / GearText through a D3 GearHost subset: start checks, crash guard, fallback dialog, Manage drivers: list, delete, install from zip, Download from drivers/sources.json), vk_driver.c synced (MESA_GRALLOC_LINEAR for Mali packages), in-process fallback to the system driver when Vulkan init fails with a custom driver (restart through DmRestart when the engine had started); system driver stays the default on Mali / PowerVR / Xclipse, issue #9 pruning kept",
+     "xbg: memo key of a non-dynamic driver block used the wrong generation (DRIVER0 = SSBO table built from buf_gen, DRIVER2 = handles from tex_gen); stale baked offsets with DM_GFX_UBO_DYNAMIC=0 (PowerVR default)",
      "VERSION 0.2.13: local wireless play over Wi-Fi (issues #13, #16): nn::ldn emulated over the LAN (UDP discovery + TCP session, ldn_mitm-compatible), Horizon socket semantics while local play is on, AutoClear state event, local friends play-history key, heap buffers for scan / connect",
-     "ldn: scan / private connect / connect buffers (~22 KB / 5 KB / 7 KB) moved from the stack to the heap: TL2's Pia job thread runs ldn::Scan on the game's small stack and overflowed it (CRASH sig=11 pc=ldn_scan+0x24 on the Mi 13 at 'Join local game'); loopback test passes",
-     "local play: friends::GetPlayHistoryRegistrationKey gives a key (derived from the uid, never registered) while local play is on - TL2's Pia needs one per local player before it builds its mesh (CreateMeshJob::SetupLocalPlayerInfo, main 0x1bf33b0: a failure is 0x10c08 and LocalMatchCreateSessionJob destroys the new network two frames after it came up); on a console the key needs no network",
-     "ldn: the state change event is bound AutoClear, as the SDK attaches it (TL2's Pia only TryWaits on it, main 0x1bcb7e0, never clears: a manual-clear binding stayed signalled after the first change); trace: TL2 Pia's LDN network object (x20 at its GetIpv4Address call, main 0x1bcd5b8) - own / host station address (+0x2a0 / +0x2c0, what WaitCreateNetworkEvent compares), descriptions and states - logged when they change",
-     "local play trace: game backtrace at close / DestroyNetwork / Disconnect, nifm IsNetworkAvailable / HandleNetworkRequestErrorResult calls, and (TL2) Pia's session state words (session at main+0x92c74e0: +0xd4 / +0xd8 / result +0xdc / +0x158) whenever they change",
-     "local play: DM_NET_TRACE=1 (or DM_LDN_TRACE=1) logs every ldn and socket call with its arguments, result, the errno the game gets and the game's caller (repeats folded), and each state change event signal - to pin the call after which TL2's Pia gives up its new network",
-     "d3 local play: Horizon socket semantics from ldn::Initialize (the local session's UDP transport socket is created right after it and came out blocking: Fcntl 0x800 was read as FreeBSD), a scan no longer lists the phone's own network (every local D3 party hosts while it scans); how D3 reaches host / scan / join written down in hle_ldn.c",
-     "d3 multiplayer (issues #13, #16): local wireless play over the LAN and local co-op with several controllers"
+     "ldn: scan / private connect / connect buffers (~22 KB / 5 KB / 7 KB) moved from the stack to the heap: TL2's Pia job thread runs ldn::Scan on the game's small stack and overflowed it (CRASH sig=11 pc=ldn_scan+0x24 on the Mi 13 at 'Join local game'); loopback test passes"
     ]
    }
   ]
@@ -12038,21 +12038,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-15T06:28:08Z",
+  "pushed_at": "2026-11-15T16:21:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T06:27:05Z",
+    "last_commit": "2026-11-15T16:18:57Z",
     "subjects": [
-     "Merge commit 'ef5e4fa39ce95ece4482ddf42f886c122720dd6d' into HEAD",
-     "Merge commit '725b5fd82858026248d361ec17fd01645a109894' into HEAD",
-     "Merge commit 'd0a7559e5' into HEAD",
-     "Merge commit 'a64974510bace636386cf5021bab81872fb72eb5' into HEAD",
-     "Merge commit '5b83d2ef4' into HEAD",
-     "Merge commit '21bcddb28' into HEAD",
-     "Merge commit '7a700bf87' into HEAD",
-     "Merge commit '24eb88875b69910ff7c32ac8f45c4aa17ebd3b94' into HEAD"
+     "Merge fix/build-mk-uname-standalone into main（gate2）",
+     "runtime/build.mk：单独 make -f 引用时自己补 S2A_UNAME，上屏三项单测的弱链接放行参数不再为空",
+     "Merge contrib/pr1190-r into main（gate2）",
+     "Merge ux/ios-game-volume-1186 into main（gate2）",
+     "Merge contrib/pr1189 into main（gate2）",
+     "游戏库按游戏设置加「声音 → 游戏音量」五档（#1186，同齿轮菜单）",
+     "iOS 齿轮菜单加「声音」：游戏音量五档（静音 / 25% / 50% / 75% / 100%），按游戏记、当场生效（#1186 界面）",
+     "Merge feat/game-volume-host into main（gate2）"
     ]
    }
   ]
@@ -12210,21 +12210,21 @@
   ]
  },
  "Desm0nt/torchlight2-port": {
-  "pushed_at": "2026-11-14T16:56:27Z",
+  "pushed_at": "2026-11-15T16:19:01Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T16:56:25Z",
+    "last_commit": "2026-11-15T16:18:59Z",
     "subjects": [
+     "android: draw under the display cutout on API 30+ (setDecorFitsSystemWindows(false), black window background; APP-13)",
+     "gfx: VK-UBO-MEMO guard only for non-dynamic, non-empty UBOs (keep memo for size-0 binds in dynamic mode)",
+     "gfx: never memoize sets with a non-dynamic guest UBO snapshot (VK-UBO-MEMO, port-common desc-memo-keys); version 0.1.3",
      "gfx: fix memo key gen for non-dynamic driver blocks (DRIVER0=buf_gen, DRIVER2=tex_gen)",
      "v0.1.2: local multiplayer over Wi-Fi (the game's local wireless play via Pia over nn::ldn, carried over the LAN)",
      "Launcher icon: redrawn Torchlight II Mobile art (night, moon, title with a MOBILE plaque, new hero line-up; generated, no game artwork)",
      "setup: patch check no longer runs out of memory (issue #1)",
-     "TL2_PORT.md: weapon swap button verified on the device",
-     "v0.1.1: mods override the game's files (mod packs listed first, later mods win), mod manager in the pause menu with a restart offer, weapon swap button (d-pad left), character-creation spinner taps + gender guard, touch overlay redraws only on change, idle job workers back off",
-     "README: screenshots (title, main menu, Temple Steppes, combat, inventory, stats, pause menu, mod manager)",
-     "README: handheld mode not tested yet; PC mods experimental, which kinds of mods cannot work"
+     "TL2_PORT.md: weapon swap button verified on the device"
     ]
    }
   ]
@@ -12358,21 +12358,21 @@
   ]
  },
  "simipoB/Arceus-Native-Android": {
-  "pushed_at": "2026-11-15T06:21:33Z",
+  "pushed_at": "2026-11-15T12:32:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T06:21:09Z",
+    "last_commit": "2026-11-15T12:20:14Z",
     "subjects": [
+     "README: v0.42",
+     "A fatal Vulkan error (device lost) counts as a crash for the next start (#280)",
+     "Merge remote-tracking branch 'arceusrepo/arceus-gate-host-stack' into arceus",
      "README: v0.41 vertex canary",
      "Vertex canary at start: two squares drawn with per-draw vertex sizes and read back; a driver that gets them wrong gets the draw state built into each pipeline",
      "README: v0.41",
      "Menu: Model tests (Adreno) → Copy shared data on the GPU (DM_VK_SSBO_GPU_COPY), a test for exploding polygons (#34 #46)",
-     "1440p off for now: the game crashed at start with it (DM_ARC_RES=1440 ignored)",
-     "README: v0.40 changes",
-     "Graphics → Resolution: 1440p for Legends: Arceus (off by default), the TV-mode render size at its five places",
-     "Menu: Barriers between passes (Auto / Fewer / Every pass), for GPUs where a full barrier each pass costs the frame rate (#48)"
+     "1440p off for now: the game crashed at start with it (DM_ARC_RES=1440 ignored)"
     ]
    }
   ]
@@ -12632,21 +12632,21 @@
   ]
  },
  "jaigner-hub/metroid-prime-4-recomp": {
-  "pushed_at": "2026-11-15T06:34:14Z",
+  "pushed_at": "2026-11-15T16:06:32Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-15T06:28:29Z",
+    "last_commit": "2026-11-15T16:05:14Z",
     "subjects": [
-     "Version 0.4.13: the setup prepares the shaders in about a minute instead of most of an hour under Proton (#11)",
-     "Start Linux programs from the setup without \"Invalid handle\" tracebacks under Wine (#11)",
-     "Keep loose shader cache files in 256 subfolders so lookups under Wine stay fast (#11)",
-     "Version 0.4.12: the game no longer loses its graphics device in the first frames under Proton on a Steam Deck (#11)",
-     "Keep moved stack sources accessible and idle regions unfrozen under Wine (#11)",
-     "Version 0.4.11: the mouse can aim through the motion sensor, PrimeHack style, with keys for the game's motion layout (#17)",
-     "Let the mouse aim through the motion sensor, with keys for the game's motion layout (#17)",
-     "Version 0.4.10: the setup runs under Proton 10.0, the default Proton on a Steam Deck, and shows its hash check instead of seeming to hang"
+     "Version 0.4.19: a field of view setting (#20)",
+     "Add a field of view setting (#20)",
+     "Version 0.4.18: the mouse gyro aim no longer drifts with a controller connected (#17)",
+     "Let the mouse alone move the gyro while it aims, so a connected controller cannot pull the aim down (#17)",
+     "Version 0.4.17: light and fog volume pools commit memory as they are filled (#21)",
+     "Commit virtual pool shadows on first touch instead of whole (#21)",
+     "Version 0.4.16: no more one-frame flashes from shader variants, geometry stages drawn (#18)",
+     "Name the pipeline list's shaders by their current input ids (#18)"
     ]
    }
   ]
