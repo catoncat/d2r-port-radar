@@ -1299,7 +1299,7 @@
   "branches": []
  },
  "1lifedo1thing/d2r-mobile": {
-  "pushed_at": "2026-11-14T10:32:40Z",
+  "pushed_at": "2026-11-16T11:31:03Z",
   "branches": []
  },
  "lcr1017/d2r-mobile": {
@@ -1871,27 +1871,27 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-16T05:20:29Z",
+  "pushed_at": "2026-11-16T19:35:19Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T05:20:23Z",
+    "last_commit": "2026-11-16T19:33:30Z",
     "subjects": [
-     "tools/env_switches: enum constants are no switches either",
-     "packing/nup: pack one program of a Switch 2 Edition NUP, with the others' RomFS beside it (PR #2692)",
-     "lint/c: the clang-tidy ratchet passes again: seven new findings fixed, the baseline shrunk to 188",
-     "gl/textures: upload compressed 2D arrays (PR #2704)",
-     "packing/shader_split: read Phyre shaders from split KIT archives (PR #1939)",
-     "chain/pull: pulling libraries read NVN2's attributes 16-31",
-     "gfx/tests: t_vk_desc watches a plain object for the pipeline's depth-stencil release",
-     "games/burnout: add Burnout Paradise Remastered's profile and note"
+     "nvn/pipelines: wait for archive lookup completion (PR #2770)",
+     "nvn/pipelines: look up predicted bases in background (PR #2677)",
+     "nvn/args: preserve GPU addresses across arena rollover (PR #2847)",
+     "gfx/nvn: the display-link callback latches the present of the acquire it woke (#2648, PR #2757)",
+     "host/registration: declare contiguous linker tables (PR #2856)",
+     "ci/tests: document the CPU graphics target list (PR #2856)",
+     "host/tests: pass complete SVC register frames (PR #2856)",
+     "gfx/tests: run t_refl's real-shader cases from inline fixtures"
     ]
    }
   ]
  },
  "ForceMind/Game2Mobile": {
-  "pushed_at": "2026-11-14T14:25:36Z",
+  "pushed_at": "2026-11-16T13:17:34Z",
   "branches": [
    {
     "branch": "main",
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-15T22:55:22Z",
+  "pushed_at": "2026-11-16T06:43:05Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T22:55:21Z",
+    "last_commit": "2026-11-16T06:43:05Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4127,21 +4127,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-16T00:15:09Z",
+  "pushed_at": "2026-11-16T18:06:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T23:28:09Z",
+    "last_commit": "2026-11-16T17:29:13Z",
     "subjects": [
-     "fix(shaders): a new device cache folder takes over this device's pipeline archive and collected list",
-     "fix(shaders): this device's warm-up rows are put on the app's variants a draw takes now",
-     "fix(sign): Ocarina of Time and the MNG Launcher are signed with their bundle ID as requirement",
-     "fix(shaders): the app's own variant of a shader comes first; the device's collected list is not an app list",
-     "Merge PR #2208 follow-up: icon and gauge panes stay as shipped (#2208, liafonx)",
-     "Merge remote-tracking branch 'origin/main' into claude/pr-batch-1115",
-     "fix(archive): a new translation chain keeps the pipeline archive; only changed pipelines are compiled again",
-     "feat(launcher): no separate diagnostic mode; quick start always records diagnostics"
+     "feat: open-source shared fonts when a Switch 2 build has none",
+     "Merge remote-tracking branch 'origin/main'",
+     "fix(oot): the memory saver is off by default again",
+     "chore: collect 9 pipelines that reached the web inbox after f8cb796e",
+     "chore: collect 234 shader variants and 4702 pipelines from web inbox",
+     "feat(oot): the memory saver is on by default",
+     "fix(oot): on iOS the texture-copy eviction starts at 95 % of Metal's working set, not 85 %",
+     "fix(shaders): a carried collected list is put on the app's variants with the deps of the folder it came from"
     ]
    }
   ]
@@ -9483,21 +9483,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-16T06:23:34Z",
+  "pushed_at": "2026-11-16T19:21:39Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T22:13:48Z",
+    "last_commit": "2026-11-16T14:40:15Z",
     "subjects": [
+     "Merge pull request #1378 from LNPANDY/fix/nvn-args-patch-arena",
+     "patches: save arena GPU address before nested allocations in nvn_mtl",
      "Merge pull request #1365 from LNPANDY/fix/971-ios-phone-gyro-fallback",
      "patches: renumber #975 for iOS controller gyro fallback (#971)",
      "Merge pull request #1361 from LNPANDY/sync/upstream-94a0944755da",
      "chore(engine): sync upstream to 94a0944755da",
      "Merge pull request #1281 from Haseenesss/fix/1265-shader-library-disk-full",
-     "Merge pull request #1255 from Haseenesss/fix/1254-qt-delete-to-trash",
-     "Merge pull request #1257 from Haseenesss/fix/1243-free-space-rebuild",
-     "Merge pull request #1256 from Haseenesss/fix/1115-stage-names-language"
+     "Merge pull request #1255 from Haseenesss/fix/1254-qt-delete-to-trash"
     ]
    }
   ]
@@ -10048,12 +10048,12 @@
   ]
  },
  "downsea/d2r-mobile": {
-  "pushed_at": "2026-10-26T06:36:28Z",
+  "pushed_at": "2026-11-16T07:51:45Z",
   "branches": [
    {
     "branch": "hmos/004-pc-2in1",
     "ahead": 1,
-    "behind": 7,
+    "behind": 101,
     "files": 3,
     "real_files": 3,
     "dirs": [
@@ -10066,9 +10066,9 @@
    },
    {
     "branch": "main",
-    "ahead": 1,
-    "behind": 7,
-    "files": 29,
+    "ahead": 2,
+    "behind": 101,
+    "files": 33,
     "real_files": 6,
     "dirs": [
      ".docs-check.toml",
@@ -10077,8 +10077,9 @@
      "CONTEXT.md",
      "tools/dev"
     ],
-    "last_commit": "2026-10-26T06:09:13Z",
+    "last_commit": "2026-10-26T06:23:41Z",
     "subjects": [
+     "docs(epic): adopt research wave 1 and set the PC-first wave plan (#001)",
      "docs: initialise fork doc surface and the HarmonyOS PC + phone epic (#001)"
     ]
    }
@@ -10361,12 +10362,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-11-15T15:25:48Z",
+  "pushed_at": "2026-11-16T18:45:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T15:25:47Z",
+    "last_commit": "2026-11-16T18:45:40Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10381,12 +10382,12 @@
   ]
  },
  "kieusonlam/d2r-mobile": {
-  "pushed_at": "2026-11-04T17:29:18Z",
+  "pushed_at": "2026-11-16T12:44:48Z",
   "branches": [
    {
     "branch": "android-warm-seed-pack",
     "ahead": 1,
-    "behind": 55,
+    "behind": 93,
     "files": 6,
     "real_files": 4,
     "dirs": [
@@ -10400,8 +10401,8 @@
    },
    {
     "branch": "rp5",
-    "ahead": 9,
-    "behind": 0,
+    "ahead": 10,
+    "behind": 5,
     "files": 6,
     "real_files": 6,
     "dirs": [
@@ -10409,16 +10410,16 @@
      "dm/ios",
      "tools/rp5"
     ],
-    "last_commit": "2026-11-04T17:10:04Z",
+    "last_commit": "2026-11-16T12:18:58Z",
     "subjects": [
+     "Merge remote-tracking branch 'upstream/main' into rp5",
      "Merge upstream v2.3.0 into rp5",
      "Merge upstream v2.2.3 into rp5",
      "Merge upstream v2.2.2 into rp5",
      "Options tabs: widened tab background to match the 340-wide tabs",
      "Options tabs: fit Gameplay / Settings on one line at font size 40",
      "Merge remote-tracking branch 'upstream/main' into rp5",
-     "tools: spv-override generator for GPUs without fragment subgroup ops",
-     "Android: controller support"
+     "tools: spv-override generator for GPUs without fragment subgroup ops"
     ]
    }
   ]
@@ -10452,21 +10453,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-15T23:51:58Z",
+  "pushed_at": "2026-11-16T18:47:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T23:51:45Z",
+    "last_commit": "2026-11-16T18:47:15Z",
     "subjects": [
+     "0.4.5-beta (versionCode 44)",
+     "Lighter FXAA and FSR 1 EASU; vertex cache keeps what the last 2 frames drew (from TOTK)",
+     "Textures: pages the CPU wrote are hashed whole, not sampled (from TOTK)",
+     "Audio: the auxiliary buffer and the 3D reverb (from TOTK)",
+     "Native code: counter reads scaled to 19.2 MHz where the phone's counter differs (MediaTek, from TOTK)",
+     "Programs freed: on each in-place reboot, and on a Mali after minutes unused (#450)",
      "0.4.4-beta (versionCode 43): READMEs note the release",
-     "Frame generation: Import Lossless.dll, the real reason when the file can't be opened, and GPUs without null descriptors (#437 #385 #402)",
-     "Sync lag back right after a menu: the world counted as left only after 45 frames away (#374 #439 #433)",
-     "Frame pacing: into 20 fps only when the frames are slow, and a try at 30 every few seconds at 20 (#374 #439 #433)",
-     "0.4.3-beta (versionCode 42): READMEs note the release",
-     "Frame generation: the window asks for the refresh its frames need (60 fps x 2: 120 Hz); the menu says when none fit",
-     "0.4.2-beta (versionCode 41): READMEs note the release",
-     "Turnip: GPU progress through a fence per submission, the timeline no longer signalled - Tab A9+ ~15 -> ~19 fps"
+     "Frame generation: Import Lossless.dll, the real reason when the file can't be opened, and GPUs without null descriptors (#437 #385 #402)"
     ]
    }
   ]
@@ -10668,7 +10669,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-15T16:21:28Z",
+  "pushed_at": "2026-11-16T17:44:14Z",
   "branches": [
    {
     "branch": "main",
@@ -11270,7 +11271,7 @@
   "branches": []
  },
  "lzp3161007/d2r-mobile": {
-  "pushed_at": "2026-11-02T17:36:09Z",
+  "pushed_at": "2026-11-16T08:04:16Z",
   "branches": []
  },
  "lhr0909/d2r-mobile": {
@@ -11564,21 +11565,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-16T02:06:27Z",
+  "pushed_at": "2026-11-16T18:11:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T02:06:27Z",
+    "last_commit": "2026-11-16T07:51:00Z",
     "subjects": [
-     "Merge pull request #145 from AksharDP/t3/fix-github-issue-72",
-     "Merge remote-tracking branch 'origin/main' into t3/fix-github-issue-72",
-     "Merge pull request #152 from AksharDP/t3/cheat-one-damage",
-     "Merge remote-tracking branch 'origin/main' into t3/fix-github-issue-72",
-     "Merge pull request #153 from AksharDP/t3/investigate-issue-63",
-     "Let the game's input through 1 s after the menu or text entry closes even when something still reads as held, ported from TotK Recomp d81249f (issue 63).",
-     "Add the One damage cheat: the party's hits land for 1.",
-     "Merge pull request #151 from AksharDP/t3/version-0.1.13"
+     "Merge pull request #156 from AksharDP/t3/remove-ru-locale",
+     "Read the languages again for another install folder after a failed read, and keep the legacy XCX_ language variables out of the services probe.",
+     "Address the review of the language changes.",
+     "Run an unknown XC2_LANG, such as the ru an older xc2.ini may still hold, in the release's default language instead of stopping.",
+     "Drop the in-game settings menu's Russian translation and its menu language setting; the menu is English.",
+     "Drop the installer window's Russian translation.",
+     "Offer only the game languages the chosen game files have text for.",
+     "Stop offering Dutch and Portuguese as game languages."
     ]
    }
   ]
@@ -11732,7 +11733,7 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-16T03:04:16Z",
+  "pushed_at": "2026-11-16T07:52:46Z",
   "branches": [
    {
     "branch": "main",
@@ -11752,12 +11753,80 @@
   ]
  },
  "gosail/d2r-mobile": {
-  "pushed_at": "2026-11-07T13:00:14Z",
+  "pushed_at": "2026-11-16T17:55:05Z",
   "branches": [
+   {
+    "branch": "feat/ipad-android-keyboard-mouse-upstream-20261116",
+    "ahead": 66,
+    "behind": 5,
+    "files": 46,
+    "real_files": 45,
+    "dirs": [
+     "dm/android",
+     "dm/host",
+     "dm/ios",
+     "dm/tools"
+    ],
+    "last_commit": "2026-11-16T12:08:32Z",
+    "subjects": [
+     "ci(controls): run native settings-tab ordering regression",
+     "test(controls): verify original Controls tab precedes Custom in both native layouts",
+     "fix(controls): keep native Controls before Custom in controller and touch settings layouts",
+     "test(android): guard mouse ownership cleanup when native item gesture cancels",
+     "fix(android): clear external mouse owner when panel pointer gesture is cancelled",
+     "ci(android): correct multiline shell continuation in Gradle task",
+     "ci(android): compile complete Java app without private native assets",
+     "fix(ipados): release pointer gesture ownership on focus or layout cancellation"
+    ]
+   },
+   {
+    "branch": "feat/offline-druid-summon-balance-20261116",
+    "ahead": 31,
+    "behind": 5,
+    "files": 3,
+    "real_files": 3,
+    "dirs": [
+     "dm/ios"
+    ],
+    "last_commit": "2026-11-16T14:22:37Z",
+    "subjects": [
+     "fix(offline): tolerate non-UTF8 compiler diagnostics while keeping game-table bytes exact",
+     "fix(offline): compile and byte-verify native D2R 3.3 BIN skill tables, not TXT alone",
+     "test(offline): validate 120-degree native cleave dispatch and strict donor/version guards",
+     "feat(offline): reuse native Goatman Cleave server handler for 120-degree BearSmite sweep",
+     "feat(offline): opt-in summon balance at RomFS build, preserve normal gameplay by default",
+     "test(offline): guard skill IDs, summon caps, cold brackets, AI rows and unmodified data",
+     "fix(offline): allow unchanged small cold increments after integer rounding",
+     "feat(offline): version-guarded Druid summon skill and monster-AI table patcher"
+    ]
+   },
+   {
+    "branch": "feat/offline-dual-merc-probe-20261116",
+    "ahead": 41,
+    "behind": 5,
+    "files": 20,
+    "real_files": 17,
+    "dirs": [
+     "dm/host",
+     "dm/ios",
+     "dm/verify"
+    ],
+    "last_commit": "2026-11-16T17:55:03Z",
+    "subjects": [
+     "test(dualmerc): fail closed if native hire-path call sites drift from verified 3.3 build",
+     "test(dualmerc): correlate hire commands, short-window roster and gear observations",
+     "diag(dualmerc): trace server hireling inventory fingerprints and disappearing units safely",
+     "docs(dualmerc): record verified Switch 3.3 native hire and old-merc handling chain",
+     "feat(dualmerc): recover handler call RVAs from owner's prepared Guest Mach-O read-only",
+     "fix(dualmerc): guard native pointer diagnostic once across server callbacks",
+     "diag(dualmerc): read relocated hire handler RVAs and direct calls from live guest",
+     "diag(dualmerc): sample hire-before and 100-tick transition, flag duplicate acts"
+    ]
+   },
    {
     "branch": "feat/pc-mouse-controls-parity-20261105",
     "ahead": 385,
-    "behind": 0,
+    "behind": 38,
     "files": 65,
     "real_files": 62,
     "dirs": [
@@ -11782,7 +11851,7 @@
    {
     "branch": "feat/portable-mouse-and-world-hover-20261105",
     "ahead": 19,
-    "behind": 0,
+    "behind": 38,
     "files": 30,
     "real_files": 30,
     "dirs": [
@@ -11805,21 +11874,45 @@
    },
    {
     "branch": "main",
-    "ahead": 21,
-    "behind": 0,
+    "ahead": 23,
+    "behind": 5,
     "files": 0,
     "real_files": 0,
     "dirs": [],
-    "last_commit": "2026-11-05T15:05:46Z",
+    "last_commit": "2026-11-16T10:00:51Z",
     "subjects": [
+     "chore(sync): bring fork main to upstream 82ca0e15 (2026-11-16)",
+     "chore(sync): merge jhaizhou-ops/d2r-mobile main through 90a7a83c",
      "revert: undo premature merge of PR #1 (restore main snapshot)",
      "Merge pull request #1 from gosail/feat/portable-mouse-and-world-hover-20261105",
      "fix(mouse): maintain captured monster attack even when pointer leaves world area",
      "test(mouse): verify persistent item hover and captured monster target",
      "feat(controls): restore native Controls tab before Custom in settings",
-     "fix(mouse): retain inventory cursor and monster lock across pointer movement",
-     "test(mouse): cover Mac right-use/middle-map and paired button release",
-     "fix(mac): keep right-button release paired with its original item/back action"
+     "fix(mouse): retain inventory cursor and monster lock across pointer movement"
+    ]
+   },
+   {
+    "branch": "test/ipad-mini7-mouse-offline-druid-20261116",
+    "ahead": 69,
+    "behind": 5,
+    "files": 49,
+    "real_files": 48,
+    "dirs": [
+     "dm/android",
+     "dm/host",
+     "dm/ios",
+     "dm/tools"
+    ],
+    "last_commit": "2026-11-16T14:29:09Z",
+    "subjects": [
+     "test(ipad): combine PR #3 input stack with offline Grizzly Cleave RomFS overlay",
+     "test(ipad): include offline druid test_druid_summon_balance.py alongside PR #3 mouse support",
+     "test(ipad): include offline druid druid_summon_balance.py alongside PR #3 mouse support",
+     "ci(controls): run native settings-tab ordering regression",
+     "test(controls): verify original Controls tab precedes Custom in both native layouts",
+     "fix(controls): keep native Controls before Custom in controller and touch settings layouts",
+     "test(android): guard mouse ownership cleanup when native item gesture cancels",
+     "fix(android): clear external mouse owner when panel pointer gesture is cancelled"
     ]
    }
   ]
@@ -11855,21 +11948,21 @@
   "branches": []
  },
  "Desm0nt/diablo3-port": {
-  "pushed_at": "2026-11-16T06:37:42Z",
+  "pushed_at": "2026-11-16T18:24:13Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T06:36:54Z",
+    "last_commit": "2026-11-16T13:39:14Z",
     "subjects": [
-     "VERSION 0.2.18: Simplified Chinese front end (issue #28: settings, pause menu, drivers, layout editor; 简体中文 in the menu-language choices)",
-     "Issue #28: L3 stays hidden until Add... in the touch layout (the editor already offers it; owner); line endings back to LF",
-     "Issue #28: L3 button shown in the touch layout (top-right row; the game's Unequip in the inventory is L3, the left stick is hidden there); Simplified Chinese front end: values-zh/d3_settings.xml (161), UiZh table for the ru/en pairs (Ui.t, pad editor), 简体中文 in both menu-language pickers, GearText gear_mp_* zh",
-     "VERSION 0.2.17: native screen resolution crash (graphics heap, issue #23), Mali stripes (feedback copy, DRS alignment) and game dynamic resolution gear (issue #23), driver notices as dialogs, driver list labels and multi-install (issue #30), PanVK mapper names",
-     "vk: PanVK - fill PANVK_MAPPER_NAMES from the vendor's mapper.*.so when unset",
-     "Issue #30 + #23: driver list labels unique (a meta.json name shared by several installed packages shows the folder name, i.e. the zip name), 'Install from file' takes several zips (EXTRA_ALLOW_MULTIPLE behind GearHost.driverMultiPick, summary of installed / not installed with reasons); vk_driver.c logs the stable-C IMapper modules in /vendor/lib64/hw (PanVK zenith needs one: -1000072003 without it); DRS gear off = no 64 alignment (1.0 had become 0.977, sub-rect + upscale still ran)",
-     "Native resolution crash at 2464x1080 (issue #23, TECNO LI6): the game's fixed 372 MB graphics heap (main+0xa36c34, allocator 0x114c968: render targets) ran out in the front end, out of memory -> trap (SIGILL main+0xa2c440, lr main+0xa390ac); with DM_D3_HEIGHT != 900 it is sized linearly from 2400x1080 (fits in 372) + 64 MB, at most 800 (DM_D3_GFX_HEAP=<MB>), and the pool reported to the game grows by as much as the heap region allows. VkDrivers (frontend-common): driver notices as a dialog, a toast is cut to two lines and the long PanVK name hid 'failed, system driver'",
-     "D3_PORT: Mali stripes and the game's DRS (issue #23): DRS state and controller, alignment, feedback copy, GPU clock, phone checks"
+     "VERSION 0.2.22: camera zoom-out (issue #31), present on its own thread by default with automatic fallback, guest thread exit on the host stack",
+     "present-thread on by default (D3 0.2.22) with an automatic way back: a crash on the thread dm-present or the engine's 'Game presentation failed (present thread)' appends a byte to files/pt-crashes (crash hook), from the second one DmActivity starts with DM_GFX_PRESENT_THREAD=0 and logs why; a new APK version counts again",
+     "Issue #31: camera zoom-out moves the camera back: the Observer assets' eye offset (consoleObserver 0x42d, retro 0x42f, console_wide 0x433 / 0x434) scaled along eye - look-at from the game's thread (npad poll pump, ~1 s and at once on a gear change), lookups as the game's GlobalSNOGet / SNOGet fast paths in plain reads; the wider FOV kept in reserve behind DM_D3_FOV_ZOOM (not in the gear); notes in EN/RU/zh",
+     "Issue #31: camera zoom-out 100..140 % (gear, live; DM_D3_ZOOM): the perspective builder main 0x29b7a0 replaced by the same code (the game's tanf; 96 vectors identical to the original in unicorn), tan(fovY/2) of the gameplay camera's call (0x264a84) scaled by the zoom: a wider view of the same camera, the UI unchanged; EN/RU/zh strings",
+     "present-thread (port-common, KB PERF-D07): present (fence wait, acquire, letterbox / RCAS / blit, its submit, vkQueuePresentKHR) can run on its own thread dm-present, D16's DM_GFX_PRESENT_THREAD protocol; default 0 = presents inline exactly as before, 1 = own thread, 2 = the protocol inline; DM_GFX_PRESENT_UNPIN=1, DM_GFX_PRESENT_CPUS; xbg_game.cpp merged by hand at D3's own lines (no BC self-test submit here: D3's GPU self-test runs inside xbg_game_initialize before the first present); D3_PORT.md section with the phone checks",
+     "thread-exit-hoststack (port-common, KB HLE-06): SVC ExitThread runs pthread_exit on the thread's saved host pthread stack (dm_call_on_stack in entry.S) instead of the small guest stack (D16 issues #12/#20, S23+ / Android 17 crash in bionic's teardown); pure fix, no switch; brings pc-core (pc_note: '[pc] thread-exit-hoststack: applied' at the first such exit)",
+     "VERSION 0.2.21: full archive checksum check after a launch that crashed before its first frame (issue #33), faster Vulkan engine build (-O3)",
+     "Issue #33: full archive checksum check after a launch that crashed before its first frame: a .cpk of the right length with damaged data (Patch2_7_1.cpk, bad copy to the phone) passed the start check and the game died parsing it; the crash hook leaves files/cpk-crc.next while no frame was seen, the next start checks every archive's sector CRC-32 (d3_cpk_crc, header offset 56, as d3cpklib verify) on a background thread with a progress screen before nativeStart, damaged ones named on the start screen (13 languages); a set that passed is not read again (cpk-crc.ok); tools/test_cpk_crc.c"
     ]
    }
   ]
@@ -11981,7 +12074,7 @@
   ]
  },
  "lucienlmy/d2r-mobile": {
-  "pushed_at": "2026-11-13T21:59:49Z",
+  "pushed_at": "2026-11-16T18:09:24Z",
   "branches": []
  },
  "Gu3hi/gushi-apps": {
@@ -12038,21 +12131,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-16T06:38:42Z",
+  "pushed_at": "2026-11-16T19:40:19Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T06:36:17Z",
+    "last_commit": "2026-11-16T19:36:09Z",
     "subjects": [
-     "Merge fix/gpu-stop-not-done into main（gate2）",
-     "Merge diag/thread-pause-timeout-where into main（gate2）",
-     "diag(thread): a SetThreadActivity pause timeout names the host function the target was in",
-     "Merge fix/ns2-nup-rename-retry into main（gate2）",
-     "Merge fix/cpatch-nop-call into main（gate2）",
-     "Merge diag/motion-per-second into main（gate2）",
-     "fix(pack): NUP expansion renames its finished tree with the Windows retry",
-     "Merge fix/bundle-clean-prepare into main（gate2）"
+     "Merge contrib/pr1357 into main（gate2）",
+     "Merge contrib/pr1361 into main（gate2）",
+     "Merge fix/kit-skip-romfs-image into main（gate2）",
+     "Merge contrib/pr1292-r into main（gate2）",
+     "Merge perf/nvn2-early-z into main（gate2）",
+     "jobs: the RomFS image is not copied into the program kit or recipe",
+     "Merge fix/p1-193-ips-origin into main（gate2）",
+     "Merge feat/mac-hid-generic-pad into main（gate2）"
     ]
    }
   ]
@@ -12210,21 +12303,21 @@
   ]
  },
  "Desm0nt/torchlight2-port": {
-  "pushed_at": "2026-11-16T05:50:13Z",
+  "pushed_at": "2026-11-16T12:44:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T05:44:10Z",
+    "last_commit": "2026-11-16T12:44:09Z",
     "subjects": [
+     "gfx: background pipeline builds for skippable (blended) draws on by default when the GPU policy is not Adreno (issue #4 Mali-G615 compile hitches; marker / DM_GFX_ASYNC_PIPELINES still win)",
      "TL2 0.1.4",
      "build: Vulkan translator at -O3 -mtune=cortex-x3 instead of -O2 (port-common xbg-o3, PERF-X11)",
      "nvn: command-memory host segments live until the game reuses the range, working AddControlMemory (port-common nvn-ctlmem, HLE-38; DM_NVN_CTLMEM=0 = old model)",
      "gfx: scaled vertex formats (NVN *_UI2F/*_I2F -> USCALED/SSCALED, integer + shader conversion without VERTEX_BUFFER; port-common vtx-scaled, XCL-07)",
      "android: draw under the display cutout on API 30+ (setDecorFitsSystemWindows(false), black window background; APP-13)",
      "gfx: VK-UBO-MEMO guard only for non-dynamic, non-empty UBOs (keep memo for size-0 binds in dynamic mode)",
-     "gfx: never memoize sets with a non-dynamic guest UBO snapshot (VK-UBO-MEMO, port-common desc-memo-keys); version 0.1.3",
-     "gfx: fix memo key gen for non-dynamic driver blocks (DRIVER0=buf_gen, DRIVER2=tex_gen)"
+     "gfx: never memoize sets with a non-dynamic guest UBO snapshot (VK-UBO-MEMO, port-common desc-memo-keys); version 0.1.3"
     ]
    }
   ]
@@ -12358,7 +12451,7 @@
   ]
  },
  "simipoB/Arceus-Native-Android": {
-  "pushed_at": "2026-11-16T04:21:08Z",
+  "pushed_at": "2026-11-16T07:32:34Z",
   "branches": [
    {
     "branch": "main",
@@ -12378,12 +12471,12 @@
   ]
  },
  "Pampattitude/d2r-mobile": {
-  "pushed_at": "2026-11-12T17:08:18Z",
+  "pushed_at": "2026-11-16T12:26:16Z",
   "branches": [
    {
     "branch": "adreno-6xx",
     "ahead": 7,
-    "behind": 0,
+    "behind": 32,
     "files": 13,
     "real_files": 10,
     "dirs": [
@@ -12673,13 +12766,14 @@
   ]
  },
  "Desm0nt/pillars-of-eternity-port": {
-  "pushed_at": "2026-11-12T20:06:17Z",
+  "pushed_at": "2026-11-16T18:31:32Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-12T19:18:55Z",
+    "last_commit": "2026-11-16T14:12:54Z",
     "subjects": [
+     "0.1.1-test2: resolution option, 16:10 fix, smooth 30 fps",
      "Docs: also tested on Xiaomi 13 Pro (Snapdragon 8 Gen 2)",
      "Fix a start-up hang: lost wake-up in Unity's ThreadedStreamBuffer",
      "Update README.md",
@@ -12690,5 +12784,70 @@
     ]
    }
   ]
+ },
+ "serranoid/d2r-mobile": {
+  "pushed_at": "2026-11-16T19:10:20Z",
+  "branches": [
+   {
+    "branch": "ci/shell",
+    "ahead": 5,
+    "behind": 31,
+    "files": 27,
+    "real_files": 26,
+    "dirs": [
+     "dm/ios",
+     "dm/tools",
+     "mod/README.md",
+     "mod/ci",
+     "mod/herramientas"
+    ],
+    "last_commit": "2026-11-16T19:10:18Z",
+    "subjects": [
+     "ci: montar un contenedor con el ejecutable compilado en CI",
+     "ci: compilar el contenedor de iOS en macOS sin contenido del juego",
+     "mod: emulador del compilador de tablas del juego y herramientas de tablas",
+     "mod: caché propia del programa reescrito en modo txt (d2rm_pack)",
+     "mod: gancho DM_MOD_DIR en el overlay y opción DM_TXT_TABLES en el parcheador"
+    ]
+   },
+   {
+    "branch": "mod/base",
+    "ahead": 1,
+    "behind": 32,
+    "files": 3,
+    "real_files": 3,
+    "dirs": [
+     "dm/ios",
+     "dm/tools"
+    ],
+    "last_commit": "2026-11-16T18:42:07Z",
+    "subjects": [
+     "mod: gancho DM_MOD_DIR en el overlay y opción DM_TXT_TABLES en el parcheador"
+    ]
+   },
+   {
+    "branch": "mod/ios-232",
+    "ahead": 3,
+    "behind": 31,
+    "files": 18,
+    "real_files": 18,
+    "dirs": [
+     "dm/ios",
+     "dm/tools",
+     "mod/README.md",
+     "mod/herramientas"
+    ],
+    "last_commit": "2026-11-16T18:42:07Z",
+    "subjects": [
+     "mod: emulador del compilador de tablas del juego y herramientas de tablas",
+     "mod: caché propia del programa reescrito en modo txt (d2rm_pack)",
+     "mod: gancho DM_MOD_DIR en el overlay y opción DM_TXT_TABLES en el parcheador"
+    ]
+   }
+  ]
+ },
+ "mumuwanglin/d2r-mobile": {
+  "pushed_at": "2026-11-16T08:08:06Z",
+  "branches": []
  }
 }
