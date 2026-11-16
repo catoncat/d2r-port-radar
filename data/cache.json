@@ -1670,21 +1670,21 @@
   ]
  },
  "wukongtime/d2r-mobile-build-backup": {
-  "pushed_at": "2026-11-15T02:05:09Z",
+  "pushed_at": "2026-11-16T01:55:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T14:01:17Z",
+    "last_commit": "2026-11-15T08:54:52Z",
     "subjects": [
+     "Align release resource instructions with current availability",
      "Document unavailable community resources and reuse of existing Data",
      "Document unavailable community resources and reuse of existing Data",
      "Allow reviewed diagnostic-only program generator update",
      "Use verified stable Filebase IPNS prepared input URLs",
      "Update Apple prepared input links after program regeneration",
      "Refresh prepared product revisions with regenerated programs",
-     "Use a standalone minimal TV prepared input (#33)",
-     "Merge pull request #22 from jiayx/feat/tvos-build"
+     "Use a standalone minimal TV prepared input (#33)"
     ]
    }
   ]
@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-15T05:57:33Z",
+  "pushed_at": "2026-11-16T05:57:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T05:57:32Z",
+    "last_commit": "2026-11-16T05:57:19Z",
     "subjects": [
+     "radar 2026-11-16",
      "radar 2026-11-15",
      "radar 2026-11-14",
      "radar 2026-11-13",
      "radar 2026-11-12",
      "radar 2026-11-11",
      "radar 2026-11-10",
-     "radar 2026-11-09",
-     "radar 2026-11-08"
+     "radar 2026-11-09"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-15T17:42:58Z",
+  "pushed_at": "2026-11-16T05:20:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T17:42:20Z",
+    "last_commit": "2026-11-16T05:20:23Z",
     "subjects": [
-     "nvn/dlss: pass the game's bias mask to MetalFX as its reactive mask (PR #1904)",
-     "game: Sid Meier's Civilization VI reaches the Mac map",
-     "packing: read NVBC-wrapped CIVBSF shader records",
-     "nvn: resolve descriptor handles against the execution pools",
-     "chain: preserve both words of buffer texture handles",
-     "packing: another edition's files keep a RomFS marker they hold (PR #1882)",
-     "gfx/nvn: return stored sampler builder state from five getters (PR #2115)",
-     "nvn/fault: name every GPU address below 1 MB the host hands Metal (issue #1289)"
+     "tools/env_switches: enum constants are no switches either",
+     "packing/nup: pack one program of a Switch 2 Edition NUP, with the others' RomFS beside it (PR #2692)",
+     "lint/c: the clang-tidy ratchet passes again: seven new findings fixed, the baseline shrunk to 188",
+     "gl/textures: upload compressed 2D arrays (PR #2704)",
+     "packing/shader_split: read Phyre shaders from split KIT archives (PR #1939)",
+     "chain/pull: pulling libraries read NVN2's attributes 16-31",
+     "gfx/tests: t_vk_desc watches a plain object for the pipeline's depth-stencil release",
+     "games/burnout: add Burnout Paradise Remastered's profile and note"
     ]
    }
   ]
@@ -1951,20 +1951,20 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-15T18:49:55Z",
+  "pushed_at": "2026-11-16T06:25:17Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T18:49:54Z",
+    "last_commit": "2026-11-16T06:25:16Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
-     "chore: 自动同步 Star 地图（205 个项目）",
      "chore: 自动同步 Star 地图（205 个项目）"
     ]
    }
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-15T16:26:04Z",
+  "pushed_at": "2026-11-15T22:55:22Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T16:26:03Z",
+    "last_commit": "2026-11-15T22:55:21Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4127,21 +4127,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-15T22:54:53Z",
+  "pushed_at": "2026-11-16T00:15:09Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T22:54:45Z",
+    "last_commit": "2026-11-15T23:28:09Z",
     "subjects": [
+     "fix(shaders): a new device cache folder takes over this device's pipeline archive and collected list",
      "fix(shaders): this device's warm-up rows are put on the app's variants a draw takes now",
      "fix(sign): Ocarina of Time and the MNG Launcher are signed with their bundle ID as requirement",
      "fix(shaders): the app's own variant of a shader comes first; the device's collected list is not an app list",
      "Merge PR #2208 follow-up: icon and gauge panes stay as shipped (#2208, liafonx)",
      "Merge remote-tracking branch 'origin/main' into claude/pr-batch-1115",
      "fix(archive): a new translation chain keeps the pipeline archive; only changed pipelines are compiled again",
-     "feat(launcher): no separate diagnostic mode; quick start always records diagnostics",
-     "fix(ios): app icons are resized with AppKit, not sips"
+     "feat(launcher): no separate diagnostic mode; quick start always records diagnostics"
     ]
    }
   ]
@@ -8512,7 +8512,7 @@
   ]
  },
  "Hengle/d2r-mobile": {
-  "pushed_at": "2026-10-29T12:15:58Z",
+  "pushed_at": "2026-11-16T02:22:04Z",
   "branches": []
  },
  "xolarvill/port-switch-games": {
@@ -9483,7 +9483,7 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-15T22:14:04Z",
+  "pushed_at": "2026-11-16T06:23:34Z",
   "branches": [
    {
     "branch": "main",
@@ -10176,21 +10176,21 @@
   "branches": []
  },
  "Xc1Ym/LumaNX": {
-  "pushed_at": "2026-11-14T00:29:42Z",
+  "pushed_at": "2026-11-16T04:25:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T00:29:36Z",
+    "last_commit": "2026-11-16T04:07:11Z",
     "subjects": [
+     "chore: prepare LumaNX 0.4.3 release",
+     "chore: sync tested nxnative snapshot",
+     "test: stub Joy-Con motion sinks in native harness",
+     "test: follow nxnative extraction signature",
+     "fix: accept latest nxnative sync interfaces",
      "chore: sync tested nxnative snapshot",
      "chore: prepare LumaNX 0.4.2 release",
-     "chore: sync tested nxnative snapshot",
-     "Merge pull request #43 from Xc1Ym/codex/fix-nxnative-nativeaot-reader-20261113",
-     "fix: disable NativeAOT for adapted reader",
-     "Merge pull request #42 from Xc1Ym/codex/fix-nxnative-virtual-mac-sync-test-20261113",
-     "fix: accept virtual Mac in synced engine tests",
-     "Merge pull request #41 from Xc1Ym/codex/fix-nxnative-extract-sync-20261113"
+     "chore: sync tested nxnative snapshot"
     ]
    }
   ]
@@ -10452,21 +10452,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-15T10:20:52Z",
+  "pushed_at": "2026-11-15T23:51:58Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T10:20:41Z",
+    "last_commit": "2026-11-15T23:51:45Z",
     "subjects": [
+     "0.4.4-beta (versionCode 43): READMEs note the release",
+     "Frame generation: Import Lossless.dll, the real reason when the file can't be opened, and GPUs without null descriptors (#437 #385 #402)",
+     "Sync lag back right after a menu: the world counted as left only after 45 frames away (#374 #439 #433)",
+     "Frame pacing: into 20 fps only when the frames are slow, and a try at 30 every few seconds at 20 (#374 #439 #433)",
      "0.4.3-beta (versionCode 42): READMEs note the release",
      "Frame generation: the window asks for the refresh its frames need (60 fps x 2: 120 Hz); the menu says when none fit",
      "0.4.2-beta (versionCode 41): READMEs note the release",
-     "Turnip: GPU progress through a fence per submission, the timeline no longer signalled - Tab A9+ ~15 -> ~19 fps",
-     "Output resolution Auto: 720p with RAM saving on (weak GPUs), 1080p elsewhere as before",
-     "run_shots.sh: a config's own LARECOMP_INPUT is kept (the default A presses only when it has none)",
-     "README.pt-BR: 0.4.1-beta, as in the English README",
-     "Video > RAM saving: Automatic / On / Off for the low-RAM mode, with a restart button when it changes"
+     "Turnip: GPU progress through a fence per submission, the timeline no longer signalled - Tab A9+ ~15 -> ~19 fps"
     ]
    }
   ]
@@ -11564,21 +11564,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-15T18:26:06Z",
+  "pushed_at": "2026-11-16T02:06:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T18:26:05Z",
+    "last_commit": "2026-11-16T02:06:27Z",
     "subjects": [
-     "Merge pull request #149 from AksharDP/t3/fix-power-throttling-decl",
-     "Look up SetProcessInformation at run time. MinGW headers declare it only when _WIN32_WINNT names Windows 8 or later, and the release build's toolchain names Windows 7, so the Windows release build failed with an undeclared function since the power-throttling opt-out. plat_no_power_throttling now finds it in kernel32 and does nothing when it is missing. win32.c compiles with _WIN32_WINNT=0x0601, where it failed before, and with 0x0A00.",
-     "Merge pull request #148 from AksharDP/t3/flight-recorder-slow-frames",
-     "Drop a thread's cycles from before the TSC rate is known. A thread's cycle count starts from its value at registration, and the cycles it runs in the first 50 ms, before the rate is measured, are dropped: kept, they all landed in the first frame measured after it. On one rec4 run no frame's presenting-thread CPU time exceeded its interval.",
-     "Close races and a rescaling error in the slow-frame log and the texture jobs. A thread's CPU time now adds its cycles since the last query at the rate of the moment, so a refined TSC rate no longer rescales the cycles counted before it, and the reference pair the rate is measured from is set once under plat_once. The exit dump and the render thread fill and read a record's gpu_us through atomics. vk_texture_range_gone waits for the deferred deswizzles under tex_lock, which every upload holds, so none can be queued between the wait and the storage going back to the guest; the jobs never take tex_lock. tools/flight_slow.py takes CPU shares of the wall interval when --clock scales interval_ms, and pools logs with and without the CPU columns. On one rec4 run the presenting thread's CPU time was 10.8 ms per frame, as before.",
-     "Keep the glow check's answer per block and snapshot generation. glow_c4 read the 264 bytes of a c4 block from the uniform snapshot for every vertex-stage c4 binding on a target half the output, and the snapshot arena is device memory the CPU reads uncached through the BAR: in frames over 15 ms on the rec4 recording the replay thread spent 1.6 ms in those reads. The answer is now kept per block address and vk_usnap_gen, which changes at every submission and every GPU write that drops snapshot bytes; a block the snapshot lacks is read from guest memory each time and not kept. A cross-check that read the block again on every kept answer compared 131072 of them in a rec4 run with none differing. In a profile of the frames over 15 ms the replay's prepare_draw went from 7.0 to 4.9 ms and the snapshot reads left it. In 8 interleaved rounds per arm the mean frame at full clock (flight_slow.py --clock) had a median of 9.81 against 10.04 ms, lower in 4 rounds, higher in 2; one round with the change ran with every thread using half again as much CPU at the same clock and is not counted.",
-     "Use a saved PGO profile by default. A v301 build that names no profile and passes no --no-pgo now compiles the generated C with build/pgo/default.profdata when that file exists, and says so, so a profile trained on the player's own play stays on through every rebuild instead of needing --pgo-use each time. On a held-out recording of the user's play, 8 interleaved rounds, a profile of three other recordings ran 0.63 ms faster per frame (se 0.25) at equal machine speed. Release and CI builds have no such file and build as before.",
-     "Judge slow frames at full clock. A laptop's core clock follows its power budget, and on the same build and route the CPU time of the presenting thread rose from run to run as much as the frame time did, while other programs took a steady 12 to 13 % of the interval; neither wall time nor CPU time tells a slower build from a slower machine. The slow-frame log now has a probe_us column: at each kept frame's end the presenting thread times a fixed chain of 8000 dependent multiply-adds, the best of three, which takes about 10 us and is inversely the core clock. tools/flight_slow.py --clock scales each interval by the fastest probe of the logs read (their 5th percentile) over the frame's own, and reports and splits on that. On six rec4 runs, frames over 15 ms ran at a clock 6 % lower than the rest, and their share went from 3.6 to 10.2 % per run in wall time to 1.2 to 3.6 % at full clock."
+     "Merge pull request #145 from AksharDP/t3/fix-github-issue-72",
+     "Merge remote-tracking branch 'origin/main' into t3/fix-github-issue-72",
+     "Merge pull request #152 from AksharDP/t3/cheat-one-damage",
+     "Merge remote-tracking branch 'origin/main' into t3/fix-github-issue-72",
+     "Merge pull request #153 from AksharDP/t3/investigate-issue-63",
+     "Let the game's input through 1 s after the menu or text entry closes even when something still reads as held, ported from TotK Recomp d81249f (issue 63).",
+     "Add the One damage cheat: the party's hits land for 1.",
+     "Merge pull request #151 from AksharDP/t3/version-0.1.13"
     ]
    }
   ]
@@ -11732,7 +11732,7 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-15T22:30:57Z",
+  "pushed_at": "2026-11-16T03:04:16Z",
   "branches": [
    {
     "branch": "main",
@@ -11855,21 +11855,21 @@
   "branches": []
  },
  "Desm0nt/diablo3-port": {
-  "pushed_at": "2026-11-15T18:32:05Z",
+  "pushed_at": "2026-11-16T06:37:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T17:07:43Z",
+    "last_commit": "2026-11-16T06:36:54Z",
     "subjects": [
-     "VERSION 0.2.16: PowerVR exploded models (issue #22, VK-UBO-MEMO), CPU cores / boost hints / cutout strip (issue #23), sharper picture options (anisotropy x4, native screen resolution with font fit, FSR 1 upscale)",
-     "Upscale: FSR 1 on every GPU, GSR dropped from the choices (on the Mi 14 SGSR 1 'mobile' looked softer than the display hardware scaler at +2.3 ms GPU); gear text 'On (AMD FSR 1)'",
-     "cpu-place: the main thread's host tid is recorded too (svc_thread_main_init never runs thread_main, so 'main' was never placed and the 'placed' line never came); guest threads get their guest names as host names (comm, 15 chars) and up to three '[cpu] guest threads' lines list them",
-     "Native screen resolution: text at 1080 lines (DM_D3_HEIGHT != 900). The Switch fonts are bitmaps baked only for the 720 and 900 line classes; the point-size lookup main+0x276a10 picks the class from the window height (1080 -> class 8, none in the data) and returned nothing, so every UI text was skipped. DM_D3_FONT_FIT=near (default, only with DM_D3_HEIGHT != 900): the lookup is replaced by the same search over every baked size of any class (exact, else the next larger up to +5 %, else the next smaller); =up: game code only, every class + the game's next-larger fallback; =0: off",
-     "Merge branch 'wt/adpf' into wt/sharp",
-     "CPU boost hints (issue #23): ADPF with a fixed frame budget (from DOOM Eternal PERF-E14), workload-increase / reset hints, GameManager.setGameState from the loading screen and the scene",
-     "Window without decor fitting on Android 11+ and a black window background (issue #23: a strip stayed at the camera cutout on MIUI 13 / Android 12), as DOOM 2016 (its issue #38, KB APP-13)",
-     "Sharper picture, three gear options (EN+RU): anisotropic filtering x4 (DM_GFX_ANISO, default off, live: forced on samplers that minify linearly from mipmaps, only with the device's samplerAnisotropy; aniso_poll at the next present drops the derived samplers and the descriptor memo), native screen resolution (experimental, DM_D3_HEIGHT=native, next launch: the init site's height movk + aspect patched, the width keeps the picture shape, 2000x900 -> 2400x1080), upscale to the screen (DM_GFX_UPSCALE=0|auto|gsr|fsr, default off, live: window-size swapchain and our pass instead of the compositor stretch; auto = GSR (from DOOM 2016) on Adreno, FSR 1 EASU (+RCAS with Sharpening) elsewhere; FidelityFX FSR 1 headers vendored unmodified, MIT); gear \"CPU cores\" marked \"may not work\""
+     "VERSION 0.2.18: Simplified Chinese front end (issue #28: settings, pause menu, drivers, layout editor; 简体中文 in the menu-language choices)",
+     "Issue #28: L3 stays hidden until Add... in the touch layout (the editor already offers it; owner); line endings back to LF",
+     "Issue #28: L3 button shown in the touch layout (top-right row; the game's Unequip in the inventory is L3, the left stick is hidden there); Simplified Chinese front end: values-zh/d3_settings.xml (161), UiZh table for the ru/en pairs (Ui.t, pad editor), 简体中文 in both menu-language pickers, GearText gear_mp_* zh",
+     "VERSION 0.2.17: native screen resolution crash (graphics heap, issue #23), Mali stripes (feedback copy, DRS alignment) and game dynamic resolution gear (issue #23), driver notices as dialogs, driver list labels and multi-install (issue #30), PanVK mapper names",
+     "vk: PanVK - fill PANVK_MAPPER_NAMES from the vendor's mapper.*.so when unset",
+     "Issue #30 + #23: driver list labels unique (a meta.json name shared by several installed packages shows the folder name, i.e. the zip name), 'Install from file' takes several zips (EXTRA_ALLOW_MULTIPLE behind GearHost.driverMultiPick, summary of installed / not installed with reasons); vk_driver.c logs the stable-C IMapper modules in /vendor/lib64/hw (PanVK zenith needs one: -1000072003 without it); DRS gear off = no 64 alignment (1.0 had become 0.977, sub-rect + upscale still ran)",
+     "Native resolution crash at 2464x1080 (issue #23, TECNO LI6): the game's fixed 372 MB graphics heap (main+0xa36c34, allocator 0x114c968: render targets) ran out in the front end, out of memory -> trap (SIGILL main+0xa2c440, lr main+0xa390ac); with DM_D3_HEIGHT != 900 it is sized linearly from 2400x1080 (fits in 372) + 64 MB, at most 800 (DM_D3_GFX_HEAP=<MB>), and the pool reported to the game grows by as much as the heap region allows. VkDrivers (frontend-common): driver notices as a dialog, a toast is cut to two lines and the long PanVK name hid 'failed, system driver'",
+     "D3_PORT: Mali stripes and the game's DRS (issue #23): DRS state and controller, alignment, feedback copy, GPU clock, phone checks"
     ]
    }
   ]
@@ -12038,21 +12038,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-15T22:53:59Z",
+  "pushed_at": "2026-11-16T06:38:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T22:49:50Z",
+    "last_commit": "2026-11-16T06:36:17Z",
     "subjects": [
-     "Merge contrib/pr1215-r into main（gate2）",
-     "Merge contrib/pr1210-r into main（gate2）",
-     "Merge android/libpack-fix-r into main（gate2）",
-     "回放单测放行参数改成用到才求值：nvn_replay.mk 随总 make 引入，立即求值会让 iOS 出壳去扫安卓源码（壳输入闭包报 112 个表外文件）",
-     "Merge fix/p1-166-win-batch-create-reply into main（gate2）",
-     "Merge fix/p1-173-swap-old-name into main（gate2）",
-     "Merge fix/p1-183-pack-rename-race into main（gate2）",
-     "Merge fix/p1-171-convert-index-first into main（gate2）"
+     "Merge fix/gpu-stop-not-done into main（gate2）",
+     "Merge diag/thread-pause-timeout-where into main（gate2）",
+     "diag(thread): a SetThreadActivity pause timeout names the host function the target was in",
+     "Merge fix/ns2-nup-rename-retry into main（gate2）",
+     "Merge fix/cpatch-nop-call into main（gate2）",
+     "Merge diag/motion-per-second into main（gate2）",
+     "fix(pack): NUP expansion renames its finished tree with the Windows retry",
+     "Merge fix/bundle-clean-prepare into main（gate2）"
     ]
    }
   ]
@@ -12210,21 +12210,21 @@
   ]
  },
  "Desm0nt/torchlight2-port": {
-  "pushed_at": "2026-11-15T20:58:49Z",
+  "pushed_at": "2026-11-16T05:50:13Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T20:58:47Z",
+    "last_commit": "2026-11-16T05:44:10Z",
     "subjects": [
+     "TL2 0.1.4",
+     "build: Vulkan translator at -O3 -mtune=cortex-x3 instead of -O2 (port-common xbg-o3, PERF-X11)",
      "nvn: command-memory host segments live until the game reuses the range, working AddControlMemory (port-common nvn-ctlmem, HLE-38; DM_NVN_CTLMEM=0 = old model)",
      "gfx: scaled vertex formats (NVN *_UI2F/*_I2F -> USCALED/SSCALED, integer + shader conversion without VERTEX_BUFFER; port-common vtx-scaled, XCL-07)",
      "android: draw under the display cutout on API 30+ (setDecorFitsSystemWindows(false), black window background; APP-13)",
      "gfx: VK-UBO-MEMO guard only for non-dynamic, non-empty UBOs (keep memo for size-0 binds in dynamic mode)",
      "gfx: never memoize sets with a non-dynamic guest UBO snapshot (VK-UBO-MEMO, port-common desc-memo-keys); version 0.1.3",
-     "gfx: fix memo key gen for non-dynamic driver blocks (DRIVER0=buf_gen, DRIVER2=tex_gen)",
-     "v0.1.2: local multiplayer over Wi-Fi (the game's local wireless play via Pia over nn::ldn, carried over the LAN)",
-     "Launcher icon: redrawn Torchlight II Mobile art (night, moon, title with a MOBILE plaque, new hero line-up; generated, no game artwork)"
+     "gfx: fix memo key gen for non-dynamic driver blocks (DRIVER0=buf_gen, DRIVER2=tex_gen)"
     ]
    }
   ]
@@ -12358,7 +12358,7 @@
   ]
  },
  "simipoB/Arceus-Native-Android": {
-  "pushed_at": "2026-11-15T22:31:16Z",
+  "pushed_at": "2026-11-16T04:21:08Z",
   "branches": [
    {
     "branch": "main",
@@ -12632,21 +12632,21 @@
   ]
  },
  "jaigner-hub/metroid-prime-4-recomp": {
-  "pushed_at": "2026-11-15T16:06:32Z",
+  "pushed_at": "2026-11-16T02:09:59Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-15T16:05:14Z",
+    "last_commit": "2026-11-16T02:09:14Z",
     "subjects": [
-     "Version 0.4.19: a field of view setting (#20)",
-     "Add a field of view setting (#20)",
-     "Version 0.4.18: the mouse gyro aim no longer drifts with a controller connected (#17)",
-     "Let the mouse alone move the gyro while it aims, so a connected controller cannot pull the aim down (#17)",
-     "Version 0.4.17: light and fog volume pools commit memory as they are filled (#21)",
-     "Commit virtual pool shadows on first touch instead of whole (#21)",
-     "Version 0.4.16: no more one-frame flashes from shader variants, geometry stages drawn (#18)",
-     "Name the pipeline list's shaders by their current input ids (#18)"
+     "Version 0.4.23: the intro movies that stop at their first frame (#25)",
+     "Wait in the present and replay drains for the work queued before the call, not for an empty queue (#25)",
+     "Version 0.4.22: logging for the screen quarter that stays after a load (#22)",
+     "Log draws whose viewport reaches past a pass that a smaller attachment cut down, the suspect behind the bottom-left quarter that stays after a load (#22)",
+     "Record the diagnosis of the ballistic cannon crash at native 4K and correct the note that the game's heaps were grown (#23)",
+     "Version 0.4.21: logging for the intro movies that stop (#25)",
+     "Log a movie decoder that stops for 2 s with its queues and the game's last call, and texture writes over 50 ms (#25)",
+     "Version 0.4.20: no crash at the campfire conversation (#24)"
     ]
    }
   ]
