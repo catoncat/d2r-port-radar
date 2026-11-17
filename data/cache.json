@@ -1422,7 +1422,7 @@
   "branches": []
  },
  "MichaelC001/d2r-mobile": {
-  "pushed_at": "2026-11-14T02:31:24Z",
+  "pushed_at": "2026-11-17T02:31:23Z",
   "branches": []
  },
  "tinytub/d2r-mobile": {
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-16T19:35:19Z",
+  "pushed_at": "2026-11-17T03:36:13Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T19:33:30Z",
+    "last_commit": "2026-11-17T03:35:45Z",
     "subjects": [
-     "nvn/pipelines: wait for archive lookup completion (PR #2770)",
-     "nvn/pipelines: look up predicted bases in background (PR #2677)",
-     "nvn/args: preserve GPU addresses across arena rollover (PR #2847)",
-     "gfx/nvn: the display-link callback latches the present of the acquire it woke (#2648, PR #2757)",
-     "host/registration: declare contiguous linker tables (PR #2856)",
-     "ci/tests: document the CPU graphics target list (PR #2856)",
-     "host/tests: pass complete SVC register frames (PR #2856)",
-     "gfx/tests: run t_refl's real-shader cases from inline fixtures"
+     "game: Donkey Kong Bananza record submission-copy measurement limits",
+     "host/input: verify GameController delivery for virtual pads",
+     "packing/ios: allow profiles without prewarm seeds (PR #1706)",
+     "nvn: guard private buffer CPU-access fallbacks (PR #2230)",
+     "tools/bug_report: preserve redaction across log cuts (PR #2325)",
+     "nvn/pool: a patched pool table takes a finished spare of its own and the logged entries, not a whole copy (PR #2663)",
+     "chain/rewrite: preserve float-add loop retry flags",
+     "nvn/tests: fix fixtures rejected by C lint"
     ]
    }
   ]
@@ -1951,21 +1951,21 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-16T06:25:17Z",
+  "pushed_at": "2026-11-16T21:59:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T06:25:16Z",
+    "last_commit": "2026-11-16T21:59:41Z",
     "subjects": [
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
+     "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
-     "chore: 自动同步 Star 地图（206 个项目）",
-     "chore: 自动同步 Star 地图（205 个项目）"
+     "chore: 自动同步 Star 地图（206 个项目）"
     ]
    }
   ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-16T06:43:05Z",
+  "pushed_at": "2026-11-16T19:40:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T06:43:05Z",
+    "last_commit": "2026-11-16T19:40:47Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2069,7 +2069,7 @@
   "branches": []
  },
  "hyhou/d2r-mobile": {
-  "pushed_at": "2026-11-14T02:10:29Z",
+  "pushed_at": "2026-11-17T02:26:02Z",
   "branches": []
  },
  "austery/d2r-mobile": {
@@ -9483,21 +9483,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-16T19:21:39Z",
+  "pushed_at": "2026-11-17T02:55:31Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T14:40:15Z",
+    "last_commit": "2026-11-16T21:13:20Z",
     "subjects": [
+     "Merge pull request #1374 from LNPANDY/feat/builder-top-engine-switcher",
+     "Merge pull request #1372 from LNPANDY/feat/s2arm-external-builder",
+     "Merge pull request #1370 from LNPANDY/feat/macnativegames-mac-builder",
+     "Merge pull request #1368 from LNPANDY/feat/multi-upstream-foundation",
+     "test(launcher): isolate LauncherStores defaults in capture tests",
      "Merge pull request #1378 from LNPANDY/fix/nvn-args-patch-arena",
      "patches: save arena GPU address before nested allocations in nvn_mtl",
-     "Merge pull request #1365 from LNPANDY/fix/971-ios-phone-gyro-fallback",
-     "patches: renumber #975 for iOS controller gyro fallback (#971)",
-     "Merge pull request #1361 from LNPANDY/sync/upstream-94a0944755da",
-     "chore(engine): sync upstream to 94a0944755da",
-     "Merge pull request #1281 from Haseenesss/fix/1265-shader-library-disk-full",
-     "Merge pull request #1255 from Haseenesss/fix/1254-qt-delete-to-trash"
+     "feat(launcher): add top builder engine switcher with on-demand download"
     ]
    }
   ]
@@ -10453,21 +10453,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-16T18:47:36Z",
+  "pushed_at": "2026-11-16T23:57:51Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T18:47:15Z",
+    "last_commit": "2026-11-16T23:20:50Z",
     "subjects": [
+     "Start screen banner: 900+ stars",
      "0.4.5-beta (versionCode 44)",
      "Lighter FXAA and FSR 1 EASU; vertex cache keeps what the last 2 frames drew (from TOTK)",
      "Textures: pages the CPU wrote are hashed whole, not sampled (from TOTK)",
      "Audio: the auxiliary buffer and the 3D reverb (from TOTK)",
      "Native code: counter reads scaled to 19.2 MHz where the phone's counter differs (MediaTek, from TOTK)",
      "Programs freed: on each in-place reboot, and on a Mali after minutes unused (#450)",
-     "0.4.4-beta (versionCode 43): READMEs note the release",
-     "Frame generation: Import Lossless.dll, the real reason when the file can't be opened, and GPUs without null descriptors (#437 #385 #402)"
+     "0.4.4-beta (versionCode 43): READMEs note the release"
     ]
    }
   ]
@@ -11204,21 +11204,21 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-15T06:38:14Z",
+  "pushed_at": "2026-11-17T03:04:31Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-13T06:58:59Z",
+    "last_commit": "2026-11-17T02:07:39Z",
     "subjects": [
-     "Merge pull request #164 from jmars125/claude/startup-58-f3dade",
-     "Start in English on a Russian Windows, open the window in front and leave the cursor free until a click",
-     "Merge pull request #157 from jmars125/task/installer-inputs",
-     "Size each NCZ as its NCA when the setup reads NSZ headers in place",
-     "Report Recomp Achievements events to RecompLauncher",
-     "Accept NSZ/XCZ files and extracted game folders in the setup",
-     "Merge pull request #156 from jmars125/version-0.1.21",
-     "Treat empty --dlc and --dlss-file values as not given"
+     "Merge pull request #173 from jmars125/claude/uw-menus-166-322285",
+     "Merge pull request #178 from jmars125/claude/setup-dump-175",
+     "Merge pull request #176 from jmars125/claude/hud-icons-102-b2f1a0",
+     "Merge pull request #180 from jmars125/claude/cheats-126",
+     "Merge pull request #184 from jmars125/task/swapchain-148",
+     "Merge pull request #189 from WarpedEdge/fix/forced-glyph-style-no-controller",
+     "Forced controller button icons now show with no controller connected.",
+     "Post each probe mode change to the window thread at once, so it can land during a swapchain rebuild"
     ]
    }
   ]
@@ -11565,21 +11565,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-16T18:11:53Z",
+  "pushed_at": "2026-11-17T00:14:24Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T07:51:00Z",
+    "last_commit": "2026-11-16T23:31:35Z",
     "subjects": [
+     "Merge pull request #162 from AksharDP/t3/fix-issue-47",
+     "Return the interface size from the game's integer screen size. The game's screen width and height (main+0x697ca8, main+0x697cd4) returned the layout library's frame size, while every caller combines them with interface objects' 1280x720 positions: a position measured from the right and bottom edges (main+0x390000), an object stretched to and centred on the screen (main+0x4077c8), and objects placed at the screen's right or bottom edge (main+0x48e540). Both now read the patch page's +0x80/+0x84. Checked on the issue 47 save after Skip Travel: at 1920x1080 the area name banner now slides in from the right edge as it does at 1280x720, where before it started 640 units off screen and appeared without the slide.",
+     "Keep speech balloons inside the screen above 1280x720. The clamp that moves a field balloon back on screen (main+0x697a54) measured the screen with the layout library's frame size while the balloon's rectangle is in 1280x720 interface units, so at 1920x1080 a balloon near the right edge ran past it and lost the end of its line (issue 47). The clamp now reads the interface size from the patch page's +0x80/+0x84. Checked on the same save talking to a shopkeeper at the right edge: at 1920x1080 the balloon now sits where it does at 1280x720, fully on screen.",
      "Merge pull request #156 from AksharDP/t3/remove-ru-locale",
      "Read the languages again for another install folder after a failed read, and keep the legacy XCX_ language variables out of the services probe.",
      "Address the review of the language changes.",
      "Run an unknown XC2_LANG, such as the ru an older xc2.ini may still hold, in the release's default language instead of stopping.",
-     "Drop the in-game settings menu's Russian translation and its menu language setting; the menu is English.",
-     "Drop the installer window's Russian translation.",
-     "Offer only the game languages the chosen game files have text for.",
-     "Stop offering Dutch and Portuguese as game languages."
+     "Drop the in-game settings menu's Russian translation and its menu language setting; the menu is English."
     ]
    }
   ]
@@ -11753,7 +11753,7 @@
   ]
  },
  "gosail/d2r-mobile": {
-  "pushed_at": "2026-11-16T17:55:05Z",
+  "pushed_at": "2026-11-17T02:49:47Z",
   "branches": [
    {
     "branch": "feat/ipad-android-keyboard-mouse-upstream-20261116",
@@ -11802,25 +11802,26 @@
    },
    {
     "branch": "feat/offline-dual-merc-probe-20261116",
-    "ahead": 41,
+    "ahead": 47,
     "behind": 5,
-    "files": 20,
-    "real_files": 17,
+    "files": 27,
+    "real_files": 24,
     "dirs": [
      "dm/host",
      "dm/ios",
+     "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-11-16T17:55:03Z",
+    "last_commit": "2026-11-17T02:49:47Z",
     "subjects": [
+     "fix(dualmerc): decode SVC cut word little-endian when adding gate entries",
+     "test(dualmerc): use 16KiB aligned original key page in synthetic Guest",
+     "test(dualmerc): align mock patch start to actual 64KiB NSO patch boundary",
+     "test(dualmerc): verify prepared Guest pass-through branch stubs using synthetic Mach-O",
+     "feat(dualmerc): insert 3 verified pass-through native call gates into unsigned prepared Guest",
+     "feat(dualmerc): intercept 3 hire native call sites as exact pass-through SVC probes",
      "test(dualmerc): fail closed if native hire-path call sites drift from verified 3.3 build",
-     "test(dualmerc): correlate hire commands, short-window roster and gear observations",
-     "diag(dualmerc): trace server hireling inventory fingerprints and disappearing units safely",
-     "docs(dualmerc): record verified Switch 3.3 native hire and old-merc handling chain",
-     "feat(dualmerc): recover handler call RVAs from owner's prepared Guest Mach-O read-only",
-     "fix(dualmerc): guard native pointer diagnostic once across server callbacks",
-     "diag(dualmerc): read relocated hire handler RVAs and direct calls from live guest",
-     "diag(dualmerc): sample hire-before and 100-tick transition, flag duplicate acts"
+     "test(dualmerc): correlate hire commands, short-window roster and gear observations"
     ]
    },
    {
@@ -12131,27 +12132,27 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-16T19:40:19Z",
+  "pushed_at": "2026-11-17T03:56:18Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T19:36:09Z",
+    "last_commit": "2026-11-17T03:54:06Z",
     "subjects": [
-     "Merge contrib/pr1357 into main（gate2）",
-     "Merge contrib/pr1361 into main（gate2）",
-     "Merge fix/kit-skip-romfs-image into main（gate2）",
-     "Merge contrib/pr1292-r into main（gate2）",
-     "Merge perf/nvn2-early-z into main（gate2）",
-     "jobs: the RomFS image is not copied into the program kit or recipe",
-     "Merge fix/p1-193-ips-origin into main（gate2）",
-     "Merge feat/mac-hid-generic-pad into main（gate2）"
+     "Merge fix/win-phone-update-comment into main（gate2）",
+     "Merge contrib/pr1314-r into main（gate2）",
+     "Merge contrib/pr1388 into main（gate2）",
+     "再合 main：模拟档清单并入 no_int16",
+     "Merge ux/game-stuck-copy into main（gate2）",
+     "Windows launcher: phone update header comment matches the removed Windows NRO pull",
+     "Merge contrib/pr1319-r into main（gate2）",
+     "Merge contrib/pr1349-r into main（gate2）"
     ]
    }
   ]
  },
  "neohob/d2r-mobile": {
-  "pushed_at": "2026-11-14T01:23:34Z",
+  "pushed_at": "2026-11-17T01:23:50Z",
   "branches": []
  },
  "Diablo-chia619/d2r-mobile-evidence": {
@@ -12206,21 +12207,21 @@
   ]
  },
  "jmars125/xc3-recomp": {
-  "pushed_at": "2026-11-15T03:47:45Z",
+  "pushed_at": "2026-11-17T03:21:22Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-14T23:59:51Z",
+    "last_commit": "2026-11-17T03:13:43Z",
     "subjects": [
-     "Merge pull request #76 from jmars125/task/hdr-ui",
-     "Merge remote-tracking branch 'origin/master' into task/hdr-ui",
-     "Merge pull request #73 from jmars125/task/scene69",
-     "Merge pull request #70 from jmars125/task/uw-fade",
-     "Fade the HDR highlight expansion with the interface's estimated coverage instead of switching it off wherever the interface differs from the bare picture, so faint HUD shadows and menu gradients no longer leave flat grey regions with hard edges.",
-     "Stretch the scaled scene over the frame in cutscenes and Event Theater menus.",
-     "Screen fades and dim layers keep covering the whole frame at ultrawide sizes. They are quads of the whole 16:9 canvas in canvas units with their origin at its top left corner, so the rule that narrows the minimap's ring from its origin also narrowed them from the left edge, and the right side of a wide frame stayed lit while a cutscene faded to or from black (#68).",
-     "Merge pull request #28 from jmars125/task/deck-shadow-writeback"
+     "Merge pull request #83 from nkoriyama/nminmax",
+     "Merge pull request #64 from evil84/fix/future-redeemed-xbox-palette",
+     "Merge pull request #81 from nkoriyama/linux-cjk-font",
+     "Merge pull request #44 from jmars125/task/issue-39",
+     "Merge pull request #87 from jmars125/task/event-hang",
+     "Hold 30 fps while an in-engine event plays, so the camera before a battle no longer waits for good after a cutscene.",
+     "Merge origin/master into task/issue-39.",
+     "Merge pull request #76 from jmars125/task/hdr-ui"
     ]
    }
   ]
@@ -12766,7 +12767,7 @@
   ]
  },
  "Desm0nt/pillars-of-eternity-port": {
-  "pushed_at": "2026-11-16T18:31:32Z",
+  "pushed_at": "2026-11-16T19:57:14Z",
   "branches": [
    {
     "branch": "main",
@@ -12786,7 +12787,7 @@
   ]
  },
  "serranoid/d2r-mobile": {
-  "pushed_at": "2026-11-16T19:10:20Z",
+  "pushed_at": "2026-11-16T21:19:54Z",
   "branches": [
    {
     "branch": "ci/shell",
@@ -12803,6 +12804,29 @@
     ],
     "last_commit": "2026-11-16T19:10:18Z",
     "subjects": [
+     "ci: montar un contenedor con el ejecutable compilado en CI",
+     "ci: compilar el contenedor de iOS en macOS sin contenido del juego",
+     "mod: emulador del compilador de tablas del juego y herramientas de tablas",
+     "mod: caché propia del programa reescrito en modo txt (d2rm_pack)",
+     "mod: gancho DM_MOD_DIR en el overlay y opción DM_TXT_TABLES en el parcheador"
+    ]
+   },
+   {
+    "branch": "ci/shell-233",
+    "ahead": 6,
+    "behind": 0,
+    "files": 27,
+    "real_files": 26,
+    "dirs": [
+     "dm/ios",
+     "dm/tools",
+     "mod/README.md",
+     "mod/ci",
+     "mod/herramientas"
+    ],
+    "last_commit": "2026-11-16T21:19:52Z",
+    "subjects": [
+     "ci: cadena de sombreadores del contenedor v2.3.3",
      "ci: montar un contenedor con el ejecutable compilado en CI",
      "ci: compilar el contenedor de iOS en macOS sin contenido del juego",
      "mod: emulador del compilador de tablas del juego y herramientas de tablas",
@@ -12843,11 +12867,131 @@
      "mod: caché propia del programa reescrito en modo txt (d2rm_pack)",
      "mod: gancho DM_MOD_DIR en el overlay y opción DM_TXT_TABLES en el parcheador"
     ]
+   },
+   {
+    "branch": "mod/ios-233",
+    "ahead": 3,
+    "behind": 0,
+    "files": 18,
+    "real_files": 18,
+    "dirs": [
+     "dm/ios",
+     "dm/tools",
+     "mod/README.md",
+     "mod/herramientas"
+    ],
+    "last_commit": "2026-11-16T21:19:03Z",
+    "subjects": [
+     "mod: emulador del compilador de tablas del juego y herramientas de tablas",
+     "mod: caché propia del programa reescrito en modo txt (d2rm_pack)",
+     "mod: gancho DM_MOD_DIR en el overlay y opción DM_TXT_TABLES en el parcheador"
+    ]
    }
   ]
  },
  "mumuwanglin/d2r-mobile": {
   "pushed_at": "2026-11-16T08:08:06Z",
   "branches": []
+ },
+ "jayxuz/d2r-mobile": {
+  "pushed_at": "2026-11-17T01:36:20Z",
+  "branches": [
+   {
+    "branch": "harmony/android-parity",
+    "ahead": 1,
+    "behind": 38,
+    "files": 19,
+    "real_files": 19,
+    "dirs": [
+     "dm/android",
+     "dm/harmony",
+     "dm/host",
+     "dm/tools"
+    ],
+    "last_commit": "2026-11-17T01:30:28Z",
+    "subjects": [
+     "鸿蒙壳对齐安卓 2.3.0 的设置和存档功能"
+    ]
+   },
+   {
+    "branch": "harmony/android-parity-upstream",
+    "ahead": 2,
+    "behind": 0,
+    "files": 25,
+    "real_files": 25,
+    "dirs": [
+     "dm/android",
+     "dm/harmony",
+     "dm/host",
+     "dm/i18n",
+     "dm/tools"
+    ],
+    "last_commit": "2026-11-17T01:36:18Z",
+    "subjects": [
+     "按上游约定整理鸿蒙启动页文案和文档",
+     "鸿蒙壳对齐安卓 2.3.0 的设置和存档功能"
+    ]
+   }
+  ]
+ },
+ "serranoid/d2r-pocketrealm": {
+  "pushed_at": "2026-11-16T22:11:03Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-16T22:11:02Z",
+    "subjects": [
+     "docs: quitar la mención a Project Diablo 2",
+     "docs: el proyecto pasa a llamarse D2R PocketRealm",
+     "docs(PD2R): las automatizaciones táctiles se quedan",
+     "docs(PD2R): parte de un fork de D2R Mobile; servidor propio, contribuciones abiertas, sin hoja de ruta",
+     "docs(PD2R): reglas — juego vanilla más las adaptaciones a móvil",
+     "docs: PD2R, el fork que trabaja en el multijugador (estado: investigación)",
+     "ci: cadena de sombreadores del contenedor v2.3.3",
+     "ci: montar un contenedor con el ejecutable compilado en CI"
+    ]
+   }
+  ]
+ },
+ "Desm0nt/divinity-original-sin-2-port": {
+  "pushed_at": "2026-11-16T22:57:29Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-16T22:54:58Z",
+    "subjects": [
+     "Divinity Original Sin 2 Mobile 0.1.1: the 3D at full resolution (the game's dynamic resolution read a zero GPU timestamp and sat at 75 %), native render backend on by default, iPad-style anti-aliasing fused into the post pass (the console FXAA pass removed), setup builds the fused post-processing pack, NR-01 registry (off)",
+     "Divinity Original Sin 2 Mobile 0.1.1: Vulkan driver choice and driver manager as in DOOM 2016 / Diablo III (Turnip for Adreno, PanVK for Mali and RADV for Xclipse bundled as options, install from zip, download, delete; fallback to the system driver when a custom one fails to start)",
+     "Touch interface: panel buttons, column fold arrows and hot bar arrows work again (named art placed as sprites); run setup again to remake TouchUI.pak",
+     "Touch interface: sneak / weapon buttons show the game's own hot bar icons (taken from your Switch files at setup), cancel button redrawn",
+     "Touch interface: own info button (the panels' magnifier is drawn for this project too)",
+     "Touch interface without the iPad edition: own button art, TouchUI.pak from the Switch files alone",
+     "DOS2 launcher icon: original art (Divinity Original Sin II Mobile), drawn for this port",
+     "Divinity Original Sin 2 Mobile 0.1.0: native Android port of Divinity: Original Sin 2 - Definitive Edition (Switch), setup with ASTC texture pack and touch interface package"
+    ]
+   }
+  ]
+ },
+ "aoxzh/bayo3-recomp": {
+  "pushed_at": "2026-11-16T20:46:58Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-16T20:43:12Z",
+    "subjects": [
+     "Sync from private 9342f3c",
+     "Sync from private bd1e2cf",
+     "Sync from private 9653531",
+     "Sync from private 8d62d9f",
+     "Sync from private e493ac0",
+     "Sync from private 242d589",
+     "Sync from private b015432",
+     "Sync from private 2b029b4"
+    ]
+   }
+  ]
  }
 }
