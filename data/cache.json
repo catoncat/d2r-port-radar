@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-17T16:02:22Z",
+  "pushed_at": "2026-11-18T00:57:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T16:02:10Z",
+    "last_commit": "2026-11-18T00:57:43Z",
     "subjects": [
-     "host/sf: serve mnpp:app offline (PR #2164)",
-     "nvn: retain viewport recording origin (PR #1763)",
-     "nvn: publish buffer flushes and preserve API contracts (PR #1285)",
-     "host/audio: preserve surround across output route changes",
-     "packing/heap-check: preserve the pool while capping StandardAllocator",
-     "nvn/dirty: preserve first-match range lookups (PR #1227)",
-     "gfx/shaders: keep raw searches inline in final mesh stages",
-     "host/friends: hook play history key without a Uid (PR #2162)"
+     "chain/rewrite: skip source scans that cannot match",
+     "nvn/texture: use the owning device's GOB order (PR #1257)",
+     "chain: promote read-only fragment storage buffers (PR #2889)",
+     "chain/ampere: translate HFMA2.MMA and preserve RELU NaNs (PR #2049)",
+     "nvn: continue render passes across independent depth and stencil use",
+     "host/threads: notify same-core handoffs when peers block",
+     "chain/spirv: compare proven uniform bounds by row",
+     "nvn/compute: honor guest barriers for unknown ranges"
     ]
    }
   ]
@@ -1951,18 +1951,18 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-17T07:53:00Z",
+  "pushed_at": "2026-11-17T20:53:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T07:52:59Z",
+    "last_commit": "2026-11-17T20:53:56Z",
     "subjects": [
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
-     "chore: 自动同步 Star 地图（206 个项目）",
+     "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）"
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-17T03:58:14Z",
+  "pushed_at": "2026-11-17T16:10:34Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T03:58:13Z",
+    "last_commit": "2026-11-17T16:10:31Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4127,21 +4127,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-17T14:23:26Z",
+  "pushed_at": "2026-11-18T00:55:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T14:22:52Z",
+    "last_commit": "2026-11-18T00:41:33Z",
     "subjects": [
-     "feat(launcher): Animal Crossing: New Horizons builds and updates from MNG Launcher",
-     "feat(acnh): Animal Crossing 3.0.3, one build command, 60 and 120 FPS",
-     "feat: the players' Launcher has no quick start and no diagnostic mode",
-     "fix: TMNT starts only the native shader translator, as every other game (after PR #2125)",
-     "fix: TMNT's tests run in a process of their own; the card font check leaves TMNT out (after PR #2125)",
-     "Merge PR #2125 from HaomingJu: an experimental TMNT Mac and iPad source host",
-     "fix: the 4K-to-5K preset reaches the graphics layer as a flag (after PR #2240)",
-     "Merge PR #2240 from chunye-shanhui: a 4K MetalFX to 5K preset for Tears of the Kingdom on Mac"
+     "refactor: one launcher core and build/package helpers for Odyssey, ACNH and EoW",
+     "feat: MNG Launcher's middle case opens in 0.25 s with a 5% overshoot",
+     "feat: MNG Launcher's middle case presses in under a click and turns from there as the button comes up",
+     "feat(oot): a core-wait report names the host function each core's owner called last",
+     "perf(oot): Metal 4 pipeline archive and shader images end most long frames in play on the Mac",
+     "feat: MNG Launcher's middle case turns and grows into the opened case: its cover left, its actions right",
+     "feat: MNG Launcher's middle case turns over to its game's actions, and the cases answer the pointer",
+     "refactor(eow): Echoes of Wisdom on the shared FPS box and settings panel"
     ]
    }
   ]
@@ -9443,21 +9443,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-11-17T11:25:08Z",
+  "pushed_at": "2026-11-17T18:28:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T10:51:11Z",
+    "last_commit": "2026-11-17T17:44:22Z",
     "subjects": [
+     "hle_fpslock.c: the frame-limit variable's fallback called itself, so it answered NULL and strcmp read address 0",
+     "Packer: decode an Unreal game's LZ4 shader archives here, and stop counting a layer-only geometry shader as missing",
      "Base to 3fe574df: 199 upstream commits, multi-program NUPs and the iPhone's 120 Hz among them",
      "Base to ce370e12: 15 upstream commits, the render-target reclaim and the storage bound among them",
      "nvn_mtl.m: the upload keeps borrowing a temporary; fa3e5db made the black block permanent",
      "nvn_mtl.m: an upload borrows a temporary only while that stride is not resident",
      "nvn_mtl.m: S2Arm's pool model taken whole - 4 MB windows over a 2 MB stride, every pool over 4 MB windowed, plus what its probes measure",
-     "nvn_mtl.m: the 4 MB window over a 2 MB stride, the file this time",
-     "nvn_mtl.m: a large pool's windows and stride take S2Arm's sizes, 4 MB over 2 MB",
-     "nvn_mtl.m: DM_NVN_POOL_WIN sets how far past an address a lookup that does not say how far it reads reaches"
+     "nvn_mtl.m: the 4 MB window over a 2 MB stride, the file this time"
     ]
    }
   ]
@@ -10362,12 +10362,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-11-16T18:45:42Z",
+  "pushed_at": "2026-11-17T17:24:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T18:45:40Z",
+    "last_commit": "2026-11-17T17:24:41Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10453,21 +10453,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-17T14:27:55Z",
+  "pushed_at": "2026-11-17T23:03:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T14:23:05Z",
+    "last_commit": "2026-11-17T21:17:53Z",
     "subjects": [
-     "Sync lag back 1 s after a load, not 10 (#465)",
-     "Movies: a built-in black one when a movie and every movie beside it are missing (#470)",
-     "Controllers: a gamepad without axes doesn't count - a fingerprint sensor hid the touch controls (#477)",
-     "Merge pull request #315 from Propinbo/benchmark-v2",
-     "Start screen banner: 900+ stars",
-     "Tests: provide low-RAM queue stubs in the NVN lifetime harness",
-     "Benchmark: add frame stall, cooling and presentation diagnostics",
-     "0.4.5-beta (versionCode 44)"
+     "Freeze watchdog: a slot per thread, and the game's threads listed when no frame finishes (#401)",
+     "Merge pull request #456 from HallanBR/perf/fence-marks-while-copying",
+     "Merge pull request #452 from HallanBR/perf/clock-per-pass",
+     "Vulkan async: a call deeper than 8 copied as a record walks the copy for its fences, as before",
+     "Vulkan async: the list's fences noted while copying it, no second walk",
+     "Vulkan: a pipeline's last use from g_exec_s, as the programs' - no clock read per draw",
+     "donations: $19 raised toward the POCO X7 Pro goal (+$5)",
+     "0.4.6-beta (versionCode 45): READMEs note the release"
     ]
    }
   ]
@@ -10563,11 +10563,11 @@
   ]
  },
  "tib-kpl/d2r-mobile": {
-  "pushed_at": "2026-11-13T20:04:17Z",
+  "pushed_at": "2026-11-17T18:35:16Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 23,
+    "ahead": 25,
     "behind": 0,
     "files": 69,
     "real_files": 62,
@@ -10582,16 +10582,16 @@
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-11-13T19:58:03Z",
+    "last_commit": "2026-11-17T18:28:32Z",
     "subjects": [
+     "Fix LANG_N assertion after merge",
+     "Merge upstream/main (jhaizhou-ops/d2r-mobile)",
      "i18n gate: whitelist the S2Arm pack unpacker's log text and pack folder name (never shown on screen)",
      "Merge remote-tracking branch 'upstream/main'",
      "Merge upstream 2.3.0 and isolate CI version overrides",
      "Merge upstream/main while preserving French and folder selection",
      "Controller events: also require libraryLoaded, as upstream (#178)",
-     "Merge upstream/main (2.2.4) into fork: keep folder picker, CI versioning and French; take overlay variants, warm seed, exit labels",
-     "Merge upstream map crash fix while preserving Android CI versioning",
-     "Merge branch 'jhaizhou-ops:main' into main"
+     "Merge upstream/main (2.2.4) into fork: keep folder picker, CI versioning and French; take overlay variants, warm seed, exit labels"
     ]
    }
   ]
@@ -10669,7 +10669,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-17T10:51:29Z",
+  "pushed_at": "2026-11-17T17:21:09Z",
   "branches": [
    {
     "branch": "main",
@@ -10689,21 +10689,21 @@
   ]
  },
  "Desm0nt/doom-port": {
-  "pushed_at": "2026-11-17T11:58:35Z",
+  "pushed_at": "2026-11-17T18:35:12Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T11:58:29Z",
+    "last_commit": "2026-11-17T18:35:09Z",
     "subjects": [
+     "v0.5.7: cutscenes keep the tick the game asks for, present follows it (#55)",
      "v0.5.6: SGSR 2 upscales over the game's TAA by default (steady light); A-replay route kept behind a switch",
      "v0.5.6: FSR 1 upscale instead of GSR (#44), experimental SGSR 2 temporal upscaler, gear upscaler choice",
      "v0.5.5-test1: issue #45 RADV-Xclipse test row (5 variants, restart after confirmation), DM_GFX_UBO_ALIGN",
      "v0.5.5: 40 / 45 fps limit (#36), driver fallback notice as a dialog, NVN command memory lifetime (HLE-38), RADV-Xclipse BC default back to the driver",
      "v0.5.4-test1: RADV-Xclipse loads with RADV_XCLIPSE_NO_BC_EMU=1, BC4-BC7 decoded by the port like on the stock driver (refs #45)",
      "v0.5.3: descriptor memo keeps sets with dynamic or empty uniform buffers (VK-UBO-MEMO refinement)",
-     "v0.5.3: socket Close(0) no longer closes the process's stdin (Couldn't get file size!, refs #52); no cutout strip on Android 11-14 (refs #38); Adreno 8xx keeps the warp32 / quad-derivative rewrites off like 740-799 (refs #39 #47); Mali auto zero-copy off when only our write-combined dma-buf passes (refs #3 #27); zero-copy mode 3 (cached pages + cache maintenance) for non-coherent GPUs; descriptor memo keys fixed for UBO_DYNAMIC=0; PanVK window buffers without AFBC (refs #33); driver fallback dialog (refs #45); Glory Kill highlight setting logged (refs #42)",
-     "v0.5.2: safe mode for Mali / PowerVR (graphics crashes counted, steps applied at the next start with a notice, live fallbacks with a message, crash guard process relaunch or notification, gear option); zero-copy with our own writable dma-buf (Vulkan export / dma-heap) where gralloc fds are read-only (refs #3 #27 #46); custom Vulkan driver init failure falls back to the system driver in-process (refs #33); last 3 logs kept plus one log per driver"
+     "v0.5.3: socket Close(0) no longer closes the process's stdin (Couldn't get file size!, refs #52); no cutout strip on Android 11-14 (refs #38); Adreno 8xx keeps the warp32 / quad-derivative rewrites off like 740-799 (refs #39 #47); Mali auto zero-copy off when only our write-combined dma-buf passes (refs #3 #27); zero-copy mode 3 (cached pages + cache maintenance) for non-coherent GPUs; descriptor memo keys fixed for UBO_DYNAMIC=0; PanVK window buffers without AFBC (refs #33); driver fallback dialog (refs #45); Glory Kill highlight setting logged (refs #42)"
     ]
    }
   ]
@@ -11204,21 +11204,21 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-17T16:05:28Z",
+  "pushed_at": "2026-11-17T22:13:45Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-17T02:07:39Z",
+    "last_commit": "2026-11-17T20:27:54Z",
     "subjects": [
+     "Merge pull request #205 from jmars125/claude/mute-audioout",
+     "Apply the player volume XCX_VOLUME to the nn::audio AudioOut output as well, so a muted game is silent on both of its outputs.",
      "Merge pull request #173 from jmars125/claude/uw-menus-166-322285",
      "Merge pull request #178 from jmars125/claude/setup-dump-175",
      "Merge pull request #176 from jmars125/claude/hud-icons-102-b2f1a0",
      "Merge pull request #180 from jmars125/claude/cheats-126",
      "Merge pull request #184 from jmars125/task/swapchain-148",
-     "Merge pull request #189 from WarpedEdge/fix/forced-glyph-style-no-controller",
-     "Forced controller button icons now show with no controller connected.",
-     "Post each probe mode change to the window thread at once, so it can land during a swapchain rebuild"
+     "Merge pull request #189 from WarpedEdge/fix/forced-glyph-style-no-controller"
     ]
    }
   ]
@@ -11565,7 +11565,7 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-17T00:14:24Z",
+  "pushed_at": "2026-11-17T23:22:35Z",
   "branches": [
    {
     "branch": "main",
@@ -12132,21 +12132,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-17T15:58:50Z",
+  "pushed_at": "2026-11-18T00:58:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T15:57:49Z",
+    "last_commit": "2026-11-18T00:49:59Z",
     "subjects": [
-     "Merge feat/unpack-base-only into main（gate2）",
-     "Merge fix/rewriter-front-retry-with-gaps into main（gate2）",
-     "Merge fix/win-update-exit-guard into main（gate2）",
-     "Merge fix/backup-wait-unlock into main（gate2）",
-     "Merge fix/vk-pool-table-env into main（gate2）",
-     "Merge contrib/pr1494 into main（gate2）",
-     "Merge fix/gl-pixel-pack-buffer into main（gate2）",
-     "fix(rewriter): enlarge a single FAR front island even when the first round has gaps"
+     "Merge feat/ushell-shader-miss-hint into main（gate2）",
+     "Merge feat/snapshot-ui into main（gate2）",
+     "Merge feat/snapshot-engine into main（gate2）",
+     "Merge fix/save-path-follow-links into main（gate2）",
+     "Merge fix/alias-mutant-anchor into main（gate2）",
+     "安卓用例 nvk_shader_alias_test：变异锚点跟上 c59eae4a8 预热那一处的「!compute &&」",
+     "Instant snapshot UI: in-game 'Save this moment' / 'Go back to the saved moment' (iPhone, Mac) and the library card's 'Go back to the saved moment'",
+     "Instant snapshot engine: save a running game and resume it later (off by default)"
     ]
    }
   ]
@@ -12452,7 +12452,7 @@
   ]
  },
  "simipoB/Arceus-Native-Android": {
-  "pushed_at": "2026-11-16T07:32:34Z",
+  "pushed_at": "2026-11-17T22:42:02Z",
   "branches": [
    {
     "branch": "main",
@@ -12767,7 +12767,7 @@
   ]
  },
  "Desm0nt/pillars-of-eternity-port": {
-  "pushed_at": "2026-11-17T10:48:02Z",
+  "pushed_at": "2026-11-17T16:48:54Z",
   "branches": [
    {
     "branch": "main",
@@ -13015,21 +13015,36 @@
   ]
  },
  "CyriacFR/Kalamar": {
-  "pushed_at": "2026-11-16T20:39:02Z",
+  "pushed_at": "2026-11-17T22:15:34Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T18:47:36Z",
+    "last_commit": "2026-11-17T20:46:21Z",
     "subjects": [
-     "Fix the native mouse aim's jump at a respawn and the slow motion with generated pictures, and set version 0.3.8",
-     "Explain frame generation where the frame limit is set, and set version 0.3.7",
-     "Merge pull request #15: show generated pictures between the game's frames on fast monitors",
-     "Show generated pictures between the game's frames on fast monitors (#14)",
-     "Add the weapon window before a match and the players' ranks on the match screens",
-     "Accept 8 GB PCs, bind the mouse wheel, withdraw the Splatfest-only ability, and set version 0.3.6",
-     "Merge pull request #13: add the 60 fps patch set for Splatoon 3 11.3.0",
-     "Add the 60 fps patch set for Splatoon 3 11.3.0"
+     "Bundle the engine of pull requests 18 and 19, and set version 0.3.10",
+     "Merge pull request #18: faster start of auto-matched games",
+     "Merge pull request #19: hold the captured cursor at the window's center so it never wakes the taskbar",
+     "Give releases the opt-in Discord presence, see a round start on the stage of the round before, and set version 0.3.9",
+     "Hold the captured cursor at the window's center so it never wakes the taskbar",
+     "Press the team screen's Downs 12 frames apart instead of 30",
+     "Gate the lobby's presses on the game's own menu and dialog states",
+     "Open the match menu before confirming at a guest's later pre-match screens"
+    ]
+   }
+  ]
+ },
+ "AIshihzong/awesome-switch-recomp": {
+  "pushed_at": "2026-11-16T04:30:03Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-16T04:30:02Z",
+    "subjects": [
+     "Refresh star counts",
+     "Refresh star counts",
+     "Awesome Switch Recomp: first edition, 60 projects"
     ]
    }
   ]
