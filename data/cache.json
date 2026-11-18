@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-17T07:34:37Z",
+  "pushed_at": "2026-11-18T06:57:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T07:34:36Z",
+    "last_commit": "2026-11-18T06:57:54Z",
     "subjects": [
+     "radar 2026-11-18",
      "radar 2026-11-17",
      "radar 2026-11-16",
      "radar 2026-11-15",
      "radar 2026-11-14",
      "radar 2026-11-13",
      "radar 2026-11-12",
-     "radar 2026-11-11",
-     "radar 2026-11-10"
+     "radar 2026-11-11"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-18T00:57:57Z",
+  "pushed_at": "2026-11-18T10:26:34Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T00:57:43Z",
+    "last_commit": "2026-11-18T10:25:42Z",
     "subjects": [
-     "chain/rewrite: skip source scans that cannot match",
-     "nvn/texture: use the owning device's GOB order (PR #1257)",
-     "chain: promote read-only fragment storage buffers (PR #2889)",
-     "chain/ampere: translate HFMA2.MMA and preserve RELU NaNs (PR #2049)",
-     "nvn: continue render passes across independent depth and stencil use",
-     "host/threads: notify same-core handoffs when peers block",
-     "chain/spirv: compare proven uniform bounds by row",
-     "nvn/compute: honor guest barriers for unknown ranges"
+     "chain/ampere: translate VABSDIFF (PR #2053)",
+     "packing/uepak: read version 9 frozen pak indices (PR #2476)",
+     "chain/ampere: translate IDP dot products (PR #2052)",
+     "nvn/present: clamp early acquire lateness to zero (PR #1041)",
+     "host/audio: capture opt-in Mac microphone streams (PR #1822)",
+     "chain/f2fp: honor packing modifiers (PR #2046)",
+     "nvn/present: hold queued frames by display link ticks (PR #1045)",
+     "chain/i2f: round 64-bit inputs once (PR #2045)"
     ]
    }
   ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-17T16:10:34Z",
+  "pushed_at": "2026-11-18T01:00:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T16:10:31Z",
+    "last_commit": "2026-11-18T01:00:19Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4127,21 +4127,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-18T00:55:27Z",
+  "pushed_at": "2026-11-18T11:38:45Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T00:41:33Z",
+    "last_commit": "2026-11-18T11:37:01Z",
     "subjects": [
-     "refactor: one launcher core and build/package helpers for Odyssey, ACNH and EoW",
-     "feat: MNG Launcher's middle case opens in 0.25 s with a 5% overshoot",
-     "feat: MNG Launcher's middle case presses in under a click and turns from there as the button comes up",
-     "feat(oot): a core-wait report names the host function each core's owner called last",
-     "perf(oot): Metal 4 pipeline archive and shader images end most long frames in play on the Mac",
-     "feat: MNG Launcher's middle case turns and grows into the opened case: its cover left, its actions right",
-     "feat: MNG Launcher's middle case turns over to its game's actions, and the cases answer the pointer",
-     "refactor(eow): Echoes of Wisdom on the shared FPS box and settings panel"
+     "feat: MNG Launcher updates itself from a button at the home page's top right",
+     "feat: MNG Launcher turns the opened case back to the games when a game starts",
+     "fix: MNG Launcher returns to the games after a build, the built one in the middle",
+     "chore: shader and pipeline lists from the inbox and from the files players posted to issues",
+     "Merge origin/main (Launcher covers and open fonts, OOT 4K) into the PR batch",
+     "fix(ios): a generic destination first; the device named only for a team without it (after PR #2268)",
+     "fix: a write-back target left without a late slot says so (after PR #2261)",
+     "fix: the upload allocators are a pool that grows, for every game (after PR #2264)"
     ]
    }
   ]
@@ -10669,7 +10669,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-17T17:21:09Z",
+  "pushed_at": "2026-11-18T06:49:06Z",
   "branches": [
    {
     "branch": "main",
@@ -11204,7 +11204,7 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-17T22:13:45Z",
+  "pushed_at": "2026-11-18T05:46:34Z",
   "branches": [
    {
     "branch": "master",
@@ -11700,21 +11700,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-17T13:57:48Z",
+  "pushed_at": "2026-11-18T09:00:55Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T13:50:05Z",
+    "last_commit": "2026-11-18T08:43:54Z",
     "subjects": [
+     "docs(gfx): record default-off alias Thor qualification",
+     "fix(diag): publish pause reporting enablement atomically",
+     "feat(diag): report private write-back path coverage",
+     "fix(gfx): retire private writer authority with virtual mappings",
+     "fix(gfx): land GPU writes through private dma-buf aliases",
      "feat(shaders): refresh seven applicable 1.4.3 variants",
      "docs(changelog): record integer-fold Thor and Odin speed checks",
-     "docs(changelog): record integer-fold device checks",
-     "fix(gfx): preserve decorated shader proofs and cache arms",
-     "perf(gfx): enable exact integer shader folding by default",
-     "test(shader): omit unused Float64 capability from gather fixture",
-     "fix(shader): lower runtime gather offsets before SPIR-V emission",
-     "perf(companion): enable built-in display cover by default"
+     "docs(changelog): record integer-fold device checks"
     ]
    }
   ]
@@ -11753,7 +11753,7 @@
   ]
  },
  "gosail/d2r-mobile": {
-  "pushed_at": "2026-11-17T09:06:15Z",
+  "pushed_at": "2026-11-18T11:13:12Z",
   "branches": [
    {
     "branch": "feat/ipad-android-keyboard-mouse-upstream-20261116",
@@ -11802,26 +11802,26 @@
    },
    {
     "branch": "feat/offline-dual-merc-probe-20261116",
-    "ahead": 66,
+    "ahead": 88,
     "behind": 5,
-    "files": 34,
-    "real_files": 30,
+    "files": 39,
+    "real_files": 35,
     "dirs": [
      "dm/host",
      "dm/ios",
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-11-17T09:06:15Z",
+    "last_commit": "2026-11-18T11:13:12Z",
     "subjects": [
-     "docs(dualmerc): define NPC replacement/act uniqueness, two gear sets and durable save acceptance matrix",
-     "feat(dualmerc): show in-game notice only after server actually tracks both hirelings",
-     "fix(dualmerc): permit vanilla first hire with no allocated pet roster; align trial documentation",
-     "feat(dualmerc): guarded keep-first enabled only in experimental IPA; reject geared or full-roster vanilla hires",
-     "feat(dualmerc): reject full-roster auto-replace packet; document experimental lookup and future slot selection",
-     "feat(dualmerc): optional native keep-first hire lookup guard with one-pet and empty-gear preconditions",
-     "test(dualmerc): require empty gear and different acts; block full rosters",
-     "feat(dualmerc): strict disposable-save keep-first native hire guard"
+     "fix(dualmerc): verify peer unit survives replacement independently of pet-list node order",
+     "fix(dualmerc): declare server game context before native NPC pending helpers",
+     "feat(dualmerc): wire guarded full roster NPC choice to C2S, rerun native hire and clear target after transaction",
+     "feat(dualmerc): resume an approved NPC hire on server tick after async two-slot choice and live ID revalidation",
+     "feat(dualmerc): intercept NPC hire before gold deduction and request explicit full-roster replacement",
+     "feat(dualmerc): route native singleton merc lookup to explicitly selected same/different Act unit in experimental test",
+     "feat(dualmerc): validate NPC vendor and live two-Act roster before accepting any replacement choice",
+     "test(dualmerc): exact 0x36 hire packet decoding and failure nonmutation"
     ]
    },
    {
@@ -11949,21 +11949,21 @@
   "branches": []
  },
  "Desm0nt/diablo3-port": {
-  "pushed_at": "2026-11-16T18:24:13Z",
+  "pushed_at": "2026-11-18T09:06:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T13:39:14Z",
+    "last_commit": "2026-11-18T09:03:54Z",
     "subjects": [
+     "VERSION 0.2.23: faster drawing on Mali / PowerVR (issue #4)",
+     "Issue #4: tile GPUs (Mali / PowerVR) get the tile paths of v0.2.11-test4 (d8cbbbb) on top of 0.2.22: NOLOAD with its later refusals, TILE_BARRIER, STORE_NONE / STORE_DEAD with the look-ahead scan, TILE_POISON, a clear-only pass through its load-op twin and a read barrier no longer ending a pending clear pass; every default off on Adreno (vendor 0x5143). Testers on G99 / Dimensity 7050: 27-31 -> 45-60 fps. Merged with fb_begin (same-draw feedback targets) in descriptors()",
      "VERSION 0.2.22: camera zoom-out (issue #31), present on its own thread by default with automatic fallback, guest thread exit on the host stack",
      "present-thread on by default (D3 0.2.22) with an automatic way back: a crash on the thread dm-present or the engine's 'Game presentation failed (present thread)' appends a byte to files/pt-crashes (crash hook), from the second one DmActivity starts with DM_GFX_PRESENT_THREAD=0 and logs why; a new APK version counts again",
      "Issue #31: camera zoom-out moves the camera back: the Observer assets' eye offset (consoleObserver 0x42d, retro 0x42f, console_wide 0x433 / 0x434) scaled along eye - look-at from the game's thread (npad poll pump, ~1 s and at once on a gear change), lookups as the game's GlobalSNOGet / SNOGet fast paths in plain reads; the wider FOV kept in reserve behind DM_D3_FOV_ZOOM (not in the gear); notes in EN/RU/zh",
      "Issue #31: camera zoom-out 100..140 % (gear, live; DM_D3_ZOOM): the perspective builder main 0x29b7a0 replaced by the same code (the game's tanf; 96 vectors identical to the original in unicorn), tan(fovY/2) of the gameplay camera's call (0x264a84) scaled by the zoom: a wider view of the same camera, the UI unchanged; EN/RU/zh strings",
      "present-thread (port-common, KB PERF-D07): present (fence wait, acquire, letterbox / RCAS / blit, its submit, vkQueuePresentKHR) can run on its own thread dm-present, D16's DM_GFX_PRESENT_THREAD protocol; default 0 = presents inline exactly as before, 1 = own thread, 2 = the protocol inline; DM_GFX_PRESENT_UNPIN=1, DM_GFX_PRESENT_CPUS; xbg_game.cpp merged by hand at D3's own lines (no BC self-test submit here: D3's GPU self-test runs inside xbg_game_initialize before the first present); D3_PORT.md section with the phone checks",
-     "thread-exit-hoststack (port-common, KB HLE-06): SVC ExitThread runs pthread_exit on the thread's saved host pthread stack (dm_call_on_stack in entry.S) instead of the small guest stack (D16 issues #12/#20, S23+ / Android 17 crash in bionic's teardown); pure fix, no switch; brings pc-core (pc_note: '[pc] thread-exit-hoststack: applied' at the first such exit)",
-     "VERSION 0.2.21: full archive checksum check after a launch that crashed before its first frame (issue #33), faster Vulkan engine build (-O3)",
-     "Issue #33: full archive checksum check after a launch that crashed before its first frame: a .cpk of the right length with damaged data (Patch2_7_1.cpk, bad copy to the phone) passed the start check and the game died parsing it; the crash hook leaves files/cpk-crc.next while no frame was seen, the next start checks every archive's sector CRC-32 (d3_cpk_crc, header offset 56, as d3cpklib verify) on a background thread with a progress screen before nativeStart, damaged ones named on the start screen (13 languages); a set that passed is not read again (cpk-crc.ok); tools/test_cpk_crc.c"
+     "thread-exit-hoststack (port-common, KB HLE-06): SVC ExitThread runs pthread_exit on the thread's saved host pthread stack (dm_call_on_stack in entry.S) instead of the small guest stack (D16 issues #12/#20, S23+ / Android 17 crash in bionic's teardown); pure fix, no switch; brings pc-core (pc_note: '[pc] thread-exit-hoststack: applied' at the first such exit)"
     ]
    }
   ]
@@ -12132,21 +12132,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-18T00:58:20Z",
+  "pushed_at": "2026-11-18T11:43:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T00:49:59Z",
+    "last_commit": "2026-11-18T11:05:25Z",
     "subjects": [
-     "Merge feat/ushell-shader-miss-hint into main（gate2）",
-     "Merge feat/snapshot-ui into main（gate2）",
-     "Merge feat/snapshot-engine into main（gate2）",
-     "Merge fix/save-path-follow-links into main（gate2）",
-     "Merge fix/alias-mutant-anchor into main（gate2）",
-     "安卓用例 nvk_shader_alias_test：变异锚点跟上 c59eae4a8 预热那一处的「!compute &&」",
-     "Instant snapshot UI: in-game 'Save this moment' / 'Go back to the saved moment' (iPhone, Mac) and the library card's 'Go back to the saved moment'",
-     "Instant snapshot engine: save a running game and resume it later (off by default)"
+     "Merge ux/tvos-menu-iml into main（gate2）",
+     "Merge fix/resign-on-esign into main（gate2）",
+     "Merge feat/ushell-selfsign-signer into main（gate2）",
+     "Merge fix/push-game-verify-phone into main（gate2合组）",
+     "Merge fix/install-toshell-actual into main（gate2合组）",
+     "Merge feat/ushell-export-hardlink into main（gate2合组）",
+     "Merge fix/c89-midrun-saves-timing into main（gate2）",
+     "Merge fix/services-test-data-required into main（gate2）"
     ]
    }
   ]
@@ -12207,7 +12207,7 @@
   ]
  },
  "jmars125/xc3-recomp": {
-  "pushed_at": "2026-11-17T16:00:03Z",
+  "pushed_at": "2026-11-18T05:39:04Z",
   "branches": [
    {
     "branch": "master",
@@ -12287,12 +12287,12 @@
   ]
  },
  "hwl513782273/d2r-mobile": {
-  "pushed_at": "2026-11-10T20:18:53Z",
+  "pushed_at": "2026-11-18T04:59:06Z",
   "branches": [
    {
     "branch": "main",
     "ahead": 1,
-    "behind": 96,
+    "behind": 134,
     "files": 1,
     "real_files": 0,
     "dirs": [],
@@ -12304,21 +12304,21 @@
   ]
  },
  "Desm0nt/torchlight2-port": {
-  "pushed_at": "2026-11-16T12:44:11Z",
+  "pushed_at": "2026-11-18T11:14:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T12:44:09Z",
+    "last_commit": "2026-11-18T11:13:53Z",
     "subjects": [
-     "gfx: background pipeline builds for skippable (blended) draws on by default when the GPU policy is not Adreno (issue #4 Mali-G615 compile hitches; marker / DM_GFX_ASYNC_PIPELINES still win)",
-     "TL2 0.1.4",
-     "build: Vulkan translator at -O3 -mtune=cortex-x3 instead of -O2 (port-common xbg-o3, PERF-X11)",
-     "nvn: command-memory host segments live until the game reuses the range, working AddControlMemory (port-common nvn-ctlmem, HLE-38; DM_NVN_CTLMEM=0 = old model)",
-     "gfx: scaled vertex formats (NVN *_UI2F/*_I2F -> USCALED/SSCALED, integer + shader conversion without VERTEX_BUFFER; port-common vtx-scaled, XCL-07)",
-     "android: draw under the display cutout on API 30+ (setDecorFitsSystemWindows(false), black window background; APP-13)",
-     "gfx: VK-UBO-MEMO guard only for non-dynamic, non-empty UBOs (keep memo for size-0 binds in dynamic mode)",
-     "gfx: never memoize sets with a non-dynamic guest UBO snapshot (VK-UBO-MEMO, port-common desc-memo-keys); version 0.1.3"
+     "TL2 0.1.5: version, journal (issues #4, #6, #12, owner run 18.11)",
+     "TL2 (issue #6): skill trees and icons for PC-mod classes",
+     "gfx (issue #12): nvnSyncWait waits for translation of untranslated fences; CPU/GPU overlap (PERF-X16)",
+     "perf (issue #4): thread placement by core capacity + ADPF boost from port-common",
+     "TL2_PORT.md: development moved into this repository (one tree), old-tree commit hashes mapped",
+     "setup: ASTC texture cache step (8/8, tools/tl2_astc_cache.py -> Torchlight2Mobile/astc, --skip-astc, check / push know astc/), astc-encoder-py + numpy in the setup runtime; the dev-tree patch file is gone (development now happens in this repository)",
+     "TL2: nn::util::DecompressZlib via libdeflate (XC2 hook, default on for TL2, SDK fallback)",
+     "TL2: ASTC cache upload reads and sanitizes in cached memory, then one copy to staging"
     ]
    }
   ]
@@ -12767,21 +12767,21 @@
   ]
  },
  "Desm0nt/pillars-of-eternity-port": {
-  "pushed_at": "2026-11-17T16:48:54Z",
+  "pushed_at": "2026-11-18T07:11:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T14:12:54Z",
+    "last_commit": "2026-11-18T07:10:22Z",
     "subjects": [
+     "0.1.2: allocator fix for the start-up crash on some phones (issue #4)",
+     "0.1.2-test4: allocator windows beyond five recorded exactly in a side table (issue #4)",
+     "0.1.2-test3: allocator slot fix on top of 0.1.1 (issue #4)",
+     "Allocator page table: a window keeps its slot for the whole run (Scudo misaligned-free abort at start, issue #4)",
      "0.1.1-test2: resolution option, 16:10 fix, smooth 30 fps",
      "Docs: also tested on Xiaomi 13 Pro (Snapdragon 8 Gen 2)",
      "Fix a start-up hang: lost wake-up in Unity's ThreadedStreamBuffer",
-     "Update README.md",
-     "README: rewrite after the sibling ports, add screenshots",
-     "Launcher icon: Pillars of Eternity Mobile art (generated, no game artwork); two- and three-finger gestures in the docs",
-     "README, install guides (EN/RU); touch help text without the selection box; setup help numbers",
-     "Pillars of Eternity Mobile: setup from the player's dump, APK build, docs"
+     "Update README.md"
     ]
    }
   ]
@@ -12975,21 +12975,21 @@
   ]
  },
  "aoxzh/bayo3-recomp": {
-  "pushed_at": "2026-11-17T06:35:47Z",
+  "pushed_at": "2026-11-18T09:17:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T06:30:07Z",
+    "last_commit": "2026-11-18T09:11:57Z",
     "subjects": [
+     "Sync from private 9d1d110",
      "Sync from private 981e561",
      "Sync from private 9342f3c",
      "Sync from private bd1e2cf",
      "Sync from private 9653531",
      "Sync from private 8d62d9f",
      "Sync from private e493ac0",
-     "Sync from private 242d589",
-     "Sync from private b015432"
+     "Sync from private 242d589"
     ]
    }
   ]
@@ -13045,6 +13045,29 @@
      "Refresh star counts",
      "Refresh star counts",
      "Awesome Switch Recomp: first edition, 60 projects"
+    ]
+   }
+  ]
+ },
+ "Tobi1991-hub/d2r-mobile": {
+  "pushed_at": "2026-11-18T10:50:52Z",
+  "branches": [
+   {
+    "branch": "adreno-a7xx-family",
+    "ahead": 5,
+    "behind": 0,
+    "files": 7,
+    "real_files": 3,
+    "dirs": [
+     "dm/gfx"
+    ],
+    "last_commit": "2026-11-18T10:50:52Z",
+    "subjects": [
+     "Update build-apk 1.yml",
+     "Create build-apk 1.yml",
+     "Create build-apk.yml",
+     "Adreno: switch the rewrites off for the 720 only, not the whole 0x43 generation",
+     "Adreno: recognise the 740/750 chip family by device ID (720, 735) (#263, #169)"
     ]
    }
   ]
