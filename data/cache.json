@@ -1571,21 +1571,21 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-11-15T08:56:07Z",
+  "pushed_at": "2026-11-18T19:17:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T08:54:52Z",
+    "last_commit": "2026-11-18T19:17:45Z",
     "subjects": [
-     "Align release resource instructions with current availability",
-     "Document unavailable community resources and reuse of existing Data",
-     "Document unavailable community resources and reuse of existing Data",
-     "Allow reviewed diagnostic-only program generator update",
-     "Use verified stable Filebase IPNS prepared input URLs",
-     "Update Apple prepared input links after program regeneration",
-     "Refresh prepared product revisions with regenerated programs",
-     "Use a standalone minimal TV prepared input (#33)"
+     "Wait for Apple TV release drafts and document staged device transfers",
+     "Publish Apple TV builds for official upstream releases and verify the Legacy overlay",
+     "Keep documentation and release copy focused on downloads and usage",
+     "Put game resource download shortcuts at the top of both READMEs",
+     "Use verified GitHub prepared inputs for current upstream sources",
+     "Link verified GitHub Data and Legacy resources in usage instructions",
+     "Keep current installation instructions when mirroring resources",
+     "Support scoped temporary resource downloads without passing account tokens"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-18T10:26:34Z",
+  "pushed_at": "2026-11-18T18:36:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T10:25:42Z",
+    "last_commit": "2026-11-18T18:35:43Z",
     "subjects": [
-     "chain/ampere: translate VABSDIFF (PR #2053)",
-     "packing/uepak: read version 9 frozen pak indices (PR #2476)",
-     "chain/ampere: translate IDP dot products (PR #2052)",
-     "nvn/present: clamp early acquire lateness to zero (PR #1041)",
-     "host/audio: capture opt-in Mac microphone streams (PR #1822)",
-     "chain/f2fp: honor packing modifiers (PR #2046)",
-     "nvn/present: hold queued frames by display link ticks (PR #1045)",
-     "chain/i2f: round 64-bit inputs once (PR #2045)"
+     "rewriter: avoid guest stack spills for x18 conditional selects",
+     "packing/shaders: refresh Fortune's Weave and Z-A maps (PR #2948)",
+     "docs/mkw: record cold pipeline rerun on main",
+     "host/movie: report NV12 keys for the loaded movie SDK (PR #2955)",
+     "opengl/textures: expand RED and RG uploads (PR #2955)",
+     "packing/shaders: reject stray BAHS descriptors (PR #2943)",
+     "host/account: return cancellation for offline network accounts",
+     "game: Orbitals packs with the checked first-copy shader map"
     ]
    }
   ]
@@ -1951,19 +1951,19 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-17T20:53:57Z",
+  "pushed_at": "2026-11-18T20:29:10Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T20:53:56Z",
+    "last_commit": "2026-11-18T20:29:09Z",
     "subjects": [
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
-     "chore: 自动同步 Star 地图（206 个项目）",
+     "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）"
     ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-18T01:00:20Z",
+  "pushed_at": "2026-11-18T11:53:15Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T01:00:19Z",
+    "last_commit": "2026-11-18T11:53:14Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2489,12 +2489,42 @@
   ]
  },
  "TIMYW2K/d2r-mobile": {
-  "pushed_at": "2026-11-04T04:33:40Z",
+  "pushed_at": "2026-11-18T17:59:57Z",
   "branches": [
+   {
+    "branch": "build/touch-20261118",
+    "ahead": 188,
+    "behind": 0,
+    "files": 181,
+    "real_files": 173,
+    "dirs": [
+     "NATIVE-MOVIES.md",
+     "UPDATE-2026-10-20.zh-CN.md",
+     "V1.3-MIGRATION.md",
+     "codemagic.yaml",
+     "codemagic_pick_pack.py",
+     "dm/common",
+     "dm/data",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n"
+    ],
+    "last_commit": "2026-11-18T17:59:46Z",
+    "subjects": [
+     "Build customized touch controls and preserve native language settings",
+     "Merge branch 'main' of https://github.com/jhaizhou-ops/d2r-mobile into lang-voice",
+     "tests: build t_vault_icons without the generated vault table",
+     "tests: fix t_vault_icons dependency (dm_vault_tab.h, not dm_vault.h)",
+     "Integrate iOS v2.2.4 fixes, portrait setting and reviewed translations",
+     "Apply user translation for attack rating modifier",
+     "Experiment with independently presented loot labels",
+     "Add device diagnostics for 60 Hz loot label experiment"
+    ]
+   },
    {
     "branch": "lang-voice",
     "ahead": 186,
-    "behind": 75,
+    "behind": 113,
     "files": 197,
     "real_files": 189,
     "dirs": [
@@ -2524,7 +2554,7 @@
    {
     "branch": "main",
     "ahead": 1,
-    "behind": 84,
+    "behind": 122,
     "files": 1,
     "real_files": 0,
     "dirs": [],
@@ -4127,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-18T11:38:45Z",
+  "pushed_at": "2026-11-18T20:12:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T11:37:01Z",
+    "last_commit": "2026-11-18T19:58:58Z",
     "subjects": [
-     "feat: MNG Launcher updates itself from a button at the home page's top right",
-     "feat: MNG Launcher turns the opened case back to the games when a game starts",
-     "fix: MNG Launcher returns to the games after a build, the built one in the middle",
-     "chore: shader and pipeline lists from the inbox and from the files players posted to issues",
-     "Merge origin/main (Launcher covers and open fonts, OOT 4K) into the PR batch",
-     "fix(ios): a generic destination first; the device named only for a team without it (after PR #2268)",
-     "fix: a write-back target left without a late slot says so (after PR #2261)",
-     "fix: the upload allocators are a pool that grows, for every game (after PR #2264)"
+     "fix(ios): picture profiles keep the old custom 60 fps pace, Tears of the Kingdom 1.0 / 1.2.1's own scene, and every game's 30 fps hold (after PR #2287)",
+     "Merge PR #2287: feat(ios): picture profiles (Quality, Performance, Economy, Custom) with MetalFX and an Advanced screen",
+     "Merge PR #2286: feat(ios): Breath of the Wild's scene size and MetalFX, and the Switch's screen size, for the picture settings",
+     "Merge PR #2293: perf(nvn): pending-write overlays skip the completed prefix",
+     "test: the packaging standards check Animal Crossing, Echoes of Wisdom and Odyssey",
+     "perf(nvn): pending-write overlays skip the completed prefix",
+     "docs(ios): comments name the profiles as the app shows them",
+     "feat(ios): the quality profile holds 30 fps"
     ]
    }
   ]
@@ -9483,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-17T16:07:18Z",
+  "pushed_at": "2026-11-18T19:47:30Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T15:29:37Z",
+    "last_commit": "2026-11-18T19:47:29Z",
     "subjects": [
+     "Merge pull request #1433 from LNPANDY/v0lumehi/patches-go-to-nxnative",
+     "Diagnostics: the game info is for a bug report, the game form is gone",
+     "Issues: launcher problems here, in-game problems go to seedds/nxnative",
+     "Docs: we take no engine patches, send them to seedds/nxnative",
      "Merge pull request #1405 from LNPANDY/feat/engine-dropdown-switcher",
      "launcher: replace engine cards with dropdown switcher and simplify brand header",
      "Merge pull request #1396 from LNPANDY/fix/resign-receipt-and-gl-fast-refresh",
-     "Merge pull request #1395 from LNPANDY/feat/ios-ingame-settings-and-audio-fix",
-     "Merge pull request #1377 from LNPANDY/feat/widescreen-patches-and-badges",
-     "fix(launcher,qt,patches): preserve shared shell installedDevice and infer GL/Vulkan build seeds",
-     "feat(ios): replace Copy Shortcut URL with Add to Home Screen guide and AppIntents",
-     "test(ios): scroll Interface section clear of home indicator before tapping showFPS"
+     "Merge pull request #1395 from LNPANDY/feat/ios-ingame-settings-and-audio-fix"
     ]
    }
   ]
@@ -10453,21 +10483,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-17T23:03:46Z",
+  "pushed_at": "2026-11-18T19:03:12Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T21:17:53Z",
+    "last_commit": "2026-11-18T19:02:56Z",
     "subjects": [
-     "Freeze watchdog: a slot per thread, and the game's threads listed when no frame finishes (#401)",
-     "Merge pull request #456 from HallanBR/perf/fence-marks-while-copying",
-     "Merge pull request #452 from HallanBR/perf/clock-per-pass",
-     "Vulkan async: a call deeper than 8 copied as a record walks the copy for its fences, as before",
-     "Vulkan async: the list's fences noted while copying it, no second walk",
-     "Vulkan: a pipeline's last use from g_exec_s, as the programs' - no clock read per draw",
-     "donations: $19 raised toward the POCO X7 Pro goal (+$5)",
-     "0.4.6-beta (versionCode 45): READMEs note the release"
+     "0.4.7-beta (versionCode 46): READMEs note the release",
+     "RAM saving: textures' guest bytes given back with their contents kept (MADV_PAGEOUT), not zeroed (#471 #478 #489)",
+     "Merge pull request #457 from HallanBR/feature/shadows-option",
+     "Merge pull request #455 from HallanBR/fix/between-fps-fastest-refresh",
+     "Merge pull request #453 from HallanBR/fix/cbwin-copy-per-submission",
+     "Merge pull request #482 from Propinbo/feat/shader-meta-cache",
+     "Merge pull request #483 from Propinbo/feat/vk-dyn-vertex-input",
+     "Merge pull request #481 from Propinbo/feat/urgent-shader-builds"
     ]
    }
   ]
@@ -10669,7 +10699,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-18T06:49:06Z",
+  "pushed_at": "2026-11-18T16:18:18Z",
   "branches": [
    {
     "branch": "main",
@@ -11204,21 +11234,21 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-18T05:46:34Z",
+  "pushed_at": "2026-11-18T15:01:30Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-17T20:27:54Z",
+    "last_commit": "2026-11-18T14:48:13Z",
     "subjects": [
-     "Merge pull request #205 from jmars125/claude/mute-audioout",
-     "Apply the player volume XCX_VOLUME to the nn::audio AudioOut output as well, so a muted game is silent on both of its outputs.",
-     "Merge pull request #173 from jmars125/claude/uw-menus-166-322285",
-     "Merge pull request #178 from jmars125/claude/setup-dump-175",
-     "Merge pull request #176 from jmars125/claude/hud-icons-102-b2f1a0",
-     "Merge pull request #180 from jmars125/claude/cheats-126",
-     "Merge pull request #184 from jmars125/task/swapchain-148",
-     "Merge pull request #189 from WarpedEdge/fix/forced-glyph-style-no-controller"
+     "Merge pull request #207 from jmars125/claude/voice-lang-58",
+     "Merge remote-tracking branch 'origin/master' into HEAD",
+     "Merge pull request #203 from jmars125/claude/skell-items-126",
+     "Merge pull request #198 from jmars125/claude/lift-oom-197",
+     "Merge pull request #196 from jmars125/fix/dim-button-58",
+     "Merge pull request #182 from jmars125/claude/async-replay-71",
+     "Merge pull request #174 from jmars125/claude/cutscene-106-5947ab",
+     "Merge pull request #171 from jmars125/claude/overlay-game-gpu-148"
     ]
    }
   ]
@@ -11565,21 +11595,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-17T23:22:35Z",
+  "pushed_at": "2026-11-18T14:40:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T23:31:35Z",
+    "last_commit": "2026-11-18T14:40:03Z",
     "subjects": [
+     "Merge pull request #174 from AksharDP/t3/fix-combat-element-icon-growing",
+     "Stop the element icon's glow from growing in battle (issue 48).",
      "Merge pull request #162 from AksharDP/t3/fix-issue-47",
      "Return the interface size from the game's integer screen size. The game's screen width and height (main+0x697ca8, main+0x697cd4) returned the layout library's frame size, while every caller combines them with interface objects' 1280x720 positions: a position measured from the right and bottom edges (main+0x390000), an object stretched to and centred on the screen (main+0x4077c8), and objects placed at the screen's right or bottom edge (main+0x48e540). Both now read the patch page's +0x80/+0x84. Checked on the issue 47 save after Skip Travel: at 1920x1080 the area name banner now slides in from the right edge as it does at 1280x720, where before it started 640 units off screen and appeared without the slide.",
      "Keep speech balloons inside the screen above 1280x720. The clamp that moves a field balloon back on screen (main+0x697a54) measured the screen with the layout library's frame size while the balloon's rectangle is in 1280x720 interface units, so at 1920x1080 a balloon near the right edge ran past it and lost the end of its line (issue 47). The clamp now reads the interface size from the patch page's +0x80/+0x84. Checked on the same save talking to a shopkeeper at the right edge: at 1920x1080 the balloon now sits where it does at 1280x720, fully on screen.",
      "Merge pull request #156 from AksharDP/t3/remove-ru-locale",
      "Read the languages again for another install folder after a failed read, and keep the legacy XCX_ language variables out of the services probe.",
-     "Address the review of the language changes.",
-     "Run an unknown XC2_LANG, such as the ru an older xc2.ini may still hold, in the release's default language instead of stopping.",
-     "Drop the in-game settings menu's Russian translation and its menu language setting; the menu is English."
+     "Address the review of the language changes."
     ]
    }
   ]
@@ -11949,21 +11979,21 @@
   "branches": []
  },
  "Desm0nt/diablo3-port": {
-  "pushed_at": "2026-11-18T09:06:35Z",
+  "pushed_at": "2026-11-18T19:08:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T09:03:54Z",
+    "last_commit": "2026-11-18T19:08:14Z",
     "subjects": [
+     "Text input dialog (TL2 issue #15, TL2 3ee6ad2): OK no longer waits for the keyboard's composing word - Latin keyboards (Gboard, SwiftKey) keep the word under the cursor composing while the cursor stays at its end, so OK stayed grey with 'finish choosing characters'; composing no longer disables OK, OK ends the composition itself, normalizes the text and checks the name rules",
      "VERSION 0.2.23: faster drawing on Mali / PowerVR (issue #4)",
      "Issue #4: tile GPUs (Mali / PowerVR) get the tile paths of v0.2.11-test4 (d8cbbbb) on top of 0.2.22: NOLOAD with its later refusals, TILE_BARRIER, STORE_NONE / STORE_DEAD with the look-ahead scan, TILE_POISON, a clear-only pass through its load-op twin and a read barrier no longer ending a pending clear pass; every default off on Adreno (vendor 0x5143). Testers on G99 / Dimensity 7050: 27-31 -> 45-60 fps. Merged with fb_begin (same-draw feedback targets) in descriptors()",
      "VERSION 0.2.22: camera zoom-out (issue #31), present on its own thread by default with automatic fallback, guest thread exit on the host stack",
      "present-thread on by default (D3 0.2.22) with an automatic way back: a crash on the thread dm-present or the engine's 'Game presentation failed (present thread)' appends a byte to files/pt-crashes (crash hook), from the second one DmActivity starts with DM_GFX_PRESENT_THREAD=0 and logs why; a new APK version counts again",
      "Issue #31: camera zoom-out moves the camera back: the Observer assets' eye offset (consoleObserver 0x42d, retro 0x42f, console_wide 0x433 / 0x434) scaled along eye - look-at from the game's thread (npad poll pump, ~1 s and at once on a gear change), lookups as the game's GlobalSNOGet / SNOGet fast paths in plain reads; the wider FOV kept in reserve behind DM_D3_FOV_ZOOM (not in the gear); notes in EN/RU/zh",
      "Issue #31: camera zoom-out 100..140 % (gear, live; DM_D3_ZOOM): the perspective builder main 0x29b7a0 replaced by the same code (the game's tanf; 96 vectors identical to the original in unicorn), tan(fovY/2) of the gameplay camera's call (0x264a84) scaled by the zoom: a wider view of the same camera, the UI unchanged; EN/RU/zh strings",
-     "present-thread (port-common, KB PERF-D07): present (fence wait, acquire, letterbox / RCAS / blit, its submit, vkQueuePresentKHR) can run on its own thread dm-present, D16's DM_GFX_PRESENT_THREAD protocol; default 0 = presents inline exactly as before, 1 = own thread, 2 = the protocol inline; DM_GFX_PRESENT_UNPIN=1, DM_GFX_PRESENT_CPUS; xbg_game.cpp merged by hand at D3's own lines (no BC self-test submit here: D3's GPU self-test runs inside xbg_game_initialize before the first present); D3_PORT.md section with the phone checks",
-     "thread-exit-hoststack (port-common, KB HLE-06): SVC ExitThread runs pthread_exit on the thread's saved host pthread stack (dm_call_on_stack in entry.S) instead of the small guest stack (D16 issues #12/#20, S23+ / Android 17 crash in bionic's teardown); pure fix, no switch; brings pc-core (pc_note: '[pc] thread-exit-hoststack: applied' at the first such exit)"
+     "present-thread (port-common, KB PERF-D07): present (fence wait, acquire, letterbox / RCAS / blit, its submit, vkQueuePresentKHR) can run on its own thread dm-present, D16's DM_GFX_PRESENT_THREAD protocol; default 0 = presents inline exactly as before, 1 = own thread, 2 = the protocol inline; DM_GFX_PRESENT_UNPIN=1, DM_GFX_PRESENT_CPUS; xbg_game.cpp merged by hand at D3's own lines (no BC self-test submit here: D3's GPU self-test runs inside xbg_game_initialize before the first present); D3_PORT.md section with the phone checks"
     ]
    }
   ]
@@ -12132,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-18T11:43:47Z",
+  "pushed_at": "2026-11-18T20:36:37Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T11:05:25Z",
+    "last_commit": "2026-11-18T20:28:17Z",
     "subjects": [
-     "Merge ux/tvos-menu-iml into main（gate2）",
-     "Merge fix/resign-on-esign into main（gate2）",
-     "Merge feat/ushell-selfsign-signer into main（gate2）",
-     "Merge fix/push-game-verify-phone into main（gate2合组）",
-     "Merge fix/install-toshell-actual into main（gate2合组）",
-     "Merge feat/ushell-export-hardlink into main（gate2合组）",
-     "Merge fix/c89-midrun-saves-timing into main（gate2）",
-     "Merge fix/services-test-data-required into main（gate2）"
+     "Merge fix/win-realpath-invalid-handle into main（gate2）",
+     "Merge fix/ios-portrait-upside-down-split into main（gate2）",
+     "Merge diag/late-key-count into main（gate2）",
+     "Merge fix/win-iml-sign-check into main（gate2）",
+     "Merge fix/win-app-control-blocked into main（gate2）",
+     "Merge perf/seg-ts-enc-thread into main（gate2合组）",
+     "Merge fix/storage-upload-sparse into main（gate2合组）",
+     "Merge feat/ushell-mac-plume into main（gate2）"
     ]
    }
   ]
@@ -12207,7 +12237,7 @@
   ]
  },
  "jmars125/xc3-recomp": {
-  "pushed_at": "2026-11-18T05:39:04Z",
+  "pushed_at": "2026-11-18T15:49:29Z",
   "branches": [
    {
     "branch": "master",
@@ -12304,21 +12334,21 @@
   ]
  },
  "Desm0nt/torchlight2-port": {
-  "pushed_at": "2026-11-18T11:14:59Z",
+  "pushed_at": "2026-11-18T19:07:54Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T11:13:53Z",
+    "last_commit": "2026-11-18T19:06:36Z",
     "subjects": [
+     "TL2 0.1.9 (issue #15): OK in the text input dialog no longer waits for the keyboard's composing word",
+     "TL2 0.1.8 (issue #15): run the software keyboard on a 256 KiB host stack",
+     "TL2 0.1.7: version",
+     "TL2: GitHub update check as in D3 (UpdateNotice: stable releases of Desm0nt/torchlight2-port after the first frames, pause menu \"Check for updates\", gear Updates section; DM_UPDATE_CHECK, DM_UPDATE_AS)",
+     "TL2 0.1.6 (issue #2): gamepad layout - sticks start untilted, taps on menu items, skill / potion icons on the buttons",
+     "TL2_PORT.md: v0.1.5 release note",
      "TL2 0.1.5: version, journal (issues #4, #6, #12, owner run 18.11)",
-     "TL2 (issue #6): skill trees and icons for PC-mod classes",
-     "gfx (issue #12): nvnSyncWait waits for translation of untranslated fences; CPU/GPU overlap (PERF-X16)",
-     "perf (issue #4): thread placement by core capacity + ADPF boost from port-common",
-     "TL2_PORT.md: development moved into this repository (one tree), old-tree commit hashes mapped",
-     "setup: ASTC texture cache step (8/8, tools/tl2_astc_cache.py -> Torchlight2Mobile/astc, --skip-astc, check / push know astc/), astc-encoder-py + numpy in the setup runtime; the dev-tree patch file is gone (development now happens in this repository)",
-     "TL2: nn::util::DecompressZlib via libdeflate (XC2 hook, default on for TL2, SDK fallback)",
-     "TL2: ASTC cache upload reads and sanitizes in cached memory, then one copy to staging"
+     "TL2 (issue #6): skill trees and icons for PC-mod classes"
     ]
    }
   ]
@@ -12519,27 +12549,28 @@
   ]
  },
  "Diablo-chia619/d2r-mobile": {
-  "pushed_at": "2026-11-15T02:52:20Z",
+  "pushed_at": "2026-11-18T18:59:24Z",
   "branches": [
    {
     "branch": "ammo-2.3.1",
-    "ahead": 1,
-    "behind": 1,
+    "ahead": 2,
+    "behind": 32,
     "files": 8,
     "real_files": 8,
     "dirs": [
      "dm/android",
      "dm/host"
     ],
-    "last_commit": "2026-11-13T14:47:53Z",
+    "last_commit": "2026-11-18T14:44:13Z",
     "subjects": [
+     "Skill ammo: cover Double Throw / Left Hand Throw, and keep the face-index slot guess behind an off-by-default switch",
      "Skill buttons: show the remaining ammo of the equipped quiver / throwing weapon"
     ]
    },
    {
     "branch": "ammo-guard",
     "ahead": 13,
-    "behind": 0,
+    "behind": 31,
     "files": 27,
     "real_files": 23,
     "dirs": [
@@ -12563,7 +12594,7 @@
    {
     "branch": "android/turnip-and-stick",
     "ahead": 7,
-    "behind": 7,
+    "behind": 38,
     "files": 20,
     "real_files": 18,
     "dirs": [
@@ -12585,26 +12616,9 @@
     ]
    },
    {
-    "branch": "android-import-vault",
-    "ahead": 2,
-    "behind": 7,
-    "files": 7,
-    "real_files": 5,
-    "dirs": [
-     "dm/android",
-     "dm/host",
-     "dm/i18n"
-    ],
-    "last_commit": "2026-11-06T22:33:12Z",
-    "subjects": [
-     "Save import: bring back the Chronicle stash's items (#241)",
-     "Save import: a Settings-only save-import is accepted, and an import that fails halfway takes back what it added (#213 follow-ups)"
-    ]
-   },
-   {
     "branch": "main",
     "ahead": 11,
-    "behind": 0,
+    "behind": 31,
     "files": 26,
     "real_files": 22,
     "dirs": [
@@ -12627,33 +12641,35 @@
    },
    {
     "branch": "runeup",
-    "ahead": 31,
+    "ahead": 56,
     "behind": 0,
-    "files": 35,
-    "real_files": 31,
+    "files": 52,
+    "real_files": 48,
     "dirs": [
      "dm/android",
      "dm/gfx",
      "dm/host",
      "dm/i18n",
-     "dm/ios"
+     "dm/ios",
+     "dm/tools",
+     "dm/verify"
     ],
-    "last_commit": "2026-11-15T02:51:44Z",
+    "last_commit": "2026-11-18T18:59:20Z",
     "subjects": [
-     "符文合成：改为模拟点游戏自己的「重塑」按钮（不再手拼 0x20）",
-     "符文合成：0x20 包类型补 p[0]=0x20（memset 后漏设→服务端收到类型0的包直接崩）；页改真机实测的 0；成叠批量取件 0x39d9e0；st2 改背包按类号找；dump_pkt 发包前写 hex 到文件；diag 打印真机原始包 hex；rc_show/rc_pump 控件树校验 + 面板关闭中止",
-     "符文合成取料链修通：成叠用原版 0x39d724 取 1 件到光标（0x19 对页4无效）；st2 改为背包按 id 找（成叠取件落背包不落光标，原来只等光标→只进2个就超时）；3bdb10 输出缓冲加大到 u64[4]；rc_pump 控件树虚表校验 + 合成途中面板关闭立刻中止（2.3.0 起点空白即关面板，关后面板后摸物品链表会崩进程）",
-     "符文合成：两列排版（每列16行、行高84）；按钮改 140x44 修正 250x38 塞 3:1 原图导致叠成一团；列表数量改递归展开（目标号自身不卡瓶颈，0 颗现货也能合）",
-     "符文合成修三个坑：make_plan 补 build_cls_cache（列表能合、点了说缺料）；去掉 ButtonWidget 的 scale（32 行坐标被压成一团）；行按钮换原版 FrontEnd_ButtonSmall（九宫格边角太薄字透出来）；按钮 841/1121 200x80、弹框 1189/29 575x1457",
-     "符文合成列表：按逐层缺口算（现货能抵下层需求），20# 这类「手上已有两颗 19#」的号不再被误判为合不了",
-     "符文合成：弹框往右(760)、按钮缩小上移(938,1252,210x62)、去掉关闭按钮；数量改按整条链展开算，和 make_plan 判定一致（13# 说没料的问题）",
-     "符文合成弹框：页脚按钮点开，12 行「N# ×数量」+ 合成按钮，点行合一个（ours 白名单加 TouchRc*）；文案 dmRcMake/dmRcClose"
+     "帽子开关改成原版勾选框（显示头盔），位置按用户实测调整；勾选框状态存盘",
+     "符文合成：产物从魔盒搬回背包（0x19 + 原版收背包）、点行文字即合成、弹框防穿透（鼠标泵+分类两条路都挂闸门）、行框与入口按钮位置；新增物品栏「帽子」显隐开关（客户端把戴着的头盔标成没戴，服务端数值不动）",
+     "符文合成：点「重塑」改成按名字扫屏定位（矩形/命中区都不可靠）",
+     "编年史比较：删掉不再使用的 dm_vault_get_bits（比较已搬到服务端拍）",
+     "Merge branch 'vault-compare' into runeup",
+     "Merge branch 'ammo-2.3.1' into runeup",
+     "Skill ammo: cover Double Throw / Left Hand Throw, and keep the face-index slot guess behind an off-by-default switch",
+     "编年史比较：按 review 改到服务端拍里做，算法收紧，开关缺省关"
     ]
    },
    {
     "branch": "touch-stick-travel",
     "ahead": 2,
-    "behind": 1,
+    "behind": 32,
     "files": 5,
     "real_files": 5,
     "dirs": [
@@ -12668,15 +12684,16 @@
    },
    {
     "branch": "vault-compare",
-    "ahead": 1,
-    "behind": 0,
+    "ahead": 2,
+    "behind": 31,
     "files": 2,
     "real_files": 2,
     "dirs": [
      "dm/host"
     ],
-    "last_commit": "2026-11-13T21:27:09Z",
+    "last_commit": "2026-11-18T14:42:01Z",
     "subjects": [
+     "编年史比较：按 review 改到服务端拍里做，算法收紧，开关缺省关",
      "编年史：存入同款暗金/套装时逐条比较，新的更好则替换、旧件退回背包（差的不替换）"
     ]
    }
@@ -12767,21 +12784,21 @@
   ]
  },
  "Desm0nt/pillars-of-eternity-port": {
-  "pushed_at": "2026-11-18T07:11:04Z",
+  "pushed_at": "2026-11-18T18:23:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T07:10:22Z",
+    "last_commit": "2026-11-18T18:22:51Z",
     "subjects": [
+     "0.1.4: render pass load / store savings for tile GPUs (rp_opt, on by default on Mali / PowerVR) + rp_log diagnostics",
+     "rp_opt: render pass load / store savings for tile GPUs, learned from the frame (auto on Mali / PowerVR, rp_opt=7 to force)",
+     "0.1.3: GitHub update check (start-up notice after the first frames, Check for updates in the pause menu, Updates in the gear)",
+     "diag: rp_log v2 traces one whole frame every 20 s (passes with their images, barriers, copies, sampled images)",
+     "diag: rp_log=1 counts the player's render pass load / store traffic and barriers (off by default)",
      "0.1.2: allocator fix for the start-up crash on some phones (issue #4)",
      "0.1.2-test4: allocator windows beyond five recorded exactly in a side table (issue #4)",
-     "0.1.2-test3: allocator slot fix on top of 0.1.1 (issue #4)",
-     "Allocator page table: a window keeps its slot for the whole run (Scudo misaligned-free abort at start, issue #4)",
-     "0.1.1-test2: resolution option, 16:10 fix, smooth 30 fps",
-     "Docs: also tested on Xiaomi 13 Pro (Snapdragon 8 Gen 2)",
-     "Fix a start-up hang: lost wake-up in Unity's ThreadedStreamBuffer",
-     "Update README.md"
+     "0.1.2-test3: allocator slot fix on top of 0.1.1 (issue #4)"
     ]
    }
   ]
@@ -12975,21 +12992,21 @@
   ]
  },
  "aoxzh/bayo3-recomp": {
-  "pushed_at": "2026-11-18T09:17:46Z",
+  "pushed_at": "2026-11-18T17:37:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T09:11:57Z",
+    "last_commit": "2026-11-18T17:32:42Z",
     "subjects": [
+     "Sync from private b7f80cd",
+     "Sync from private 1d31131",
+     "Sync from private 4c7f5e0",
      "Sync from private 9d1d110",
      "Sync from private 981e561",
      "Sync from private 9342f3c",
      "Sync from private bd1e2cf",
-     "Sync from private 9653531",
-     "Sync from private 8d62d9f",
-     "Sync from private e493ac0",
-     "Sync from private 242d589"
+     "Sync from private 9653531"
     ]
    }
   ]
