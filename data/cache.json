@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-18T06:57:56Z",
+  "pushed_at": "2026-11-19T06:58:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T06:57:54Z",
+    "last_commit": "2026-11-19T06:58:27Z",
     "subjects": [
+     "radar 2026-11-19",
      "radar 2026-11-18",
      "radar 2026-11-17",
      "radar 2026-11-16",
      "radar 2026-11-15",
      "radar 2026-11-14",
      "radar 2026-11-13",
-     "radar 2026-11-12",
-     "radar 2026-11-11"
+     "radar 2026-11-12"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-19T02:05:36Z",
+  "pushed_at": "2026-11-19T11:40:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T02:04:30Z",
+    "last_commit": "2026-11-19T11:39:40Z",
     "subjects": [
-     "nvn/upload: trim completed idle staging on opt-in (PR #1491)",
-     "host/threads: keep replay clock out of relative waits (PR #2027)",
-     "ios/staging: clone changed resource images on rebuild (PR #2949)",
-     "packing/shaders: refresh the Smash Ultimate 13.0.5 map",
-     "host/hid: read Npad style under the bind lock (PR #2878)",
-     "ios: apply the saved Metal HUD choice before UIKit (PR #1966)",
-     "packing/survey: skip AppleDouble NRO sidecars (PR #1667)",
-     "packing/mac: preserve shader image names (PR #1790)"
+     "packing/shaders: validate PACx 403 root table bounds",
+     "ci: repair host and tool test failures on main",
+     "game: Resident Evil plays on the Mac (PR #2894)",
+     "packing/shader_split: read MT Framework ARC v9 / headed SPK (PR #2894)",
+     "packing/shader_split: extract TT Games DAT and executable shaders (PR #2785)",
+     "game: add Wonder Switch 2 Edition Program 1 (PR #2957)",
+     "game: run Borderlands at 60 fps by default",
+     "rewriter/catherine: enable the game's 60 fps mode"
     ]
    }
   ]
@@ -1951,12 +1951,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-18T20:29:10Z",
+  "pushed_at": "2026-11-19T07:22:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T20:29:09Z",
+    "last_commit": "2026-11-19T07:22:28Z",
     "subjects": [
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
@@ -1964,7 +1964,7 @@
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
-     "chore: 自动同步 Star 地图（206 个项目）",
+     "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（206 个项目）"
     ]
    }
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-18T20:39:37Z",
+  "pushed_at": "2026-11-19T02:38:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T20:39:36Z",
+    "last_commit": "2026-11-19T02:38:15Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-19T02:34:09Z",
+  "pushed_at": "2026-11-19T10:19:39Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T02:13:31Z",
+    "last_commit": "2026-11-19T10:07:16Z",
     "subjects": [
-     "feat: active players — the Launcher and every game report once a day, on by default, off in the settings",
-     "Merge remote-tracking branch 'origin/main'",
-     "perf: the seed's variant indexes are read into memory in the background, not from the disk on the replay thread",
-     "Merge PR #2295: fix: TOTK builds the prompt copy of the font atlas in the upload staging and blits it, so an atlas re-upload no longer costs the submit thread 7 to 11 ms",
-     "perf: a texture's paged-out guest pages are read back on several threads before its upload",
-     "perf(oot): a pass the game keeps leaving and coming back to is drawn once (the pass chain)",
-     "perf: a present-ring slot holds the picture the display shows, not the whole window image",
-     "fix: the graphics layer matrix compares against a reference tree that compiles"
+     "revert(oot): shader chain back to v28, the translator back to its 2026-11-15 code",
+     "fix(oot): rebuild the runtime when its sources' content changes, and refuse a runtime of another chain than the seed's",
+     "feat(oot): shader chain v29: the translator with the mesh object function and the inline extended products",
+     "perf(oot): scalar extended products leave SPIRV-Cross's optnone helper, so constant divisions fold",
+     "fix(oot): a mesh shader with no task shader launches its workgroups 1024 at a time through its own object function",
+     "fix(oot): a Metal 4 archive period begun before a compiler service death is not written",
+     "fix: the present beat follows a frame the display link paced, so a silent link no longer sleeps a lead the beat built up",
+     "feat: active players — the Launcher and every game report once a day, on by default, off in the settings"
     ]
    }
   ]
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-19T00:44:21Z",
+  "pushed_at": "2026-11-19T11:41:09Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T00:05:48Z",
+    "last_commit": "2026-11-19T11:37:56Z",
     "subjects": [
-     "Merge pull request #1442 from LNPANDY/v0lumehi/bc-decode-cores",
-     "Merge branch 'main' into v0lumehi/bc-decode-cores",
-     "Merge pull request #1443 from LNPANDY/v0lumehi/builds-tab-speed",
-     "Merge branch 'main' into v0lumehi/bc-decode-cores",
-     "Merge pull request #1440 from LNPANDY/v0lumehi/bc-cpu-copies",
-     "patches: decode BC textures across the CPU's cores on older devices (#777)",
-     "Mac launcher: the Builds tab opens as fast as before #1392",
-     "patches: decode CPU BC buffer-to-texture copies and reject unsupported BC readbacks (#446)"
+     "Merge pull request #1448 from LNPANDY/v0lumehi/engine-bump-0b5fd6020093",
+     "CI: the tool tests get 25 minutes, the new pin has 260 test files",
+     "Engine patches: fix the two tool tests that fail on upstream main (0065, 0066)",
+     "Merge branch 'main' into v0lumehi/engine-bump-0b5fd6020093",
+     "Engine patches: take main's 0064 on the new pin, the test fixes follow after main is merged in",
+     "Engine patches: take main's 0064 on the new pin, the test fixes move to 0065 and 0066",
+     "Engine patches: fix the two tool tests that fail on upstream main",
+     "Merge pull request #1442 from LNPANDY/v0lumehi/bc-decode-cores"
     ]
    }
   ]
@@ -11730,21 +11730,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-18T09:00:55Z",
+  "pushed_at": "2026-11-19T09:08:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T08:43:54Z",
+    "last_commit": "2026-11-19T09:08:46Z",
     "subjects": [
+     "chore(github): add a bug report issue form",
      "docs(gfx): record default-off alias Thor qualification",
      "fix(diag): publish pause reporting enablement atomically",
      "feat(diag): report private write-back path coverage",
      "fix(gfx): retire private writer authority with virtual mappings",
      "fix(gfx): land GPU writes through private dma-buf aliases",
      "feat(shaders): refresh seven applicable 1.4.3 variants",
-     "docs(changelog): record integer-fold Thor and Odin speed checks",
-     "docs(changelog): record integer-fold device checks"
+     "docs(changelog): record integer-fold Thor and Odin speed checks"
     ]
    }
   ]
@@ -11783,7 +11783,7 @@
   ]
  },
  "gosail/d2r-mobile": {
-  "pushed_at": "2026-11-19T02:24:31Z",
+  "pushed_at": "2026-11-19T04:08:19Z",
   "branches": [
    {
     "branch": "feat/ipad-android-keyboard-mouse-upstream-20261116",
@@ -11832,26 +11832,26 @@
    },
    {
     "branch": "feat/offline-dual-merc-probe-20261116",
-    "ahead": 109,
+    "ahead": 157,
     "behind": 5,
-    "files": 45,
-    "real_files": 41,
+    "files": 51,
+    "real_files": 47,
     "dirs": [
      "dm/host",
      "dm/ios",
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-11-19T02:24:28Z",
+    "last_commit": "2026-11-19T04:08:18Z",
     "subjects": [
-     "docs(dualmerc): native D2S identity v3 binding, per-merc equip packet and remaining restore blockers",
-     "ci(dualmerc): exercise original-slot exclusion and cross-save gear ownership before any future restore bridge",
-     "test(dualmerc): never recreate original D2S merc or duplicate its items; reject bad seed and same-Act",
-     "feat(dualmerc): plan only non-native merc restoration after exact D2S binding and ownership proof",
-     "ci(dualmerc): test SWM2 v3 vanilla save bindings, separate equip target IDs and corrupt-file rejection",
-     "test(dualmerc): verify vanilla D2S and SWM2 atomically agree; fail closed on stale checksum/seed",
-     "feat(dualmerc): verify complete vanilla D2S file and native merc seed/checksum before sidecar save or restore",
-     "fix(dualmerc): reject D2S native-merc identity mismatch unless SWM2 checksum and seed exactly match"
+     "test(dualmerc): reject valid-checksum but changed native hireling from inheriting old sidecar",
+     "docs(dualmerc): record atomic chooser channel and verified D2S-to-sidecar bind contract",
+     "test(ios dualmerc): check standalone locked nonce+answer channel wiring",
+     "ci(dualmerc): compile portable concurrent chooser tests with pthreads",
+     "test(dualmerc): exercise stale UIKit callbacks and thread-safe chooser in pure C",
+     "refactor(ios dualmerc): use portable request channel for atomic nonce/result handling",
+     "feat(dualmerc): extract mutex-guarded iOS hire answer channel for portable concurrency tests",
+     "test(dualmerc): verify staged bind, invalid D2S rejection and no mutation on failure"
     ]
    },
    {
@@ -12056,7 +12056,7 @@
   "branches": []
  },
  "xyzl1789/d2r-mobile": {
-  "pushed_at": "2026-11-15T05:55:47Z",
+  "pushed_at": "2026-11-19T02:58:38Z",
   "branches": []
  },
  "myzzzqqwa/private4": {
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-19T02:37:13Z",
+  "pushed_at": "2026-11-19T11:46:39Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T02:24:35Z",
+    "last_commit": "2026-11-19T11:41:21Z",
     "subjects": [
-     "Merge diag/1511-ticket-source into main（gate2）",
-     "Merge contrib/pr1636 into main（gate2）",
-     "Merge fix/gen1-single-joycon-style into main（gate2）",
-     "Merge fix/f16x2-atomic-add into main（gate2）",
-     "Merge fix/fs-stream-pace into main（gate2）",
-     "Merge diag/audio-slow-tick-faults into main（gate2）",
-     "Merge contrib/pr1579 into main（gate2）",
-     "Merge fix/1628-fpslocker-var-room into main（gate2）"
+     "Merge fix/addr-fallback-pool into main（gate2）",
+     "Merge fix/prim-polygon-quadstrip into main（gate2）",
+     "Merge fix/warm-fout-skip into main（gate2）",
+     "Merge fix/t2t-copy-all-formats into main（gate2）",
+     "Merge fix/se-variant-snapshot into main（gate2）",
+     "Merge android/launcher-export into main（gate2）",
+     "Merge feat/snapshot-default-on into main（gate2）",
+     "Merge fix/snapshot-replay-result-close into main（gate2）"
     ]
    }
   ]
@@ -12549,7 +12549,7 @@
   ]
  },
  "Diablo-chia619/d2r-mobile": {
-  "pushed_at": "2026-11-18T18:59:24Z",
+  "pushed_at": "2026-11-19T03:35:53Z",
   "branches": [
    {
     "branch": "ammo-2.3.1",
@@ -12641,7 +12641,7 @@
    },
    {
     "branch": "runeup",
-    "ahead": 56,
+    "ahead": 57,
     "behind": 0,
     "files": 52,
     "real_files": 48,
@@ -12654,16 +12654,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-11-18T18:59:20Z",
+    "last_commit": "2026-11-19T03:32:03Z",
     "subjects": [
+     "移除未生效的头盔显隐（勾选框/探针/置空试验全删），保留符文合成与百宝囊改动",
      "帽子开关改成原版勾选框（显示头盔），位置按用户实测调整；勾选框状态存盘",
      "符文合成：产物从魔盒搬回背包（0x19 + 原版收背包）、点行文字即合成、弹框防穿透（鼠标泵+分类两条路都挂闸门）、行框与入口按钮位置；新增物品栏「帽子」显隐开关（客户端把戴着的头盔标成没戴，服务端数值不动）",
      "符文合成：点「重塑」改成按名字扫屏定位（矩形/命中区都不可靠）",
      "编年史比较：删掉不再使用的 dm_vault_get_bits（比较已搬到服务端拍）",
      "Merge branch 'vault-compare' into runeup",
      "Merge branch 'ammo-2.3.1' into runeup",
-     "Skill ammo: cover Double Throw / Left Hand Throw, and keep the face-index slot guess behind an off-by-default switch",
-     "编年史比较：按 review 改到服务端拍里做，算法收紧，开关缺省关"
+     "Skill ammo: cover Double Throw / Left Hand Throw, and keep the face-index slot guess behind an off-by-default switch"
     ]
    },
    {
@@ -12992,21 +12992,21 @@
   ]
  },
  "aoxzh/bayo3-recomp": {
-  "pushed_at": "2026-11-18T17:37:11Z",
+  "pushed_at": "2026-11-19T10:42:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T17:32:42Z",
+    "last_commit": "2026-11-19T10:38:24Z",
     "subjects": [
+     "Sync from private 6f5dadb",
      "Sync from private b7f80cd",
      "Sync from private 1d31131",
      "Sync from private 4c7f5e0",
      "Sync from private 9d1d110",
      "Sync from private 981e561",
      "Sync from private 9342f3c",
-     "Sync from private bd1e2cf",
-     "Sync from private 9653531"
+     "Sync from private bd1e2cf"
     ]
    }
   ]
