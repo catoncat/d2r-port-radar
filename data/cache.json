@@ -1871,27 +1871,27 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-19T11:40:14Z",
+  "pushed_at": "2026-11-19T20:07:49Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T11:39:40Z",
+    "last_commit": "2026-11-19T20:06:37Z",
     "subjects": [
-     "packing/shaders: validate PACx 403 root table bounds",
-     "ci: repair host and tool test failures on main",
-     "game: Resident Evil plays on the Mac (PR #2894)",
-     "packing/shader_split: read MT Framework ARC v9 / headed SPK (PR #2894)",
-     "packing/shader_split: extract TT Games DAT and executable shaders (PR #2785)",
-     "game: add Wonder Switch 2 Edition Program 1 (PR #2957)",
-     "game: run Borderlands at 60 fps by default",
-     "rewriter/catherine: enable the game's 60 fps mode"
+     "game: L.A. Noire 1.2 runs on the Mac",
+     "nvn/present: wait for the frame producer before screenshots (PR #2805)",
+     "vulkan/tools: detect loader-only games and translate DXC shaders",
+     "host/irs: match disconnected processor control replies",
+     "opengl: draw with the legacy fixed pipeline (PR #2805)",
+     "game: Bloodstained: Ritual of the Night defaults to 60 fps",
+     "game: add the TSUKIHIME 1.0.2 profile",
+     "host/irs: accept valid processor starts with a disconnected camera"
     ]
    }
   ]
  },
  "ForceMind/Game2Mobile": {
-  "pushed_at": "2026-11-16T13:17:34Z",
+  "pushed_at": "2026-11-19T13:22:13Z",
   "branches": [
    {
     "branch": "main",
@@ -1911,21 +1911,21 @@
   ]
  },
  "HachiMiku39/pjdv_mega39s_ios": {
-  "pushed_at": "2026-11-08T15:59:46Z",
+  "pushed_at": "2026-11-19T16:46:52Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-08T15:57:20Z",
+    "last_commit": "2026-11-19T15:19:16Z",
     "subjects": [
+     "Release build24: refresh the native launcher",
+     "Release build23: startup update checks, Mac pixel output and asynchronous preflight",
      "Release build22: restore native Touch Play judgments and clarify resource import recovery",
      "Release 0.1.5 build21: native resource mod imports and video compatibility fixes",
      "Release 0.1.5 build20: restore movie backgrounds and ship native MOD loading",
      "Convert the verified Leo/need PC model package inside the App",
      "Reduce redundant MOD preparation and document all local package trials",
-     "Add native multi-MOD loading, transactional selection and integrity recovery",
-     "Add native prepared MOD imports and document M4 five-package validation",
-     "Document New Classics foundation research and M4 combined MOD trial"
+     "Add native multi-MOD loading, transactional selection and integrity recovery"
     ]
    }
   ]
@@ -1951,12 +1951,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-19T07:22:29Z",
+  "pushed_at": "2026-11-19T20:34:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T07:22:28Z",
+    "last_commit": "2026-11-19T20:34:13Z",
     "subjects": [
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
@@ -1965,7 +1965,7 @@
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
-     "chore: 自动同步 Star 地图（206 个项目）"
+     "chore: 自动同步 Star 地图（207 个项目）"
     ]
    }
   ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-19T02:38:16Z",
+  "pushed_at": "2026-11-19T11:50:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T02:38:15Z",
+    "last_commit": "2026-11-19T11:50:10Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-19T10:19:39Z",
+  "pushed_at": "2026-11-19T20:03:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T10:07:16Z",
+    "last_commit": "2026-11-19T20:02:57Z",
     "subjects": [
+     "fix: the express update compiles the startup shaders' missing libraries itself, and --seed goes on without a compiler (after PR #2297)",
+     "Merge pull request #2297 from oxyp1e/pr/totk-shader-libs",
+     "Merge pull request #2300 from Ghoul0718/fix/odyssey-romfs-mods",
+     "Merge pull request #2305 from liafonx/pr/totk-colour-snapshot",
      "revert(oot): shader chain back to v28, the translator back to its 2026-11-15 code",
+     "fix: TOTK gives a draw that samples the colour target it draws into, at positions offset by another texture read, a copy of that target, so Rauru's ghost in Ukouh Shrine no longer fades in and out as a magenta shape",
      "fix(oot): rebuild the runtime when its sources' content changes, and refuse a runtime of another chain than the seed's",
-     "feat(oot): shader chain v29: the translator with the mesh object function and the inline extended products",
-     "perf(oot): scalar extended products leave SPIRV-Cross's optnone helper, so constant divisions fold",
-     "fix(oot): a mesh shader with no task shader launches its workgroups 1024 at a time through its own object function",
-     "fix(oot): a Metal 4 archive period begun before a compiler service death is not written",
-     "fix: the present beat follows a frame the display link paced, so a silent link no longer sleeps a lead the beat built up",
-     "feat: active players — the Launcher and every game report once a day, on by default, off in the settings"
+     "feat(oot): shader chain v29: the translator with the mesh object function and the inline extended products"
     ]
    }
   ]
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-19T11:41:09Z",
+  "pushed_at": "2026-11-19T20:38:34Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T11:37:56Z",
+    "last_commit": "2026-11-19T20:06:56Z",
     "subjects": [
-     "Merge pull request #1448 from LNPANDY/v0lumehi/engine-bump-0b5fd6020093",
-     "CI: the tool tests get 25 minutes, the new pin has 260 test files",
-     "Engine patches: fix the two tool tests that fail on upstream main (0065, 0066)",
-     "Merge branch 'main' into v0lumehi/engine-bump-0b5fd6020093",
-     "Engine patches: take main's 0064 on the new pin, the test fixes follow after main is merged in",
-     "Engine patches: take main's 0064 on the new pin, the test fixes move to 0065 and 0066",
-     "Engine patches: fix the two tool tests that fail on upstream main",
-     "Merge pull request #1442 from LNPANDY/v0lumehi/bc-decode-cores"
+     "Merge pull request #1438 from LNPANDY/fix/engine-audio-seed-and-drop-0060",
+     "fix(patches,launcher): drop widescreen 0060 and fix seed RomFS guard, iOS audio mix crackling, and GL/VK seed validation",
+     "Merge pull request #1414 from LNPANDY/fix/win-ios-packager-drift",
+     "Align Windows iOS packager contracts with build_ipa.sh",
+     "Merge pull request #1457 from LNPANDY/feat/rc8-ui-and-artwork-polish",
+     "Launcher: built-first library, single-screen Builds, and offline NACP artwork",
+     "Merge pull request #1455 from LNPANDY/fix/mng-unencrypted-update-dlc",
+     "Merge pull request #1454 from LNPANDY/v0lumehi/drop-joycon-patch"
     ]
    }
   ]
@@ -10699,7 +10699,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-18T16:18:18Z",
+  "pushed_at": "2026-11-19T19:05:58Z",
   "branches": [
    {
     "branch": "main",
@@ -11234,21 +11234,21 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-18T15:01:30Z",
+  "pushed_at": "2026-11-19T17:46:15Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-18T14:48:13Z",
+    "last_commit": "2026-11-19T17:46:12Z",
     "subjects": [
-     "Merge pull request #207 from jmars125/claude/voice-lang-58",
+     "Merge pull request #218 from jmars125/claude/merge-187",
+     "Merge pull request #217 from jmars125/claude/merge-188",
      "Merge remote-tracking branch 'origin/master' into HEAD",
-     "Merge pull request #203 from jmars125/claude/skell-items-126",
-     "Merge pull request #198 from jmars125/claude/lift-oom-197",
-     "Merge pull request #196 from jmars125/fix/dim-button-58",
-     "Merge pull request #182 from jmars125/claude/async-replay-71",
-     "Merge pull request #174 from jmars125/claude/cutscene-106-5947ab",
-     "Merge pull request #171 from jmars125/claude/overlay-game-gpu-148"
+     "Merge remote-tracking branch 'origin/master' into HEAD",
+     "Merge pull request #191 from TechnoOerba/crowd-distance",
+     "Merge pull request #190 from TechnoOerba/async-mirror-cow",
+     "Merge pull request #181 from TechnoOerba/grass-distance",
+     "Merge #181's branch (master merged in) into crowd-distance; patches-upd.txt and boot.c keep both the crowd set and master's voice language and mesh guard."
     ]
    }
   ]
@@ -11979,21 +11979,21 @@
   "branches": []
  },
  "Desm0nt/diablo3-port": {
-  "pushed_at": "2026-11-18T19:08:21Z",
+  "pushed_at": "2026-11-19T14:32:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T19:08:14Z",
+    "last_commit": "2026-11-19T14:30:15Z",
     "subjects": [
+     "D3_PORT.md: port-common batch 12 in D3 (device-fault, pvr-cb-barrier, TEX-02 decoder + self-test, bc-astc-gpu): switches, how GPU ASTC combines with the ASTC texture cache, host checks, phone checks",
+     "bc-astc-gpu (port-common, KB TEX-18 / FN-60 + FN-61): on GPUs without BC, BC1 / BC2 / BC3 / BC7 textures of the GPU decode path are created as VK_FORMAT_ASTC_4x4_UNORM / _SRGB and every decode batch gets one more compute dispatch (xbg_bc_astc_encode.comp, after GameNative's block encoder, Mesa MIT) whose ASTC blocks are copied into the image instead of the RGBA8 output (1 byte a texel instead of RGBA8's 4: the size of BC2 / BC3 / BC7, twice BC1). Per family behind a 285-block self-test on the device (reference ASTC decoder xbg_astc_ref_decode.h from DOOM 2016) and the TEX-02 decode self-test; DM_GFX_BC_ASTC auto (default: on where the GPU decode runs, off on Qualcomm) / 1 / 0 (old RGBA8 path byte for byte), DM_GFX_BC_ASTC_CANDS 3 / 1, DM_GFX_BC_ASTC_VT. Module files as they are; xbg_game.cpp merged by hand at D3's lines: BcJob without BcVerify, BcUpload gets D16's partial member, no bcv::attach / subst_cpu, the format decision after D3's decoded / overlay / ASTC-cache chain (a cache hit is never decoded, so the setup-built pack keeps priority and a re-upload still upgrades a GPU-ASTC image from the pack), shims vkCmd* / ptq::submit / gpguard::Lock, fb_snapshot copies bc_astc. Adreno samples BC natively and never reaches it (one [pc] line: 'the device samples BC'). Host tests: bc_astc_encode_test and bc_gpu_decode_test all passed",
+     "TEX-02 GPU BC decoder fixes from DOOM 2016 (B&F 2.24, 06.11) for GPUs without BC (Mali / PowerVR), as TL2 c01a30e (= DOS2 4016472): D3 still had the 05.11 decoder (byte-identical to TL2's before that commit) that a driver miscompiled into black 4x4 patches (BC6H mode-1 blocks with zero pixel rows 1-3). xbg_bc_gpu.glsl / xbg_bc_gpu.h / xbg_bc_decode.comp / xbg_bc_decode_spv.h / tests byte-identical to DOOM 2016: branchless bit extractor without undefined shifts, BC6H block decoded once outside the row loop, clamped shift counts. Engine (bcgpu): DM_GFX_BC_SELFTEST=1 (default) - every new decode pipeline first decodes 2048 known-answer blocks (xbg_bc_kat_blocks) on the device and compares them with the CPU decoder; a mismatch sends that format to the CPU decoder (=2 log only, =0 off); its submission goes through ptq::submit (present-thread queue lock, as TL2 HEAD); DM_GFX_BC_BARRIER=full (default: ALL_COMMANDS barriers between the batch steps; narrow = the old pairs). Adreno samples BC natively (DM_GFX_NATIVE_BC=1) and never reaches this path. Log: 'NVN BC decode: self-test fmt=... bad=... -> gpu|cpu', 'NVN BC decode: barriers=full'. Host test bc_gpu_decode_test: all passed",
+     "pvr-cb-barrier (port-common, KB PVR-11 / FN-63): optional full memory barrier (ALL_COMMANDS -> ALL_COMMANDS, MEMORY_WRITE -> MEMORY_READ|WRITE) right after vkBeginCommandBuffer of the engine's primary command buffers (slot command buffer and its prologue) through xbg_cb_begin; DM_GFX_PVR_CB_BARRIER 0 = off (default, command buffers recorded exactly as before), 1 = on a PowerVR (vendor 0x1010), 2 = on any GPU; '[pc] pvr-cb-barrier: applied|skipped' at the first command buffer; candidate fix for PowerVR cross-submission visibility, not confirmed on a phone; synced with sync_common.sh (applies cleanly)",
+     "device-fault (port-common, KB APP-16 / FN-64): VK_EXT_device_fault is enabled on every device whose driver has it with the deviceFault feature (DM_GFX_DEVICE_FAULT=0: off); a lost-device / fence / GPU-hang xbg_fatalf logs the driver's fault report once (fault text, faulting GPU address with its precision, vendor codes) before the crumbs; boot line 'NVN device fault: ...' and '[pc] device-fault: applied|skipped'; diagnostics only, the success path is unchanged; synced with sync_common.sh (4 edits, applies cleanly)",
      "Text input dialog (TL2 issue #15, TL2 3ee6ad2): OK no longer waits for the keyboard's composing word - Latin keyboards (Gboard, SwiftKey) keep the word under the cursor composing while the cursor stays at its end, so OK stayed grey with 'finish choosing characters'; composing no longer disables OK, OK ends the composition itself, normalizes the text and checks the name rules",
      "VERSION 0.2.23: faster drawing on Mali / PowerVR (issue #4)",
-     "Issue #4: tile GPUs (Mali / PowerVR) get the tile paths of v0.2.11-test4 (d8cbbbb) on top of 0.2.22: NOLOAD with its later refusals, TILE_BARRIER, STORE_NONE / STORE_DEAD with the look-ahead scan, TILE_POISON, a clear-only pass through its load-op twin and a read barrier no longer ending a pending clear pass; every default off on Adreno (vendor 0x5143). Testers on G99 / Dimensity 7050: 27-31 -> 45-60 fps. Merged with fb_begin (same-draw feedback targets) in descriptors()",
-     "VERSION 0.2.22: camera zoom-out (issue #31), present on its own thread by default with automatic fallback, guest thread exit on the host stack",
-     "present-thread on by default (D3 0.2.22) with an automatic way back: a crash on the thread dm-present or the engine's 'Game presentation failed (present thread)' appends a byte to files/pt-crashes (crash hook), from the second one DmActivity starts with DM_GFX_PRESENT_THREAD=0 and logs why; a new APK version counts again",
-     "Issue #31: camera zoom-out moves the camera back: the Observer assets' eye offset (consoleObserver 0x42d, retro 0x42f, console_wide 0x433 / 0x434) scaled along eye - look-at from the game's thread (npad poll pump, ~1 s and at once on a gear change), lookups as the game's GlobalSNOGet / SNOGet fast paths in plain reads; the wider FOV kept in reserve behind DM_D3_FOV_ZOOM (not in the gear); notes in EN/RU/zh",
-     "Issue #31: camera zoom-out 100..140 % (gear, live; DM_D3_ZOOM): the perspective builder main 0x29b7a0 replaced by the same code (the game's tanf; 96 vectors identical to the original in unicorn), tan(fovY/2) of the gameplay camera's call (0x264a84) scaled by the zoom: a wider view of the same camera, the UI unchanged; EN/RU/zh strings",
-     "present-thread (port-common, KB PERF-D07): present (fence wait, acquire, letterbox / RCAS / blit, its submit, vkQueuePresentKHR) can run on its own thread dm-present, D16's DM_GFX_PRESENT_THREAD protocol; default 0 = presents inline exactly as before, 1 = own thread, 2 = the protocol inline; DM_GFX_PRESENT_UNPIN=1, DM_GFX_PRESENT_CPUS; xbg_game.cpp merged by hand at D3's own lines (no BC self-test submit here: D3's GPU self-test runs inside xbg_game_initialize before the first present); D3_PORT.md section with the phone checks"
+     "Issue #4: tile GPUs (Mali / PowerVR) get the tile paths of v0.2.11-test4 (d8cbbbb) on top of 0.2.22: NOLOAD with its later refusals, TILE_BARRIER, STORE_NONE / STORE_DEAD with the look-ahead scan, TILE_POISON, a clear-only pass through its load-op twin and a read barrier no longer ending a pending clear pass; every default off on Adreno (vendor 0x5143). Testers on G99 / Dimensity 7050: 27-31 -> 45-60 fps. Merged with fb_begin (same-draw feedback targets) in descriptors()"
     ]
    }
   ]
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-19T11:46:39Z",
+  "pushed_at": "2026-11-19T20:40:34Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T11:41:21Z",
+    "last_commit": "2026-11-19T20:38:47Z",
     "subjects": [
-     "Merge fix/addr-fallback-pool into main（gate2）",
-     "Merge fix/prim-polygon-quadstrip into main（gate2）",
-     "Merge fix/warm-fout-skip into main（gate2）",
-     "Merge fix/t2t-copy-all-formats into main（gate2）",
-     "Merge fix/se-variant-snapshot into main（gate2）",
-     "Merge android/launcher-export into main（gate2）",
-     "Merge feat/snapshot-default-on into main（gate2）",
-     "Merge fix/snapshot-replay-result-close into main（gate2）"
+     "Merge docs/shader-cov-pits-2 into main（gate2）",
+     "坑记录：覆盖台账只按与包同版本的诊断出（版本差在玩家身上不存在）",
+     "Merge docs/shader-cov-pits into main（gate2）",
+     "坑记录：着色器覆盖率的三个口径陷阱（别家缓存对照、版本混算、只有近亲变体）",
+     "Merge perf/unity-kw-pairs into main（gate2）",
+     "Merge contrib/pr1660 into main（gate2）",
+     "Merge docs/pit-syslib-decl into main（gate2）",
+     "docs(坑记录): 直连层单测系统库改源文件登记（共用链接行反复冲突）"
     ]
    }
   ]
@@ -12237,21 +12237,21 @@
   ]
  },
  "jmars125/xc3-recomp": {
-  "pushed_at": "2026-11-18T15:49:29Z",
+  "pushed_at": "2026-11-19T19:59:05Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-17T15:52:27Z",
+    "last_commit": "2026-11-19T17:00:27Z",
     "subjects": [
+     "Merge pull request #72 from jmars125/task/dlaa-flash",
+     "Merge remote-tracking branch 'origin/master' into task/dlaa-flash",
      "Merge pull request #88 from PDEYVID/task/mod-archive",
      "Add language packs: a translation into a language XC3 does not ship, picked like one it does.",
      "Add a Brazilian Portuguese menu and overlay.",
      "Show the mod archive switch in the menu's Game tab and reword the mods texts.",
      "Document installing emulator mods, those made for xc3-file-loader included.",
-     "Load loose mod files in place of archive entries, as the emulator plugin xc3-file-loader does.",
-     "Skip the skyline folder of a mod's romfs and match mod file names in lower case.",
-     "Merge pull request #83 from nkoriyama/nminmax"
+     "Load loose mod files in place of archive entries, as the emulator plugin xc3-file-loader does."
     ]
    }
   ]
@@ -12334,21 +12334,21 @@
   ]
  },
  "Desm0nt/torchlight2-port": {
-  "pushed_at": "2026-11-18T19:07:54Z",
+  "pushed_at": "2026-11-19T15:54:55Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T19:06:36Z",
+    "last_commit": "2026-11-19T15:53:32Z",
     "subjects": [
+     "0.1.10: fix the crash on Change Character / Manage Characters with a modded class (issue #23)",
+     "Merge pull request #18 from danjaniell/game-folder-sdcard",
+     "feat: add --dest to setup push",
+     "docs: note the game folder may live on an SD card",
+     "feat: find the game folder on any storage volume",
      "TL2 0.1.9 (issue #15): OK in the text input dialog no longer waits for the keyboard's composing word",
      "TL2 0.1.8 (issue #15): run the software keyboard on a 256 KiB host stack",
-     "TL2 0.1.7: version",
-     "TL2: GitHub update check as in D3 (UpdateNotice: stable releases of Desm0nt/torchlight2-port after the first frames, pause menu \"Check for updates\", gear Updates section; DM_UPDATE_CHECK, DM_UPDATE_AS)",
-     "TL2 0.1.6 (issue #2): gamepad layout - sticks start untilted, taps on menu items, skill / potion icons on the buttons",
-     "TL2_PORT.md: v0.1.5 release note",
-     "TL2 0.1.5: version, journal (issues #4, #6, #12, owner run 18.11)",
-     "TL2 (issue #6): skill trees and icons for PC-mod classes"
+     "TL2 0.1.7: version"
     ]
    }
   ]
@@ -12784,21 +12784,21 @@
   ]
  },
  "Desm0nt/pillars-of-eternity-port": {
-  "pushed_at": "2026-11-18T18:23:43Z",
+  "pushed_at": "2026-11-19T13:39:55Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T18:22:51Z",
+    "last_commit": "2026-11-19T13:39:31Z",
     "subjects": [
+     "0.1.5: own wake-one semaphore for libunity (Galaxy S25 30 fps -> 60 after the party HUD), .nomedia in the game folder",
+     "0.1.5-test3: own wake-one semaphore for libunity (ownsem, default on; bionic sem_post wakes every sleeper), spin 50 us only on slow wake-ups; .nomedia in the game folder",
+     "0.1.5-test1: automatic remedy trial for slow thread wake-ups (spin 50 / 200 us, poll, no setaffinity), best kept and remembered, per-window counters",
+     "0.1.5-test1: libunity worker semaphore spin before sleep (auto when sem_post wake-ups are slow, S25 30 fps) + sem / setaffinity / futex counters",
      "0.1.4: render pass load / store savings for tile GPUs (rp_opt, on by default on Mali / PowerVR) + rp_log diagnostics",
      "rp_opt: render pass load / store savings for tile GPUs, learned from the frame (auto on Mali / PowerVR, rp_opt=7 to force)",
      "0.1.3: GitHub update check (start-up notice after the first frames, Check for updates in the pause menu, Updates in the gear)",
-     "diag: rp_log v2 traces one whole frame every 20 s (passes with their images, barriers, copies, sampled images)",
-     "diag: rp_log=1 counts the player's render pass load / store traffic and barriers (off by default)",
-     "0.1.2: allocator fix for the start-up crash on some phones (issue #4)",
-     "0.1.2-test4: allocator windows beyond five recorded exactly in a side table (issue #4)",
-     "0.1.2-test3: allocator slot fix on top of 0.1.1 (issue #4)"
+     "diag: rp_log v2 traces one whole frame every 20 s (passes with their images, barriers, copies, sampled images)"
     ]
    }
   ]
@@ -12972,21 +12972,21 @@
   ]
  },
  "Desm0nt/divinity-original-sin-2-port": {
-  "pushed_at": "2026-11-16T22:57:29Z",
+  "pushed_at": "2026-11-19T15:55:08Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T22:54:58Z",
+    "last_commit": "2026-11-19T15:50:30Z",
     "subjects": [
+     "Divinity Original Sin 2 Mobile 0.1.1-test4 (issue #3 test): on older phones (kernel before 4.14) and after a phone restart, saves are swapped with plain renames instead of an atomic directory exchange (put back at the next start if cut); the first save is logged and written to storage before the swap",
+     "Divinity Original Sin 2 Mobile 0.1.1-test3 (issue #3 test): the log survives a phone restart (written to storage at once), the start steps of Vulkan logged, crash.txt says when the phone restarted during the game; older phones (kernel before 4.14) skip the zero-copy memory mapping, and after a phone restart the next start uses safer graphics settings",
      "Divinity Original Sin 2 Mobile 0.1.1: the 3D at full resolution (the game's dynamic resolution read a zero GPU timestamp and sat at 75 %), native render backend on by default, iPad-style anti-aliasing fused into the post pass (the console FXAA pass removed), setup builds the fused post-processing pack, NR-01 registry (off)",
      "Divinity Original Sin 2 Mobile 0.1.1: Vulkan driver choice and driver manager as in DOOM 2016 / Diablo III (Turnip for Adreno, PanVK for Mali and RADV for Xclipse bundled as options, install from zip, download, delete; fallback to the system driver when a custom one fails to start)",
      "Touch interface: panel buttons, column fold arrows and hot bar arrows work again (named art placed as sprites); run setup again to remake TouchUI.pak",
      "Touch interface: sneak / weapon buttons show the game's own hot bar icons (taken from your Switch files at setup), cancel button redrawn",
      "Touch interface: own info button (the panels' magnifier is drawn for this project too)",
-     "Touch interface without the iPad edition: own button art, TouchUI.pak from the Switch files alone",
-     "DOS2 launcher icon: original art (Divinity Original Sin II Mobile), drawn for this port",
-     "Divinity Original Sin 2 Mobile 0.1.0: native Android port of Divinity: Original Sin 2 - Definitive Edition (Switch), setup with ASTC texture pack and touch interface package"
+     "Touch interface without the iPad edition: own button art, TouchUI.pak from the Switch files alone"
     ]
    }
   ]
@@ -13085,6 +13085,65 @@
      "Create build-apk.yml",
      "Adreno: switch the rewrites off for the 720 only, not the whole 0x43 generation",
      "Adreno: recognise the 740/750 chip family by device ID (720, 735) (#263, #169)"
+    ]
+   }
+  ]
+ },
+ "hahyes/Galar-Native-Android": {
+  "pushed_at": "2026-11-10T19:50:05Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-10T06:47:52Z",
+    "subjects": [
+     "Merge pull request #134 from simipoB/fps-live",
+     "Merge pull request #136 from simipoB/mali-nan-select",
+     "Merge pull request #135 from simipoB/engine-perf",
+     "Mali white screen: the NaN rule of min / max / saturate written out with isnan (#111, #128)",
+     "Engine: less driver memory churn on Adreno; a profileable test build",
+     "Frame rate: 30 / 60 switch while playing, the crowd fix, a steadier fps guard",
+     "Merge pull request #133 from simipoB/hd-textures",
+     "Merge remote-tracking branch 'origin/main' into hd-textures"
+    ]
+   }
+  ]
+ },
+ "luonghopfdcv-alt/Abc": {
+  "pushed_at": "2026-11-19T13:53:43Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-19T13:53:42Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "Dypb42/D2R": {
+  "pushed_at": "2026-11-19T14:35:52Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-19T14:35:52Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "luonghopfdcv-alt/Hop": {
+  "pushed_at": "2026-11-19T13:35:18Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-19T13:35:18Z",
+    "subjects": [
+     "Initial commit"
     ]
    }
   ]
