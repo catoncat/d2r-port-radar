@@ -1571,21 +1571,21 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-11-18T19:17:47Z",
+  "pushed_at": "2026-11-19T01:39:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T19:17:45Z",
+    "last_commit": "2026-11-19T01:39:12Z",
     "subjects": [
+     "Keep resource download links in the usage instructions",
      "Wait for Apple TV release drafts and document staged device transfers",
      "Publish Apple TV builds for official upstream releases and verify the Legacy overlay",
      "Keep documentation and release copy focused on downloads and usage",
      "Put game resource download shortcuts at the top of both READMEs",
      "Use verified GitHub prepared inputs for current upstream sources",
      "Link verified GitHub Data and Legacy resources in usage instructions",
-     "Keep current installation instructions when mirroring resources",
-     "Support scoped temporary resource downloads without passing account tokens"
+     "Keep current installation instructions when mirroring resources"
     ]
    }
   ]
@@ -1670,21 +1670,21 @@
   ]
  },
  "wukongtime/d2r-mobile-build-backup": {
-  "pushed_at": "2026-11-16T01:55:36Z",
+  "pushed_at": "2026-11-19T02:03:02Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T08:54:52Z",
+    "last_commit": "2026-11-19T01:39:12Z",
     "subjects": [
-     "Align release resource instructions with current availability",
-     "Document unavailable community resources and reuse of existing Data",
-     "Document unavailable community resources and reuse of existing Data",
-     "Allow reviewed diagnostic-only program generator update",
-     "Use verified stable Filebase IPNS prepared input URLs",
-     "Update Apple prepared input links after program regeneration",
-     "Refresh prepared product revisions with regenerated programs",
-     "Use a standalone minimal TV prepared input (#33)"
+     "Keep resource download links in the usage instructions",
+     "Wait for Apple TV release drafts and document staged device transfers",
+     "Publish Apple TV builds for official upstream releases and verify the Legacy overlay",
+     "Keep documentation and release copy focused on downloads and usage",
+     "Put game resource download shortcuts at the top of both READMEs",
+     "Use verified GitHub prepared inputs for current upstream sources",
+     "Link verified GitHub Data and Legacy resources in usage instructions",
+     "Keep current installation instructions when mirroring resources"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-18T18:36:06Z",
+  "pushed_at": "2026-11-19T02:05:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T18:35:43Z",
+    "last_commit": "2026-11-19T02:04:30Z",
     "subjects": [
-     "rewriter: avoid guest stack spills for x18 conditional selects",
-     "packing/shaders: refresh Fortune's Weave and Z-A maps (PR #2948)",
-     "docs/mkw: record cold pipeline rerun on main",
-     "host/movie: report NV12 keys for the loaded movie SDK (PR #2955)",
-     "opengl/textures: expand RED and RG uploads (PR #2955)",
-     "packing/shaders: reject stray BAHS descriptors (PR #2943)",
-     "host/account: return cancellation for offline network accounts",
-     "game: Orbitals packs with the checked first-copy shader map"
+     "nvn/upload: trim completed idle staging on opt-in (PR #1491)",
+     "host/threads: keep replay clock out of relative waits (PR #2027)",
+     "ios/staging: clone changed resource images on rebuild (PR #2949)",
+     "packing/shaders: refresh the Smash Ultimate 13.0.5 map",
+     "host/hid: read Npad style under the bind lock (PR #2878)",
+     "ios: apply the saved Metal HUD choice before UIKit (PR #1966)",
+     "packing/survey: skip AppleDouble NRO sidecars (PR #1667)",
+     "packing/mac: preserve shader image names (PR #1790)"
     ]
    }
   ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-18T11:53:15Z",
+  "pushed_at": "2026-11-18T20:39:37Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T11:53:14Z",
+    "last_commit": "2026-11-18T20:39:36Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-18T20:12:50Z",
+  "pushed_at": "2026-11-19T02:34:09Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T19:58:58Z",
+    "last_commit": "2026-11-19T02:13:31Z",
     "subjects": [
-     "fix(ios): picture profiles keep the old custom 60 fps pace, Tears of the Kingdom 1.0 / 1.2.1's own scene, and every game's 30 fps hold (after PR #2287)",
-     "Merge PR #2287: feat(ios): picture profiles (Quality, Performance, Economy, Custom) with MetalFX and an Advanced screen",
-     "Merge PR #2286: feat(ios): Breath of the Wild's scene size and MetalFX, and the Switch's screen size, for the picture settings",
-     "Merge PR #2293: perf(nvn): pending-write overlays skip the completed prefix",
-     "test: the packaging standards check Animal Crossing, Echoes of Wisdom and Odyssey",
-     "perf(nvn): pending-write overlays skip the completed prefix",
-     "docs(ios): comments name the profiles as the app shows them",
-     "feat(ios): the quality profile holds 30 fps"
+     "feat: active players — the Launcher and every game report once a day, on by default, off in the settings",
+     "Merge remote-tracking branch 'origin/main'",
+     "perf: the seed's variant indexes are read into memory in the background, not from the disk on the replay thread",
+     "Merge PR #2295: fix: TOTK builds the prompt copy of the font atlas in the upload staging and blits it, so an atlas re-upload no longer costs the submit thread 7 to 11 ms",
+     "perf: a texture's paged-out guest pages are read back on several threads before its upload",
+     "perf(oot): a pass the game keeps leaving and coming back to is drawn once (the pass chain)",
+     "perf: a present-ring slot holds the picture the display shows, not the whole window image",
+     "fix: the graphics layer matrix compares against a reference tree that compiles"
     ]
    }
   ]
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-18T19:47:30Z",
+  "pushed_at": "2026-11-19T00:44:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T19:47:29Z",
+    "last_commit": "2026-11-19T00:05:48Z",
     "subjects": [
-     "Merge pull request #1433 from LNPANDY/v0lumehi/patches-go-to-nxnative",
-     "Diagnostics: the game info is for a bug report, the game form is gone",
-     "Issues: launcher problems here, in-game problems go to seedds/nxnative",
-     "Docs: we take no engine patches, send them to seedds/nxnative",
-     "Merge pull request #1405 from LNPANDY/feat/engine-dropdown-switcher",
-     "launcher: replace engine cards with dropdown switcher and simplify brand header",
-     "Merge pull request #1396 from LNPANDY/fix/resign-receipt-and-gl-fast-refresh",
-     "Merge pull request #1395 from LNPANDY/feat/ios-ingame-settings-and-audio-fix"
+     "Merge pull request #1442 from LNPANDY/v0lumehi/bc-decode-cores",
+     "Merge branch 'main' into v0lumehi/bc-decode-cores",
+     "Merge pull request #1443 from LNPANDY/v0lumehi/builds-tab-speed",
+     "Merge branch 'main' into v0lumehi/bc-decode-cores",
+     "Merge pull request #1440 from LNPANDY/v0lumehi/bc-cpu-copies",
+     "patches: decode BC textures across the CPU's cores on older devices (#777)",
+     "Mac launcher: the Builds tab opens as fast as before #1392",
+     "patches: decode CPU BC buffer-to-texture copies and reject unsupported BC readbacks (#446)"
     ]
    }
   ]
@@ -11595,21 +11595,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-18T14:40:04Z",
+  "pushed_at": "2026-11-19T01:46:28Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T14:40:03Z",
+    "last_commit": "2026-11-19T01:46:28Z",
     "subjects": [
+     "Merge pull request #175 from AksharDP/task/issue-169",
+     "Merge pull request #166 from AksharDP/t3/audit-language-code-filter",
      "Merge pull request #174 from AksharDP/t3/fix-combat-element-icon-growing",
+     "Report English as en-GB so its baked-text images are English.",
      "Stop the element icon's glow from growing in battle (issue 48).",
+     "Offer the game only the languages its table has and the install ships",
      "Merge pull request #162 from AksharDP/t3/fix-issue-47",
-     "Return the interface size from the game's integer screen size. The game's screen width and height (main+0x697ca8, main+0x697cd4) returned the layout library's frame size, while every caller combines them with interface objects' 1280x720 positions: a position measured from the right and bottom edges (main+0x390000), an object stretched to and centred on the screen (main+0x4077c8), and objects placed at the screen's right or bottom edge (main+0x48e540). Both now read the patch page's +0x80/+0x84. Checked on the issue 47 save after Skip Travel: at 1920x1080 the area name banner now slides in from the right edge as it does at 1280x720, where before it started 640 units off screen and appeared without the slide.",
-     "Keep speech balloons inside the screen above 1280x720. The clamp that moves a field balloon back on screen (main+0x697a54) measured the screen with the layout library's frame size while the balloon's rectangle is in 1280x720 interface units, so at 1920x1080 a balloon near the right edge ran past it and lost the end of its line (issue 47). The clamp now reads the interface size from the patch page's +0x80/+0x84. Checked on the same save talking to a shopkeeper at the right edge: at 1920x1080 the balloon now sits where it does at 1280x720, fully on screen.",
-     "Merge pull request #156 from AksharDP/t3/remove-ru-locale",
-     "Read the languages again for another install folder after a failed read, and keep the legacy XCX_ language variables out of the services probe.",
-     "Address the review of the language changes."
+     "Return the interface size from the game's integer screen size. The game's screen width and height (main+0x697ca8, main+0x697cd4) returned the layout library's frame size, while every caller combines them with interface objects' 1280x720 positions: a position measured from the right and bottom edges (main+0x390000), an object stretched to and centred on the screen (main+0x4077c8), and objects placed at the screen's right or bottom edge (main+0x48e540). Both now read the patch page's +0x80/+0x84. Checked on the issue 47 save after Skip Travel: at 1920x1080 the area name banner now slides in from the right edge as it does at 1280x720, where before it started 640 units off screen and appeared without the slide."
     ]
    }
   ]
@@ -11783,7 +11783,7 @@
   ]
  },
  "gosail/d2r-mobile": {
-  "pushed_at": "2026-11-18T11:13:12Z",
+  "pushed_at": "2026-11-19T02:24:31Z",
   "branches": [
    {
     "branch": "feat/ipad-android-keyboard-mouse-upstream-20261116",
@@ -11832,26 +11832,26 @@
    },
    {
     "branch": "feat/offline-dual-merc-probe-20261116",
-    "ahead": 88,
+    "ahead": 109,
     "behind": 5,
-    "files": 39,
-    "real_files": 35,
+    "files": 45,
+    "real_files": 41,
     "dirs": [
      "dm/host",
      "dm/ios",
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-11-18T11:13:12Z",
+    "last_commit": "2026-11-19T02:24:28Z",
     "subjects": [
-     "fix(dualmerc): verify peer unit survives replacement independently of pet-list node order",
-     "fix(dualmerc): declare server game context before native NPC pending helpers",
-     "feat(dualmerc): wire guarded full roster NPC choice to C2S, rerun native hire and clear target after transaction",
-     "feat(dualmerc): resume an approved NPC hire on server tick after async two-slot choice and live ID revalidation",
-     "feat(dualmerc): intercept NPC hire before gold deduction and request explicit full-roster replacement",
-     "feat(dualmerc): route native singleton merc lookup to explicitly selected same/different Act unit in experimental test",
-     "feat(dualmerc): validate NPC vendor and live two-Act roster before accepting any replacement choice",
-     "test(dualmerc): exact 0x36 hire packet decoding and failure nonmutation"
+     "docs(dualmerc): native D2S identity v3 binding, per-merc equip packet and remaining restore blockers",
+     "ci(dualmerc): exercise original-slot exclusion and cross-save gear ownership before any future restore bridge",
+     "test(dualmerc): never recreate original D2S merc or duplicate its items; reject bad seed and same-Act",
+     "feat(dualmerc): plan only non-native merc restoration after exact D2S binding and ownership proof",
+     "ci(dualmerc): test SWM2 v3 vanilla save bindings, separate equip target IDs and corrupt-file rejection",
+     "test(dualmerc): verify vanilla D2S and SWM2 atomically agree; fail closed on stale checksum/seed",
+     "feat(dualmerc): verify complete vanilla D2S file and native merc seed/checksum before sidecar save or restore",
+     "fix(dualmerc): reject D2S native-merc identity mismatch unless SWM2 checksum and seed exactly match"
     ]
    },
    {
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-18T20:36:37Z",
+  "pushed_at": "2026-11-19T02:37:13Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T20:28:17Z",
+    "last_commit": "2026-11-19T02:24:35Z",
     "subjects": [
-     "Merge fix/win-realpath-invalid-handle into main（gate2）",
-     "Merge fix/ios-portrait-upside-down-split into main（gate2）",
-     "Merge diag/late-key-count into main（gate2）",
-     "Merge fix/win-iml-sign-check into main（gate2）",
-     "Merge fix/win-app-control-blocked into main（gate2）",
-     "Merge perf/seg-ts-enc-thread into main（gate2合组）",
-     "Merge fix/storage-upload-sparse into main（gate2合组）",
-     "Merge feat/ushell-mac-plume into main（gate2）"
+     "Merge diag/1511-ticket-source into main（gate2）",
+     "Merge contrib/pr1636 into main（gate2）",
+     "Merge fix/gen1-single-joycon-style into main（gate2）",
+     "Merge fix/f16x2-atomic-add into main（gate2）",
+     "Merge fix/fs-stream-pace into main（gate2）",
+     "Merge diag/audio-slow-tick-faults into main（gate2）",
+     "Merge contrib/pr1579 into main（gate2）",
+     "Merge fix/1628-fpslocker-var-room into main（gate2）"
     ]
    }
   ]
