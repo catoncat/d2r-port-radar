@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-19T06:58:29Z",
+  "pushed_at": "2026-11-20T06:51:02Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T06:58:27Z",
+    "last_commit": "2026-11-20T06:51:01Z",
     "subjects": [
+     "radar 2026-11-20",
      "radar 2026-11-19",
      "radar 2026-11-18",
      "radar 2026-11-17",
      "radar 2026-11-16",
      "radar 2026-11-15",
      "radar 2026-11-14",
-     "radar 2026-11-13",
-     "radar 2026-11-12"
+     "radar 2026-11-13"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-20T02:19:21Z",
+  "pushed_at": "2026-11-20T10:51:40Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T02:17:12Z",
+    "last_commit": "2026-11-20T10:51:00Z",
     "subjects": [
-     "vulkan/shaders: load complete resource tables",
-     "packing/sharc: read GIANTS shader archives (PR #1962)",
-     "game: Twelve Minutes fits its uncapped allocator (PR #2947)",
-     "opengl: compile missing shaders during capture",
-     "vulkan/shaders: repair RenderDragon bone inputs before translation",
-     "game/sam-max: seed validated opening pipelines",
-     "opengl: support legacy GLSL and FNA rendering (PR #1864)",
-     "rewriter: preserve 32-bit bounds across guard refinement (PR #1864)"
+     "game: add FIFA 23 Legacy Edition profile (PR #1696)",
+     "nvn/dispatch: skip empty direct grids (PR #1696)",
+     "nvn/residency: retain placed texture parents (PR #1696)",
+     "nvn/views: compose nested view offsets (PR #1696)",
+     "nvn/copy: store compressed IMAGE copies in guest storage",
+     "host/oe: handle crash-report switches (PR #1696)",
+     "packing/easf: read EA shader archives (PR #1696)",
+     "host/loader: run module initializers dependencies first"
     ]
    }
   ]
@@ -1951,12 +1951,12 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-19T20:34:14Z",
+  "pushed_at": "2026-11-20T07:12:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T20:34:13Z",
+    "last_commit": "2026-11-20T07:12:28Z",
     "subjects": [
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-19T20:44:48Z",
+  "pushed_at": "2026-11-20T02:23:18Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T20:44:47Z",
+    "last_commit": "2026-11-20T02:23:17Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2281,7 +2281,7 @@
   ]
  },
  "XiongDax1a/d2r-mobile": {
-  "pushed_at": "2026-11-15T05:38:38Z",
+  "pushed_at": "2026-11-20T05:57:11Z",
   "branches": []
  },
  "pinemilk/d2r-mobile": {
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-19T23:48:46Z",
+  "pushed_at": "2026-11-20T09:54:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T23:25:39Z",
+    "last_commit": "2026-11-20T09:50:45Z",
     "subjects": [
-     "test: the iPhone Launcher's signing and the memory saver's read-ahead in the tests",
-     "Merge remote-tracking branch 'origin/main'",
-     "fix(launcher): nothing under the stage or over a pulled-out case, black type in the opened case",
-     "feat(launcher): official covers, one game list on Mac and iPhone, lean redraws only the middle case",
-     "perf(launcher): the leaning case's picture drawn in depth pixel by pixel, one image a frame",
-     "fix: the express update compiles the startup shaders' missing libraries itself, and --seed goes on without a compiler (after PR #2297)",
-     "feat(launcher): the leaning case's picture in depth, cut by Depth Anything V2 into 48 soft layers",
-     "Merge pull request #2297 from oxyp1e/pr/totk-shader-libs"
+     "fix(nvn): a mesh pipeline Metal refuses skips its draw on the Mac too, and is not compiled again that run (patch for #2107, #2310)",
+     "fix: an express update reads the work folder's RomFS for the HUD masks only with its runtime index, made first when missing (#2303)",
+     "chore: shader and pipeline lists from the inbox and from the files players posted to issues (11-20)",
+     "test(launcher): the opened case's tray still takes clicks (PR #2317's check)",
+     "test(ss): mng_active.h is recorded as a file of this repository, so the provenance test passes again (after PR #2314)",
+     "Merge PR #2314 from fullstackgabe: Skyward Sword reads the left stick of third-party Pro Controllers from the raw 0x30 report",
+     "fix(launcher): the buttons in an opened case answer again, the turned cover no longer takes their clicks",
+     "fix: a build with the release's prebuilt runtime writes Breath of the Wild's aoc-config.txt, so BotW builds again (#2282, #2318)"
     ]
    }
   ]
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-20T02:00:43Z",
+  "pushed_at": "2026-11-20T11:33:22Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T01:58:47Z",
+    "last_commit": "2026-11-20T11:33:16Z",
     "subjects": [
-     "Merge pull request #1473 from LNPANDY/feat/upstream-version-and-update",
-     "test(launcher): prevent App Nap and display sleep in offscreen XCTest runs",
-     "feat(upstream): hide S2Arm by default, lock MNG allowlist, add MNG badges and build guardrails",
-     "feat(launcher): compact upstream versions, one-click updates, and turnkey external engine setup",
-     "Merge pull request #1467 from LNPANDY/fix/desktop-banner-pipeline",
-     "Merge pull request #1468 from LNPANDY/feat/ios-cover-picker-and-crop",
-     "Fix desktop banner pipeline, add 3-tier lookup, and synthesize fallback iOS icons",
-     "feat(ios): add interactive 16:9 cover picker, cropper and missing banner backfill"
+     "Merge pull request #1483 from LNPANDY/feat/mac-transfer-and-queue",
+     "feat(mac): isolate refresh queues from unstarted drafts and add USB link speed transfer modal",
+     "Merge pull request #1484 from LNPANDY/feat/eshop-switch2-banner-fallback",
+     "Merge pull request #1481 from LNPANDY/fix/ios-nxpart-live-join",
+     "Merge pull request #1474 from LNPANDY/v0lumehi/launcher-redesign",
+     "Merge pull request #1480 from LNPANDY/fix/sports-resort-shader-map",
+     "fix(artwork): harden redirect guards, streaming caps, and iOS retry safety",
+     "Tools check: probes end after 60 s, the gallery starts no xcrun"
     ]
    }
   ]
@@ -10483,21 +10483,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-18T19:03:12Z",
+  "pushed_at": "2026-11-20T11:23:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-18T19:02:56Z",
+    "last_commit": "2026-11-20T11:23:26Z",
     "subjects": [
+     "Merge pull request #508 from Propinbo/feat/gcopy-dchain",
+     "Merge pull request #454 from HallanBR/perf/no-slot-drain",
+     "Freeze watchdog: core 0's holder and where it is, and no reports during a reboot (#401 #488 #489)",
+     "Kernel: timed waits on the monotonic clock, CancelSynchronization only for WaitSynchronization, the render-thread waits hand core 0 on (#401 #489)",
+     "vulkan: enable compute dispatch barrier chaining in Android gcopy_mode",
+     "Texture slots queued for the render thread on every device (vk_slot_async_default true)",
      "0.4.7-beta (versionCode 46): READMEs note the release",
-     "RAM saving: textures' guest bytes given back with their contents kept (MADV_PAGEOUT), not zeroed (#471 #478 #489)",
-     "Merge pull request #457 from HallanBR/feature/shadows-option",
-     "Merge pull request #455 from HallanBR/fix/between-fps-fastest-refresh",
-     "Merge pull request #453 from HallanBR/fix/cbwin-copy-per-submission",
-     "Merge pull request #482 from Propinbo/feat/shader-meta-cache",
-     "Merge pull request #483 from Propinbo/feat/vk-dyn-vertex-input",
-     "Merge pull request #481 from Propinbo/feat/urgent-shader-builds"
+     "RAM saving: textures' guest bytes given back with their contents kept (MADV_PAGEOUT), not zeroed (#471 #478 #489)"
     ]
    }
   ]
@@ -10699,7 +10699,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-19T19:05:58Z",
+  "pushed_at": "2026-11-20T05:38:18Z",
   "branches": [
    {
     "branch": "main",
@@ -11595,7 +11595,7 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-20T01:15:14Z",
+  "pushed_at": "2026-11-20T07:36:30Z",
   "branches": [
    {
     "branch": "main",
@@ -11678,7 +11678,7 @@
   ]
  },
  "lliilliilliillii/d2r-mobile": {
-  "pushed_at": "2026-11-13T00:14:10Z",
+  "pushed_at": "2026-11-20T03:03:14Z",
   "branches": []
  },
  "dikoweii/d2r-mobile": {
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-20T02:12:35Z",
+  "pushed_at": "2026-11-20T11:50:40Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T02:10:11Z",
+    "last_commit": "2026-11-20T11:45:14Z",
     "subjects": [
-     "Merge fix/export-selfsign-no-appleid into main（gate2）",
-     "Merge perf/shader-key-v2 into main（gate2）",
-     "fix(install): Windows 没登录 Apple ID 时下一步指向 Impactor（不再叫开 Xcode）；导出自签包读不到登录不拦，照样导出未签名的",
-     "Merge fix/dsh-cmp-exclude-pull into main（gate2）",
-     "着色器键第 2 代：测试夹具自算键改按第 2 代口径（安卓 w2 两个夹具、GLSLC 离线编 ④）",
-     "作业层：直连库内容代数 LIB_GEN 1→2（着色器键第 2 代 + 包内键别名表）",
-     "出包：键别名表没出成时报黄、随包空表继续，不拦整次出包",
-     "着色器键第 2 代：包内别名表补即时存档与本机管线记录跨版本缺口"
+     "Merge fix/guest-file-overflow into main（gate2）",
+     "Merge fix/s2arm-import-log into main（gate2）",
+     "fix(runtime): 溢出模式预算记录加起局剩余，两局上限不同时按差额扣余量",
+     "fix(runtime): 窗口收尾后块范围夹到窗口内，心跳块合计不再溢出；坑记录补真机读数",
+     "fix(runtime): 客体内存文件后备改溢出模式，匿名优先、超预算的块才进文件",
+     "fix(ios): .s2arm 导入每条失败都进日志、「帧没读到尾当还在拷」也记一行",
+     "Merge docs/v060-readme-site into main（gate2）",
+     "Merge fix/ipa-pso-target-test into main（gate2）"
     ]
    }
   ]
@@ -12334,21 +12334,21 @@
   ]
  },
  "Desm0nt/torchlight2-port": {
-  "pushed_at": "2026-11-19T15:54:55Z",
+  "pushed_at": "2026-11-20T11:24:30Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T15:53:32Z",
+    "last_commit": "2026-11-20T11:23:00Z",
     "subjects": [
+     "0.1.11: version (PR #26: mod class skill trees without the SkillPane name, issue #25)",
+     "Merge pull request #26 from danjaniell/modded-class-skill-panes",
+     "fix: find a mod class's skill panes without the SkillPane name",
      "0.1.10: fix the crash on Change Character / Manage Characters with a modded class (issue #23)",
      "Merge pull request #18 from danjaniell/game-folder-sdcard",
      "feat: add --dest to setup push",
      "docs: note the game folder may live on an SD card",
-     "feat: find the game folder on any storage volume",
-     "TL2 0.1.9 (issue #15): OK in the text input dialog no longer waits for the keyboard's composing word",
-     "TL2 0.1.8 (issue #15): run the software keyboard on a 256 KiB host stack",
-     "TL2 0.1.7: version"
+     "feat: find the game folder on any storage volume"
     ]
    }
   ]
@@ -12972,21 +12972,21 @@
   ]
  },
  "Desm0nt/divinity-original-sin-2-port": {
-  "pushed_at": "2026-11-19T15:55:08Z",
+  "pushed_at": "2026-11-20T08:22:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T15:50:30Z",
+    "last_commit": "2026-11-20T08:22:03Z",
     "subjects": [
+     "Divinity Original Sin 2 Mobile 0.2.0: about 1 000 NVN calls a frame instead of ~15 000 (engine draws, state and uniform blocks go to Vulkan directly), sky + lighting + fog in one draw, hardware shadow compare, Mali / PowerVR render paths (pre-skinning, simplified depth materials, IDVS, on-chip lighting chain), pipeline warm-up seed, grouped settings with a 3D resolution row per Switch mode, dynamic resolution targets / floors, FSR 1, graphics quality page, safe mode, touch additions, issue #3 fixes for older phones, update notice; setup builds native-nr / native-nr33b / native-nr33c packs",
      "Divinity Original Sin 2 Mobile 0.1.1-test4 (issue #3 test): on older phones (kernel before 4.14) and after a phone restart, saves are swapped with plain renames instead of an atomic directory exchange (put back at the next start if cut); the first save is logged and written to storage before the swap",
      "Divinity Original Sin 2 Mobile 0.1.1-test3 (issue #3 test): the log survives a phone restart (written to storage at once), the start steps of Vulkan logged, crash.txt says when the phone restarted during the game; older phones (kernel before 4.14) skip the zero-copy memory mapping, and after a phone restart the next start uses safer graphics settings",
      "Divinity Original Sin 2 Mobile 0.1.1: the 3D at full resolution (the game's dynamic resolution read a zero GPU timestamp and sat at 75 %), native render backend on by default, iPad-style anti-aliasing fused into the post pass (the console FXAA pass removed), setup builds the fused post-processing pack, NR-01 registry (off)",
      "Divinity Original Sin 2 Mobile 0.1.1: Vulkan driver choice and driver manager as in DOOM 2016 / Diablo III (Turnip for Adreno, PanVK for Mali and RADV for Xclipse bundled as options, install from zip, download, delete; fallback to the system driver when a custom one fails to start)",
      "Touch interface: panel buttons, column fold arrows and hot bar arrows work again (named art placed as sprites); run setup again to remake TouchUI.pak",
      "Touch interface: sneak / weapon buttons show the game's own hot bar icons (taken from your Switch files at setup), cancel button redrawn",
-     "Touch interface: own info button (the panels' magnifier is drawn for this project too)",
-     "Touch interface without the iPad edition: own button art, TouchUI.pak from the Switch files alone"
+     "Touch interface: own info button (the panels' magnifier is drawn for this project too)"
     ]
    }
   ]
@@ -13157,6 +13157,26 @@
     "last_commit": "2026-11-20T00:51:36Z",
     "subjects": [
      "Initial commit"
+    ]
+   }
+  ]
+ },
+ "cycleapple/d2survivors-localization": {
+  "pushed_at": "2026-11-19T17:31:00Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-19T17:30:56Z",
+    "subjects": [
+     "Wiki zh-TW: re-check against the official wiki (no new or changed strings); bump last-checked dates",
+     "Wiki zh-TW: re-check against the official wiki (no new or changed strings); bump last-checked dates",
+     "Wiki zh-TW: re-check against the official wiki (no new or changed strings); bump last-checked dates",
+     "Web rules: 'report: do not send' accepts both the live and the beta (/next/) send function, returning the shape each one's caller expects",
+     "Wiki zh-TW: re-check against the official wiki (258 pages changed upstream, no new or changed strings); bump last-checked dates",
+     "Wiki zh-TW: re-check against the official wiki (no new or changed strings); bump last-checked dates",
+     "Wiki zh-TW: re-check against the official wiki (no new or changed strings); bump last-checked dates",
+     "Wiki zh-TW: re-check against the official wiki (no new or changed strings); bump last-checked dates"
     ]
    }
   ]
