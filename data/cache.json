@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-19T20:07:49Z",
+  "pushed_at": "2026-11-20T02:19:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T20:06:37Z",
+    "last_commit": "2026-11-20T02:17:12Z",
     "subjects": [
-     "game: L.A. Noire 1.2 runs on the Mac",
-     "nvn/present: wait for the frame producer before screenshots (PR #2805)",
-     "vulkan/tools: detect loader-only games and translate DXC shaders",
-     "host/irs: match disconnected processor control replies",
-     "opengl: draw with the legacy fixed pipeline (PR #2805)",
-     "game: Bloodstained: Ritual of the Night defaults to 60 fps",
-     "game: add the TSUKIHIME 1.0.2 profile",
-     "host/irs: accept valid processor starts with a disconnected camera"
+     "vulkan/shaders: load complete resource tables",
+     "packing/sharc: read GIANTS shader archives (PR #1962)",
+     "game: Twelve Minutes fits its uncapped allocator (PR #2947)",
+     "opengl: compile missing shaders during capture",
+     "vulkan/shaders: repair RenderDragon bone inputs before translation",
+     "game/sam-max: seed validated opening pipelines",
+     "opengl: support legacy GLSL and FNA rendering (PR #1864)",
+     "rewriter: preserve 32-bit bounds across guard refinement (PR #1864)"
     ]
    }
   ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-19T11:50:11Z",
+  "pushed_at": "2026-11-19T20:44:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T11:50:10Z",
+    "last_commit": "2026-11-19T20:44:47Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-19T20:03:25Z",
+  "pushed_at": "2026-11-19T23:48:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T20:02:57Z",
+    "last_commit": "2026-11-19T23:25:39Z",
     "subjects": [
+     "test: the iPhone Launcher's signing and the memory saver's read-ahead in the tests",
+     "Merge remote-tracking branch 'origin/main'",
+     "fix(launcher): nothing under the stage or over a pulled-out case, black type in the opened case",
+     "feat(launcher): official covers, one game list on Mac and iPhone, lean redraws only the middle case",
+     "perf(launcher): the leaning case's picture drawn in depth pixel by pixel, one image a frame",
      "fix: the express update compiles the startup shaders' missing libraries itself, and --seed goes on without a compiler (after PR #2297)",
-     "Merge pull request #2297 from oxyp1e/pr/totk-shader-libs",
-     "Merge pull request #2300 from Ghoul0718/fix/odyssey-romfs-mods",
-     "Merge pull request #2305 from liafonx/pr/totk-colour-snapshot",
-     "revert(oot): shader chain back to v28, the translator back to its 2026-11-15 code",
-     "fix: TOTK gives a draw that samples the colour target it draws into, at positions offset by another texture read, a copy of that target, so Rauru's ghost in Ukouh Shrine no longer fades in and out as a magenta shape",
-     "fix(oot): rebuild the runtime when its sources' content changes, and refuse a runtime of another chain than the seed's",
-     "feat(oot): shader chain v29: the translator with the mesh object function and the inline extended products"
+     "feat(launcher): the leaning case's picture in depth, cut by Depth Anything V2 into 48 soft layers",
+     "Merge pull request #2297 from oxyp1e/pr/totk-shader-libs"
     ]
    }
   ]
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-19T20:38:34Z",
+  "pushed_at": "2026-11-20T02:00:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T20:06:56Z",
+    "last_commit": "2026-11-20T01:58:47Z",
     "subjects": [
-     "Merge pull request #1438 from LNPANDY/fix/engine-audio-seed-and-drop-0060",
-     "fix(patches,launcher): drop widescreen 0060 and fix seed RomFS guard, iOS audio mix crackling, and GL/VK seed validation",
-     "Merge pull request #1414 from LNPANDY/fix/win-ios-packager-drift",
-     "Align Windows iOS packager contracts with build_ipa.sh",
-     "Merge pull request #1457 from LNPANDY/feat/rc8-ui-and-artwork-polish",
-     "Launcher: built-first library, single-screen Builds, and offline NACP artwork",
-     "Merge pull request #1455 from LNPANDY/fix/mng-unencrypted-update-dlc",
-     "Merge pull request #1454 from LNPANDY/v0lumehi/drop-joycon-patch"
+     "Merge pull request #1473 from LNPANDY/feat/upstream-version-and-update",
+     "test(launcher): prevent App Nap and display sleep in offscreen XCTest runs",
+     "feat(upstream): hide S2Arm by default, lock MNG allowlist, add MNG badges and build guardrails",
+     "feat(launcher): compact upstream versions, one-click updates, and turnkey external engine setup",
+     "Merge pull request #1467 from LNPANDY/fix/desktop-banner-pipeline",
+     "Merge pull request #1468 from LNPANDY/feat/ios-cover-picker-and-crop",
+     "Fix desktop banner pipeline, add 3-tier lookup, and synthesize fallback iOS icons",
+     "feat(ios): add interactive 16:9 cover picker, cropper and missing banner backfill"
     ]
    }
   ]
@@ -11234,7 +11234,7 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-19T17:46:15Z",
+  "pushed_at": "2026-11-20T00:01:47Z",
   "branches": [
    {
     "branch": "master",
@@ -11595,21 +11595,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-19T01:46:28Z",
+  "pushed_at": "2026-11-20T01:15:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T01:46:28Z",
+    "last_commit": "2026-11-20T01:15:13Z",
     "subjects": [
+     "Merge pull request #178 from Saki201/fix/gen-openblas-oom",
      "Merge pull request #175 from AksharDP/task/issue-169",
      "Merge pull request #166 from AksharDP/t3/audit-language-code-filter",
      "Merge pull request #174 from AksharDP/t3/fix-combat-element-icon-growing",
+     "Limit BLAS threads and flush lifting progress and tool logs",
      "Report English as en-GB so its baked-text images are English.",
      "Stop the element icon's glow from growing in battle (issue 48).",
-     "Offer the game only the languages its table has and the install ships",
-     "Merge pull request #162 from AksharDP/t3/fix-issue-47",
-     "Return the interface size from the game's integer screen size. The game's screen width and height (main+0x697ca8, main+0x697cd4) returned the layout library's frame size, while every caller combines them with interface objects' 1280x720 positions: a position measured from the right and bottom edges (main+0x390000), an object stretched to and centred on the screen (main+0x4077c8), and objects placed at the screen's right or bottom edge (main+0x48e540). Both now read the patch page's +0x80/+0x84. Checked on the issue 47 save after Skip Travel: at 1920x1080 the area name banner now slides in from the right edge as it does at 1280x720, where before it started 640 units off screen and appeared without the slide."
+     "Offer the game only the languages its table has and the install ships"
     ]
    }
   ]
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-19T20:40:34Z",
+  "pushed_at": "2026-11-20T02:12:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T20:38:47Z",
+    "last_commit": "2026-11-20T02:10:11Z",
     "subjects": [
-     "Merge docs/shader-cov-pits-2 into main（gate2）",
-     "坑记录：覆盖台账只按与包同版本的诊断出（版本差在玩家身上不存在）",
-     "Merge docs/shader-cov-pits into main（gate2）",
-     "坑记录：着色器覆盖率的三个口径陷阱（别家缓存对照、版本混算、只有近亲变体）",
-     "Merge perf/unity-kw-pairs into main（gate2）",
-     "Merge contrib/pr1660 into main（gate2）",
-     "Merge docs/pit-syslib-decl into main（gate2）",
-     "docs(坑记录): 直连层单测系统库改源文件登记（共用链接行反复冲突）"
+     "Merge fix/export-selfsign-no-appleid into main（gate2）",
+     "Merge perf/shader-key-v2 into main（gate2）",
+     "fix(install): Windows 没登录 Apple ID 时下一步指向 Impactor（不再叫开 Xcode）；导出自签包读不到登录不拦，照样导出未签名的",
+     "Merge fix/dsh-cmp-exclude-pull into main（gate2）",
+     "着色器键第 2 代：测试夹具自算键改按第 2 代口径（安卓 w2 两个夹具、GLSLC 离线编 ④）",
+     "作业层：直连库内容代数 LIB_GEN 1→2（着色器键第 2 代 + 包内键别名表）",
+     "出包：键别名表没出成时报黄、随包空表继续，不拦整次出包",
+     "着色器键第 2 代：包内别名表补即时存档与本机管线记录跨版本缺口"
     ]
    }
   ]
@@ -13142,6 +13142,19 @@
     "branch": "main",
     "mirror": false,
     "last_commit": "2026-11-19T13:35:18Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "gvntieulong/abc": {
+  "pushed_at": "2026-11-20T00:51:37Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-20T00:51:36Z",
     "subjects": [
      "Initial commit"
     ]
