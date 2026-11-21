@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-20T19:34:27Z",
+  "pushed_at": "2026-11-21T01:38:37Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T19:34:01Z",
+    "last_commit": "2026-11-21T01:38:07Z",
     "subjects": [
+     "chain/ampere: preserve runtime per-texel gather offsets (PR #2831)",
+     "host/audio: recover from stalls after an output route change",
+     "opengl: silence unsupported fixed-function disables (PR #2995)",
+     "packing/nup: normalize shifted metadata and validate NACP size",
      "gfx/tests: supply shader functions to the pending PSO fixture",
      "mac: keep the menu bar off fullscreen games (PR #2850)",
      "nvn/residency: retire upload staging off Metal feedback (PR #2868)",
-     "nvn/suspend: bound the graphics wait on backgrounding (PR #2864)",
-     "nvn/sampler: model the reserved pool slot zero (#3049)",
-     "ci/checks: fix lint and test failures on main",
-     "packing/nup: prefer the selected build's display version",
-     "host/vi: share Switch 2 display resolution tiers"
+     "nvn/suspend: bound the graphics wait on backgrounding (PR #2864)"
     ]
    }
   ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-20T11:51:13Z",
+  "pushed_at": "2026-11-20T20:29:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T11:51:04Z",
+    "last_commit": "2026-11-20T20:29:25Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-20T14:31:29Z",
+  "pushed_at": "2026-11-21T01:54:12Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T14:31:27Z",
+    "last_commit": "2026-11-21T01:03:25Z",
     "subjects": [
+     "feat(ios): Zelda's pipeline archive in Animal Crossing and Odyssey; no full warm-up at every start",
+     "fix(odyssey): Chinese text instead of Japanese: the game takes zh-CN / zh-TW",
+     "feat(ios): Odyssey on the Zelda app; ports ship shaders outside the app with device libraries",
+     "docs: new code comes only with a new Launcher (code updates removed)",
      "Merge remote-tracking branch 'origin/main'",
-     "feat(acnh): an iPhone / iPad app, built from the Mac build's work folder",
-     "feat(acnh): combined game cards and several updates are recognised and build",
-     "Merge remote-tracking branch 'origin/main'",
-     "test(aoc, la): the HID probe's DM_CTL file goes to TMPDIR, and la's record has front_mac.m's active-player lines",
-     "chore(games): remove uepak.py, the Unreal pak reader that found a pak's AES key in the game's code; Unreal games are refused",
-     "feat(launcher): Donkey Kong Bananza one place ahead, before Animal Crossing, on the Mac and the iPhone",
-     "feat(launcher): 游戏卸载 on the Storage page: the app and what its builds made go, the saves and the player's game files stay"
+     "fix(ios): French for the overlay setting's title and its four new choices (after 6cafeefe)",
+     "test: the corner panel's checks read the shared hud_panel.inc, and OOT's install_device.py is TOTK's again (after 61b95acc)",
+     "feat(builder): no system fonts: the open-source fonts at once, no block, no prompt"
     ]
    }
   ]
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-20T20:27:31Z",
+  "pushed_at": "2026-11-20T22:38:18Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T18:31:22Z",
+    "last_commit": "2026-11-20T22:34:02Z",
     "subjects": [
-     "Merge pull request #1497 from LNPANDY/docs/v150-notes-supplement",
-     "docs: supplement v1.5.0 release notes and changelogs through #1494",
-     "Merge pull request #1494 from LNPANDY/v0lumehi/engine-bump-9922456",
-     "Merge pull request #1078 from Fbenhaddou/fix/hook-checks-what-is-committed",
-     "Merge pull request #1402 from odonnellmatt/fix-rowedge-scrollbars",
-     "Merge pull request #1464 from 1Bartosz/fix/pixel-tests-macos27",
-     "Merge pull request #1373 from ZhaowTao/games-oot-ending-row",
-     "Merge pull request #1341 from Haseenesss/fix/1327-script-shell-shader-trailer"
+     "Merge pull request #1505 from LNPANDY/v0lumehi/nxkit-engine-picker-fixes",
+     "docs: v1.5.0 notes and changelogs for the nxkit engine picker fixes",
+     "launcher: Experimental badge only on nxkit, no Switch on its row, Send feedback to v0lumehi/nxkit",
+     "Merge pull request #1504 from LNPANDY/docs/v150-rc13-notes",
+     "docs: update v1.5.0 release notes and changelog for #1498 #1499 #1501",
+     "Merge pull request #1498 from LNPANDY/feat/restore-build-engine-switcher",
+     "Merge pull request #1501 from LNPANDY/fix/shader-maps-audit",
+     "Merge pull request #1499 from LNPANDY/fix/win-adopt-and-engine-id"
     ]
    }
   ]
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-20T20:24:29Z",
+  "pushed_at": "2026-11-21T02:23:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T20:24:07Z",
+    "last_commit": "2026-11-21T02:15:58Z",
     "subjects": [
-     "Merge fix/phone-export-romfs-img into main（gate2）",
-     "Merge fix/dev-lock-skip-oodle-tool into main（gate2）",
-     "fix(runtime): 开发机 Mac 局串行锁不再拦宿主工具模式（出包抽取互相等死）",
-     "Merge feat/standalone-followups into main（gate2）",
-     "fix(ios): 手机导出这一款支持 romfs.img 布局（电脑推送装的款）",
-     "Merge contrib/pr1727 into main（gate2）",
-     "Merge fix/xcode-search-no-volumes into main（gate2）",
-     "独立 App：所选全是独立 App 时「更新所选」不找通用壳"
+     "Merge feat/standalone-folder into main（gate2）",
+     "Merge contrib/pr1832 into main（gate2）",
+     "Merge fix/gfx-api-unknown-evidence into main（gate2）",
+     "Merge fix/img-step-disk-full-code into main（gate2）",
+     "Merge fix/nifm-submit-onhold into main（gate2）",
+     "Merge feat/addr-short-mac-notice into main（gate2）",
+     "Merge fix/devcert-distribution-from-profile into main（gate2）",
+     "Merge fix/arena-after-late-window into main（gate2）"
     ]
    }
   ]
@@ -13198,6 +13198,19 @@
      "Wiki zh-TW: re-check against the official wiki (258 pages changed upstream, no new or changed strings); bump last-checked dates",
      "Wiki zh-TW: re-check against the official wiki (no new or changed strings); bump last-checked dates",
      "Wiki zh-TW: re-check against the official wiki (no new or changed strings); bump last-checked dates"
+    ]
+   }
+  ]
+ },
+ "xiazongde/dr2": {
+  "pushed_at": "2026-11-14T07:41:32Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-14T07:41:22Z",
+    "subjects": [
+     "Initial commit"
     ]
    }
   ]
