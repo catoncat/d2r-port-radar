@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-21T10:56:16Z",
+  "pushed_at": "2026-11-21T19:02:02Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T10:56:01Z",
+    "last_commit": "2026-11-21T18:58:15Z",
     "subjects": [
-     "game: South Park: The Stick of Truth runs at 60 fps",
-     "game: Star Fox prewarms the tutorial ring course",
-     "game: South Park: The Stick of Truth runs on Mac",
-     "packing/nup: accept explicit DLC image directories (PR #2905)",
-     "game: Ocarina of Time increases the alias region to 8 GiB",
-     "docs: record Kakarot's iPhone playtest",
-     "game: EA SPORTS FC 27 PRMT shaders build without warnings",
-     "game: Persona 5 Royal uses near-zero archive depth (PR #2880)"
+     "host/svc: make native SDK module enumeration work (PR #3023)",
+     "host/offline: register friend-ID and network Result hooks (PR #3119)",
+     "opengl/framebuffer: honor sRGB conversion state (PR #3117)",
+     "nvn/texture: check dimensions before making linear views (PR #2908)",
+     "host/prepo: report idle transmission offline (PR #2908)",
+     "packing/shader_split: read NXSD shader containers (PR #2706)",
+     "game: Ocarina of Time renders taller screens natively (PR #3037)",
+     "docs: update the NxNative Launcher links (PR #2994)"
     ]
    }
   ]
@@ -1951,16 +1951,16 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-21T07:03:59Z",
+  "pushed_at": "2026-11-21T19:13:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T07:03:58Z",
+    "last_commit": "2026-11-21T19:13:52Z",
     "subjects": [
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
-     "chore: 自动同步 Star 地图（207 个项目）",
+     "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-21T02:25:42Z",
+  "pushed_at": "2026-11-21T11:17:03Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T02:25:41Z",
+    "last_commit": "2026-11-21T11:17:02Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -9473,21 +9473,21 @@
   "branches": []
  },
  "xinerqu/ns2ios-shell": {
-  "pushed_at": "2026-11-17T18:28:33Z",
+  "pushed_at": "2026-11-21T15:07:18Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T17:44:22Z",
+    "last_commit": "2026-11-21T14:41:51Z",
     "subjects": [
+     "Base to 5b7dad03: 246 upstream commits, Metal's relaxed math mode and four more shader archive formats",
      "hle_fpslock.c: the frame-limit variable's fallback called itself, so it answered NULL and strcmp read address 0",
      "Packer: decode an Unreal game's LZ4 shader archives here, and stop counting a layer-only geometry shader as missing",
      "Base to 3fe574df: 199 upstream commits, multi-program NUPs and the iPhone's 120 Hz among them",
      "Base to ce370e12: 15 upstream commits, the render-target reclaim and the storage bound among them",
      "nvn_mtl.m: the upload keeps borrowing a temporary; fa3e5db made the black block permanent",
      "nvn_mtl.m: an upload borrows a temporary only while that stride is not resident",
-     "nvn_mtl.m: S2Arm's pool model taken whole - 4 MB windows over a 2 MB stride, every pool over 4 MB windowed, plus what its probes measure",
-     "nvn_mtl.m: the 4 MB window over a 2 MB stride, the file this time"
+     "nvn_mtl.m: S2Arm's pool model taken whole - 4 MB windows over a 2 MB stride, every pool over 4 MB windowed, plus what its probes measure"
     ]
    }
   ]
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-21T11:15:16Z",
+  "pushed_at": "2026-11-21T19:24:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T22:34:02Z",
+    "last_commit": "2026-11-21T19:23:59Z",
     "subjects": [
-     "Merge pull request #1505 from LNPANDY/v0lumehi/nxkit-engine-picker-fixes",
-     "docs: v1.5.0 notes and changelogs for the nxkit engine picker fixes",
-     "launcher: Experimental badge only on nxkit, no Switch on its row, Send feedback to v0lumehi/nxkit",
-     "Merge pull request #1504 from LNPANDY/docs/v150-rc13-notes",
-     "docs: update v1.5.0 release notes and changelog for #1498 #1499 #1501",
-     "Merge pull request #1498 from LNPANDY/feat/restore-build-engine-switcher",
-     "Merge pull request #1501 from LNPANDY/fix/shader-maps-audit",
-     "Merge pull request #1499 from LNPANDY/fix/win-adopt-and-engine-id"
+     "Merge pull request #1529 from LNPANDY/v0lumehi/console-plain-home-row",
+     "Merge pull request #1528 from LNPANDY/v0lumehi/nxkit-overlay",
+     "Merge pull request #1530 from LNPANDY/fix/joycon-holdtype-buttons",
+     "hid: honor SetNpadJoyHoldType on single Joy-Con fallback reads",
+     "console: a game nxkit built opens over the console (NXKIT_OVERLAY): the Starting screen shows the progress of its pipelines (org.nxkit.loading.<pid>) and ends with its first picture (org.nxkit.shown.<pid>, fallback 120 s); it gets NXKIT_CURSOR_HIDDEN beside DM_CURSOR_HIDDEN, is not activated by LaunchServices, and its Home menu has Resume and Quit (no launcher named); needs nxkit 73609052",
+     "Merge pull request #1524 from LNPANDY/v0lumehi/nxkit-console-mode",
+     "Merge pull request #1523 from LNPANDY/v0lumehi/build-cache-folders",
+     "console: plain home row, flat covers and a short snappy switch"
     ]
    }
   ]
@@ -10483,21 +10483,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-21T04:30:21Z",
+  "pushed_at": "2026-11-21T15:06:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T04:29:29Z",
+    "last_commit": "2026-11-21T15:06:44Z",
     "subjects": [
+     "0.4.10-beta: versionCode 49, README release lines",
+     "vulkan: arena copy-back only the words the GPU changed, each by CAS (#401)",
      "0.4.9-beta: Settings > Switch-style core turns (experimental, off) for #401",
      "kernel: LARECOMP_CORE_LOCKS, turns on cores past core 0 (#401); stuck threads' stacks in the freeze report",
      "Merge pull request #504 from Propinbo/feat/fullscreen-narrow",
      "Merge pull request #506 from Propinbo/feat/cbwin-mali-snap",
      "Start screen banner: 1K+ stars",
-     "donations: $21.36 raised toward the POCO X7 Pro goal (+R$8, $1.36 at 0.1697 USD/BRL)",
-     "widescreen: support narrow landscape Unlocked aspect ratio (#474)",
-     "vulkan: add submission-scoped cbwin snapshot cache and Mali copy-mode support"
+     "donations: $21.36 raised toward the POCO X7 Pro goal (+R$8, $1.36 at 0.1697 USD/BRL)"
     ]
    }
   ]
@@ -10699,7 +10699,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-20T17:27:41Z",
+  "pushed_at": "2026-11-21T12:45:08Z",
   "branches": [
    {
     "branch": "main",
@@ -11595,7 +11595,7 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-20T18:29:10Z",
+  "pushed_at": "2026-11-21T16:46:23Z",
   "branches": [
    {
     "branch": "main",
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-21T11:03:02Z",
+  "pushed_at": "2026-11-21T19:13:52Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T10:51:49Z",
+    "last_commit": "2026-11-21T19:12:08Z",
     "subjects": [
-     "Merge fix/update-hint-same-definition into main（gate2）",
-     "「建议更新」与「更新这款」用同一份定义：只走 GL、没有直连着色器库的款不再标着色器原因",
-     "Merge fix/standalone-save-text-safe into main（gate2）",
-     "导出成功页独立 App 存档说明：撤掉「启动器会自动把旧 App 存档复制进新 App」，改成「暂时别删旧 App，迁移办法随后续版本提供」",
-     "Merge fix/livecontainer-cert-fallback into main（gate2）",
-     "Merge contrib/pr1876 into main（gate2）",
-     "LiveContainer 里程序库重签：它存的证书 S2Arm 解不开时改用导入进 S2Arm 的那张，都没有就说清怎么导",
-     "Merge remote-tracking branch 'origin/main' into contrib/pr1876"
+     "Merge fix/span-seed-0667b into main（gate2）",
+     "span_seed.inc：0.6.7 重切前按诊断库再生成（tools/span_seed.py）",
+     "Merge fix/present-settings-span-seed into main（gate2）",
+     "graphics/tests: regenerate the present settings link manifest (span_seed.inc, LAN election sources)",
+     "Merge feat/ios-storage-overview into main（gate2）",
+     "Merge fix/quarantine-not-oom into main（gate2）",
+     "iPhone / iPad：设置里新增「存储」页，看游戏、存档、缓存各占多少空间",
+     "Merge take/pr1947 into main（gate2）"
     ]
    }
   ]
@@ -13013,21 +13013,21 @@
   ]
  },
  "aoxzh/bayo3-recomp": {
-  "pushed_at": "2026-11-19T10:42:48Z",
+  "pushed_at": "2026-11-21T17:24:23Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T10:38:24Z",
+    "last_commit": "2026-11-21T17:24:20Z",
     "subjects": [
+     "Sync from private 3b69070",
+     "Sync from private 97ab162 (with uncommitted changes)",
      "Sync from private 6f5dadb",
      "Sync from private b7f80cd",
      "Sync from private 1d31131",
      "Sync from private 4c7f5e0",
      "Sync from private 9d1d110",
-     "Sync from private 981e561",
-     "Sync from private 9342f3c",
-     "Sync from private bd1e2cf"
+     "Sync from private 981e561"
     ]
    }
   ]
@@ -13183,18 +13183,18 @@
   ]
  },
  "cycleapple/d2survivors-localization": {
-  "pushed_at": "2026-11-20T18:19:04Z",
+  "pushed_at": "2026-11-21T11:29:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T18:19:00Z",
+    "last_commit": "2026-11-21T11:29:44Z",
     "subjects": [
-     "Wiki zh-TW: re-check against the official wiki (258 pages changed upstream, no new or changed strings); bump last-checked dates",
-     "Wiki zh-TW: re-check against the official wiki (no new or changed strings); bump last-checked dates",
-     "Wiki zh-TW: re-check against the official wiki (no new or changed strings); bump last-checked dates",
-     "Wiki zh-TW: re-check against the official wiki (no new or changed strings); bump last-checked dates",
-     "Web rules: 'report: do not send' accepts both the live and the beta (/next/) send function, returning the shape each one's caller expects",
+     "Announce: put the line-join newline back as \\n (a literal newline at column 0 broke the workflow YAML)",
+     "Announce: also split by UTF-8 size so long CJK patch notes stay under Discord's embed byte limit (413 40005)",
+     "Publish translations 20261121-1124: zh-TW 14754, zh-CN 14753, ja 14759, de 14793, fr 14802, ru 14841, pl 14831",
+     "Game 2026.1120.1: translate the 390 new strings in seven languages (Mark of the Wolf/Bear, new runewords, online play, Charsi's Forge buttons, ethereal loot switches); align the Cain 'Quest completed' note with the in-game notice, ja Undo 取り消し, de LAY TO REST BEISETZEN",
+     "Web check: pause the hourly schedule (the web version is down and expected to close); manual runs still work",
      "Wiki zh-TW: re-check against the official wiki (258 pages changed upstream, no new or changed strings); bump last-checked dates",
      "Wiki zh-TW: re-check against the official wiki (no new or changed strings); bump last-checked dates",
      "Wiki zh-TW: re-check against the official wiki (no new or changed strings); bump last-checked dates"
@@ -13218,5 +13218,25 @@
  "bllli/d2r-mobile": {
   "pushed_at": "2026-11-21T02:37:50Z",
   "branches": []
+ },
+ "kakario777-netizen/d2r-mobile": {
+  "pushed_at": "2026-11-21T18:08:03Z",
+  "branches": [
+   {
+    "branch": "yupgoolg",
+    "ahead": 2,
+    "behind": 38,
+    "files": 2,
+    "real_files": 1,
+    "dirs": [
+     "yg/private.tgz.enc"
+    ],
+    "last_commit": "2026-11-21T18:02:59Z",
+    "subjects": [
+     "빌드용 생성 파일 추가 (native art)",
+     "엽굵 모드판 빌드 파이프라인 (v2.3.0 기준, 원본 그대로 빌드 확인용)"
+    ]
+   }
+  ]
  }
 }
