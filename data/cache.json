@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-20T06:51:02Z",
+  "pushed_at": "2026-11-21T06:45:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T06:51:01Z",
+    "last_commit": "2026-11-21T06:45:46Z",
     "subjects": [
+     "radar 2026-11-21",
      "radar 2026-11-20",
      "radar 2026-11-19",
      "radar 2026-11-18",
      "radar 2026-11-17",
      "radar 2026-11-16",
      "radar 2026-11-15",
-     "radar 2026-11-14",
-     "radar 2026-11-13"
+     "radar 2026-11-14"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-21T01:38:37Z",
+  "pushed_at": "2026-11-21T10:56:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T01:38:07Z",
+    "last_commit": "2026-11-21T10:56:01Z",
     "subjects": [
-     "chain/ampere: preserve runtime per-texel gather offsets (PR #2831)",
-     "host/audio: recover from stalls after an output route change",
-     "opengl: silence unsupported fixed-function disables (PR #2995)",
-     "packing/nup: normalize shifted metadata and validate NACP size",
-     "gfx/tests: supply shader functions to the pending PSO fixture",
-     "mac: keep the menu bar off fullscreen games (PR #2850)",
-     "nvn/residency: retire upload staging off Metal feedback (PR #2868)",
-     "nvn/suspend: bound the graphics wait on backgrounding (PR #2864)"
+     "game: South Park: The Stick of Truth runs at 60 fps",
+     "game: Star Fox prewarms the tutorial ring course",
+     "game: South Park: The Stick of Truth runs on Mac",
+     "packing/nup: accept explicit DLC image directories (PR #2905)",
+     "game: Ocarina of Time increases the alias region to 8 GiB",
+     "docs: record Kakarot's iPhone playtest",
+     "game: EA SPORTS FC 27 PRMT shaders build without warnings",
+     "game: Persona 5 Royal uses near-zero archive depth (PR #2880)"
     ]
    }
   ]
@@ -1911,21 +1911,21 @@
   ]
  },
  "HachiMiku39/pjdv_mega39s_ios": {
-  "pushed_at": "2026-11-19T16:46:52Z",
+  "pushed_at": "2026-11-21T11:09:37Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T15:19:16Z",
+    "last_commit": "2026-11-21T11:08:10Z",
     "subjects": [
+     "Release 0.1.5 build25: fix runtime races and isolate concurrent game sessions",
      "Release build24: refresh the native launcher",
      "Release build23: startup update checks, Mac pixel output and asynchronous preflight",
      "Release build22: restore native Touch Play judgments and clarify resource import recovery",
      "Release 0.1.5 build21: native resource mod imports and video compatibility fixes",
      "Release 0.1.5 build20: restore movie backgrounds and ship native MOD loading",
      "Convert the verified Leo/need PC model package inside the App",
-     "Reduce redundant MOD preparation and document all local package trials",
-     "Add native multi-MOD loading, transactional selection and integrity recovery"
+     "Reduce redundant MOD preparation and document all local package trials"
     ]
    }
   ]
@@ -1951,15 +1951,15 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-20T20:15:20Z",
+  "pushed_at": "2026-11-21T07:03:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T20:15:19Z",
+    "last_commit": "2026-11-21T07:03:58Z",
     "subjects": [
      "chore: 自动同步 Star 地图（208 个项目）",
-     "chore: 自动同步 Star 地图（207 个项目）",
+     "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-20T20:29:27Z",
+  "pushed_at": "2026-11-21T02:25:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T20:29:25Z",
+    "last_commit": "2026-11-21T02:25:41Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-21T01:54:12Z",
+  "pushed_at": "2026-11-21T09:05:51Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T01:03:25Z",
+    "last_commit": "2026-11-21T08:46:11Z",
     "subjects": [
+     "fix(builder): a game file's game comes from its contents, never its name",
      "feat(ios): Zelda's pipeline archive in Animal Crossing and Odyssey; no full warm-up at every start",
      "fix(odyssey): Chinese text instead of Japanese: the game takes zh-CN / zh-TW",
      "feat(ios): Odyssey on the Zelda app; ports ship shaders outside the app with device libraries",
      "docs: new code comes only with a new Launcher (code updates removed)",
      "Merge remote-tracking branch 'origin/main'",
      "fix(ios): French for the overlay setting's title and its four new choices (after 6cafeefe)",
-     "test: the corner panel's checks read the shared hud_panel.inc, and OOT's install_device.py is TOTK's again (after 61b95acc)",
-     "feat(builder): no system fonts: the open-source fonts at once, no block, no prompt"
+     "test: the corner panel's checks read the shared hud_panel.inc, and OOT's install_device.py is TOTK's again (after 61b95acc)"
     ]
    }
   ]
@@ -5127,7 +5127,7 @@
   ]
  },
  "oneincase/d2r-mobile": {
-  "pushed_at": "2026-11-15T10:33:30Z",
+  "pushed_at": "2026-11-21T08:33:09Z",
   "branches": []
  },
  "zJiaJun/d2r-mobile": {
@@ -9513,7 +9513,7 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-20T22:38:18Z",
+  "pushed_at": "2026-11-21T11:15:16Z",
   "branches": [
    {
     "branch": "main",
@@ -10207,21 +10207,21 @@
   "branches": []
  },
  "Xc1Ym/LumaNX": {
-  "pushed_at": "2026-11-16T04:25:20Z",
+  "pushed_at": "2026-11-21T09:14:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T04:07:11Z",
+    "last_commit": "2026-11-21T09:14:47Z",
     "subjects": [
+     "Merge pull request #47 from Xc1Ym/codex/fix-shader-issues",
+     "fix: validate shipped shader tools and packed libraries",
+     "chore: prepare LumaNX 0.4.4 release",
+     "chore: sync tested nxnative snapshot",
+     "test: exercise passive controller motion through pairing",
      "chore: prepare LumaNX 0.4.3 release",
      "chore: sync tested nxnative snapshot",
-     "test: stub Joy-Con motion sinks in native harness",
-     "test: follow nxnative extraction signature",
-     "fix: accept latest nxnative sync interfaces",
-     "chore: sync tested nxnative snapshot",
-     "chore: prepare LumaNX 0.4.2 release",
-     "chore: sync tested nxnative snapshot"
+     "test: stub Joy-Con motion sinks in native harness"
     ]
    }
   ]
@@ -10392,12 +10392,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-11-20T16:42:49Z",
+  "pushed_at": "2026-11-21T09:22:52Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T16:42:47Z",
+    "last_commit": "2026-11-21T09:22:51Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10483,21 +10483,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-20T16:32:42Z",
+  "pushed_at": "2026-11-21T04:30:21Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T16:32:42Z",
+    "last_commit": "2026-11-21T04:29:29Z",
     "subjects": [
+     "0.4.9-beta: Settings > Switch-style core turns (experimental, off) for #401",
+     "kernel: LARECOMP_CORE_LOCKS, turns on cores past core 0 (#401); stuck threads' stacks in the freeze report",
      "Merge pull request #504 from Propinbo/feat/fullscreen-narrow",
      "Merge pull request #506 from Propinbo/feat/cbwin-mali-snap",
      "Start screen banner: 1K+ stars",
      "donations: $21.36 raised toward the POCO X7 Pro goal (+R$8, $1.36 at 0.1697 USD/BRL)",
      "widescreen: support narrow landscape Unlocked aspect ratio (#474)",
-     "vulkan: add submission-scoped cbwin snapshot cache and Mali copy-mode support",
-     "0.4.8-beta (versionCode 47): READMEs note the release",
-     "Merge pull request #508 from Propinbo/feat/gcopy-dchain"
+     "vulkan: add submission-scoped cbwin snapshot cache and Mali copy-mode support"
     ]
    }
   ]
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-21T02:23:35Z",
+  "pushed_at": "2026-11-21T11:03:02Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T02:15:58Z",
+    "last_commit": "2026-11-21T10:51:49Z",
     "subjects": [
-     "Merge feat/standalone-folder into main（gate2）",
-     "Merge contrib/pr1832 into main（gate2）",
-     "Merge fix/gfx-api-unknown-evidence into main（gate2）",
-     "Merge fix/img-step-disk-full-code into main（gate2）",
-     "Merge fix/nifm-submit-onhold into main（gate2）",
-     "Merge feat/addr-short-mac-notice into main（gate2）",
-     "Merge fix/devcert-distribution-from-profile into main（gate2）",
-     "Merge fix/arena-after-late-window into main（gate2）"
+     "Merge fix/update-hint-same-definition into main（gate2）",
+     "「建议更新」与「更新这款」用同一份定义：只走 GL、没有直连着色器库的款不再标着色器原因",
+     "Merge fix/standalone-save-text-safe into main（gate2）",
+     "导出成功页独立 App 存档说明：撤掉「启动器会自动把旧 App 存档复制进新 App」，改成「暂时别删旧 App，迁移办法随后续版本提供」",
+     "Merge fix/livecontainer-cert-fallback into main（gate2）",
+     "Merge contrib/pr1876 into main（gate2）",
+     "LiveContainer 里程序库重签：它存的证书 S2Arm 解不开时改用导入进 S2Arm 的那张，都没有就说清怎么导",
+     "Merge remote-tracking branch 'origin/main' into contrib/pr1876"
     ]
    }
   ]
@@ -12729,12 +12729,12 @@
   "branches": []
  },
  "langslove/d2r-mobile": {
-  "pushed_at": "2026-11-13T10:40:37Z",
+  "pushed_at": "2026-11-21T03:58:15Z",
   "branches": [
    {
     "branch": "feature/rumble-probe",
     "ahead": 1,
-    "behind": 6,
+    "behind": 38,
     "files": 33,
     "real_files": 31,
     "dirs": [
@@ -13214,5 +13214,9 @@
     ]
    }
   ]
+ },
+ "bllli/d2r-mobile": {
+  "pushed_at": "2026-11-21T02:37:50Z",
+  "branches": []
  }
 }
