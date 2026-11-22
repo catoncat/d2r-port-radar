@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-21T06:45:47Z",
+  "pushed_at": "2026-11-22T06:14:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T06:45:46Z",
+    "last_commit": "2026-11-22T06:14:43Z",
     "subjects": [
+     "radar 2026-11-22",
      "radar 2026-11-21",
      "radar 2026-11-20",
      "radar 2026-11-19",
      "radar 2026-11-18",
      "radar 2026-11-17",
      "radar 2026-11-16",
-     "radar 2026-11-15",
-     "radar 2026-11-14"
+     "radar 2026-11-15"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-21T19:02:02Z",
+  "pushed_at": "2026-11-22T10:20:05Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T18:58:15Z",
+    "last_commit": "2026-11-22T10:19:53Z",
     "subjects": [
-     "host/svc: make native SDK module enumeration work (PR #3023)",
-     "host/offline: register friend-ID and network Result hooks (PR #3119)",
-     "opengl/framebuffer: honor sRGB conversion state (PR #3117)",
-     "nvn/texture: check dimensions before making linear views (PR #2908)",
-     "host/prepo: report idle transmission offline (PR #2908)",
-     "packing/shader_split: read NXSD shader containers (PR #2706)",
-     "game: Ocarina of Time renders taller screens natively (PR #3037)",
-     "docs: update the NxNative Launcher links (PR #2994)"
+     "rewriter: fix Pikmin 4 cutscene fade timing",
+     "docs/pragmata: record the iPhone startup and memory results",
+     "docs/ocarina: document the Xcode install fallback",
+     "docs/frame-rate: record fixed-rate fullscreen stutter",
+     "docs/playing: explain Xbox button remapping on Mac",
+     "docs: clarify game build and reporting instructions",
+     "docs/games: list frame-rate targets and modes",
+     "docs/nba-2k26: record the player lighting prototype"
     ]
    }
   ]
@@ -1951,17 +1951,17 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-21T19:13:53Z",
+  "pushed_at": "2026-11-22T06:45:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T19:13:52Z",
+    "last_commit": "2026-11-22T06:45:03Z",
     "subjects": [
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
-     "chore: 自动同步 Star 地图（207 个项目）",
+     "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-21T19:24:15Z",
+  "pushed_at": "2026-11-22T01:24:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T19:24:14Z",
+    "last_commit": "2026-11-22T01:24:45Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-22T01:14:07Z",
+  "pushed_at": "2026-11-22T02:17:54Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T01:14:04Z",
+    "last_commit": "2026-11-22T02:17:50Z",
     "subjects": [
+     "feat(rdr): Red Dead Redemption 1.0.4 on the Zelda line; plays on the Mac to Armadillo Station",
      "fix: every port's movie pacing survives a seek or loop without Flush; ten share one movie_host.c",
      "fix(mk8dx): Grand Prix without the one-minute wait; boot on the iPhone; no dead mk8d branches",
      "feat: Arceus on iPhone/iPad, Mario Kart 8 Deluxe on the Zelda line, Odyssey phone fixes, one scheduler",
      "fix(builder): a game file's game comes from its contents, never its name",
      "feat(ios): Zelda's pipeline archive in Animal Crossing and Odyssey; no full warm-up at every start",
      "fix(odyssey): Chinese text instead of Japanese: the game takes zh-CN / zh-TW",
-     "feat(ios): Odyssey on the Zelda app; ports ship shaders outside the app with device libraries",
-     "docs: new code comes only with a new Launcher (code updates removed)"
+     "feat(ios): Odyssey on the Zelda app; ports ship shaders outside the app with device libraries"
     ]
    }
   ]
@@ -7842,7 +7842,7 @@
   "branches": []
  },
  "bluewater0121/d2r-mobile-a12z": {
-  "pushed_at": "2026-10-21T13:43:26Z",
+  "pushed_at": "2026-11-22T11:09:18Z",
   "branches": [
    {
     "branch": "main",
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-21T22:00:20Z",
+  "pushed_at": "2026-11-22T11:28:54Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T21:36:40Z",
+    "last_commit": "2026-11-22T11:23:25Z",
     "subjects": [
-     "Merge pull request #1527 from LNPANDY/v0lumehi/nxkit-launch-options-reland",
-     "Merge pull request #1536 from LNPANDY/docs/update-readme-v150",
-     "docs: update all README locales, 208-game badge, and 1.5.0 screenshots",
-     "Merge pull request #1534 from LNPANDY/v0lumehi/nxkit-saves",
-     "Merge remote-tracking branch 'origin/main' into v0lumehi/nxkit-launch-options-reland",
-     "Merge pull request #1532 from LNPANDY/v0lumehi/nxkit-control-maps",
-     "Merge pull request #1531 from LNPANDY/fix/audio-44k-callback-threshold",
-     "saves: a game nxkit built gets the save location, the players and the cloud saves under nxkit's names (NXKIT_SAVE, NXKIT_SAVE_SYNC, NXKIT_SAVE_SYNC_CHOICE, NXKIT_USER, NXKIT_NICK): one flow with an engine adapter (SaveEngine, dm and nxkit), the check before the start asks the app's nxkit-host --save-sync-report and the send after the game ended runs nxkit-host --save-sync-send; its usual save is ~/Library/Application Support/nxkit/<TITLE ID>/save; needs nxkit 259b9ec5"
+     "Merge pull request #1562 from LNPANDY/v0lumehi/sheet-fits-window",
+     "Merge pull request #1560 from LNPANDY/fix/ios-env-settings-sync",
+     "Merge pull request #1521 from LNPANDY/fix/mng-guard-pep668-and-badges",
+     "Merge pull request #1558 from LNPANDY/fix/mac-resign-ui-feedback",
+     "Launch options: keep the sheet at its full height",
+     "Keep a sheet's header and buttons when its content grows",
+     "Sync per-game iOS env.txt overrides with shell and in-game settings",
+     "Isolate Builds page during re-sign and show re-signing state on hero button"
     ]
    }
   ]
@@ -10207,21 +10207,21 @@
   "branches": []
  },
  "Xc1Ym/LumaNX": {
-  "pushed_at": "2026-11-21T09:14:47Z",
+  "pushed_at": "2026-11-22T11:18:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T09:14:47Z",
+    "last_commit": "2026-11-22T11:18:02Z",
     "subjects": [
+     "chore: sync tested nxnative snapshot",
+     "fix: preserve conditional Metal tool-lock checks",
      "Merge pull request #47 from Xc1Ym/codex/fix-shader-issues",
      "fix: validate shipped shader tools and packed libraries",
      "chore: prepare LumaNX 0.4.4 release",
      "chore: sync tested nxnative snapshot",
      "test: exercise passive controller motion through pairing",
-     "chore: prepare LumaNX 0.4.3 release",
-     "chore: sync tested nxnative snapshot",
-     "test: stub Joy-Con motion sinks in native harness"
+     "chore: prepare LumaNX 0.4.3 release"
     ]
    }
   ]
@@ -10483,21 +10483,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-21T23:30:59Z",
+  "pushed_at": "2026-11-22T07:57:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T23:29:53Z",
+    "last_commit": "2026-11-22T07:57:16Z",
     "subjects": [
+     "Merge pull request #507 from Propinbo/feat/mali-inplace-feedback",
+     "Settings > Controls > Controller gyro axes (#511, #521)",
      "0.4.11-beta: versionCode 50, README release lines",
      "vulkan: Adreno 6xx with 8 GB or less copies instead of the placed heap; out-of-memory pipelines retried (#520)",
      "0.4.10-beta: versionCode 49, README release lines",
      "vulkan: arena copy-back only the words the GPU changed, each by CAS (#401)",
-     "0.4.9-beta: Settings > Switch-style core turns (experimental, off) for #401",
-     "kernel: LARECOMP_CORE_LOCKS, turns on cores past core 0 (#401); stuck threads' stacks in the freeze report",
-     "Merge pull request #504 from Propinbo/feat/fullscreen-narrow",
-     "Merge pull request #506 from Propinbo/feat/cbwin-mali-snap"
+     "vulkan: allow in-place render-target feedback reads setting on Mali",
+     "0.4.9-beta: Settings > Switch-style core turns (experimental, off) for #401"
     ]
    }
   ]
@@ -10699,21 +10699,21 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-21T12:45:08Z",
+  "pushed_at": "2026-11-22T05:38:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T16:11:50Z",
+    "last_commit": "2026-11-22T05:26:41Z",
     "subjects": [
-     "Merge task/bindoff: TOTK_BIND_INC is off by default",
-     "TOTK_BIND_INC is off by default",
-     "Merge task/pjournal: a device loss logs the last descriptor pool events, and a pool with two owners is logged at once",
-     "A device loss logs the last descriptor pool events, and a pool with two owners is logged at once",
-     "Merge pull request #1207: the memory probe's test textures carry their pool flags, so --probe-vkmem passes again (shenjackyuanjie)",
-     "The memory probe's slot redirect check follows a texture of the slot's own format",
-     "Up version 0.4.1",
-     "Preserve pool flags in the Vulkan memory probe texture fixture"
+     "Update inctructs",
+     "The FidelityFX SDK sources build with libc++ (llvm-mingw, the Windows release toolchain): ffx_compat.h includes <mutex> for the std::lock_guard in ffx_vk.cpp, which ffx_types.h left to libstdc++'s <shared_mutex>",
+     "Up version 0.5.0",
+     "Merge task/overlap: sync_ahead = 1 also works without shadow storage on a discrete GPU, as Savage Wind's overlap: the GPU reads the game's memory in place behind guards (staged mirror syncs, word-merged write-backs, CPU deswizzle of rewritten textures, invalidates that wait for their writer, one-off small targets), and TOTK_SYNC_AHEAD=check measures what a late wait would race; off by default. On machine B the frame is 1.0 ms (fort) to 2.3 ms (islands) shorter with the 1% lows within noise (#1129, #1192)",
+     "totk.ini.example: sync_ahead no longer needs shadow storage on a discrete GPU; without it the GPU reads the game's memory in place behind guards, and only memory = import still refuses the switch",
+     "The in-place frame ahead merges every mirror write-back by words, is refused with import memory, and the probe checks its pending-write list",
+     "Merge pull request #1330: a perf trace can run without its dirty census (perf_census = 0), which costs a traced Steam Deck frame about 3 %; the census runs only in the import memory mode (klikso, #946)",
+     "perf_census: the settings row says the census runs only in the import memory mode, since a mirror prints its own mem lines (#946)"
     ]
    }
   ]
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-22T01:21:54Z",
+  "pushed_at": "2026-11-22T11:35:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T01:18:41Z",
+    "last_commit": "2026-11-22T11:34:29Z",
     "subjects": [
-     "Merge contrib/pr1964 into main（gate2）",
-     "Merge fix/alias-shrink-unbounded into main（gate2）",
-     "Merge remote-tracking branch 'origin/main' into fix/alias-shrink-unbounded",
-     "Merge remote-tracking branch 'origin/main' into contrib/pr1964",
-     "Merge contrib/pr1968 into main（gate2）",
-     "Merge contrib/pr1945 into main（gate2）",
-     "Merge fix/device-kind-test-path into main（gate2）",
-     "修 main 红：test_device_kind_copy 自己把 pack/jobs 加进 sys.path（门禁按单文件跑，找不到 errors 模块）"
+     "Merge feat/mac-assign-hid-fallback-pads into main（gate2）",
+     "Merge fix/launcher-key-capture-combo into main（gate2）",
+     "Merge fix/mac-pad-profile-concurrency into main（gate2）",
+     "Merge fix/ori2-table-race into main（gate2）",
+     "Merge fix/scan-new-unreviewed-blocks into main（gate2）",
+     "fix(tools): 增量公开仓扫描对新加文件与全量同一口径（未审类型等改为阻挡）",
+     "Merge fix/scan-devprofile-golden into main（gate2）",
+     "修补表收 veneer：奥日 2 签名 B 给全局表的 5 个调用点加客体锁"
     ]
    }
   ]
@@ -13033,21 +13033,21 @@
   ]
  },
  "ZuanCrisp/Zelda-TOTK-Port": {
-  "pushed_at": "2026-11-14T04:29:00Z",
+  "pushed_at": "2026-11-22T05:39:03Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-14T04:26:07Z",
+    "last_commit": "2026-11-22T05:38:58Z",
     "subjects": [
-     "Harden upstream sync against legacy commit email exposure",
-     "Merge remote-tracking branch 'upstream/main'",
-     "Up version 0.4.0",
-     "Turn the recorder thread on by default on AMD GPUs too; vk_recorder = 0 turns it off where the device is lost",
-     "Describe the profile-guided build in docs/pgo.md: where and how to train, free play, merge, measure",
-     "Merge pull request #1065: Xbox prompts at every game resolution the setup lays the UI out for (cdonatom, #378)",
-     "Merge pull request #1066: describe deswizzle, kspin_us, pcore, rec_async and rec_spin_us in docs/settings.md (itaskaev2)",
-     "Merge task/climb: Link climbs walls and ladders at full speed above 60 fps (#35, #276, #1001)"
+     "Merge remote-tracking branch 'refs/remotes/upstream/main'",
+     "Update inctructs",
+     "The FidelityFX SDK sources build with libc++ (llvm-mingw, the Windows release toolchain): ffx_compat.h includes <mutex> for the std::lock_guard in ffx_vk.cpp, which ffx_types.h left to libstdc++'s <shared_mutex>",
+     "Up version 0.5.0",
+     "Merge task/overlap: sync_ahead = 1 also works without shadow storage on a discrete GPU, as Savage Wind's overlap: the GPU reads the game's memory in place behind guards (staged mirror syncs, word-merged write-backs, CPU deswizzle of rewritten textures, invalidates that wait for their writer, one-off small targets), and TOTK_SYNC_AHEAD=check measures what a late wait would race; off by default. On machine B the frame is 1.0 ms (fort) to 2.3 ms (islands) shorter with the 1% lows within noise (#1129, #1192)",
+     "totk.ini.example: sync_ahead no longer needs shadow storage on a discrete GPU; without it the GPU reads the game's memory in place behind guards, and only memory = import still refuses the switch",
+     "The in-place frame ahead merges every mirror write-back by words, is refused with import memory, and the probe checks its pending-write list",
+     "Merge pull request #1330: a perf trace can run without its dirty census (perf_census = 0), which costs a traced Steam Deck frame about 3 %; the census runs only in the import memory mode (klikso, #946)"
     ]
    }
   ]
@@ -13220,19 +13220,21 @@
   "branches": []
  },
  "kakario777-netizen/d2r-mobile": {
-  "pushed_at": "2026-11-21T18:08:03Z",
+  "pushed_at": "2026-11-22T11:35:20Z",
   "branches": [
    {
     "branch": "yupgoolg",
-    "ahead": 2,
+    "ahead": 3,
     "behind": 38,
-    "files": 2,
-    "real_files": 1,
+    "files": 6,
+    "real_files": 5,
     "dirs": [
+     "dm/android",
      "yg/private.tgz.enc"
     ],
-    "last_commit": "2026-11-21T18:02:59Z",
+    "last_commit": "2026-11-22T11:30:14Z",
     "subjects": [
+     "1단계: 앱 이름 '디아2 엽굵', 시작 시 일반/엽굵 모드 선택, 엽굵 전용 세이브와 덮어쓰기 묶음",
      "빌드용 생성 파일 추가 (native art)",
      "엽굵 모드판 빌드 파이프라인 (v2.3.0 기준, 원본 그대로 빌드 확인용)"
     ]
