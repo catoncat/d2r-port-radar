@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-21T11:17:03Z",
+  "pushed_at": "2026-11-21T19:24:15Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T11:17:02Z",
+    "last_commit": "2026-11-21T19:24:14Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-21T09:05:51Z",
+  "pushed_at": "2026-11-22T01:14:07Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T08:46:11Z",
+    "last_commit": "2026-11-22T01:14:04Z",
     "subjects": [
+     "fix: every port's movie pacing survives a seek or loop without Flush; ten share one movie_host.c",
+     "fix(mk8dx): Grand Prix without the one-minute wait; boot on the iPhone; no dead mk8d branches",
+     "feat: Arceus on iPhone/iPad, Mario Kart 8 Deluxe on the Zelda line, Odyssey phone fixes, one scheduler",
      "fix(builder): a game file's game comes from its contents, never its name",
      "feat(ios): Zelda's pipeline archive in Animal Crossing and Odyssey; no full warm-up at every start",
      "fix(odyssey): Chinese text instead of Japanese: the game takes zh-CN / zh-TW",
      "feat(ios): Odyssey on the Zelda app; ports ship shaders outside the app with device libraries",
-     "docs: new code comes only with a new Launcher (code updates removed)",
-     "Merge remote-tracking branch 'origin/main'",
-     "fix(ios): French for the overlay setting's title and its four new choices (after 6cafeefe)",
-     "test: the corner panel's checks read the shared hud_panel.inc, and OOT's install_device.py is TOTK's again (after 61b95acc)"
+     "docs: new code comes only with a new Launcher (code updates removed)"
     ]
    }
   ]
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-21T19:24:00Z",
+  "pushed_at": "2026-11-21T22:00:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T19:23:59Z",
+    "last_commit": "2026-11-21T21:36:40Z",
     "subjects": [
-     "Merge pull request #1529 from LNPANDY/v0lumehi/console-plain-home-row",
-     "Merge pull request #1528 from LNPANDY/v0lumehi/nxkit-overlay",
-     "Merge pull request #1530 from LNPANDY/fix/joycon-holdtype-buttons",
-     "hid: honor SetNpadJoyHoldType on single Joy-Con fallback reads",
-     "console: a game nxkit built opens over the console (NXKIT_OVERLAY): the Starting screen shows the progress of its pipelines (org.nxkit.loading.<pid>) and ends with its first picture (org.nxkit.shown.<pid>, fallback 120 s); it gets NXKIT_CURSOR_HIDDEN beside DM_CURSOR_HIDDEN, is not activated by LaunchServices, and its Home menu has Resume and Quit (no launcher named); needs nxkit 73609052",
-     "Merge pull request #1524 from LNPANDY/v0lumehi/nxkit-console-mode",
-     "Merge pull request #1523 from LNPANDY/v0lumehi/build-cache-folders",
-     "console: plain home row, flat covers and a short snappy switch"
+     "Merge pull request #1527 from LNPANDY/v0lumehi/nxkit-launch-options-reland",
+     "Merge pull request #1536 from LNPANDY/docs/update-readme-v150",
+     "docs: update all README locales, 208-game badge, and 1.5.0 screenshots",
+     "Merge pull request #1534 from LNPANDY/v0lumehi/nxkit-saves",
+     "Merge remote-tracking branch 'origin/main' into v0lumehi/nxkit-launch-options-reland",
+     "Merge pull request #1532 from LNPANDY/v0lumehi/nxkit-control-maps",
+     "Merge pull request #1531 from LNPANDY/fix/audio-44k-callback-threshold",
+     "saves: a game nxkit built gets the save location, the players and the cloud saves under nxkit's names (NXKIT_SAVE, NXKIT_SAVE_SYNC, NXKIT_SAVE_SYNC_CHOICE, NXKIT_USER, NXKIT_NICK): one flow with an engine adapter (SaveEngine, dm and nxkit), the check before the start asks the app's nxkit-host --save-sync-report and the send after the game ended runs nxkit-host --save-sync-send; its usual save is ~/Library/Application Support/nxkit/<TITLE ID>/save; needs nxkit 259b9ec5"
     ]
    }
   ]
@@ -10483,21 +10483,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-21T15:06:56Z",
+  "pushed_at": "2026-11-21T23:30:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T15:06:44Z",
+    "last_commit": "2026-11-21T23:29:53Z",
     "subjects": [
+     "0.4.11-beta: versionCode 50, README release lines",
+     "vulkan: Adreno 6xx with 8 GB or less copies instead of the placed heap; out-of-memory pipelines retried (#520)",
      "0.4.10-beta: versionCode 49, README release lines",
      "vulkan: arena copy-back only the words the GPU changed, each by CAS (#401)",
      "0.4.9-beta: Settings > Switch-style core turns (experimental, off) for #401",
      "kernel: LARECOMP_CORE_LOCKS, turns on cores past core 0 (#401); stuck threads' stacks in the freeze report",
      "Merge pull request #504 from Propinbo/feat/fullscreen-narrow",
-     "Merge pull request #506 from Propinbo/feat/cbwin-mali-snap",
-     "Start screen banner: 1K+ stars",
-     "donations: $21.36 raised toward the POCO X7 Pro goal (+R$8, $1.36 at 0.1697 USD/BRL)"
+     "Merge pull request #506 from Propinbo/feat/cbwin-mali-snap"
     ]
    }
   ]
@@ -11595,21 +11595,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-21T16:46:23Z",
+  "pushed_at": "2026-11-21T23:12:37Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-20T01:15:13Z",
+    "last_commit": "2026-11-21T23:12:37Z",
     "subjects": [
+     "Merge pull request #191 from AksharDP/t3/fix-issue-185-2",
+     "Check the key bank and layout shapes before choosing the redrawn keyboard prompts",
+     "Merge pull request #186 from wuguo13842/fix/win32-keep-display-awake",
+     "Show the layout's character on remapped punctuation key prompts",
+     "Draw the keyboard button prompts for the keys bound",
+     "fix(win32): keep the display awake during play",
      "Merge pull request #178 from Saki201/fix/gen-openblas-oom",
-     "Merge pull request #175 from AksharDP/task/issue-169",
-     "Merge pull request #166 from AksharDP/t3/audit-language-code-filter",
-     "Merge pull request #174 from AksharDP/t3/fix-combat-element-icon-growing",
-     "Limit BLAS threads and flush lifting progress and tool logs",
-     "Report English as en-GB so its baked-text images are English.",
-     "Stop the element icon's glow from growing in battle (issue 48).",
-     "Offer the game only the languages its table has and the install ships"
+     "Merge pull request #175 from AksharDP/task/issue-169"
     ]
    }
   ]
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-21T19:13:52Z",
+  "pushed_at": "2026-11-22T01:21:54Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T19:12:08Z",
+    "last_commit": "2026-11-22T01:18:41Z",
     "subjects": [
-     "Merge fix/span-seed-0667b into main（gate2）",
-     "span_seed.inc：0.6.7 重切前按诊断库再生成（tools/span_seed.py）",
-     "Merge fix/present-settings-span-seed into main（gate2）",
-     "graphics/tests: regenerate the present settings link manifest (span_seed.inc, LAN election sources)",
-     "Merge feat/ios-storage-overview into main（gate2）",
-     "Merge fix/quarantine-not-oom into main（gate2）",
-     "iPhone / iPad：设置里新增「存储」页，看游戏、存档、缓存各占多少空间",
-     "Merge take/pr1947 into main（gate2）"
+     "Merge contrib/pr1964 into main（gate2）",
+     "Merge fix/alias-shrink-unbounded into main（gate2）",
+     "Merge remote-tracking branch 'origin/main' into fix/alias-shrink-unbounded",
+     "Merge remote-tracking branch 'origin/main' into contrib/pr1964",
+     "Merge contrib/pr1968 into main（gate2）",
+     "Merge contrib/pr1945 into main（gate2）",
+     "Merge fix/device-kind-test-path into main（gate2）",
+     "修 main 红：test_device_kind_copy 自己把 pack/jobs 加进 sys.path（门禁按单文件跑，找不到 errors 模块）"
     ]
    }
   ]
@@ -13235,6 +13235,26 @@
     "subjects": [
      "빌드용 생성 파일 추가 (native art)",
      "엽굵 모드판 빌드 파이프라인 (v2.3.0 기준, 원본 그대로 빌드 확인용)"
+    ]
+   }
+  ]
+ },
+ "arnaldolima1/totk-recomp": {
+  "pushed_at": "2026-11-02T22:04:10Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-02T22:04:07Z",
+    "subjects": [
+     "Game 0.5.2",
+     "Merge upstream 0.3.4: amiibo folder picker, audio pacing, TXD gradients, replay buffers in host-coherent memory, device-lost pass names",
+     "Game 0.5.1",
+     "Stop the weapon search from running over and over in a room",
+     "Game 0.5.0",
+     "Add the duel with the game's own hit reaction, and draw friends' weapons where their game holds them",
+     "Read and write Link's life, found by making an enemy hit him",
+     "Show the room's quests as cards with a bar per player and the adventure log's text"
     ]
    }
   ]
