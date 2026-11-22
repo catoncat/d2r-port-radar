@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-22T10:20:05Z",
+  "pushed_at": "2026-11-22T19:23:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T10:19:53Z",
+    "last_commit": "2026-11-22T19:23:12Z",
     "subjects": [
-     "rewriter: fix Pikmin 4 cutscene fade timing",
-     "docs/pragmata: record the iPhone startup and memory results",
-     "docs/ocarina: document the Xcode install fallback",
-     "docs/frame-rate: record fixed-rate fullscreen stutter",
-     "docs/playing: explain Xbox button remapping on Mac",
-     "docs: clarify game build and reporting instructions",
-     "docs/games: list frame-rate targets and modes",
-     "docs/nba-2k26: record the player lighting prototype"
+     "host/gates: grow the dispatch index during module preload (PR #3121)",
+     "host/nvn: freeze guest clock and park clock reads during prepare and archive open",
+     "ci/tests: supply Xcode fixture capture-table paths",
+     "ci/tests: account for Ocarina render-scale hooks",
+     "ci/opengl: size uniform readback buffers for matrices",
+     "packing/shaders: accept mutable NXSH input",
+     "rewriter/layout: preserve read-only jump table offsets",
+     "host/audren: leave explicit CPU/manual renderers to the game (issue #3212)"
     ]
    }
   ]
@@ -1951,18 +1951,18 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-22T06:45:04Z",
+  "pushed_at": "2026-11-22T19:36:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T06:45:03Z",
+    "last_commit": "2026-11-22T19:36:56Z",
     "subjects": [
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
-     "chore: 自动同步 Star 地图（207 个项目）",
+     "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）"
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-22T01:24:46Z",
+  "pushed_at": "2026-11-22T11:36:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T01:24:45Z",
+    "last_commit": "2026-11-22T11:36:42Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2057,7 +2057,7 @@
   "branches": []
  },
  "humfz2000-ai/d2r-mobile": {
-  "pushed_at": "2026-11-14T15:36:18Z",
+  "pushed_at": "2026-11-22T14:53:11Z",
   "branches": []
  },
  "zlinoliver/d2r-mobile": {
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-22T02:17:54Z",
+  "pushed_at": "2026-11-22T16:12:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T02:17:50Z",
+    "last_commit": "2026-11-22T15:44:15Z",
     "subjects": [
-     "feat(rdr): Red Dead Redemption 1.0.4 on the Zelda line; plays on the Mac to Armadillo Station",
-     "fix: every port's movie pacing survives a seek or loop without Flush; ten share one movie_host.c",
-     "fix(mk8dx): Grand Prix without the one-minute wait; boot on the iPhone; no dead mk8d branches",
-     "feat: Arceus on iPhone/iPad, Mario Kart 8 Deluxe on the Zelda line, Odyssey phone fixes, one scheduler",
-     "fix(builder): a game file's game comes from its contents, never its name",
-     "feat(ios): Zelda's pipeline archive in Animal Crossing and Odyssey; no full warm-up at every start",
-     "fix(odyssey): Chinese text instead of Japanese: the game takes zh-CN / zh-TW",
-     "feat(ios): Odyssey on the Zelda app; ports ship shaders outside the app with device libraries"
+     "fix(gfx): log once when a plain cube map is bound as a cube array (after issue #2319)",
+     "fix(botw): bind a cube-array view where a shader samples a plain cube map as texturecube_array",
+     "Merge PR #2336: Bayonetta 3 builds from a base game card image (XCI): its complete base RomFS is read as it is",
+     "Merge claude/botw-sync-fence: Breath of the Wild's Game Over glyphs (PR #2201, #2338) and the mods verification record (PR #2341)",
+     "Merge remote-tracking branch 'origin/main'",
+     "test(botw): the storage copy stays on while the sync lag does; the test says why and what to solve before turning it back",
+     "feat(prebuilt): Echoes of Wisdom, Odyssey, Animal Crossing and Ocarina of Time take the release's programs",
+     "Merge claude/pr-2341: PR #2341, the mods verification record, for Breath of the Wild and Tears of the Kingdom"
     ]
    }
   ]
@@ -7842,7 +7842,7 @@
   "branches": []
  },
  "bluewater0121/d2r-mobile-a12z": {
-  "pushed_at": "2026-11-22T11:09:18Z",
+  "pushed_at": "2026-11-22T13:05:43Z",
   "branches": [
    {
     "branch": "main",
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-22T11:28:54Z",
+  "pushed_at": "2026-11-22T19:34:08Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T11:23:25Z",
+    "last_commit": "2026-11-22T15:47:31Z",
     "subjects": [
-     "Merge pull request #1562 from LNPANDY/v0lumehi/sheet-fits-window",
-     "Merge pull request #1560 from LNPANDY/fix/ios-env-settings-sync",
-     "Merge pull request #1521 from LNPANDY/fix/mng-guard-pep668-and-badges",
-     "Merge pull request #1558 from LNPANDY/fix/mac-resign-ui-feedback",
-     "Launch options: keep the sheet at its full height",
-     "Keep a sheet's header and buttons when its content grows",
-     "Sync per-game iOS env.txt overrides with shell and in-game settings",
-     "Isolate Builds page during re-sign and show re-signing state on hero button"
+     "Merge pull request #1559 from Grayon/fix/ios-build-without-simulator",
+     "Merge pull request #1556 from LNPANDY/feat/runtime-guards-and-pause",
+     "Merge pull request #1555 from LNPANDY/feat/dmsync-and-jksv-saves",
+     "Merge pull request #1565 from LNPANDY/feat/ios-tex-mip-skip",
+     "Merge pull request #1573 from LNPANDY/fix/ios-ingame-env-file-lock",
+     "Merge pull request #1503 from LNPANDY/feat/mac-seen-shaders-toggle",
+     "Merge pull request #1571 from LNPANDY/v0lumehi/card-art-after-banner-fetch",
+     "fix(l10n): refine zh labels for Texture quality options"
     ]
    }
   ]
@@ -10392,12 +10392,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-11-21T09:22:52Z",
+  "pushed_at": "2026-11-22T15:12:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T09:22:51Z",
+    "last_commit": "2026-11-22T15:12:56Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10699,7 +10699,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-22T05:38:53Z",
+  "pushed_at": "2026-11-22T13:50:39Z",
   "branches": [
    {
     "branch": "main",
@@ -11979,21 +11979,21 @@
   "branches": []
  },
  "Desm0nt/diablo3-port": {
-  "pushed_at": "2026-11-19T14:32:04Z",
+  "pushed_at": "2026-11-22T15:35:30Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T14:30:15Z",
+    "last_commit": "2026-11-22T15:33:57Z",
     "subjects": [
+     "VERSION 0.2.24: text input OK with Latin keyboards, frame output thread setting, driver fault reports, GPU texture path for Mali / PowerVR (TEX-02 + bc-astc-gpu)",
+     "Gear: 'Frame output on its own thread' Auto / On / Off (pref d3_present; DM_GFX_PRESENT_THREAD): Auto keeps the 0.2.22 rule (on, off after two crashes of dm-present itself), On ignores the crash count, Off presents inline; the note says an OS kill (battery saver) does not count. EN / RU / zh",
      "D3_PORT.md: port-common batch 12 in D3 (device-fault, pvr-cb-barrier, TEX-02 decoder + self-test, bc-astc-gpu): switches, how GPU ASTC combines with the ASTC texture cache, host checks, phone checks",
      "bc-astc-gpu (port-common, KB TEX-18 / FN-60 + FN-61): on GPUs without BC, BC1 / BC2 / BC3 / BC7 textures of the GPU decode path are created as VK_FORMAT_ASTC_4x4_UNORM / _SRGB and every decode batch gets one more compute dispatch (xbg_bc_astc_encode.comp, after GameNative's block encoder, Mesa MIT) whose ASTC blocks are copied into the image instead of the RGBA8 output (1 byte a texel instead of RGBA8's 4: the size of BC2 / BC3 / BC7, twice BC1). Per family behind a 285-block self-test on the device (reference ASTC decoder xbg_astc_ref_decode.h from DOOM 2016) and the TEX-02 decode self-test; DM_GFX_BC_ASTC auto (default: on where the GPU decode runs, off on Qualcomm) / 1 / 0 (old RGBA8 path byte for byte), DM_GFX_BC_ASTC_CANDS 3 / 1, DM_GFX_BC_ASTC_VT. Module files as they are; xbg_game.cpp merged by hand at D3's lines: BcJob without BcVerify, BcUpload gets D16's partial member, no bcv::attach / subst_cpu, the format decision after D3's decoded / overlay / ASTC-cache chain (a cache hit is never decoded, so the setup-built pack keeps priority and a re-upload still upgrades a GPU-ASTC image from the pack), shims vkCmd* / ptq::submit / gpguard::Lock, fb_snapshot copies bc_astc. Adreno samples BC natively and never reaches it (one [pc] line: 'the device samples BC'). Host tests: bc_astc_encode_test and bc_gpu_decode_test all passed",
      "TEX-02 GPU BC decoder fixes from DOOM 2016 (B&F 2.24, 06.11) for GPUs without BC (Mali / PowerVR), as TL2 c01a30e (= DOS2 4016472): D3 still had the 05.11 decoder (byte-identical to TL2's before that commit) that a driver miscompiled into black 4x4 patches (BC6H mode-1 blocks with zero pixel rows 1-3). xbg_bc_gpu.glsl / xbg_bc_gpu.h / xbg_bc_decode.comp / xbg_bc_decode_spv.h / tests byte-identical to DOOM 2016: branchless bit extractor without undefined shifts, BC6H block decoded once outside the row loop, clamped shift counts. Engine (bcgpu): DM_GFX_BC_SELFTEST=1 (default) - every new decode pipeline first decodes 2048 known-answer blocks (xbg_bc_kat_blocks) on the device and compares them with the CPU decoder; a mismatch sends that format to the CPU decoder (=2 log only, =0 off); its submission goes through ptq::submit (present-thread queue lock, as TL2 HEAD); DM_GFX_BC_BARRIER=full (default: ALL_COMMANDS barriers between the batch steps; narrow = the old pairs). Adreno samples BC natively (DM_GFX_NATIVE_BC=1) and never reaches this path. Log: 'NVN BC decode: self-test fmt=... bad=... -> gpu|cpu', 'NVN BC decode: barriers=full'. Host test bc_gpu_decode_test: all passed",
      "pvr-cb-barrier (port-common, KB PVR-11 / FN-63): optional full memory barrier (ALL_COMMANDS -> ALL_COMMANDS, MEMORY_WRITE -> MEMORY_READ|WRITE) right after vkBeginCommandBuffer of the engine's primary command buffers (slot command buffer and its prologue) through xbg_cb_begin; DM_GFX_PVR_CB_BARRIER 0 = off (default, command buffers recorded exactly as before), 1 = on a PowerVR (vendor 0x1010), 2 = on any GPU; '[pc] pvr-cb-barrier: applied|skipped' at the first command buffer; candidate fix for PowerVR cross-submission visibility, not confirmed on a phone; synced with sync_common.sh (applies cleanly)",
      "device-fault (port-common, KB APP-16 / FN-64): VK_EXT_device_fault is enabled on every device whose driver has it with the deviceFault feature (DM_GFX_DEVICE_FAULT=0: off); a lost-device / fence / GPU-hang xbg_fatalf logs the driver's fault report once (fault text, faulting GPU address with its precision, vendor codes) before the crumbs; boot line 'NVN device fault: ...' and '[pc] device-fault: applied|skipped'; diagnostics only, the success path is unchanged; synced with sync_common.sh (4 edits, applies cleanly)",
-     "Text input dialog (TL2 issue #15, TL2 3ee6ad2): OK no longer waits for the keyboard's composing word - Latin keyboards (Gboard, SwiftKey) keep the word under the cursor composing while the cursor stays at its end, so OK stayed grey with 'finish choosing characters'; composing no longer disables OK, OK ends the composition itself, normalizes the text and checks the name rules",
-     "VERSION 0.2.23: faster drawing on Mali / PowerVR (issue #4)",
-     "Issue #4: tile GPUs (Mali / PowerVR) get the tile paths of v0.2.11-test4 (d8cbbbb) on top of 0.2.22: NOLOAD with its later refusals, TILE_BARRIER, STORE_NONE / STORE_DEAD with the look-ahead scan, TILE_POISON, a clear-only pass through its load-op twin and a read barrier no longer ending a pending clear pass; every default off on Adreno (vendor 0x5143). Testers on G99 / Dimensity 7050: 27-31 -> 45-60 fps. Merged with fb_begin (same-draw feedback targets) in descriptors()"
+     "Text input dialog (TL2 issue #15, TL2 3ee6ad2): OK no longer waits for the keyboard's composing word - Latin keyboards (Gboard, SwiftKey) keep the word under the cursor composing while the cursor stays at its end, so OK stayed grey with 'finish choosing characters'; composing no longer disables OK, OK ends the composition itself, normalizes the text and checks the name rules"
     ]
    }
   ]
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-22T11:35:53Z",
+  "pushed_at": "2026-11-22T19:44:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T11:34:29Z",
+    "last_commit": "2026-11-22T19:46:15Z",
     "subjects": [
-     "Merge feat/mac-assign-hid-fallback-pads into main（gate2）",
-     "Merge fix/launcher-key-capture-combo into main（gate2）",
-     "Merge fix/mac-pad-profile-concurrency into main（gate2）",
-     "Merge fix/ori2-table-race into main（gate2）",
-     "Merge fix/scan-new-unreviewed-blocks into main（gate2）",
-     "fix(tools): 增量公开仓扫描对新加文件与全量同一口径（未审类型等改为阻挡）",
-     "Merge fix/scan-devprofile-golden into main（gate2）",
-     "修补表收 veneer：奥日 2 签名 B 给全局表的 5 个调用点加客体锁"
+     "Merge fix/gate-unready-keep-tail into main（gate2）",
+     "门禁：步自报环境未就绪（75）时连同前面至多 3 行输出一起列出",
+     "Merge contrib/pr2068 into main（gate2）",
+     "Merge contrib/pr2074 into main（gate2）",
+     "Merge fix/anon-budget-long-run into main（gate2）",
+     "Merge fix/console-card-device-kind into main（gate2）",
+     "首页设备卡：没现查时按装机记录画 iPad / iPhone，不知道类型画通用设备图标；选中时卡片放 App 图标（#1967）",
+     "文件后备溢出预算：短局只许收紧，够长每局最多抬 1 GiB，被收掉的预算作天花板"
     ]
    }
   ]
@@ -12549,7 +12549,7 @@
   ]
  },
  "Diablo-chia619/d2r-mobile": {
-  "pushed_at": "2026-11-20T15:30:16Z",
+  "pushed_at": "2026-11-22T19:16:54Z",
   "branches": [
    {
     "branch": "ammo-2.3.1",
@@ -12660,8 +12660,36 @@
     ]
    },
    {
+    "branch": "rescue-20261123",
+    "ahead": 71,
+    "behind": 0,
+    "files": 61,
+    "real_files": 57,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/host",
+     "dm/i18n",
+     "dm/ios",
+     "dm/merc_talk.txt",
+     "dm/tools",
+     "dm/verify"
+    ],
+    "last_commit": "2026-11-20T19:50:08Z",
+    "subjects": [
+     "撤掉名字探测（把游戏搞崩了）+ 名字表改用 zhCN",
+     "佣兵名字改成配置项 name=",
+     "佣兵台词：气泡按真实头顶 + 佣兵真名进聊天栏",
+     "佣兵台词：只发聊天栏那一行 + 前缀用他的称呼",
+     "佣兵台词：认职业 + 没蓝也说话 + 同时进游戏聊天栏",
+     "佣兵台词改成按游戏实际内容说：不固定称呼 + 怪物种类",
+     "佣兵说话：修掉进图崩溃 + Java 层终于进包",
+     "佣兵说话（半成品）：配置文件 + Java 层 + 事件逻辑已就位；位置投影暂关"
+    ]
+   },
+   {
     "branch": "runeup",
-    "ahead": 63,
+    "ahead": 65,
     "behind": 0,
     "files": 56,
     "real_files": 52,
@@ -12674,16 +12702,16 @@
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-11-20T15:30:05Z",
+    "last_commit": "2026-11-22T19:16:42Z",
     "subjects": [
+     "发布 2.4.2：合入编年史比较的 review 修正（7b7f459），版本号 2.4.2 / 20402",
+     "编年史比较：按 review 改两处——带参数词条按物品自己的 stat 表逐对读（0x5b9290 第三参是参数不是层号）；结果带上物品 id，超时换件不会串",
      "小地图容器标记：补上武器架/骷髅/鼠窝/残骸/空心木/棺材等 23 个类号",
      "发布 2.4.1：容器标记改由游戏线程收集发布（审查意见），界面线程只读投影",
      "小地图容器标记：收集挪到游戏线程发布、界面线程只读投影；跟 map_mark 开关联动；修正乱码注释",
      "发布 2.4.0：小地图标注未开启的箱子/篮子，合成符文点「存」不再崩",
      "小地图标注未开启的箱子/篮子：扫客户端物件表按 mode 判开没开，复用 map_mark 叠加画金点",
-     "存放：刚合成的符文点「存」会崩——0x63 包子操作码补 1，并改由主线程客户端发包",
-     "移除未生效的头盔显隐（勾选框/探针/置空试验全删），保留符文合成与百宝囊改动",
-     "帽子开关改成原版勾选框（显示头盔），位置按用户实测调整；勾选框状态存盘"
+     "存放：刚合成的符文点「存」会崩——0x63 包子操作码补 1，并改由主线程客户端发包"
     ]
    },
    {
@@ -13033,7 +13061,7 @@
   ]
  },
  "ZuanCrisp/Zelda-TOTK-Port": {
-  "pushed_at": "2026-11-22T05:39:03Z",
+  "pushed_at": "2026-11-22T14:39:43Z",
   "branches": [
    {
     "branch": "main",
@@ -13257,6 +13285,55 @@
      "Add the duel with the game's own hit reaction, and draw friends' weapons where their game holds them",
      "Read and write Link's life, found by making an enemy hit him",
      "Show the room's quests as cards with a bar per player and the adventure log's text"
+    ]
+   }
+  ]
+ },
+ "ooizumi/d2r-mobile": {
+  "pushed_at": "2026-11-22T19:08:03Z",
+  "branches": [
+   {
+    "branch": "codex/mobile-cloud-desktop",
+    "ahead": 3,
+    "behind": 0,
+    "files": 94,
+    "real_files": 86,
+    "dirs": [
+     "dm/android",
+     "dm/cloud_save",
+     "dm/gfx",
+     "dm/harmony",
+     "dm/host",
+     "dm/ios",
+     "dm/tools"
+    ],
+    "last_commit": "2026-11-22T19:08:01Z",
+    "subjects": [
+     "Release GameSir D-pad on HID null reports",
+     "Fix GameSir raw HID controller input on macOS",
+     "Add Huawei runtime controls, durable caches, cloud saves and installation tooling"
+    ]
+   },
+   {
+    "branch": "main",
+    "ahead": 3,
+    "behind": 0,
+    "files": 94,
+    "real_files": 86,
+    "dirs": [
+     "dm/android",
+     "dm/cloud_save",
+     "dm/gfx",
+     "dm/harmony",
+     "dm/host",
+     "dm/ios",
+     "dm/tools"
+    ],
+    "last_commit": "2026-11-22T19:08:01Z",
+    "subjects": [
+     "Release GameSir D-pad on HID null reports",
+     "Fix GameSir raw HID controller input on macOS",
+     "Add Huawei runtime controls, durable caches, cloud saves and installation tooling"
     ]
    }
   ]
