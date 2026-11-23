@@ -346,22 +346,22 @@
   ]
  },
  "n1zjqo/d2r-mobile": {
-  "pushed_at": "2026-11-17T09:22:43Z",
+  "pushed_at": "2026-11-23T09:17:48Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 18,
+    "ahead": 19,
     "behind": 0,
     "files": 1,
     "real_files": 0,
     "dirs": [],
-    "last_commit": "2026-11-17T09:22:43Z",
+    "last_commit": "2026-11-23T09:17:47Z",
     "subjects": [
+     "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge upstream v2.3.2 into main, preserving fork changes",
      "Merge upstream v2.3.1 into main, preserving fork changes",
      "Merge upstream v2.3.0 into main, preserving fork changes",
-     "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main",
      "Merge branch 'jhaizhou-ops:main' into main"
@@ -861,12 +861,12 @@
   "branches": []
  },
  "klacee/d2r-mobile": {
-  "pushed_at": "2026-11-17T11:27:47Z",
+  "pushed_at": "2026-11-23T11:44:43Z",
   "branches": [
    {
     "branch": "main",
     "ahead": 2,
-    "behind": 135,
+    "behind": 142,
     "files": 1,
     "real_files": 0,
     "dirs": [],
@@ -1299,7 +1299,7 @@
   "branches": []
  },
  "1lifedo1thing/d2r-mobile": {
-  "pushed_at": "2026-11-17T11:57:54Z",
+  "pushed_at": "2026-11-23T12:56:02Z",
   "branches": []
  },
  "lcr1017/d2r-mobile": {
@@ -1571,21 +1571,21 @@
   ]
  },
  "jiayx/d2r-mobile-build": {
-  "pushed_at": "2026-11-19T01:39:14Z",
+  "pushed_at": "2026-11-23T04:47:50Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T01:39:12Z",
+    "last_commit": "2026-11-23T04:47:49Z",
     "subjects": [
+     "Update Apple TV release links",
+     "Validate reused shader chains with producer script",
+     "Accept reviewed shader chain diagnostic update",
      "Keep resource download links in the usage instructions",
      "Wait for Apple TV release drafts and document staged device transfers",
      "Publish Apple TV builds for official upstream releases and verify the Legacy overlay",
      "Keep documentation and release copy focused on downloads and usage",
-     "Put game resource download shortcuts at the top of both READMEs",
-     "Use verified GitHub prepared inputs for current upstream sources",
-     "Link verified GitHub Data and Legacy resources in usage instructions",
-     "Keep current installation instructions when mirroring resources"
+     "Put game resource download shortcuts at the top of both READMEs"
     ]
    }
   ]
@@ -1670,21 +1670,21 @@
   ]
  },
  "wukongtime/d2r-mobile-build-backup": {
-  "pushed_at": "2026-11-19T02:03:02Z",
+  "pushed_at": "2026-11-23T04:50:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T01:39:12Z",
+    "last_commit": "2026-11-23T04:47:49Z",
     "subjects": [
+     "Update Apple TV release links",
+     "Validate reused shader chains with producer script",
+     "Accept reviewed shader chain diagnostic update",
      "Keep resource download links in the usage instructions",
      "Wait for Apple TV release drafts and document staged device transfers",
      "Publish Apple TV builds for official upstream releases and verify the Legacy overlay",
      "Keep documentation and release copy focused on downloads and usage",
-     "Put game resource download shortcuts at the top of both READMEs",
-     "Use verified GitHub prepared inputs for current upstream sources",
-     "Link verified GitHub Data and Legacy resources in usage instructions",
-     "Keep current installation instructions when mirroring resources"
+     "Put game resource download shortcuts at the top of both READMEs"
     ]
    }
   ]
@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-22T06:14:44Z",
+  "pushed_at": "2026-11-23T07:06:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T06:14:43Z",
+    "last_commit": "2026-11-23T07:06:28Z",
     "subjects": [
+     "radar 2026-11-23",
      "radar 2026-11-22",
      "radar 2026-11-21",
      "radar 2026-11-20",
      "radar 2026-11-19",
      "radar 2026-11-18",
      "radar 2026-11-17",
-     "radar 2026-11-16",
-     "radar 2026-11-15"
+     "radar 2026-11-16"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-23T01:26:54Z",
+  "pushed_at": "2026-11-23T11:58:52Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-23T01:26:13Z",
+    "last_commit": "2026-11-23T11:58:09Z",
     "subjects": [
-     "games/01008CB0156BC000: target 60 fps in Trails into Reverie",
-     "gfx/nvn: clear relaxed draw-pass barrier state on NVN queue switch",
-     "gfx/dmsh: specialize the blend fix-up away when both blend words are 0 (PR #3176)",
-     "host/hid: fix handle metadata and bring up Trails into Reverie",
-     "nvn/present: put a retried display link on probation",
-     "games/0400486024DEC000: update sead::PerspectiveProjection in place for Vert+ screen shape",
-     "gfx/shaders: build mesh libraries for every shader variation's geometry pair (PR #3191)",
-     "game: BRAVELY DEFAULT II defaults to 60 fps"
+     "host/album: save nn::album::SaveScreenshot buffers as local PNGs",
+     "host/memory: default Switch 2 to 128 GB Mac alias and pool limit (PR #3188)",
+     "host/loader: validate linked swforce table at build time (PR #2702)",
+     "game: port Oceanhorn 1.0.1",
+     "game: Mario + Rabbids Kingdom Battle defaults to 60 fps",
+     "nvn, packing/shader_split: validate WriteTexels bounds and parse VFS2 archives (PR #2906)",
+     "host/friends: open the notification queue offline (PR #3224)",
+     "game: Mario + Rabbids Sparks of Hope defaults to 60 fps"
     ]
    }
   ]
@@ -1951,19 +1951,19 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-22T19:36:57Z",
+  "pushed_at": "2026-11-23T07:35:03Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T19:36:56Z",
+    "last_commit": "2026-11-23T07:35:02Z",
     "subjects": [
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
-     "chore: 自动同步 Star 地图（207 个项目）",
+     "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）",
      "chore: 自动同步 Star 地图（207 个项目）"
     ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-22T19:47:46Z",
+  "pushed_at": "2026-11-23T01:48:15Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T19:47:45Z",
+    "last_commit": "2026-11-23T01:48:14Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-23T00:23:13Z",
+  "pushed_at": "2026-11-23T12:51:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-23T00:23:10Z",
+    "last_commit": "2026-11-23T12:43:59Z",
     "subjects": [
-     "feat(p5r): Persona 5 Royal 1.0.2 on the Zelda line, with its Mac app",
-     "feat: Age of Calamity and Mahjong 2013 on the Zelda line; overlapping pools stay tracked",
-     "fix: tell the shader translator a compute kernel's shared memory in every port",
-     "fix(contrib): Mario Kart 8 Deluxe and Red Dead Redemption name their own inbox id; a test ties every game's id to the inbox",
-     "chore: pipeline rows that reached the inbox while e7cb8ebd was pushed (11-22)",
-     "chore: shader and pipeline lists from the inbox and from the files players posted to issues (11-22)",
-     "fix(gfx): log once when a plain cube map is bound as a cube array (after issue #2319)",
-     "fix(botw): bind a cube-array view where a shader samples a plain cube map as texturecube_array"
+     "Merge remote-tracking branch 'origin/main' into HEAD",
+     "feat: Donkey Kong Bananza builds from a .nup, with its add-on content",
+     "feat(w3): tessellated terrain as compute; gameplay at Kaer Morhen",
+     "fix(w3): render targets the game writes as images are shader-writable; the room draws",
+     "feat(vr): Ocarina of Time first person, arms, gestures and headset HUD",
+     "fix(vr): Ocarina of Time's stream is the VR page's size",
+     "fix(vr): Ocarina of Time at the headset's proportions; the VR page sets the render size",
+     "feat(vr): TotK 1.4.3 depth stereo on key U; Breath of the Wild 1.9.0 in the headset"
     ]
    }
   ]
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-23T01:23:48Z",
+  "pushed_at": "2026-11-23T12:20:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T22:38:28Z",
+    "last_commit": "2026-11-23T12:20:41Z",
     "subjects": [
-     "Merge pull request #1579 from LNPANDY/claude/admiring-feistel-5d8fc8",
-     "Gallery: COVERAGE.md scene count after merging main",
-     "Merge remote-tracking branch 'origin/main' into work",
-     "Merge pull request #1582 from LNPANDY/fix/win-stale-engine-files",
-     "Merge pull request #1577 from LNPANDY/feat/qt-launcher-ui-polish",
-     "Gallery: update COVERAGE.md for the nxkit generic build scenes",
-     "Merge pull request #1342 from loki-inu/feat/activity-log-playtime",
-     "Merge pull request #1581 from LNPANDY/fix/ios-settings-pad-scroll"
+     "Merge pull request #1587 from LNPANDY/chore/githooks-stack-and-prefs-cleanup",
+     "Merge pull request #1561 from LNPANDY/feat/engine-selector-and-variants",
+     "Merge pull request #1563 from LNPANDY/feat/gpu-bc-to-astc",
+     "fix(launcher): address engine variant review bugs and pill UI polish",
+     "fix(launcher): harden variant iOS queue, game folder probing and build cleanup",
+     "feat(launcher): add engine selector guide, tuned badges, and specialized forks",
+     "gfx: transcode BC1-3 to ASTC 4x4 on GPU and decode BC4-5 via compute",
+     "Merge pull request #1592 from LNPANDY/docs/prevent-nxnative-build-tool-issues"
     ]
    }
   ]
@@ -10392,12 +10392,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-11-22T15:12:57Z",
+  "pushed_at": "2026-11-23T08:35:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T15:12:56Z",
+    "last_commit": "2026-11-23T08:35:42Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10503,7 +10503,7 @@
   ]
  },
  "lover520f/d2r-mobile-2026": {
-  "pushed_at": "2026-11-13T05:54:38Z",
+  "pushed_at": "2026-11-23T03:15:42Z",
   "branches": []
  },
  "enginefuture/dr2-mobile": {
@@ -10593,11 +10593,11 @@
   ]
  },
  "tib-kpl/d2r-mobile": {
-  "pushed_at": "2026-11-17T18:35:16Z",
+  "pushed_at": "2026-11-23T08:38:09Z",
   "branches": [
    {
     "branch": "main",
-    "ahead": 25,
+    "ahead": 26,
     "behind": 0,
     "files": 69,
     "real_files": 62,
@@ -10612,16 +10612,16 @@
      "dm/ios",
      "dm/tools"
     ],
-    "last_commit": "2026-11-17T18:28:32Z",
+    "last_commit": "2026-11-23T08:33:51Z",
     "subjects": [
+     "Merge branch 'jhaizhou-ops:main' into main",
      "Fix LANG_N assertion after merge",
      "Merge upstream/main (jhaizhou-ops/d2r-mobile)",
      "i18n gate: whitelist the S2Arm pack unpacker's log text and pack folder name (never shown on screen)",
      "Merge remote-tracking branch 'upstream/main'",
      "Merge upstream 2.3.0 and isolate CI version overrides",
      "Merge upstream/main while preserving French and folder selection",
-     "Controller events: also require libraryLoaded, as upstream (#178)",
-     "Merge upstream/main (2.2.4) into fork: keep folder picker, CI versioning and French; take overlay variants, warm seed, exit labels"
+     "Controller events: also require libraryLoaded, as upstream (#178)"
     ]
    }
   ]
@@ -10699,7 +10699,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-22T13:50:39Z",
+  "pushed_at": "2026-11-23T07:36:59Z",
   "branches": [
    {
     "branch": "main",
@@ -11234,21 +11234,21 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-20T00:01:47Z",
+  "pushed_at": "2026-11-23T07:57:48Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-19T17:46:12Z",
+    "last_commit": "2026-11-23T04:49:28Z",
     "subjects": [
+     "Merge pull request #160 from s-ilent/task/aniso-filtering",
+     "Shorten Russian anisotropy description.",
      "Merge pull request #218 from jmars125/claude/merge-187",
      "Merge pull request #217 from jmars125/claude/merge-188",
      "Merge remote-tracking branch 'origin/master' into HEAD",
      "Merge remote-tracking branch 'origin/master' into HEAD",
      "Merge pull request #191 from TechnoOerba/crowd-distance",
-     "Merge pull request #190 from TechnoOerba/async-mirror-cow",
-     "Merge pull request #181 from TechnoOerba/grass-distance",
-     "Merge #181's branch (master merged in) into crowd-distance; patches-upd.txt and boot.c keep both the crowd set and master's voice language and mesh guard."
+     "Merge pull request #190 from TechnoOerba/async-mirror-cow"
     ]
    }
   ]
@@ -11730,21 +11730,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-19T09:08:49Z",
+  "pushed_at": "2026-11-23T08:27:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-19T09:08:46Z",
+    "last_commit": "2026-11-23T08:27:04Z",
     "subjects": [
+     "merge: fill panels larger than the docked guest canvas (#21)",
+     "test(gfx): cover enlarged guest presentation destinations",
+     "merge: bring main into PR #21",
      "chore(github): add a bug report issue form",
      "docs(gfx): record default-off alias Thor qualification",
      "fix(diag): publish pause reporting enablement atomically",
      "feat(diag): report private write-back path coverage",
-     "fix(gfx): retire private writer authority with virtual mappings",
-     "fix(gfx): land GPU writes through private dma-buf aliases",
-     "feat(shaders): refresh seven applicable 1.4.3 variants",
-     "docs(changelog): record integer-fold Thor and Odin speed checks"
+     "fix(gfx): retire private writer authority with virtual mappings"
     ]
    }
   ]
@@ -11783,12 +11783,12 @@
   ]
  },
  "gosail/d2r-mobile": {
-  "pushed_at": "2026-11-23T01:47:20Z",
+  "pushed_at": "2026-11-23T02:52:46Z",
   "branches": [
    {
     "branch": "feat/ipad-android-keyboard-mouse-upstream-20261116",
     "ahead": 66,
-    "behind": 5,
+    "behind": 12,
     "files": 46,
     "real_files": 45,
     "dirs": [
@@ -11812,7 +11812,7 @@
    {
     "branch": "feat/offline-druid-summon-balance-20261116",
     "ahead": 31,
-    "behind": 5,
+    "behind": 12,
     "files": 3,
     "real_files": 3,
     "dirs": [
@@ -11832,32 +11832,32 @@
    },
    {
     "branch": "feat/offline-dual-merc-probe-20261116",
-    "ahead": 174,
-    "behind": 5,
-    "files": 51,
-    "real_files": 47,
+    "ahead": 254,
+    "behind": 12,
+    "files": 52,
+    "real_files": 48,
     "dirs": [
      "dm/host",
      "dm/ios",
      "dm/tools",
      "dm/verify"
     ],
-    "last_commit": "2026-11-23T01:48:05Z",
+    "last_commit": "2026-11-23T02:52:46Z",
     "subjects": [
-     "test(dualmerc): reject native candidate IDs identical to target/peer/unknown",
-     "fix(dualmerc): validate new hire unit ID is distinct from both original mercenaries",
-     "fix(dualmerc): require distinct candidate monster unit ID before native unlink",
-     "test(dualmerc): guard surviving merc identity, Act and death flag in replacement results",
-     "fix(dualmerc): snapshot peer Act and dead flag for both native replacement outcomes",
-     "fix(dualmerc): preserve surviving merc act and dead state across native replacement",
-     "test(dualmerc): verify reordered replacement, missing old/peer, and dead candidate cases",
-     "fix(dualmerc): apply one native identity and live-unit guard to both replacement paths"
+     "docs(dualmerc): document exact class guards, save poisoning and evidence-based native table version correction",
+     "test(dualmerc): require save poison before every fatal native two-merc safety violation",
+     "fix(dualmerc): poison native save transaction before all experimental hire fail-stop paths",
+     "fix(dualmerc): expose existing transactional save-poison API for native hire fail-stop",
+     "test(dualmerc): guard exact class continuity through native add/replacement and safe no-hire result",
+     "test(dualmerc): require Hireling table version range matching proven native getpet ABI",
+     "fix(dualmerc): restore native-verified Hireling table version 1..3 range",
+     "test(dualmerc): distinguish Act V native hire classes 560 and 561 at post-transaction identity check"
     ]
    },
    {
     "branch": "feat/pc-mouse-controls-parity-20261105",
     "ahead": 385,
-    "behind": 38,
+    "behind": 45,
     "files": 65,
     "real_files": 62,
     "dirs": [
@@ -11882,7 +11882,7 @@
    {
     "branch": "feat/portable-mouse-and-world-hover-20261105",
     "ahead": 19,
-    "behind": 38,
+    "behind": 45,
     "files": 30,
     "real_files": 30,
     "dirs": [
@@ -11906,7 +11906,7 @@
    {
     "branch": "main",
     "ahead": 23,
-    "behind": 5,
+    "behind": 12,
     "files": 0,
     "real_files": 0,
     "dirs": [],
@@ -11925,7 +11925,7 @@
    {
     "branch": "test/ipad-mini7-mouse-offline-druid-20261116",
     "ahead": 69,
-    "behind": 5,
+    "behind": 12,
     "files": 49,
     "real_files": 48,
     "dirs": [
@@ -12105,7 +12105,7 @@
   ]
  },
  "lucienlmy/d2r-mobile": {
-  "pushed_at": "2026-11-16T18:09:24Z",
+  "pushed_at": "2026-11-23T04:47:22Z",
   "branches": []
  },
  "Gu3hi/gushi-apps": {
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-23T01:47:51Z",
+  "pushed_at": "2026-11-23T13:00:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-23T01:44:47Z",
+    "last_commit": "2026-11-23T13:00:49Z",
     "subjects": [
-     "Merge fix/hybrid-test-hold into main（gate2）",
-     "t_nvn_hybrid：精确管线后台编译加单测闸门，②③ 不再随编译快慢红",
-     "Merge fix/update-hint-connected-only into main（gate2）",
-     "Merge contrib/pr2089 into main（gate2）",
-     "更新提示只看连着的那台：有设备连着时只列连着的；Mac 也读在线设备",
-     "Mac 键位作业层：拿掉 undoDefaultInput，setDefaultInput 不再返回快照（#1987）",
-     "Merge contrib/pr2087 into main（gate2）",
-     "Merge fix/first-run-overflow into main（gate2）"
+     "Merge fix/vbuf-limit-cap into main（gate2）",
+     "顶点限长副本上限 4 MB → 32 MB：跨度超 4 MB 的越界读顶点照样读 0，不再读到绑定范围后面的内存（D-JPQY / #2136）",
+     "Merge contrib/pr2128 into main（gate2）",
+     "Merge fix/lock-tools-explicit into main（gate2）",
+     "翻译链锁：工具三行只由 --update-tools 写（认不出的工具拒写），--update-lock 只改翻译器 dll 与源码指纹、工具行照锁原样留",
+     "Merge fix/dmsh-lock-spirv into main（gate2）",
+     "翻译链锁：工具三行恢复成门禁机口径（#2134 在作者机上刷锁，spirv-cross 记成 unknown、metal 记成 32023.922），main 直连钩子回绿",
+     "Merge fix/cheat-modifiescode-copy into main（gate2）"
     ]
    }
   ]
@@ -12237,21 +12237,21 @@
   ]
  },
  "jmars125/xc3-recomp": {
-  "pushed_at": "2026-11-19T19:59:05Z",
+  "pushed_at": "2026-11-23T04:42:55Z",
   "branches": [
    {
     "branch": "master",
     "mirror": false,
-    "last_commit": "2026-11-19T17:00:27Z",
+    "last_commit": "2026-11-23T02:57:22Z",
     "subjects": [
+     "Merge pull request #99 from jmars125/task/mod-case",
+     "Mod files added to the RomFS now open in any case, so a mod's Battle.bin reaches the game.",
      "Merge pull request #72 from jmars125/task/dlaa-flash",
      "Merge remote-tracking branch 'origin/master' into task/dlaa-flash",
      "Merge pull request #88 from PDEYVID/task/mod-archive",
      "Add language packs: a translation into a language XC3 does not ship, picked like one it does.",
      "Add a Brazilian Portuguese menu and overlay.",
-     "Show the mod archive switch in the menu's Game tab and reword the mods texts.",
-     "Document installing emulator mods, those made for xc3-file-loader included.",
-     "Load loose mod files in place of archive entries, as the emulator plugin xc3-file-loader does."
+     "Show the mod archive switch in the menu's Game tab and reword the mods texts."
     ]
    }
   ]
@@ -12956,7 +12956,7 @@
   ]
  },
  "mumuwanglin/d2r-mobile": {
-  "pushed_at": "2026-11-17T08:00:06Z",
+  "pushed_at": "2026-11-23T07:47:12Z",
   "branches": []
  },
  "jayxuz/d2r-mobile": {
@@ -13101,13 +13101,14 @@
   ]
  },
  "AIshihzong/awesome-switch-recomp": {
-  "pushed_at": "2026-11-16T04:30:03Z",
+  "pushed_at": "2026-11-23T12:38:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-16T04:30:02Z",
+    "last_commit": "2026-11-23T12:38:05Z",
     "subjects": [
+     "Refresh star counts",
      "Refresh star counts",
      "Refresh star counts",
      "Awesome Switch Recomp: first edition, 60 projects"
@@ -13334,6 +13335,57 @@
      "Release GameSir D-pad on HID null reports",
      "Fix GameSir raw HID controller input on macOS",
      "Add Huawei runtime controls, durable caches, cloud saves and installation tooling"
+    ]
+   }
+  ]
+ },
+ "Reinzea/d2r-mobile": {
+  "pushed_at": "2026-11-23T07:51:00Z",
+  "branches": [
+   {
+    "branch": "main",
+    "ahead": 24,
+    "behind": 0,
+    "files": 6,
+    "real_files": 5,
+    "dirs": [
+     "dm/gfx",
+     "dm_hud_exp.h",
+     "dm_touch_native_art.c",
+     "dm_vault_tab.h",
+     "headers.tar.gz"
+    ],
+    "last_commit": "2026-11-23T07:51:00Z",
+    "subjects": [
+     "Refactor APK build process and update paths",
+     "Update build-apk.yml to include new scripts",
+     "Refactor shell script modifications in build-apk.yml",
+     "Update shell_apk.sh and shell_stubs.py scripts",
+     "Update shell_apk.sh to change file paths",
+     "Modify build-apk.yml for new fixture handling",
+     "Update build-apk.yml to add new directories and files",
+     "Refactor build-apk.yml for directory creation and cleanup"
+    ]
+   }
+  ]
+ },
+ "Tokaroy/d2r-mobile-1": {
+  "pushed_at": "2026-11-23T03:43:39Z",
+  "branches": []
+ },
+ "davidqw/d2r-mobile": {
+  "pushed_at": "2026-11-23T08:57:27Z",
+  "branches": []
+ },
+ "bachkul-create/probable-octo-robot": {
+  "pushed_at": "2026-11-23T11:55:13Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-23T11:55:13Z",
+    "subjects": [
+     "Initial commit"
     ]
    }
   ]
