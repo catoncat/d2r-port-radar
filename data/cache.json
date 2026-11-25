@@ -591,7 +591,7 @@
   "branches": []
  },
  "dontblameitonme/d2r-mobile": {
-  "pushed_at": "2026-10-14T08:00:55Z",
+  "pushed_at": "2026-11-25T13:59:56Z",
   "branches": []
  },
  "dgltsp-cpu/d2r-mobile": {
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-25T08:29:53Z",
+  "pushed_at": "2026-11-25T18:33:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T08:29:48Z",
+    "last_commit": "2026-11-25T18:32:50Z",
     "subjects": [
-     "gfx/nvn: prune unregistered family serials in fam_set_valid",
-     "gfx/nvn: cache compressed resolution-family metadata on treg_t",
-     "host/fs: read save data sizes from control.nacp and ExtendSaveData (PR #3334)",
-     "host/threads: back off repeated zero-timeout waits as polls (PR #3333)",
-     "game: port Iconoclasts to Mac and iOS",
-     "docs/readme: lead Games section with compatibility list",
-     "gfx/nvn: prune unregistered serials from resolution-family lists (PR #3331)",
-     "gfx/nvn: read the pool tables' counts under g_rmu (PR #3330)"
+     "gfx/shaders: match bounded int(cond) word-1 indices in first_store and float_add_msl",
+     "gfx/nvn: key prebuild and mesh prewarm dedup sets by string/dict instead of NSArray",
+     "packing/shaders: preserve shared cache blobs in library images",
+     "game: port Naruto Storm Connections to the Mac",
+     "host/audio: implement AudioOut flush and port Devil May Cry 3",
+     "host/input: read unclaimed wired Xbox 360 (XUSB) pads over USB on macOS (PR #2436)",
+     "gfx/nvn: reject invalid GPU completion times (PR #1759)",
+     "host/aoc: deduplicate add-on content entries while scanning (PR #1990)"
     ]
    }
   ]
@@ -1911,21 +1911,21 @@
   ]
  },
  "HachiMiku39/pjdv_mega39s_ios": {
-  "pushed_at": "2026-11-25T04:04:04Z",
+  "pushed_at": "2026-11-25T16:00:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T04:00:50Z",
+    "last_commit": "2026-11-25T15:54:48Z",
     "subjects": [
+     "Release PJDV M39 0.2.1 with per-file mod installation feedback",
+     "Release 0.2.0 build 6 with multi-mod composition and offline host updates",
+     "Release PJDV M39 0.2.0 build 1",
      "Release 0.1.5 build27: add experimental internal 1080p rendering",
      "Release 0.1.5 build26: improve MV character rendering and resource lookups",
      "Release 0.1.5 build25: fix runtime races and isolate concurrent game sessions",
      "Release build24: refresh the native launcher",
-     "Release build23: startup update checks, Mac pixel output and asynchronous preflight",
-     "Release build22: restore native Touch Play judgments and clarify resource import recovery",
-     "Release 0.1.5 build21: native resource mod imports and video compatibility fixes",
-     "Release 0.1.5 build20: restore movie backgrounds and ship native MOD loading"
+     "Release build23: startup update checks, Mac pixel output and asynchronous preflight"
     ]
    }
   ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-24T23:56:35Z",
+  "pushed_at": "2026-11-25T08:45:40Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T23:56:34Z",
+    "last_commit": "2026-11-25T08:45:39Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-25T08:40:48Z",
+  "pushed_at": "2026-11-25T12:44:03Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T08:31:42Z",
+    "last_commit": "2026-11-25T12:20:22Z",
     "subjects": [
-     "fix(ci): the prebuilt runtimes' signing call of #2378 says it signs a program inside the app",
-     "Merge PR #2377: with TOTK_SYNC_LAG, a GPU result the game reads once waits for its writer",
-     "Merge PR #2378: prebuilt runtimes are signed with the entitlements that permit mapped guest code",
-     "fix(ci): the argument arena probe declares the camera diagnostic 4a9cc0e1 put into the reuse expression",
-     "fix(ci): the view-block diagnostics of 4a9cc0e1 build alone in the residency registration probe",
-     "chore: Red Dead Redemption's port leaves the repository; it stays on its developer's disk",
-     "fix: every game takes drawables itself when the display link stays silent for 500 ms, as Tears of the Kingdom does",
-     "docs(vr): Ocarina of Time runs docked in VR; 803c5e68's note about handheld mode was wrong"
+     "Merge PR #2361: resolution, MetalFX and a fixed upscale target as three rows in TotK and BotW",
+     "Merge PR #2324: on M1 / M2 an Ocarina of Time render pass ends only where mesh and ordinary draws meet",
+     "fix: a work folder deleted with the folder it was in is made again when its disk is connected",
+     "test: the tests' Python is a copy of the Launcher's, never the one inside the signed app",
+     "fix: the offline store's check denies the network itself",
+     "fix: a game folder made from another game's keeps none of that game's identity",
+     "chore: pipeline rows that reached the inbox after the day's lists were pushed (11-25)",
+     "test: tests run only in the environment MNG Launcher carries"
     ]
    }
   ]
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-25T07:51:20Z",
+  "pushed_at": "2026-11-25T19:11:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T07:51:11Z",
+    "last_commit": "2026-11-25T17:10:18Z",
     "subjects": [
+     "Merge pull request #1635 from LNPANDY/fix/refresh-img-corruption",
+     "Guard primary RomFS image selection and auto-pull missing images on iOS shader rebuild",
+     "Merge pull request #1634 from LNPANDY/ci/mac-launcher-timeout-45",
+     "ci: raise Mac launcher job timeout to 45 minutes",
+     "Merge pull request #1632 from LNPANDY/fix/sheets-ui-polish",
+     "fix(mac): polish RefreshCompletionSheet layout and prevent SeedCompressionSheet dismiss ghost",
      "Merge pull request #1604 from LNPANDY/fix/win-qt-package-crash",
-     "fix(qt): resolve Windows CenteredColumnWidget layout stack overflow and bundle PySide6.QtSvg",
-     "Merge pull request #1625 from LNPANDY/feat/mng-shared-save",
-     "Merge pull request #1624 from LNPANDY/fix/1590-livecontainer-p12-signing",
-     "feat(mng): share dm saves with nxnative for #2375 tuned titles",
-     "fix(ios): replace private libmis test dlopen with public CMSDecoder to prevent SIGBUS",
-     "fix(ios): use 16 KiB arm64 code pages and add RFC 7292 .p12 and LiveContainer support",
-     "Merge pull request #1623 from LNPANDY/fix/1519-builds-page-progress"
+     "fix(qt): resolve Windows CenteredColumnWidget layout stack overflow and bundle PySide6.QtSvg"
     ]
    }
   ]
@@ -10483,21 +10483,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-24T18:16:04Z",
+  "pushed_at": "2026-11-25T15:11:17Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T18:15:46Z",
+    "last_commit": "2026-11-25T15:10:44Z",
     "subjects": [
-     "0.4.13-beta: versionCode 52, README release lines",
-     "Merge pull request #534 from Propinbo (classic VkRenderPass by default on Mali r49+)",
-     "Merge pull request #531 from Propinbo/feat/vk-bc-parallel-decode",
-     "vulkan (copy mode): what a storing shader wrote goes back word by word, not the whole range (#401)",
-     "vulkan (Mali): draw-target reads in place on Automatic (#549)",
-     "vulkan: default to classic VkRenderPass on ARM Mali r49+ and hash get_rp",
-     "feat(vk): parallelize CPU BC/ASTC texture decode on BC-less GPUs",
-     "0.4.12-beta: versionCode 51, README release lines"
+     "donations: $26.70 raised toward the POCO X7 Pro goal (+R$2, $0.34 at 0.1697 USD/BRL)",
+     "0.5.0-beta: versionCode 53, README release lines",
+     "amiibo: a second tap on the rune button opens the picker; the top button removed",
+     "amiibo: a big \"Touch the amiibo\" button at the top while the game looks for one",
+     "amiibo: the menu no longer opens by itself while the rune aims",
+     "menu: lists scroll with a finger and glide; the overlay's settings folded",
+     "amiibo: a virtual reader (nfp:user) with the figure picked in Controls (#181)",
+     "0.4.13-beta: versionCode 52, README release lines"
     ]
    }
   ]
@@ -10699,7 +10699,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-25T04:33:50Z",
+  "pushed_at": "2026-11-25T19:17:58Z",
   "branches": [
    {
     "branch": "main",
@@ -11763,7 +11763,7 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-25T02:07:43Z",
+  "pushed_at": "2026-11-25T18:16:06Z",
   "branches": [
    {
     "branch": "main",
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-25T08:33:11Z",
+  "pushed_at": "2026-11-25T18:53:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T08:32:55Z",
+    "last_commit": "2026-11-25T18:52:20Z",
     "subjects": [
-     "Merge contrib/pr2198 into main（gate2合组）",
-     "Merge diag/guest-heat into main（gate2合组）",
-     "Merge contrib/pr2184 into main（gate2）",
-     "诊断：文件后备冷热读数，每次心跳按块数文件块脏页 / 匿名块换出页、标出 GPU 别名块（#1268）",
-     "Merge docs/lowva-mac-note into main（gate2）",
-     "排查文档：Mac 上低区空洞只剩几十 MB 是常态，不能单凭它判耗尽（#2218）",
-     "Merge contrib/pr2214 into main（gate2合组）",
-     "Merge contrib/pr2210 into main（gate2合组）"
+     "Merge contrib/pr2233 into main（gate2）",
+     "Merge contrib/pr2162 into main（gate2）",
+     "Merge contrib/pr2230 into main（gate2）",
+     "Merge feat/oneclick-win-patches into main（gate2）",
+     "pack: oneclick_win --patches fetches the community patches the launcher would",
+     "Merge fix/fps-pick-auto-no-120 into main（gate2）",
+     "fix(cpatch): the automatic frame-rate tier no longer falls back to a tier above 60",
+     "Merge contrib/pr2178 into main（gate2）"
     ]
    }
   ]
@@ -12482,7 +12482,7 @@
   ]
  },
  "simipoB/Arceus-Native-Android": {
-  "pushed_at": "2026-11-25T01:07:56Z",
+  "pushed_at": "2026-11-25T18:18:19Z",
   "branches": [
    {
     "branch": "main",
@@ -13141,21 +13141,21 @@
   ]
  },
  "aoxzh/bayo3-recomp": {
-  "pushed_at": "2026-11-21T17:24:23Z",
+  "pushed_at": "2026-11-25T11:31:02Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T17:24:20Z",
+    "last_commit": "2026-11-25T11:26:11Z",
     "subjects": [
+     "Sync from private 256ef84",
+     "Sync from private d8faecb",
+     "Sync from private 5e6839b",
      "Sync from private 3b69070",
      "Sync from private 97ab162 (with uncommitted changes)",
      "Sync from private 6f5dadb",
      "Sync from private b7f80cd",
-     "Sync from private 1d31131",
-     "Sync from private 4c7f5e0",
-     "Sync from private 9d1d110",
-     "Sync from private 981e561"
+     "Sync from private 1d31131"
     ]
    }
   ]
@@ -13504,21 +13504,21 @@
   ]
  },
  "SubmitGame/awesome-decomp-games": {
-  "pushed_at": "2026-11-24T14:14:24Z",
+  "pushed_at": "2026-11-25T13:24:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T14:14:21Z",
+    "last_commit": "2026-11-25T13:24:04Z",
     "subjects": [
+     "chore: daily refresh 2026-11-25",
      "chore: daily refresh 2026-11-24",
      "chore: daily refresh 2026-11-23",
      "chore: daily refresh 2026-11-22",
      "chore: daily refresh 2026-11-21",
      "chore: daily refresh 2026-11-20",
      "chore: daily refresh 2026-11-19",
-     "chore: daily refresh 2026-11-18",
-     "chore: daily refresh 2026-11-17"
+     "chore: daily refresh 2026-11-18"
     ]
    }
   ]
