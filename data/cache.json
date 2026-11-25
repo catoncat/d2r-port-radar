@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-24T09:33:37Z",
+  "pushed_at": "2026-11-25T08:04:39Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T09:33:35Z",
+    "last_commit": "2026-11-25T08:04:38Z",
     "subjects": [
+     "radar 2026-11-25",
      "radar 2026-11-24",
      "radar 2026-11-23",
      "radar 2026-11-22",
      "radar 2026-11-21",
      "radar 2026-11-20",
      "radar 2026-11-19",
-     "radar 2026-11-18",
-     "radar 2026-11-17"
+     "radar 2026-11-18"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-24T19:29:24Z",
+  "pushed_at": "2026-11-25T08:29:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T18:58:09Z",
+    "last_commit": "2026-11-25T08:29:48Z",
     "subjects": [
-     "game: port Apollo Justice: Ace Attorney Trilogy to Mac",
-     "packing/regions: make address region verdicts target-aware for Mac-only builds",
-     "opengl/shaders: add missing es profile on #version 310/320 (#3292)",
-     "gfx/nvn, tools: honor acquire sync deadlines, fix movie texture handoff/aliases, zxnb reader table, nx_extract literal opens, and provisional marker reuse",
-     "nvn/present: filter minified presents with a separable tent kernel",
-     "nvn/tests: check pool-residency kernel lookup",
-     "nvn/tests: check movie readback buffer allocation",
-     "packing/profile: type decoder archive scan results"
+     "gfx/nvn: prune unregistered family serials in fam_set_valid",
+     "gfx/nvn: cache compressed resolution-family metadata on treg_t",
+     "host/fs: read save data sizes from control.nacp and ExtendSaveData (PR #3334)",
+     "host/threads: back off repeated zero-timeout waits as polls (PR #3333)",
+     "game: port Iconoclasts to Mac and iOS",
+     "docs/readme: lead Games section with compatibility list",
+     "gfx/nvn: prune unregistered serials from resolution-family lists (PR #3331)",
+     "gfx/nvn: read the pool tables' counts under g_rmu (PR #3330)"
     ]
    }
   ]
@@ -1911,21 +1911,21 @@
   ]
  },
  "HachiMiku39/pjdv_mega39s_ios": {
-  "pushed_at": "2026-11-21T11:09:37Z",
+  "pushed_at": "2026-11-25T04:04:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-21T11:08:10Z",
+    "last_commit": "2026-11-25T04:00:50Z",
     "subjects": [
+     "Release 0.1.5 build27: add experimental internal 1080p rendering",
+     "Release 0.1.5 build26: improve MV character rendering and resource lookups",
      "Release 0.1.5 build25: fix runtime races and isolate concurrent game sessions",
      "Release build24: refresh the native launcher",
      "Release build23: startup update checks, Mac pixel output and asynchronous preflight",
      "Release build22: restore native Touch Play judgments and clarify resource import recovery",
      "Release 0.1.5 build21: native resource mod imports and video compatibility fixes",
-     "Release 0.1.5 build20: restore movie backgrounds and ship native MOD loading",
-     "Convert the verified Leo/need PC model package inside the App",
-     "Reduce redundant MOD preparation and document all local package trials"
+     "Release 0.1.5 build20: restore movie backgrounds and ship native MOD loading"
     ]
    }
   ]
@@ -1951,14 +1951,14 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-24T22:24:47Z",
+  "pushed_at": "2026-11-25T08:30:45Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T22:24:46Z",
+    "last_commit": "2026-11-25T08:30:43Z",
     "subjects": [
-     "chore: 自动同步 Star 地图（208 个项目）",
+     "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-24T13:53:10Z",
+  "pushed_at": "2026-11-24T23:56:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T13:53:09Z",
+    "last_commit": "2026-11-24T23:56:34Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-24T23:53:31Z",
+  "pushed_at": "2026-11-25T08:40:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T23:53:29Z",
+    "last_commit": "2026-11-25T08:31:42Z",
     "subjects": [
-     "docs(vr): Ocarina of Time runs docked in VR; 803c5e68's note about handheld mode was wrong",
-     "fix(vr): Ocarina of Time picks its models' level of detail as without VR",
-     "feat(oot): diagnostics for the coarse models VR's wide field of view brings; what they ruled out",
-     "fix(ci): the texel region counters of 24a724dc build alone in the residency registration probe",
-     "feat(settings): the settings panel and the FPS box are the system's frosted glass",
-     "feat(settings): the panel takes the glass look of PR #1297; its pages, rows and controls stay",
-     "fix(launcher): a build finds its offline wheels under \"Application Support\"; the step counter stays; the Mac stays awake",
-     "feat(nvn): the memory report counts the texel regions converted on the GPU"
+     "fix(ci): the prebuilt runtimes' signing call of #2378 says it signs a program inside the app",
+     "Merge PR #2377: with TOTK_SYNC_LAG, a GPU result the game reads once waits for its writer",
+     "Merge PR #2378: prebuilt runtimes are signed with the entitlements that permit mapped guest code",
+     "fix(ci): the argument arena probe declares the camera diagnostic 4a9cc0e1 put into the reuse expression",
+     "fix(ci): the view-block diagnostics of 4a9cc0e1 build alone in the residency registration probe",
+     "chore: Red Dead Redemption's port leaves the repository; it stays on its developer's disk",
+     "fix: every game takes drawables itself when the display link stays silent for 500 ms, as Tears of the Kingdom does",
+     "docs(vr): Ocarina of Time runs docked in VR; 803c5e68's note about handheld mode was wrong"
     ]
    }
   ]
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-24T22:30:27Z",
+  "pushed_at": "2026-11-25T07:51:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T22:30:26Z",
+    "last_commit": "2026-11-25T07:51:11Z",
     "subjects": [
+     "Merge pull request #1604 from LNPANDY/fix/win-qt-package-crash",
+     "fix(qt): resolve Windows CenteredColumnWidget layout stack overflow and bundle PySide6.QtSvg",
      "Merge pull request #1625 from LNPANDY/feat/mng-shared-save",
      "Merge pull request #1624 from LNPANDY/fix/1590-livecontainer-p12-signing",
      "feat(mng): share dm saves with nxnative for #2375 tuned titles",
      "fix(ios): replace private libmis test dlopen with public CMSDecoder to prevent SIGBUS",
      "fix(ios): use 16 KiB arm64 code pages and add RFC 7292 .p12 and LiveContainer support",
-     "Merge pull request #1623 from LNPANDY/fix/1519-builds-page-progress",
-     "Merge pull request #1400 from x1nn1x/hid-gamepad-fallback",
-     "fix(builds): seed weighted stage plan, segment overall bar, and drop Up next"
+     "Merge pull request #1623 from LNPANDY/fix/1519-builds-page-progress"
     ]
    }
   ]
@@ -10207,21 +10207,21 @@
   "branches": []
  },
  "Xc1Ym/LumaNX": {
-  "pushed_at": "2026-11-24T09:12:07Z",
+  "pushed_at": "2026-11-25T06:26:47Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T09:11:16Z",
+    "last_commit": "2026-11-25T06:26:47Z",
     "subjects": [
+     "Merge pull request #53 from aniceberg/fix/captured-nro-shader-extraction",
+     "chore: sync tested nxnative snapshot",
+     "Merge remote-tracking branch 'upstream/current' into review/nro-045",
+     "Validate capture paths before invoking the NRO helper",
      "chore: prepare LumaNX 0.4.5 release",
      "chore: sync tested nxnative snapshot",
      "fix: use upstream translator source fingerprint when available",
-     "test: link IOUSBHost in the native controller harness",
-     "chore: sync tested nxnative snapshot",
-     "test: stub the window frame scheduler in controller harness",
-     "chore: sync tested nxnative snapshot",
-     "fix: preserve conditional Metal tool-lock checks"
+     "test: link IOUSBHost in the native controller harness"
     ]
    }
   ]
@@ -10699,7 +10699,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-24T19:18:38Z",
+  "pushed_at": "2026-11-25T04:33:50Z",
   "branches": [
    {
     "branch": "main",
@@ -11234,7 +11234,7 @@
   ]
  },
  "jmars125/xcx-recomp": {
-  "pushed_at": "2026-11-24T13:55:20Z",
+  "pushed_at": "2026-11-25T05:20:33Z",
   "branches": [
    {
     "branch": "master",
@@ -11595,21 +11595,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-24T17:22:20Z",
+  "pushed_at": "2026-11-25T03:02:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T17:22:19Z",
+    "last_commit": "2026-11-25T03:02:03Z",
     "subjects": [
-     "Merge pull request #199 from ShannoonRuaaa/codex/split-setup-compatibility",
-     "Merge pull request #198 from ShannoonRuaaa/codex/split-gpu-requirements",
-     "Merge pull request #197 from ShannoonRuaaa/codex/split-cpu-v2",
-     "check_isa no longer names an object's unlabelled code after the function of the object before it.",
-     "The installer's documentation describes the new computer check.",
-     "Shadow storage takes the CPU's writes to a range before a GPU write to it, so a readback the game cleared gets the GPU's bytes when they repeat.",
-     "Merge main into the setup's compatibility check; its messages get their Chinese texts and the compile step's level a test.",
-     "The v2 audit refuses unchecked AES, SHA and RDRAND, the level 3 one knows AVX-512 on narrow registers and ADX, and the releases ship the software fma's licences."
+     "Merge pull request #225 from AksharDP/t3/dedupe-pr-check-workflows",
+     "Merge pull request #224 from AksharDP/t3/fix-regions-test-cheat-places",
+     "CI runs the Python tests of the installer, the generator and the mod tools.",
+     "A mod with folders of both releases works on the Japanese release.",
+     "Run the content guard and menu text checks on pull requests and on pushes to main only, so a branch with an open PR gets one check of each.",
+     "Wrap a line of the release test's docstring.",
+     "The release test checks the mod folder scan of the tools that build the mods' code.",
+     "Merge pull request #199 from ShannoonRuaaa/codex/split-setup-compatibility"
     ]
    }
   ]
@@ -11730,21 +11730,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-24T07:41:52Z",
+  "pushed_at": "2026-11-25T04:13:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T06:29:45Z",
+    "last_commit": "2026-11-25T01:28:46Z",
     "subjects": [
+     "feat(android): add map warning qualification modes",
+     "feat(android): add opt-in process map-limit warning",
      "docs: record paired frame-timeline observer clearance",
      "docs(diagnostics): record measured Thor timeline cost and tail limits",
      "fix(diagnostics): gate new accounting before disabled work",
      "perf(diagnostics): batch recorder work at slot assembly",
      "fix(diagnostics): bound frame timeline publication cost",
-     "fix(vulkan): restore pool pages before unlocked view retirement",
-     "test(vulkan): rebase pool parity on integrated main",
-     "fix(vulkan): retire owning pool buffer views without image invalidation"
+     "fix(vulkan): restore pool pages before unlocked view retirement"
     ]
    }
   ]
@@ -11763,21 +11763,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-24T19:33:23Z",
+  "pushed_at": "2026-11-25T02:07:43Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T19:30:24Z",
+    "last_commit": "2026-11-25T02:04:07Z",
     "subjects": [
-     "Merge pull request #365 from simipoB/perf-all",
-     "v0.99: the game's sync waits drain the queue as before by default (DM_NVN_SYNC_DRAIN=0: own fence only)",
-     "rq_sync_fence: quiet while the pipelines are built before play, as rq_wait (#349, after merging perf-all 6079f01)",
-     "Merge remote-tracking branch 'origin/perf-all' into sync-pace",
-     "Asked present times keep their grid on the display's vsyncs; the display grid for the game as a switch (perf-1124 G3')",
-     "Merge main (#354 freeze reports, #355 Galar level with Arceus / Paldea v0.98) into perf-all",
-     "Merge pull request #354 from simipoB/freeze-report-android",
-     "Merge pull request #355 from simipoB/next-profiles-galar"
+     "Merge pull request #395 from simipoB/intbits-arm-only",
+     "Integer vertex formats bitcast on Arm (Mali) only by default",
+     "Merge remote-tracking branch 'origin/step-v1' into v1.0",
+     "Merge remote-tracking branch 'origin/gpu-v1' into v1.0",
+     "GPU fix C: STORE_OP_NONE for depth / stencil a pass did not write, LOAD_OP_NONE where untouched",
+     "GPU fix B: lazy clears, a clear-only depth pass becomes the next pass's load op",
+     "Lock wakes after the SVC lock (DM_SVC_WAKE=after; v1.0 default locked = as before) and waiters listed by address (perf-1124 section 3 item 1)",
+     "SVC stats (DM_SVC_STATS=1, off by default): lock / wait SVC counts, time to take the SVC lock, wake latency, a line every 10 s (perf-1124 S-1)"
     ]
    }
   ]
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-24T17:36:57Z",
+  "pushed_at": "2026-11-25T08:33:11Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T17:35:58Z",
+    "last_commit": "2026-11-25T08:32:55Z",
     "subjects": [
-     "Merge fix/win-export-endjob-first into main（gate2）",
-     "Windows 出包收尾先撤作业登记：异常时按钮不再一直灰（#2191）",
-     "Merge fix/s2a-kind-marker into main（gate2）",
-     "认手机上的 S2Arm 按 App 自带的类别标记，不靠包名猜",
-     "Merge fix/audout-flush-gaps into main（gate2）",
-     "audout / audin Flush：已放回未取的缓冲不弹掉，已追加未交硬件的一并作废；返回值 = 这次作废了缓冲（#2157）",
-     "Merge fix/tv-backup-savedata into main（gate2）",
-     "Apple TV 存档备份也带上 SaveData"
+     "Merge contrib/pr2198 into main（gate2合组）",
+     "Merge diag/guest-heat into main（gate2合组）",
+     "Merge contrib/pr2184 into main（gate2）",
+     "诊断：文件后备冷热读数，每次心跳按块数文件块脏页 / 匿名块换出页、标出 GPU 别名块（#1268）",
+     "Merge docs/lowva-mac-note into main（gate2）",
+     "排查文档：Mac 上低区空洞只剩几十 MB 是常态，不能单凭它判耗尽（#2218）",
+     "Merge contrib/pr2214 into main（gate2合组）",
+     "Merge contrib/pr2210 into main（gate2合组）"
     ]
    }
   ]
@@ -12237,7 +12237,7 @@
   ]
  },
  "jmars125/xc3-recomp": {
-  "pushed_at": "2026-11-23T04:42:55Z",
+  "pushed_at": "2026-11-25T07:31:10Z",
   "branches": [
    {
     "branch": "master",
@@ -12482,21 +12482,21 @@
   ]
  },
  "simipoB/Arceus-Native-Android": {
-  "pushed_at": "2026-11-17T22:42:02Z",
+  "pushed_at": "2026-11-25T01:07:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-15T16:52:25Z",
+    "last_commit": "2026-11-25T00:51:45Z",
     "subjects": [
-     "README: v0.44",
-     "Arceus: keep the Java side of e44fa24 out (it relies on Galar's shaders-only update, which Arceus doesn't have); the capture fix stays",
-     "Setup: Keep the phone cooler (half the workers), for phones that run hot through a long setup (#262)",
-     "Setup: compress the shader pack at zlib level 6 on every core (#262)",
-     "Setup: an unreadable captured shader is left out, not fatal; stale shaders go through setup (#215)",
-     "Setup workers: the cap by total memory applies with the memory gate too (4 GB phones: 2, not 8; #215)",
-     "Setup: a captured shader that is also in the game files no longer stops it (#261)",
-     "Point pipelines only with the point route on: a recorded one built ahead without it crashed Adreno"
+     "Merge remote-tracking branch 'origin/v1.0' into arceus-v099",
+     "Merge remote-tracking branch 'origin/step-v1' into v1.0",
+     "Merge remote-tracking branch 'origin/gpu-v1' into v1.0",
+     "GPU fix C: STORE_OP_NONE for depth / stencil a pass did not write, LOAD_OP_NONE where untouched",
+     "GPU fix B: lazy clears, a clear-only depth pass becomes the next pass's load op",
+     "Lock wakes after the SVC lock (DM_SVC_WAKE=after; v1.0 default locked = as before) and waiters listed by address (perf-1124 section 3 item 1)",
+     "SVC stats (DM_SVC_STATS=1, off by default): lock / wait SVC counts, time to take the SVC lock, wake latency, a line every 10 s (perf-1124 S-1)",
+     "Step trace (DM_STEP_TRACE=1, off by default): Sword / Shield 1.3.2's own frame measure once a second (perf-1124 S-0)"
     ]
    }
   ]
@@ -12759,7 +12759,7 @@
   "branches": []
  },
  "langslove/d2r-mobile": {
-  "pushed_at": "2026-11-24T16:26:16Z",
+  "pushed_at": "2026-11-25T08:32:09Z",
   "branches": [
    {
     "branch": "feature/android-fullscreen-v2.3.3",
@@ -12785,6 +12785,30 @@
      "Restore Android rumble for the verified type-zero selector",
      "Preserve verified 2.3.3 release source snapshot",
      "feat: integrate native D2 rumble and streamline vibration support"
+    ]
+   },
+   {
+    "branch": "feature/inventory-12x7-v2.3.5",
+    "ahead": 14,
+    "behind": 0,
+    "files": 39,
+    "real_files": 37,
+    "dirs": [
+     "dm/android",
+     "dm/host",
+     "dm/ios",
+     "dm/tools"
+    ],
+    "last_commit": "2026-11-25T08:01:45Z",
+    "subjects": [
+     "Use digital AYANEO trigger reports when available",
+     "Merge upstream v2.3.5 into Android 12x7 release",
+     "Finalize Android 2.3.3 fullscreen and 12x7 inventory release",
+     "Match rebuilt inventory sprite to validated frame geometry",
+     "Rebuild experimental inventory art from clean stock frames",
+     "Normalize inventory pack generator file ending",
+     "Build isolated Android 12x7 inventory experiment",
+     "Keep Android output stable and center frontend and loading UI"
     ]
    },
    {
@@ -13528,6 +13552,32 @@
      "Plan batch 206: the RomFS overlay and the RomFS parts leave (328)",
      "Plan batch 205: the translation thread leaves (328)",
      "Plan batch 204: the virtual cores leave (328)"
+    ]
+   }
+  ]
+ },
+ "wuqi12600-cloud/db2": {
+  "pushed_at": "2026-11-25T03:14:43Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-25T02:55:06Z",
+    "subjects": [
+     "Initial commit"
+    ]
+   }
+  ]
+ },
+ "fanpengsmile/d2r": {
+  "pushed_at": "2026-11-25T02:40:46Z",
+  "branches": [
+   {
+    "branch": "main",
+    "mirror": false,
+    "last_commit": "2026-11-25T02:27:32Z",
+    "subjects": [
+     "Initial commit"
     ]
    }
   ]
