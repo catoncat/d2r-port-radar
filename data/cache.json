@@ -1307,7 +1307,7 @@
   "branches": []
  },
  "liimyauk/d2r-mobile": {
-  "pushed_at": "2026-11-17T10:44:17Z",
+  "pushed_at": "2026-11-26T09:30:24Z",
   "branches": []
  },
  "adm1n007/d2r-mobile": {
@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-25T08:04:39Z",
+  "pushed_at": "2026-11-26T07:55:27Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T08:04:38Z",
+    "last_commit": "2026-11-26T07:55:26Z",
     "subjects": [
+     "radar 2026-11-26",
      "radar 2026-11-25",
      "radar 2026-11-24",
      "radar 2026-11-23",
      "radar 2026-11-22",
      "radar 2026-11-21",
      "radar 2026-11-20",
-     "radar 2026-11-19",
-     "radar 2026-11-18"
+     "radar 2026-11-19"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-26T03:16:43Z",
+  "pushed_at": "2026-11-26T16:33:46Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T03:16:39Z",
+    "last_commit": "2026-11-26T16:33:44Z",
     "subjects": [
-     "tools/nup: scope memoryviews in Nup.copy to preserve write and decode errors",
-     "tools/ue: stamp complete Unreal decode inputs and verify before publish",
-     "gfx/vk: respect swapchain image ownership and acquire timeouts",
-     "host/sf: give duplicate service handles and in-flight requests shared ownership",
-     "docs/ocarina: record #2909 M1/M2 and M5/M6 GPU hang follow-ups",
-     "host/save_sync: propagate getxattr failures when scanning or packing saves",
-     "host/save_sync: publish conflict cloud backup before rotating",
-     "host/input: filter mouse collections, unwrap -1..0 axes and read AC Back (PR #3352)"
+     "packing/multi-program: discover and pack sibling programs provisionally",
+     "host/hid: let the right stick drive motion controls on Mac (PR #2968)",
+     "host/offline: answer BLE GATT notification-path and disconnect calls offline (PR #2363)",
+     "packing/dump: read extracted Control NCA metadata and Ounce Acd_1 identity (PR #1562)",
+     "packing/mac: include checkout provenance in Mac app reuse key (PR #2232)",
+     "tools/bug_report: read provenance from runtime logs and sibling NSP apps (PR #2453)",
+     "gfx/nvn: round present viewport size before centring (PR #2295)",
+     "ios/build_ipa: fail when sips writes no icon PNG (PR #2448)"
     ]
    }
   ]
@@ -1951,16 +1951,16 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-25T21:40:09Z",
+  "pushed_at": "2026-11-26T08:14:17Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T21:40:08Z",
+    "last_commit": "2026-11-26T08:14:16Z",
     "subjects": [
      "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
-     "chore: 自动同步 Star 地图（208 个项目）",
+     "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-25T19:23:38Z",
+  "pushed_at": "2026-11-26T03:38:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T19:23:37Z",
+    "last_commit": "2026-11-26T03:38:24Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-25T12:44:03Z",
+  "pushed_at": "2026-11-26T11:17:14Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T12:20:22Z",
+    "last_commit": "2026-11-26T11:17:01Z",
     "subjects": [
+     "feat: Ocarina of Time in VR: the blade's own hits, shots along the two hands, a wrist panel, an item wheel, a comfort ring",
      "Merge PR #2361: resolution, MetalFX and a fixed upscale target as three rows in TotK and BotW",
      "Merge PR #2324: on M1 / M2 an Ocarina of Time render pass ends only where mesh and ordinary draws meet",
      "fix: a work folder deleted with the folder it was in is made again when its disk is connected",
      "test: the tests' Python is a copy of the Launcher's, never the one inside the signed app",
      "fix: the offline store's check denies the network itself",
      "fix: a game folder made from another game's keeps none of that game's identity",
-     "chore: pipeline rows that reached the inbox after the day's lists were pushed (11-25)",
-     "test: tests run only in the environment MNG Launcher carries"
+     "chore: pipeline rows that reached the inbox after the day's lists were pushed (11-25)"
     ]
    }
   ]
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-25T19:51:45Z",
+  "pushed_at": "2026-11-26T16:39:55Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T19:39:57Z",
+    "last_commit": "2026-11-26T16:36:05Z",
     "subjects": [
+     "Merge pull request #1641 from LNPANDY/fix/1639-kws-mac-mictester",
+     "fix(mac): guard iOS-only MicTesterView in Kid with Sword LauncherHome",
      "Merge pull request #1636 from LNPANDY/sync/upstream-b680dbb9e925",
      "patches: add 0082 to align early_fragment_tests, sumo, and vbf",
      "Engine bump: sync upstream nxnative to b680dbb9e925",
      "Merge pull request #1635 from LNPANDY/fix/refresh-img-corruption",
      "Guard primary RomFS image selection and auto-pull missing images on iOS shader rebuild",
-     "Merge pull request #1634 from LNPANDY/ci/mac-launcher-timeout-45",
-     "ci: raise Mac launcher job timeout to 45 minutes",
-     "Merge pull request #1632 from LNPANDY/fix/sheets-ui-polish"
+     "Merge pull request #1634 from LNPANDY/ci/mac-launcher-timeout-45"
     ]
    }
   ]
@@ -10412,12 +10412,12 @@
   ]
  },
  "kieusonlam/d2r-mobile": {
-  "pushed_at": "2026-11-16T12:44:48Z",
+  "pushed_at": "2026-11-26T16:21:42Z",
   "branches": [
    {
     "branch": "android-warm-seed-pack",
     "ahead": 1,
-    "behind": 93,
+    "behind": 114,
     "files": 6,
     "real_files": 4,
     "dirs": [
@@ -10431,8 +10431,8 @@
    },
    {
     "branch": "rp5",
-    "ahead": 10,
-    "behind": 5,
+    "ahead": 11,
+    "behind": 0,
     "files": 6,
     "real_files": 6,
     "dirs": [
@@ -10440,16 +10440,16 @@
      "dm/ios",
      "tools/rp5"
     ],
-    "last_commit": "2026-11-16T12:18:58Z",
+    "last_commit": "2026-11-26T16:01:31Z",
     "subjects": [
+     "Merge remote-tracking branch 'upstream/main' into rp5",
      "Merge remote-tracking branch 'upstream/main' into rp5",
      "Merge upstream v2.3.0 into rp5",
      "Merge upstream v2.2.3 into rp5",
      "Merge upstream v2.2.2 into rp5",
      "Options tabs: widened tab background to match the 340-wide tabs",
      "Options tabs: fit Gameplay / Settings on one line at font size 40",
-     "Merge remote-tracking branch 'upstream/main' into rp5",
-     "tools: spv-override generator for GPUs without fragment subgroup ops"
+     "Merge remote-tracking branch 'upstream/main' into rp5"
     ]
    }
   ]
@@ -10699,7 +10699,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-25T19:28:43Z",
+  "pushed_at": "2026-11-26T16:40:04Z",
   "branches": [
    {
     "branch": "main",
@@ -11595,21 +11595,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-26T00:30:03Z",
+  "pushed_at": "2026-11-26T08:28:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T00:30:02Z",
+    "last_commit": "2026-11-26T08:28:20Z",
     "subjects": [
-     "Merge pull request #227 from AksharDP/t3/fix-draw-validation-errors",
-     "The feedback scan is done again when the texture slot generation moves: a slot registered again may name a target of the open pass without a bind, and the kept scan would then let the draw read it live.",
-     "Review fixes: a draw reading a target's copy as a storage image no longer passes the copy to the storage-write record, and a slot's integer component is read after the slot resolves.",
-     "The game's integer textures and images are declared as integers in the shaders, and a draw that reads its own target as a storage image reads a copy.",
-     "Merge pull request #223 from AksharDP/t3/check-issues-160-204",
-     "Review fixes for the built-in FSR: room to note an object is made before the object, the SDK's device descriptor and the 16-bit flag are shared without a race, and the menu offers frame generation only where the window's surface has an image to spare.",
-     "Merge branch 'main' into t3/check-issues-160-204",
-     "A window resize with AMD's frame generation rebuilds the swapchain once: the library's first answers after a rebuild are the old swapchain's and are not taken for the new one's."
+     "Merge pull request #232 from AksharDP/t3/fix-guild-sea-flicker",
+     "A samples-passed report whose address is in no memory pool says so once in the log instead of losing its GPU write silently.",
+     "Merge pull request #231 from AksharDP/t3/analyze-draw-validation-1pct-lows",
+     "Merge pull request #218 from ShannoonRuaaa/claude/linux-cpu-v2",
+     "Review fixes: every capture takes a generation of its own, so a region an earlier capture stamped and this one did not cover (its pool refused since) no longer passes the replay's capture test; host-visible memory types lose their headroom only on a discrete GPU, so integrated GPUs, where nearly every type is host-visible, keep it; the first present counts as a title sighting; and the window summary gives the duration of the frames it counted.",
+     "The GPU also writes samples-passed reports in command order, so a draw later in the frame reads the new count, as on the console. XC2's shaders read some of these counts; the replay wrote them only from the completion thread after the GPU finished, so a later draw read the submit-time snapshot. At the Goldmouth guild a proxy near the cloud sea is tested only while the camera looks up, and the first frame it is drawn again its shader read the stale 0: the cloud sea disappeared for one frame at each camera turn. A report of one query or none after a reset is now copied with vkCmdCopyQueryPoolResults (or filled with 0) into the counter word after its pass, and the recorder thread replays that command in order. On the camera sweep at the guild, 0 of 10 runs flickered against 6 of 10 with XC2_OQ_GPU=0, at about 1 % lower mean fps.",
+     "Write-watch resets cost less: host-visible memory types get no VRAM headroom block, whose second 256 MiB block made every reset of the process about six times dearer, and the capture's queries span up to 16 frozen regions instead of stopping at each, about 8 queries a frame instead of 20. Together about 0.8 ms a frame less and a 1% low of 48.5 instead of 45.1 fps on the walk route.",
+     "The replay's texture checks take the submit-time capture's write-watch stamps for the regions it queried instead of querying them again on the replay thread, as the shadow captures already did (ported from d94ebb5, which never reached main): about 0.45 ms a frame less on the walk route."
     ]
    }
   ]
@@ -11730,21 +11730,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-26T02:54:48Z",
+  "pushed_at": "2026-11-26T09:27:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T02:28:31Z",
+    "last_commit": "2026-11-26T03:39:52Z",
     "subjects": [
+     "fix(android): make exit diagnosis asynchronous and clock-stable",
+     "test(android): integrate recovery and hold into pause fixtures",
+     "feat(android): diagnose interrupted sessions and port Settings hold",
      "fix(bench): reconcile bracketed switch evidence per feature",
      "test(bench): reproduce reviewed startup admission holes",
      "fix(bench): admit only known effective switch workloads",
      "fix(bench): log frozen effective switches at startup",
-     "Merge pull request #47 from Dorkington/fix/companion-map",
-     "Merge branch 'main' into merge/pr-47",
-     "feat(android): add map warning qualification modes",
-     "feat(android): add opt-in process map-limit warning"
+     "Merge pull request #47 from Dorkington/fix/companion-map"
     ]
    }
   ]
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-26T02:52:05Z",
+  "pushed_at": "2026-11-26T16:57:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T02:50:44Z",
+    "last_commit": "2026-11-26T16:56:04Z",
     "subjects": [
-     "Merge fix/ladder-itv-window into main（gate2）",
-     "计数时间戳日志按实际模式打印",
-     "档位梯子：游戏改自设交换间隔时窗口重攒",
-     "Merge fix/t-snapdel-swap-visibility into main（gate2）",
-     "test(snapdel): 换上判据改测「任一崩点被杀后磁盘上快照都在」，不再测并发 lstat（修 main 上偶发红）",
-     "Merge contrib/pr2238 into main（gate2）",
-     "Merge fix/dirty-claim-after-wait into main（gate2）",
-     "Merge fix/gc-reapply-after-snap-guard into main（gate2）"
+     "Merge fix/snap-restore-mtl-init into main（gate2）",
+     "Merge fix/hostproof-test-bash-locale-crash into main（gate2）",
+     "fix(snapshot): 恢复局先建 Metal 设备再起着色器路径，库查表落空不再静默",
+     "Merge fix/snaplog-bounded into main（gate2）",
+     "fix(snapshot): nifm 请求对象只留最后一对「提交 + 其后第一次取状态」，哈迪斯循环重新提交不再撑爆日志",
+     "fix(snapshot): 请求日志超限后玩家点「存下这一刻」明确提示，不报「稍后再试」",
+     "fix(snapshot): 即时存档请求日志有界——nifm 轮询不记 + 总上限兜底（托管堆随游玩时长涨到 abort）",
+     "Merge contrib/pr2267 into main（gate2）"
     ]
    }
   ]
@@ -12317,12 +12317,12 @@
   ]
  },
  "hwl513782273/d2r-mobile": {
-  "pushed_at": "2026-11-18T04:59:06Z",
+  "pushed_at": "2026-11-26T04:43:00Z",
   "branches": [
    {
     "branch": "main",
     "ahead": 1,
-    "behind": 134,
+    "behind": 155,
     "files": 1,
     "real_files": 0,
     "dirs": [],
@@ -13141,21 +13141,21 @@
   ]
  },
  "aoxzh/bayo3-recomp": {
-  "pushed_at": "2026-11-25T11:31:02Z",
+  "pushed_at": "2026-11-26T14:35:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T11:26:11Z",
+    "last_commit": "2026-11-26T14:29:44Z",
     "subjects": [
+     "Sync from private 35d9f13 (with uncommitted changes)",
+     "Sync from private 5189184",
+     "Sync from private 38e7863 (with uncommitted changes)",
      "Sync from private 256ef84",
      "Sync from private d8faecb",
      "Sync from private 5e6839b",
      "Sync from private 3b69070",
-     "Sync from private 97ab162 (with uncommitted changes)",
-     "Sync from private 6f5dadb",
-     "Sync from private b7f80cd",
-     "Sync from private 1d31131"
+     "Sync from private 97ab162 (with uncommitted changes)"
     ]
    }
   ]
@@ -13504,21 +13504,21 @@
   ]
  },
  "SubmitGame/awesome-decomp-games": {
-  "pushed_at": "2026-11-25T13:24:06Z",
+  "pushed_at": "2026-11-26T13:01:06Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T13:24:04Z",
+    "last_commit": "2026-11-26T13:01:04Z",
     "subjects": [
+     "chore: daily refresh 2026-11-26",
      "chore: daily refresh 2026-11-25",
      "chore: daily refresh 2026-11-24",
      "chore: daily refresh 2026-11-23",
      "chore: daily refresh 2026-11-22",
      "chore: daily refresh 2026-11-21",
      "chore: daily refresh 2026-11-20",
-     "chore: daily refresh 2026-11-19",
-     "chore: daily refresh 2026-11-18"
+     "chore: daily refresh 2026-11-19"
     ]
    }
   ]
