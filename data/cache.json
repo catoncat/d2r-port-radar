@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-26T16:33:46Z",
+  "pushed_at": "2026-11-27T01:36:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T16:33:44Z",
+    "last_commit": "2026-11-27T01:36:23Z",
     "subjects": [
-     "packing/multi-program: discover and pack sibling programs provisionally",
-     "host/hid: let the right stick drive motion controls on Mac (PR #2968)",
-     "host/offline: answer BLE GATT notification-path and disconnect calls offline (PR #2363)",
-     "packing/dump: read extracted Control NCA metadata and Ounce Acd_1 identity (PR #1562)",
-     "packing/mac: include checkout provenance in Mac app reuse key (PR #2232)",
-     "tools/bug_report: read provenance from runtime logs and sibling NSP apps (PR #2453)",
-     "gfx/nvn: round present viewport size before centring (PR #2295)",
-     "ios/build_ipa: fail when sips writes no icon PNG (PR #2448)"
+     "games/010023301E41C000: add Fate/stay night REMASTERED profile (PR #3161)",
+     "games/01002620102C6000: add BioShock 2 Remastered profile (PR #3261)",
+     "gfx/nvn: invalidate pool tables when registered views retire",
+     "games/010016E004796000: add Bridge Constructor Portal profile (PR #2662)",
+     "game: bring up Pokémon: Let’s Go, Pikachu! 1.0.2",
+     "packing/shaders: preserve commas in source paths",
+     "gfx/nvn: skip empty direct draws and zero-byte buffer copies before pool lookup (PR #3407)",
+     "host/motion: learn and subtract resting gyro bias in passive HID decoders (#3364)"
     ]
    }
   ]
@@ -1951,17 +1951,17 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-26T08:14:17Z",
+  "pushed_at": "2026-11-26T21:29:24Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T08:14:16Z",
+    "last_commit": "2026-11-26T21:29:23Z",
     "subjects": [
      "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
-     "chore: 自动同步 Star 地图（208 个项目）",
+     "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-26T03:38:25Z",
+  "pushed_at": "2026-11-26T17:01:53Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T03:38:24Z",
+    "last_commit": "2026-11-26T17:01:52Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-26T11:17:14Z",
+  "pushed_at": "2026-11-26T21:03:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T11:17:01Z",
+    "last_commit": "2026-11-26T20:34:19Z",
     "subjects": [
-     "feat: Ocarina of Time in VR: the blade's own hits, shots along the two hands, a wrist panel, an item wheel, a comfort ring",
-     "Merge PR #2361: resolution, MetalFX and a fixed upscale target as three rows in TotK and BotW",
-     "Merge PR #2324: on M1 / M2 an Ocarina of Time render pass ends only where mesh and ordinary draws meet",
-     "fix: a work folder deleted with the folder it was in is made again when its disk is connected",
-     "test: the tests' Python is a copy of the Launcher's, never the one inside the signed app",
-     "fix: the offline store's check denies the network itself",
-     "fix: a game folder made from another game's keeps none of that game's identity",
-     "chore: pipeline rows that reached the inbox after the day's lists were pushed (11-25)"
+     "test: check-c builds the TotK users test with TEST_EXTERNAL_SAVE, as tests/test_users.py does (after PR #2381)",
+     "test(xcx): the time-host probe gives time_host.c the system-event calls its clock task now uses (after PR #2383)",
+     "Merge PR #2381: Animal Crossing: local users with their own islands and the shared text keyboard",
+     "Merge PR #2383: Xenoblade X answers the periodic benefit claim, so Continue from a real save loads",
+     "Merge PR #2402: Tears of the Kingdom and Breath of the Wild record and replay the player's route",
+     "Merge PR #2400: Ocarina of Time scales its water substeps in float above 60 fps",
+     "Merge PR #2384: the shader translator starts with default signal dispositions",
+     "fix: everything a release carries runs on macOS 26, whatever Mac makes it (#2395)"
     ]
    }
   ]
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-26T16:39:55Z",
+  "pushed_at": "2026-11-27T00:24:31Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T16:36:05Z",
+    "last_commit": "2026-11-27T00:24:00Z",
     "subjects": [
-     "Merge pull request #1641 from LNPANDY/fix/1639-kws-mac-mictester",
-     "fix(mac): guard iOS-only MicTesterView in Kid with Sword LauncherHome",
-     "Merge pull request #1636 from LNPANDY/sync/upstream-b680dbb9e925",
-     "patches: add 0082 to align early_fragment_tests, sumo, and vbf",
-     "Engine bump: sync upstream nxnative to b680dbb9e925",
-     "Merge pull request #1635 from LNPANDY/fix/refresh-img-corruption",
-     "Guard primary RomFS image selection and auto-pull missing images on iOS shader rebuild",
-     "Merge pull request #1634 from LNPANDY/ci/mac-launcher-timeout-45"
+     "Merge pull request #1656 from LNPANDY/feat/ios-ingame-cheats",
+     "Merge pull request #1654 from LNPANDY/feat/ios-portrait-43-dual-touch",
+     "ios: add in-game cheats submenu and memory value scanner",
+     "ios: add portrait 4:3 picture slot and independent dual-orientation touch layouts",
+     "Merge pull request #1655 from LNPANDY/fix-mac-img-rebuild",
+     "Merge pull request #1653 from LNPANDY/fix-cheat-bake-dirty",
+     "Merge pull request #1648 from v0lumehi/fix/attach-runtime-log-on-issue-report",
+     "Merge pull request #1650 from LNPANDY/fix-ios-exit-sigalrm-hang"
     ]
    }
   ]
@@ -10392,12 +10392,12 @@
   "branches": []
  },
  "Carter54git/Greates-Games-Decompilations-List": {
-  "pushed_at": "2026-11-24T16:18:18Z",
+  "pushed_at": "2026-11-26T20:30:29Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-24T16:18:16Z",
+    "last_commit": "2026-11-26T20:30:27Z",
     "subjects": [
      "Add files via upload",
      "Add files via upload",
@@ -10699,7 +10699,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-26T16:40:04Z",
+  "pushed_at": "2026-11-26T17:33:35Z",
   "branches": [
    {
     "branch": "main",
@@ -10719,21 +10719,21 @@
   ]
  },
  "Desm0nt/doom-port": {
-  "pushed_at": "2026-11-17T18:35:12Z",
+  "pushed_at": "2026-11-26T19:50:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-17T18:35:09Z",
+    "last_commit": "2026-11-26T19:50:28Z",
     "subjects": [
+     "v0.5.8: 30 FPS holds only in real scenes (#55 follow-up), Gboard OK fix, PanVK no BC emulation, GPU clock floor, BC->ASTC on GPU, device fault report, shared front end update; license GPL-3.0-or-later",
      "v0.5.7: cutscenes keep the tick the game asks for, present follows it (#55)",
      "v0.5.6: SGSR 2 upscales over the game's TAA by default (steady light); A-replay route kept behind a switch",
      "v0.5.6: FSR 1 upscale instead of GSR (#44), experimental SGSR 2 temporal upscaler, gear upscaler choice",
      "v0.5.5-test1: issue #45 RADV-Xclipse test row (5 variants, restart after confirmation), DM_GFX_UBO_ALIGN",
      "v0.5.5: 40 / 45 fps limit (#36), driver fallback notice as a dialog, NVN command memory lifetime (HLE-38), RADV-Xclipse BC default back to the driver",
      "v0.5.4-test1: RADV-Xclipse loads with RADV_XCLIPSE_NO_BC_EMU=1, BC4-BC7 decoded by the port like on the stock driver (refs #45)",
-     "v0.5.3: descriptor memo keeps sets with dynamic or empty uniform buffers (VK-UBO-MEMO refinement)",
-     "v0.5.3: socket Close(0) no longer closes the process's stdin (Couldn't get file size!, refs #52); no cutout strip on Android 11-14 (refs #38); Adreno 8xx keeps the warp32 / quad-derivative rewrites off like 740-799 (refs #39 #47); Mali auto zero-copy off when only our write-combined dma-buf passes (refs #3 #27); zero-copy mode 3 (cached pages + cache maintenance) for non-coherent GPUs; descriptor memo keys fixed for UBO_DYNAMIC=0; PanVK window buffers without AFBC (refs #33); driver fallback dialog (refs #45); Glory Kill highlight setting logged (refs #42)"
+     "v0.5.3: descriptor memo keeps sets with dynamic or empty uniform buffers (VK-UBO-MEMO refinement)"
     ]
    }
   ]
@@ -11595,21 +11595,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-26T08:28:20Z",
+  "pushed_at": "2026-11-27T01:45:44Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T08:28:20Z",
+    "last_commit": "2026-11-27T01:45:44Z",
     "subjects": [
+     "Merge pull request #222 from ShannoonRuaaa/claude/language-coverage-tests",
+     "Merge pull request #221 from ShannoonRuaaa/claude/korean-no-system-fonts",
+     "Merge pull request #233 from AksharDP/t3/version-0.1.14",
+     "Version 0.1.14.",
      "Merge pull request #232 from AksharDP/t3/fix-guild-sea-flicker",
      "A samples-passed report whose address is in no memory pool says so once in the log instead of losing its GPU write silently.",
      "Merge pull request #231 from AksharDP/t3/analyze-draw-validation-1pct-lows",
-     "Merge pull request #218 from ShannoonRuaaa/claude/linux-cpu-v2",
-     "Review fixes: every capture takes a generation of its own, so a region an earlier capture stamped and this one did not cover (its pool refused since) no longer passes the replay's capture test; host-visible memory types lose their headroom only on a discrete GPU, so integrated GPUs, where nearly every type is host-visible, keep it; the first present counts as a title sighting; and the window summary gives the duration of the frames it counted.",
-     "The GPU also writes samples-passed reports in command order, so a draw later in the frame reads the new count, as on the console. XC2's shaders read some of these counts; the replay wrote them only from the completion thread after the GPU finished, so a later draw read the submit-time snapshot. At the Goldmouth guild a proxy near the cloud sea is tested only while the camera looks up, and the first frame it is drawn again its shader read the stale 0: the cloud sea disappeared for one frame at each camera turn. A report of one query or none after a reset is now copied with vkCmdCopyQueryPoolResults (or filled with 0) into the counter word after its pass, and the recorder thread replays that command in order. On the camera sweep at the guild, 0 of 10 runs flickered against 6 of 10 with XC2_OQ_GPU=0, at about 1 % lower mean fps.",
-     "Write-watch resets cost less: host-visible memory types get no VRAM headroom block, whose second 256 MiB block made every reset of the process about six times dearer, and the capture's queries span up to 16 frozen regions instead of stopping at each, about 8 queries a frame instead of 20. Together about 0.8 ms a frame less and a 1% low of 48.5 instead of 45.1 fps on the walk route.",
-     "The replay's texture checks take the submit-time capture's write-watch stamps for the regions it queried instead of querying them again on the replay thread, as the shadow captures already did (ported from d94ebb5, which never reached main): about 0.45 ms a frame less on the walk route."
+     "Merge pull request #218 from ShannoonRuaaa/claude/linux-cpu-v2"
     ]
    }
   ]
@@ -11979,21 +11979,21 @@
   "branches": []
  },
  "Desm0nt/diablo3-port": {
-  "pushed_at": "2026-11-22T20:45:28Z",
+  "pushed_at": "2026-11-26T19:32:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T20:43:38Z",
+    "last_commit": "2026-11-26T19:30:43Z",
     "subjects": [
-     "VERSION 0.2.25: controller face buttons by letter (Xbox layout) in the gear, issue #36",
-     "Gear: 'Controller face buttons' As on Switch / By letter (issue #36, pref d3_pad_layout; DM_PAD_LAYOUT=label at start, nativeSetPadLayout live): by letter maps an Xbox pad's printed A/B/X/Y to the game's A/B/X/Y; the pause menu follows it (PauseMenu.byLetter). EN / RU / zh",
-     "VERSION 0.2.24: text input OK with Latin keyboards, frame output thread setting, driver fault reports, GPU texture path for Mali / PowerVR (TEX-02 + bc-astc-gpu)",
-     "Gear: 'Frame output on its own thread' Auto / On / Off (pref d3_present; DM_GFX_PRESENT_THREAD): Auto keeps the 0.2.22 rule (on, off after two crashes of dm-present itself), On ignores the crash count, Off presents inline; the note says an OS kill (battery saver) does not count. EN / RU / zh",
-     "D3_PORT.md: port-common batch 12 in D3 (device-fault, pvr-cb-barrier, TEX-02 decoder + self-test, bc-astc-gpu): switches, how GPU ASTC combines with the ASTC texture cache, host checks, phone checks",
-     "bc-astc-gpu (port-common, KB TEX-18 / FN-60 + FN-61): on GPUs without BC, BC1 / BC2 / BC3 / BC7 textures of the GPU decode path are created as VK_FORMAT_ASTC_4x4_UNORM / _SRGB and every decode batch gets one more compute dispatch (xbg_bc_astc_encode.comp, after GameNative's block encoder, Mesa MIT) whose ASTC blocks are copied into the image instead of the RGBA8 output (1 byte a texel instead of RGBA8's 4: the size of BC2 / BC3 / BC7, twice BC1). Per family behind a 285-block self-test on the device (reference ASTC decoder xbg_astc_ref_decode.h from DOOM 2016) and the TEX-02 decode self-test; DM_GFX_BC_ASTC auto (default: on where the GPU decode runs, off on Qualcomm) / 1 / 0 (old RGBA8 path byte for byte), DM_GFX_BC_ASTC_CANDS 3 / 1, DM_GFX_BC_ASTC_VT. Module files as they are; xbg_game.cpp merged by hand at D3's lines: BcJob without BcVerify, BcUpload gets D16's partial member, no bcv::attach / subst_cpu, the format decision after D3's decoded / overlay / ASTC-cache chain (a cache hit is never decoded, so the setup-built pack keeps priority and a re-upload still upgrades a GPU-ASTC image from the pack), shims vkCmd* / ptq::submit / gpguard::Lock, fb_snapshot copies bc_astc. Adreno samples BC natively and never reaches it (one [pc] line: 'the device samples BC'). Host tests: bc_astc_encode_test and bc_gpu_decode_test all passed",
-     "TEX-02 GPU BC decoder fixes from DOOM 2016 (B&F 2.24, 06.11) for GPUs without BC (Mali / PowerVR), as TL2 c01a30e (= DOS2 4016472): D3 still had the 05.11 decoder (byte-identical to TL2's before that commit) that a driver miscompiled into black 4x4 patches (BC6H mode-1 blocks with zero pixel rows 1-3). xbg_bc_gpu.glsl / xbg_bc_gpu.h / xbg_bc_decode.comp / xbg_bc_decode_spv.h / tests byte-identical to DOOM 2016: branchless bit extractor without undefined shifts, BC6H block decoded once outside the row loop, clamped shift counts. Engine (bcgpu): DM_GFX_BC_SELFTEST=1 (default) - every new decode pipeline first decodes 2048 known-answer blocks (xbg_bc_kat_blocks) on the device and compares them with the CPU decoder; a mismatch sends that format to the CPU decoder (=2 log only, =0 off); its submission goes through ptq::submit (present-thread queue lock, as TL2 HEAD); DM_GFX_BC_BARRIER=full (default: ALL_COMMANDS barriers between the batch steps; narrow = the old pairs). Adreno samples BC natively (DM_GFX_NATIVE_BC=1) and never reaches this path. Log: 'NVN BC decode: self-test fmt=... bad=... -> gpu|cpu', 'NVN BC decode: barriers=full'. Host test bc_gpu_decode_test: all passed",
-     "pvr-cb-barrier (port-common, KB PVR-11 / FN-63): optional full memory barrier (ALL_COMMANDS -> ALL_COMMANDS, MEMORY_WRITE -> MEMORY_READ|WRITE) right after vkBeginCommandBuffer of the engine's primary command buffers (slot command buffer and its prologue) through xbg_cb_begin; DM_GFX_PVR_CB_BARRIER 0 = off (default, command buffers recorded exactly as before), 1 = on a PowerVR (vendor 0x1010), 2 = on any GPU; '[pc] pvr-cb-barrier: applied|skipped' at the first command buffer; candidate fix for PowerVR cross-submission visibility, not confirmed on a phone; synced with sync_common.sh (applies cleanly)"
+     "README: CRLF line endings back (the license edit had rewritten them)",
+     "VERSION 0.2.26: peanuts speed-ups (GPU clock floor, frame-cap pacing, command thread, stock-driver tile rules, fps counter with throttle dot), Adreno two-digit models + 'allow unsupported drivers', PanVK without in-driver BC emulation, GPL-3.0-or-later",
+     "License: the port is GPL-3.0-or-later (owner 26.11): peanuts-native code (GPL-3.0-or-later) is in; d3hack code used under GPL-3 (its repo names no GPL version, GPL-2 section 9); the d2r-mobile MIT notice kept in LICENSE-MIT; README / THIRD_PARTY updated, peanuts-native row",
+     "Merge branch 'drv12-panvk-no-bc-emu'",
+     "Merge branch 'pc/vk-enc' into peanuts-d3",
+     "Merge branch 'pc/fps-counter' into peanuts-d3",
+     "Merge branch 'pc/longframe' into peanuts-d3",
+     "Merge branch 'pc/stock-tile' into peanuts-d3"
     ]
    }
   ]
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-26T16:57:48Z",
+  "pushed_at": "2026-11-27T01:46:51Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T16:56:04Z",
+    "last_commit": "2026-11-27T01:40:24Z",
     "subjects": [
-     "Merge fix/snap-restore-mtl-init into main（gate2）",
-     "Merge fix/hostproof-test-bash-locale-crash into main（gate2）",
-     "fix(snapshot): 恢复局先建 Metal 设备再起着色器路径，库查表落空不再静默",
-     "Merge fix/snaplog-bounded into main（gate2）",
-     "fix(snapshot): nifm 请求对象只留最后一对「提交 + 其后第一次取状态」，哈迪斯循环重新提交不再撑爆日志",
-     "fix(snapshot): 请求日志超限后玩家点「存下这一刻」明确提示，不报「稍后再试」",
-     "fix(snapshot): 即时存档请求日志有界——nifm 轮询不记 + 总上限兜底（托管堆随游玩时长涨到 abort）",
-     "Merge contrib/pr2267 into main（gate2）"
+     "Merge fix/pso-mesh-budget into main（gate2）",
+     "fix(gfx/nvn): 网格管线计入常驻、参与淘汰与地址额度；记 AGX 编译变体上限按累计算的实测（D-EH7W）",
+     "diag(gfx/nvn): 管线占用行的常驻条数分项打（表里 / 预热已建未领 / 新放的拉取基础管线）",
+     "diag(gfx/nvn): 管线累计建造每满 256 条打一行常驻条数与占用（D-EH7W：AGX 编译变体超限定口径）",
+     "Merge contrib/pr2276 into main（gate2）",
+     "Merge contrib/pr2274 into main（gate2）",
+     "Merge contrib/pr2255-rb into main（gate2）",
+     "Merge fix/lang-from-romfs into main（gate2）"
     ]
    }
   ]
@@ -12334,21 +12334,21 @@
   ]
  },
  "Desm0nt/torchlight2-port": {
-  "pushed_at": "2026-11-23T15:58:02Z",
+  "pushed_at": "2026-11-26T18:36:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-23T15:56:35Z",
+    "last_commit": "2026-11-26T18:36:02Z",
     "subjects": [
-     "0.1.13: version (PR #29: two-digit Adreno models accept Turnip; allow unsupported drivers switch)",
-     "Merge pull request #29 from danjaniell/feat/any-vulkan-driver",
-     "feat: let the player allow Vulkan drivers this phone rejects",
-     "fix: accept Adreno GPUs whose kernel model name has two digits",
-     "TL2 issue #16: Brazilian Portuguese / Polish game text instead of the English fallback; the game's 11 languages in the gear",
-     "0.1.12: version (issue #27: game heap sized by RAM)",
-     "TL2 issue #27: size the game heap by RAM (RAM - 3 GB, 3122 MB .. 6 GiB), reserve 7 GB + alias",
-     "TL2 issue #27: +512 MB game heap on devices with RAM+swap >= 6 GB, game heap readout and low-water log"
+     "0.1.16: version (issue #31: HP / MP numbers beside the HUD orb)",
+     "TL2: HP / MP numbers beside the HUD orb (issue #31)",
+     "0.1.15: version (PR #32 by danjaniell: 3D resolution with FSR 1, texture filtering, low latency, cheats, ExeFS patches, mod item icons)",
+     "docs: TL2 journal, PR #32 merged and checked on the phone",
+     "Merge pull request #32 from danjaniell/feat/scene-scale-and-host-tools",
+     "0.1.14: version; README: GPL-3.0+ components from peanuts-native make the APK GPL-3.0-or-later",
+     "docs: TL2 journal, phone runs of the merged modules (26.11)",
+     "docs: TL2 journal, GameNative and peanuts-native modules in main"
     ]
    }
   ]
@@ -13141,21 +13141,21 @@
   ]
  },
  "aoxzh/bayo3-recomp": {
-  "pushed_at": "2026-11-26T14:35:06Z",
+  "pushed_at": "2026-11-26T19:49:13Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T14:29:44Z",
+    "last_commit": "2026-11-26T19:42:58Z",
     "subjects": [
+     "Sync from private 61e5009 (with uncommitted changes)",
      "Sync from private 35d9f13 (with uncommitted changes)",
      "Sync from private 5189184",
      "Sync from private 38e7863 (with uncommitted changes)",
      "Sync from private 256ef84",
      "Sync from private d8faecb",
      "Sync from private 5e6839b",
-     "Sync from private 3b69070",
-     "Sync from private 97ab162 (with uncommitted changes)"
+     "Sync from private 3b69070"
     ]
    }
   ]
@@ -13583,13 +13583,15 @@
   ]
  },
  "N1v0k/D2R-Rakanishu": {
-  "pushed_at": "2026-11-25T21:56:38Z",
+  "pushed_at": "2026-11-26T21:13:15Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T21:32:34Z",
+    "last_commit": "2026-11-26T20:47:34Z",
     "subjects": [
+     "README: screenshots",
+     "Release 1.1.0",
      "README: screenshots",
      "Release 1.0.1",
      "README: screenshots",
@@ -13597,5 +13599,9 @@
     ]
    }
   ]
+ },
+ "0xBEEBAD/d2r-mobile": {
+  "pushed_at": "2026-11-26T18:12:17Z",
+  "branches": []
  }
 }
