@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-26T07:55:27Z",
+  "pushed_at": "2026-11-27T07:54:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T07:55:26Z",
+    "last_commit": "2026-11-27T07:54:25Z",
     "subjects": [
+     "radar 2026-11-27",
      "radar 2026-11-26",
      "radar 2026-11-25",
      "radar 2026-11-24",
      "radar 2026-11-23",
      "radar 2026-11-22",
      "radar 2026-11-21",
-     "radar 2026-11-20",
-     "radar 2026-11-19"
+     "radar 2026-11-20"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-27T01:36:26Z",
+  "pushed_at": "2026-11-27T11:43:05Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T01:36:23Z",
+    "last_commit": "2026-11-27T11:42:58Z",
     "subjects": [
-     "games/010023301E41C000: add Fate/stay night REMASTERED profile (PR #3161)",
-     "games/01002620102C6000: add BioShock 2 Remastered profile (PR #3261)",
-     "gfx/nvn: invalidate pool tables when registered views retire",
-     "games/010016E004796000: add Bridge Constructor Portal profile (PR #2662)",
-     "game: bring up Pokémon: Let’s Go, Pikachu! 1.0.2",
-     "packing/shaders: preserve commas in source paths",
-     "gfx/nvn: skip empty direct draws and zero-byte buffer copies before pool lookup (PR #3407)",
-     "host/motion: learn and subtract resting gyro bias in passive HID decoders (#3364)"
+     "game: Star Fox adds prewarm seeds",
+     "game: DRAGON BALL XENOVERSE 2 FOR NINTENDO SWITCH adds prewarm seeds",
+     "game: Fire Emblem: Three Houses adds prewarm seeds",
+     "game: Yoshi and the Mysterious Book adds prewarm seeds",
+     "game: Unicorn Overlord (Asia) adds prewarm seeds",
+     "game: The Legend of Zelda: Link's Awakening adds prewarm seeds",
+     "game: Mario Kart World adds prewarm seeds",
+     "game: Super Mario Party Jamboree adds prewarm seeds"
     ]
    }
   ]
@@ -1951,18 +1951,18 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-26T21:29:24Z",
+  "pushed_at": "2026-11-27T08:28:07Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T21:29:23Z",
+    "last_commit": "2026-11-27T08:28:06Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（212 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
-     "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）"
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-26T17:01:53Z",
+  "pushed_at": "2026-11-27T01:47:17Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T17:01:52Z",
+    "last_commit": "2026-11-27T01:47:16Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -4157,21 +4157,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-26T21:03:20Z",
+  "pushed_at": "2026-11-27T12:27:00Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T20:34:19Z",
+    "last_commit": "2026-11-27T12:11:15Z",
     "subjects": [
-     "test: check-c builds the TotK users test with TEST_EXTERNAL_SAVE, as tests/test_users.py does (after PR #2381)",
-     "test(xcx): the time-host probe gives time_host.c the system-event calls its clock task now uses (after PR #2383)",
-     "Merge PR #2381: Animal Crossing: local users with their own islands and the shared text keyboard",
-     "Merge PR #2383: Xenoblade X answers the periodic benefit claim, so Continue from a real save loads",
-     "Merge PR #2402: Tears of the Kingdom and Breath of the Wild record and replay the player's route",
-     "Merge PR #2400: Ocarina of Time scales its water substeps in float above 60 fps",
-     "Merge PR #2384: the shader translator starts with default signal dispositions",
-     "fix: everything a release carries runs on macOS 26, whatever Mac makes it (#2395)"
+     "Merge PR #2408: Pokopia: enable NVN_DIRTY_SPLIT so overlapping memory pools stay tracked",
+     "Merge PR #2407: docs(controls): the anti-aliasing rows are Breath of the Wild 1.9.0's too",
+     "Merge PR #2387: Breath of the Wild 1.9.0 HDR / EDR on the Mac, from TotK's HDR engine",
+     "fix(hdr): the headroom the canvas is drawn for is tested; layer changes commit at once",
+     "Pokopia: enable NVN_DIRTY_SPLIT so overlapping memory pools stay tracked",
+     "fix(hdr): Ocarina of Time links again; the BotW twin checks the constants it repeats",
+     "docs(controls): the anti-aliasing rows are Breath of the Wild 1.9.0's too (after PR #2360)",
+     "refactor(hdr): the tagged layer is the only HDR layer; the macOS 14 switch is gone"
     ]
    }
   ]
@@ -9513,21 +9513,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-27T00:24:31Z",
+  "pushed_at": "2026-11-27T12:13:07Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T00:24:00Z",
+    "last_commit": "2026-11-27T12:12:35Z",
     "subjects": [
+     "feat(ios): add online cheat fetching, bundled seeding, and safety badges (#1662)",
+     "feat(mac): add auto-fetch cheats option, online fetcher, and fixed-address/safety warnings (#1664)",
+     "patches: add public cheat fetcher, iOS seeding, and ARM64 bypass safety check in 0075 (#1663)",
+     "ios: decouple portrait 4:3 screen aspect from Fit/Fill and drop cheats menu icon (#1660)",
+     "fix(signing): surface noSigningAccount card when Xcode is signed out (#1659)",
      "Merge pull request #1656 from LNPANDY/feat/ios-ingame-cheats",
      "Merge pull request #1654 from LNPANDY/feat/ios-portrait-43-dual-touch",
-     "ios: add in-game cheats submenu and memory value scanner",
-     "ios: add portrait 4:3 picture slot and independent dual-orientation touch layouts",
-     "Merge pull request #1655 from LNPANDY/fix-mac-img-rebuild",
-     "Merge pull request #1653 from LNPANDY/fix-cheat-bake-dirty",
-     "Merge pull request #1648 from v0lumehi/fix/attach-runtime-log-on-issue-report",
-     "Merge pull request #1650 from LNPANDY/fix-ios-exit-sigalrm-hang"
+     "ios: add in-game cheats submenu and memory value scanner"
     ]
    }
   ]
@@ -10116,7 +10116,7 @@
   ]
  },
  "cxu/d2r-mobile": {
-  "pushed_at": "2026-11-23T00:41:45Z",
+  "pushed_at": "2026-11-27T10:36:05Z",
   "branches": []
  },
  "oneforoneofone/d2r-mobile": {
@@ -10207,21 +10207,21 @@
   "branches": []
  },
  "Xc1Ym/LumaNX": {
-  "pushed_at": "2026-11-26T02:22:50Z",
+  "pushed_at": "2026-11-27T08:21:05Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T02:22:47Z",
+    "last_commit": "2026-11-27T08:20:58Z",
     "subjects": [
      "chore: sync tested nxnative snapshot",
-     "Merge pull request #53 from aniceberg/fix/captured-nro-shader-extraction",
-     "chore: sync tested nxnative snapshot",
-     "Merge remote-tracking branch 'upstream/current' into review/nro-045",
-     "Validate capture paths before invoking the NRO helper",
-     "chore: prepare LumaNX 0.4.5 release",
-     "chore: sync tested nxnative snapshot",
-     "fix: use upstream translator source fingerprint when available"
+     "Merge pull request #57 from Xc1Ym/codex/fix-nxnative-sync-20261127",
+     "Merge pull request #58 from Xc1Ym/codex/fix-worker-result-delivery-20261127",
+     "Merge pull request #56 from Xc1Ym/codex/fix-engine-extraction-20261127",
+     "fix: drain worker output before finalizing its task",
+     "test: cover the current and legacy engine extraction calls",
+     "test: stub the stick motion service in the controller harness",
+     "fix: adapt the engine extract() call to its 9-argument tail"
     ]
    }
   ]
@@ -10483,21 +10483,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-25T15:11:17Z",
+  "pushed_at": "2026-11-27T12:23:56Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T15:10:44Z",
+    "last_commit": "2026-11-27T12:23:53Z",
     "subjects": [
+     "game code: a stale actor in the target manager is ignored (SavageWind's, #415 #596)",
      "donations: $26.70 raised toward the POCO X7 Pro goal (+R$2, $0.34 at 0.1697 USD/BRL)",
      "0.5.0-beta: versionCode 53, README release lines",
      "amiibo: a second tap on the rune button opens the picker; the top button removed",
      "amiibo: a big \"Touch the amiibo\" button at the top while the game looks for one",
      "amiibo: the menu no longer opens by itself while the rune aims",
      "menu: lists scroll with a finger and glide; the overlay's settings folded",
-     "amiibo: a virtual reader (nfp:user) with the figure picked in Controls (#181)",
-     "0.4.13-beta: versionCode 52, README release lines"
+     "amiibo: a virtual reader (nfp:user) with the figure picked in Controls (#181)"
     ]
    }
   ]
@@ -10691,7 +10691,7 @@
   "branches": []
  },
  "EthanMYX/d2r-mobile": {
-  "pushed_at": "2026-11-12T09:11:29Z",
+  "pushed_at": "2026-11-27T09:32:34Z",
   "branches": []
  },
  "DQGX5BP/d2r-mobile": {
@@ -10699,7 +10699,7 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-26T17:33:35Z",
+  "pushed_at": "2026-11-27T07:09:11Z",
   "branches": [
    {
     "branch": "main",
@@ -11595,7 +11595,7 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-27T01:45:44Z",
+  "pushed_at": "2026-11-27T01:53:02Z",
   "branches": [
    {
     "branch": "main",
@@ -11686,7 +11686,7 @@
   "branches": []
  },
  "arika-xsf/d2r-mobile": {
-  "pushed_at": "2026-11-04T16:13:52Z",
+  "pushed_at": "2026-11-27T11:55:06Z",
   "branches": []
  },
  "jmars125/xc2-recomp": {
@@ -11730,21 +11730,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-26T09:27:33Z",
+  "pushed_at": "2026-11-27T09:27:25Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T03:39:52Z",
+    "last_commit": "2026-11-27T09:15:26Z",
     "subjects": [
-     "fix(android): make exit diagnosis asynchronous and clock-stable",
-     "test(android): integrate recovery and hold into pause fixtures",
-     "feat(android): diagnose interrupted sessions and port Settings hold",
-     "fix(bench): reconcile bracketed switch evidence per feature",
-     "test(bench): reproduce reviewed startup admission holes",
-     "fix(bench): admit only known effective switch workloads",
-     "fix(bench): log frozen effective switches at startup",
-     "Merge pull request #47 from Dorkington/fix/companion-map"
+     "fix(companion): bound cache logs across store lifetimes",
+     "fix(companion): deliver cache logs off the draw path",
+     "feat(companion): expose bitmap cache occupancy counters",
+     "Merge pull request #44 from Dorkington/fix/menu-capture-background",
+     "Merge remote-tracking branch 'origin/main' into merge/pr-44",
+     "Merge pull request #70 from GTomasel/upstream/android-stability",
+     "Merge remote-tracking branch 'origin/main' into merge/pr-70",
+     "test(totk): retain the native legacy aspect owner in menu fixtures"
     ]
    }
   ]
@@ -12162,21 +12162,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-27T01:46:51Z",
+  "pushed_at": "2026-11-27T12:36:08Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T01:40:24Z",
+    "last_commit": "2026-11-27T12:23:43Z",
     "subjects": [
-     "Merge fix/pso-mesh-budget into main（gate2）",
-     "fix(gfx/nvn): 网格管线计入常驻、参与淘汰与地址额度；记 AGX 编译变体上限按累计算的实测（D-EH7W）",
-     "diag(gfx/nvn): 管线占用行的常驻条数分项打（表里 / 预热已建未领 / 新放的拉取基础管线）",
-     "diag(gfx/nvn): 管线累计建造每满 256 条打一行常驻条数与占用（D-EH7W：AGX 编译变体超限定口径）",
-     "Merge contrib/pr2276 into main（gate2）",
-     "Merge contrib/pr2274 into main（gate2）",
-     "Merge contrib/pr2255-rb into main（gate2）",
-     "Merge fix/lang-from-romfs into main（gate2）"
+     "Merge fix/tf-capture-with-raster into main（gate2）",
+     "Merge fix/bindstale-spawn into main（gate2）",
+     "test(nvn): bindstale 反证子进程改 posix_spawn 起本程序，不在多线程进程 fork 后直接调 prog_get",
+     "Merge fix/img-fail-keep-rc into main（gate2）",
+     "Merge fix/par-macos15-gate into main（gate2）",
+     "Merge contrib/pr2290 into main（gate2）",
+     "fix(pack/jobs): 信号说明是内部原因句，标非玩家句",
+     "fix(pack/jobs): 写 game.img 失败时原因带退出码，不再把工具链记录行当失败原因（#2295）"
     ]
    }
   ]
