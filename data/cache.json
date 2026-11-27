@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-27T11:43:05Z",
+  "pushed_at": "2026-11-27T20:51:39Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T11:42:58Z",
+    "last_commit": "2026-11-27T20:51:29Z",
     "subjects": [
-     "game: Star Fox adds prewarm seeds",
-     "game: DRAGON BALL XENOVERSE 2 FOR NINTENDO SWITCH adds prewarm seeds",
-     "game: Fire Emblem: Three Houses adds prewarm seeds",
-     "game: Yoshi and the Mysterious Book adds prewarm seeds",
-     "game: Unicorn Overlord (Asia) adds prewarm seeds",
-     "game: The Legend of Zelda: Link's Awakening adds prewarm seeds",
+     "game: Captain Toad: Treasure Tracker adds prewarm seeds",
+     "game/0400453019AA8001: add prewarm seeds",
+     "game: DARK SOULS: REMASTERED adds prewarm seeds",
+     "game/0100FE701475A000: add prewarm seeds",
+     "game: The Legend of Zelda: Breath of the Wild adds prewarm seeds",
+     "game: Metroid Dread adds prewarm seeds",
      "game: Mario Kart World adds prewarm seeds",
-     "game: Super Mario Party Jamboree adds prewarm seeds"
+     "game: Donkey Kong Bananza adds prewarm seeds"
     ]
    }
   ]
@@ -1951,19 +1951,19 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-27T08:28:07Z",
+  "pushed_at": "2026-11-27T21:14:48Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T08:28:06Z",
+    "last_commit": "2026-11-27T21:14:47Z",
     "subjects": [
+     "chore: 自动同步 Star 地图（212 个项目）",
      "chore: 自动同步 Star 地图（212 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
-     "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）"
     ]
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-27T01:47:17Z",
+  "pushed_at": "2026-11-27T12:39:04Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T01:47:16Z",
+    "last_commit": "2026-11-27T12:39:03Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -2349,12 +2349,12 @@
   ]
  },
  "biglawine/d2r-mobile": {
-  "pushed_at": "2026-10-22T12:33:31Z",
+  "pushed_at": "2026-11-27T13:39:16Z",
   "branches": [
    {
     "branch": "codex/harmony-port",
     "ahead": 1,
-    "behind": 14,
+    "behind": 143,
     "files": 294,
     "real_files": 294,
     "dirs": [
@@ -2368,7 +2368,7 @@
    {
     "branch": "harmony",
     "ahead": 361,
-    "behind": 0,
+    "behind": 129,
     "files": 280,
     "real_files": 241,
     "dirs": [
@@ -2394,9 +2394,35 @@
     ]
    },
    {
+    "branch": "harmony-0.20",
+    "ahead": 34,
+    "behind": 0,
+    "files": 71,
+    "real_files": 71,
+    "dirs": [
+     "dm/android",
+     "dm/gfx",
+     "dm/harmony",
+     "dm/host",
+     "dm/ios",
+     "dm/tools"
+    ],
+    "last_commit": "2026-11-27T12:15:12Z",
+    "subjects": [
+     "harmony: optional game surface source type for the present surface (DM_SURFACE_GAME, DM_SURFACE_FRAMEWORK; off by default)",
+     "gfx/harmony: present tier ladder 60 / 45 (90 Hz) / 40 (120 Hz) / 30 / 20 (DM_PACE_LADDER, off by default)",
+     "tools: agc_upload.py fixes from the first read-only run against AGC",
+     "tools: agc_upload.py invitation test flow (Testing API) that never shrinks the tester list",
+     "gfx: deferred Vulkan command stream on a worker thread (DM_GFX_DEFER, default off; no gain on Maleoon)",
+     "harmony: 0.20.9 (code 162)",
+     "harmony: mouse pointer mode for tablet / PC (Mac App touch_mac.c); keycap overlay without Mac-only UI choices",
+     "harmony: 0.20.8 (code 161)"
+    ]
+   },
+   {
     "branch": "harmony-next",
     "ahead": 362,
-    "behind": 0,
+    "behind": 129,
     "files": 282,
     "real_files": 243,
     "dirs": [
@@ -4157,21 +4183,21 @@
   ]
  },
  "ly05010419/MacNativeGames": {
-  "pushed_at": "2026-11-27T12:27:00Z",
+  "pushed_at": "2026-11-27T23:15:10Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T12:11:15Z",
+    "last_commit": "2026-11-27T21:05:41Z",
     "subjects": [
-     "Merge PR #2408: Pokopia: enable NVN_DIRTY_SPLIT so overlapping memory pools stay tracked",
-     "Merge PR #2407: docs(controls): the anti-aliasing rows are Breath of the Wild 1.9.0's too",
-     "Merge PR #2387: Breath of the Wild 1.9.0 HDR / EDR on the Mac, from TotK's HDR engine",
-     "fix(hdr): the headroom the canvas is drawn for is tested; layer changes commit at once",
-     "Pokopia: enable NVN_DIRTY_SPLIT so overlapping memory pools stay tracked",
-     "fix(hdr): Ocarina of Time links again; the BotW twin checks the constants it repeats",
-     "docs(controls): the anti-aliasing rows are Breath of the Wild 1.9.0's too (after PR #2360)",
-     "refactor(hdr): the tagged layer is the only HDR layer; the macOS 14 switch is gone"
+     "fix: Odyssey carries its own relr.py, Start game opens versions without options, the app icon is optional",
+     "feat(vr): OOT window parallax and the room around the screens; items come out by the game's draw",
+     "feat(vr): OOT VR rows 3, 4, 18, 31, 68, 86, 90, and the hands reach the items",
+     "fix(vr): OOT legs step, back items hidden, string rest from the game's pose",
+     "feat(vr): OOT VR rows from HookshotVR, 2026-11-27",
+     "chore: one Bananza pipeline that reached the inbox during the 2026-11-27 merge",
+     "chore: shader lists from the site inbox (2026-11-27)",
+     "Merge PR #2408: Pokopia: enable NVN_DIRTY_SPLIT so overlapping memory pools stay tracked"
     ]
    }
   ]
@@ -9513,21 +9539,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-27T12:13:07Z",
+  "pushed_at": "2026-11-27T20:58:36Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T12:12:35Z",
+    "last_commit": "2026-11-27T20:52:19Z",
     "subjects": [
-     "feat(ios): add online cheat fetching, bundled seeding, and safety badges (#1662)",
-     "feat(mac): add auto-fetch cheats option, online fetcher, and fixed-address/safety warnings (#1664)",
-     "patches: add public cheat fetcher, iOS seeding, and ARM64 bypass safety check in 0075 (#1663)",
-     "ios: decouple portrait 4:3 screen aspect from Fit/Fill and drop cheats menu icon (#1660)",
-     "fix(signing): surface noSigningAccount card when Xcode is signed out (#1659)",
-     "Merge pull request #1656 from LNPANDY/feat/ios-ingame-cheats",
-     "Merge pull request #1654 from LNPANDY/feat/ios-portrait-43-dual-touch",
-     "ios: add in-game cheats submenu and memory value scanner"
+     "Merge pull request #1638 from Haseenesss/fix/1514-cjk-font-weight",
+     "Merge pull request #1677 from LNPANDY/fix/1652-seed-provisional-and-prefill",
+     "Merge pull request #1671 from LNPANDY/fix/1626-nlk-makefile-space-quote",
+     "fix(mac): quote No Lag Kart PGO profile path in Makefile",
+     "fix(mng): heal broken Ocarina of Time app-icon.json URL (#1644) (#1672)",
+     "fix(ios): support separate romfs.img for Kid with Sword builds (#1675)",
+     "feat(ios): add full-top portrait frame option past Dynamic Island (#1674)",
+     "feat(ios): expose touch controls section in Controllers view (#1676)"
     ]
    }
   ]
@@ -10483,21 +10509,21 @@
   ]
  },
  "mamcjr/BOTWRecompAndroid": {
-  "pushed_at": "2026-11-27T12:23:56Z",
+  "pushed_at": "2026-11-27T18:13:42Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T12:23:53Z",
+    "last_commit": "2026-11-27T18:10:57Z",
     "subjects": [
-     "game code: a stale actor in the target manager is ignored (SavageWind's, #415 #596)",
-     "donations: $26.70 raised toward the POCO X7 Pro goal (+R$2, $0.34 at 0.1697 USD/BRL)",
-     "0.5.0-beta: versionCode 53, README release lines",
-     "amiibo: a second tap on the rune button opens the picker; the top button removed",
-     "amiibo: a big \"Touch the amiibo\" button at the top while the game looks for one",
-     "amiibo: the menu no longer opens by itself while the rune aims",
-     "menu: lists scroll with a finger and glide; the overlay's settings folded",
-     "amiibo: a virtual reader (nfp:user) with the figure picked in Controls (#181)"
+     "0.5.3-beta: versionCode 56, README release lines",
+     "Driver compatibility > 16-bit depth: D16, D32 or D24 (#516, #240)",
+     "0.5.2-beta: versionCode 55, README release lines (game code rebuilt once)",
+     "Mod import: a folder with exefs/ too (code mods)",
+     "codemods: the files listed once per change, a line when no main is there",
+     "Code mods: a mod's exefs IPS patches and extra modules (#390)",
+     "game code: the stale-actor check also takes the link's + 0x88 (#401)",
+     "0.5.1-beta: versionCode 54, README release lines (game code rebuilt once)"
     ]
    }
   ]
@@ -10699,21 +10725,21 @@
   "branches": []
  },
  "valentderah/totk-pc-recomp": {
-  "pushed_at": "2026-11-27T07:09:11Z",
+  "pushed_at": "2026-11-27T18:41:08Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-22T05:26:41Z",
+    "last_commit": "2026-11-27T17:34:21Z",
     "subjects": [
-     "Update inctructs",
-     "The FidelityFX SDK sources build with libc++ (llvm-mingw, the Windows release toolchain): ffx_compat.h includes <mutex> for the std::lock_guard in ffx_vk.cpp, which ffx_types.h left to libstdc++'s <shared_mutex>",
-     "Up version 0.5.0",
-     "Merge task/overlap: sync_ahead = 1 also works without shadow storage on a discrete GPU, as Savage Wind's overlap: the GPU reads the game's memory in place behind guards (staged mirror syncs, word-merged write-backs, CPU deswizzle of rewritten textures, invalidates that wait for their writer, one-off small targets), and TOTK_SYNC_AHEAD=check measures what a late wait would race; off by default. On machine B the frame is 1.0 ms (fort) to 2.3 ms (islands) shorter with the 1% lows within noise (#1129, #1192)",
-     "totk.ini.example: sync_ahead no longer needs shadow storage on a discrete GPU; without it the GPU reads the game's memory in place behind guards, and only memory = import still refuses the switch",
-     "The in-place frame ahead merges every mirror write-back by words, is refused with import memory, and the probe checks its pending-write list",
-     "Merge pull request #1330: a perf trace can run without its dirty census (perf_census = 0), which costs a traced Steam Deck frame about 3 %; the census runs only in the import memory mode (klikso, #946)",
-     "perf_census: the settings row says the census runs only in the import memory mode, since a mirror prints its own mem lines (#946)"
+     "Up version 0.5.1",
+     "Merge pull request #1436: a mod that ships its own UI layout archive gets the port's 60 fps quick-menu fix and the ultrawide layout made on its copy (mod_layout, default 1) (Unix-Epoch) (#545, #907)",
+     "Merge pull request #1375: on game 1.1.0 a thunderstorm above 30 fps draws its lightning chances scaled by the frame, as on 1.2.1 and 1.4.3 (shenjackyuanjie) (#1287)",
+     "Merge pull request #1406: the PGO helper finds llvm-profdata on PATH when no toolchain is downloaded or given (ICUMADETHIS)",
+     "Merge pull request #1404: sampling reports attribute samples in C++ functions to their own demangled names (ICUMADETHIS)",
+     "Merge pull request #1395: Linux install paths that differ only in case get separate temp folders (ICUMADETHIS)",
+     "Merge task/prrender: FSR keeps the game's tonemap on 1.4.3 so the picture is no longer washed out, frame generation no longer smears the scope's side strips, and staged mirror uploads merge overlapping ranges, from pull requests #1494, #1495 (oHatless) and #1509 (Marjaperse) (#1409)",
+     "Merge task/pr110: game 1.1.0 gets direct mouse, grass range, live shadow range, steady detail and the ability, optref and audio drain sets of 1.2.1 and 1.4.3, from pull requests #1499 to #1505 (Marjaperse) (#751, #606, #1005, #337)"
     ]
    }
   ]
@@ -11730,21 +11756,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-27T09:27:25Z",
+  "pushed_at": "2026-11-27T18:06:33Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T09:15:26Z",
+    "last_commit": "2026-11-27T13:23:07Z",
     "subjects": [
-     "fix(companion): bound cache logs across store lifetimes",
-     "fix(companion): deliver cache logs off the draw path",
-     "feat(companion): expose bitmap cache occupancy counters",
-     "Merge pull request #44 from Dorkington/fix/menu-capture-background",
-     "Merge remote-tracking branch 'origin/main' into merge/pr-44",
-     "Merge pull request #70 from GTomasel/upstream/android-stability",
-     "Merge remote-tracking branch 'origin/main' into merge/pr-70",
-     "test(totk): retain the native legacy aspect owner in menu fixtures"
+     "fix(map-warn): attribute cache rejection and soften startup wording",
+     "fix: select fast cadence for exhausted map warning guards",
+     "fix: add hysteresis to the map warning headroom guard",
+     "feat: adapt map warning scans to mapping pressure",
+     "fix: reuse fresh lag samples for map warnings",
+     "fix: normalize warning-only sampler scheduling",
+     "feat: enable map-limit warnings by default",
+     "fix(companion): bound cache logs across store lifetimes"
     ]
    }
   ]
@@ -11763,21 +11789,21 @@
   ]
  },
  "simipoB/Galar-Native-Android": {
-  "pushed_at": "2026-11-25T22:57:45Z",
+  "pushed_at": "2026-11-27T20:39:08Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-25T02:04:07Z",
+    "last_commit": "2026-11-27T20:39:08Z",
     "subjects": [
+     "Merge pull request #409 from simipoB/pool-back-early",
+     "Back buffer pools when they are made, by their NVN flags",
      "Merge pull request #395 from simipoB/intbits-arm-only",
      "Integer vertex formats bitcast on Arm (Mali) only by default",
      "Merge remote-tracking branch 'origin/step-v1' into v1.0",
      "Merge remote-tracking branch 'origin/gpu-v1' into v1.0",
      "GPU fix C: STORE_OP_NONE for depth / stencil a pass did not write, LOAD_OP_NONE where untouched",
-     "GPU fix B: lazy clears, a clear-only depth pass becomes the next pass's load op",
-     "Lock wakes after the SVC lock (DM_SVC_WAKE=after; v1.0 default locked = as before) and waiters listed by address (perf-1124 section 3 item 1)",
-     "SVC stats (DM_SVC_STATS=1, off by default): lock / wait SVC counts, time to take the SVC lock, wake latency, a line every 10 s (perf-1124 S-1)"
+     "GPU fix B: lazy clears, a clear-only depth pass becomes the next pass's load op"
     ]
    }
   ]
@@ -12162,21 +12188,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-27T12:36:08Z",
+  "pushed_at": "2026-11-27T22:01:35Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T12:23:43Z",
+    "last_commit": "2026-11-27T21:55:40Z",
     "subjects": [
-     "Merge fix/tf-capture-with-raster into main（gate2）",
-     "Merge fix/bindstale-spawn into main（gate2）",
-     "test(nvn): bindstale 反证子进程改 posix_spawn 起本程序，不在多线程进程 fork 后直接调 prog_get",
-     "Merge fix/img-fail-keep-rc into main（gate2）",
-     "Merge fix/par-macos15-gate into main（gate2）",
-     "Merge contrib/pr2290 into main（gate2）",
-     "fix(pack/jobs): 信号说明是内部原因句，标非玩家句",
-     "fix(pack/jobs): 写 game.img 失败时原因带退出码，不再把工具链记录行当失败原因（#2295）"
+     "Merge fix/carousel-settled-after-programmatic-scroll into main（gate2）",
+     "游戏库轮播：程序自己发起的居中动画不再挡点封面（#502 横屏冷启动点封面不起局）",
+     "Merge contrib/pr2311 into main（gate2）",
+     "Merge contrib/pr2297 into main（gate2）",
+     "Merge contrib/pr2298 into main（gate2）",
+     "Merge fix/depskip-relpath into main（gate2）",
+     "runtime 钩子按改动跳组：源文件清单改存仓库相对路径、用共用前置的组并上前置的源，缓存带版本号作废旧缓存",
+     "Merge fix/dispatch-range-test-after-2270 into main（gate2）"
     ]
    }
   ]
@@ -12334,21 +12360,21 @@
   ]
  },
  "Desm0nt/torchlight2-port": {
-  "pushed_at": "2026-11-26T18:36:33Z",
+  "pushed_at": "2026-11-27T18:19:28Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T18:36:02Z",
+    "last_commit": "2026-11-27T18:18:51Z",
     "subjects": [
+     "TL2 mod icons: atlas pages in B,G,R,A order, converter version 7",
+     "0.1.17: version (issues #34 / #36: big class mods load again, icons built in bounded memory)",
+     "TL2 issues #34 / #36: mod icon atlases in bounded memory (converter v6)",
+     "TL2 issues #34 / #36: mod icons never cost the pack; a failed conversion keeps the previous pack",
      "0.1.16: version (issue #31: HP / MP numbers beside the HUD orb)",
      "TL2: HP / MP numbers beside the HUD orb (issue #31)",
      "0.1.15: version (PR #32 by danjaniell: 3D resolution with FSR 1, texture filtering, low latency, cheats, ExeFS patches, mod item icons)",
-     "docs: TL2 journal, PR #32 merged and checked on the phone",
-     "Merge pull request #32 from danjaniell/feat/scene-scale-and-host-tools",
-     "0.1.14: version; README: GPL-3.0+ components from peanuts-native make the APK GPL-3.0-or-later",
-     "docs: TL2 journal, phone runs of the merged modules (26.11)",
-     "docs: TL2 journal, GameNative and peanuts-native modules in main"
+     "docs: TL2 journal, PR #32 merged and checked on the phone"
     ]
    }
   ]
@@ -13141,21 +13167,21 @@
   ]
  },
  "aoxzh/bayo3-recomp": {
-  "pushed_at": "2026-11-26T19:49:13Z",
+  "pushed_at": "2026-11-27T18:24:59Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T19:42:58Z",
+    "last_commit": "2026-11-27T18:21:20Z",
     "subjects": [
+     "Sync from private 79f6b70 (with uncommitted changes)",
+     "Sync from private 925cf5d",
+     "Sync from private 495cf46",
+     "Sync from private ab9993e",
      "Sync from private 61e5009 (with uncommitted changes)",
      "Sync from private 35d9f13 (with uncommitted changes)",
      "Sync from private 5189184",
-     "Sync from private 38e7863 (with uncommitted changes)",
-     "Sync from private 256ef84",
-     "Sync from private d8faecb",
-     "Sync from private 5e6839b",
-     "Sync from private 3b69070"
+     "Sync from private 38e7863 (with uncommitted changes)"
     ]
    }
   ]
@@ -13349,20 +13375,26 @@
   "branches": []
  },
  "kakario777-netizen/d2r-mobile": {
-  "pushed_at": "2026-11-22T11:35:20Z",
+  "pushed_at": "2026-11-27T18:35:16Z",
   "branches": [
    {
     "branch": "yupgoolg",
-    "ahead": 3,
-    "behind": 38,
-    "files": 6,
-    "real_files": 5,
+    "ahead": 7,
+    "behind": 59,
+    "files": 11,
+    "real_files": 10,
     "dirs": [
      "dm/android",
-     "yg/private.tgz.enc"
+     "dm/host",
+     "yg/private.tgz.enc",
+     "yg/tools"
     ],
-    "last_commit": "2026-11-22T11:30:14Z",
+    "last_commit": "2026-11-27T18:35:14Z",
     "subjects": [
+     "드랍모드 도구: 수치 표 txt→bin 변환(드랍 테이블·아이템 등급 비율) [skip ci]",
+     "시작 선택에 저화질(720p, 3D 하한 0.5) 모드 추가",
+     "2단계-1: 엽굵 모드에서 엽굵 루트 필터(DmYg) 사용",
+     "캐릭터 선택 화면 왼쪽 위에 디아2 스타일 '업데이트' 버튼 (최신 릴리스 페이지 열기)",
      "1단계: 앱 이름 '디아2 엽굵', 시작 시 일반/엽굵 모드 선택, 엽굵 전용 세이브와 덮어쓰기 묶음",
      "빌드용 생성 파일 추가 (native art)",
      "엽굵 모드판 빌드 파이프라인 (v2.3.0 기준, 원본 그대로 빌드 확인용)"
@@ -13504,21 +13536,21 @@
   ]
  },
  "SubmitGame/awesome-decomp-games": {
-  "pushed_at": "2026-11-26T13:01:06Z",
+  "pushed_at": "2026-11-27T12:46:34Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-26T13:01:04Z",
+    "last_commit": "2026-11-27T12:46:33Z",
     "subjects": [
+     "chore: daily refresh 2026-11-27",
      "chore: daily refresh 2026-11-26",
      "chore: daily refresh 2026-11-25",
      "chore: daily refresh 2026-11-24",
      "chore: daily refresh 2026-11-23",
      "chore: daily refresh 2026-11-22",
      "chore: daily refresh 2026-11-21",
-     "chore: daily refresh 2026-11-20",
-     "chore: daily refresh 2026-11-19"
+     "chore: daily refresh 2026-11-20"
     ]
    }
   ]
