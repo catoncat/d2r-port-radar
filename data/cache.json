@@ -1458,7 +1458,7 @@
   "branches": []
  },
  "TianZuo555/d2r-mobile": {
-  "pushed_at": "2026-10-21T04:05:53Z",
+  "pushed_at": "2026-11-28T02:13:58Z",
   "branches": []
  },
  "deadfoxwang/d2r-mobile": {
@@ -1771,21 +1771,21 @@
   ]
  },
  "craftsail/awesome-early-radar": {
-  "pushed_at": "2026-11-27T07:54:26Z",
+  "pushed_at": "2026-11-28T07:23:10Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T07:54:25Z",
+    "last_commit": "2026-11-28T07:23:09Z",
     "subjects": [
+     "radar 2026-11-28",
      "radar 2026-11-27",
      "radar 2026-11-26",
      "radar 2026-11-25",
      "radar 2026-11-24",
      "radar 2026-11-23",
      "radar 2026-11-22",
-     "radar 2026-11-21",
-     "radar 2026-11-20"
+     "radar 2026-11-21"
     ]
    }
   ]
@@ -1871,21 +1871,21 @@
   ]
  },
  "seedds/nxnative": {
-  "pushed_at": "2026-11-27T20:51:39Z",
+  "pushed_at": "2026-11-28T07:56:34Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T20:51:29Z",
+    "last_commit": "2026-11-28T07:56:25Z",
     "subjects": [
-     "game: Captain Toad: Treasure Tracker adds prewarm seeds",
-     "game/0400453019AA8001: add prewarm seeds",
-     "game: DARK SOULS: REMASTERED adds prewarm seeds",
-     "game/0100FE701475A000: add prewarm seeds",
-     "game: The Legend of Zelda: Breath of the Wild adds prewarm seeds",
-     "game: Metroid Dread adds prewarm seeds",
-     "game: Mario Kart World adds prewarm seeds",
-     "game: Donkey Kong Bananza adds prewarm seeds"
+     "gfx/chain: ignore non-element device references in constant_reads",
+     "packing/shader_split: inflate Team Ninja's sized chunked zlib .ZL_ files (#3437)",
+     "nvn/shaders: reset depth state on device init and key cache by depth",
+     "tools/prewarm: import inbox seed lists",
+     "nvn/replay: cache per-draw state, pipelines, streams, and arg patches",
+     "gfx/nvn: back large sparse 3D textures with 16 KB placement sparse tiles (#3456)",
+     "nvn/alias: flush open pass before choosing uncompressed alias sync source",
+     "rewriter/jump_solver: summarize bounded non-escaping callees for stack slots"
     ]
    }
   ]
@@ -1951,20 +1951,20 @@
   ]
  },
  "changshiyu12138/github-stars-map": {
-  "pushed_at": "2026-11-27T21:14:48Z",
+  "pushed_at": "2026-11-28T07:45:12Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T21:14:47Z",
+    "last_commit": "2026-11-28T07:45:11Z",
     "subjects": [
      "chore: 自动同步 Star 地图（212 个项目）",
      "chore: 自动同步 Star 地图（212 个项目）",
+     "chore: 自动同步 Star 地图（212 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
      "chore: 自动同步 Star 地图（211 个项目）",
-     "chore: 自动同步 Star 地图（208 个项目）",
      "chore: 自动同步 Star 地图（208 个项目）"
     ]
    }
@@ -1979,12 +1979,12 @@
   "branches": []
  },
  "catoncat/d2r-port-radar": {
-  "pushed_at": "2026-11-27T12:39:04Z",
+  "pushed_at": "2026-11-27T23:31:16Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T12:39:03Z",
+    "last_commit": "2026-11-27T23:31:15Z",
     "subjects": [
      "data: refresh cache",
      "data: refresh cache",
@@ -9539,21 +9539,21 @@
   ]
  },
  "LNPANDY/NX2Apple": {
-  "pushed_at": "2026-11-27T20:58:36Z",
+  "pushed_at": "2026-11-28T07:34:20Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T20:52:19Z",
+    "last_commit": "2026-11-28T05:46:54Z",
     "subjects": [
+     "Merge pull request #1682 from LNPANDY/fix/host-tests-and-pipefail",
+     "ci, patches: enable pipefail in tests.yml and fix masked host and gfx test failures",
      "Merge pull request #1638 from Haseenesss/fix/1514-cjk-font-weight",
      "Merge pull request #1677 from LNPANDY/fix/1652-seed-provisional-and-prefill",
      "Merge pull request #1671 from LNPANDY/fix/1626-nlk-makefile-space-quote",
      "fix(mac): quote No Lag Kart PGO profile path in Makefile",
      "fix(mng): heal broken Ocarina of Time app-icon.json URL (#1644) (#1672)",
-     "fix(ios): support separate romfs.img for Kid with Sword builds (#1675)",
-     "feat(ios): add full-top portrait frame option past Dynamic Island (#1674)",
-     "feat(ios): expose touch controls section in Controllers view (#1676)"
+     "fix(ios): support separate romfs.img for Kid with Sword builds (#1675)"
     ]
    }
   ]
@@ -10233,21 +10233,21 @@
   "branches": []
  },
  "Xc1Ym/LumaNX": {
-  "pushed_at": "2026-11-27T08:21:05Z",
+  "pushed_at": "2026-11-28T05:48:18Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T08:20:58Z",
+    "last_commit": "2026-11-28T05:47:36Z",
     "subjects": [
+     "chore: prepare LumaNX 0.4.6 release",
      "chore: sync tested nxnative snapshot",
      "Merge pull request #57 from Xc1Ym/codex/fix-nxnative-sync-20261127",
      "Merge pull request #58 from Xc1Ym/codex/fix-worker-result-delivery-20261127",
      "Merge pull request #56 from Xc1Ym/codex/fix-engine-extraction-20261127",
      "fix: drain worker output before finalizing its task",
      "test: cover the current and legacy engine extraction calls",
-     "test: stub the stick motion service in the controller harness",
-     "fix: adapt the engine extract() call to its 9-argument tail"
+     "test: stub the stick motion service in the controller harness"
     ]
    }
   ]
@@ -11621,21 +11621,21 @@
   ]
  },
  "AksharDP/xc2-recomp": {
-  "pushed_at": "2026-11-27T01:53:02Z",
+  "pushed_at": "2026-11-28T05:15:58Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T01:45:44Z",
+    "last_commit": "2026-11-28T05:15:57Z",
     "subjects": [
-     "Merge pull request #222 from ShannoonRuaaa/claude/language-coverage-tests",
-     "Merge pull request #221 from ShannoonRuaaa/claude/korean-no-system-fonts",
-     "Merge pull request #233 from AksharDP/t3/version-0.1.14",
-     "Version 0.1.14.",
-     "Merge pull request #232 from AksharDP/t3/fix-guild-sea-flicker",
-     "A samples-passed report whose address is in no memory pool says so once in the log instead of losing its GPU write silently.",
-     "Merge pull request #231 from AksharDP/t3/analyze-draw-validation-1pct-lows",
-     "Merge pull request #218 from ShannoonRuaaa/claude/linux-cpu-v2"
+     "Merge pull request #244 from AksharDP/t3/host-coherent-buffer-helper",
+     "Create CPU-written draw buffers through one host-coherent helper.",
+     "Merge pull request #243 from ShannoonRuaaa/codex/xc2-scratch-flush",
+     "Merge pull request #241 from ShannoonRuaaa/codex/xc2-zero-instance",
+     "Merge pull request #240 from ShannoonRuaaa/codex/xc2-controls-key-edits",
+     "Merge pull request #239 from ShannoonRuaaa/codex/xc2-build-game-name",
+     "Require coherent memory for CPU-initialized draw buffers",
+     "Skip indexed draws with no instances"
     ]
    }
   ]
@@ -11756,21 +11756,21 @@
   ]
  },
  "AurelioB/totk-android": {
-  "pushed_at": "2026-11-27T18:06:33Z",
+  "pushed_at": "2026-11-28T04:36:57Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T13:23:07Z",
+    "last_commit": "2026-11-28T01:08:20Z",
     "subjects": [
+     "fix(bench): reconcile treatment admission across whole restart pools",
+     "fix(bench): support explicit switch treatments and pooled restart pairs",
      "fix(map-warn): attribute cache rejection and soften startup wording",
      "fix: select fast cadence for exhausted map warning guards",
      "fix: add hysteresis to the map warning headroom guard",
      "feat: adapt map warning scans to mapping pressure",
      "fix: reuse fresh lag samples for map warnings",
-     "fix: normalize warning-only sampler scheduling",
-     "feat: enable map-limit warnings by default",
-     "fix(companion): bound cache logs across store lifetimes"
+     "fix: normalize warning-only sampler scheduling"
     ]
    }
   ]
@@ -12188,21 +12188,21 @@
   ]
  },
  "jhaizhou-ops/S2Arm": {
-  "pushed_at": "2026-11-27T22:01:35Z",
+  "pushed_at": "2026-11-28T07:27:26Z",
   "branches": [
    {
     "branch": "main",
     "mirror": false,
-    "last_commit": "2026-11-27T21:55:40Z",
+    "last_commit": "2026-11-28T07:24:19Z",
     "subjects": [
-     "Merge fix/carousel-settled-after-programmatic-scroll into main（gate2）",
-     "游戏库轮播：程序自己发起的居中动画不再挡点封面（#502 横屏冷启动点封面不起局）",
-     "Merge contrib/pr2311 into main（gate2）",
-     "Merge contrib/pr2297 into main（gate2）",
-     "Merge contrib/pr2298 into main（gate2）",
-     "Merge fix/depskip-relpath into main（gate2）",
-     "runtime 钩子按改动跳组：源文件清单改存仓库相对路径、用共用前置的组并上前置的源，缓存带版本号作废旧缓存",
-     "Merge fix/dispatch-range-test-after-2270 into main（gate2）"
+     "Merge fix/ns2-joycon-link into main（gate2）",
+     "Mac 手柄：连接程序日志落盘进诊断包；Joy-Con 2 在唤醒别的主机时不连、提示长按 SYNC（#2318）",
+     "Merge fix/hardcoded-path-lint into main（gate2）",
+     "Merge contrib/pr2306 into main（gate2）",
+     "门禁加写死机器路径检查：代码里不许把出包机路径当缺省值写死",
+     "Merge fix/win-runtime-zstd-path into main（gate2）",
+     "Windows 随包运行时：zstd 目录不再写死出包机盘符",
+     "Merge fix/snap-hid-vibration-query into main（gate2）"
     ]
    }
   ]
@@ -13375,29 +13375,30 @@
   "branches": []
  },
  "kakario777-netizen/d2r-mobile": {
-  "pushed_at": "2026-11-27T18:35:16Z",
+  "pushed_at": "2026-11-28T06:21:36Z",
   "branches": [
    {
     "branch": "yupgoolg",
-    "ahead": 7,
+    "ahead": 10,
     "behind": 59,
-    "files": 11,
-    "real_files": 10,
+    "files": 12,
+    "real_files": 11,
     "dirs": [
      "dm/android",
      "dm/host",
      "yg/private.tgz.enc",
      "yg/tools"
     ],
-    "last_commit": "2026-11-27T18:35:14Z",
+    "last_commit": "2026-11-28T06:16:34Z",
     "subjects": [
+     "엽굵 세이브 내보내기/가져오기 (Download/S2X/D2R Mobile/yg/)",
+     "시작 선택: 오리지널 / 엽굵 모드 / 드랍율 엽굵 모드 + 저화질 체크",
+     "캐릭터 화면에 앱 버전·엽굵 데이터 버전 표시",
      "드랍모드 도구: 수치 표 txt→bin 변환(드랍 테이블·아이템 등급 비율) [skip ci]",
      "시작 선택에 저화질(720p, 3D 하한 0.5) 모드 추가",
      "2단계-1: 엽굵 모드에서 엽굵 루트 필터(DmYg) 사용",
      "캐릭터 선택 화면 왼쪽 위에 디아2 스타일 '업데이트' 버튼 (최신 릴리스 페이지 열기)",
-     "1단계: 앱 이름 '디아2 엽굵', 시작 시 일반/엽굵 모드 선택, 엽굵 전용 세이브와 덮어쓰기 묶음",
-     "빌드용 생성 파일 추가 (native art)",
-     "엽굵 모드판 빌드 파이프라인 (v2.3.0 기준, 원본 그대로 빌드 확인용)"
+     "1단계: 앱 이름 '디아2 엽굵', 시작 시 일반/엽굵 모드 선택, 엽굵 전용 세이브와 덮어쓰기 묶음"
     ]
    }
   ]
